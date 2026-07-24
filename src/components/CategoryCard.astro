@@ -1,0 +1,33 @@
+---
+interface Props {
+  title: string;
+  text: string;
+  image?: string;
+  alt?: string;
+  useClipboardIcon?: boolean;
+}
+
+const { title, text, image, alt = '', useClipboardIcon = false } = Astro.props;
+---
+
+<article class="category-card">
+  <div class="category-card__icon" aria-hidden={useClipboardIcon ? 'true' : undefined}>
+    {
+      useClipboardIcon ? (
+        <svg viewBox="0 0 24 24" role="img" aria-label="Clipboard checklist icon">
+          <path d="M9 5h6" />
+          <path d="M9 3.8c0-.44.36-.8.8-.8h4.4c.44 0 .8.36.8.8V6H9V3.8Z" />
+          <path d="M8 5H6.7C5.76 5 5 5.76 5 6.7v12.6c0 .94.76 1.7 1.7 1.7h10.6c.94 0 1.7-.76 1.7-1.7V6.7c0-.94-.76-1.7-1.7-1.7H16" />
+          <path d="m8.2 12.2 1.45 1.45 3.05-3.2" />
+          <path d="M14.5 13h2.2" />
+          <path d="m8.2 17.2 1.45 1.45 3.05-3.2" />
+          <path d="M14.5 18h2.2" />
+        </svg>
+      ) : (
+        <img src={image} alt={alt} loading="lazy" />
+      )
+    }
+  </div>
+  <h3>{title}</h3>
+  <p>{text}</p>
+</article>

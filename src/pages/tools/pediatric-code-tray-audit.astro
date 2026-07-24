@@ -1,0 +1,1704 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Pediatric Code Tray Audit Tool | LittleMeds Safety"
+  description="Audit pediatric emergency medication trays, document deficiencies, calculate readiness, and print status summaries."
+>
+  <main class="audit-page">
+    <section class="audit-hero">
+      <div class="audit-container">
+        <a class="audit-brand" href="/" aria-label="LittleMeds Safety home">
+          <span class="audit-brand__mark" aria-hidden="true">LMS</span>
+          <span>LittleMeds Safety</span>
+        </a>
+        <p class="audit-eyebrow">Interactive Safety Tool</p>
+        <h1>Pediatric Code Tray Audit Tool</h1>
+        <p class="audit-lede">
+          Evaluate pediatric emergency medication trays for completeness,
+          standardization, accessibility, labeling, expiration control, and
+          readiness.
+        </p>
+        <div class="clinical-notice">
+          <strong>Professional notice:</strong>
+          Use this tool with your institution's approved formulary, emergency
+          protocols, PALS/NRP guidance, and code committee requirements. It does
+          not establish required medication contents or replace institutional policy.
+        </div>
+      </div>
+    </section>
+
+    <form class="audit-form" id="auditForm" novalidate>
+      <div class="audit-container audit-stack">
+        <nav class="step-progress" aria-label="Audit progress">
+          <ol>
+            <li class="is-active" data-progress-step="1"><span>1</span> Tray Type</li>
+            <li data-progress-step="2"><span>2</span> Audit Setup</li>
+            <li data-progress-step="3"><span>3</span> Audit</li>
+            <li data-progress-step="4"><span>4</span> Outcome</li>
+          </ol>
+        </nav>
+        <p class="step-status" id="stepStatus" aria-live="polite">Step 1 of 4: select a tray type.</p>
+        <p class="validation-message" id="validationMessage" aria-live="polite"></p>
+
+        <section class="audit-card step-panel is-active" data-step-panel="1" aria-labelledby="trayTitle">
+          <div class="section-title">
+            <p class="audit-eyebrow">Tray Type</p>
+            <h2 id="trayTitle">Select the tray being audited</h2>
+            <p>Choose one pediatric emergency tray or cart to begin the guided audit.</p>
+          </div>
+          <fieldset class="tray-fieldset">
+            <legend class="sr-only">Tray type selector</legend>
+            <div class="tray-grid" id="trayGrid"></div>
+          </fieldset>
+          <label class="custom-tray" id="customTrayField">
+            Custom tray name
+            <input name="customTrayName" type="text" placeholder="Enter institution-specific tray name" />
+          </label>
+          <div class="step-actions">
+            <button class="button button-primary" type="button" id="continueSetup" disabled>Continue to audit setup</button>
+          </div>
+        </section>
+
+        <section class="audit-card step-panel setup-card" data-step-panel="2" aria-labelledby="setupTitle">
+          <div class="selected-tray-banner">
+            <span>Selected tray</span>
+            <strong id="setupTrayName">Not selected</strong>
+          </div>
+          <div class="section-title">
+            <p class="audit-eyebrow">Audit Setup</p>
+            <h2 id="setupTitle">Audit information</h2>
+            <p>No patient information should be entered in this tool. Required fields are marked.</p>
+          </div>
+          <div class="setup-grid">
+            <label>
+              Facility or department <span class="required-marker">Required</span>
+              <input name="facility" type="text" autocomplete="organization" required />
+            </label>
+            <label>
+              Unit <span class="required-marker">Required</span>
+              <input name="unit" type="text" required />
+            </label>
+            <label>
+              Auditor <span class="required-marker">Required</span>
+              <input name="auditor" type="text" autocomplete="name" required />
+            </label>
+            <label>
+              Audit date <span class="required-marker">Required</span>
+              <input name="auditDate" type="date" required />
+            </label>
+            <label>
+              Tray or cart identifier <span class="required-marker">Required</span>
+              <input name="trayId" type="text" required />
+            </label>
+            <label>
+              Location <span class="required-marker">Required</span>
+              <input name="location" type="text" required />
+            </label>
+            <label>
+              Checklist version
+              <input name="checklistVersion" type="text" />
+            </label>
+            <label>
+              Previous audit date
+              <input name="previousAuditDate" type="date" />
+            </label>
+            <label class="setup-grid__wide">
+              Notes
+              <textarea name="notes" rows="3"></textarea>
+            </label>
+          </div>
+          <div class="step-actions">
+            <button class="button button-secondary" type="button" data-go-step="1">Back to tray selection</button>
+            <button class="button button-primary" type="button" id="startAudit">Start audit</button>
+          </div>
+        </section>
+
+        <section class="step-panel audit-workspace" data-step-panel="3" aria-labelledby="checklistTitle">
+          <aside class="audit-sidebar" aria-label="Audit section progress">
+            <div class="selected-tray-banner">
+              <span>Selected tray</span>
+              <strong id="auditTrayName">Not selected</strong>
+            </div>
+            <div class="compact-summary" aria-live="polite">
+              <div><span>Assessed</span><strong id="assessedCount">0</strong></div>
+              <div><span>Compliant</span><strong id="compliantCount">0</strong></div>
+              <div><span>Deficient</span><strong id="deficientCount">0</strong></div>
+              <div><span>Not assessed</span><strong id="notAssessedCount">0</strong></div>
+            </div>
+            <div class="domain-nav" id="domainNav"></div>
+          </aside>
+
+          <div class="audit-main">
+            <section class="audit-card audit-context" aria-label="Audit context">
+              <div>
+                <p class="audit-eyebrow">Audit Sections</p>
+                <h2 id="checklistTitle">Document findings</h2>
+              </div>
+              <dl id="auditInfoSummary" class="audit-info-summary"></dl>
+            </section>
+
+            <section class="audit-card checklist-card">
+              <div class="section-title section-title--row">
+                <div>
+                  <p class="audit-eyebrow" id="domainProgress">Section 1 of 8</p>
+                  <h2 id="activeDomainTitle">Governance and Standardization</h2>
+                </div>
+                <span class="domain-completion" id="domainCompletion">0 of 0 assessed</span>
+              </div>
+              <div id="checklistHost" class="checklist-host"></div>
+              <section class="custom-builder" aria-labelledby="customTitle">
+                <div class="section-title">
+                  <p class="audit-eyebrow">Configurable Checklist</p>
+                  <h3 id="customTitle">Add local checklist items to this section</h3>
+                  <p>Use this for institution-specific contents, quantities, equipment, or process checks.</p>
+                </div>
+                <div class="custom-grid">
+                  <label>
+                    Audit criterion
+                    <input id="customCriterion" type="text" />
+                  </label>
+                  <label>
+                    Expected quantity or standard
+                    <input id="customStandard" type="text" />
+                  </label>
+                  <button class="button button-secondary" type="button" id="addCustomRow">Add custom row</button>
+                </div>
+              </section>
+              <div class="step-actions">
+                <button class="button button-secondary" type="button" data-go-step="2">Back to audit setup</button>
+                <button class="button button-secondary" type="button" id="previousDomain">Previous section</button>
+                <button class="button button-primary" type="button" id="nextDomain">Next section</button>
+                <button class="button button-primary" type="button" id="showOutcome">Review outcome</button>
+              </div>
+            </section>
+          </div>
+        </section>
+
+        <section class="step-panel outcome-panel" data-step-panel="4" aria-labelledby="outcomeTitle">
+          <section class="audit-card">
+            <div class="section-title section-title--row">
+              <div>
+                <p class="audit-eyebrow">Outcome</p>
+                <h2 id="outcomeTitle">Outcome and deficiency summary</h2>
+              </div>
+            </div>
+            <div class="outcome-overview">
+              <div class="score-card" aria-live="polite">
+                <p class="audit-eyebrow">Readiness Score</p>
+                <strong id="readinessScore">0%</strong>
+                <span id="readinessLabel">Incomplete audit</span>
+              </div>
+              <div class="metric-card">
+                <span>Applicable criteria</span>
+                <strong id="applicableCount">0</strong>
+              </div>
+              <div class="metric-card">
+                <span>Compliant</span>
+                <strong id="outcomeCompliantCount">0</strong>
+              </div>
+              <div class="metric-card">
+                <span>Deficiencies</span>
+                <strong id="outcomeDeficientCount">0</strong>
+              </div>
+              <div class="metric-card">
+                <span>Incomplete or not assessed</span>
+                <strong id="outcomeNotAssessedCount">0</strong>
+              </div>
+            </div>
+            <div class="outcome-meta">
+              <div>
+                <p class="audit-eyebrow">Selected tray</p>
+                <strong id="outcomeTrayName">Not selected</strong>
+              </div>
+              <dl id="outcomeInfoSummary" class="audit-info-summary"></dl>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Tray type</th>
+                    <th>Domain</th>
+                    <th>Criterion</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody id="deficiencyBody">
+                  <tr>
+                    <td colspan="4">No deficient items documented.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="step-actions action-bar" aria-label="Audit actions">
+              <button class="button button-secondary" type="button" data-go-step="3">Review audit responses</button>
+              <button class="button button-primary" type="button" id="printReport">Print full audit report</button>
+              <button class="button button-primary" type="button" id="printDeficiencies">Print deficiency summary</button>
+              <button class="button button-secondary" type="button" id="newAudit">Start new audit</button>
+              <button class="button button-secondary" type="button" id="clearResponses">Clear audit</button>
+            </div>
+          </section>
+        </section>
+
+        <section class="print-signatures" aria-label="Print signature lines">
+          <p><strong>Auditor signature:</strong> ____________________________________</p>
+          <p><strong>Reviewer signature:</strong> __________________________________</p>
+          <p><strong>Date:</strong> _______________________________________________</p>
+          <p class="print-disclaimer">
+            Disclaimer: This quality-improvement tool supports local audit
+            documentation only. It does not establish medication inventory
+            requirements or replace institutional policy. Version 1.0.
+          </p>
+        </section>
+      </div>
+    </form>
+  </main>
+</BaseLayout>
+
+<script>
+  const domains = [
+    {
+      name: 'Governance and standardization',
+      items: [
+        'Current institution-approved contents list available',
+        'Tray configuration standardized across applicable locations',
+        'Ownership and restocking responsibility defined',
+        'Audit frequency defined',
+        'Change-control process documented',
+      ],
+    },
+    {
+      name: 'Medication integrity',
+      items: [
+        'Required medications present according to local checklist',
+        'Correct formulation and concentration',
+        'Correct quantity',
+        'Expiration date acceptable',
+        'Packaging intact',
+        'No unauthorized substitutions',
+        'Look-alike or sound-alike risks addressed',
+        'High-alert medications clearly identified',
+        'Storage conditions appropriate',
+      ],
+    },
+    {
+      name: 'Labeling and organization',
+      items: [
+        'Compartments clearly labeled',
+        'Medications arranged consistently',
+        'Labels visible without removing multiple products',
+        'Concentration prominently displayed',
+        'Route-specific products separated where appropriate',
+        'Similar products physically differentiated',
+        'Tamper-evident seal present and intact',
+        'Tray map or contents diagram available',
+      ],
+    },
+    {
+      name: 'Preparation and administration supplies',
+      items: [
+        'Required syringes and needles present',
+        'Appropriate medication-delivery devices present',
+        'Flushes and diluents present according to policy',
+        'Labels for prepared syringes available',
+        'Administration tubing or connectors available',
+        'Supplies appropriate for pediatric sizes',
+        'Intraosseous access supplies available when applicable',
+      ],
+    },
+    {
+      name: 'Accessibility and usability',
+      items: [
+        'Tray immediately accessible',
+        'No obstruction or locked access delay',
+        'Staff know the tray location',
+        'Drawer sequence supports emergency workflow',
+        'Frequently needed items are easy to reach',
+        'Contents can be identified under low-light or stressful conditions',
+        'Instructions are concise and readable',
+      ],
+    },
+    {
+      name: 'Documentation and readiness',
+      items: [
+        'Daily or shift verification completed',
+        'Seal number documented',
+        'Restocking documentation complete',
+        'Previous deficiencies resolved',
+        'Staff education current',
+        'Mock-code findings reviewed',
+        'Emergency contact or escalation instructions available',
+      ],
+    },
+  ];
+
+  const trayTypes = [
+    ['cardiac', 'Pediatric Cardiac Arrest Tray', 'Resuscitation medication and support readiness for pediatric arrest events.'],
+    ['neonatal', 'Neonatal Resuscitation Tray', 'Newborn and preterm resuscitation supplies aligned to local NRP process.'],
+    ['ecmo', 'ECMO Emergency Tray', 'Emergency readiness for ECMO circuit, escalation, and anticoagulation workflows.'],
+    ['airway', 'Pediatric Airway Emergency Tray', 'Airway equipment and medication-preparation support for urgent airway care.'],
+    ['rsi', 'Pediatric Rapid-Sequence Intubation Tray', 'RSI medication organization, cognitive aids, and post-intubation support.'],
+    ['anaphylaxis', 'Pediatric Anaphylaxis Tray', 'Rapid access support for institution-approved pediatric anaphylaxis treatment.'],
+    ['mh', 'Pediatric Malignant Hyperthermia Cart', 'Malignant hyperthermia emergency preparation, mixing, and restocking readiness.'],
+    ['toxicology', 'Pediatric Toxicology or Antidote Tray', 'Antidote access, references, monitoring, and replacement planning.'],
+    ['custom', 'Custom Tray', 'Build an audit around a locally defined emergency tray or cart.'],
+  ];
+
+  const modules = {
+    cardiac: ['Alignment with current institution-approved pediatric resuscitation protocol', 'Weight-based emergency reference immediately available', 'Defibrillation and vascular-access support verified', 'Standardized emergency concentrations verified', 'Post-event restocking process defined'],
+    neonatal: ['Tray aligned with current institution-approved NRP process', 'Supplies appropriate for newborn and preterm patients', 'Umbilical access supplies verified where applicable', 'Neonatal dosing reference current', 'Thermoregulation and airway-support supplies verified', 'Separate neonatal concentrations clearly differentiated'],
+    ecmo: ['ECMO-specific emergency contents list approved', 'Circuit emergency supplies immediately available', 'Cannula or circuit emergency process displayed', 'Anticoagulation-related supplies verified according to policy', 'ECMO specialist escalation information visible', 'Tray contents coordinated with perfusion and ECMO leadership'],
+    airway: ['Age-appropriate airway devices available', 'Difficult-airway algorithm accessible', 'Backup airway sizes available', 'Suction supplies verified', 'Medication preparation aids aligned with local policy', 'Equipment sequence supports rapid access'],
+    rsi: ['RSI checklist or cognitive aid available', 'Medications segregated by purpose', 'Standard concentrations clearly displayed', 'Weight-based dose reference available', 'Post-intubation medication plan included', 'Reversal or rescue resources available according to policy'],
+    anaphylaxis: ['Institution-approved pediatric anaphylaxis algorithm available', 'Weight-based dosing support clearly visible', 'Routes and concentrations clearly differentiated', 'Adjunct supplies available', 'Expiration and storage requirements verified'],
+    mh: ['Cart aligned with institutional MH protocol', 'Required preparation supplies available', 'Mixing and administration instructions visible', 'Cooling supplies or access process verified', 'Emergency contact process visible', 'Restocking procedure defined after use'],
+    toxicology: ['Antidotes selected according to facility capabilities', 'Indication and dosing references available', 'Restricted or refrigerated products have an access plan', 'Poison-control contact information visible', 'Replacement and expiration monitoring assigned'],
+    custom: [],
+  };
+
+  const state = {
+    step: 1,
+    tray: '',
+    activeDomain: 0,
+    customRows: [],
+    responses: {},
+    auditStarted: false,
+    completedSteps: new Set(),
+  };
+
+  const statuses = ['Compliant', 'Deficient', 'Not applicable', 'Not assessed'];
+  const requiredSetupFields = ['facility', 'unit', 'auditor', 'auditDate', 'trayId', 'location'];
+  const domainLabels = {
+    'Governance and standardization': 'Governance and Standardization',
+    'Medication integrity': 'Medication Integrity',
+    'Labeling and organization': 'Labeling and Organization',
+    'Preparation and administration supplies': 'Preparation and Administration Supplies',
+    'Accessibility and usability': 'Accessibility and Usability',
+    'Documentation and readiness': 'Documentation and Readiness',
+    'Tray-specific criteria': 'Tray-Specific Criteria',
+  };
+
+  const trayGrid = document.querySelector('#trayGrid');
+  const customTrayField = document.querySelector('#customTrayField');
+  const checklistHost = document.querySelector('#checklistHost');
+  const deficiencyBody = document.querySelector('#deficiencyBody');
+  const validationMessage = document.querySelector('#validationMessage');
+  const stepStatus = document.querySelector('#stepStatus');
+
+  function iconSvg(key) {
+    const common = 'viewBox="0 0 24 24" aria-hidden="true"';
+    const paths = {
+      cardiac: '<path d="M12 21s-7-4.5-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.5-7 10-7 10Z"/><path d="M7 13h3l1-2 2 4 1-2h3"/>',
+      neonatal: '<circle cx="12" cy="8" r="3"/><path d="M7 20c.7-4 2.4-6 5-6s4.3 2 5 6"/><path d="M9 12 6 9"/><path d="m15 12 3-3"/>',
+      ecmo: '<path d="M6 7c0-2 1.5-3.5 3.5-3.5S13 5 13 7s-1.5 3.5-3.5 3.5S6 9 6 7Z"/><path d="M11 10.5 16 16"/><path d="M14 17a3 3 0 1 0 6 0 3 3 0 0 0-6 0Z"/><path d="M4 17h6"/>',
+      airway: '<path d="M5 7c4-4 10-4 14 0"/><path d="M7 11c3-2.5 7-2.5 10 0"/><path d="M9 15c2-1.5 4-1.5 6 0"/><path d="M12 18v3"/>',
+      rsi: '<path d="m6 15 8-8 3 3-8 8H6z"/><path d="m14 7 2-2 3 3-2 2"/><path d="M7 18h6"/>',
+      anaphylaxis: '<path d="M12 3v18"/><path d="M8 7h8"/><path d="M8 17h8"/><path d="M5 12h14"/><path d="M17 5l2 2"/><path d="m5 19 2-2"/>',
+      mh: '<path d="M12 3c3 4 5 7 5 10a5 5 0 0 1-10 0c0-3 2-6 5-10Z"/><path d="M9 14h6"/><path d="M12 11v6"/>',
+      toxicology: '<path d="M9 3h6"/><path d="M10 3v5l-4 8a3 3 0 0 0 2.7 4.3h6.6A3 3 0 0 0 18 16l-4-8V3"/><path d="M8.5 15h7"/>',
+      custom: '<path d="M7 4h10v16H7z"/><path d="M9.5 8h5"/><path d="M9.5 12h5"/><path d="M9.5 16h3"/>',
+    };
+    return `<svg ${common}>${paths[key]}</svg>`;
+  }
+
+  function itemId(domain, criterion) {
+    return `${domain}:${criterion}`.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+  }
+
+  function escapeHtml(value) {
+    return String(value ?? '').replace(/[&<>"']/g, (char) => ({
+      '&': '&amp;',
+      '<': '&lt;',
+      '>': '&gt;',
+      '"': '&quot;',
+      "'": '&#39;',
+    }[char]));
+  }
+
+  function getTrayName() {
+    if (state.tray === 'custom') {
+      return document.querySelector('[name="customTrayName"]').value || 'Custom Tray';
+    }
+    return trayTypes.find(([key]) => key === state.tray)?.[1] || 'Not selected';
+  }
+
+  function getDomainGroups() {
+    const groups = domains.map((domain) => ({
+      name: domainLabels[domain.name] || domain.name,
+      items: domain.items.map((criterion) => ({ domain: domain.name, criterion, standard: '', custom: false })),
+    }));
+    const moduleItems = modules[state.tray] || [];
+    groups.push({
+      name: 'Tray-Specific Criteria',
+      items: moduleItems.map((criterion) => ({ domain: 'Tray-specific criteria', criterion, standard: '', custom: false })),
+    });
+    state.customRows.forEach((row) => {
+      const group = groups.find((item) => item.name === row.domain || item.name === (domainLabels[row.domain] || row.domain));
+      if (group) group.items.push(row);
+    });
+    return groups;
+  }
+
+  function getRows() {
+    return getDomainGroups().flatMap((group) => group.items);
+  }
+
+  function ensureResponse(id) {
+    state.responses[id] ||= {
+      status: 'Not assessed',
+      touched: false,
+    };
+    return state.responses[id];
+  }
+
+  function renderTrayCards() {
+    trayGrid.innerHTML = trayTypes.map(([key, title, description]) => `
+      <label class="tray-card ${state.tray === key ? 'is-selected' : ''}">
+        <input type="radio" name="trayType" value="${key}" ${state.tray === key ? 'checked' : ''} />
+        <span class="tray-card__icon">${iconSvg(key)}</span>
+        <span class="tray-card__title">${title}</span>
+        <span class="tray-card__text">${description}</span>
+      </label>
+    `).join('');
+    customTrayField.classList.toggle('is-visible', state.tray === 'custom');
+    document.querySelector('#continueSetup').disabled = !state.tray;
+  }
+
+  function statusControls(id, response) {
+    return statuses.map((status) => `
+      <label class="status-pill">
+        <input type="radio" name="status-${id}" value="${status}" ${response.status === status ? 'checked' : ''} />
+        <span>${status}</span>
+      </label>
+    `).join('');
+  }
+
+  function renderDomain() {
+    if (!state.auditStarted) {
+      checklistHost.innerHTML = '';
+      return;
+    }
+    const groups = getDomainGroups();
+    const group = groups[state.activeDomain] || groups[0];
+    const rows = group.items;
+    document.querySelector('#activeDomainTitle').textContent = group.name;
+    document.querySelector('#domainProgress').textContent = `Section ${state.activeDomain + 1} of ${groups.length}`;
+    document.querySelector('#domainCompletion').textContent = `${countAssessed(rows)} of ${rows.length} assessed`;
+    checklistHost.innerHTML = `
+      <fieldset class="domain-group">
+        <legend>${escapeHtml(group.name)}</legend>
+        ${rows.map((row) => {
+          const id = itemId(row.domain, row.criterion);
+          const response = ensureResponse(id);
+          return `
+            <article class="audit-row" data-id="${id}" data-domain="${escapeHtml(row.domain)}" data-criterion="${escapeHtml(row.criterion)}">
+              <div class="audit-row__main">
+                <h3>${escapeHtml(row.criterion)}</h3>
+                ${row.standard ? `<p class="standard">Expected: ${escapeHtml(row.standard)}</p>` : ''}
+                ${row.custom ? `<button type="button" class="delete-row" data-delete="${id}">Delete custom row</button>` : ''}
+              </div>
+              <fieldset class="status-group">
+                <legend>Status</legend>
+                ${statusControls(id, response)}
+              </fieldset>
+            </article>
+          `;
+        }).join('')}
+      </fieldset>
+    `;
+    renderDomainNav();
+    document.querySelector('#previousDomain').disabled = state.activeDomain === 0;
+    document.querySelector('#nextDomain').hidden = state.activeDomain === groups.length - 1;
+    document.querySelector('#showOutcome').hidden = state.activeDomain !== groups.length - 1;
+  }
+
+  function countAssessed(rows) {
+    return rows.filter((row) => {
+      const response = ensureResponse(itemId(row.domain, row.criterion));
+      return response.status === 'Compliant'
+        || response.status === 'Deficient'
+        || response.status === 'Not applicable'
+        || (response.status === 'Not assessed' && response.touched);
+    }).length;
+  }
+
+  function calculate() {
+    const rows = getRows();
+    let applicable = 0;
+    let assessed = 0;
+    let compliant = 0;
+    let deficient = 0;
+    let notAssessed = 0;
+
+    rows.forEach((row) => {
+      const response = ensureResponse(itemId(row.domain, row.criterion));
+      if (response.status !== 'Not applicable') applicable += 1;
+      if (
+        response.status === 'Compliant'
+        || response.status === 'Deficient'
+        || response.status === 'Not applicable'
+        || (response.status === 'Not assessed' && response.touched)
+      ) assessed += 1;
+      if (response.status === 'Compliant') compliant += 1;
+      if (response.status === 'Deficient') deficient += 1;
+      if (response.status === 'Not assessed') notAssessed += 1;
+    });
+
+    const score = applicable ? Math.round((compliant / applicable) * 100) : 0;
+    let label = 'Incomplete audit';
+    if (!assessed || notAssessed > 0) label = 'Incomplete audit';
+    else if (score >= 95) label = 'Ready';
+    else if (score >= 85) label = 'Improvement needed';
+    else label = 'Action required';
+
+    setText('#readinessScore', `${score}%`);
+    setText('#readinessLabel', label);
+    setText('#applicableCount', applicable);
+    setText('#assessedCount', assessed);
+    setText('#compliantCount', compliant);
+    setText('#deficientCount', deficient);
+    setText('#notAssessedCount', notAssessed);
+    setText('#outcomeCompliantCount', compliant);
+    setText('#outcomeDeficientCount', deficient);
+    setText('#outcomeNotAssessedCount', notAssessed);
+    return { applicable, assessed, compliant, deficient, notAssessed, score, label };
+  }
+
+  function setText(selector, value) {
+    const element = document.querySelector(selector);
+    if (element) element.textContent = value;
+  }
+
+  function renderDeficiencies() {
+    const rows = getRows()
+      .map((row) => ({ ...row, id: itemId(row.domain, row.criterion), response: ensureResponse(itemId(row.domain, row.criterion)) }))
+      .filter((row) => row.response.status === 'Deficient');
+
+    deficiencyBody.innerHTML = rows.length ? rows.map((row) => `
+      <tr>
+        <td>${escapeHtml(getTrayName())}</td>
+        <td>${escapeHtml(row.domain)}</td>
+        <td>${escapeHtml(row.criterion)}</td>
+        <td>${escapeHtml(row.response.status)}</td>
+      </tr>
+    `).join('') : '<tr><td colspan="4">No deficient items documented.</td></tr>';
+  }
+
+  function updateAll() {
+    calculate();
+    renderDeficiencies();
+    renderDomainNav();
+    renderSummaries();
+  }
+
+  function renderSummaries() {
+    setText('#setupTrayName', getTrayName());
+    setText('#auditTrayName', getTrayName());
+    setText('#outcomeTrayName', getTrayName());
+    const entries = [
+      ['Facility', fieldValue('facility')],
+      ['Unit', fieldValue('unit')],
+      ['Auditor', fieldValue('auditor')],
+      ['Audit date', fieldValue('auditDate')],
+      ['Tray/cart ID', fieldValue('trayId')],
+      ['Location', fieldValue('location')],
+      ['Checklist version', fieldValue('checklistVersion')],
+      ['Previous audit', fieldValue('previousAuditDate')],
+    ].filter(([, value]) => value);
+    const html = entries.map(([label, value]) => `<div><dt>${label}</dt><dd>${escapeHtml(value)}</dd></div>`).join('');
+    document.querySelector('#auditInfoSummary').innerHTML = html;
+    document.querySelector('#outcomeInfoSummary').innerHTML = html;
+  }
+
+  function fieldValue(name) {
+    return document.querySelector(`[name="${name}"]`)?.value.trim() || '';
+  }
+
+  function validateSetup() {
+    const missing = requiredSetupFields.filter((name) => !fieldValue(name));
+    requiredSetupFields.forEach((name) => {
+      document.querySelector(`[name="${name}"]`)?.classList.toggle('has-error', missing.includes(name));
+    });
+    if (!missing.length) return true;
+    validationMessage.textContent = 'Complete all required audit setup fields before starting the audit.';
+    document.querySelector(`[name="${missing[0]}"]`)?.focus();
+    return false;
+  }
+
+  function domainComplete(index) {
+    const group = getDomainGroups()[index];
+    return group ? countAssessed(group.items) === group.items.length : false;
+  }
+
+  function allCriteriaResolved() {
+    return getRows().every((row) => {
+      const response = ensureResponse(itemId(row.domain, row.criterion));
+      return response.status === 'Compliant'
+        || response.status === 'Deficient'
+        || response.status === 'Not applicable'
+        || (response.status === 'Not assessed' && response.touched);
+    });
+  }
+
+  function renderDomainNav() {
+    const host = document.querySelector('#domainNav');
+    if (!host || !state.auditStarted) return;
+    host.innerHTML = getDomainGroups().map((group, index) => {
+      const complete = domainComplete(index);
+      const active = index === state.activeDomain;
+      const disabled = index > state.activeDomain && !getDomainGroups().slice(0, index).every((_, priorIndex) => domainComplete(priorIndex));
+      return `<button type="button" data-domain-index="${index}" class="${active ? 'is-active' : ''} ${complete ? 'is-complete' : ''}" ${disabled ? 'disabled' : ''}>
+        <span>${index + 1}</span>${escapeHtml(group.name)} <small>${complete ? 'Complete' : `${countAssessed(group.items)} of ${group.items.length}`}</small>
+      </button>`;
+    }).join('');
+  }
+
+  function showStep(step) {
+    state.step = step;
+    document.querySelectorAll('[data-step-panel]').forEach((panel) => {
+      panel.classList.toggle('is-active', Number(panel.dataset.stepPanel) === step);
+    });
+    document.querySelectorAll('[data-progress-step]').forEach((item) => {
+      const itemStep = Number(item.dataset.progressStep);
+      item.classList.toggle('is-active', itemStep === step);
+      item.classList.toggle('is-complete', state.completedSteps.has(itemStep));
+    });
+    const labels = {
+      1: 'Step 1 of 4: select a tray type.',
+      2: 'Step 2 of 4: complete audit setup.',
+      3: `Step 3 of 4: audit section ${state.activeDomain + 1} of ${getDomainGroups().length}.`,
+      4: 'Step 4 of 4: review outcome and deficiencies.',
+    };
+    stepStatus.textContent = labels[step];
+    validationMessage.textContent = '';
+    renderSummaries();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  function startAudit() {
+    if (!validateSetup()) return;
+    state.completedSteps.add(2);
+    const wasStarted = state.auditStarted;
+    state.auditStarted = true;
+    if (!wasStarted) state.activeDomain = 0;
+    renderDomain();
+    updateAll();
+    showStep(3);
+  }
+
+  trayGrid.addEventListener('change', (event) => {
+    if (event.target.name === 'trayType') {
+      state.tray = event.target.value;
+      state.completedSteps.add(1);
+      renderTrayCards();
+      updateAll();
+    }
+  });
+
+  checklistHost.addEventListener('change', (event) => {
+    const row = event.target.closest('.audit-row');
+    if (!row) return;
+    const response = ensureResponse(row.dataset.id);
+    if (event.target.name?.startsWith('status-')) {
+      response.status = event.target.value;
+      response.touched = true;
+    }
+    renderDomain();
+    updateAll();
+  });
+
+  checklistHost.addEventListener('click', (event) => {
+    const id = event.target.dataset.delete;
+    if (!id) return;
+    state.customRows = state.customRows.filter((row) => itemId(row.domain, row.criterion) !== id);
+    delete state.responses[id];
+    renderDomain();
+    updateAll();
+  });
+
+  document.querySelector('#addCustomRow').addEventListener('click', () => {
+    const criterion = document.querySelector('#customCriterion').value.trim();
+    const standard = document.querySelector('#customStandard').value.trim();
+    if (!criterion) return;
+    const activeGroup = getDomainGroups()[state.activeDomain];
+    state.customRows.push({ domain: activeGroup.name, criterion, standard, custom: true });
+    document.querySelector('#customCriterion').value = '';
+    document.querySelector('#customStandard').value = '';
+    renderDomain();
+    updateAll();
+  });
+
+  document.querySelector('#clearResponses').addEventListener('click', () => {
+    if (confirm('Clear all audit responses? This cannot be undone.')) {
+      state.responses = {};
+      renderDomain();
+      updateAll();
+    }
+  });
+
+  document.querySelector('#newAudit').addEventListener('click', () => {
+    if (confirm('Start a new audit and clear all entered information?')) {
+      document.querySelector('#auditForm').reset();
+      state.step = 1;
+      state.tray = '';
+      state.activeDomain = 0;
+      state.customRows = [];
+      state.responses = {};
+      state.auditStarted = false;
+      state.completedSteps = new Set();
+      checklistHost.innerHTML = '';
+      init();
+    }
+  });
+
+  document.querySelector('#printReport').addEventListener('click', () => {
+    document.body.dataset.printMode = 'report';
+    window.print();
+  });
+
+  document.querySelector('#printDeficiencies').addEventListener('click', () => {
+    document.body.dataset.printMode = 'deficiencies';
+    window.print();
+  });
+
+  document.querySelector('[name="customTrayName"]').addEventListener('input', renderDeficiencies);
+
+  document.querySelector('#continueSetup').addEventListener('click', () => {
+    if (!state.tray) {
+      validationMessage.textContent = 'Select a tray type before continuing.';
+      return;
+    }
+    state.completedSteps.add(1);
+    showStep(2);
+  });
+
+  document.querySelector('#startAudit').addEventListener('click', startAudit);
+
+  document.querySelectorAll('[data-go-step]').forEach((button) => {
+    button.addEventListener('click', () => showStep(Number(button.dataset.goStep)));
+  });
+
+  document.querySelector('#previousDomain').addEventListener('click', () => {
+    if (state.activeDomain > 0) {
+      state.activeDomain -= 1;
+      renderDomain();
+      updateAll();
+      showStep(3);
+    }
+  });
+
+  document.querySelector('#nextDomain').addEventListener('click', () => {
+    if (!domainComplete(state.activeDomain)) {
+      validationMessage.textContent = 'Assess every criterion in this section before moving forward. Use Not applicable when appropriate.';
+      return;
+    }
+    state.activeDomain += 1;
+    renderDomain();
+    updateAll();
+    showStep(3);
+  });
+
+  document.querySelector('#showOutcome').addEventListener('click', () => {
+    if (!domainComplete(state.activeDomain)) {
+      validationMessage.textContent = 'Assess every criterion in this section before reviewing the outcome.';
+      return;
+    }
+    if (!allCriteriaResolved()) return;
+    state.completedSteps.add(3);
+    updateAll();
+    showStep(4);
+  });
+
+  document.querySelector('#domainNav').addEventListener('click', (event) => {
+    const button = event.target.closest('[data-domain-index]');
+    if (!button || button.disabled) return;
+    state.activeDomain = Number(button.dataset.domainIndex);
+    renderDomain();
+    updateAll();
+    showStep(3);
+  });
+
+  document.querySelector('#auditForm').addEventListener('input', renderSummaries);
+
+  function init() {
+    renderTrayCards();
+    renderSummaries();
+    renderDomainNav();
+    showStep(1);
+  }
+
+  init();
+</script>
+
+<style is:global>
+  .audit-page {
+    background: #f7f9fb;
+    color: #24313a;
+  }
+
+  .audit-container {
+    width: min(100% - 40px, 1180px);
+    margin-inline: auto;
+  }
+
+  .audit-stack {
+    display: grid;
+    gap: 24px;
+    padding: 34px 0 64px;
+  }
+
+  .audit-stack > * {
+    min-width: 0;
+  }
+
+  .step-progress {
+    border: 1px solid #d6e2e9;
+    border-radius: 16px;
+    background: #fff;
+    padding: 14px;
+    box-shadow: 0 12px 28px rgba(18, 59, 93, 0.06);
+  }
+
+  .step-progress ol {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .step-progress li {
+    display: flex;
+    min-height: 48px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 12px;
+    color: #60717d;
+    font-weight: 800;
+    padding: 8px 12px;
+  }
+
+  .step-progress li span {
+    display: grid;
+    width: 30px;
+    height: 30px;
+    flex: 0 0 auto;
+    place-items: center;
+    border: 1px solid #cbd9e2;
+    border-radius: 999px;
+    color: #123b5d;
+    font-size: 0.9rem;
+  }
+
+  .step-progress li.is-active {
+    background: #eef5f8;
+    color: #123b5d;
+  }
+
+  .step-progress li.is-complete span {
+    border-color: #2e7d68;
+    background: #2e7d68;
+    color: #fff;
+  }
+
+  .step-status,
+  .validation-message {
+    margin: 0;
+    font-weight: 800;
+  }
+
+  .step-status {
+    color: #123b5d;
+  }
+
+  .validation-message {
+    min-height: 1.6em;
+    color: #8a2e25;
+  }
+
+  .step-panel {
+    display: none;
+  }
+
+  .step-panel.is-active {
+    display: block;
+  }
+
+  .selected-tray-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+    margin-bottom: 24px;
+    border: 1px solid rgba(46, 125, 104, 0.24);
+    border-radius: 12px;
+    background: #f5fbf8;
+    padding: 16px 18px;
+  }
+
+  .selected-tray-banner span {
+    color: #60717d;
+    font-size: 0.88rem;
+    font-weight: 800;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  .selected-tray-banner strong {
+    color: #123b5d;
+    font-size: 1.08rem;
+  }
+
+  .required-marker {
+    color: #2e7d68;
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  input.has-error {
+    border-color: #b44437;
+    box-shadow: 0 0 0 3px rgba(180, 68, 55, 0.12);
+  }
+
+  .step-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 24px;
+  }
+
+  .audit-workspace.is-active {
+    display: grid;
+    grid-template-columns: 280px minmax(0, 1fr);
+    align-items: start;
+    gap: 24px;
+  }
+
+  .audit-sidebar {
+    position: sticky;
+    top: 22px;
+    display: grid;
+    gap: 16px;
+  }
+
+  .compact-summary {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .compact-summary div {
+    border: 1px solid #d6e2e9;
+    border-radius: 12px;
+    background: #fff;
+    padding: 14px;
+    box-shadow: 0 10px 22px rgba(18, 59, 93, 0.05);
+  }
+
+  .compact-summary span,
+  .metric-card span {
+    color: #60717d;
+    font-size: 0.9rem;
+  }
+
+  .compact-summary strong {
+    display: block;
+    margin-top: 4px;
+    color: #123b5d;
+    font-size: 1.45rem;
+  }
+
+  .domain-nav {
+    display: grid;
+    gap: 8px;
+  }
+
+  .domain-nav button {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    gap: 10px;
+    border: 1px solid #d6e2e9;
+    border-radius: 12px;
+    background: #fff;
+    color: #123b5d;
+    padding: 12px;
+    text-align: left;
+    font: inherit;
+    font-weight: 800;
+  }
+
+  .domain-nav button span {
+    display: grid;
+    width: 30px;
+    height: 30px;
+    place-items: center;
+    border-radius: 999px;
+    background: #eef5f8;
+    color: #2b6f9f;
+  }
+
+  .domain-nav button small {
+    grid-column: 2;
+    color: #60717d;
+    font-size: 0.78rem;
+    font-weight: 700;
+  }
+
+  .domain-nav button.is-active {
+    border-color: #2b6f9f;
+    box-shadow: 0 10px 22px rgba(18, 59, 93, 0.08);
+  }
+
+  .domain-nav button.is-complete span {
+    background: #2e7d68;
+    color: #fff;
+  }
+
+  .domain-nav button:disabled {
+    cursor: not-allowed;
+    opacity: 0.62;
+  }
+
+  .audit-main {
+    display: grid;
+    gap: 24px;
+    min-width: 0;
+  }
+
+  .audit-context {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 24px;
+  }
+
+  .audit-info-summary,
+  .outcome-meta {
+    display: grid;
+    gap: 12px;
+  }
+
+  .audit-info-summary {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    min-width: min(100%, 620px);
+  }
+
+  .audit-info-summary div {
+    border-left: 3px solid #2e7d68;
+    padding-left: 10px;
+  }
+
+  .audit-info-summary dt {
+    color: #60717d;
+    font-size: 0.78rem;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+
+  .audit-info-summary dd {
+    margin: 2px 0 0;
+    color: #123b5d;
+    font-weight: 800;
+  }
+
+  .domain-completion {
+    align-self: start;
+    border-radius: 999px;
+    background: #eef5f8;
+    color: #123b5d;
+    font-weight: 800;
+    padding: 8px 12px;
+  }
+
+  .outcome-overview {
+    display: grid;
+    grid-template-columns: 1.45fr repeat(2, minmax(0, 1fr));
+    gap: 16px;
+    margin-bottom: 22px;
+  }
+
+  .outcome-meta {
+    grid-template-columns: 260px 1fr;
+    margin: 22px 0;
+    border: 1px solid #d6e2e9;
+    border-radius: 14px;
+    background: #f8fbfd;
+    padding: 18px;
+  }
+
+  .audit-hero {
+    padding: 34px 0 44px;
+    border-bottom: 1px solid #dbe4ea;
+    background: linear-gradient(135deg, #eef5f8 0%, #f7f9fb 70%);
+  }
+
+  .audit-brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 36px;
+    color: #123b5d;
+    font-size: 1.25rem;
+    font-weight: 750;
+  }
+
+  .audit-brand__mark {
+    display: grid;
+    width: 42px;
+    height: 42px;
+    place-items: center;
+    border-radius: 8px;
+    background: #123b5d;
+    color: #fff;
+    font-size: 0.78rem;
+    font-weight: 800;
+  }
+
+  .audit-eyebrow {
+    margin: 0 0 10px;
+    color: #2e7d68;
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .audit-hero h1,
+  .audit-page h2,
+  .audit-page h3,
+  .section-title h2 {
+    margin: 0;
+    color: #123b5d;
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    line-height: 1.08;
+  }
+
+  .audit-hero h1 {
+    max-width: 780px;
+    font-size: clamp(2.5rem, 4vw, 3rem);
+  }
+
+  .audit-lede {
+    max-width: 760px;
+    margin: 20px 0 22px;
+    color: #40515d;
+    font-size: 1.18rem;
+  }
+
+  .clinical-notice {
+    max-width: 930px;
+    border-left: 4px solid #2e7d68;
+    border-radius: 12px;
+    background: #fff;
+    padding: 18px 20px;
+    box-shadow: 0 12px 28px rgba(18, 59, 93, 0.07);
+  }
+
+  .audit-card,
+  .score-card,
+  .metric-card {
+    border: 1px solid #d6e2e9;
+    border-radius: 14px;
+    background: #fff;
+    box-shadow: 0 12px 28px rgba(18, 59, 93, 0.07);
+  }
+
+  .audit-card {
+    padding: 28px;
+  }
+
+  .section-title {
+    max-width: 790px;
+    margin-bottom: 22px;
+  }
+
+  .section-title h2 {
+    font-size: clamp(1.75rem, 2.6vw, 2rem);
+  }
+
+  .audit-page h2 {
+    font-size: clamp(1.75rem, 2.6vw, 2rem);
+    font-weight: 800;
+    line-height: 1.12;
+  }
+
+  .audit-page h3 {
+    font-weight: 800;
+    line-height: 1.2;
+  }
+
+  .section-title p:last-child {
+    color: #60717d;
+  }
+
+  .section-title--row {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 24px;
+    max-width: none;
+  }
+
+  label,
+  .sort-label {
+    display: grid;
+    gap: 8px;
+    color: #123b5d;
+    font-weight: 700;
+  }
+
+  input,
+  textarea,
+  select {
+    width: 100%;
+    min-height: 44px;
+    border: 1px solid #cbd9e2;
+    border-radius: 8px;
+    background: #fff;
+    color: #24313a;
+    font: inherit;
+    padding: 10px 12px;
+  }
+
+  textarea {
+    resize: vertical;
+  }
+
+  input:focus,
+  textarea:focus,
+  select:focus,
+  button:focus-visible,
+  .tray-card:focus-within,
+  .status-pill:focus-within {
+    outline: 3px solid rgba(46, 125, 104, 0.34);
+    outline-offset: 3px;
+    border-color: #2e7d68;
+  }
+
+  .setup-grid,
+  .custom-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+  .setup-grid__wide {
+    grid-column: 1 / -1;
+  }
+
+  .tray-fieldset,
+  .status-group,
+  .domain-group {
+    min-width: 0;
+    margin: 0;
+    border: 0;
+    padding: 0;
+  }
+
+  .tray-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  .tray-card {
+    position: relative;
+    min-height: 170px;
+    border: 1px solid #d6e2e9;
+    border-radius: 14px;
+    background: #fff;
+    padding: 20px;
+    cursor: pointer;
+    transition: border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
+  }
+
+  .tray-card:hover,
+  .tray-card.is-selected {
+    border-color: #2b6f9f;
+    box-shadow: 0 14px 30px rgba(18, 59, 93, 0.12);
+    transform: translateY(-2px);
+  }
+
+  .tray-card input {
+    position: absolute;
+    inset: 14px 14px auto auto;
+    width: 18px;
+    height: 18px;
+    min-height: 18px;
+  }
+
+  .tray-card__icon {
+    display: grid;
+    width: 52px;
+    height: 52px;
+    place-items: center;
+    border: 1px solid rgba(43, 111, 159, 0.18);
+    border-radius: 12px;
+    background: #f8fbfd;
+    color: #2b6f9f;
+  }
+
+  .tray-card__icon svg,
+  .workflow-icon svg {
+    width: 28px;
+    height: 28px;
+    fill: none;
+    stroke: currentColor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 1.8;
+  }
+
+  .tray-card__title {
+    display: block;
+    margin-top: 16px;
+    color: #123b5d;
+    font-weight: 800;
+  }
+
+  .tray-card__text {
+    display: block;
+    margin-top: 8px;
+    color: #60717d;
+    font-size: 0.94rem;
+    line-height: 1.45;
+  }
+
+  .custom-tray {
+    display: none;
+    margin-top: 18px;
+  }
+
+  .custom-tray.is-visible {
+    display: grid;
+  }
+
+  .summary-grid {
+    display: grid;
+    grid-template-columns: 2fr repeat(3, 1fr);
+    gap: 16px;
+  }
+
+  .score-card,
+  .metric-card {
+    padding: 20px;
+  }
+
+  .score-card {
+    grid-row: span 2;
+  }
+
+  .score-card strong {
+    display: block;
+    color: #123b5d;
+    font-size: 3.2rem;
+    line-height: 1;
+  }
+
+  .score-card span,
+  .metric-card span {
+    display: block;
+    color: #60717d;
+  }
+
+  .score-card small {
+    display: block;
+    margin-top: 14px;
+    color: #60717d;
+  }
+
+  .metric-card strong {
+    display: block;
+    margin-top: 8px;
+    color: #123b5d;
+    font-size: 2rem;
+  }
+
+  .custom-grid {
+    grid-template-columns: 1fr 1.3fr 1fr auto;
+    align-items: end;
+  }
+
+  .checklist-host {
+    display: grid;
+    gap: 24px;
+  }
+
+  .domain-group {
+    display: grid;
+    gap: 14px;
+  }
+
+  .domain-group legend {
+    margin-bottom: 12px;
+    color: #123b5d;
+    font-size: 1.18rem;
+    font-weight: 850;
+  }
+
+  .audit-row {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: start;
+    gap: 20px;
+    border: 1px solid #dbe4ea;
+    border-radius: 12px;
+    background: #f8fbfd;
+    padding: 20px;
+  }
+
+  .audit-row__main h3 {
+    margin: 0;
+    color: #123b5d;
+    font-size: 1.02rem;
+  }
+
+  .standard {
+    margin: 8px 0 0;
+    color: #60717d;
+    font-size: 0.93rem;
+  }
+
+  .delete-row {
+    min-height: 44px;
+    margin-top: 12px;
+    border: 1px solid #cbd9e2;
+    border-radius: 8px;
+    background: #fff;
+    color: #123b5d;
+    font-weight: 800;
+  }
+
+  .status-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-end;
+    min-width: min(100%, 520px);
+  }
+
+  .status-group legend {
+    width: 100%;
+    color: #123b5d;
+    font-weight: 800;
+  }
+
+  .status-pill {
+    display: inline-flex;
+    min-height: 44px;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid #cbd9e2;
+    border-radius: 999px;
+    background: #fff;
+    padding: 0 14px;
+    cursor: pointer;
+  }
+
+  .status-pill input {
+    width: 16px;
+    min-height: 16px;
+  }
+
+  .table-wrap {
+    overflow-x: auto;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 680px;
+  }
+
+  th,
+  td {
+    border-bottom: 1px solid #dbe4ea;
+    padding: 12px;
+    text-align: left;
+    vertical-align: top;
+  }
+
+  th {
+    color: #123b5d;
+    font-size: 0.82rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  .action-bar {
+    position: static;
+    z-index: 4;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    border: 1px solid #d6e2e9;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.94);
+    padding: 14px;
+    box-shadow: 0 -12px 28px rgba(18, 59, 93, 0.08);
+    backdrop-filter: blur(10px);
+  }
+
+  .print-signatures {
+    display: none;
+  }
+
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+  }
+
+  @media (max-width: 980px) {
+    .setup-grid,
+    .tray-grid,
+    .summary-grid,
+    .custom-grid,
+    .audit-row {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .score-card {
+      grid-column: 1 / -1;
+    }
+
+    .step-progress ol,
+    .audit-workspace.is-active,
+    .outcome-overview,
+    .outcome-meta {
+      grid-template-columns: 1fr;
+    }
+
+    .audit-sidebar {
+      position: static;
+    }
+
+    .audit-context {
+      display: grid;
+    }
+
+    .audit-info-summary {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      min-width: 0;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .audit-container {
+      width: min(100% - 28px, 1180px);
+    }
+
+    .audit-card {
+      padding: 22px;
+    }
+
+    .setup-grid,
+    .tray-grid,
+    .summary-grid,
+    .custom-grid,
+    .compact-summary,
+    .audit-info-summary,
+    .audit-row {
+      grid-template-columns: 1fr;
+    }
+
+    .status-group {
+      justify-content: flex-start;
+      min-width: 0;
+    }
+
+    .audit-hero h1 {
+      font-size: 2.6rem;
+    }
+
+    .step-progress ol {
+      gap: 6px;
+    }
+
+    .step-progress li {
+      min-height: 42px;
+      font-size: 0.92rem;
+    }
+
+    .selected-tray-banner,
+    .section-title--row {
+      align-items: stretch;
+      flex-direction: column;
+    }
+
+    .custom-grid .button,
+    .action-bar .button {
+      width: 100%;
+    }
+  }
+
+  @media print {
+    @page {
+      margin: 0.55in;
+    }
+
+    body {
+      background: #fff;
+      color: #000;
+    }
+
+    .site-header,
+    .site-footer,
+    .action-bar,
+    .tray-grid input,
+    .delete-row,
+    .custom-builder,
+    .tray-card:not(.is-selected),
+    body[data-print-mode="deficiencies"] .checklist-card {
+      display: none !important;
+    }
+
+    .audit-hero,
+    .audit-stack {
+      padding: 0;
+    }
+
+    .audit-card,
+    .score-card,
+    .metric-card,
+    .clinical-notice {
+      break-inside: avoid;
+      box-shadow: none;
+    }
+
+    .summary-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .score-card {
+      grid-column: 1 / -1;
+      grid-row: auto;
+    }
+
+    .setup-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .print-signatures {
+      display: block;
+      margin-top: 22px;
+      font-size: 12pt;
+    }
+
+    .print-disclaimer {
+      margin-top: 18px;
+    }
+
+    table {
+      min-width: 0;
+      font-size: 9pt;
+    }
+  }
+</style>

@@ -1,0 +1,16 @@
+---
+interface Props {
+  label: string;
+  title: string;
+  text: string;
+}
+
+const { label, title, text } = Astro.props;
+---
+
+<article class="article-card">
+  <p class="eyebrow">{label}</p>
+  <h3>{title}</h3>
+  <p>{text}</p>
+  <a href="#" aria-label={`Read more about ${title}`}>Read more</a>
+</article>

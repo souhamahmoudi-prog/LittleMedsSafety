@@ -1,0 +1,95 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import TopicCard from '../../components/TopicCard.astro';
+
+const topics = [
+  {
+    title: 'Introduction to Medication Safety',
+    description:
+      'Foundational concepts, pediatric risks, high-alert medications, and systems-based error prevention.',
+    href: '/topics/introduction-to-medication-safety',
+    icon: 'intro',
+  },
+  {
+    title: 'Medication Safety Culture',
+    description:
+      'Just Culture, psychological safety, reporting, leadership, communication, and organizational learning.',
+    href: '/topics/medication-safety-culture',
+    icon: 'culture',
+  },
+  {
+    title: 'Quality Improvement Tools',
+    description:
+      'RCA, FMEA, process mapping, Five Whys, Pareto analysis, PDSA cycles, and audit methods.',
+    href: '/topics/quality-improvement',
+    icon: 'quality',
+  },
+  {
+    title: 'Human Factors Engineering',
+    description:
+      'Workflow design, cognitive load, usability, standardization, interruptions, labeling, and alert fatigue.',
+    href: '/topics/human-factors-engineering',
+    icon: 'human',
+  },
+] as const;
+---
+
+<BaseLayout
+  title="Pediatric Medication Safety Topics | LittleMeds Safety"
+  description="Foundational and practical topics to support safer medication-use systems for children."
+>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="/" aria-label="LittleMeds Safety home">
+        <span class="logo-mark" aria-hidden="true">LMS</span>
+        <span>LittleMeds Safety</span>
+      </a>
+      <div class="header-links">
+        <nav class="primary-nav" aria-label="Primary navigation">
+          <a href="/topics">Topics</a>
+          <a href="/#tools">Tools</a>
+          <a href="/#resources">Resources</a>
+          <a href="/#about">About</a>
+        </nav>
+        <a class="search-link" href="/#resources">Search</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="topic-hero">
+      <div class="container">
+        <p class="eyebrow">Topics</p>
+        <h1>Pediatric Medication Safety Topics</h1>
+        <p>
+          Foundational and practical topics to support safer medication-use
+          systems for children.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container topic-grid">
+        {topics.map((topic) => <TopicCard {...topic} />)}
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <a class="logo" href="/" aria-label="LittleMeds Safety home">
+          <span class="logo-mark" aria-hidden="true">LMS</span>
+          <span>LittleMeds Safety</span>
+        </a>
+        <p>Pediatric medication safety resources for clinical teams.</p>
+      </div>
+      <nav aria-label="Footer navigation">
+        <a href="/topics">Topics</a>
+        <a href="/#tools">Tools</a>
+        <a href="/#resources">Resources</a>
+        <a href="/#about">About</a>
+      </nav>
+    </div>
+  </footer>
+</BaseLayout>

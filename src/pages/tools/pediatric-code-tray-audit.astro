@@ -125,7 +125,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
               <div><span>Assessed</span><strong id="assessedCount">0</strong></div>
               <div><span>Compliant</span><strong id="compliantCount">0</strong></div>
               <div><span>Deficient</span><strong id="deficientCount">0</strong></div>
-              <div><span>Not assessed</span><strong id="notAssessedCount">0</strong></div>
+              <div><span>Incomplete criteria</span><strong id="incompleteCount">0</strong></div>
             </div>
             <div class="domain-nav" id="domainNav"></div>
           </aside>
@@ -203,8 +203,8 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
                 <strong id="outcomeDeficientCount">0</strong>
               </div>
               <div class="metric-card">
-                <span>Incomplete or not assessed</span>
-                <strong id="outcomeNotAssessedCount">0</strong>
+                <span>Incomplete criteria</span>
+                <strong id="outcomeIncompleteCount">0</strong>
               </div>
             </div>
             <div class="outcome-meta">
@@ -276,7 +276,6 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
         'Correct quantity',
         'Expiration date acceptable',
         'Packaging intact',
-        'No unauthorized substitutions',
         'Look-alike or sound-alike risks addressed',
         'High-alert medications clearly identified',
         'Storage conditions appropriate',
@@ -304,7 +303,6 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
         'Labels for prepared syringes available',
         'Administration tubing or connectors available',
         'Supplies appropriate for pediatric sizes',
-        'Intraosseous access supplies available when applicable',
       ],
     },
     {
@@ -367,7 +365,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     completedSteps: new Set(),
   };
 
-  const statuses = ['Compliant', 'Deficient', 'Not applicable', 'Not assessed'];
+  const statuses = ['Compliant', 'Deficient', 'Not applicable'];
   const requiredSetupFields = ['facility', 'unit', 'auditor', 'auditDate', 'trayId', 'location'];
   const domainLabels = {
     'Governance and standardization': 'Governance and Standardization',
@@ -446,8 +444,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
   function ensureResponse(id) {
     state.responses[id] ||= {
-      status: 'Not assessed',
-      touched: false,
+      status: '',
     };
     return state.responses[id];
   }
@@ -518,8 +515,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       const response = ensureResponse(itemId(row.domain, row.criterion));
       return response.status === 'Compliant'
         || response.status === 'Deficient'
-        || response.status === 'Not applicable'
-        || (response.status === 'Not assessed' && response.touched);
+        || response.status === 'Not applicable';
     }).length;
   }
 
@@ -529,25 +525,21 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     let assessed = 0;
     let compliant = 0;
     let deficient = 0;
-    let notAssessed = 0;
+    let incomplete = 0;
 
     rows.forEach((row) => {
       const response = ensureResponse(itemId(row.domain, row.criterion));
-      if (response.status !== 'Not applicable') applicable += 1;
-      if (
-        response.status === 'Compliant'
-        || response.status === 'Deficient'
-        || response.status === 'Not applicable'
-        || (response.status === 'Not assessed' && response.touched)
-      ) assessed += 1;
+      if (!response.status) incomplete += 1;
+      if (response.status === 'Compliant' || response.status === 'Deficient') applicable += 1;
+      if (response.status === 'Compliant' || response.status === 'Deficient' || response.status === 'Not applicable') assessed += 1;
       if (response.status === 'Compliant') compliant += 1;
       if (response.status === 'Deficient') deficient += 1;
-      if (response.status === 'Not assessed') notAssessed += 1;
     });
 
-    const score = applicable ? Math.round((compliant / applicable) * 100) : 0;
+    const denominator = compliant + deficient;
+    const score = denominator ? Math.round((compliant / denominator) * 100) : 0;
     let label = 'Incomplete audit';
-    if (!assessed || notAssessed > 0) label = 'Incomplete audit';
+    if (incomplete > 0) label = 'Incomplete audit';
     else if (score >= 95) label = 'Ready';
     else if (score >= 85) label = 'Improvement needed';
     else label = 'Action required';
@@ -558,11 +550,11 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     setText('#assessedCount', assessed);
     setText('#compliantCount', compliant);
     setText('#deficientCount', deficient);
-    setText('#notAssessedCount', notAssessed);
+    setText('#incompleteCount', incomplete);
     setText('#outcomeCompliantCount', compliant);
     setText('#outcomeDeficientCount', deficient);
-    setText('#outcomeNotAssessedCount', notAssessed);
-    return { applicable, assessed, compliant, deficient, notAssessed, score, label };
+    setText('#outcomeIncompleteCount', incomplete);
+    return { applicable, assessed, compliant, deficient, incomplete, score, label };
   }
 
   function setText(selector, value) {
@@ -636,8 +628,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       const response = ensureResponse(itemId(row.domain, row.criterion));
       return response.status === 'Compliant'
         || response.status === 'Deficient'
-        || response.status === 'Not applicable'
-        || (response.status === 'Not assessed' && response.touched);
+        || response.status === 'Not applicable';
     });
   }
 
@@ -648,8 +639,9 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       const complete = domainComplete(index);
       const active = index === state.activeDomain;
       const disabled = index > state.activeDomain && !getDomainGroups().slice(0, index).every((_, priorIndex) => domainComplete(priorIndex));
+      const incomplete = group.items.length - countAssessed(group.items);
       return `<button type="button" data-domain-index="${index}" class="${active ? 'is-active' : ''} ${complete ? 'is-complete' : ''}" ${disabled ? 'disabled' : ''}>
-        <span>${index + 1}</span>${escapeHtml(group.name)} <small>${complete ? 'Complete' : `${countAssessed(group.items)} of ${group.items.length}`}</small>
+        <span>${index + 1}</span>${escapeHtml(group.name)} <small>${complete ? 'Complete' : `${incomplete} incomplete`}</small>
       </button>`;
     }).join('');
   }
@@ -702,7 +694,6 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     const response = ensureResponse(row.dataset.id);
     if (event.target.name?.startsWith('status-')) {
       response.status = event.target.value;
-      response.touched = true;
     }
     renderDomain();
     updateAll();

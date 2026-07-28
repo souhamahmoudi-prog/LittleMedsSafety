@@ -1,0 +1,1827 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import {
+  medicationOptions,
+  medicationSpecificModules,
+  standardDomains,
+} from '../../data/highAlertMedicationReview';
+---
+
+<BaseLayout
+  title="Pediatric High-Alert Medication Review | LittleMeds Safety"
+  description="Review system safeguards for pediatric high-alert medications across prescribing, verification, preparation, administration, monitoring, technology, and organizational learning."
+>
+  <main class="high-alert-page">
+    <section class="review-hero">
+      <div class="review-container">
+        <a class="review-brand" href="/" aria-label="LittleMeds Safety home">
+          <span class="review-brand__mark" aria-hidden="true">LMS</span>
+          <span>LittleMeds Safety</span>
+        </a>
+        <p class="review-eyebrow">Interactive Safety Tool</p>
+        <h1>Pediatric High-Alert Medication Review</h1>
+        <p class="review-lede">
+          Evaluate whether pediatric high-alert medications are supported by
+          reliable safeguards across prescribing, verification, preparation,
+          dispensing, administration, monitoring, and emergency response.
+        </p>
+        <div class="clinical-notice">
+          <strong>Professional notice:</strong>
+          Use your organization's approved high-alert medication list,
+          formulary, clinical protocols, standard concentrations, smart-pump
+          library, and monitoring requirements. This tool does not establish
+          required medications, concentrations, doses, or clinical treatment
+          standards.
+        </div>
+      </div>
+    </section>
+
+    <form class="review-form" id="reviewForm" novalidate>
+      <div class="review-container review-stack">
+        <nav class="step-progress" aria-label="Review progress">
+          <ol>
+            <li class="is-active" data-progress-step="1"><span>1</span> Medication</li>
+            <li data-progress-step="2"><span>2</span> Setup</li>
+            <li data-progress-step="3"><span>3</span> Assessment</li>
+            <li data-progress-step="4"><span>4</span> Outcome</li>
+          </ol>
+        </nav>
+        <p class="step-status" id="stepStatus" aria-live="polite">Step 1 of 4: select a medication or class.</p>
+        <p class="validation-message" id="validationMessage" aria-live="polite"></p>
+
+        <section class="review-card step-panel is-active" data-step-panel="1" aria-labelledby="medicationTitle">
+          <div class="section-title">
+            <p class="review-eyebrow">Medication</p>
+            <h2 id="medicationTitle">Select medication or medication class</h2>
+            <p>
+              Choose one institution-defined pediatric high-alert medication or
+              class to review. This list is not exhaustive.
+            </p>
+          </div>
+          <fieldset class="medication-fieldset">
+            <legend class="sr-only">Medication or medication class selector</legend>
+            <div class="medication-grid" id="medicationGrid"></div>
+          </fieldset>
+          <div class="other-medication" id="otherMedicationFields">
+            <label>
+              Medication or class name
+              <input name="otherMedicationName" type="text" autocomplete="off" />
+            </label>
+            <label>
+              Optional description
+              <textarea name="otherMedicationDescription" rows="3"></textarea>
+            </label>
+          </div>
+          <div class="step-actions">
+            <a class="button button-secondary" href="/tools/pediatric-high-alert-medication-review/printable">Print Blank Review Form</a>
+            <button class="button button-primary" type="button" id="continueSetup" disabled>Continue to review setup</button>
+          </div>
+        </section>
+
+        <section class="review-card step-panel setup-card" data-step-panel="2" aria-labelledby="setupTitle">
+          <div class="selected-banner">
+            <span>Selected medication or class</span>
+            <strong id="setupMedicationName">Not selected</strong>
+          </div>
+          <div class="section-title">
+            <p class="review-eyebrow">Review Setup</p>
+            <h2 id="setupTitle">Review information</h2>
+            <p>No patient information should be entered in this tool. Required fields are marked.</p>
+          </div>
+          <div class="setup-grid">
+            <label>
+              Facility or organization
+              <input name="facility" type="text" autocomplete="organization" />
+            </label>
+            <label>
+              Department or unit <span class="required-marker">Required</span>
+              <input name="department" type="text" required />
+            </label>
+            <label>
+              Reviewer <span class="required-marker">Required</span>
+              <input name="reviewer" type="text" autocomplete="name" required />
+            </label>
+            <label>
+              Review date <span class="required-marker">Required</span>
+              <input name="reviewDate" type="date" required />
+            </label>
+            <label>
+              Medication or medication class <span class="required-marker">Required</span>
+              <input name="medicationClass" type="text" required />
+            </label>
+            <label>
+              Population or care area
+              <input name="population" type="text" />
+            </label>
+            <label>
+              Relevant policy name
+              <input name="policyName" type="text" />
+            </label>
+            <label>
+              Policy version or revision date
+              <input name="policyVersion" type="text" />
+            </label>
+            <label>
+              Standard concentration reference
+              <input name="concentrationReference" type="text" />
+            </label>
+            <label>
+              Smart-pump library version, when applicable
+              <input name="pumpLibraryVersion" type="text" />
+            </label>
+            <label>
+              Previous review date
+              <input name="previousReviewDate" type="date" />
+            </label>
+            <label class="setup-grid__wide">
+              General notes
+              <textarea name="notes" rows="3"></textarea>
+            </label>
+          </div>
+          <div class="step-actions">
+            <button class="button button-secondary" type="button" data-go-step="1">Back to medication selection</button>
+            <button class="button button-primary" type="button" id="beginAssessment">Begin safeguard assessment</button>
+          </div>
+        </section>
+
+        <section class="step-panel assessment-workspace" data-step-panel="3" aria-labelledby="assessmentTitle">
+          <aside class="assessment-sidebar" aria-label="Assessment progress">
+            <div class="selected-banner">
+              <span>Selected medication or class</span>
+              <strong id="assessmentMedicationName">Not selected</strong>
+            </div>
+            <div class="compact-summary" aria-live="polite">
+              <div><span>Total criteria</span><strong id="totalCount">0</strong></div>
+              <div><span>Completed</span><strong id="completedCount">0</strong></div>
+              <div><span>Compliant</span><strong id="compliantCount">0</strong></div>
+              <div><span>Deficient</span><strong id="deficientCount">0</strong></div>
+              <div><span>Not applicable</span><strong id="notApplicableCount">0</strong></div>
+              <div><span>Incomplete</span><strong id="incompleteCount">0</strong></div>
+            </div>
+            <div class="domain-nav" id="domainNav"></div>
+          </aside>
+
+          <div class="assessment-main">
+            <section class="review-card assessment-context" aria-label="Review context">
+              <div>
+                <p class="review-eyebrow">Safeguard Assessment</p>
+                <h2 id="assessmentTitle">Assess one domain at a time</h2>
+              </div>
+              <dl id="assessmentInfoSummary" class="review-info-summary"></dl>
+            </section>
+
+            <section class="review-card checklist-card">
+              <div class="section-title section-title--row">
+                <div>
+                  <p class="review-eyebrow" id="domainProgress"></p>
+                  <h2 id="activeDomainTitle">Governance and Ownership</h2>
+                </div>
+                <span class="domain-completion" id="domainCompletion">0 of 0 complete</span>
+              </div>
+              <div id="criteriaHost" class="criteria-host"></div>
+
+              <section class="custom-builder" aria-labelledby="customCriteriaTitle">
+                <div class="section-title">
+                  <p class="review-eyebrow">Custom Criteria</p>
+                  <h3 id="customCriteriaTitle">Add local safeguards to this assessment</h3>
+                  <p>Assign institution-specific criteria to any assessment domain.</p>
+                </div>
+                <div class="custom-grid">
+                  <label>
+                    Domain
+                    <select id="customDomain"></select>
+                  </label>
+                  <label>
+                    Criterion
+                    <input id="customCriterion" type="text" />
+                  </label>
+                  <button class="button button-secondary" type="button" id="addCustomCriterion">Add criterion</button>
+                </div>
+              </section>
+
+              <div class="step-actions">
+                <button class="button button-secondary" type="button" data-go-step="2">Back to review setup</button>
+                <button class="button button-secondary" type="button" id="previousDomain">Previous section</button>
+                <button class="button button-primary" type="button" id="nextDomain">Next section</button>
+              </div>
+            </section>
+          </div>
+        </section>
+
+        <section class="step-panel outcome-panel" data-step-panel="4" aria-labelledby="outcomeTitle">
+          <section class="review-card">
+            <div class="section-title section-title--row">
+              <div>
+                <p class="review-eyebrow">Outcome</p>
+                <h2 id="outcomeTitle">Outcome and action summary</h2>
+              </div>
+            </div>
+            <div class="outcome-overview">
+              <div class="score-card" aria-live="polite">
+                <p class="review-eyebrow">Readiness Percentage</p>
+                <strong id="readinessScore">0%</strong>
+                <span id="readinessLabel">Incomplete assessment</span>
+              </div>
+              <div class="metric-card">
+                <span>Total applicable criteria</span>
+                <strong id="outcomeApplicableCount">0</strong>
+              </div>
+              <div class="metric-card">
+                <span>Compliant</span>
+                <strong id="outcomeCompliantCount">0</strong>
+              </div>
+              <div class="metric-card">
+                <span>Deficiencies</span>
+                <strong id="outcomeDeficientCount">0</strong>
+              </div>
+              <div class="metric-card">
+                <span>Not applicable</span>
+                <strong id="outcomeNotApplicableCount">0</strong>
+              </div>
+              <div class="metric-card">
+                <span>Incomplete criteria</span>
+                <strong id="outcomeIncompleteCount">0</strong>
+              </div>
+            </div>
+            <p class="scoring-note">
+              These thresholds are suggested quality-improvement indicators and
+              may be modified by institutional policy. Not applicable responses
+              are excluded from the readiness denominator.
+            </p>
+            <div class="outcome-meta">
+              <div>
+                <p class="review-eyebrow">Medication or class reviewed</p>
+                <strong id="outcomeMedicationName">Not selected</strong>
+              </div>
+              <dl id="outcomeInfoSummary" class="review-info-summary"></dl>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <caption>Deficiencies grouped by domain</caption>
+                <thead>
+                  <tr>
+                    <th>Domain</th>
+                    <th>Criterion</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody id="deficiencyBody">
+                  <tr>
+                    <td colspan="3">No deficient items documented.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <section class="print-response-summary" id="printResponseSummary" aria-label="Completed assessment responses"></section>
+            <div class="step-actions action-bar" aria-label="Review actions">
+              <button class="button button-secondary" type="button" data-go-step="3">Review responses</button>
+              <button class="button button-primary" type="button" id="printReport">Print Completed Review</button>
+              <button class="button button-primary" type="button" id="printDeficiencies">Print Deficiency Summary</button>
+              <button class="button button-secondary" type="button" id="newReview">Start new review</button>
+              <button class="button button-secondary" type="button" id="clearReview">Clear review</button>
+            </div>
+          </section>
+        </section>
+
+        <section class="print-signatures" aria-label="Print signature lines">
+          <p><strong>Reviewer signature:</strong> ____________________________________</p>
+          <p><strong>Leadership review:</strong> _____________________________________</p>
+          <p><strong>Date:</strong> _________________________________________________</p>
+          <p class="print-disclaimer">
+            Disclaimer: This quality-improvement tool evaluates systems and
+            safeguards, not individual patient treatment. It does not define a
+            universal high-alert medication list, required concentrations,
+            doses, or clinical treatment standards. Version 1.0.
+          </p>
+        </section>
+      </div>
+    </form>
+  </main>
+</BaseLayout>
+
+<script define:vars={{ standardDomains, medicationOptions, medicationSpecificModules }}>
+  const state = {
+    step: 1,
+    medication: '',
+    activeDomain: 0,
+    customCriteria: [],
+    responses: {},
+    assessmentStarted: false,
+    completedSteps: new Set(),
+  };
+
+  const statuses = ['Compliant', 'Deficient', 'Not applicable'];
+  const requiredSetupFields = ['department', 'reviewer', 'reviewDate', 'medicationClass'];
+  const medicationGrid = document.querySelector('#medicationGrid');
+  const otherMedicationFields = document.querySelector('#otherMedicationFields');
+  const criteriaHost = document.querySelector('#criteriaHost');
+  const deficiencyBody = document.querySelector('#deficiencyBody');
+  const validationMessage = document.querySelector('#validationMessage');
+  const stepStatus = document.querySelector('#stepStatus');
+
+  function escapeHtml(value) {
+    return String(value ?? '').replace(/[&<>"']/g, (char) => ({
+      '&': '&amp;',
+      '<': '&lt;',
+      '>': '&gt;',
+      '"': '&quot;',
+      "'": '&#39;',
+    }[char]));
+  }
+
+  function criterionId(domain, criterion, index = '') {
+    return `${domain}:${criterion}:${index}`.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+  }
+
+  function getMedicationName() {
+    if (state.medication === 'other') {
+      return fieldValue('otherMedicationName') || 'Other Institution-Defined High-Alert Medication';
+    }
+    return medicationOptions.find(([key]) => key === state.medication)?.[1] || 'Not selected';
+  }
+
+  function getDomainGroups() {
+    const groups = standardDomains.map((domain) => ({
+      name: domain.name,
+      items: domain.items.map((criterion, index) => ({ domain: domain.name, criterion, index, custom: false })),
+    }));
+    groups.push({
+      name: 'Medication-Specific Safeguards',
+      items: (medicationSpecificModules[state.medication] || []).map((criterion, index) => ({
+        domain: 'Medication-Specific Safeguards',
+        criterion,
+        index,
+        custom: false,
+      })),
+    });
+    state.customCriteria.forEach((row) => {
+      const group = groups.find((item) => item.name === row.domain);
+      if (group) group.items.push(row);
+    });
+    return groups.filter((group) => group.items.length > 0);
+  }
+
+  function getRows() {
+    return getDomainGroups().flatMap((group) => group.items);
+  }
+
+  function clampActiveDomain(groups = getDomainGroups()) {
+    const lastIndex = Math.max(groups.length - 1, 0);
+    state.activeDomain = Math.min(Math.max(state.activeDomain, 0), lastIndex);
+    return state.activeDomain;
+  }
+
+  function ensureResponse(id) {
+    state.responses[id] ||= { status: '' };
+    return state.responses[id];
+  }
+
+  function renderMedicationCards() {
+    medicationGrid.innerHTML = medicationOptions.map(([key, title, description]) => `
+      <label class="medication-card ${state.medication === key ? 'is-selected' : ''}">
+        <input type="radio" name="medicationOption" value="${key}" ${state.medication === key ? 'checked' : ''} />
+        <span class="medication-card__title">${escapeHtml(title)}</span>
+        <span class="medication-card__text">${escapeHtml(description)}</span>
+      </label>
+    `).join('');
+    otherMedicationFields.classList.toggle('is-visible', state.medication === 'other');
+    document.querySelector('#continueSetup').disabled = !state.medication;
+  }
+
+  function statusControls(id, response) {
+    return statuses.map((status) => `
+      <label class="status-pill">
+        <input type="radio" name="status-${id}" value="${status}" ${response.status === status ? 'checked' : ''} />
+        <span>${status}</span>
+      </label>
+    `).join('');
+  }
+
+  function renderDomain() {
+    if (!state.assessmentStarted) {
+      criteriaHost.innerHTML = '';
+      return;
+    }
+    const groups = getDomainGroups();
+    clampActiveDomain(groups);
+    const group = groups[state.activeDomain];
+    const rows = group.items;
+    document.querySelector('#activeDomainTitle').textContent = group.name;
+    document.querySelector('#domainProgress').textContent = `Section ${state.activeDomain + 1} of ${groups.length}`;
+    document.querySelector('#domainCompletion').textContent = `${countCompleted(rows)} of ${rows.length} complete`;
+    criteriaHost.innerHTML = `
+      <fieldset class="domain-group">
+        <legend>${escapeHtml(group.name)}</legend>
+        ${rows.map((row) => {
+          const id = row.id || criterionId(row.domain, row.criterion, row.index);
+          const response = ensureResponse(id);
+          return `
+            <article class="criterion-row" data-id="${id}" data-domain="${escapeHtml(row.domain)}" data-criterion="${escapeHtml(row.criterion)}">
+              <div class="criterion-row__main">
+                <h3>${escapeHtml(row.criterion)}</h3>
+                ${row.custom && row.editing ? `
+                  <div class="custom-edit-panel">
+                    <label>
+                      Edit criterion
+                      <input data-edit-input="${id}" type="text" value="${escapeHtml(row.criterion)}" />
+                    </label>
+                    <div class="custom-row-actions">
+                      <button type="button" class="text-action" data-save="${id}">Save</button>
+                      <button type="button" class="text-action" data-cancel="${id}">Cancel</button>
+                    </div>
+                  </div>
+                ` : ''}
+                ${row.custom && !row.editing ? `
+                  <div class="custom-row-actions">
+                    <button type="button" class="text-action" data-edit="${id}">Edit</button>
+                    <button type="button" class="text-action text-action--danger" data-delete="${id}">Delete</button>
+                  </div>
+                ` : ''}
+              </div>
+              <fieldset class="status-group">
+                <legend>Status</legend>
+                ${statusControls(id, response)}
+              </fieldset>
+            </article>
+          `;
+        }).join('')}
+      </fieldset>
+    `;
+    renderDomainNav();
+    renderCustomDomainOptions();
+    document.querySelector('#previousDomain').disabled = state.activeDomain === 0;
+    document.querySelector('#nextDomain').textContent = state.activeDomain === groups.length - 1
+      ? 'Generate outcome'
+      : 'Next section';
+  }
+
+  function renderCustomDomainOptions() {
+    const select = document.querySelector('#customDomain');
+    const groups = getDomainGroups();
+    clampActiveDomain(groups);
+    select.innerHTML = groups.map((group) => `
+      <option value="${escapeHtml(group.name)}" ${group.name === groups[state.activeDomain]?.name ? 'selected' : ''}>${escapeHtml(group.name)}</option>
+    `).join('');
+  }
+
+  function countCompleted(rows) {
+    return rows.filter((row) => {
+      const response = ensureResponse(row.id || criterionId(row.domain, row.criterion, row.index));
+      return statuses.includes(response.status);
+    }).length;
+  }
+
+  function calculate() {
+    const rows = getRows();
+    let compliant = 0;
+    let deficient = 0;
+    let notApplicable = 0;
+    let incomplete = 0;
+
+    rows.forEach((row) => {
+      const id = row.id || criterionId(row.domain, row.criterion, row.index);
+      const response = ensureResponse(id);
+      if (response.status === 'Compliant') compliant += 1;
+      else if (response.status === 'Deficient') deficient += 1;
+      else if (response.status === 'Not applicable') notApplicable += 1;
+      else incomplete += 1;
+    });
+
+    const total = rows.length;
+    const completed = total - incomplete;
+    const denominator = compliant + deficient;
+    const score = denominator ? Math.round((compliant / denominator) * 100) : null;
+    let label = 'Incomplete assessment';
+    if (incomplete === 0) {
+      if (denominator === 0) label = 'No applicable criteria were assessed';
+      else if (score >= 95) label = 'Safeguards well established';
+      else if (score >= 85) label = 'Improvement opportunities identified';
+      else label = 'Priority system review recommended';
+    }
+
+    setText('#totalCount', total);
+    setText('#completedCount', completed);
+    setText('#compliantCount', compliant);
+    setText('#deficientCount', deficient);
+    setText('#notApplicableCount', notApplicable);
+    setText('#incompleteCount', incomplete);
+    setText('#readinessScore', denominator ? `${score}%` : 'N/A');
+    setText('#readinessLabel', label);
+    setText('#outcomeApplicableCount', denominator);
+    setText('#outcomeCompliantCount', compliant);
+    setText('#outcomeDeficientCount', deficient);
+    setText('#outcomeNotApplicableCount', notApplicable);
+    setText('#outcomeIncompleteCount', incomplete);
+    return { total, completed, compliant, deficient, notApplicable, incomplete, score, label };
+  }
+
+  function setText(selector, value) {
+    const element = document.querySelector(selector);
+    if (element) element.textContent = value;
+  }
+
+  function renderDeficiencies() {
+    const rows = getRows()
+      .map((row) => {
+        const id = row.id || criterionId(row.domain, row.criterion, row.index);
+        return { ...row, id, response: ensureResponse(id) };
+      })
+      .filter((row) => row.response.status === 'Deficient');
+
+    deficiencyBody.innerHTML = rows.length ? rows.map((row) => `
+      <tr>
+        <td>${escapeHtml(row.domain)}</td>
+        <td>${escapeHtml(row.criterion)}</td>
+        <td>${escapeHtml(row.response.status)}</td>
+      </tr>
+    `).join('') : '<tr><td colspan="3">No deficient items documented.</td></tr>';
+  }
+
+  function renderPrintResponses() {
+    const host = document.querySelector('#printResponseSummary');
+    if (!host) return;
+    host.innerHTML = getDomainGroups().map((group) => `
+      <section class="print-response-domain">
+        <h3>${escapeHtml(group.name)}</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Criterion</th>
+              <th>Response</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${group.items.map((row) => {
+              const id = row.id || criterionId(row.domain, row.criterion, row.index);
+              const response = ensureResponse(id);
+              return `
+                <tr>
+                  <td>${escapeHtml(row.criterion)}</td>
+                  <td>${escapeHtml(response.status || 'Incomplete')}</td>
+                </tr>
+              `;
+            }).join('')}
+          </tbody>
+        </table>
+      </section>
+    `).join('');
+  }
+
+  function renderSummaries() {
+    const medicationName = getMedicationName();
+    setText('#setupMedicationName', medicationName);
+    setText('#assessmentMedicationName', medicationName);
+    setText('#outcomeMedicationName', medicationName);
+    if (!fieldValue('medicationClass') && medicationName !== 'Not selected') {
+      document.querySelector('[name="medicationClass"]').value = medicationName;
+    }
+    const entries = [
+      ['Facility or organization', fieldValue('facility')],
+      ['Department or unit', fieldValue('department')],
+      ['Reviewer', fieldValue('reviewer')],
+      ['Review date', fieldValue('reviewDate')],
+      ['Medication or class', fieldValue('medicationClass')],
+      ['Population or care area', fieldValue('population')],
+      ['Relevant policy name', fieldValue('policyName')],
+      ['Policy version/revision date', fieldValue('policyVersion')],
+      ['Standard concentration reference', fieldValue('concentrationReference')],
+      ['Smart-pump library version', fieldValue('pumpLibraryVersion')],
+      ['Previous review date', fieldValue('previousReviewDate')],
+      ['General notes', fieldValue('notes')],
+    ].filter(([, value]) => value);
+    const html = entries.map(([label, value]) => `<div><dt>${label}</dt><dd>${escapeHtml(value)}</dd></div>`).join('');
+    document.querySelector('#assessmentInfoSummary').innerHTML = html;
+    document.querySelector('#outcomeInfoSummary').innerHTML = html;
+  }
+
+  function updateAll() {
+    calculate();
+    renderDeficiencies();
+    renderPrintResponses();
+    renderDomainNav();
+    renderSummaries();
+  }
+
+  function fieldValue(name) {
+    return document.querySelector(`[name="${name}"]`)?.value.trim() || '';
+  }
+
+  function validateSetup() {
+    const missing = requiredSetupFields.filter((name) => !fieldValue(name));
+    requiredSetupFields.forEach((name) => {
+      document.querySelector(`[name="${name}"]`)?.classList.toggle('has-error', missing.includes(name));
+    });
+    if (!missing.length) return true;
+    validationMessage.textContent = 'Complete all required review setup fields before beginning the assessment.';
+    document.querySelector(`[name="${missing[0]}"]`)?.focus();
+    return false;
+  }
+
+  function domainComplete(index) {
+    const group = getDomainGroups()[index];
+    return group ? countCompleted(group.items) === group.items.length : false;
+  }
+
+  function getIncompleteSections() {
+    return getDomainGroups().map((group, index) => {
+      const incomplete = group.items.filter((row) => {
+        const response = ensureResponse(row.id || criterionId(row.domain, row.criterion, row.index));
+        return !statuses.includes(response.status);
+      }).length;
+      return { index, name: group.name, incomplete };
+    }).filter((section) => section.incomplete > 0);
+  }
+
+  function renderIncompleteValidation(sections) {
+    validationMessage.innerHTML = `
+      Complete every criterion before generating the outcome. Incomplete sections:
+      ${sections.map((section) => `
+        <button type="button" class="text-action" data-incomplete-section="${section.index}">
+          ${escapeHtml(section.name)} (${section.incomplete})
+        </button>
+      `).join('')}
+    `;
+  }
+
+  function generateOutcome() {
+    const incompleteSections = getIncompleteSections();
+    if (incompleteSections.length) {
+      renderIncompleteValidation(incompleteSections);
+      showStep(3, { preserveValidation: true });
+      return;
+    }
+    state.completedSteps.add(3);
+    updateAll();
+    showStep(4);
+  }
+
+  function goToDomain(index) {
+    const groups = getDomainGroups();
+    state.activeDomain = Number(index);
+    clampActiveDomain(groups);
+    renderDomain();
+    updateAll();
+    showStep(3);
+  }
+
+  function goToStep(step) {
+    if (step === 3) {
+      clampActiveDomain();
+      renderDomain();
+      updateAll();
+    }
+    showStep(step);
+  }
+
+  function isFinalDomain() {
+    const groups = getDomainGroups();
+    clampActiveDomain(groups);
+    return state.activeDomain === groups.length - 1;
+  }
+
+  validationMessage.addEventListener('click', (event) => {
+    const button = event.target.closest('[data-incomplete-section]');
+    if (!button) return;
+    goToDomain(button.dataset.incompleteSection);
+  });
+
+  function canAdvanceFromCurrentDomain() {
+    return domainComplete(state.activeDomain);
+  }
+
+  function advanceDomain() {
+    if (isFinalDomain()) {
+      generateOutcome();
+      return;
+    }
+    if (!canAdvanceFromCurrentDomain()) {
+      validationMessage.textContent = 'Assess every criterion in this section before moving forward. Use Not applicable when appropriate.';
+      return;
+    }
+    state.activeDomain = Math.min(state.activeDomain + 1, getDomainGroups().length - 1);
+    renderDomain();
+    updateAll();
+    showStep(3);
+  }
+
+  function retreatDomain() {
+    if (state.activeDomain > 0) {
+      state.activeDomain = Math.max(state.activeDomain - 1, 0);
+      renderDomain();
+      updateAll();
+      showStep(3);
+    }
+  }
+
+  function setActiveDomainFromButton(button) {
+    if (!button) return;
+    goToDomain(button.dataset.domainIndex);
+  }
+
+  function renderDomainNav() {
+    const host = document.querySelector('#domainNav');
+    if (!host || !state.assessmentStarted) return;
+    host.innerHTML = getDomainGroups().map((group, index) => {
+      const complete = domainComplete(index);
+      const active = index === state.activeDomain;
+      const incomplete = Math.max(group.items.length - countCompleted(group.items), 0);
+      return `<button type="button" data-domain-index="${index}" class="${active ? 'is-active' : ''} ${complete ? 'is-complete' : ''}">
+        <span>${index + 1}</span>${escapeHtml(group.name)} <small>${complete ? 'Complete' : `${incomplete} incomplete`}</small>
+      </button>`;
+    }).join('');
+  }
+
+  function showStep(step, options = {}) {
+    state.step = step;
+    clampActiveDomain();
+    document.querySelectorAll('[data-step-panel]').forEach((panel) => {
+      panel.classList.toggle('is-active', Number(panel.dataset.stepPanel) === step);
+    });
+    document.querySelectorAll('[data-progress-step]').forEach((item) => {
+      const itemStep = Number(item.dataset.progressStep);
+      item.classList.toggle('is-active', itemStep === step);
+      item.classList.toggle('is-complete', state.completedSteps.has(itemStep));
+    });
+    const labels = {
+      1: 'Step 1 of 4: select a medication or class.',
+      2: 'Step 2 of 4: complete review setup.',
+      3: `Step 3 of 4: safeguard assessment section ${state.activeDomain + 1} of ${getDomainGroups().length}.`,
+      4: 'Step 4 of 4: review outcome and action summary.',
+    };
+    stepStatus.textContent = labels[step];
+    if (!options.preserveValidation) validationMessage.textContent = '';
+    renderSummaries();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  function beginAssessment() {
+    if (!validateSetup()) return;
+    state.completedSteps.add(2);
+    const wasStarted = state.assessmentStarted;
+    state.assessmentStarted = true;
+    if (!wasStarted) state.activeDomain = 0;
+    renderDomain();
+    updateAll();
+    showStep(3);
+  }
+
+  medicationGrid.addEventListener('change', (event) => {
+    if (event.target.name === 'medicationOption') {
+      state.medication = event.target.value;
+      state.completedSteps.add(1);
+      const medicationClass = document.querySelector('[name="medicationClass"]');
+      medicationClass.value = getMedicationName();
+      state.activeDomain = 0;
+      renderMedicationCards();
+      renderDomain();
+      updateAll();
+    }
+  });
+
+  criteriaHost.addEventListener('change', (event) => {
+    const row = event.target.closest('.criterion-row');
+    if (!row) return;
+    const response = ensureResponse(row.dataset.id);
+    if (event.target.name?.startsWith('status-')) {
+      response.status = event.target.value;
+    }
+    renderDomain();
+    updateAll();
+  });
+
+  criteriaHost.addEventListener('click', (event) => {
+    const editId = event.target.dataset.edit;
+    const saveId = event.target.dataset.save;
+    const cancelId = event.target.dataset.cancel;
+    const deleteId = event.target.dataset.delete;
+    if (editId) {
+      const row = state.customCriteria.find((item) => item.id === editId);
+      if (!row) return;
+      row.editing = true;
+      renderDomain();
+      updateAll();
+    }
+    if (saveId) {
+      const row = state.customCriteria.find((item) => item.id === saveId);
+      const input = document.querySelector(`[data-edit-input="${saveId}"]`);
+      const revised = input?.value.trim();
+      if (!row || !revised) return;
+      if (revised !== row.criterion) {
+        const response = state.responses[row.id];
+        row.criterion = revised.trim();
+        row.id = criterionId(row.domain, row.criterion, row.createdAt);
+        state.responses[row.id] = response || { status: '' };
+        delete state.responses[saveId];
+      }
+      row.editing = false;
+      renderDomain();
+      updateAll();
+    }
+    if (cancelId) {
+      const row = state.customCriteria.find((item) => item.id === cancelId);
+      if (!row) return;
+      row.editing = false;
+      renderDomain();
+      updateAll();
+    }
+    if (deleteId && confirm('Delete this custom criterion?')) {
+      state.customCriteria = state.customCriteria.filter((row) => row.id !== deleteId);
+      delete state.responses[deleteId];
+      renderDomain();
+      updateAll();
+    }
+  });
+
+  document.querySelector('#addCustomCriterion').addEventListener('click', () => {
+    const domain = document.querySelector('#customDomain').value;
+    const criterion = document.querySelector('#customCriterion').value.trim();
+    if (!criterion) {
+      validationMessage.textContent = 'Enter a custom criterion before adding it.';
+      return;
+    }
+    const createdAt = String(Date.now());
+    state.customCriteria.push({
+      id: criterionId(domain, criterion, createdAt),
+      domain,
+      criterion,
+      index: createdAt,
+      createdAt,
+      custom: true,
+    });
+    document.querySelector('#customCriterion').value = '';
+    state.activeDomain = getDomainGroups().findIndex((group) => group.name === domain);
+    renderDomain();
+    updateAll();
+    showStep(3);
+  });
+
+  document.querySelector('#clearReview').addEventListener('click', () => {
+    if (confirm('Clear all review responses? This cannot be undone.')) {
+      state.responses = {};
+      renderDomain();
+      updateAll();
+    }
+  });
+
+  document.querySelector('#newReview').addEventListener('click', () => {
+    if (confirm('Start a new review and clear all entered information?')) {
+      document.querySelector('#reviewForm').reset();
+      state.step = 1;
+      state.medication = '';
+      state.activeDomain = 0;
+      state.customCriteria = [];
+      state.responses = {};
+      state.assessmentStarted = false;
+      state.completedSteps = new Set();
+      criteriaHost.innerHTML = '';
+      init();
+    }
+  });
+
+  document.querySelector('#printReport').addEventListener('click', () => {
+    document.body.dataset.printMode = 'report';
+    window.print();
+  });
+
+  document.querySelector('#printDeficiencies').addEventListener('click', () => {
+    document.body.dataset.printMode = 'deficiencies';
+    window.print();
+  });
+
+  document.querySelector('#continueSetup').addEventListener('click', () => {
+    if (!state.medication) {
+      validationMessage.textContent = 'Select a medication or class before continuing.';
+      return;
+    }
+    if (state.medication === 'other' && !fieldValue('otherMedicationName')) {
+      validationMessage.textContent = 'Enter the institution-defined medication or class name before continuing.';
+      document.querySelector('[name="otherMedicationName"]').focus();
+      return;
+    }
+    state.completedSteps.add(1);
+    document.querySelector('[name="medicationClass"]').value = getMedicationName();
+    showStep(2);
+  });
+
+  document.querySelector('#beginAssessment').addEventListener('click', beginAssessment);
+
+  document.querySelectorAll('[data-go-step]').forEach((button) => {
+    button.addEventListener('click', () => goToStep(Number(button.dataset.goStep)));
+  });
+
+  document.querySelector('#previousDomain').addEventListener('click', () => {
+    retreatDomain();
+  });
+
+  document.querySelector('#nextDomain').addEventListener('click', () => {
+    advanceDomain();
+  });
+
+  document.querySelector('#domainNav').addEventListener('click', (event) => {
+    const button = event.target.closest('[data-domain-index]');
+    setActiveDomainFromButton(button);
+  });
+
+  document.querySelector('#reviewForm').addEventListener('input', () => {
+    renderSummaries();
+    if (state.medication === 'other') {
+      document.querySelector('[name="medicationClass"]').value = getMedicationName();
+      updateAll();
+    }
+  });
+
+  function init() {
+    renderMedicationCards();
+    renderCustomDomainOptions();
+    renderSummaries();
+    renderDomainNav();
+    calculate();
+    showStep(1);
+  }
+
+  init();
+</script>
+
+<style is:global>
+  .high-alert-page {
+    background: #f7f9fb;
+    color: #24313a;
+  }
+
+  .review-container {
+    width: min(100% - 40px, 1180px);
+    margin-inline: auto;
+  }
+
+  .review-hero {
+    border-bottom: 1px solid #dbe4ea;
+    background: linear-gradient(135deg, #eef5f8 0%, #f7f9fb 76%);
+    padding: 30px 0 42px;
+  }
+
+  .review-brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 34px;
+    color: #123b5d;
+    font-weight: 800;
+  }
+
+  .review-brand__mark {
+    display: inline-grid;
+    width: 42px;
+    height: 42px;
+    place-items: center;
+    border-radius: 8px;
+    background: #123b5d;
+    color: #fff;
+    font-size: 0.78rem;
+    letter-spacing: 0;
+  }
+
+  .review-eyebrow {
+    margin: 0 0 10px;
+    color: #2e7d68;
+    font-size: 0.78rem;
+    font-weight: 850;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .review-hero h1 {
+    max-width: 880px;
+    margin-bottom: 18px;
+    color: #123b5d;
+    font-size: clamp(2.45rem, 5vw, 4.3rem);
+    line-height: 1.04;
+  }
+
+  .review-lede {
+    max-width: 820px;
+    color: #40515d;
+    font-size: 1.12rem;
+  }
+
+  .clinical-notice {
+    max-width: 920px;
+    border: 1px solid rgba(46, 125, 104, 0.22);
+    border-left: 5px solid #2e7d68;
+    border-radius: 12px;
+    background: #f5fbf8;
+    padding: 18px 20px;
+  }
+
+  .review-stack {
+    display: grid;
+    gap: 24px;
+    padding: 34px 0 64px;
+  }
+
+  .step-progress {
+    border: 1px solid #d6e2e9;
+    border-radius: 16px;
+    background: #fff;
+    padding: 14px;
+    box-shadow: 0 12px 28px rgba(18, 59, 93, 0.06);
+  }
+
+  .step-progress ol {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .step-progress li {
+    display: flex;
+    min-height: 48px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 12px;
+    color: #60717d;
+    font-weight: 800;
+    padding: 8px 12px;
+  }
+
+  .step-progress li span {
+    display: grid;
+    width: 30px;
+    height: 30px;
+    flex: 0 0 auto;
+    place-items: center;
+    border: 1px solid #cbd9e2;
+    border-radius: 999px;
+    color: #123b5d;
+    font-size: 0.9rem;
+  }
+
+  .step-progress li.is-active {
+    background: #eef5f8;
+    color: #123b5d;
+  }
+
+  .step-progress li.is-complete span {
+    border-color: #2e7d68;
+    background: #2e7d68;
+    color: #fff;
+  }
+
+  .step-status,
+  .validation-message {
+    margin: 0;
+    font-weight: 800;
+  }
+
+  .step-status {
+    color: #123b5d;
+  }
+
+  .validation-message {
+    min-height: 1.6em;
+    color: #8a2e25;
+  }
+
+  .review-card {
+    border: 1px solid #d6e2e9;
+    border-radius: 14px;
+    background: #fff;
+    padding: 28px;
+    box-shadow: 0 14px 34px rgba(18, 59, 93, 0.07);
+  }
+
+  .step-panel {
+    display: none;
+  }
+
+  .step-panel.is-active {
+    display: block;
+  }
+
+  .section-title h2,
+  .section-title h3 {
+    margin-bottom: 10px;
+    color: #123b5d;
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  }
+
+  .section-title h2 {
+    font-size: clamp(1.7rem, 3vw, 2.3rem);
+  }
+
+  .section-title p:last-child {
+    max-width: 760px;
+    margin-bottom: 0;
+    color: #60717d;
+  }
+
+  .section-title--row {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 18px;
+  }
+
+  .medication-fieldset,
+  .domain-group,
+  .status-group {
+    min-width: 0;
+    margin: 0;
+    border: 0;
+    padding: 0;
+  }
+
+  .medication-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+    margin-top: 24px;
+  }
+
+  .medication-card {
+    position: relative;
+    display: grid;
+    min-height: 170px;
+    cursor: pointer;
+    gap: 10px;
+    border: 1px solid #d6e2e9;
+    border-radius: 14px;
+    background: #fff;
+    padding: 22px;
+    transition: border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
+  }
+
+  .medication-card:hover,
+  .medication-card.is-selected {
+    border-color: #2b6f9f;
+    box-shadow: 0 14px 28px rgba(18, 59, 93, 0.1);
+  }
+
+  .medication-card:hover {
+    transform: translateY(-2px);
+  }
+
+  .medication-card input {
+    position: absolute;
+    inset: 16px 16px auto auto;
+    width: 20px;
+    height: 20px;
+    accent-color: #2e7d68;
+  }
+
+  .medication-card__title {
+    padding-right: 28px;
+    color: #123b5d;
+    font-size: 1.1rem;
+    font-weight: 850;
+    line-height: 1.2;
+  }
+
+  .medication-card__text {
+    color: #60717d;
+    line-height: 1.45;
+  }
+
+  .other-medication {
+    display: none;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 16px;
+    margin-top: 20px;
+  }
+
+  .other-medication.is-visible {
+    display: grid;
+  }
+
+  label {
+    display: grid;
+    gap: 7px;
+    color: #123b5d;
+    font-weight: 800;
+  }
+
+  input,
+  select,
+  textarea {
+    width: 100%;
+    min-height: 46px;
+    border: 1px solid #cbd9e2;
+    border-radius: 8px;
+    background: #fff;
+    color: #24313a;
+    font: inherit;
+    padding: 10px 12px;
+  }
+
+  textarea {
+    resize: vertical;
+  }
+
+  button {
+    font: inherit;
+  }
+
+  input:focus-visible,
+  select:focus-visible,
+  textarea:focus-visible,
+  button:focus-visible,
+  .medication-card:focus-within {
+    outline: 3px solid rgba(46, 125, 104, 0.34);
+    outline-offset: 3px;
+  }
+
+  input.has-error {
+    border-color: #b44437;
+    box-shadow: 0 0 0 3px rgba(180, 68, 55, 0.12);
+  }
+
+  .required-marker {
+    color: #2e7d68;
+    font-size: 0.75rem;
+    font-weight: 850;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  .selected-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+    margin-bottom: 24px;
+    border: 1px solid rgba(46, 125, 104, 0.24);
+    border-radius: 12px;
+    background: #f5fbf8;
+    padding: 16px 18px;
+  }
+
+  .selected-banner span {
+    color: #60717d;
+    font-size: 0.78rem;
+    font-weight: 850;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  .selected-banner strong {
+    color: #123b5d;
+    font-size: 1.05rem;
+  }
+
+  .setup-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+  .setup-grid__wide {
+    grid-column: 1 / -1;
+  }
+
+  .step-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 24px;
+  }
+
+  .button {
+    min-height: 50px;
+    border: 0;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  .button:disabled {
+    cursor: not-allowed;
+    opacity: 0.55;
+    transform: none;
+  }
+
+  .assessment-workspace.is-active {
+    display: grid;
+    grid-template-columns: 300px minmax(0, 1fr);
+    align-items: start;
+    gap: 24px;
+  }
+
+  .assessment-sidebar {
+    position: sticky;
+    top: 22px;
+    display: grid;
+    gap: 16px;
+  }
+
+  .compact-summary {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+    border: 1px solid #d6e2e9;
+    border-radius: 14px;
+    background: #fff;
+    padding: 14px;
+    box-shadow: 0 12px 28px rgba(18, 59, 93, 0.06);
+  }
+
+  .compact-summary div,
+  .metric-card {
+    display: grid;
+    gap: 2px;
+    border-radius: 10px;
+    background: #f7f9fb;
+    padding: 12px;
+  }
+
+  .compact-summary span,
+  .metric-card span {
+    color: #60717d;
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+
+  .compact-summary strong,
+  .metric-card strong {
+    color: #123b5d;
+    font-size: 1.45rem;
+    line-height: 1.1;
+  }
+
+  .domain-nav {
+    display: grid;
+    gap: 8px;
+    max-height: 58vh;
+    overflow: auto;
+    padding-right: 3px;
+  }
+
+  .domain-nav button {
+    display: grid;
+    grid-template-columns: 30px minmax(0, 1fr);
+    gap: 8px;
+    min-height: 48px;
+    cursor: pointer;
+    border: 1px solid #d6e2e9;
+    border-radius: 10px;
+    background: #fff;
+    color: #123b5d;
+    padding: 10px;
+    text-align: left;
+  }
+
+  .domain-nav button > span {
+    display: grid;
+    width: 28px;
+    height: 28px;
+    place-items: center;
+    border-radius: 999px;
+    background: #eef5f8;
+    font-weight: 850;
+  }
+
+  .domain-nav button small {
+    grid-column: 2;
+    color: #60717d;
+    font-weight: 800;
+  }
+
+  .domain-nav button.is-active {
+    border-color: #2b6f9f;
+    box-shadow: 0 0 0 3px rgba(43, 111, 159, 0.11);
+  }
+
+  .domain-nav button.is-complete > span {
+    background: #2e7d68;
+    color: #fff;
+  }
+
+  .review-info-summary {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px 20px;
+    margin: 0;
+  }
+
+  .review-info-summary div {
+    min-width: 0;
+  }
+
+  .review-info-summary dt {
+    color: #60717d;
+    font-size: 0.78rem;
+    font-weight: 850;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+
+  .review-info-summary dd {
+    margin: 0;
+    overflow-wrap: anywhere;
+    color: #123b5d;
+    font-weight: 750;
+  }
+
+  .checklist-card {
+    margin-top: 20px;
+  }
+
+  .domain-completion {
+    white-space: nowrap;
+    border-radius: 999px;
+    background: #eef5f8;
+    color: #123b5d;
+    font-weight: 850;
+    padding: 8px 12px;
+  }
+
+  .domain-group legend {
+    margin-bottom: 12px;
+    color: #123b5d;
+    font-size: 1.05rem;
+    font-weight: 850;
+  }
+
+  .criterion-row {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(260px, 0.88fr);
+    gap: 18px;
+    align-items: center;
+    border-top: 1px solid #dbe4ea;
+    padding: 18px 0;
+  }
+
+  .criterion-row h3 {
+    margin: 0;
+    color: #24313a;
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  .custom-row-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 8px;
+  }
+
+  .custom-edit-panel {
+    display: grid;
+    gap: 10px;
+    margin-top: 10px;
+    border: 1px solid #d6e2e9;
+    border-radius: 10px;
+    background: #f8fbfd;
+    padding: 12px;
+  }
+
+  .text-action {
+    min-height: 38px;
+    cursor: pointer;
+    border: 1px solid #d6e2e9;
+    border-radius: 8px;
+    background: #fff;
+    color: #2b6f9f;
+    font-weight: 850;
+    padding: 7px 10px;
+  }
+
+  .text-action--danger {
+    color: #8a2e25;
+  }
+
+  .status-group {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  .status-group legend {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+
+  .status-pill {
+    display: block;
+  }
+
+  .status-pill input {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .status-pill span {
+    display: grid;
+    min-height: 44px;
+    place-items: center;
+    border: 1px solid #cbd9e2;
+    border-radius: 8px;
+    background: #fff;
+    color: #123b5d;
+    font-size: 0.92rem;
+    font-weight: 850;
+    line-height: 1.15;
+    padding: 8px 10px;
+    text-align: center;
+  }
+
+  .status-pill input:checked + span {
+    border-color: #2e7d68;
+    background: #eaf6f1;
+    color: #1d604f;
+  }
+
+  .custom-builder {
+    margin-top: 22px;
+    border: 1px solid #d6e2e9;
+    border-radius: 12px;
+    background: #f8fbfd;
+    padding: 20px;
+  }
+
+  .custom-grid {
+    display: grid;
+    grid-template-columns: minmax(180px, 0.8fr) minmax(0, 1.3fr) auto;
+    align-items: end;
+    gap: 14px;
+    margin-top: 16px;
+  }
+
+  .outcome-overview {
+    display: grid;
+    grid-template-columns: minmax(220px, 1.2fr) repeat(5, minmax(130px, 1fr));
+    gap: 14px;
+    margin: 22px 0;
+  }
+
+  .score-card {
+    display: grid;
+    align-content: center;
+    border-radius: 14px;
+    background: #123b5d;
+    color: #fff;
+    padding: 22px;
+  }
+
+  .score-card .review-eyebrow {
+    color: #c9e7dd;
+  }
+
+  .score-card strong {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .score-card span {
+    margin-top: 8px;
+    font-weight: 850;
+  }
+
+  .scoring-note {
+    border-left: 4px solid #2e7d68;
+    background: #f5fbf8;
+    margin: 0 0 20px;
+    padding: 12px 14px;
+    color: #40515d;
+  }
+
+  .outcome-meta {
+    display: grid;
+    gap: 18px;
+    border: 1px solid #d6e2e9;
+    border-radius: 12px;
+    background: #f8fbfd;
+    margin-bottom: 22px;
+    padding: 18px;
+  }
+
+  .outcome-meta strong {
+    color: #123b5d;
+    font-size: 1.15rem;
+  }
+
+  .table-wrap {
+    overflow-x: auto;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+  }
+
+  caption {
+    color: #123b5d;
+    font-weight: 850;
+    padding: 0 0 10px;
+    text-align: left;
+  }
+
+  th,
+  td {
+    border: 1px solid #dbe4ea;
+    padding: 12px;
+    text-align: left;
+    vertical-align: top;
+  }
+
+  th {
+    background: #eef5f8;
+    color: #123b5d;
+    font-size: 0.82rem;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+
+  .print-signatures {
+    display: none;
+  }
+
+  .print-response-summary {
+    display: none;
+  }
+
+  .print-response-domain {
+    break-inside: avoid;
+    margin-top: 18px;
+  }
+
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+
+  @media (max-width: 980px) {
+    .medication-grid,
+    .outcome-overview {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .assessment-workspace.is-active {
+      grid-template-columns: 1fr;
+    }
+
+    .assessment-sidebar {
+      position: static;
+    }
+
+    .domain-nav {
+      max-height: none;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .criterion-row {
+      grid-template-columns: 1fr;
+    }
+
+    .custom-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 680px) {
+    .review-container {
+      width: min(100% - 28px, 1180px);
+    }
+
+    .review-hero {
+      padding-top: 24px;
+    }
+
+    .review-card {
+      padding: 22px;
+    }
+
+    .step-progress ol,
+    .medication-grid,
+    .other-medication,
+    .setup-grid,
+    .review-info-summary,
+    .outcome-overview,
+    .domain-nav {
+      grid-template-columns: 1fr;
+    }
+
+    .step-progress li {
+      min-height: 44px;
+    }
+
+    .section-title--row,
+    .selected-banner {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .status-group {
+      grid-template-columns: 1fr;
+    }
+
+    .step-actions .button {
+      width: 100%;
+    }
+  }
+
+  @media print {
+    body {
+      background: #fff !important;
+    }
+
+    .review-hero,
+    .step-progress,
+    .step-status,
+    .validation-message,
+    .assessment-sidebar,
+    .custom-builder,
+    .step-actions,
+    .review-brand {
+      display: none !important;
+    }
+
+    .review-stack,
+    .review-container {
+      width: 100%;
+      padding: 0;
+    }
+
+    .step-panel {
+      display: none !important;
+    }
+
+    .outcome-panel {
+      display: block !important;
+    }
+
+    .review-card {
+      break-inside: avoid;
+      border: 0;
+      border-radius: 0;
+      box-shadow: none;
+      padding: 0 0 16px;
+    }
+
+    .outcome-panel .review-card::before {
+      display: block;
+      margin-bottom: 8px;
+      color: #123b5d;
+      content: "LittleMeds Safety | Pediatric High-Alert Medication Review";
+      font-size: 15pt;
+      font-weight: 850;
+    }
+
+    .print-response-summary {
+      display: block;
+    }
+
+    .print-response-domain h3 {
+      margin: 16px 0 8px;
+      color: #123b5d;
+      font-size: 13pt;
+    }
+
+    .outcome-overview {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .score-card,
+    .metric-card,
+    .outcome-meta,
+    .scoring-note {
+      border: 1px solid #dbe4ea;
+      background: #fff !important;
+      color: #111 !important;
+      padding: 10px;
+    }
+
+    .score-card .review-eyebrow,
+    .score-card strong,
+    .score-card span {
+      color: #111 !important;
+    }
+
+    .print-signatures {
+      display: block;
+      break-inside: avoid;
+      margin-top: 20px;
+    }
+
+    body[data-print-mode="deficiencies"] .print-response-summary {
+      display: none !important;
+    }
+
+    body[data-print-mode="report"] .outcome-panel,
+    body[data-print-mode="deficiencies"] .outcome-panel {
+      display: block !important;
+    }
+  }
+</style>

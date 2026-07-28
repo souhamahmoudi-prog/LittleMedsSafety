@@ -1,0 +1,482 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import {
+  medicationOptions,
+  printableMedicationModules,
+  standardDomains,
+} from '../../../data/highAlertMedicationReview';
+
+const reviewFields = [
+  'Facility or organization',
+  'Department or unit',
+  'Reviewer',
+  'Review date',
+  'Medication or medication class',
+  'Population or care area',
+  'Relevant policy',
+  'Policy version or revision date',
+  'Standard concentration reference',
+  'Smart-pump library version',
+  'Previous review date',
+  'Notes',
+];
+
+const summaryFields = [
+  'Total applicable criteria',
+  'Compliant',
+  'Deficient',
+  'Not applicable',
+  'Readiness percentage',
+  'Overall classification',
+  'Key findings',
+  'Recommended system actions',
+  'Reviewer signature and date',
+  'Leadership reviewer signature and date',
+];
+
+const documentVersion = 'Version 1.0';
+const documentDate = 'July 28, 2026';
+---
+
+<BaseLayout
+  title="Printable Pediatric High-Alert Medication Review | LittleMeds Safety"
+  description="Printable blank Pediatric High-Alert Medication Review checklist for manual completion."
+>
+  <main class="printable-review">
+    <div class="screen-controls" aria-label="Printable review actions">
+      <button class="button button-primary" type="button" id="printBlankReview">Print Blank Review Form</button>
+      <a class="button button-secondary" href="/tools/pediatric-high-alert-medication-review">Return to Interactive Tool</a>
+    </div>
+
+    <article class="print-document">
+      <header class="print-header">
+        <div class="print-brand">
+          <span class="print-brand__mark" aria-hidden="true">LMS</span>
+          <span>LittleMeds Safety</span>
+        </div>
+        <p>{documentVersion} | Review date: ____________________</p>
+        <h1>Pediatric High-Alert Medication Review</h1>
+        <p class="professional-notice">
+          <strong>Professional notice:</strong>
+          This review must be used with the organization's approved high-alert
+          medication list, formulary, policies, standard concentrations,
+          smart-pump library, and monitoring requirements. It does not establish
+          medication doses or treatment standards.
+        </p>
+      </header>
+
+      <section class="print-section review-info-section">
+        <h2>Review Information</h2>
+        <div class="line-grid">
+          {reviewFields.map((field) => (
+            <div class={field === 'Notes' ? 'line-field line-field--wide' : 'line-field'}>
+              <span>{field}</span>
+              <span class="write-line"></span>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section class="print-section medication-selector">
+        <h2>Medication Class Selection</h2>
+        <p>Select the medication or class being reviewed. Print the matching appendix module pages as needed.</p>
+        <div class="checkbox-grid">
+          {medicationOptions.map(([, title]) => (
+            <label><span class="box" aria-hidden="true"></span>{title}</label>
+          ))}
+        </div>
+      </section>
+
+      <section class="print-section checklist-intro">
+        <h2>Primary Blank Review Form</h2>
+        <p>
+          Complete the standard assessment domains below. Medication-specific
+          modules are provided in the appendix so users may print only the pages
+          needed for the selected medication class.
+        </p>
+      </section>
+
+      {standardDomains.map((domain) => (
+        <section class="print-section domain-section">
+          <h2>{domain.name}</h2>
+          <table class="checklist-table">
+            <thead>
+              <tr>
+                <th>Criterion text</th>
+                <th>Compliant</th>
+                <th>Deficient</th>
+                <th>N/A</th>
+              </tr>
+            </thead>
+            <tbody>
+              {domain.items.map((criterion) => (
+                <tr>
+                  <td>{criterion}</td>
+                  <td><span class="checkbox-symbol" aria-hidden="true">□</span> Compliant</td>
+                  <td><span class="checkbox-symbol" aria-hidden="true">□</span> Deficient</td>
+                  <td><span class="checkbox-symbol" aria-hidden="true">□</span> N/A</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+          <div class="notes-block">
+            <strong>Notes:</strong>
+            <span></span>
+            <span></span>
+          </div>
+        </section>
+      ))}
+
+      <section class="print-section summary-section">
+        <h2>Printable Review Summary</h2>
+        <div class="summary-grid">
+          {summaryFields.map((field) => (
+            <div class={field.includes('findings') || field.includes('actions') ? 'summary-field summary-field--wide' : 'summary-field'}>
+              <span>{field}</span>
+              <span class="write-line"></span>
+            </div>
+          ))}
+        </div>
+        <div class="formula-box">
+          <h3>Scoring Formula</h3>
+          <p>Readiness percentage = Compliant ÷ (Compliant + Deficient) × 100</p>
+          <h3>Suggested Classifications</h3>
+          <ul>
+            <li>95-100%: Safeguards well established</li>
+            <li>85-94%: Improvement opportunities identified</li>
+            <li>Below 85%: Priority system review recommended</li>
+          </ul>
+          <p>
+            These are suggested quality-improvement indicators and may be
+            modified by institutional policy.
+          </p>
+        </div>
+      </section>
+
+      <section class="print-section appendix-intro">
+        <h2>Appendix: Medication-Specific Modules</h2>
+        <p>
+          Print only the module pages needed for the selected medication class.
+          These appendix criteria are not printed in the primary blank form by default.
+        </p>
+      </section>
+
+      {printableMedicationModules.map((module) => (
+        <section class="print-section appendix-module">
+          <h2>{module.title}</h2>
+          {module.items.length ? (
+            <table class="checklist-table">
+              <thead>
+                <tr>
+                  <th>Criterion text</th>
+                  <th>Compliant</th>
+                  <th>Deficient</th>
+                  <th>N/A</th>
+                </tr>
+              </thead>
+              <tbody>
+                {module.items.map((criterion) => (
+                  <tr>
+                    <td>{criterion}</td>
+                    <td><span class="checkbox-symbol" aria-hidden="true">□</span> Compliant</td>
+                    <td><span class="checkbox-symbol" aria-hidden="true">□</span> Deficient</td>
+                    <td><span class="checkbox-symbol" aria-hidden="true">□</span> N/A</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          ) : (
+            <div class="other-module-lines">
+              <p>Institution-defined medication or class: ______________________________________________</p>
+              <p>Local medication-specific safeguards:</p>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          )}
+          <div class="notes-block">
+            <strong>Notes:</strong>
+            <span></span>
+            <span></span>
+          </div>
+        </section>
+      ))}
+
+      <footer class="print-footer">
+        <span>LittleMeds Safety | Pediatric High-Alert Medication Review</span>
+        <span>{documentVersion} | {documentDate}</span>
+      </footer>
+    </article>
+  </main>
+</BaseLayout>
+
+<script>
+  document.querySelector('#printBlankReview')?.addEventListener('click', () => {
+    window.print();
+  });
+</script>
+
+<style is:global>
+  .printable-review {
+    background: #f7f9fb;
+    color: #111827;
+    font-family:
+      Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      sans-serif;
+  }
+
+  .screen-controls {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    border-bottom: 1px solid #dbe4ea;
+    background: #fff;
+    padding: 14px;
+  }
+
+  .print-document {
+    width: min(100% - 40px, 8.5in);
+    margin: 28px auto;
+    background: #fff;
+    padding: 0.65in;
+    box-shadow: 0 18px 45px rgba(18, 59, 93, 0.1);
+  }
+
+  .print-header {
+    border-bottom: 2px solid #123b5d;
+    padding-bottom: 18px;
+  }
+
+  .print-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #123b5d;
+    font-weight: 800;
+  }
+
+  .print-brand__mark {
+    display: grid;
+    width: 36px;
+    height: 36px;
+    place-items: center;
+    border-radius: 6px;
+    background: #123b5d;
+    color: #fff;
+    font-size: 0.72rem;
+  }
+
+  .print-header h1 {
+    max-width: none;
+    margin: 14px 0 10px;
+    color: #123b5d;
+    font-size: 24pt;
+    line-height: 1.1;
+  }
+
+  .professional-notice {
+    border: 1px solid #b9c9d4;
+    border-left: 4px solid #123b5d;
+    margin: 12px 0 0;
+    padding: 10px 12px;
+  }
+
+  .print-section {
+    break-inside: avoid;
+    margin-top: 22px;
+  }
+
+  .print-section h2 {
+    margin: 0 0 10px;
+    color: #123b5d;
+    font-family: inherit;
+    font-size: 18pt;
+    line-height: 1.15;
+  }
+
+  .print-section h3 {
+    margin: 12px 0 4px;
+    color: #123b5d;
+    font-size: 12pt;
+  }
+
+  .line-grid,
+  .summary-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px 18px;
+  }
+
+  .line-field,
+  .summary-field {
+    display: grid;
+    gap: 8px;
+    font-weight: 700;
+  }
+
+  .line-field--wide,
+  .summary-field--wide {
+    grid-column: 1 / -1;
+  }
+
+  .write-line,
+  .notes-block span,
+  .other-module-lines span {
+    display: block;
+    min-height: 24px;
+    border-bottom: 1px solid #111827;
+  }
+
+  .checkbox-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px 16px;
+  }
+
+  .checkbox-grid label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #111827;
+    font-weight: 650;
+  }
+
+  .box {
+    width: 13px;
+    height: 13px;
+    border: 1.5px solid #111827;
+    background: #fff;
+  }
+
+  .checklist-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 10.5pt;
+    line-height: 1.3;
+  }
+
+  .checklist-table th,
+  .checklist-table td {
+    border: 1px solid #111827;
+    padding: 6px 7px;
+    text-align: left;
+    vertical-align: top;
+  }
+
+  .checklist-table th {
+    background: #eef3f6;
+    color: #123b5d;
+    font-weight: 800;
+  }
+
+  .checklist-table th:first-child {
+    width: 56%;
+  }
+
+  .checklist-table tr {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .checkbox-symbol {
+    font-size: 13pt;
+    line-height: 1;
+  }
+
+  .notes-block {
+    display: grid;
+    gap: 8px;
+    margin-top: 12px;
+  }
+
+  .summary-section,
+  .appendix-intro,
+  .appendix-module {
+    break-before: page;
+  }
+
+  .formula-box {
+    border: 1px solid #111827;
+    margin-top: 18px;
+    padding: 12px;
+  }
+
+  .formula-box ul {
+    margin: 6px 0 10px;
+    padding-left: 20px;
+  }
+
+  .other-module-lines {
+    display: grid;
+    gap: 8px;
+    border: 1px solid #111827;
+    padding: 12px;
+  }
+
+  .print-footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    border-top: 1px solid #111827;
+    margin-top: 24px;
+    padding-top: 8px;
+    color: #263946;
+    font-size: 9pt;
+  }
+
+  @page {
+    size: Letter portrait;
+    margin: 0.55in;
+    @bottom-center {
+      content: "LittleMeds Safety | Pediatric High-Alert Medication Review | Page " counter(page);
+      font-size: 8pt;
+      color: #123b5d;
+    }
+  }
+
+  @media print {
+    html,
+    body {
+      background: #fff !important;
+      color: #111827;
+      font-size: 10.5pt;
+    }
+
+    .screen-controls,
+    button,
+    .button {
+      display: none !important;
+    }
+
+    .print-document {
+      width: auto;
+      margin: 0;
+      padding: 0;
+      box-shadow: none;
+    }
+
+    .print-section {
+      margin-top: 16px;
+    }
+
+    .print-section h2 {
+      font-size: 16pt;
+    }
+
+    .checklist-table {
+      font-size: 10pt;
+    }
+
+    .checklist-table thead {
+      display: table-header-group;
+    }
+
+    .print-footer {
+      position: running(print-footer);
+    }
+  }
+</style>

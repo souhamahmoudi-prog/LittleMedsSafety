@@ -1,0 +1,1921 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import {
+  conditionalDomains,
+  sharedCoreDomains,
+  transitionDomainGroups,
+  transitionOptions,
+  transitionSpecificModules,
+} from '../../data/medicationReconciliationTransitionAudit';
+---
+
+<BaseLayout
+  title="Pediatric Medication Reconciliation and Transition Audit | LittleMeds Safety"
+  description="Evaluate medication reconciliation and medication communication during admission, internal transfer, interfacility transfer, and discharge."
+>
+  <main class="transition-audit-page">
+    <section class="transition-hero">
+      <div class="transition-container">
+        <a class="transition-brand" href="/" aria-label="LittleMeds Safety home">
+          <span class="transition-brand__mark" aria-hidden="true">LMS</span>
+          <span>LittleMeds Safety</span>
+        </a>
+        <p class="transition-eyebrow">Interactive Safety Tool</p>
+        <h1>Pediatric Medication Reconciliation and Transition Audit</h1>
+        <p class="transition-lede">
+          Evaluate the reliability of pediatric medication reconciliation and medication communication during admission, internal transfer, interfacility transfer, and discharge.
+        </p>
+        <div class="clinical-notice">
+          <strong>Professional notice:</strong>
+          Use this tool with the organization's approved medication-reconciliation policy, formulary, transition-of-care procedures, and documentation standards. It does not replace clinical judgment, patient-specific reconciliation, or institutional policy.
+        </div>
+      </div>
+    </section>
+
+    <form class="transition-form" id="reviewForm" novalidate>
+      <div class="transition-container transition-stack">
+        <nav class="step-progress" aria-label="Audit progress">
+          <ol>
+            <li class="is-active" data-progress-step="1"><span>1</span> Transition</li>
+            <li data-progress-step="2"><span>2</span> Setup</li>
+            <li data-progress-step="3"><span>3</span> Audit</li>
+            <li data-progress-step="4"><span>4</span> Outcome</li>
+          </ol>
+        </nav>
+        <p class="step-status" id="stepStatus" aria-live="polite">Step 1 of 4: select a transition type.</p>
+        <p class="validation-message" id="validationMessage" aria-live="polite"></p>
+
+        <section class="transition-panel-card step-panel is-active" data-step-panel="1" aria-labelledby="transitionTitle">
+          <div class="section-title">
+            <p class="transition-eyebrow">Transition</p>
+            <h2 id="transitionTitle">Select transition type</h2>
+            <p>
+              Choose the pediatric transition point to audit. Setup and criteria appear after a transition type is selected.
+            </p>
+          </div>
+          <fieldset class="transition-fieldset">
+            <legend class="sr-only">Transition type selector</legend>
+            <div class="transition-grid" id="transitionGrid"></div>
+          </fieldset>
+          <div class="other-transition" id="customTransitionFields">
+            <label>
+              Custom transition name
+              <input name="customTransitionName" type="text" autocomplete="off" />
+            </label>
+            <label>
+              Optional description
+              <textarea name="customTransitionDescription" rows="3"></textarea>
+            </label>
+          </div>
+          <div class="step-actions">
+            <a class="button button-secondary" href="/tools/pediatric-medication-reconciliation-transition-audit/printable">Print Blank Audit Form</a>
+            <button class="button button-primary" type="button" id="continueSetup" disabled>Continue to audit setup</button>
+          </div>
+        </section>
+
+        <section class="transition-panel-card step-panel setup-card" data-step-panel="2" aria-labelledby="setupTitle">
+          <div class="selected-banner">
+            <span>Selected transition</span>
+            <strong id="setupTransitionName">Not selected</strong>
+          </div>
+          <div class="section-title">
+            <p class="transition-eyebrow">Audit Setup</p>
+            <h2 id="setupTitle">Audit information</h2>
+            <p>No patient information should be entered in this tool. Required fields are marked.</p>
+          </div>
+          <div class="setup-grid">
+            <label>
+              Facility or organization
+              <input name="facility" type="text" autocomplete="organization" />
+            </label>
+            <label>
+              Department or unit <span class="required-marker">Required</span>
+              <input name="department" type="text" required />
+            </label>
+            <label>
+              Auditor <span class="required-marker">Required</span>
+              <input name="auditor" type="text" autocomplete="name" required />
+            </label>
+            <label>
+              Audit date <span class="required-marker">Required</span>
+              <input name="auditDate" type="date" required />
+            </label>
+            <label>
+              Transition type <span class="required-marker">Required</span>
+              <input name="transitionType" type="text" required />
+            </label>
+            <label>
+              Population or care area
+              <input name="population" type="text" />
+            </label>
+            <label>
+              Policy or procedure reviewed
+              <input name="policyName" type="text" />
+            </label>
+            <label>
+              Policy version or revision date
+              <input name="policyVersion" type="text" />
+            </label>
+            <label>
+              Audit period
+              <input name="auditPeriod" type="text" />
+            </label>
+            <label>
+              Number of records reviewed
+              <input name="recordsReviewed" type="number" inputmode="numeric" min="0" />
+            </label>
+            <label>
+              Previous audit date
+              <input name="previousAuditDate" type="date" />
+            </label>
+            <label class="setup-grid__wide">
+              General notes
+              <textarea name="notes" rows="3"></textarea>
+            </label>
+          </div>
+          <div class="step-actions">
+            <button class="button button-secondary" type="button" data-go-step="1">Back to transition selection</button>
+            <button class="button button-primary" type="button" id="beginAudit">Begin audit</button>
+          </div>
+        </section>
+
+        <section class="step-panel audit-workspace" data-step-panel="3" aria-labelledby="auditTitle">
+          <aside class="audit-sidebar" aria-label="Audit progress">
+            <div class="selected-banner">
+              <span>Selected transition</span>
+              <strong id="auditTransitionName">Not selected</strong>
+            </div>
+            <div class="compact-summary" aria-live="polite">
+              <div><span>Total criteria</span><strong id="totalCount">0</strong></div>
+              <div><span>Completed</span><strong id="completedCount">0</strong></div>
+              <div><span>Compliant</span><strong id="compliantCount">0</strong></div>
+              <div><span>Deficient</span><strong id="deficientCount">0</strong></div>
+              <div><span>Not applicable</span><strong id="notApplicableCount">0</strong></div>
+              <div><span>Incomplete</span><strong id="incompleteCount">0</strong></div>
+            </div>
+            <div class="domain-nav" id="domainNav"></div>
+          </aside>
+
+          <div class="audit-main">
+            <section class="transition-panel-card audit-context" aria-label="Audit context">
+              <div>
+                <p class="transition-eyebrow">Audit</p>
+                <h2 id="auditTitle">Assess one audit domain at a time</h2>
+              </div>
+              <dl id="auditInfoSummary" class="transition-info-summary"></dl>
+            </section>
+
+            <section class="transition-panel-card checklist-card">
+              <div class="section-title section-title--row">
+                <div>
+                  <p class="transition-eyebrow" id="domainProgress"></p>
+                  <h2 id="activeDomainTitle">Governance and Accountability</h2>
+                </div>
+                <span class="domain-completion" id="domainCompletion">0 of 0 complete</span>
+              </div>
+              <div id="criteriaHost" class="criteria-host"></div>
+
+              <section class="custom-builder" aria-labelledby="customCriteriaTitle">
+                <div class="section-title">
+                  <p class="transition-eyebrow">Custom Criteria</p>
+                  <h3 id="customCriteriaTitle">Add local criteria to this audit</h3>
+                  <p>Assign institution-specific criteria to any audit domain.</p>
+                </div>
+                <div class="custom-grid">
+                  <label>
+                    Domain
+                    <select id="customDomain"></select>
+                  </label>
+                  <label>
+                    Criterion
+                    <input id="customCriterion" type="text" />
+                  </label>
+                  <button class="button button-secondary" type="button" id="addCustomCriterion">Add criterion</button>
+                </div>
+              </section>
+
+              <div class="step-actions">
+                <button class="button button-secondary" type="button" data-go-step="2">Back to audit setup</button>
+                <button class="button button-secondary" type="button" id="previousDomain">Previous section</button>
+                <button class="button button-primary" type="button" id="nextDomain">Next section</button>
+              </div>
+            </section>
+          </div>
+        </section>
+
+        <section class="step-panel outcome-panel" data-step-panel="4" aria-labelledby="outcomeTitle">
+          <section class="transition-panel-card">
+            <div class="section-title section-title--row">
+              <div>
+                <p class="transition-eyebrow">Outcome</p>
+                <h2 id="outcomeTitle">Outcome and action summary</h2>
+              </div>
+            </div>
+            <div class="outcome-overview">
+              <div class="score-card" aria-live="polite">
+                <p class="transition-eyebrow">Readiness Percentage</p>
+                <strong id="readinessScore">0%</strong>
+                <span id="readinessLabel">Incomplete audit</span>
+              </div>
+              <div class="metric-card">
+                <span>Total applicable criteria</span>
+                <strong id="outcomeApplicableCount">0</strong>
+              </div>
+              <div class="metric-card">
+                <span>Compliant</span>
+                <strong id="outcomeCompliantCount">0</strong>
+              </div>
+              <div class="metric-card">
+                <span>Deficiencies</span>
+                <strong id="outcomeDeficientCount">0</strong>
+              </div>
+              <div class="metric-card">
+                <span>Not applicable</span>
+                <strong id="outcomeNotApplicableCount">0</strong>
+              </div>
+              <div class="metric-card">
+                <span>Incomplete criteria</span>
+                <strong id="outcomeIncompleteCount">0</strong>
+              </div>
+            </div>
+            <p class="scoring-note">
+              These thresholds are suggested quality-improvement indicators and
+              may be modified by institutional policy. Not applicable responses
+              are excluded from the readiness denominator.
+            </p>
+            <div class="outcome-meta">
+              <div>
+                <p class="transition-eyebrow">Transition type</p>
+                <strong id="outcomeTransitionName">Not selected</strong>
+              </div>
+              <dl id="outcomeInfoSummary" class="transition-info-summary"></dl>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <caption>Deficiencies grouped by domain</caption>
+                <thead>
+                  <tr>
+                    <th>Domain</th>
+                    <th>Criterion</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody id="deficiencyBody">
+                  <tr>
+                    <td colspan="3">No deficient items documented.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <section class="print-response-summary" id="printResponseSummary" aria-label="Completed audit responses"></section>
+            <div class="step-actions action-bar" aria-label="Audit actions">
+              <button class="button button-secondary" type="button" data-go-step="3">Review responses</button>
+              <button class="button button-primary" type="button" id="printReport">Print completed audit</button>
+              <button class="button button-primary" type="button" id="printDeficiencies">Print Deficiency Summary</button>
+              <button class="button button-secondary" type="button" id="newReview">Start new audit</button>
+              <button class="button button-secondary" type="button" id="clearReview">Clear audit</button>
+            </div>
+          </section>
+        </section>
+
+        <section class="print-signatures" aria-label="Print signature lines">
+          <p><strong>Auditor signature:</strong> ____________________________________</p>
+          <p><strong>Leadership review:</strong> _____________________________________</p>
+          <p><strong>Date:</strong> _________________________________________________</p>
+          <p class="print-disclaimer">
+            Disclaimer: This quality-improvement tool supports process assessment and quality-improvement documentation only. It must not collect patient-specific medication information or protected health information. Version 1.0.
+          </p>
+        </section>
+      </div>
+    </form>
+  </main>
+</BaseLayout>
+
+<script define:vars={{ conditionalDomains, sharedCoreDomains, transitionDomainGroups, transitionOptions, transitionSpecificModules }}>
+  const state = {
+    step: 1,
+    transition: '',
+    activeDomain: 0,
+    customCriteria: [],
+    responses: {},
+    auditStarted: false,
+    completedSteps: new Set(),
+  };
+
+  const statuses = ['Compliant', 'Deficient', 'Not applicable'];
+  const requiredSetupFields = ['department', 'auditor', 'auditDate', 'transitionType'];
+  const transitionGrid = document.querySelector('#transitionGrid');
+  const customTransitionFields = document.querySelector('#customTransitionFields');
+  const criteriaHost = document.querySelector('#criteriaHost');
+  const deficiencyBody = document.querySelector('#deficiencyBody');
+  const validationMessage = document.querySelector('#validationMessage');
+  const stepStatus = document.querySelector('#stepStatus');
+
+  function escapeHtml(value) {
+    return String(value ?? '').replace(/[&<>"']/g, (char) => ({
+      '&': '&amp;',
+      '<': '&lt;',
+      '>': '&gt;',
+      '"': '&quot;',
+      "'": '&#39;',
+    }[char]));
+  }
+
+  function criterionId(domain, criterion, index = '') {
+    return `${domain}:${criterion}:${index}`.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+  }
+
+  function getTransitionName() {
+    if (state.transition === 'custom-transition') {
+      return fieldValue('customTransitionName') || 'Custom Transition';
+    }
+    return transitionOptions.find(([key]) => key === state.transition)?.[1] || 'Not selected';
+  }
+
+  function getDomainGroups() {
+    const conditionalKey = transitionDomainGroups[state.transition];
+    const activeDomains = [
+      ...sharedCoreDomains,
+      ...(conditionalKey ? conditionalDomains[conditionalKey] || [] : []),
+    ];
+    const seenCriteria = new Set();
+    const groups = activeDomains.map((domain) => ({
+      name: domain.name,
+      items: domain.items
+        .filter((criterion) => {
+          if (seenCriteria.has(criterion)) return false;
+          seenCriteria.add(criterion);
+          return true;
+        })
+        .map((criterion, index) => ({ domain: domain.name, criterion, index, custom: false })),
+    }));
+    groups.push({
+      name: 'Transition-Specific Criteria',
+      items: (transitionSpecificModules[state.transition] || []).map((criterion, index) => ({
+        domain: 'Transition-Specific Criteria',
+        criterion,
+        index,
+        custom: false,
+      })),
+    });
+    state.customCriteria.forEach((row) => {
+      const group = groups.find((item) => item.name === row.domain);
+      if (group) group.items.push(row);
+    });
+    return groups.filter((group) => group.items.length > 0 || group.name === 'Transition-Specific Criteria');
+  }
+
+  function getRows() {
+    return getDomainGroups().flatMap((group) => group.items);
+  }
+
+  function clampActiveDomain(groups = getDomainGroups()) {
+    const lastIndex = Math.max(groups.length - 1, 0);
+    state.activeDomain = Math.min(Math.max(state.activeDomain, 0), lastIndex);
+    return state.activeDomain;
+  }
+
+  function ensureResponse(id) {
+    state.responses[id] ||= { status: '' };
+    return state.responses[id];
+  }
+
+  function transitionIcon(name) {
+    const icons = {
+      clipboard: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 4h6l1 2h3v15H5V6h3z"/><path d="M9 11h6"/><path d="M9 15h5"/></svg>',
+      arrows: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h11"/><path d="m15 4 3 3-3 3"/><path d="M17 17H6"/><path d="m9 14-3 3 3 3"/></svg>',
+      door: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 21h14"/><path d="M7 21V4h10v17"/><path d="M11 13h1"/></svg>',
+      procedure: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 18h16"/><path d="M7 18V8h10v10"/><path d="M9 5h6"/><path d="M12 5v6"/></svg>',
+      icu: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 13h4l2-6 4 12 2-6h4"/><path d="M4 5h16v14H4z"/></svg>',
+      facility: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 21V7l8-4 8 4v14"/><path d="M9 21v-6h6v6"/><path d="M9 10h.01"/><path d="M15 10h.01"/></svg>',
+      home: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11 12 4l9 7"/><path d="M5 10v10h14V10"/><path d="M9 20v-6h6v6"/></svg>',
+      care: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V6h16v14"/><path d="M8 10h8"/><path d="M12 6v8"/><path d="M8 16h8"/></svg>',
+      clinic: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 21V5h12v16"/><path d="M9 9h6"/><path d="M12 6v6"/><path d="M9 15h1"/><path d="M14 15h1"/></svg>',
+      custom: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14"/><path d="M5 12h14"/><path d="M7 7h10v10H7z"/></svg>',
+    };
+    return icons[name] || icons.clipboard;
+  }
+
+  function renderTransitionCards() {
+    transitionGrid.innerHTML = transitionOptions.map(([key, title, description, icon]) => `
+      <label class="transition-card ${state.transition === key ? 'is-selected' : ''}">
+        <input type="radio" name="transitionOption" value="${key}" ${state.transition === key ? 'checked' : ''} />
+        ${transitionIcon(icon)}
+        <span class="transition-card__title">${escapeHtml(title)}</span>
+        <span class="transition-card__text">${escapeHtml(description)}</span>
+      </label>
+    `).join('');
+    customTransitionFields.classList.toggle('is-visible', state.transition === 'custom-transition');
+    document.querySelector('#continueSetup').disabled = !state.transition;
+  }
+
+  function statusControls(id, response) {
+    return statuses.map((status) => `
+      <label class="status-pill">
+        <input type="radio" name="status-${id}" value="${status}" ${response.status === status ? 'checked' : ''} />
+        <span>${status}</span>
+      </label>
+    `).join('');
+  }
+
+  function renderDomain() {
+    if (!state.auditStarted) {
+      criteriaHost.innerHTML = '';
+      return;
+    }
+    const groups = getDomainGroups();
+    clampActiveDomain(groups);
+    const group = groups[state.activeDomain];
+    const rows = group.items;
+    document.querySelector('#activeDomainTitle').textContent = group.name;
+    document.querySelector('#domainProgress').textContent = `Section ${state.activeDomain + 1} of ${groups.length}`;
+    document.querySelector('#domainCompletion').textContent = `${countCompleted(rows)} of ${rows.length} complete`;
+    criteriaHost.innerHTML = `
+      <fieldset class="domain-group">
+        <legend>${escapeHtml(group.name)}</legend>
+        ${rows.map((row) => {
+          const id = row.id || criterionId(row.domain, row.criterion, row.index);
+          const response = ensureResponse(id);
+          return `
+            <article class="criterion-row" data-id="${id}" data-domain="${escapeHtml(row.domain)}" data-criterion="${escapeHtml(row.criterion)}">
+              <div class="criterion-row__main">
+                <h3>${escapeHtml(row.criterion)}</h3>
+                ${row.custom && row.editing ? `
+                  <div class="custom-edit-panel">
+                    <label>
+                      Edit criterion
+                      <input data-edit-input="${id}" type="text" value="${escapeHtml(row.criterion)}" />
+                    </label>
+                    <div class="custom-row-actions">
+                      <button type="button" class="text-action" data-save="${id}">Save</button>
+                      <button type="button" class="text-action" data-cancel="${id}">Cancel</button>
+                    </div>
+                  </div>
+                ` : ''}
+                ${row.custom && !row.editing ? `
+                  <div class="custom-row-actions">
+                    <button type="button" class="text-action" data-edit="${id}">Edit</button>
+                    <button type="button" class="text-action text-action--danger" data-delete="${id}">Delete</button>
+                  </div>
+                ` : ''}
+              </div>
+              <fieldset class="status-group">
+                <legend>Status</legend>
+                ${statusControls(id, response)}
+              </fieldset>
+            </article>
+          `;
+        }).join('')}
+      </fieldset>
+    `;
+    renderDomainNav();
+    renderCustomDomainOptions();
+    document.querySelector('#previousDomain').disabled = state.activeDomain === 0;
+    document.querySelector('#nextDomain').textContent = state.activeDomain === groups.length - 1
+      ? 'Generate outcome'
+      : 'Next section';
+  }
+
+  function renderCustomDomainOptions() {
+    const select = document.querySelector('#customDomain');
+    const groups = getDomainGroups();
+    clampActiveDomain(groups);
+    select.innerHTML = groups.map((group) => `
+      <option value="${escapeHtml(group.name)}" ${group.name === groups[state.activeDomain]?.name ? 'selected' : ''}>${escapeHtml(group.name)}</option>
+    `).join('');
+  }
+
+  function countCompleted(rows) {
+    return rows.filter((row) => {
+      const response = ensureResponse(row.id || criterionId(row.domain, row.criterion, row.index));
+      return statuses.includes(response.status);
+    }).length;
+  }
+
+  function calculate() {
+    const rows = getRows();
+    let compliant = 0;
+    let deficient = 0;
+    let notApplicable = 0;
+    let incomplete = 0;
+
+    rows.forEach((row) => {
+      const id = row.id || criterionId(row.domain, row.criterion, row.index);
+      const response = ensureResponse(id);
+      if (response.status === 'Compliant') compliant += 1;
+      else if (response.status === 'Deficient') deficient += 1;
+      else if (response.status === 'Not applicable') notApplicable += 1;
+      else incomplete += 1;
+    });
+
+    const total = rows.length;
+    const completed = total - incomplete;
+    const denominator = compliant + deficient;
+    const score = denominator ? Math.round((compliant / denominator) * 100) : null;
+    let label = 'Incomplete audit';
+    if (incomplete === 0) {
+      if (denominator === 0) label = 'No applicable criteria were assessed';
+      else if (score >= 95) label = 'Process safeguards well established';
+      else if (score >= 85) label = 'Improvement opportunities identified';
+      else label = 'Priority process review recommended';
+    }
+
+    setText('#totalCount', total);
+    setText('#completedCount', completed);
+    setText('#compliantCount', compliant);
+    setText('#deficientCount', deficient);
+    setText('#notApplicableCount', notApplicable);
+    setText('#incompleteCount', incomplete);
+    setText('#readinessScore', denominator ? `${score}%` : 'N/A');
+    setText('#readinessLabel', label);
+    setText('#outcomeApplicableCount', denominator);
+    setText('#outcomeCompliantCount', compliant);
+    setText('#outcomeDeficientCount', deficient);
+    setText('#outcomeNotApplicableCount', notApplicable);
+    setText('#outcomeIncompleteCount', incomplete);
+    return { total, completed, compliant, deficient, notApplicable, incomplete, score, label };
+  }
+
+  function setText(selector, value) {
+    const element = document.querySelector(selector);
+    if (element) element.textContent = value;
+  }
+
+  function renderDeficiencies() {
+    const rows = getRows()
+      .map((row) => {
+        const id = row.id || criterionId(row.domain, row.criterion, row.index);
+        return { ...row, id, response: ensureResponse(id) };
+      })
+      .filter((row) => row.response.status === 'Deficient');
+
+    deficiencyBody.innerHTML = rows.length ? rows.map((row) => `
+      <tr>
+        <td>${escapeHtml(row.domain)}</td>
+        <td>${escapeHtml(row.criterion)}</td>
+        <td>${escapeHtml(row.response.status)}</td>
+      </tr>
+    `).join('') : '<tr><td colspan="3">No deficient items documented.</td></tr>';
+  }
+
+  function renderPrintResponses() {
+    const host = document.querySelector('#printResponseSummary');
+    if (!host) return;
+    host.innerHTML = getDomainGroups().map((group) => `
+      <section class="print-response-domain">
+        <h3>${escapeHtml(group.name)}</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Criterion</th>
+              <th>Response</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${group.items.map((row) => {
+              const id = row.id || criterionId(row.domain, row.criterion, row.index);
+              const response = ensureResponse(id);
+              return `
+                <tr>
+                  <td>${escapeHtml(row.criterion)}</td>
+                  <td>${escapeHtml(response.status || 'Incomplete')}</td>
+                </tr>
+              `;
+            }).join('')}
+          </tbody>
+        </table>
+      </section>
+    `).join('');
+  }
+
+  function renderSummaries() {
+    const transitionName = getTransitionName();
+    setText('#setupTransitionName', transitionName);
+    setText('#auditTransitionName', transitionName);
+    setText('#outcomeTransitionName', transitionName);
+    if (!fieldValue('transitionType') && transitionName !== 'Not selected') {
+      document.querySelector('[name="transitionType"]').value = transitionName;
+    }
+    const entries = [
+      ['Facility or organization', fieldValue('facility')],
+      ['Department or unit', fieldValue('department')],
+      ['Auditor', fieldValue('auditor')],
+      ['Audit date', fieldValue('auditDate')],
+      ['Transition type', fieldValue('transitionType')],
+      ['Population or care area', fieldValue('population')],
+      ['Policy or procedure reviewed', fieldValue('policyName')],
+      ['Policy version/revision date', fieldValue('policyVersion')],
+      ['Audit period', fieldValue('auditPeriod')],
+      ['Number of records reviewed', fieldValue('recordsReviewed')],
+      ['Previous audit date', fieldValue('previousAuditDate')],
+      ['General notes', fieldValue('notes')],
+    ].filter(([, value]) => value);
+    const html = entries.map(([label, value]) => `<div><dt>${label}</dt><dd>${escapeHtml(value)}</dd></div>`).join('');
+    document.querySelector('#auditInfoSummary').innerHTML = html;
+    document.querySelector('#outcomeInfoSummary').innerHTML = html;
+  }
+
+  function updateAll() {
+    calculate();
+    renderDeficiencies();
+    renderPrintResponses();
+    renderDomainNav();
+    renderSummaries();
+  }
+
+  function fieldValue(name) {
+    return document.querySelector(`[name="${name}"]`)?.value.trim() || '';
+  }
+
+  function validateSetup() {
+    const missing = requiredSetupFields.filter((name) => !fieldValue(name));
+    requiredSetupFields.forEach((name) => {
+      document.querySelector(`[name="${name}"]`)?.classList.toggle('has-error', missing.includes(name));
+    });
+    if (!missing.length) return true;
+    validationMessage.textContent = 'Complete all required audit setup fields before beginning the audit.';
+    document.querySelector(`[name="${missing[0]}"]`)?.focus();
+    return false;
+  }
+
+  function domainComplete(index) {
+    const group = getDomainGroups()[index];
+    return group ? countCompleted(group.items) === group.items.length : false;
+  }
+
+  function getIncompleteSections() {
+    return getDomainGroups().map((group, index) => {
+      const incomplete = group.items.filter((row) => {
+        const response = ensureResponse(row.id || criterionId(row.domain, row.criterion, row.index));
+        return !statuses.includes(response.status);
+      }).length;
+      return { index, name: group.name, incomplete };
+    }).filter((section) => section.incomplete > 0);
+  }
+
+  function renderIncompleteValidation(sections) {
+    validationMessage.innerHTML = `
+      Complete every criterion before generating the outcome. Incomplete sections:
+      ${sections.map((section) => `
+        <button type="button" class="text-action" data-incomplete-section="${section.index}">
+          ${escapeHtml(section.name)} (${section.incomplete})
+        </button>
+      `).join('')}
+    `;
+  }
+
+  function generateOutcome() {
+    const incompleteSections = getIncompleteSections();
+    if (incompleteSections.length) {
+      renderIncompleteValidation(incompleteSections);
+      showStep(3, { preserveValidation: true });
+      return;
+    }
+    state.completedSteps.add(3);
+    updateAll();
+    showStep(4);
+  }
+
+  function goToDomain(index) {
+    const groups = getDomainGroups();
+    state.activeDomain = Number(index);
+    clampActiveDomain(groups);
+    renderDomain();
+    updateAll();
+    showStep(3);
+  }
+
+  function goToStep(step) {
+    if (step === 3) {
+      clampActiveDomain();
+      renderDomain();
+      updateAll();
+    }
+    showStep(step);
+  }
+
+  function isFinalDomain() {
+    const groups = getDomainGroups();
+    clampActiveDomain(groups);
+    return state.activeDomain === groups.length - 1;
+  }
+
+  validationMessage.addEventListener('click', (event) => {
+    const button = event.target.closest('[data-incomplete-section]');
+    if (!button) return;
+    goToDomain(button.dataset.incompleteSection);
+  });
+
+  function canAdvanceFromCurrentDomain() {
+    return domainComplete(state.activeDomain);
+  }
+
+  function advanceDomain() {
+    if (isFinalDomain()) {
+      generateOutcome();
+      return;
+    }
+    if (!canAdvanceFromCurrentDomain()) {
+      validationMessage.textContent = 'Assess every criterion in this section before moving forward. Use Not applicable when appropriate.';
+      return;
+    }
+    state.activeDomain = Math.min(state.activeDomain + 1, getDomainGroups().length - 1);
+    renderDomain();
+    updateAll();
+    showStep(3);
+  }
+
+  function retreatDomain() {
+    if (state.activeDomain > 0) {
+      state.activeDomain = Math.max(state.activeDomain - 1, 0);
+      renderDomain();
+      updateAll();
+      showStep(3);
+    }
+  }
+
+  function setActiveDomainFromButton(button) {
+    if (!button) return;
+    goToDomain(button.dataset.domainIndex);
+  }
+
+  function renderDomainNav() {
+    const host = document.querySelector('#domainNav');
+    if (!host || !state.auditStarted) return;
+    host.innerHTML = getDomainGroups().map((group, index) => {
+      const complete = domainComplete(index);
+      const active = index === state.activeDomain;
+      const incomplete = Math.max(group.items.length - countCompleted(group.items), 0);
+      return `<button type="button" data-domain-index="${index}" class="domain-item ${active ? 'is-active' : ''} ${complete ? 'is-complete' : ''}" aria-current="${active ? 'step' : 'false'}">
+        <span class="domain-badge" aria-hidden="true">${index + 1}</span>
+        <span class="domain-copy">
+          <span class="domain-title">${escapeHtml(group.name)}</span>
+          <span class="domain-status">${complete ? 'Complete' : `${incomplete} incomplete`}</span>
+        </span>
+      </button>`;
+    }).join('');
+  }
+
+  function showStep(step, options = {}) {
+    state.step = step;
+    clampActiveDomain();
+    document.querySelectorAll('[data-step-panel]').forEach((panel) => {
+      panel.classList.toggle('is-active', Number(panel.dataset.stepPanel) === step);
+    });
+    document.querySelectorAll('[data-progress-step]').forEach((item) => {
+      const itemStep = Number(item.dataset.progressStep);
+      item.classList.toggle('is-active', itemStep === step);
+      item.classList.toggle('is-complete', state.completedSteps.has(itemStep));
+    });
+    const labels = {
+      1: 'Step 1 of 4: select a transition type.',
+      2: 'Step 2 of 4: complete audit setup.',
+      3: `Step 3 of 4: audit section ${state.activeDomain + 1} of ${getDomainGroups().length}.`,
+      4: 'Step 4 of 4: review outcome and action summary.',
+    };
+    stepStatus.textContent = labels[step];
+    if (!options.preserveValidation) validationMessage.textContent = '';
+    renderSummaries();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  function beginAudit() {
+    if (!validateSetup()) return;
+    state.completedSteps.add(2);
+    const wasStarted = state.auditStarted;
+    state.auditStarted = true;
+    if (!wasStarted) state.activeDomain = 0;
+    renderDomain();
+    updateAll();
+    showStep(3);
+  }
+
+  transitionGrid.addEventListener('change', (event) => {
+    if (event.target.name === 'transitionOption') {
+      state.transition = event.target.value;
+      state.completedSteps.add(1);
+      const transitionType = document.querySelector('[name="transitionType"]');
+      transitionType.value = getTransitionName();
+      state.activeDomain = 0;
+      renderTransitionCards();
+      renderDomain();
+      updateAll();
+    }
+  });
+
+  criteriaHost.addEventListener('change', (event) => {
+    const row = event.target.closest('.criterion-row');
+    if (!row) return;
+    const response = ensureResponse(row.dataset.id);
+    if (event.target.name?.startsWith('status-')) {
+      response.status = event.target.value;
+    }
+    renderDomain();
+    updateAll();
+  });
+
+  criteriaHost.addEventListener('click', (event) => {
+    const editId = event.target.dataset.edit;
+    const saveId = event.target.dataset.save;
+    const cancelId = event.target.dataset.cancel;
+    const deleteId = event.target.dataset.delete;
+    if (editId) {
+      const row = state.customCriteria.find((item) => item.id === editId);
+      if (!row) return;
+      row.editing = true;
+      renderDomain();
+      updateAll();
+    }
+    if (saveId) {
+      const row = state.customCriteria.find((item) => item.id === saveId);
+      const input = document.querySelector(`[data-edit-input="${saveId}"]`);
+      const revised = input?.value.trim();
+      if (!row || !revised) return;
+      if (revised !== row.criterion) {
+        const response = state.responses[row.id];
+        row.criterion = revised.trim();
+        row.id = criterionId(row.domain, row.criterion, row.createdAt);
+        state.responses[row.id] = response || { status: '' };
+        delete state.responses[saveId];
+      }
+      row.editing = false;
+      renderDomain();
+      updateAll();
+    }
+    if (cancelId) {
+      const row = state.customCriteria.find((item) => item.id === cancelId);
+      if (!row) return;
+      row.editing = false;
+      renderDomain();
+      updateAll();
+    }
+    if (deleteId && confirm('Delete this custom criterion?')) {
+      state.customCriteria = state.customCriteria.filter((row) => row.id !== deleteId);
+      delete state.responses[deleteId];
+      renderDomain();
+      updateAll();
+    }
+  });
+
+  document.querySelector('#addCustomCriterion').addEventListener('click', () => {
+    const domain = document.querySelector('#customDomain').value;
+    const criterion = document.querySelector('#customCriterion').value.trim();
+    if (!criterion) {
+      validationMessage.textContent = 'Enter a custom criterion before adding it.';
+      return;
+    }
+    const createdAt = String(Date.now());
+    state.customCriteria.push({
+      id: criterionId(domain, criterion, createdAt),
+      domain,
+      criterion,
+      index: createdAt,
+      createdAt,
+      custom: true,
+    });
+    document.querySelector('#customCriterion').value = '';
+    state.activeDomain = getDomainGroups().findIndex((group) => group.name === domain);
+    renderDomain();
+    updateAll();
+    showStep(3);
+  });
+
+  document.querySelector('#clearReview').addEventListener('click', () => {
+    if (confirm('Clear all audit responses? This cannot be undone.')) {
+      state.responses = {};
+      renderDomain();
+      updateAll();
+    }
+  });
+
+  document.querySelector('#newReview').addEventListener('click', () => {
+    if (confirm('Start a new audit and clear all entered information?')) {
+      document.querySelector('#reviewForm').reset();
+      state.step = 1;
+      state.transition = '';
+      state.activeDomain = 0;
+      state.customCriteria = [];
+      state.responses = {};
+      state.auditStarted = false;
+      state.completedSteps = new Set();
+      criteriaHost.innerHTML = '';
+      init();
+    }
+  });
+
+  document.querySelector('#printReport').addEventListener('click', () => {
+    document.body.dataset.printMode = 'report';
+    window.print();
+  });
+
+  document.querySelector('#printDeficiencies').addEventListener('click', () => {
+    document.body.dataset.printMode = 'deficiencies';
+    window.print();
+  });
+
+  document.querySelector('#continueSetup').addEventListener('click', () => {
+    if (!state.transition) {
+      validationMessage.textContent = 'Select a transition type before continuing.';
+      return;
+    }
+    if (state.transition === 'custom-transition' && !fieldValue('customTransitionName')) {
+      validationMessage.textContent = 'Enter the custom transition name before continuing.';
+      document.querySelector('[name="customTransitionName"]').focus();
+      return;
+    }
+    state.completedSteps.add(1);
+    document.querySelector('[name="transitionType"]').value = getTransitionName();
+    showStep(2);
+  });
+
+  document.querySelector('#beginAudit').addEventListener('click', beginAudit);
+
+  document.querySelectorAll('[data-go-step]').forEach((button) => {
+    button.addEventListener('click', () => goToStep(Number(button.dataset.goStep)));
+  });
+
+  document.querySelector('#previousDomain').addEventListener('click', () => {
+    retreatDomain();
+  });
+
+  document.querySelector('#nextDomain').addEventListener('click', () => {
+    advanceDomain();
+  });
+
+  document.querySelector('#domainNav').addEventListener('click', (event) => {
+    const button = event.target.closest('[data-domain-index]');
+    setActiveDomainFromButton(button);
+  });
+
+  document.querySelector('#reviewForm').addEventListener('input', () => {
+    renderSummaries();
+    if (state.transition === 'custom-transition') {
+      document.querySelector('[name="transitionType"]').value = getTransitionName();
+      updateAll();
+    }
+  });
+
+  function init() {
+    renderTransitionCards();
+    renderCustomDomainOptions();
+    renderSummaries();
+    renderDomainNav();
+    calculate();
+    showStep(1);
+  }
+
+  init();
+</script>
+
+<style is:global>
+  .transition-audit-page {
+    background: #f7f9fb;
+    color: #24313a;
+  }
+
+  .transition-container {
+    width: min(100% - 40px, 1180px);
+    margin-inline: auto;
+  }
+
+  .transition-hero {
+    border-bottom: 1px solid #dbe4ea;
+    background: linear-gradient(135deg, #eef5f8 0%, #f7f9fb 76%);
+    padding: 30px 0 42px;
+  }
+
+  .transition-brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 34px;
+    color: #123b5d;
+    font-weight: 800;
+  }
+
+  .transition-brand__mark {
+    display: inline-grid;
+    width: 42px;
+    height: 42px;
+    place-items: center;
+    border-radius: 8px;
+    background: #123b5d;
+    color: #fff;
+    font-size: 0.78rem;
+    letter-spacing: 0;
+  }
+
+  .transition-eyebrow {
+    margin: 0 0 10px;
+    color: #2e7d68;
+    font-size: 0.78rem;
+    font-weight: 850;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .transition-hero h1 {
+    max-width: 880px;
+    margin-bottom: 18px;
+    color: #123b5d;
+    font-size: clamp(2.45rem, 5vw, 4.3rem);
+    line-height: 1.04;
+  }
+
+  .transition-lede {
+    max-width: 820px;
+    color: #40515d;
+    font-size: 1.12rem;
+  }
+
+  .clinical-notice {
+    max-width: 920px;
+    border: 1px solid rgba(46, 125, 104, 0.22);
+    border-left: 5px solid #2e7d68;
+    border-radius: 12px;
+    background: #f5fbf8;
+    padding: 18px 20px;
+  }
+
+  .transition-stack {
+    display: grid;
+    gap: 24px;
+    padding: 34px 0 64px;
+  }
+
+  .step-progress {
+    border: 1px solid #d6e2e9;
+    border-radius: 16px;
+    background: #fff;
+    padding: 14px;
+    box-shadow: 0 12px 28px rgba(18, 59, 93, 0.06);
+  }
+
+  .step-progress ol {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .step-progress li {
+    display: flex;
+    min-height: 48px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 12px;
+    color: #60717d;
+    font-weight: 800;
+    padding: 8px 12px;
+  }
+
+  .step-progress li span {
+    display: grid;
+    width: 30px;
+    height: 30px;
+    flex: 0 0 auto;
+    place-items: center;
+    border: 1px solid #cbd9e2;
+    border-radius: 999px;
+    color: #123b5d;
+    font-size: 0.9rem;
+  }
+
+  .step-progress li.is-active {
+    background: #eef5f8;
+    color: #123b5d;
+  }
+
+  .step-progress li.is-complete span {
+    border-color: #2e7d68;
+    background: #2e7d68;
+    color: #fff;
+  }
+
+  .step-status,
+  .validation-message {
+    margin: 0;
+    font-weight: 800;
+  }
+
+  .step-status {
+    color: #123b5d;
+  }
+
+  .validation-message {
+    min-height: 1.6em;
+    color: #8a2e25;
+  }
+
+  .transition-panel-card {
+    border: 1px solid #d6e2e9;
+    border-radius: 14px;
+    background: #fff;
+    padding: 28px;
+    box-shadow: 0 14px 34px rgba(18, 59, 93, 0.07);
+  }
+
+  .step-panel {
+    display: none;
+  }
+
+  .step-panel.is-active {
+    display: block;
+  }
+
+  .section-title h2,
+  .section-title h3 {
+    margin-bottom: 10px;
+    color: #123b5d;
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  }
+
+  .section-title h2 {
+    font-size: clamp(1.7rem, 3vw, 2.3rem);
+  }
+
+  .section-title p:last-child {
+    max-width: 760px;
+    margin-bottom: 0;
+    color: #60717d;
+  }
+
+  .section-title--row {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 18px;
+  }
+
+  .transition-fieldset,
+  .domain-group,
+  .status-group {
+    min-width: 0;
+    margin: 0;
+    border: 0;
+    padding: 0;
+  }
+
+  .transition-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+    margin-top: 24px;
+  }
+
+  .transition-card {
+    position: relative;
+    display: grid;
+    min-height: 170px;
+    cursor: pointer;
+    gap: 10px;
+    border: 1px solid #d6e2e9;
+    border-radius: 14px;
+    background: #fff;
+    padding: 22px;
+    transition: border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
+  }
+
+  .transition-card:hover,
+  .transition-card.is-selected {
+    border-color: #2b6f9f;
+    box-shadow: 0 14px 28px rgba(18, 59, 93, 0.1);
+  }
+
+  .transition-card:hover {
+    transform: translateY(-2px);
+  }
+
+  .transition-card input {
+    position: absolute;
+    inset: 16px 16px auto auto;
+    width: 20px;
+    height: 20px;
+    accent-color: #2e7d68;
+  }
+
+  .transition-card svg {
+    width: 34px;
+    height: 34px;
+    fill: none;
+    stroke: #2b6f9f;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 1.8;
+  }
+
+  .transition-card__title {
+    padding-right: 28px;
+    color: #123b5d;
+    font-size: 1.1rem;
+    font-weight: 850;
+    line-height: 1.2;
+  }
+
+  .transition-card__text {
+    color: #60717d;
+    line-height: 1.45;
+  }
+
+  .other-transition {
+    display: none;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 16px;
+    margin-top: 20px;
+  }
+
+  .other-transition.is-visible {
+    display: grid;
+  }
+
+  label {
+    display: grid;
+    gap: 7px;
+    color: #123b5d;
+    font-weight: 800;
+  }
+
+  input,
+  select,
+  textarea {
+    width: 100%;
+    min-height: 46px;
+    border: 1px solid #cbd9e2;
+    border-radius: 8px;
+    background: #fff;
+    color: #24313a;
+    font: inherit;
+    padding: 10px 12px;
+  }
+
+  textarea {
+    resize: vertical;
+  }
+
+  button {
+    font: inherit;
+  }
+
+  input:focus-visible,
+  select:focus-visible,
+  textarea:focus-visible,
+  button:focus-visible,
+  .transition-card:focus-within {
+    outline: 3px solid rgba(46, 125, 104, 0.34);
+    outline-offset: 3px;
+  }
+
+  input.has-error {
+    border-color: #b44437;
+    box-shadow: 0 0 0 3px rgba(180, 68, 55, 0.12);
+  }
+
+  .required-marker {
+    color: #2e7d68;
+    font-size: 0.75rem;
+    font-weight: 850;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  .selected-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+    margin-bottom: 24px;
+    border: 1px solid rgba(46, 125, 104, 0.24);
+    border-radius: 12px;
+    background: #f5fbf8;
+    padding: 16px 18px;
+  }
+
+  .selected-banner span {
+    color: #60717d;
+    font-size: 0.78rem;
+    font-weight: 850;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  .selected-banner strong {
+    color: #123b5d;
+    font-size: 1.05rem;
+  }
+
+  .setup-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+  .setup-grid__wide {
+    grid-column: 1 / -1;
+  }
+
+  .step-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 24px;
+  }
+
+  .button {
+    min-height: 50px;
+    border: 0;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  .button:disabled {
+    cursor: not-allowed;
+    opacity: 0.55;
+    transform: none;
+  }
+
+  .audit-workspace.is-active {
+    display: grid;
+    grid-template-columns: minmax(300px, 340px) minmax(0, 1fr);
+    align-items: start;
+    gap: 24px;
+  }
+
+  .audit-sidebar {
+    position: sticky;
+    top: 22px;
+    display: grid;
+    gap: 16px;
+    min-width: 0;
+    max-height: calc(100vh - 44px);
+    overflow: hidden;
+  }
+
+  .compact-summary {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+    border: 1px solid #d6e2e9;
+    border-radius: 14px;
+    background: #fff;
+    padding: 14px;
+    box-shadow: 0 12px 28px rgba(18, 59, 93, 0.06);
+  }
+
+  .compact-summary div,
+  .metric-card {
+    display: grid;
+    gap: 2px;
+    border-radius: 10px;
+    background: #f7f9fb;
+    padding: 12px;
+  }
+
+  .compact-summary span,
+  .metric-card span {
+    color: #60717d;
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+
+  .compact-summary strong,
+  .metric-card strong {
+    color: #123b5d;
+    font-size: 1.45rem;
+    line-height: 1.1;
+  }
+
+  .domain-nav {
+    display: grid;
+    gap: 12px;
+    max-height: calc(100vh - 280px);
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 2px 6px 2px 2px;
+    scroll-padding-block: 12px;
+  }
+
+  .domain-item {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: 14px;
+    align-items: start;
+    min-height: 72px;
+    cursor: pointer;
+    border: 1px solid #d6e2e9;
+    border-radius: 12px;
+    background: #fff;
+    color: #123b5d;
+    padding: 16px 18px;
+    text-align: left;
+    transition: background 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
+  }
+
+  .domain-item:hover {
+    border-color: #b8d0df;
+    background: #f8fbfd;
+  }
+
+  .domain-badge {
+    display: inline-grid;
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    place-items: center;
+    border-radius: 999px;
+    background: #eef5f8;
+    color: #123b5d;
+    font-weight: 850;
+  }
+
+  .domain-copy {
+    min-width: 0;
+  }
+
+  .domain-title {
+    display: block;
+    min-width: 0;
+    color: #123b5d;
+    font-weight: 850;
+    line-height: 1.3;
+    overflow-wrap: anywhere;
+    white-space: normal;
+  }
+
+  .domain-status {
+    display: block;
+    margin-top: 6px;
+    color: #60717d;
+    font-size: 13px;
+    font-weight: 800;
+  }
+
+  .domain-item.is-active {
+    border-color: #2b6f9f;
+    background: #eef5f8;
+    box-shadow: 0 0 0 3px rgba(43, 111, 159, 0.11);
+  }
+
+  .domain-item.is-active .domain-badge {
+    background: #123b5d;
+    color: #fff;
+  }
+
+  .domain-item.is-complete .domain-badge {
+    background: #2e7d68;
+    color: #fff;
+  }
+
+  .domain-item.is-complete .domain-status {
+    color: #2e7d68;
+    font-size: 13px;
+  }
+
+  .domain-item.is-active.is-complete .domain-badge {
+    background: #123b5d;
+  }
+
+  .transition-info-summary {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px 20px;
+    margin: 0;
+  }
+
+  .transition-info-summary div {
+    min-width: 0;
+  }
+
+  .transition-info-summary dt {
+    color: #60717d;
+    font-size: 0.78rem;
+    font-weight: 850;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+
+  .transition-info-summary dd {
+    margin: 0;
+    overflow-wrap: anywhere;
+    color: #123b5d;
+    font-weight: 750;
+  }
+
+  .checklist-card {
+    margin-top: 20px;
+  }
+
+  .domain-completion {
+    white-space: nowrap;
+    border-radius: 999px;
+    background: #eef5f8;
+    color: #123b5d;
+    font-weight: 850;
+    padding: 8px 12px;
+  }
+
+  .domain-group legend {
+    margin-bottom: 12px;
+    color: #123b5d;
+    font-size: 1.05rem;
+    font-weight: 850;
+  }
+
+  .criterion-row {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(260px, 0.88fr);
+    gap: 18px;
+    align-items: center;
+    border-top: 1px solid #dbe4ea;
+    padding: 18px 0;
+  }
+
+  .criterion-row h3 {
+    margin: 0;
+    color: #24313a;
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  .custom-row-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 8px;
+  }
+
+  .custom-edit-panel {
+    display: grid;
+    gap: 10px;
+    margin-top: 10px;
+    border: 1px solid #d6e2e9;
+    border-radius: 10px;
+    background: #f8fbfd;
+    padding: 12px;
+  }
+
+  .text-action {
+    min-height: 38px;
+    cursor: pointer;
+    border: 1px solid #d6e2e9;
+    border-radius: 8px;
+    background: #fff;
+    color: #2b6f9f;
+    font-weight: 850;
+    padding: 7px 10px;
+  }
+
+  .text-action--danger {
+    color: #8a2e25;
+  }
+
+  .status-group {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  .status-group legend {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+
+  .status-pill {
+    display: block;
+  }
+
+  .status-pill input {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .status-pill span {
+    display: grid;
+    min-height: 44px;
+    place-items: center;
+    border: 1px solid #cbd9e2;
+    border-radius: 8px;
+    background: #fff;
+    color: #123b5d;
+    font-size: 0.92rem;
+    font-weight: 850;
+    line-height: 1.15;
+    padding: 8px 10px;
+    text-align: center;
+  }
+
+  .status-pill input:checked + span {
+    border-color: #2e7d68;
+    background: #eaf6f1;
+    color: #1d604f;
+  }
+
+  .custom-builder {
+    margin-top: 22px;
+    border: 1px solid #d6e2e9;
+    border-radius: 12px;
+    background: #f8fbfd;
+    padding: 20px;
+  }
+
+  .custom-grid {
+    display: grid;
+    grid-template-columns: minmax(180px, 0.8fr) minmax(0, 1.3fr) auto;
+    align-items: end;
+    gap: 14px;
+    margin-top: 16px;
+  }
+
+  .outcome-overview {
+    display: grid;
+    grid-template-columns: minmax(220px, 1.2fr) repeat(5, minmax(130px, 1fr));
+    gap: 14px;
+    margin: 22px 0;
+  }
+
+  .score-card {
+    display: grid;
+    align-content: center;
+    border-radius: 14px;
+    background: #123b5d;
+    color: #fff;
+    padding: 22px;
+  }
+
+  .score-card .transition-eyebrow {
+    color: #c9e7dd;
+  }
+
+  .score-card strong {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .score-card span {
+    margin-top: 8px;
+    font-weight: 850;
+  }
+
+  .scoring-note {
+    border-left: 4px solid #2e7d68;
+    background: #f5fbf8;
+    margin: 0 0 20px;
+    padding: 12px 14px;
+    color: #40515d;
+  }
+
+  .outcome-meta {
+    display: grid;
+    gap: 18px;
+    border: 1px solid #d6e2e9;
+    border-radius: 12px;
+    background: #f8fbfd;
+    margin-bottom: 22px;
+    padding: 18px;
+  }
+
+  .outcome-meta strong {
+    color: #123b5d;
+    font-size: 1.15rem;
+  }
+
+  .table-wrap {
+    overflow-x: auto;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+  }
+
+  caption {
+    color: #123b5d;
+    font-weight: 850;
+    padding: 0 0 10px;
+    text-align: left;
+  }
+
+  th,
+  td {
+    border: 1px solid #dbe4ea;
+    padding: 12px;
+    text-align: left;
+    vertical-align: top;
+  }
+
+  th {
+    background: #eef5f8;
+    color: #123b5d;
+    font-size: 0.82rem;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+
+  .print-signatures {
+    display: none;
+  }
+
+  .print-response-summary {
+    display: none;
+  }
+
+  .print-response-domain {
+    break-inside: avoid;
+    margin-top: 18px;
+  }
+
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+
+  @media (max-width: 980px) {
+    .transition-grid,
+    .outcome-overview {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .audit-workspace.is-active {
+      grid-template-columns: 1fr;
+    }
+
+    .audit-sidebar {
+      position: static;
+      max-height: none;
+      overflow: visible;
+    }
+
+    .domain-nav {
+      max-height: none;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      overflow: visible;
+      padding-right: 0;
+    }
+
+    .criterion-row {
+      grid-template-columns: 1fr;
+    }
+
+    .custom-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 680px) {
+    .transition-container {
+      width: min(100% - 28px, 1180px);
+    }
+
+    .transition-hero {
+      padding-top: 24px;
+    }
+
+    .transition-panel-card {
+      padding: 22px;
+    }
+
+    .step-progress ol,
+    .transition-grid,
+    .other-transition,
+    .setup-grid,
+    .transition-info-summary,
+    .outcome-overview,
+    .domain-nav {
+      grid-template-columns: 1fr;
+    }
+
+    .domain-item {
+      min-height: 68px;
+      padding: 14px 16px;
+    }
+
+    .domain-badge {
+      width: 38px;
+      height: 38px;
+    }
+
+    .step-progress li {
+      min-height: 44px;
+    }
+
+    .section-title--row,
+    .selected-banner {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .status-group {
+      grid-template-columns: 1fr;
+    }
+
+    .step-actions .button {
+      width: 100%;
+    }
+  }
+
+  @media print {
+    body {
+      background: #fff !important;
+    }
+
+    .transition-hero,
+    .step-progress,
+    .step-status,
+    .validation-message,
+    .audit-sidebar,
+    .custom-builder,
+    .step-actions,
+    .transition-brand {
+      display: none !important;
+    }
+
+    .transition-stack,
+    .transition-container {
+      width: 100%;
+      padding: 0;
+    }
+
+    .step-panel {
+      display: none !important;
+    }
+
+    .outcome-panel {
+      display: block !important;
+    }
+
+    .transition-panel-card {
+      break-inside: avoid;
+      border: 0;
+      border-radius: 0;
+      box-shadow: none;
+      padding: 0 0 16px;
+    }
+
+    .outcome-panel .transition-panel-card::before {
+      display: block;
+      margin-bottom: 8px;
+      color: #123b5d;
+      content: "LittleMeds Safety | Pediatric Medication Reconciliation and Transition Audit";
+      font-size: 15pt;
+      font-weight: 850;
+    }
+
+    .print-response-summary {
+      display: block;
+    }
+
+    .print-response-domain h3 {
+      margin: 16px 0 8px;
+      color: #123b5d;
+      font-size: 13pt;
+    }
+
+    .outcome-overview {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .score-card,
+    .metric-card,
+    .outcome-meta,
+    .scoring-note {
+      border: 1px solid #dbe4ea;
+      background: #fff !important;
+      color: #111 !important;
+      padding: 10px;
+    }
+
+    .score-card .transition-eyebrow,
+    .score-card strong,
+    .score-card span {
+      color: #111 !important;
+    }
+
+    .print-signatures {
+      display: block;
+      break-inside: avoid;
+      margin-top: 20px;
+    }
+
+    body[data-print-mode="deficiencies"] .print-response-summary {
+      display: none !important;
+    }
+
+    body[data-print-mode="report"] .outcome-panel,
+    body[data-print-mode="deficiencies"] .outcome-panel {
+      display: block !important;
+    }
+  }
+</style>

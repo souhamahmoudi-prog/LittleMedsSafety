@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="https://www.accessdata.fda.gov/spl/stylesheet/spl.xsl" type="text/xsl"?>
+<document xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 https://www.accessdata.fda.gov/spl/schema/spl.xsd">
+   <id root="3ccc6e19-1da7-caa1-2b51-6946e92a1a79"/>
+   <code code="34390-5" codeSystem="2.16.840.1.113883.6.1" displayName="HUMAN OTC DRUG LABEL"/>
+   <title>Drug Facts</title>
+   <effectiveTime value="20240715"/>
+   <setId root="ddee28fb-c871-a6d4-984f-515522b28412"/>
+   <versionNumber value="1"/>
+   <author>
+      <time/>
+      <assignedEntity>
+         <representedOrganization>
+            <id extension="802315887" root="1.3.6.1.4.1.519.1"/>
+            <name>Dr. Reddy's Laboratories Inc.,</name>
+            <assignedEntity>
+               <assignedOrganization/>
+            </assignedEntity>
+         </representedOrganization>
+      </assignedEntity>
+   </author>
+   <component>
+      <structuredBody>
+         <component>
+            <section>
+               <id root="8bd9e350-89f1-abf2-3b55-efe570bb1141"/>
+               <code code="48780-1" displayName="SPL PRODUCT DATA ELEMENTS SECTION" codeSystem="2.16.840.1.113883.6.1"/>
+               <effectiveTime value="20240715"/>
+               <subject>
+                  <manufacturedProduct>
+                     <manufacturedProduct>
+                        <code codeSystem="2.16.840.1.113883.6.69" code="75907-138"/>
+                        <name>Omeprazole and Sodium Bicarbonate</name>
+                        <formCode code="C42975" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="POWDER, FOR SUSPENSION"/>
+                        <asEntityWithGeneric>
+                           <genericMedicine>
+                              <name>Omeprazole and Sodium Bicarbonate</name>
+                           </genericMedicine>
+                        </asEntityWithGeneric>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator unit="mg" value="20"/>
+                              <denominator unit="1" value="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="KG60484QX9" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>OMEPRAZOLE</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="KG60484QX9" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>OMEPRAZOLE</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="96K6UQ3ZD4" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>SUCRALOSE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator unit="mg" value="1680"/>
+                              <denominator unit="1" value="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="8MDF5V39QO" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>SODIUM BICARBONATE</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="HN1ZRA3Q20" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>BICARBONATE ION</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="C151H8M554" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>SUCROSE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="TTV12P4NEE" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>XANTHAN GUM</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="VCQ006KQ1E" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>XYLITOL</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <asContent>
+                           <quantity>
+                              <numerator unit="1" value="1"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <formCode code="C43199" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="PACKET"/>
+                              <asContent>
+                                 <quantity>
+                                    <numerator unit="1" value="42"/>
+                                    <denominator value="1"/>
+                                 </quantity>
+                                 <containerPackagedProduct>
+                                    <code codeSystem="2.16.840.1.113883.6.69" code="75907-138-42"/>
+                                    <formCode code="C43182" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="CARTON"/>
+                                 </containerPackagedProduct>
+                                 <subjectOf>
+                                    <marketingAct>
+                                       <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                                       <statusCode code="active"/>
+                                       <effectiveTime>
+                                          <low value="20240715"/>
+                                       </effectiveTime>
+                                    </marketingAct>
+                                 </subjectOf>
+                              </asContent>
+                           </containerPackagedProduct>
+                           <subjectOf>
+                              <characteristic>
+                                 <code code="SPLCMBPRDTP" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                                 <value code="C112160" displayName="Type 0: Not a Combination Product" codeSystem="2.16.840.1.113883.3.26.1.1" xsi:type="CV"/>
+                              </characteristic>
+                           </subjectOf>
+                        </asContent>
+                     </manufacturedProduct>
+                     <subjectOf>
+                        <marketingAct>
+                           <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <statusCode code="active"/>
+                           <effectiveTime>
+                              <low value="20240715"/>
+                           </effectiveTime>
+                        </marketingAct>
+                     </subjectOf>
+                     <subjectOf>
+                        <approval>
+                           <id extension="ANDA217784" root="2.16.840.1.113883.3.150"/>
+                           <code code="C73584" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ANDA"/>
+                           <author>
+                              <territorialAuthority>
+                                 <territory>
+                                    <code codeSystem="1.0.3166.1.2.3" code="USA"/>
+                                 </territory>
+                              </territorialAuthority>
+                           </author>
+                        </approval>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic>
+                           <code code="SPLFLAVOR" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value code="C73365" displayName="BERRY" codeSystem="2.16.840.1.113883.3.26.1.1" xsi:type="CE"/>
+                        </characteristic>
+                     </subjectOf>
+                     <consumedIn>
+                        <substanceAdministration>
+                           <routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ORAL"/>
+                        </substanceAdministration>
+                     </consumedIn>
+                  </manufacturedProduct>
+               </subject>
+               <component>
+                  <section ID="_5846b894-3d94-7514-0a93-f8d485c0e307">
+                     <id root="d5f8496f-1156-58ca-3a30-54c068036d9e"/>
+                     <code code="42229-5" displayName="SPL UNCLASSIFIED SECTION" codeSystem="2.16.840.1.113883.6.1"/>
+                     <effectiveTime value="20230318"/>
+                     <component>
+                        <observationMedia ID="MM370796422697">
+                           <text>Carton</text>
+                           <value xsi:type="ED" mediaType="image/jpeg">
+                              <reference value="HCA Omeprazole and Sodium Bicarbonate 20 mg 1680 mg PFOS carton label.jpg"/>
+                           </value>
+                        </observationMedia>
+                     </component>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="_49966674-4d79-33c1-4692-d83214ce44c0">
+               <id root="fd968884-9717-adf7-aa1b-cd8b96f48cf6"/>
+               <code code="55106-9" displayName="OTC - ACTIVE INGREDIENT SECTION" codeSystem="2.16.840.1.113883.6.1"/>
+               <title>Active ingredient(s)</title>
+               <text>
+                  <paragraph>Active ingredients </paragraph>
+                  <paragraph>(in each powder packet)</paragraph>
+                  <paragraph>Omeprazole, USP 20 mg....................................Acid Reducer</paragraph>
+                  <paragraph>Sodium Bicarbonate, USP 1,680 mg..................Allows absorption of this omeprazole product </paragraph>
+               </text>
+               <effectiveTime value="20080814"/>
+            </section>
+         </component>
+         <component>
+            <section ID="_674833f9-29ed-14a1-5348-e54a6d14b111">
+               <id root="7b101cbc-2327-2326-216e-21b42983a22c"/>
+               <code code="55105-1" displayName="OTC - PURPOSE SECTION" codeSystem="2.16.840.1.113883.6.1"/>
+               <title>Purpose</title>
+               <text>
+                  <paragraph>Acid reducer</paragraph>
+                  <paragraph> Allows absorption of this omeprazole product</paragraph>
+               </text>
+               <effectiveTime value="20061106"/>
+            </section>
+         </component>
+         <component>
+            <section ID="_2f955b2b-e914-343d-6a1f-b01700c3a953">
+               <id root="921ea97f-1c8a-708f-3c63-38153cb2cffc"/>
+               <code code="34067-9" displayName="INDICATIONS &amp; USAGE SECTION" codeSystem="2.16.840.1.113883.6.1"/>
+               <title>Use(s)</title>
+               <text>
+                  <list>
+                     <item>treats frequent heartburn (occurs<content styleCode="bold"> 2 or more</content> days a week) </item>
+                     <item>not intended for immediate relief of heartburn. This drug may take 1 to 4 days for full effect.  </item>
+                  </list>
+               </text>
+               <effectiveTime value="20090210"/>
+            </section>
+         </component>
+         <component>
+            <section ID="_26448b1d-755c-f073-1199-c3239caf05da">
+               <id root="0fe7c313-1d1d-3e49-b7b4-0a5da2992476"/>
+               <code code="34071-1" displayName="WARNINGS SECTION" codeSystem="2.16.840.1.113883.6.1"/>
+               <title>Warnings</title>
+               <text>
+                  <paragraph/>
+               </text>
+               <effectiveTime value="20080718"/>
+               <component>
+                  <section ID="_e0b02125-f4ad-5238-7022-3c50a3e71ae7">
+                     <id root="6ad12cff-9583-14e6-983b-630cff948ca2"/>
+                     <code code="42229-5" displayName="SPL UNCLASSIFIED SECTION" codeSystem="2.16.840.1.113883.6.1"/>
+                     <title>Allergy alert:</title>
+                     <text>
+                        <list>
+                           <item>do not use if you are allergic to omeprazole</item>
+                           <item>omeprazole may cause severe skin reactions. Symptoms may include </item>
+                           <item>skin reddening </item>
+                           <item>blisters </item>
+                           <item>rash. <br/>If an allergic reaction occurs, stop use and seek medical help right away.</item>
+                        </list>
+                        <paragraph/>
+                        <br/>
+                     </text>
+                     <effectiveTime value="20230318"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="_44da02d8-7a75-f434-5ea4-554fbecd2b27">
+                     <id root="f8c75f82-f719-a900-0acd-980a2c7309f4"/>
+                     <code code="50570-1" displayName="OTC - DO NOT USE SECTION" codeSystem="2.16.840.1.113883.6.1"/>
+                     <title>Do not use if you have:</title>
+                     <text>
+                        <list>
+                           <item>trouble or pain swallowing food, vomiting with blood, or bloody or black stools </item>
+                           <item>heartburn with<content styleCode="bold"> lightheadedness, sweating, or dizziness</content>
+                           </item>
+                           <item>chest pain or shoulder pain with shortness of breath; sweating; pain spreading to arms, neck or shoulders; or lightheadedness </item>
+                           <item>frequent <content styleCode="bold">chest pain</content>
+                              <br/>These may be signs of a serious condition. See your doctor.</item>
+                        </list>
+                     </text>
+                     <effectiveTime value="20230318"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="_04469db9-b0c4-515c-a997-4f8cd8f85e98">
+                     <id root="2bcc6562-61c8-252a-e1e9-5308b4bfed87"/>
+                     <code code="50569-3" displayName="OTC - ASK DOCTOR SECTION" codeSystem="2.16.840.1.113883.6.1"/>
+                     <title>Ask a doctor before use if you have:</title>
+                     <text>
+                        <list>
+                           <item>had heartburn over 3 months. This may be a sign of a more serious condition. </item>
+                           <item>frequent wheezing, particularly with heartburn </item>
+                           <item>unexplained weight loss </item>
+                           <item>nausea or vomiting </item>
+                           <item>stomach pain </item>
+                           <item>a sodium-restricted diet</item>
+                        </list>
+                     </text>
+                     <effectiveTime value="20230318"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="_e9c8482a-450e-9cfe-8aff-9ce4a019533d">
+                     <id root="620fc861-e9a3-f562-bb48-9d8df1d0c01e"/>
+                     <code code="50568-5" displayName="OTC - ASK DOCTOR/PHARMACIST SECTION" codeSystem="2.16.840.1.113883.6.1"/>
+                     <title>Ask a doctor or pharmacist before use if</title>
+                     <text>
+                        <paragraph>you are taking a prescription drug. Acid reducers may interact with certain prescription drugs. </paragraph>
+                     </text>
+                     <effectiveTime value="20230318"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="_306a34d3-576e-9be5-ec2b-d3f9f1d0b837">
+                     <id root="9862b2fc-391b-2b22-12b0-000c97ab8302"/>
+                     <code code="50566-9" displayName="OTC - STOP USE SECTION" codeSystem="2.16.840.1.113883.6.1"/>
+                     <title>Stop use and ask doctor if</title>
+                     <text>
+                        <list>
+                           <item>your heartburn continues or worsens </item>
+                           <item>you need to take this product for more than 14 days unless directed by your doctor </item>
+                           <item>you need to take more than 1 course of treatment every 4 months </item>
+                           <item>you get diarrhea </item>
+                           <item>you develop a rash or joint pain</item>
+                        </list>
+                        <br/>
+                     </text>
+                     <effectiveTime value="20230318"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="_86f3e4a9-e602-3459-813b-8283771025c8">
+                     <id root="40bca12a-18fe-815a-abb8-ba28ca203c61"/>
+                     <code code="53414-9" displayName="OTC - PREGNANCY OR BREAST FEEDING SECTION" codeSystem="2.16.840.1.113883.6.1"/>
+                     <title/>
+                     <text>
+                        <paragraph>
+                           <content styleCode="bold">If pregnant or breast-feeding,</content> ask a health professional before use. </paragraph>
+                     </text>
+                     <effectiveTime value="20230318"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="_487d7b68-a8a6-812a-871e-611ae98af40c">
+                     <id root="d52bc761-4caa-f444-5044-30a160f870f9"/>
+                     <code code="50565-1" displayName="OTC - KEEP OUT OF REACH OF CHILDREN SECTION" codeSystem="2.16.840.1.113883.6.1"/>
+                     <title>Keep out of reach of children</title>
+                     <text>
+                        <paragraph>In case of overdose, get medical help or contact a Poison Control Center right away (1-800-222-1222).</paragraph>
+                     </text>
+                     <effectiveTime value="20230318"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="_60ba2a29-0510-cac6-67f6-ffc592726d2e">
+               <id root="a03d0a28-8991-0d32-8f2d-5ba7a37de7d9"/>
+               <code code="34068-7" displayName="DOSAGE &amp; ADMINISTRATION SECTION" codeSystem="2.16.840.1.113883.6.1"/>
+               <title>Directions</title>
+               <text>
+                  <list>
+                     <item>for adults 18 years of age and older: </item>
+                     <item>this product is to be used once a day (every 24 hours), every day for 14 days</item>
+                     <item> it may take 1 to 4 days for full effect, although some people get complete relief of symptoms within 24 hours <br/>
+                        <content styleCode="bold">14-Day Course of Treatment</content>
+                     </item>
+                     <item>product should be taken at least 1 hour before eating in the morning </item>
+                     <item>take every day for 14 days </item>
+                     <item>do not take more than once a day </item>
+                     <item>empty packet contents into a small cup containing 2 tablespoons of <content styleCode="bold">WATER</content>
+                     </item>
+                     <item>DO NOT USE WITH OTHER LIQUIDS OR FOOD </item>
+                     <item>stir well and drink immediately </item>
+                     <item>refill cup with water and drink </item>
+                     <item>do not use for more than 14 days unless directed by your doctor<br/>
+                     </item>
+                  </list>
+                  <paragraph>
+                     <content styleCode="bold">Repeated 14-Day Courses (if needed)</content>
+                  </paragraph>
+                  <list>
+                     <item>you may repeat a 14-day course every 4 months </item>
+                     <item>
+                        <content styleCode="bold">do not take for more than 14 days or more often than every 4 months unless directed by a doctor</content>
+                     </item>
+                     <item> children under 18 years of age: ask a doctor. Heartburn in children may sometimes be caused by a serious condition.</item>
+                  </list>
+               </text>
+               <effectiveTime value="20070611"/>
+            </section>
+         </component>
+         <component>
+            <section ID="_95235597-0e44-0f6a-9150-f28735afe098">
+               <id root="91a6d3d8-30d8-1070-e7dc-b0eb0ccfc5c7"/>
+               <code code="42229-5" displayName="SPL UNCLASSIFIED SECTION" codeSystem="2.16.840.1.113883.6.1"/>
+               <title>Other information</title>
+               <text>
+                  <list>
+                     <item>each powder packet contains: <content styleCode="bold">sodium 460 mg</content>
+                     </item>
+                     <item>read the directions and warnings before use </item>
+                     <item>keep the carton. It contains important information</item>
+                     <item>store between 20° to 25 °C (68° to 77°F) </item>
+                     <item>tamper-evident: do not use if foil is open or broken </item>
+                     <item>keep product out of high heat and humidity </item>
+                     <item>protect product from moisture </item>
+                  </list>
+               </text>
+               <effectiveTime value="20050412"/>
+            </section>
+         </component>
+         <component>
+            <section ID="_9cbc221e-7431-b286-2c45-f8fa4fd3e528">
+               <id root="2338830d-c25d-02c3-6665-39073d0fa45f"/>
+               <code code="51727-6" displayName="INACTIVE INGREDIENT SECTION" codeSystem="2.16.840.1.113883.6.1"/>
+               <title>Inactive ingredients</title>
+               <text>
+                  <paragraph>mixed berries flavor, sucralose, sucrose, xanthan gum, xylitol </paragraph>
+               </text>
+               <effectiveTime value="20080704"/>
+            </section>
+         </component>
+         <component>
+            <section ID="_3c21c177-34d9-df23-3322-a7de44479051">
+               <id root="186e7abd-d655-a72c-cd66-bfc6c25b6acc"/>
+               <code code="53413-1" displayName="OTC - QUESTIONS SECTION" codeSystem="2.16.840.1.113883.6.1"/>
+               <title>Questions or comments?</title>
+               <text>
+                  <paragraph>call toll-free weekdays 8 AM to 8 PM EST Call 1-888-375-3784 </paragraph>
+               </text>
+               <effectiveTime value="20080704"/>
+            </section>
+         </component>
+         <component>
+            <section ID="_04576efc-a751-7ba4-155d-904e2ccde49c">
+               <id root="fc6efed0-fb44-9be3-ef6e-fdbb8f0182cd"/>
+               <code code="42229-5" displayName="SPL UNCLASSIFIED SECTION" codeSystem="2.16.840.1.113883.6.1"/>
+               <title/>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold underline">TIPS FOR MANAGING HEARTBURN</content>
+                  </paragraph>
+                  <list>
+                     <item>Do not lie flat or bend over soon after eating </item>
+                     <item>Do not eat late at night or just before bedtime</item>
+                     <item> Certain foods or drinks are more likely to cause heartburn, such as rich, spicy, fatty and fried foods, chocolate, caffeine, alcohol and even some fruits and vegetables</item>
+                     <item>Eat slowly and do not eat big meals</item>
+                     <item> If you are oveweight, lose weight </item>
+                     <item>If you smoke, quit smoking</item>
+                     <item> Raise the head of your bed </item>
+                     <item>Wear loose-fitting clothing around your stomach</item>
+                  </list>
+                  <paragraph>
+                     <content styleCode="bold">HOW OMEPRAZOLE AND SODIUM BICARBONATE POWDER FOR ORAL SUSPENSION WORKS FOR YOUR FREQUENT HEARTBURN</content>
+                  </paragraph>
+                  <paragraph>Omeprazole and Sodium Bicarbonate Powder for Oral Suspension works differently from other OTC heartburn products, such as antacids and other acid reducers. Omeprazole and Sodium Bicarbonate Powder for Oral Suspension stops acid production at the source – the acid pump that produces stomach acid. Omeprazole and Sodium Bicarbonate Powder for Oral Suspension is to be used once a day (every 24 hours), every day for 14 days.</paragraph>
+                  <paragraph>*This product is not manufactured or distributed by Santarus, Inc. or Riley Consumer Care. Zegerid OTC<sup>®</sup> is a registered trademark of Santarus, Inc.</paragraph>
+                  <paragraph>Distributed by: </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Dr. Reddy's Laboratories, Inc. </content>
+                  </paragraph>
+                  <paragraph>Princeton, NJ 08540</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Made in India</content>
+                  </paragraph>
+                  <paragraph>Issued: 07/2023</paragraph>
+                  <paragraph/>
+               </text>
+               <effectiveTime value="20230318"/>
+            </section>
+         </component>
+         <component>
+            <section ID="_dae9c25a-a94d-9ec6-b7ba-b5e59855ed2a">
+               <id root="e2ab2542-02bf-e15f-31ca-4b45400b5cb3"/>
+               <code code="51945-4" displayName="PACKAGE LABEL.PRINCIPAL DISPLAY PANEL" codeSystem="2.16.840.1.113883.6.1"/>
+               <title>Principal Display Panel</title>
+               <text>
+                  <paragraph>Omeprazole 20 mg /Acid Reducer </paragraph>
+                  <paragraph> Sodium Bicarbonate 1,680 mg/Allows Absorption of this Omeprazole Product </paragraph>
+                  <paragraph>
+                     <renderMultiMedia referencedObject="MM370796422697"/>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20080704"/>
+            </section>
+         </component>
+      </structuredBody>
+   </component>
+</document>

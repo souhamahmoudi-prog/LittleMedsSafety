@@ -1,0 +1,742 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="https://www.accessdata.fda.gov/spl/stylesheet/spl.xsl" type="text/xsl"?>
+<document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 https://www.accessdata.fda.gov/spl/schema/spl.xsd">
+   <id root="13a14c37-eaf1-7848-e063-6394a90a5479"/>
+   <code code="34391-3" codeSystem="2.16.840.1.113883.6.1" displayName="HUMAN PRESCRIPTION DRUG LABEL"/>
+   <title>DEXAMETHASONE ELIXIR, USP
+ <br/>
+Rx only
+</title>
+   <effectiveTime value="20240314"/>
+   <setId root="3746066a-3c87-4238-945a-6dfb4d01a072"/>
+   <versionNumber value="2"/>
+   <author>
+      <time/>
+      <assignedEntity>
+         <representedOrganization>
+            <id root="1.3.6.1.4.1.519.1" extension="079394054"/>
+            <name>Chartwell RX, LLC</name>
+            <assignedEntity>
+               <assignedOrganization>
+                  <id root="1.3.6.1.4.1.519.1" extension="118673485"/>
+                  <name>Chartwell Pharmaceuticals Carmel, LLC</name>
+               </assignedOrganization>
+            </assignedEntity>
+         </representedOrganization>
+      </assignedEntity>
+   </author>
+   <component>
+      <structuredBody>
+         <component>
+            <section>
+               <id root="13a1c7fa-6579-7ab1-e063-6294a90a46f3"/>
+               <code code="48780-1" codeSystem="2.16.840.1.113883.6.1" displayName="SPL product data elements section"/>
+               <effectiveTime value="20240314"/>
+               <subject>
+                  <manufacturedProduct>
+                     <manufacturedProduct>
+                        <code code="62135-114" codeSystem="2.16.840.1.113883.6.69"/>
+                        <name>Dexamethasone</name>
+                        <formCode code="C42912" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ELIXIR"/>
+                        <asEntityWithGeneric>
+                           <genericMedicine>
+                              <name>Dexamethasone</name>
+                           </genericMedicine>
+                        </asEntityWithGeneric>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="XF417D3PSL" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>ANHYDROUS CITRIC ACID</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="B22547B95K" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>TRISODIUM CITRATE DIHYDRATE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="C151H8M554" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>SUCROSE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="3K9958V90M" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>ALCOHOL</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="8SKN0B0MIM" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>BENZOIC ACID</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="6DC9Q167V3" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>PROPYLENE GLYCOL</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="WZB9127XOA" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>FD&amp;C RED NO. 40</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="059QF0KO0R" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>WATER</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator unit="mg" value="0.5"/>
+                              <denominator unit="mL" value="5"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="7S5I7G3JQL" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>DEXAMETHASONE</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="7S5I7G3JQL" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>DEXAMETHASONE</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <asContent>
+                           <quantity>
+                              <numerator value="237" unit="mL"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code code="62135-114-37" codeSystem="2.16.840.1.113883.6.69"/>
+                              <formCode code="C43169" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOTTLE"/>
+                           </containerPackagedProduct>
+                           <subjectOf>
+                              <characteristic>
+                                 <code code="SPLCMBPRDTP" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                                 <value code="C112160" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="Type 0: Not a Combination Product" xsi:type="CV"/>
+                              </characteristic>
+                           </subjectOf>
+                           <subjectOf>
+                              <marketingAct>
+                                 <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                                 <statusCode code="active"/>
+                                 <effectiveTime>
+                                    <low value="20230113"/>
+                                 </effectiveTime>
+                              </marketingAct>
+                           </subjectOf>
+                        </asContent>
+                     </manufacturedProduct>
+                     <subjectOf>
+                        <approval>
+                           <id extension="ANDA091188" root="2.16.840.1.113883.3.150"/>
+                           <code code="C73584" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ANDA"/>
+                           <author>
+                              <territorialAuthority>
+                                 <territory>
+                                    <code code="USA" codeSystem="2.16.840.1.113883.5.28"/>
+                                 </territory>
+                              </territorialAuthority>
+                           </author>
+                        </approval>
+                     </subjectOf>
+                     <subjectOf>
+                        <marketingAct>
+                           <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <statusCode code="active"/>
+                           <effectiveTime>
+                              <low value="20110511"/>
+                           </effectiveTime>
+                        </marketingAct>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLCOLOR" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value code="C48326" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="red" xsi:type="CE">
+                              <originalText/>
+                           </value>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLFLAVOR" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value code="C73375" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="CHERRY" xsi:type="CE">
+                              <originalText/>
+                           </value>
+                        </characteristic>
+                     </subjectOf>
+                     <consumedIn>
+                        <substanceAdministration>
+                           <routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ORAL"/>
+                        </substanceAdministration>
+                     </consumedIn>
+                  </manufacturedProduct>
+               </subject>
+            </section>
+         </component>
+         <component>
+            <section ID="L9f9f1d39-51d3-41bb-98b0-6e2e58e8780a">
+               <id root="13a14c37-eaf2-7848-e063-6394a90a5479"/>
+               <code code="34089-3" codeSystem="2.16.840.1.113883.6.1" displayName="DESCRIPTION SECTION"/>
+               <title>DESCRIPTION</title>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">Each red colored, cherry flavored, 5 mL (teaspoonful) contains:</content>
+                  </paragraph>
+                  <paragraph>Dexamethasone, USP ……….. 0.5 mg</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Also contains:</content>
+                  </paragraph>
+                  <paragraph>Benzoic Acid, USP …..…… 0.1% w/v  (as preservative)</paragraph>
+                  <paragraph>Ethyl Alcohol ……………………. 5.1% v/v</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Inactive Ingredients:</content>  citric acid, sodium citrate dihydrate, sucrose, ethyl alcohol, benzoic acid, propylene glycol, wild cherry flavor, FD&amp;C Red #40, and purified water.
+
+ </paragraph>
+                  <paragraph>Dexamethasone, a synthetic adrenocortical steroid, is a white to practically white, odorless, crystalline powder. It is stable in air. It is practically insoluble in water. The molecular weight is 392.47. It is designated chemically as 9-fluoro-11β,17,21-trihydroxy-16α-methylpregna-1, 4-diene-3,20-dione. The molecular formula is C
+ 
+  <sub>22</sub>H
+ 
+  <sub>29</sub>FO
+ 
+  <sub>5</sub> and the structural formula is:
+
+ </paragraph>
+                  <paragraph>
+                     <renderMultiMedia referencedObject="L95c21397-fc04-4052-b8f3-ed106c4442b2"/>
+                  </paragraph>
+                  <paragraph/>
+               </text>
+               <effectiveTime value="20230114"/>
+               <component>
+                  <observationMedia ID="L95c21397-fc04-4052-b8f3-ed106c4442b2">
+                     <text>Dexamethasone-chemical-structure</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="dexamethasone-chemical-structure.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="L1a52c478-7b79-4018-9179-08920fc11b0b">
+               <id root="13a14c37-eaf3-7848-e063-6394a90a5479"/>
+               <code code="34090-1" codeSystem="2.16.840.1.113883.6.1" displayName="CLINICAL PHARMACOLOGY SECTION"/>
+               <title>CLINICAL PHARMACOLOGY</title>
+               <text>
+                  <paragraph>Naturally occurring glucocorticoids (hydrocortisone and cortisone), which also have salt-retaining properties, are used as replacement therapy in adrenocortical deficiency states. Their synthetic analogs, including dexamethasone, are primarily used for their potent anti-inflammatory effects in disorders of many organ systems. Glucocorticoids cause profound and varied metabolic effects. In addition, they modify the body's immune responses to diverse stimuli. At equipotent anti-inflammatory doses, dexamethasone almost completely lacks the sodium-retaining property of hydrocortisone and closely related derivatives of hydrocortisone.</paragraph>
+               </text>
+               <effectiveTime value="20230114"/>
+            </section>
+         </component>
+         <component>
+            <section ID="L9961a944-93fc-4068-9e2c-5e55f8f84512">
+               <id root="13a14c37-eaf4-7848-e063-6394a90a5479"/>
+               <code code="34067-9" codeSystem="2.16.840.1.113883.6.1" displayName="INDICATIONS &amp; USAGE SECTION"/>
+               <title>INDICATIONS AND USAGE</title>
+               <text>
+                  <paragraph>
+                     <content styleCode="italics">Allergic States</content>
+                     <br/>  Control of severe or incapacitating allergic conditions intractable to adequate trials of conventional treatment: 
+  <br/>         Seasonal or perennial allergic rhinitis 
+  <br/>         Bronchial asthma 
+  <br/>         Contact dermatitis 
+  <br/>         Atopic dermatitis 
+  <br/>         Serum sickness 
+  <br/>         Drug hypersensitivity reactions
+
+ </paragraph>
+                  <paragraph>
+                     <content styleCode="italics">Collagen Diseases</content>
+                     <br/>  During an exacerbation or as maintenance therapy in selected cases of: 
+  <br/>         Systemic lupus erythematosus 
+  <br/>         Acute rheumatic carditis
+
+ </paragraph>
+                  <paragraph>
+                     <content styleCode="italics">Dermatologic Diseases</content>
+                     <br/>         Pemphigus 
+  <br/>         Bullous dermatitis herpetiformis 
+  <br/>         Severe erythema multiforme (Stevens-Johnson syndrome) 
+  <br/>         Exfoliative dermatitis 
+  <br/>         Mycosis fungoides 
+  <br/>         Severe psoriasis 
+  <br/>         Severe seborrheic dermatitis
+
+ </paragraph>
+                  <paragraph>
+                     <content styleCode="italics">Edematous States</content>
+                     <br/>  To induce a diuresis or remission of proteinuria in the nephrotic syndrome, without uremia, of the idiopathic type or that due to lupus erythematosus
+
+ </paragraph>
+                  <paragraph>
+                     <content styleCode="italics">Endocrine Disorders</content>
+                     <br/>  Primary or secondary adrenocortical insufficiency (hydrocortisone or cortisone is the first choice; synthetic analogs may be used in conjunction with mineralocorticoids where applicable; in infancy mineralocorticoid supplementation is of particular importance). 
+  <br/>         Congenital adrenal hyperplasia 
+  <br/>         Nonsuppurative thyroiditis 
+  <br/>         Hypercalcemia associated with cancer
+
+ </paragraph>
+                  <paragraph>
+                     <content styleCode="italics">Gastrointestinal Diseases</content>
+                     <br/>  To tide the patient over a critical period of the disease in: 
+  <br/>         Ulcerative colitis 
+  <br/>         Regional enteritis
+
+ </paragraph>
+                  <paragraph>
+                     <content styleCode="italics">Hematologic Disorders</content>
+                     <br/>         Idiopathic thrombocytopenic purpura in adults 
+  <br/>         Secondary thrombocytopenia in adults 
+  <br/>         Acquired (autoimmune) hemolytic anemia 
+  <br/>         Erythroblastopenia (RBC anemia) 
+  <br/>         Congenital (erythroid) hypoplastic anemia
+
+ </paragraph>
+                  <paragraph>
+                     <content styleCode="italics">Miscellaneous</content>
+                     <br/>  Diagnostic testing of adrenocortical hyperfunction
+
+ </paragraph>
+                  <paragraph>Tuberculous meningitis with subarachnoid block or impending block when used concurrently with appropriate antituberculous chemotherapy 
+  <br/>         Trichinosis with neurologic or myocardial involvement
+ </paragraph>
+                  <paragraph>
+                     <content styleCode="italics">Neoplastic Diseases</content>
+                     <br/>  For palliative management of: 
+  <br/>         Leukemia and lymphomas in adults 
+  <br/>         Acute leukemia of childhood
+
+ </paragraph>
+                  <paragraph>
+                     <content styleCode="italics">Ophthalmic Diseases</content>
+                     <br/>  Severe acute and chronic allergic and inflammatory processes involving the eye and its adnexa, such as: 
+  <br/>         Allergic conjunctivitis 
+  <br/>         Keratitis 
+  <br/>         Allergic corneal marginal ulcers 
+  <br/>         Herpes zoster ophthalmicus 
+  <br/>         Iritis and iridocyclitis 
+  <br/>         Chorioretinitis 
+  <br/>         Anterior segment inflammation 
+  <br/>         Diffuse posterior uveitis and choroiditis 
+  <br/>         Optic neuritis 
+  <br/>         Sympathetic ophthalmia
+
+ </paragraph>
+                  <paragraph>
+                     <content styleCode="italics">Respiratory Diseases</content>
+                     <br/>         Symptomatic sarcoidosis 
+  <br/>         Loeffler's syndrome not manageable by other means 
+  <br/>         Berylliosis 
+  <br/>         Fulminating or disseminated pulmonary tuberculosis when used concurrently with 
+  <br/>         appropriate antituberculous chemotherapy 
+  <br/>         Aspiration pneumonitis
+
+ </paragraph>
+                  <paragraph>
+                     <content styleCode="italics">Rheumatic Disorders</content>
+                     <br/>  As adjunctive therapy for short-term administration (to tide the patient over an acute episode or exacerbation) in: 
+  <br/>         Psoriatic arthritis 
+  <br/>         Rheumatoid arthritis, including juvenile rheumatoid arthritis (selected cases may require 
+  <br/>         low-dose maintenance therapy) 
+  <br/>         Ankylosing spondylitis 
+  <br/>         Acute and subacute bursitis 
+  <br/>         Acute nonspecific tenosynovitis 
+  <br/>         Acute gouty arthritis 
+  <br/>         Post-traumatic osteoarthritis 
+  <br/>         Synovitis of osteoarthritis 
+  <br/>         Epicondylitis
+
+ </paragraph>
+               </text>
+               <effectiveTime value="20230114"/>
+            </section>
+         </component>
+         <component>
+            <section ID="Lfdf50af4-fb8e-4bab-b415-db04d65e8989">
+               <id root="13a14c37-eaf5-7848-e063-6394a90a5479"/>
+               <code code="34070-3" codeSystem="2.16.840.1.113883.6.1" displayName="CONTRAINDICATIONS SECTION"/>
+               <title>CONTRAINDICATIONS</title>
+               <text>
+                  <paragraph>Contraindicated in patients with known systemic fungal infections (See
+ 
+  <content styleCode="bold">
+                        <linkHtml href="#L0fd9b85c-c747-46d7-89fb-88ecf3dfe8ec">WARNINGS</linkHtml>: Infections:
+ 
+  </content>
+                     <content styleCode="italics">Fungal Infections</content>) and patients with a known sensitivity to this drug.
+
+ </paragraph>
+               </text>
+               <effectiveTime value="20230114"/>
+            </section>
+         </component>
+         <component>
+            <section ID="L0fd9b85c-c747-46d7-89fb-88ecf3dfe8ec">
+               <id root="13a14c37-eaf6-7848-e063-6394a90a5479"/>
+               <code code="34071-1" codeSystem="2.16.840.1.113883.6.1" displayName="WARNINGS SECTION"/>
+               <title>WARNINGS</title>
+               <text>
+                  <paragraph>In patients on corticosteroid therapy subjected to unusual stress, increased dosage of rapidly acting corticosteroids before, during, and after the stressful situation is indicated.</paragraph>
+                  <paragraph>
+                     <content styleCode="italics">Immunosuppression and Increased Risk of Infection</content>
+                  </paragraph>
+                  <paragraph>Corticosteroids, including dexamethasone elixir, suppress the immune system and increase the risk of infection with any pathogen, including viral, bacterial, fungal, protozoan, or helminthic pathogens. Corticosteroids can:</paragraph>
+                  <list listType="unordered">
+                     <item>Reduce resistance to new infections</item>
+                     <item>Exacerbate existing infections</item>
+                     <item>Increase the risk of disseminated infections</item>
+                     <item>Increase the risk of reactivation or exacerbation of latent infections</item>
+                     <item>Mask some signs of infection</item>
+                  </list>
+                  <paragraph>Corticosteroid-associated infections can be mild but can be severe and at times fatal. The rate of infectious complications increases with increasing corticosteroid dosages.</paragraph>
+                  <paragraph>Monitor for the development of infection and consider dexamethasone elixir withdrawal or dosage reduction as needed.</paragraph>
+                  <paragraph>
+                     <content styleCode="italics">Tuberculosis</content>
+                  </paragraph>
+                  <paragraph>If dexamethasone elixir is used to treat a condition in patients with latent tuberculosis or tuberculin reactivity, reactivation of tuberculosis may occur.</paragraph>
+                  <paragraph>Closely monitor such patients for reactivation. During prolonged dexamethasone elixir therapy, patients with latent tuberculosis or tuberculin reactivity should receive chemoprophylaxis.</paragraph>
+                  <paragraph>
+                     <content styleCode="italics">Varicella Zoster and Measles Viral Infections</content>
+                  </paragraph>
+                  <paragraph>Varicella and measles can have a serious or even fatal course in non-immune patients taking corticosteroids, including dexamethasone elixir. In corticosteroid-treated patients who have not had these diseases or are non-immune, particular care should be taken to avoid exposure to varicella and measles:</paragraph>
+                  <list listType="unordered">
+                     <item>If a dexamethasone elixir-treated patient is exposed to varicella, prophylaxis with varicella zoster immune globulin may be indicated. If varicella develops, treatment with antiviral agents may be considered.</item>
+                     <item>If a dexamethasone elixir-treated patient is exposed to measles, prophylaxis with immunoglobulin may be indicated.</item>
+                  </list>
+                  <paragraph>
+                     <content styleCode="italics">Hepatitis B Virus Reactivation</content>
+                  </paragraph>
+                  <paragraph>Hepatitis B virus reactivation can occur in patients who are hepatitis B carriers treated with immunosuppressive dosages of corticosteroids, including dexamethasone elixir. Reactivation can also occur infrequently in corticosteroid-treated patients who appear to have resolved hepatitis B infection.</paragraph>
+                  <paragraph>Screen patients for hepatitis B infection before initiating immunosuppressive (e.g., prolonged) treatment with dexamethasone elixir. For patients who show evidence of hepatitis B infection, recommend-consultation with physicians with expertise in managing hepatitis B regarding monitoring and consideration for hepatitis B antiviral therapy.</paragraph>
+                  <paragraph>
+                     <content styleCode="italics">Fungal Infections</content>
+                  </paragraph>
+                  <paragraph>Corticosteroids, including dexamethasone elixir, may exacerbate systemic fungal infections; therefore, avoid dexamethasone elixir use in the presence of such infections unless dexamethasone elixir is needed to control drug reactions. For patients on chronic dexamethasone elixir therapy who develop systemic fungal infections, dexamethasone elixir withdrawal or dosage reduction is recommended.</paragraph>
+                  <paragraph>
+                     <content styleCode="italics">Amebiasis</content>
+                  </paragraph>
+                  <paragraph>Corticosteroids, including dexamethasone elixir, may activate latent amebiasis. Therefore, it is recommended that latent amebiasis or active amebiasis be ruled out before initiating dexamethasone elixir in patients who have spent time in the tropics or patients with unexplained diarrhea.</paragraph>
+                  <paragraph>
+                     <content styleCode="italics">Strongyloides Infestation</content>
+                  </paragraph>
+                  <paragraph>Corticosteroids, including dexamethasone elixir, should be used with great care in patients with known or suspected Strongyloides (threadworm) infestation. In such patients, corticosteroid-induced immunosuppression may lead to Strongyloides hyperinfection and dissemination with widespread larval migration, often accompanied by severe enterocolitis and potentially fatal gram-negative septicemia.</paragraph>
+                  <paragraph>
+                     <content styleCode="italics">Cerebral Malaria</content>
+                  </paragraph>
+                  <paragraph>Avoid corticosteroids, including dexamethasone elixir, in patients with cerebral malaria.</paragraph>
+                  <paragraph>
+                     <content styleCode="italics">Kaposi’s Sarcoma</content>
+                  </paragraph>
+                  <paragraph>Kaposi’s sarcoma has been reported to occur in patients receiving corticosteroid therapy, most often for chronic conditions. Discontinuation of corticosteroids may result in clinical improvement of Kaposi’s sarcoma.</paragraph>
+                  <paragraph>Drug-induced secondary adrenocortical insufficiency may result from too rapid withdrawal of corticosteroids and may be minimized by gradual reduction of dosage. This type of relative insufficiency may persist for months after discontinuation of therapy; therefore, in any situation of stress occurring during that period, hormone therapy should be reinstituted. If the patient is receiving steroids already, dosage may have to be increased. Since mineralocorticoid secretion may be impaired, salt and/or a mineralocorticoid should be administered concurrently.</paragraph>
+                  <paragraph>In cerebral malaria, a double-blind trial has shown that the use of corticosteroids is associated with prolongation of coma and a higher incidence of pneumonia and gastrointestinal bleeding.</paragraph>
+                  <paragraph>Prolonged use of corticosteroids may produce posterior subcapsular cataracts, glaucoma with possible damage to the optic nerves, and may enhance the establishment of secondary ocular infections due to fungi or viruses.</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Usage in Pregnancy</content>
+                  </paragraph>
+                  <paragraph>Since adequate human reproduction studies have not been done with corticosteroids, use of these drugs in pregnancy or in women of childbearing potential requires that the anticipated benefits be weighed against the possible hazards to the mother and embryo or fetus. Infants born of mothers who have received substantial doses of corticosteroids during pregnancy should be carefully observed for signs of hypoadrenalism.</paragraph>
+                  <paragraph>Corticosteroids appear in breast milk and could suppress growth, interfere with endogenous corticosteroid production, or cause other unwanted effects. Mothers taking pharmacologic doses of corticosteroids should be advised not to nurse.</paragraph>
+                  <paragraph>Average and large doses of hydrocortisone or cortisone can cause elevation of blood pressure, salt and water retention, and increased excretion of potassium. These effects are less likely to occur with the synthetic derivatives except when used in large doses. Dietary salt restriction and potassium supplementation may be necessary. All corticosteroids increase calcium excretion.</paragraph>
+                  <paragraph>Administration of live virus vaccines, including smallpox, is contraindicated in individuals receiving immunosuppressive doses of corticosteroids. If inactivated viral or bacterial vaccines are administered to individuals receiving immunosuppressive doses of corticosteroids, the expected serum antibody response may not be obtained. However, immunization procedures may be undertaken in patients who are receiving corticosteroids as replacement therapy, e.g., for Addison's disease.</paragraph>
+                  <paragraph>Literature reports suggest an apparent association between use of corticosteroids and left ventricular free wall rupture after a recent myocardial infarction; therefore, therapy with corticosteroids should be used with great caution in these patients.</paragraph>
+               </text>
+               <effectiveTime value="20230114"/>
+            </section>
+         </component>
+         <component>
+            <section ID="L924f365d-e1ea-4a78-98f0-86ac10118fe9">
+               <id root="13a14c37-eaf7-7848-e063-6394a90a5479"/>
+               <code code="42232-9" codeSystem="2.16.840.1.113883.6.1" displayName="PRECAUTIONS SECTION"/>
+               <title>PRECAUTIONS</title>
+               <text>
+                  <paragraph>Following prolonged therapy, withdrawal of corticosteroids may result in symptoms of the corticosteroid withdrawal syndrome including fever, myalgia, arthralgia, and malaise. This may occur in patients even without evidence of adrenal insufficiency.</paragraph>
+                  <paragraph>There is an enhanced effect of corticosteroids in patients with hypothyroidism and in those with cirrhosis.</paragraph>
+                  <paragraph>Corticosteroids should be used cautiously in patients with ocular herpes simplex because of possible corneal perforation.</paragraph>
+                  <paragraph>The lowest possible dose of corticosteroid should be used to control the condition under treatment, and when reduction in dosage is possible, the reduction should be gradual.</paragraph>
+                  <paragraph>Psychic derangements may appear when corticosteroids are used, ranging from euphoria, insomnia, mood swings, personality changes, and severe depression, to frank psychotic manifestations. Also, existing emotional instability or psychotic tendencies may be aggravated by corticosteroids.</paragraph>
+                  <paragraph>Aspirin should be used cautiously in conjunction with corticosteroids in hypoprothrombinemia.</paragraph>
+                  <paragraph>Steroids should be used with caution in nonspecific ulcerative colitis, if there is a probability of impending perforation, abscess, or other pyogenic infection, diverticulitis, fresh intestinal anastomoses, active or latent peptic ulcer, renal insufficiency, hypertension, osteoporosis and myasthenia gravis. Fat embolism has been reported as a possible complication of hypercortisonism.</paragraph>
+                  <paragraph>When large doses are given, some authorities advise that corticosteroids be taken with meals and antacids taken between meals to help to prevent peptic ulcer.</paragraph>
+                  <paragraph>Growth and development of infants and children on prolonged corticosteroid therapy should be carefully observed.</paragraph>
+                  <paragraph>Steroids may increase or decrease motility and number of spermatozoa in some patients.</paragraph>
+                  <paragraph>Phenytoin, phenobarbital, ephedrine, and rifampin may enhance the metabolic clearance of corticosteroids, resulting in decreased blood levels and lessened physiologic activity, thus requiring adjustment in corticosteroid dosage. These interactions may interfere with dexamethasone suppression tests which should be interpreted with caution during administration of these drugs.</paragraph>
+                  <paragraph>False-negative results in the dexamethasone suppression test (DST) in patients being treated with indomethacin have been reported. Thus, results of the DST should be interpreted with caution in these patients.</paragraph>
+                  <paragraph>The prothrombin time should be checked frequently in patients who are receiving corticosteroids and coumarin anticoagulants at the same time because of reports that corticosteroids have altered the response to these anticoagulants. Studies have shown that the usual effect produced by adding corticosteroids is inhibition of response to coumarins, although there have been some conflicting reports of potentiation not substantiated by studies.</paragraph>
+                  <paragraph>When corticosteroids are administered concomitantly with potassium-depleting diuretics, patients should be observed closely for development of hypokalemia.</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Information for Patients</content>
+                  </paragraph>
+                  <paragraph>Persons who are on immunosuppressant doses of corticosteroids should be warned to avoid exposure to chickenpox or measles. Patients should also be advised that if they are exposed, medical advice should be sought without delay.</paragraph>
+               </text>
+               <effectiveTime value="20230114"/>
+            </section>
+         </component>
+         <component>
+            <section ID="Lfc34bac1-9660-4bf6-8780-791971013993">
+               <id root="13a14c37-eaf8-7848-e063-6394a90a5479"/>
+               <code code="34084-4" codeSystem="2.16.840.1.113883.6.1" displayName="ADVERSE REACTIONS SECTION"/>
+               <title>ADVERSE REACTIONS</title>
+               <text>
+                  <paragraph>
+                     <content styleCode="italics">Fluid and Electrolyte Disturbances:</content>
+                     <br/>     Sodium retention 
+  <br/>     Fluid retention 
+  <br/>     Congestive heart failure in susceptible patients 
+  <br/>     Potassium loss 
+  <br/>     Hypokalemic alkalosis 
+  <br/>     Hypertension
+
+ </paragraph>
+                  <paragraph>
+                     <content styleCode="italics">Musculoskeletal:</content>
+                     <br/>     Muscle weakness 
+  <br/>     Steroid myopathy 
+  <br/>     Loss of muscle mass 
+  <br/>     Osteoporosis 
+  <br/>     Vertebral compression fractures 
+  <br/>     Aseptic necrosis of femoral and humeral heads 
+  <br/>     Pathologic fracture of long bones 
+  <br/>     Tendon rupture
+
+ </paragraph>
+                  <paragraph>
+                     <content styleCode="italics">Gastrointestinal:</content>
+                     <br/>     Peptic ulcer with possible perforation and hemorrhage 
+  <br/>     Perforation of the small and large bowel, particularly in patients with inflammatory bowel 
+  <br/>     disease 
+  <br/>     Pancreatitis 
+  <br/>     Abdominal distention 
+  <br/>     Ulcerative esophagitis
+
+ </paragraph>
+                  <paragraph>
+                     <content styleCode="italics">Dermatologic:</content>
+                     <br/>     Impaired wound healing 
+  <br/>     Thin fragile skin 
+  <br/>     Petechiae and ecchymoses 
+  <br/>     Erythema 
+  <br/>     Increased sweating 
+  <br/>     May suppress reactions to skin tests
+
+ </paragraph>
+                  <paragraph>   Other cutaneous reactions, such as allergic dermatitis, urticaria, angioneurotic edema</paragraph>
+                  <paragraph>
+                     <content styleCode="italics">Neurologic:</content>
+                     <br/>     Convulsions 
+  <br/>     Increased intracranial pressure with papilledema (pseudotumor cerebri) usually after 
+  <br/>     treatment 
+  <br/>     Vertigo 
+  <br/>     Headache 
+  <br/>     Psychic Disturbances
+
+ </paragraph>
+                  <paragraph>
+                     <content styleCode="italics">Endocrine:</content>
+                     <br/>     Menstrual irregularities 
+  <br/>     Development of cushingoid state 
+  <br/>     Suppression of growth in children 
+  <br/>     Secondary adrenocortical and pituitary unresponsiveness, 
+  <br/>     particularly in times of stress, as in trauma, surgery, or illness 
+  <br/>     Decreased carbohydrate tolerance 
+  <br/>     Manifestations of latent diabetes mellitus 
+  <br/>     Increased requirements for insulin or oral hypoglycemic agents in diabetes 
+  <br/>     Hirsutism
+
+ </paragraph>
+                  <paragraph>
+                     <content styleCode="italics">Ophthalmic:</content>
+                     <br/>     Posterior subcapsular cataracts 
+  <br/>     Increased intraocular pressure 
+  <br/>     Glaucoma 
+  <br/>     Exophthalmos
+
+ </paragraph>
+                  <paragraph>
+                     <content styleCode="italics">Metabolic:</content>
+                     <br/>     Negative nitrogen balance due to protein catabolism
+
+ </paragraph>
+                  <paragraph>
+                     <content styleCode="italics">Cardiovascular:</content>
+                     <br/>     Myocardial rupture following recent myocardial infarction (See 
+ 
+  <content styleCode="bold">
+                        <linkHtml href="#L0fd9b85c-c747-46d7-89fb-88ecf3dfe8ec">WARNINGS</linkHtml>
+                     </content>)
+
+ </paragraph>
+                  <paragraph>
+                     <content styleCode="italics">Other:</content>
+                     <br/>     Hypersensitivity 
+  <br/>     Thromboembolism 
+  <br/>     Weight gain 
+  <br/>     Increased appetite 
+  <br/>     Nausea 
+  <br/>     Malaise 
+  <br/>     Hiccups
+
+ </paragraph>
+               </text>
+               <effectiveTime value="20230114"/>
+            </section>
+         </component>
+         <component>
+            <section ID="L5bd6acac-d6fb-4cae-bfc8-5167af0e7b68">
+               <id root="13a14c37-eaf9-7848-e063-6394a90a5479"/>
+               <code code="34088-5" codeSystem="2.16.840.1.113883.6.1" displayName="OVERDOSAGE SECTION"/>
+               <title>OVERDOSAGE</title>
+               <text>
+                  <paragraph>Reports of acute toxicity and/or death following overdosage of glucocorticoids are rare. In the event of overdosage, no specific antidote is available; treatment is supportive and symptomatic.</paragraph>
+                  <paragraph>The oral LD
+ 
+  <sub>50</sub> of dexamethasone in female mice was 6.5 g/kg.
+
+ </paragraph>
+               </text>
+               <effectiveTime value="20230114"/>
+            </section>
+         </component>
+         <component>
+            <section ID="L0fcd6b01-f947-4f02-abf5-f35785ee4be4">
+               <id root="13a14c37-eafa-7848-e063-6394a90a5479"/>
+               <code code="34068-7" codeSystem="2.16.840.1.113883.6.1" displayName="DOSAGE &amp; ADMINISTRATION SECTION"/>
+               <title>DOSAGE AND ADMINISTRATION</title>
+               <text>
+                  <paragraph>
+                     <content styleCode="italics">For oral administration:</content>
+                  </paragraph>
+                  <paragraph>DOSAGE REQUIREMENTS ARE VARIABLE AND MUST BE INDIVIDUALIZED ON THE BASIS OF THE DISEASE AND THE RESPONSE OF THE PATIENT.</paragraph>
+                  <paragraph>The initial dosage varies from 0.75 to 9 mg a day depending on the disease being treated. In less severe diseases doses lower than 0.75 mg may suffice, while in severe diseases doses higher than 9 mg may be required. The initial dosage should be maintained or adjusted until the patient's response is satisfactory. If satisfactory clinical response does not occur after a reasonable period of time, discontinue dexamethasone elixir and transfer the patient to other therapy.</paragraph>
+                  <paragraph>After a favorable initial response, the proper maintenance dosage should be determined by decreasing the initial dosage in small amounts to the lowest dosage that maintains an adequate clinical response.</paragraph>
+                  <paragraph>Patients should be observed closely for signs that might require dosage adjustment, including changes in clinical status resulting from remissions or exacerbations of the disease, individual drug responsiveness, and the effect of stress (e.g., surgery, infection, trauma). During stress it may be necessary to increase dosage temporarily.</paragraph>
+                  <paragraph>If the drug is to be stopped after more than a few days of treatment, it usually should be withdrawn gradually.</paragraph>
+                  <paragraph>The following milligram equivalents facilitate changing to dexamethasone elixir from other glucocorticoids:</paragraph>
+                  <table cellspacing="0" cellpadding="0">
+                     <tbody>
+                        <tr align="center" styleCode="Toprule Botrule">
+                           <td styleCode="lrule rrule" valign="middle">
+                              <paragraph> DEXAMETHASONE ELIXIR</paragraph>
+                           </td>
+                           <td styleCode="lrule rrule" valign="middle">
+                              <paragraph> METHYLPREDNISOLONE 
+      <br/>  AND TRIAMCINOLONE
+     </paragraph>
+                           </td>
+                           <td styleCode="lrule rrule" valign="middle">
+                              <paragraph> PREDNISOLONE 
+      <br/>  AND 
+      <br/>  PREDNISONE
+     </paragraph>
+                           </td>
+                           <td styleCode="lrule rrule" valign="middle">
+                              <paragraph> HYDROCORTISONE</paragraph>
+                           </td>
+                           <td styleCode="lrule rrule" valign="middle">
+                              <paragraph> CORTISONE</paragraph>
+                           </td>
+                        </tr>
+                        <tr align="center" styleCode="Toprule Botrule">
+                           <td styleCode="lrule rrule" valign="middle">
+                              <paragraph> 0.75 mg =</paragraph>
+                           </td>
+                           <td styleCode="lrule rrule" valign="middle">
+                              <paragraph> 4 mg =</paragraph>
+                           </td>
+                           <td styleCode="lrule rrule" valign="middle">
+                              <paragraph> 5 mg =</paragraph>
+                           </td>
+                           <td styleCode="lrule rrule" valign="middle">
+                              <paragraph> 20 mg =</paragraph>
+                           </td>
+                           <td styleCode="lrule rrule" valign="middle">
+                              <paragraph> 25 mg</paragraph>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <paragraph>
+                     <content styleCode="italics">Dexamethasone suppression tests</content>
+                  </paragraph>
+                  <list listType="ordered">
+                     <item>Tests for Cushing's syndrome. 
+   <br/>  Give 1 mg of dexamethasone orally at 11:00 p.m. Blood is drawn for plasma cortisol determination at 8:00 a.m. the following morning. 
+   <br/>  For greater accuracy, give 0.5 mg of dexamethasone orally every 6 hours for 48 hours. Twenty-four hour urine collections are made for determination of 17-hydroxycorticosteroid excretion.
+  </item>
+                     <item>Test to distinguish Cushing's syndrome due to pituitary ACTH excess from Cushing's syndrome due to other causes. 
+   <br/>  Give 2 mg of dexamethasone orally every 6 hours for 48 hours. Twenty-four hour urine collections are made for determination of 17-hydroxycorticosteroid excretion.
+  </item>
+                  </list>
+               </text>
+               <effectiveTime value="20230114"/>
+            </section>
+         </component>
+         <component>
+            <section ID="L9cd4dae4-4ef0-4cb6-8eca-7218c2545e83">
+               <id root="13a15be2-bdc3-bfdd-e063-6394a90a5773"/>
+               <code code="34069-5" codeSystem="2.16.840.1.113883.6.1" displayName="HOW SUPPLIED SECTION"/>
+               <title>HOW SUPPLIED</title>
+               <text>
+                  <paragraph>Dexamethasone Elixir, USP, 0.5 mg/5 mL is supplied as a red colored, cherry-flavored liquid in the following size:</paragraph>
+                  <paragraph>Bottles of 8 fl oz (237 mL) NDC 62135-114-37</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">STORAGE</content>
+                  </paragraph>
+                  <paragraph>Store at 20° to 25°C (68° to 77°F) [see USP Controlled Room Temperature].</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">KEEP TIGHTLY CLOSED</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">AVOID FREEZING</content>
+                  </paragraph>
+                  <paragraph>Dispense in a tight container as defined in the USP.</paragraph>
+                  <paragraph>Manufactured for:
+  <br/>
+                     <content styleCode="bold">Chartwell RX, LLC.</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Congers, NY 10920</content>
+                  </paragraph>
+                  <paragraph/>
+                  <paragraph>L71175
+  <br/>
+Rev 02/2024
+ </paragraph>
+               </text>
+               <effectiveTime value="20230114"/>
+            </section>
+         </component>
+         <component>
+            <section ID="L599fe601-6df8-479c-9bd2-a3d3b46fe5cc">
+               <id root="13a14703-386f-858b-e063-6394a90a5536"/>
+               <code code="51945-4" codeSystem="2.16.840.1.113883.6.1" displayName="PACKAGE LABEL.PRINCIPAL DISPLAY PANEL"/>
+               <title>PACKAGE LABEL.PRINCIPAL DISPLAY PANEL</title>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">Dexamethasone Elixir, USP, 0.5 mg/5 mL - NDC 62135-114-37 - 8 fl oz (237 mL) Bottle Label</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">
+                        <renderMultiMedia referencedObject="L92242b00-6cb5-4466-917d-efd430efdbe7"/>
+                     </content>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20230114"/>
+               <component>
+                  <observationMedia ID="L92242b00-6cb5-4466-917d-efd430efdbe7">
+                     <text>Dexamethasone-elixir-usp-237ml-bottle-label</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="dexamethasone-elixir-usp-237ml-bottle-label.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+      </structuredBody>
+   </component>
+</document>

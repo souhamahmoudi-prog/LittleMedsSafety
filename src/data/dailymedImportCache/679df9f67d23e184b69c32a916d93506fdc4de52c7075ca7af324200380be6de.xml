@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="http://www.accessdata.fda.gov/spl/stylesheet/spl.xsl" type="text/xsl"?>
+<document xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:v="http://validator.pragmaticdata.com/result" xsi:schemaLocation="urn:hl7-org:v3 http://www.accessdata.fda.gov/spl/schema/spl.xsd">
+   <id root="76b7e9ac-ab44-40d5-a6a4-3c049cc4763d"/>
+   <code code="58476-3" codeSystem="2.16.840.1.113883.6.1" displayName="DIETARY SUPPLEMENT"/>
+   <title>FERROUS SULFATE<br/>ENTERIC-COATED TABLETS</title>
+   <effectiveTime value="20130812"/>
+   <setId root="f886cb50-3791-4c36-ac0d-2c327cd9e3ea"/>
+   <versionNumber value="3"/>
+   <author>
+      <time/>
+      <assignedEntity>
+         <representedOrganization>
+            <id extension="078710347" root="1.3.6.1.4.1.519.1"/>
+            <name>Clinical Solutions Wholesale</name>
+            <assignedEntity>
+               <assignedOrganization>
+                  <id extension="078710347" root="1.3.6.1.4.1.519.1"/>
+                  <name>Clinical Solutions Wholesale</name>
+                  <assignedEntity>
+                     <assignedOrganization>
+                        <id root="1.3.6.1.4.1.519.1" extension="078710347"/>
+                        <name>Clinical Solutions Wholesale</name>
+                     </assignedOrganization>
+                     <performance>
+                        <actDefinition>
+                           <code code="C73606" displayName="repack" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <product>
+                              <manufacturedProduct classCode="MANU">
+                                 <manufacturedMaterialKind>
+                                    <code code="58118-0608" codeSystem="2.16.840.1.113883.6.69"/>
+                                 </manufacturedMaterialKind>
+                              </manufacturedProduct>
+                           </product>
+                        </actDefinition>
+                     </performance>
+                     <performance>
+                        <actDefinition>
+                           <code code="C73607" displayName="relabel" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <product>
+                              <manufacturedProduct classCode="MANU">
+                                 <manufacturedMaterialKind>
+                                    <code code="58118-0608" codeSystem="2.16.840.1.113883.6.69"/>
+                                 </manufacturedMaterialKind>
+                              </manufacturedProduct>
+                           </product>
+                        </actDefinition>
+                     </performance>
+                  </assignedEntity>
+               </assignedOrganization>
+            </assignedEntity>
+         </representedOrganization>
+      </assignedEntity>
+   </author>
+   <component>
+      <structuredBody>
+         <component>
+            <section ID="DLDE">
+               <id root="e60e5057-8b88-450a-83bd-941eb2dcba48"/>
+               <code code="48780-1" codeSystem="2.16.840.1.113883.6.1" displayName="SPL PRODUCT DATA ELEMENTS SECTION"/>
+               <effectiveTime value="20130812"/>
+               <subject>
+                  <manufacturedProduct>
+                     <manufacturedProduct>
+                        <code code="58118-0608" codeSystem="2.16.840.1.113883.6.69"/>
+                        <name>Ferrous Sulfate</name>
+                        <formCode code="C42998" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TABLET"/>
+                        <asEntityWithGeneric>
+                           <genericMedicine>
+                              <name>FERROUS SULFATE</name>
+                           </genericMedicine>
+                        </asEntityWithGeneric>
+                        <ingredient classCode="ACTIM">
+                           <quantity>
+                              <numerator value="324" unit="mg"/>
+                              <denominator value="1" unit="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="39R4TAN1VT" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>FERROUS SULFATE</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="GW89581OWR" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>FERROUS CATION</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="O8232NY3SJ" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>STARCH, CORN</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="776XM7047L" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>CALCIUM STEARATE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="SMD1X3XO9M" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>POWDERED CELLULOSE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="J2B2A4N98G" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>LACTOSE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="7SEV7J4R1U" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>TALC</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="D9C330MD8B" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>COPOVIDONE K25-31</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="3WJQ0SDW1A" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>POLYETHYLENE GLYCOLS</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="7CVR7L4A2D" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>MALTODEXTRIN</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="C151H8M554" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>SUCROSE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="FZ989GH94E" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>POVIDONE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="H0G9379FGK" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>CALCIUM CARBONATE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="15FIX9V2JP" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>TITANIUM DIOXIDE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="70097M6I30" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>MAGNESIUM STEARATE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="46N107B71O" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>SHELLAC</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="512OYT1CRR" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>COCOA BUTTER</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="WZB9127XOA" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>FD&amp;C RED NO. 40</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="368GB5141J" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>SODIUM LAURYL SULFATE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="ETJ7Z6XBU4" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>SILICON DIOXIDE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="NX76LV5T8J" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>METHACRYLIC ACID - ETHYL ACRYLATE COPOLYMER (1:1) TYPE A</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="55X04QC32I" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>SODIUM HYDROXIDE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="UF064M00AF" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>DIETHYL PHTHALATE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="3NXW29V3WO" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>HYPROMELLOSES</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="R12CBM0EIZ" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>CARNAUBA WAX</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="7G1J5DA97F" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>WHITE WAX</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <asContent>
+                           <quantity>
+                              <numerator value="90" unit="1"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code code="58118-0608-9" codeSystem="2.16.840.1.113883.6.69"/>
+                              <formCode code="C43173" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOTTLE, PLASTIC"/>
+                           </containerPackagedProduct>
+                        </asContent>
+                        <asContent>
+                           <quantity>
+                              <numerator value="30" unit="1"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code code="58118-0608-3" codeSystem="2.16.840.1.113883.6.69"/>
+                              <formCode code="C43173" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOTTLE, PLASTIC"/>
+                           </containerPackagedProduct>
+                        </asContent>
+                        <asContent>
+                           <quantity>
+                              <numerator value="30" unit="1"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code code="58118-0608-8" codeSystem="2.16.840.1.113883.6.69"/>
+                              <formCode code="C43168" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BLISTER PACK"/>
+                           </containerPackagedProduct>
+                        </asContent>
+                        <asContent>
+                           <quantity>
+                              <numerator value="1" unit="1"/>
+                              <denominator value="1" unit="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code code="58118-0608-0" codeSystem="2.16.840.1.113883.6.69"/>
+                              <formCode code="C43233" displayName="PACKAGE" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           </containerPackagedProduct>
+                        </asContent>
+                     </manufacturedProduct>
+                     <subjectOf>
+                        <approval>
+                           <code code="C86952" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="DIETARY SUPPLEMENT"/>
+                           <author>
+                              <territorialAuthority>
+                                 <territory>
+                                    <code code="USA" codeSystem="2.16.840.1.113883.5.28"/>
+                                 </territory>
+                              </territorialAuthority>
+                           </author>
+                        </approval>
+                     </subjectOf>
+                     <subjectOf>
+                        <marketingAct>
+                           <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <statusCode code="active"/>
+                           <effectiveTime>
+                              <low value="20120806"/>
+                           </effectiveTime>
+                        </marketingAct>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLCOLOR" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value code="C48326" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="RED" xsi:type="CE"/>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLSCORE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value value="1" xsi:type="INT"/>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLSHAPE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value code="C48348" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ROUND" xsi:type="CE"/>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLSIZE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value unit="mm" value="11" xsi:type="PQ"/>
+                        </characteristic>
+                     </subjectOf>
+                     <consumedIn>
+                        <substanceAdministration>
+                           <routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ORAL"/>
+                        </substanceAdministration>
+                     </consumedIn>
+                  </manufacturedProduct>
+               </subject>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="c10ec095-aa4e-457c-ad2a-7fd464a8e15f"/>
+               <code code="69718-5" codeSystem="2.16.840.1.113883.6.1" displayName="STATEMENT OF IDENTITY SECTION"/>
+               <title/>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">Dietary Supplement</content>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20120814"/>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="7a3a1b50-058a-49d0-b818-5ebb3e1048d5"/>
+               <code code="34068-7" codeSystem="2.16.840.1.113883.6.1" displayName="DOSAGE &amp; ADMINISTRATION SECTION"/>
+               <title>CONTAINS:</title>
+               <text>
+                  <paragraph>Each tablet contains 324 mg of ferrous sulfate, equivalent to 65 mg of elemental iron, providing 362% of the U.S. recommended daily intake (RDI) of iron for adults and children 4 and older.</paragraph>
+               </text>
+               <effectiveTime value="20120814"/>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="2dacc20c-6a80-4824-9e16-166509e16a40"/>
+               <code code="34068-7" codeSystem="2.16.840.1.113883.6.1" displayName="DOSAGE &amp; ADMINISTRATION SECTION"/>
+               <title>DIRECTIONS FOR USE:</title>
+               <text>
+                  <paragraph>Do not crush or chew tablets. Adult Serving Size: 1 tablet two to three times daily. Children: Consult a physician.</paragraph>
+               </text>
+               <effectiveTime value="20120814"/>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="bf3cc3b9-6e4e-4921-abab-cfc7633a6dd1"/>
+               <code code="34071-1" codeSystem="2.16.840.1.113883.6.1" displayName="WARNINGS SECTION"/>
+               <text>
+                  <table width="100%">
+                     <col width="100%" align="left" valign="top"/>
+                     <tbody>
+                        <tr>
+                           <td styleCode="Lrule Rrule" colspan="1">
+                              <content styleCode="bold">WARNING:</content>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td styleCode="Lrule Rrule">
+                              <content styleCode="bold"> Accidental overdose of iron-containing products is a leading cause of fatal poisoning in children under 6. Keep this product out of reach of children. In case of accidental overdose, call a doctor or poison control center immediately.</content>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </text>
+               <effectiveTime value="20120814"/>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="f6265a3f-efb9-485d-ae17-f9908433cecf"/>
+               <code code="34071-1" codeSystem="2.16.840.1.113883.6.1" displayName="WARNINGS SECTION"/>
+               <title>WARNINGS:</title>
+               <text>
+                  <paragraph>Do not take within 2 hours of taking oral tetracycline antibiotics, since oral iron products tend to interfere with absorption of tetracycline. May cause gastrointestinal discomfort, nausea, constipation or diarrhea. If you are pregnant or nursing a baby, seek advice of a health professional before using this product. U.S. Consumer Product Safety Commission requires that iron-containing medicines and vitamins with iron be packaged in child-resistant closures. Parents should always properly resecure safety closures.</paragraph>
+               </text>
+               <effectiveTime value="20120814"/>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="6ce7ecd4-f277-4861-b074-2bc9889eec84"/>
+               <code code="50741-8" codeSystem="2.16.840.1.113883.6.1" displayName="SAFE HANDLING WARNING SECTION"/>
+               <title>STORAGE:</title>
+               <text>
+                  <paragraph>Store at 20° to 25°C (68° to 77°F) [see USP Controlled Room Temperature]</paragraph>
+               </text>
+               <effectiveTime value="20120814"/>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="f9b59c52-0fbb-43a1-a3ec-4f6894c0bb26"/>
+               <code code="69718-5" codeSystem="2.16.840.1.113883.6.1" displayName="STATEMENT OF IDENTITY SECTION"/>
+               <title>Supplement Facts</title>
+               <text>
+                  <table width="50%">
+                     <col width="50%" align="left" valign="top"/>
+                     <col width="25%" align="right" valign="top"/>
+                     <col width="25%" align="right" valign="top"/>
+                     <thead>
+                        <tr styleCode="Botrule">
+                           <th styleCode="Lrule Rrule" colspan="3">Serving Size 1 Tablet</th>
+                        </tr>
+                        <tr>
+                           <th styleCode="Lrule">Amount Per Tablet</th>
+                           <th styleCode="Rrule" colspan="2">% Daily Value</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td styleCode="Lrule">Iron (as ferrous sulfate)</td>
+                           <td>65 mg</td>
+                           <td styleCode="Rrule">362%</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <paragraph>
+                     <content styleCode="bold">Other ingredients:</content> Corn Starch, Calcium Stearate, Powdered Cellulose, Lactose, Talc, Copovidone, Polyethylene Glycol, Maltodextrin, Sucrose, Povidone, Calcium Carbonate, Titanium Dioxide, Magnesium Stearate, Shellac, Cocoa Butter, FD&amp;C Red No. 40 Aluminum Lake, Sodium Starch Glycolate A, Sodium Lauryl Sulfate, Colloidal Silicon Dioxide, Methacrylic Acid Copolymer Type C, Sodium Hydroxide, Simethicone Emulsion, Diethyl Phthalate, Hypromellose, Carnauba Wax, White Wax.</paragraph>
+                  <paragraph>Packaged by: Paddock Laboratories, Inc.<br/>Minneapolis, MN 55427</paragraph>
+                  <paragraph>(01-08)</paragraph>
+               </text>
+               <effectiveTime value="20120814"/>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="6490ff5a-7fa6-45ac-8d68-bae6ebf01424"/>
+               <code code="51945-4" codeSystem="2.16.840.1.113883.6.1" displayName="PACKAGE LABEL.PRINCIPAL DISPLAY PANEL"/>
+               <title>PRINCIPAL DISPLAY PANEL - 100 Tablet Bottle Label</title>
+               <text>
+                  <paragraph>
+                     <renderMultiMedia referencedObject="MM1"/>
+                  </paragraph>
+                  <paragraph>
+                     <renderMultiMedia referencedObject="L8150effc-f1c6-4ed5-8641-3b89f2782561"/>
+                  </paragraph>
+                  <paragraph>
+                     <renderMultiMedia referencedObject="L7df02842-a33d-4d48-989c-7b54cea16b2f"/>
+                  </paragraph>
+                  <paragraph>
+                     <renderMultiMedia referencedObject="L8ab47f02-7555-42f0-8068-dd2d6248c4bf"/>
+                  </paragraph>
+                  <paragraph/>
+               </text>
+               <effectiveTime value="20130807"/>
+               <component>
+                  <observationMedia ID="MM1">
+                     <text>324mg Packet</text>
+                     <value xsi:type="ED" mediaType="image/jpeg">
+                        <reference value="FerrSulf324Lab0.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+               <component>
+                  <observationMedia ID="L8150effc-f1c6-4ed5-8641-3b89f2782561">
+                     <text>324mg</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="Ferr324Lab3.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+               <component>
+                  <observationMedia ID="L7df02842-a33d-4d48-989c-7b54cea16b2f">
+                     <text>324mg</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="Ferr324Lab8.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+               <component>
+                  <observationMedia ID="L8ab47f02-7555-42f0-8068-dd2d6248c4bf">
+                     <text>324mg</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="Ferr324Lab9.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+      </structuredBody>
+   </component>
+</document>

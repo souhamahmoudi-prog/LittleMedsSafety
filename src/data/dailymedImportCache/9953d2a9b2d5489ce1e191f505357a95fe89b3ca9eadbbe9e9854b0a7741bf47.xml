@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="https://www.accessdata.fda.gov/spl/stylesheet/spl.xsl" type="text/xsl"?>
+<document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 https://www.accessdata.fda.gov/spl/schema/spl.xsd">
+   <id root="148df422-86ec-3bae-e063-6394a90a364e"/>
+   <code code="34390-5" codeSystem="2.16.840.1.113883.6.1" displayName="HUMAN OTC DRUG LABEL"/>
+   <title>Polyethylene Glycol 3350 Powder for Oral Solution, 17 g</title>
+   <effectiveTime value="20240326"/>
+   <setId root="901a1918-87bb-47c2-a465-8c468c3a1ee5"/>
+   <versionNumber value="1"/>
+   <author>
+      <time/>
+      <assignedEntity>
+         <representedOrganization>
+            <id root="1.3.6.1.4.1.519.1" extension="011920774"/>
+            <name>CHAIN DRUG MARKETING ASSOCIATION, INC.</name>
+            <assignedEntity>
+               <assignedOrganization>
+                  <assignedEntity>
+                     <assignedOrganization>
+                        <id root="1.3.6.1.4.1.519.1" extension="650980746"/>
+                        <name>Annora Pharma Private Limited</name>
+                     </assignedOrganization>
+                     <performance>
+                        <actDefinition>
+                           <code code="C25391" displayName="analysis" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <product>
+                              <manufacturedProduct classCode="MANU">
+                                 <manufacturedMaterialKind>
+                                    <code code="83324-002" codeSystem="2.16.840.1.113883.6.69"/>
+                                 </manufacturedMaterialKind>
+                              </manufacturedProduct>
+                           </product>
+                        </actDefinition>
+                     </performance>
+                     <performance>
+                        <actDefinition>
+                           <code code="C43360" displayName="manufacture" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <product>
+                              <manufacturedProduct classCode="MANU">
+                                 <manufacturedMaterialKind>
+                                    <code code="83324-002" codeSystem="2.16.840.1.113883.6.69"/>
+                                 </manufacturedMaterialKind>
+                              </manufacturedProduct>
+                           </product>
+                        </actDefinition>
+                     </performance>
+                  </assignedEntity>
+               </assignedOrganization>
+            </assignedEntity>
+         </representedOrganization>
+      </assignedEntity>
+   </author>
+   <component>
+      <structuredBody>
+         <component>
+            <section>
+               <id root="148e02e9-72af-3e57-e063-6394a90af68c"/>
+               <code code="48780-1" codeSystem="2.16.840.1.113883.6.1" displayName="SPL product data elements section"/>
+               <effectiveTime value="20240326"/>
+               <subject>
+                  <manufacturedProduct>
+                     <manufacturedProduct>
+                        <code code="83324-002" codeSystem="2.16.840.1.113883.6.69"/>
+                        <name>Polyethylene Glycol 3350
+</name>
+                        <formCode code="C42973" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="POWDER, FOR SOLUTION"/>
+                        <asEntityWithGeneric>
+                           <genericMedicine>
+                              <name>Polyethylene Glycol 3350</name>
+                           </genericMedicine>
+                        </asEntityWithGeneric>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator unit="g" value="17"/>
+                              <denominator unit="g" value="17"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="G2M7P15E5P" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>POLYETHYLENE GLYCOL 3350</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="G2M7P15E5P" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>POLYETHYLENE GLYCOL 3350</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <asContent>
+                           <quantity>
+                              <numerator value="238" unit="g"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code code="83324-002-08" codeSystem="2.16.840.1.113883.6.69"/>
+                              <formCode code="C43169" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOTTLE"/>
+                           </containerPackagedProduct>
+                           <subjectOf>
+                              <characteristic>
+                                 <code code="SPLCMBPRDTP" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                                 <value code="C112160" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="Type 0: Not a Combination Product" xsi:type="CV"/>
+                              </characteristic>
+                           </subjectOf>
+                           <subjectOf>
+                              <marketingAct>
+                                 <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                                 <statusCode code="active"/>
+                                 <effectiveTime>
+                                    <low value="20240301"/>
+                                 </effectiveTime>
+                              </marketingAct>
+                           </subjectOf>
+                        </asContent>
+                        <asContent>
+                           <quantity>
+                              <numerator value="510" unit="g"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code code="83324-002-16" codeSystem="2.16.840.1.113883.6.69"/>
+                              <formCode code="C43169" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOTTLE"/>
+                           </containerPackagedProduct>
+                           <subjectOf>
+                              <characteristic>
+                                 <code code="SPLCMBPRDTP" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                                 <value code="C112160" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="Type 0: Not a Combination Product" xsi:type="CV"/>
+                              </characteristic>
+                           </subjectOf>
+                           <subjectOf>
+                              <marketingAct>
+                                 <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                                 <statusCode code="active"/>
+                                 <effectiveTime>
+                                    <low value="20240301"/>
+                                 </effectiveTime>
+                              </marketingAct>
+                           </subjectOf>
+                        </asContent>
+                     </manufacturedProduct>
+                     <subjectOf>
+                        <approval>
+                           <id extension="ANDA214990" root="2.16.840.1.113883.3.150"/>
+                           <code code="C73584" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ANDA"/>
+                           <author>
+                              <territorialAuthority>
+                                 <territory>
+                                    <code code="USA" codeSystem="2.16.840.1.113883.5.28"/>
+                                 </territory>
+                              </territorialAuthority>
+                           </author>
+                        </approval>
+                     </subjectOf>
+                     <subjectOf>
+                        <marketingAct>
+                           <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <statusCode code="active"/>
+                           <effectiveTime>
+                              <low value="20240301"/>
+                           </effectiveTime>
+                        </marketingAct>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLCOLOR" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value code="C48325" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="white" xsi:type="CE">
+                              <originalText/>
+                           </value>
+                        </characteristic>
+                     </subjectOf>
+                     <consumedIn>
+                        <substanceAdministration>
+                           <routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ORAL"/>
+                        </substanceAdministration>
+                     </consumedIn>
+                  </manufacturedProduct>
+               </subject>
+            </section>
+         </component>
+         <component>
+            <section ID="Section_0">
+               <id root="148df422-86ed-3bae-e063-6394a90a364e"/>
+               <code code="55106-9" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - ACTIVE INGREDIENT SECTION"/>
+               <title>
+                  <content styleCode="italics">Active ingredient (in each dose)</content>
+               </title>
+               <text>
+                  <br/>
+                  <br/>
+                  <paragraph>Polyethylene Glycol 3350, 17 g (cap filled to line)</paragraph>
+                  <br/>
+                  <br/>
+               </text>
+               <effectiveTime value="20240323"/>
+            </section>
+         </component>
+         <component>
+            <section ID="Section_1">
+               <id root="148df422-86ee-3bae-e063-6394a90a364e"/>
+               <code code="55105-1" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - PURPOSE SECTION"/>
+               <title>
+                  <content styleCode="italics">Purpose</content>
+               </title>
+               <text>
+                  <paragraph>Osmotic Laxative</paragraph>
+               </text>
+               <effectiveTime value="20240323"/>
+            </section>
+         </component>
+         <component>
+            <section ID="Section_2">
+               <id root="148df422-86ef-3bae-e063-6394a90a364e"/>
+               <code code="34067-9" codeSystem="2.16.840.1.113883.6.1" displayName="INDICATIONS &amp; USAGE SECTION"/>
+               <title>
+                  <content styleCode="italics">Use</content>
+               </title>
+               <text>
+                  <paragraph>• relieves occasional constipation (irregularity) 
+  <br/>  • generally produces a bowel movement in 1 to 3 days
+ </paragraph>
+                  <br/>
+               </text>
+               <effectiveTime value="20240323"/>
+            </section>
+         </component>
+         <component>
+            <section ID="Section_3">
+               <id root="148df422-86f0-3bae-e063-6394a90a364e"/>
+               <code code="34071-1" codeSystem="2.16.840.1.113883.6.1" displayName="WARNINGS SECTION"/>
+               <title>
+                  <content styleCode="italics">Warnings</content>
+               </title>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">Allergy alert:</content>Do not use if you are allergic to polyethylene glycol
+
+ </paragraph>
+               </text>
+               <effectiveTime value="20240323"/>
+            </section>
+         </component>
+         <component>
+            <section ID="Section_4">
+               <id root="148df422-86f1-3bae-e063-6394a90a364e"/>
+               <code code="50570-1" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - DO NOT USE SECTION"/>
+               <title>Do not use</title>
+               <text>
+                  <paragraph>if you have kidney disease, except under the advice and supervision of a doctor</paragraph>
+               </text>
+               <effectiveTime value="20240323"/>
+            </section>
+         </component>
+         <component>
+            <section ID="Section_5">
+               <id root="148df422-86f2-3bae-e063-6394a90a364e"/>
+               <code code="50569-3" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - ASK DOCTOR SECTION"/>
+               <title>Ask a doctor before use if you have</title>
+               <text>
+                  <paragraph>• nausea, vomiting or abdominal pain 
+  <br/>  • a sudden change in bowel habits that lasts over 2 weeks 
+  <br/>  • irritable bowel syndrome
+ </paragraph>
+                  <br/>
+               </text>
+               <effectiveTime value="20240323"/>
+            </section>
+         </component>
+         <component>
+            <section ID="Section_6">
+               <id root="148df422-86f3-3bae-e063-6394a90a364e"/>
+               <code code="50568-5" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - ASK DOCTOR/PHARMACIST SECTION"/>
+               <title>Ask a doctor or pharmacist before use if you are</title>
+               <text>
+                  <paragraph>taking a prescription drug</paragraph>
+               </text>
+               <effectiveTime value="20240323"/>
+            </section>
+         </component>
+         <component>
+            <section ID="Section_7">
+               <id root="148df422-86f4-3bae-e063-6394a90a364e"/>
+               <code code="50567-7" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - WHEN USING SECTION"/>
+               <title>When using this product</title>
+               <text>
+                  <paragraph>you may have loose, watery, more frequent stools</paragraph>
+               </text>
+               <effectiveTime value="20240323"/>
+            </section>
+         </component>
+         <component>
+            <section ID="Section_8">
+               <id root="148df422-86f5-3bae-e063-6394a90a364e"/>
+               <code code="50566-9" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - STOP USE SECTION"/>
+               <title>Stop use and ask a doctor if</title>
+               <text>
+                  <paragraph>• you have rectal bleeding or your nausea, bloating, cramping or abdominal pain gets worse. These may be signs of a serious condition. 
+  <br/>  • you get diarrhea 
+  <br/>  • you need to use a laxative for longer than 1 week
+ </paragraph>
+                  <br/>
+               </text>
+               <effectiveTime value="20240323"/>
+            </section>
+         </component>
+         <component>
+            <section ID="Section_10">
+               <id root="148df422-86f6-3bae-e063-6394a90a364e"/>
+               <code code="53414-9" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - PREGNANCY OR BREAST FEEDING SECTION"/>
+               <title>If pregnant or breast-feeding,</title>
+               <text>
+                  <paragraph>ask a health professional before use. </paragraph>
+               </text>
+               <effectiveTime value="20240323"/>
+            </section>
+         </component>
+         <component>
+            <section ID="Section_11">
+               <id root="148df422-86f7-3bae-e063-6394a90a364e"/>
+               <code code="50565-1" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - KEEP OUT OF REACH OF CHILDREN SECTION"/>
+               <title>Keep out of reach of children</title>
+               <text>
+                  <paragraph>In case of overdose, get medical help or contact a Poison Control Center right away.</paragraph>
+               </text>
+               <effectiveTime value="20240323"/>
+            </section>
+         </component>
+         <component>
+            <section ID="Section_12">
+               <id root="148df422-86f8-3bae-e063-6394a90a364e"/>
+               <code code="34068-7" codeSystem="2.16.840.1.113883.6.1" displayName="DOSAGE &amp; ADMINISTRATION SECTION"/>
+               <title>
+                  <content styleCode="italics">Directions</content>
+               </title>
+               <text>
+                  <paragraph>•
+ 
+  <content styleCode="bold"> do not take more than directed unless advised by your doctor</content>
+                     <br/>  • the bottle top is a measuring cap marked to contain 17 grams of powder when filled to the indicated line (white section in cap) 
+  <br/>  • adults and children 17 years of age and older:
+
+ </paragraph>
+                  <paragraph>   • use once a day 
+  <br/>     • fill to top of white section in cap which is marked to indicate the correct dose (17 g) 
+  <br/>     • stir and dissolve in any 4 to 8 ounces of beverage (cold, hot or room temperature) then drink
+ </paragraph>
+                  <paragraph>   • do not combine with starch-based thickeners used for difficult swallowing 
+  <br/>     • ensure that the powder is fully dissolved before drinking  
+  <br/>     • do not drink if there are any clumps 
+  <br/>     • do not use  more than 7 days 
+  <br/>  • children 16 years of age or under: ask a doctor
+ </paragraph>
+               </text>
+               <effectiveTime value="20240323"/>
+            </section>
+         </component>
+         <component>
+            <section ID="Unclassified_Section_1">
+               <id root="148df422-86f9-3bae-e063-6394a90a364e"/>
+               <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+               <title>
+                  <content styleCode="italics">Other information</content>
+               </title>
+               <text>
+                  <br/>
+                  <br/>
+                  <paragraph>• store at 20° to 25°C (68° to 77°F)  
+  <br/>  • tamper-evident: do not use if foil seal under cap, printed with "SEALED for YOUR PROTECTION" is missing, open or broken
+ </paragraph>
+               </text>
+               <effectiveTime value="20240323"/>
+            </section>
+         </component>
+         <component>
+            <section ID="Unclassified_Section_3">
+               <id root="148df422-86fa-3bae-e063-6394a90a364e"/>
+               <code code="51727-6" codeSystem="2.16.840.1.113883.6.1" displayName="INACTIVE INGREDIENT SECTION"/>
+               <title>
+                  <content styleCode="italics">Inactive ingredients</content>
+               </title>
+               <text>
+                  <paragraph>none</paragraph>
+               </text>
+               <effectiveTime value="20240323"/>
+            </section>
+         </component>
+         <component>
+            <section ID="Unclassified_Section_2">
+               <id root="148df422-86fb-3bae-e063-6394a90a364e"/>
+               <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+               <title>
+                  <content styleCode="italics">Questions or comments?</content>
+               </title>
+               <text>
+                  <paragraph>call
+ 
+  <content styleCode="bold">1-888-375-3784</content>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20240323"/>
+            </section>
+         </component>
+         <component>
+            <section ID="Section_16">
+               <id root="148df422-86fc-3bae-e063-6394a90a364e"/>
+               <code code="51945-4" codeSystem="2.16.840.1.113883.6.1" displayName="PACKAGE LABEL.PRINCIPAL DISPLAY PANEL"/>
+               <title>PRINCIPAL DISPLAY PANEL</title>
+               <text>
+                  <paragraph>Polyethylene glycol 3350 powder for oral solution bottle label 238g</paragraph>
+                  <renderMultiMedia referencedObject="MM1"/>
+                  <paragraph>Polyethylene glycol 3350 powder for oral solution bottle label 510g</paragraph>
+                  <paragraph>
+                     <renderMultiMedia referencedObject="MM2"/>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20240323"/>
+               <component>
+                  <observationMedia ID="MM1">
+                     <text>polyethleneglcollabel1</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="polyethleneglcollabel1.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+               <component>
+                  <observationMedia ID="MM2">
+                     <text>polyethleneglcollabel2</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="polyethleneglcollabel2.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+      </structuredBody>
+   </component>
+</document>

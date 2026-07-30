@@ -1,0 +1,1153 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="https://www.accessdata.fda.gov/spl/stylesheet/spl.xsl" type="text/xsl"?>
+<document xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 https://www.accessdata.fda.gov/spl/schema/spl.xsd">
+   <id root="dd003952-2ae1-4c8d-9f2e-8dd6ae470279"/>
+   <code code="34391-3" codeSystem="2.16.840.1.113883.6.1" displayName="HUMAN PRESCRIPTION DRUG LABEL"/>
+   <title>These highlights do not include all the information needed to use PEG-3350 and electrolyte for oral solution safely and effectively. See full prescribing information for PEG-3350 and electrolyte for oral solution.<br/>
+      <br/>PEG-3350 (236 g) and electrolyte for oral solution, USP<br/>Initial U.S. Approval:1984</title>
+   <effectiveTime value="20230208"/>
+   <setId root="29d821ff-389c-41fb-8a27-89bd3f022b82"/>
+   <versionNumber value="5"/>
+   <author>
+      <time/>
+      <assignedEntity>
+         <representedOrganization>
+            <id extension="793518643" root="1.3.6.1.4.1.519.1"/>
+            <name>Novel Laboratories, Inc.</name>
+            <assignedEntity>
+               <assignedOrganization>
+                  <id extension="793518643" root="1.3.6.1.4.1.519.1"/>
+                  <name>Novel Laboratories, Inc.</name>
+                  <assignedEntity>
+                     <assignedOrganization>
+                        <id extension="793518643" root="1.3.6.1.4.1.519.1"/>
+                        <name>Novel Laboratories, Inc.</name>
+                     </assignedOrganization>
+                     <performance>
+                        <actDefinition>
+                           <code code="C43360" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MANUFACTURE"/>
+                           <product>
+                              <manufacturedProduct classCode="MANU">
+                                 <manufacturedMaterialKind>
+                                    <code code="40032-090" codeSystem="2.16.840.1.113883.6.69"/>
+                                 </manufacturedMaterialKind>
+                              </manufacturedProduct>
+                           </product>
+                        </actDefinition>
+                     </performance>
+                     <performance>
+                        <actDefinition>
+                           <code code="C25391" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ANALYSIS"/>
+                           <product>
+                              <manufacturedProduct classCode="MANU">
+                                 <manufacturedMaterialKind>
+                                    <code code="40032-090" codeSystem="2.16.840.1.113883.6.69"/>
+                                 </manufacturedMaterialKind>
+                              </manufacturedProduct>
+                           </product>
+                        </actDefinition>
+                     </performance>
+                     <performance>
+                        <actDefinition>
+                           <code code="C84731" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="PACK"/>
+                           <product>
+                              <manufacturedProduct classCode="MANU">
+                                 <manufacturedMaterialKind>
+                                    <code code="40032-090" codeSystem="2.16.840.1.113883.6.69"/>
+                                 </manufacturedMaterialKind>
+                              </manufacturedProduct>
+                           </product>
+                        </actDefinition>
+                     </performance>
+                  </assignedEntity>
+               </assignedOrganization>
+            </assignedEntity>
+         </representedOrganization>
+      </assignedEntity>
+   </author>
+   <component>
+      <structuredBody>
+         <component>
+            <section>
+               <id root="d5bfd32d-16b6-4348-9de3-d6ae3c1b4160"/>
+               <code code="48780-1" codeSystem="2.16.840.1.113883.6.1" displayName="SPL Product Data Elements Section"/>
+               <effectiveTime value="20230208"/>
+               <subject>
+                  <manufacturedProduct>
+                     <manufacturedProduct>
+                        <code code="40032-090" codeSystem="2.16.840.1.113883.6.69"/>
+                        <name>POLYETHYLENE GLYCOL-3350 AND ELECTROLYTES<suffix/>
+                        </name>
+                        <formCode code="C42973" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="POWDER, FOR SOLUTION"/>
+                        <asEntityWithGeneric>
+                           <genericMedicine>
+                              <name>POLYETHYLENE GLYCOL-3350 AND ELECTROLYTES</name>
+                           </genericMedicine>
+                        </asEntityWithGeneric>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator value="236" unit="g"/>
+                              <denominator value="274.31" unit="g"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="G2M7P15E5P" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>POLYETHYLENE GLYCOL 3350</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="G2M7P15E5P" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>POLYETHYLENE GLYCOL 3350</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIR">
+                           <quantity>
+                              <numerator value="22.74" unit="g"/>
+                              <denominator value="274.31" unit="g"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="36KCS0R750" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>SODIUM SULFATE ANHYDROUS</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="36KCS0R750" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>SODIUM SULFATE ANHYDROUS</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                              <asEquivalentSubstance>
+                                 <definingSubstance>
+                                    <code code="36KCS0R750" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>SODIUM SULFATE ANHYDROUS</name>
+                                 </definingSubstance>
+                              </asEquivalentSubstance>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator value="6.74" unit="g"/>
+                              <denominator value="274.31" unit="g"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="8MDF5V39QO" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>SODIUM BICARBONATE</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="LYR4M0NH37" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>SODIUM CATION</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator value="5.86" unit="g"/>
+                              <denominator value="274.31" unit="g"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="451W47IQ8X" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>SODIUM CHLORIDE</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="Q32ZN48698" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>CHLORIDE ION</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator value="2.97" unit="g"/>
+                              <denominator value="274.31" unit="g"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="660YQ98I10" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>POTASSIUM CHLORIDE</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="295O53K152" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>POTASSIUM CATION</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="SB8ZUX40TY" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>SACCHARIN SODIUM</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="7CVR7L4A2D" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>MALTODEXTRIN</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <asContent>
+                           <quantity>
+                              <numerator value="274.31" unit="g"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code code="40032-090-19" codeSystem="2.16.840.1.113883.6.69"/>
+                              <formCode code="C43169" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOTTLE"/>
+                           </containerPackagedProduct>
+                           <subjectOf>
+                              <marketingAct>
+                                 <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                                 <statusCode code="active"/>
+                                 <effectiveTime>
+                                    <low value="20090601"/>
+                                 </effectiveTime>
+                              </marketingAct>
+                           </subjectOf>
+                           <subjectOf>
+                              <characteristic classCode="OBS">
+                                 <code code="SPLCMBPRDTP" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                                 <value code="C112160" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="Type 0: Not a Combination Product" xsi:type="CE"/>
+                              </characteristic>
+                           </subjectOf>
+                        </asContent>
+                     </manufacturedProduct>
+                     <subjectOf>
+                        <approval>
+                           <id extension="ANDA090231" root="2.16.840.1.113883.3.150"/>
+                           <code code="C73584" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ANDA"/>
+                           <author>
+                              <territorialAuthority>
+                                 <territory>
+                                    <code code="USA" codeSystem="2.16.840.1.113883.5.28"/>
+                                 </territory>
+                              </territorialAuthority>
+                           </author>
+                        </approval>
+                     </subjectOf>
+                     <subjectOf>
+                        <marketingAct>
+                           <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <statusCode code="active"/>
+                           <effectiveTime>
+                              <low value="20090601"/>
+                           </effectiveTime>
+                        </marketingAct>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLFLAVOR" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value code="C73396" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="LEMON" xsi:type="CE"/>
+                        </characteristic>
+                     </subjectOf>
+                     <consumedIn>
+                        <substanceAdministration>
+                           <routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ORAL"/>
+                        </substanceAdministration>
+                     </consumedIn>
+                  </manufacturedProduct>
+               </subject>
+            </section>
+         </component>
+         <component>
+            <section ID="ID169">
+               <id root="930a86a3-e506-426c-b513-54344af1272b"/>
+               <code code="43683-2" codeSystem="2.16.840.1.113883.6.1" displayName="RECENT MAJOR CHANGES SECTION"/>
+               <title>RECENT MAJOR CHANGES</title>
+               <effectiveTime value="20230208"/>
+               <excerpt>
+                  <highlight>
+                     <text>
+                        <paragraph ID="ID171">Warnings and Precautions, Aspiration (<linkHtml href="#ID78">5.7</linkHtml>)        5/2021</paragraph>
+                     </text>
+                  </highlight>
+               </excerpt>
+            </section>
+         </component>
+         <component>
+            <section ID="ID35">
+               <id root="5bd951a2-3e25-4aff-979a-d0bfb76763c0"/>
+               <code code="34067-9" codeSystem="2.16.840.1.113883.6.1" displayName="INDICATIONS &amp; USAGE SECTION"/>
+               <title>1 INDICATIONS AND USAGE</title>
+               <effectiveTime value="20161216"/>
+               <excerpt>
+                  <highlight>
+                     <text>
+                        <paragraph ID="ID37">PEG-3350 and electrolytes for oral solution, USP is a combination of PEG 3350, an osmotic laxative, and electrolytes indicated for cleansing of the colon in preparation for colonoscopy and barium enema X-ray examination in adults (<linkHtml href="#ID35">1</linkHtml>)</paragraph>
+                     </text>
+                  </highlight>
+               </excerpt>
+               <component>
+                  <section ID="ID38">
+                     <id root="c32a513a-188b-4902-8c25-2f04ee393f2e"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <text>
+                        <paragraph ID="ID39">PEG-3350 and electrolytes for oral solution is indicated for bowel cleansing prior to colonoscopy and barium enema X-ray examination in adults.</paragraph>
+                     </text>
+                     <effectiveTime value="20161216"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="ID40">
+               <id root="24e53561-8714-4b6a-a943-6271461debc4"/>
+               <code code="34068-7" codeSystem="2.16.840.1.113883.6.1" displayName="DOSAGE &amp; ADMINISTRATION SECTION"/>
+               <title>2 DOSAGE AND ADMINISTRATION</title>
+               <effectiveTime value="20230208"/>
+               <excerpt>
+                  <highlight>
+                     <text>
+                        <paragraph ID="ID175">Preparation and Administration (2.1):</paragraph>
+                        <list listType="unordered" ID="ID42" styleCode="Disc">
+                           <item>  Correct fluid and electrolyte abnormalities before treatment with PEG-3350 and electrolytes for oral solution.</item>
+                           <item>  Reconstitute PEG-3350 and electrolytes for oral solution with water prior to ingestion.</item>
+                           <item>  Do not take oral medications within 1 hour before the start or during administration of PEG-3350 and electrolytes for oral solution. (2.1)</item>
+                           <item>  Do not take other laxatives while taking PEG-3350 and electrolytes for oral solution.</item>
+                           <item>  Consume only clear liquids; avoid red and purple liquids.</item>
+                           <item>  Consume water or other clear liquids up until 2 hours before the time of the colonoscopy.</item>
+                           <item>  Do not consume solid food within 2 hours before starting PEG-3350 and electrolytes for oral solution.</item>
+                        </list>
+                        <paragraph ID="ID177">Adult Dosing Regimen (2.2):</paragraph>
+                        <list listType="unordered" ID="ID176" styleCode="Disc">
+                           <item>  On day prior to colonoscopy, instruct patients to consume a light breakfast at least 2 hours before starting PEG-3350 and electrolytes for oral solution.</item>
+                           <item>  Begin the recommended dosage regimen for  PEG-3350 and electrolytes for oral solution early in the evening on the day before colonoscopy</item>
+                           <item>  Drink reconstituted solution at a rate of 8 ounces every 10 minutes, until 4 liters are consumed, or rectal effluent is clear.</item>
+                           <item>  For complete information on dosing, preparation and administration, see the full prescribing information. (2.1, 2.2)</item>
+                        </list>
+                     </text>
+                  </highlight>
+               </excerpt>
+               <component>
+                  <section ID="ID43">
+                     <id root="180390e4-ac8d-4537-be37-b6c786563602"/>
+                     <title>2.1 Important Preparation and Administration Instructions</title>
+                     <text>
+                        <list listType="unordered" ID="ID178" styleCode="Disc">
+                           <item>  Correct fluid and electrolyte abnormalities before treatment with PEG-3350 and electrolytes for oral solution <content styleCode="italics">[see Warnings and Precautions (5.1)].</content>
+                           </item>
+                           <item>  Reconstitute PEG-3350 and electrolytes for oral solutionwith water prior to ingestion, do not take undissolved PEG-3350 and electrolytes for oral solution <content styleCode="italics">[see Dosage and Administration (2.2)].</content>
+                           </item>
+                           <item>  Do not take oral medications within 1 hour before the start of or during administration of PEG-3350 and electrolytes for oral solution <content styleCode="italics">[see Drug Interactions (7.2)]. </content>
+                           </item>
+                           <item>  Do not take other laxatives while taking PEG-3350 and electrolytes for oral solution <content styleCode="italics">[see Drug Interactions (7.3)].</content>
+                           </item>
+                           <item>  Consume only clear liquids, avoid red and purple liquids.</item>
+                           <item>  Patients may consume water or other clear liquids during the bowel preparation and after completion of the bowel preparation up until 2 hours before the time of the colonoscopy.</item>
+                           <item>  The solution is more palatable if chilled prior to administration.</item>
+                           <item>  Do not consume solid food within 2 hours before starting PEG-3350 and electrolytes for oral solution. For the best results, do not consume solid food for 3 to 4 hours before drinking the solution.</item>
+                           <item>  If severe bloating, distention or abdominal pain occurs, slow or temporarily discontinue PEG-3350 and electrolytes for oral solution until the symptoms abate.</item>
+                        </list>
+                     </text>
+                     <effectiveTime value="20230208"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="ID45">
+                     <id root="86ff02a9-08f3-4bce-9277-4a3594e46b82"/>
+                     <title>2.2 Dosage Regimen</title>
+                     <text>
+                        <paragraph ID="ID46">Instruct adult patients that on the day before the colonoscopy procedure, they may consume a light breakfast at least 2 hours before starting PEG-3350 and electrolytes for oral solution. Begin the recommended dosage regiment for PEG-3350 and electrolytes for oral solution early in the evening on the day before colonoscopy. </paragraph>
+                        <paragraph>Instruct patients to take PEG-3350 and electrolytes for oral solution in conjunction with clear liquids as follows:</paragraph>
+                        <paragraph>This preparation can be used with or without the lemon flavor pack. The pharmacist will add the lemon flavor pack prior to dispensing (see packet instructions)</paragraph>
+                        <paragraph>
+                           <content styleCode="bold">
+                              <content styleCode="underline">4 Liter Jug</content>
+                           </content>
+                        </paragraph>
+                        <list listType="unordered" ID="ID179" styleCode="Disc">
+                           <item>Fill the supplied container containing the PEG-3350 and      electrolytes for oral solution powder with   lukewarm drinking water to      the 4-liter fill line<list listType="unordered" styleCode="Circle">
+                                 <item>Do not add any other ingredients, flavors, etc</item>
+                              </list>
+                           </item>
+                           <item>After capping the container, shake vigorously several      times to ensure that the ingredients are dissolved.</item>
+                           <item>Drink at a rate of 8 ounces every 10 minutes until the      entire contents are consumed or the rectal effluent is clear. A loose      watery bowel movement should result in approximately one hour.</item>
+                           <item>After reconstitution, keep solution refrigerated 2° to 8°C      (36° to 46°F). Do not freeze. Use within 48 hours, discard unused      portion.</item>
+                        </list>
+                        <paragraph ID="ID180">
+                           <content styleCode="underline">Administration via a Nasogastric Tube</content>
+                        </paragraph>
+                        <paragraph>For patients with a nasogastric tube, administer the reconstituted PEG-3350 and electrolytes for oral solution solution at a rate of 20 to 30 mL per minute (1.2 to 1.8 liters per hour).</paragraph>
+                     </text>
+                     <effectiveTime value="20230208"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="ID52">
+               <id root="b4954a83-94d3-44d1-95c8-eb82a0c570c4"/>
+               <code code="43678-2" codeSystem="2.16.840.1.113883.6.1" displayName="DOSAGE FORMS &amp; STRENGTHS SECTION"/>
+               <title>3 DOSAGE FORMS AND STRENGTHS</title>
+               <effectiveTime value="20230208"/>
+               <excerpt>
+                  <highlight>
+                     <text>
+                        <paragraph ID="ID54">For oral solution: polyethylene glycol 3350 236 grams, sodium sulfate (anhydrous) 22.74 grams, sodium bicarbonate 6.74 grams, sodium chloride 5.86 grams, potassium chloride 2.97 grams and flavoring ingredients 2 gram; supplied in one 4 liter disposable jug.  (<linkHtml href="#ID52">3</linkHtml>)</paragraph>
+                     </text>
+                  </highlight>
+               </excerpt>
+               <component>
+                  <section ID="ID55">
+                     <id root="2b2b4826-c58a-4142-a639-ac8872007951"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <text>
+                        <paragraph ID="ID181">For Oral Solution: 236 g polyethylene glycol 3350, 22.74 g sodium sulfate (anhydrous), 6.74 g sodium bicarbonate, 5.86 g sodium chloride and 2.97 g potassium chloride as a white to off-white powder. When reconstituted with water to a volume of 4 liters, the solution contains 59 g/L PEG-3350, 5.69 g/L sodium sulfate, 1.69 g/L sodium bicarbonate, 1.47 g/L sodium chloride and 0.743 g/L potassium chloride.</paragraph>
+                     </text>
+                     <effectiveTime value="20230208"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="ID57">
+               <id root="f331c489-25eb-401c-ae37-245dfb7d0e59"/>
+               <code code="34070-3" codeSystem="2.16.840.1.113883.6.1" displayName="CONTRAINDICATIONS SECTION"/>
+               <title>4 CONTRAINDICATIONS</title>
+               <effectiveTime value="20230208"/>
+               <excerpt>
+                  <highlight>
+                     <text>
+                        <list listType="unordered" ID="ID59" styleCode="Disc">
+                           <item>Gastrointestinal (GI) obstruction (<linkHtml href="#ID57">4</linkHtml>, <linkHtml href="#ID76">5.6</linkHtml>)</item>
+                           <item>Bowel perforation (<linkHtml href="#ID57">4</linkHtml>, <linkHtml href="#ID76">5.6</linkHtml>)</item>
+                           <item>Toxic colitis or toxic megacolon (<linkHtml href="#ID57">4</linkHtml>)</item>
+                           <item>Gastric retention (<linkHtml href="#ID57">4</linkHtml>)</item>
+                           <item>Ileus (<linkHtml href="#ID57">4</linkHtml>)</item>
+                           <item>Hypersensitivity to components of PEG-3350 and electrolytes for oral solution (<linkHtml href="#ID57">4</linkHtml>, <linkHtml href="#ID80">5.8</linkHtml>)</item>
+                        </list>
+                     </text>
+                  </highlight>
+               </excerpt>
+               <component>
+                  <section ID="ID60">
+                     <id root="0bb82c18-36a1-483b-a2b5-f13273b7b31b"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <text>
+                        <paragraph ID="ID61">PEG-3350 and electrolytes for oral solution is contraindicated in the following conditions:</paragraph>
+                        <list listType="unordered" ID="ID62" styleCode="Disc">
+                           <item>Gastrointestinal (GI) obstruction (<linkHtml href="#ID76">5.6</linkHtml>)</item>
+                           <item>Bowel perforation (<linkHtml href="#ID76">5.6</linkHtml>)</item>
+                           <item>Toxic colitis or toxic megacolon</item>
+                           <item>Gastric retention</item>
+                           <item>Ileus</item>
+                           <item>Hypersensitivity to components of PEG-3350 and electrolytes for oral solution (<linkHtml href="#ID80">5.8</linkHtml>)</item>
+                        </list>
+                     </text>
+                     <effectiveTime value="20230208"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="ID63">
+               <id root="58c1fcd4-eda3-4121-8183-bc54d6501fd9"/>
+               <code code="43685-7" codeSystem="2.16.840.1.113883.6.1" displayName="WARNINGS AND PRECAUTIONS SECTION"/>
+               <title>5 WARNINGS AND PRECAUTIONS</title>
+               <effectiveTime value="20230208"/>
+               <excerpt>
+                  <highlight>
+                     <text>
+                        <list listType="unordered" ID="ID65" styleCode="Disc">
+                           <item>  Risk of fluid and electrolyte abnormalities: Encourage adequate hydration, assess concurrent medications, and consider laboratory assessments prior to and after use. (<linkHtml href="#ID66">5.1</linkHtml>, <linkHtml href="#ID68">5.2</linkHtml>, <linkHtml href="#ID90">7.1</linkHtml>)</item>
+                           <item>  Cardiac arrhythmias: Consider pre-dose and post-colonoscopy ECGs in patients at increased risk of serious cardiac arrhythmias. (<linkHtml href="#ID68">5.2</linkHtml>)</item>
+                           <item>  Seizures: Use caution in patients with a history of seizures and patients at increased risk of seizure, including medications that lower the seizure threshold. (<linkHtml href="#ID70">5.3</linkHtml>, <linkHtml href="#ID90">7.1</linkHtml>)</item>
+                           <item>  Patients with renal impairment or taking concomitant medications that affect renal function: Use caution, ensure adequate hydration and consider testing. (<linkHtml href="#ID72">5.4</linkHtml>, <linkHtml href="#ID90">7.1</linkHtml>, 8.6)</item>
+                           <item>  Mucosal ulcerations: Consider potential for mucosal ulcerations when interpreting colonoscopy findings in patients with known or suspected inflammatory bowel disease. (<linkHtml href="#ID74">5.5</linkHtml>, <linkHtml href="#ID94">7.3</linkHtml>)</item>
+                           <item>  Patients at risk for aspiration: Observe during administration. (<linkHtml href="#ID78">5.7</linkHtml>)</item>
+                           <item>  Hypersensitivity reactions including anaphylaxis: Inform patients to seek immediate medical care if symptoms occur. (<linkHtml href="#ID80">5.8</linkHtml>)</item>
+                        </list>
+                     </text>
+                  </highlight>
+               </excerpt>
+               <component>
+                  <section ID="ID66">
+                     <id root="9ba176ac-ed30-4f13-853b-c2b8ba2ee81e"/>
+                     <title>5.1 Serious Fluid and Serum Chemistry Abnormalities</title>
+                     <text>
+                        <paragraph ID="ID67">Advise patients to hydrate adequately before, during, and after the use of PEG-3350 and electrolytes for oral solution.   Use caution in patients with congestive heart failure when replacing fluids. If a patient develops significant vomiting or signs of dehydration including signs of orthostatic hypotension after taking PEG-3350 and electrolytes for oral solution, consider performing post-colonoscopy lab tests (electrolytes, creatinine, and BUN) and treat accordingly. Correct fluid and electrolyte abnormalities before treatment with PEG-3350 and electrolytes for oral solution. Fluid and electrolyte disturbances can lead to serious adverse events including cardiac arrhythmias, seizures and renal impairment. Fluid and electrolyte abnormalities should be corrected before treatment with PEG-3350 and electrolytes for oral solution.</paragraph>
+                        <paragraph>In addition, use caution when prescribing PEG-3350 and electrolytes for oral solution for patients who have conditions, or who are using medications, that increase the risk for fluid and electrolyte disturbances or may increase the risk of adverse events of seizure, arrhythmias, and renal impairment [<content styleCode="italics">see <linkHtml href="#ID90">Drug Interactions (7.1)</linkHtml>
+                           </content>]</paragraph>
+                     </text>
+                     <effectiveTime value="20230208"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="ID68">
+                     <id root="6e0cfcc9-d5f3-4507-b7f2-5bb7a527f91b"/>
+                     <title>5.2 Cardiac Arrhythmias</title>
+                     <text>
+                        <paragraph ID="ID69">There have been rare reports of serious arrhythmias associated with the use of ionic osmotic laxative products for bowel preparation. Use caution when prescribing PEG-3350 and electrolytes for oral solution for patients at increased risk of arrhythmias (e.g., patients with a history of prolonged QT, uncontrolled arrhythmias, recent myocardial infarction, unstable angina, congestive heart failure, or cardiomyopathy). Consider pre-dose and post-colonoscopy ECGs in patients at increased risk of serious cardiac arrhythmias.</paragraph>
+                     </text>
+                     <effectiveTime value="20230208"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="ID70">
+                     <id root="3b069932-6847-40a8-8ed4-622e13496849"/>
+                     <title>5.3 Seizures</title>
+                     <text>
+                        <paragraph ID="ID71">There have been reports of generalized tonic-clonic seizures and/or loss of consciousness associated with use of bowel preparation products in patients with no prior history of seizures. The seizure cases were associated with electrolyte abnormalities (e.g., hyponatremia, hypokalemia, hypocalcemia, and hypomagnesemia) and low serum osmolality. The neurologic abnormalities resolved with correction of fluid and electrolyte abnormalities.</paragraph>
+                        <paragraph>Use caution when prescribing PEG-3350 and electrolytes for oral solution for patients with a history of seizures and in patients at increased risk of seizure, such as patients taking medications that lower the seizure threshold (e.g., tricyclic antidepressants), patients withdrawing from alcohol or benzodiazepines, or patients with known or suspected hyponatremia <content styleCode="italics">[see Drug Interactions (<linkHtml href="#ID90">7.1</linkHtml>)].</content>
+                        </paragraph>
+                     </text>
+                     <effectiveTime value="20230208"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="ID72">
+                     <id root="9322907d-8ca7-4a60-9ef5-1c0080ebb5aa"/>
+                     <title>5.4 Renal Impairment</title>
+                     <text>
+                        <paragraph ID="ID73">Use caution when prescribing PEG-3350 and electrolytes for oral solution for patients with impaired renal function or patients taking concomitant medications that may affect renal function (such as diuretics, angiotensin converting enzyme inhibitors, angiotensin receptor blockers, or non-steroidal anti-inflammatory drugs) <content styleCode="italics">[see Drug Interactions (<linkHtml href="#ID90">7.1</linkHtml>)].</content>  Advise these patients of the importance of adequate hydration, and consider performing baseline and post-colonoscopy laboratory tests (electrolytes, creatinine, and BUN) in these patients <content styleCode="italics">[see Use is Specific Populations (8.6)]</content>
+                        </paragraph>
+                     </text>
+                     <effectiveTime value="20230208"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="ID74">
+                     <id root="63a8bd57-6058-4ee7-9ef3-12aebf18f3de"/>
+                     <title>5.5 Colonic Mucosal Ulcerations and Ischemic Colitis</title>
+                     <text>
+                        <paragraph ID="ID75">Administration of osmotic laxative products may produce colonic mucosal aphthous ulcerations, and there have been reports of more serious cases of ischemic colitis requiring hospitalization. Concurrent use of stimulant laxatives and PEG-3350 and electrolytes for oral solution may increase this risk. Consider the potential for mucosal ulcerations resulting from the bowel preparation when interpreting colonoscopy findings in patients with known or suspect inflammatory bowel disease (IBD).</paragraph>
+                     </text>
+                     <effectiveTime value="20230208"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="ID76">
+                     <id root="826de854-442c-43b7-8d4f-5177bd9d835b"/>
+                     <title>5.6 Use in Patients with Significant Gastrointestinal Disease</title>
+                     <text>
+                        <paragraph ID="ID77">If gastrointestinal obstruction or perforation is suspected, perform appropriate diagnostic studies to rule out these conditions before administering PEG-3350 and electrolytes for oral solution. If a patient experiences severe bloating, distention or abdominal pain, administration should be slowed or temporarily discontinued until the symptoms abate. If gastrointestinal obstruction or perforation is suspected, appropriate studies should be performed to rule out these conditions before administration of PEG-3350 and electrolytes for oral solution. </paragraph>
+                        <paragraph>Use with caution in patients with severe active ulcerative colitis.</paragraph>
+                     </text>
+                     <effectiveTime value="20161216"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="ID78">
+                     <id root="4375950f-1532-486d-af06-994ad6293a13"/>
+                     <title>5.7 Aspiration</title>
+                     <text>
+                        <paragraph ID="ID79">Use with caution in patients with impaired gag reflex, unconscious, or semiconscious patients, and patients prone to regurgitation or aspiration. Observe these patients during administration of PEG-3350 and electrolytes for oral solution, especially if it is administered via nasogastric tube."</paragraph>
+                        <paragraph>Do not combine PEG-3350 and electrolytes for oral solution with starch-based thickeners <content styleCode="italics">[see Dosage and Administration (<linkHtml href="#ID43">2.1</linkHtml>)].</content> Polyethylene glycol (PEG), a component of PEG-3350 and electrolytes for oral solution, when mixed with starch-thickened liquids reduces the viscosity of the starch-thickened liquid. When a PEG-based product used for another indication was mixed in starch-based pre-thickened liquids used in patients with dysphagia, thinning of the liquid occurred and cases of chocking and potential aspiration were reported.</paragraph>
+                     </text>
+                     <effectiveTime value="20230208"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="ID80">
+                     <id root="aac9e48a-dd66-49b0-8178-da25a0e8b866"/>
+                     <title>5.8 Hypersensitivity Reactions</title>
+                     <text>
+                        <paragraph ID="ID81">PEG-3350 and electrolytes for oral solution contains PEG and may cause serious hypersensitivity reactions including anaphylaxis, angioedema, rash, urticaria, and pruritus <content styleCode="italics">[see Adverse Reactions (<linkHtml href="#ID82">6</linkHtml>)]</content>. Inform patients of the signs and symptoms of anaphylaxis and instruct them to seek immediate medical care should signs and symptoms occur.</paragraph>
+                     </text>
+                     <effectiveTime value="20230208"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="ID82">
+               <id root="76681208-f957-45c6-99f6-2c212abb35ed"/>
+               <code code="34084-4" codeSystem="2.16.840.1.113883.6.1" displayName="ADVERSE REACTIONS SECTION"/>
+               <title>6 ADVERSE REACTIONS</title>
+               <effectiveTime value="20230208"/>
+               <excerpt>
+                  <highlight>
+                     <text>
+                        <paragraph ID="ID84">Most common adverse reactions (≥3%) are: nausea, abdominal fullness and bloating abdominal cramps, vomiting and anal irritation (<linkHtml href="#ID82">6</linkHtml>)</paragraph>
+                        <paragraph>
+                           <content styleCode="bold">To report SUSPECTED ADVERSE REACTIONS, contact Novel Laboratories, Inc. at 1-866-403-7592 or FDA at 1-800-FDA-1088 or </content>
+                           <linkHtml href="#ID">www.fda.gov/medwatch</linkHtml>
+                           <content styleCode="bold">.</content>
+                        </paragraph>
+                     </text>
+                  </highlight>
+               </excerpt>
+               <component>
+                  <section ID="ID85">
+                     <id root="f1618f2a-b460-4817-bcf5-b807afa70bc1"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <text>
+                        <paragraph ID="ID86">The following clinically significant adverse reactions are described elsewhere in the labeling:</paragraph>
+                        <list listType="unordered" ID="ID182" styleCode="Disc">
+                           <item>  Renal impairment <content styleCode="italics">[see Warnings and Precautions (<linkHtml href="#ID72">5.4</linkHtml>)]</content>
+                           </item>
+                           <item>  Colonic mucosal ulcerations and ischemic colitis <content styleCode="italics">[see Warnings and Precautions (<linkHtml href="#ID74">5.5</linkHtml>)]</content>
+                           </item>
+                           <item>  Patients with significant gastrointestinal disease <content styleCode="italics">[see Warnings and Precautions (<linkHtml href="#ID76">5.6</linkHtml>)]</content>
+                           </item>
+                           <item>  Aspiration <content styleCode="italics">[see Warnings and Precautions (<linkHtml href="#ID78">5.7</linkHtml>)]</content>
+                           </item>
+                        </list>
+                        <paragraph ID="ID183">The following adverse reactions associated with the use of PEG-3350 and electrolytes for oral solution were identified in clinical trials or postmarketing reports. Because these reactions are reported voluntarily from a population of uncertain size, it is not always possible to estimate their frequency, reliably, or establish a causal relationship to drug exposure. </paragraph>
+                        <list listType="unordered" ID="ID184" styleCode="Disc">
+                           <item>  Cardiovascular: arrhythmia, atrial fibrillation, peripheral edema, asystole, and acute pulmonary edema after aspiration <content styleCode="italics">[see Warnings and Precautions (<linkHtml href="#ID68">5.2</linkHtml>)].</content>
+                           </item>
+                           <item>  Nervous system: tremor, seizure <content styleCode="italics">[see Warnings and Precautions (<linkHtml href="#ID70">5.3</linkHtml>)] </content>
+                           </item>
+                           <item>  Hypersensitivity: Urticaria/rash, pruritus, dermatitis, rhinorrhea, dyspnea, chest and throat tightness, fever, angioedema, anaphylaxis and anaphylactic shock<content styleCode="italics">[see Contraindications (4), Warnings and Precautions (<linkHtml href="#ID80">5.8</linkHtml>)] </content>
+                           </item>
+                           <item>  Gastrointestinal: Nausea, abdominal fullness and bloating are the most common adverse reactions (occurred in up to 50% of patients). Other less common adverse reactions include: abdominal cramps, vomiting, "butterfly-like" infiltrates on chest X-ray after vomiting and aspirating PEG,  anal irritation, and upper GI bleeding from Mallory-Weiss Tear, esophageal perforation [usually with gastroesophageal reflux disease (GERD)].</item>
+                        </list>
+                     </text>
+                     <effectiveTime value="20230208"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="ID87">
+               <id root="70c6b869-0f86-445c-b40f-fe9a2d7c1cd2"/>
+               <code code="34073-7" codeSystem="2.16.840.1.113883.6.1" displayName="DRUG INTERACTIONS SECTION"/>
+               <title>7 DRUG INTERACTIONS</title>
+               <effectiveTime value="20230208"/>
+               <excerpt>
+                  <highlight>
+                     <text>
+                        <list listType="unordered" ID="ID172" styleCode="Disc">
+                           <item>Some drugs increase risks due to fluid and electrolyte changes (<linkHtml href="#ID90">7.1</linkHtml>)</item>
+                        </list>
+                     </text>
+                  </highlight>
+               </excerpt>
+               <component>
+                  <section ID="ID90">
+                     <id root="d6ab3b40-09d3-4e79-af9b-b85cfab63244"/>
+                     <title>7.1 Drugs that May Increase Risks Due to Fluid and Electrolyte Abnormalities</title>
+                     <text>
+                        <paragraph ID="ID91">Use caution when prescribing PEG-3350 and electrolytes for oral solution for patients with conditions and/or who are using medications that increase the risk for fluid and electrolyte disturbances or may increase the risk of renal impairment, seizure, arrhythmias, and prolonged QT in the setting of fluid and electrolyte abnormalities [see Warnings and Precautions (<linkHtml href="#ID66">5.1</linkHtml>, <linkHtml href="#ID68">5.2</linkHtml>, <linkHtml href="#ID70">5.3</linkHtml>, <linkHtml href="#ID72">5.4</linkHtml>)]. Consider additional patient evaluations as appropriate.</paragraph>
+                     </text>
+                     <effectiveTime value="20230208"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="ID92">
+                     <id root="9f832096-7daa-40f3-ae59-b43f71687333"/>
+                     <title>7.2 Potential for Reduced Drug Absorption</title>
+                     <text>
+                        <paragraph ID="ID93">PEG-3350 and electrolytes for oral solution can reduce the absorption of other administered drugs. Administer oral medications within one hour before the start of administration of PEG-3350 and electrolytes for oral solution <content styleCode="italics">[see Dosage and Administration (<linkHtml href="#ID43">2.1</linkHtml>)]</content>.</paragraph>
+                     </text>
+                     <effectiveTime value="20230208"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="ID94">
+                     <id root="a002b5f2-30f8-4691-a1f1-eee834a0f137"/>
+                     <title>7.3 Stimulant Laxatives</title>
+                     <text>
+                        <paragraph ID="ID95">Concurrent use of stimulant laxatives and PEG-3350 and electrolytes for oral solution may increase the risk of mucosal ulceration or ischemic colitis. Avoid use of stimulant laxatives (e.g., bisacodyl, sodium picosulfate) while taking PEG-3350 and electrolytes for oral solution <content styleCode="italics">[see Warnings and Precautions (<linkHtml href="#ID74">5.5</linkHtml>)].</content>
+                        </paragraph>
+                     </text>
+                     <effectiveTime value="20230208"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="ID96">
+               <id root="bc1e6016-7f81-4c97-b38b-e06fa000c0cf"/>
+               <code code="43684-0" codeSystem="2.16.840.1.113883.6.1" displayName="USE IN SPECIFIC POPULATIONS SECTION"/>
+               <title>8 USE IN SPECIFIC POPULATIONS</title>
+               <effectiveTime value="20230208"/>
+               <component>
+                  <section ID="ID97">
+                     <id root="3ac829c6-86db-474c-8c87-fab280d0b9bd"/>
+                     <code code="42228-7" codeSystem="2.16.840.1.113883.6.1" displayName="PREGNANCY SECTION"/>
+                     <title>8.1 Pregnancy</title>
+                     <text>
+                        <paragraph ID="ID98">Animal reproduction studies have not been conducted with PEG-3350 and electrolytes for oral solution. It is also not known whether PEG-3350 and electrolytes for oral solution can cause fetal harm when administered to a pregnant woman or can affect reproductive capacity. PEG-3350 and electrolytes for oral solution should be given to a pregnant woman only if clearly needed.</paragraph>
+                     </text>
+                     <effectiveTime value="20230208"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="ID99">
+                     <id root="c724ced6-34d6-43be-a22b-4d64195a0065"/>
+                     <code code="34080-2" codeSystem="2.16.840.1.113883.6.1" displayName="NURSING MOTHERS SECTION"/>
+                     <title>8.3 Nursing Mothers</title>
+                     <text>
+                        <paragraph ID="ID100">It is not known whether this drug is excreted in human milk. Because many drugs are excreted in human milk, caution should be exercised when PEG-3350 and electrolytes for oral solution is administered to a nursing woman.</paragraph>
+                     </text>
+                     <effectiveTime value="20161216"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="ID101">
+                     <id root="79f28eb3-7857-4c3e-8431-ad97e324279d"/>
+                     <code code="34081-0" codeSystem="2.16.840.1.113883.6.1" displayName="PEDIATRIC USE SECTION"/>
+                     <title>8.4 Pediatric Use</title>
+                     <text>
+                        <paragraph ID="ID102">Safety and effectiveness of PEG-3350 and electrolytes for oral solution in pediatric patients have not been established.</paragraph>
+                     </text>
+                     <effectiveTime value="20161216"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="ID103">
+                     <id root="3f79af4d-9ddd-4e71-8a48-ea92904ac01a"/>
+                     <code code="34082-8" codeSystem="2.16.840.1.113883.6.1" displayName="GERIATRIC USE SECTION"/>
+                     <title>8.5 Geriatric Use</title>
+                     <text>
+                        <paragraph ID="ID104">Clinical studies of PEG-3350 and electrolytes for oral solution did not include sufficient numbers of subjects aged 65 and over to determine whether they respond differently from younger subjects. Other reported clinical experience has not identified differences in responses between the elderly and younger patients.</paragraph>
+                     </text>
+                     <effectiveTime value="20161216"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="ID185">
+                     <id root="1c59ad7a-5391-41c1-a086-5887d13a50b2"/>
+                     <title>8.6 Renal Impairment</title>
+                     <text>
+                        <paragraph ID="ID186">Use PEG-3350 and electrolytes for oral solution with caution in patients with renal impairment or patients taking concomitant medications that may affect renal function <content styleCode="italics">[see Drug Interactions (<linkHtml href="#ID90">7.1</linkHtml>)]</content>. These patients may be at risk for renal injury. Advise these patients of the importance of adequate hydration before, during and after use of PEG-3350 and electrolytes for oral solution and consider performing baseline and post-colonoscopy laboratory tests (electrolytes, creatinine, and BUN) in these patients <content styleCode="italics">[see Warnings and Precautions (<linkHtml href="#ID72">5.4</linkHtml>)]</content>.</paragraph>
+                     </text>
+                     <effectiveTime value="20230208"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="ID105">
+               <id root="781c571c-2ac6-40ef-a016-dba8fb64f7b3"/>
+               <code code="34089-3" codeSystem="2.16.840.1.113883.6.1" displayName="DESCRIPTION SECTION"/>
+               <title>11 DESCRIPTION</title>
+               <text>
+                  <paragraph ID="ID106">PEG-3350 and electrolytes for oral solution is a combination of polyethylene glycol 3350, an osmotic laxative, and electrolytes (sodium sulfate, sodium chloride, sodium bicarbonate and potassium chloride) for oral solution supplied in a 4 liter disposable jug containing 236 g polyethylene glycol 3350, 22.74 g sodium sulfate (anhydrous), 6.74 g sodium bicarbonate, 5.86 g sodium chloride, and 2.97 g potassium chloride as a white to off-white powder.</paragraph>
+                  <renderMultiMedia referencedObject="MM1"/>
+                  <paragraph ID="ID108">Sodium Sulfate, USP</paragraph>
+                  <paragraph>The chemical name is Na2SO4. The average Molecular Weight is 142.04. The structural formula is:</paragraph>
+                  <renderMultiMedia referencedObject="MM2"/>
+                  <paragraph ID="ID110">Sodium Bicarbonate, USP</paragraph>
+                  <paragraph>The chemical name is NaHCO3. The average Molecular Weight is 84.01. The structural formula is:</paragraph>
+                  <renderMultiMedia referencedObject="MM3"/>
+                  <paragraph ID="ID112">Sodium Chloride, USP</paragraph>
+                  <paragraph>The chemical name is NaCl. The average Molecular Weight: 58.44. The structural formula is:</paragraph>
+                  <paragraph>Na+ Cl-</paragraph>
+                  <paragraph>Potassium Chloride, USP</paragraph>
+                  <paragraph>The chemical name is KCl. The average Molecular Weight: 74.55. The structural formula is:</paragraph>
+                  <paragraph>K-Cl</paragraph>
+               </text>
+               <effectiveTime value="20230208"/>
+               <component>
+                  <observationMedia ID="MM1">
+                     <text>a</text>
+                     <value xsi:type="ED" mediaType="image/jpeg">
+                        <reference value="f2f502c8-49f4-4552-86a9-1c8a0466dfbe-01.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+               <component>
+                  <observationMedia ID="MM2">
+                     <text>b</text>
+                     <value xsi:type="ED" mediaType="image/jpeg">
+                        <reference value="f2f502c8-49f4-4552-86a9-1c8a0466dfbe-02.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+               <component>
+                  <observationMedia ID="MM3">
+                     <text>c</text>
+                     <value xsi:type="ED" mediaType="image/jpeg">
+                        <reference value="f2f502c8-49f4-4552-86a9-1c8a0466dfbe-03.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="ID113">
+               <id root="fb4c6a73-65d4-40ae-a660-923e092fbe85"/>
+               <code code="34090-1" codeSystem="2.16.840.1.113883.6.1" displayName="CLINICAL PHARMACOLOGY SECTION"/>
+               <title>12 CLINICAL PHARMACOLOGY</title>
+               <effectiveTime value="20161216"/>
+               <component>
+                  <section ID="ID114">
+                     <id root="70a01015-a827-449e-b8ca-c7d787d393f1"/>
+                     <code code="43679-0" codeSystem="2.16.840.1.113883.6.1" displayName="MECHANISM OF ACTION SECTION"/>
+                     <title>12.1 Mechanism of Action</title>
+                     <text>
+                        <paragraph ID="ID115">The primary mode of action is thought to be through the osmotic effect of polyethylene glycol 3350 which causes water to be retained in the colon and produces a watery stool.</paragraph>
+                     </text>
+                     <effectiveTime value="20161216"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="ID116">
+                     <id root="8b9c2c7f-d272-429b-a428-43dc32bcf454"/>
+                     <code code="43681-6" codeSystem="2.16.840.1.113883.6.1" displayName="PHARMACODYNAMICS SECTION"/>
+                     <title>12.2 Pharmacodynamics</title>
+                     <text>
+                        <paragraph ID="ID117">PEG-3350 and electrolytes for oral solution induces as diarrhea which rapidly cleanses the bowel, usually within four hours.</paragraph>
+                     </text>
+                     <effectiveTime value="20161216"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="ID118">
+                     <id root="043bae8e-e572-419b-83f2-0c606b0c76d3"/>
+                     <code code="43682-4" codeSystem="2.16.840.1.113883.6.1" displayName="PHARMACOKINETICS SECTION"/>
+                     <title>12.3 Pharmacokinetics</title>
+                     <text>
+                        <paragraph ID="ID119">The pharmacokinetics of PEG3350 following administration of PEG-3350 and electrolytes for oral solution were not assessed. Available pharmacokinetic information for oral PEG3350 suggests that it is poorly absorbed.</paragraph>
+                     </text>
+                     <effectiveTime value="20161216"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="ID123">
+               <id root="77513404-3960-4de0-9187-2123d2cc1d27"/>
+               <code code="34069-5" codeSystem="2.16.840.1.113883.6.1" displayName="HOW SUPPLIED SECTION"/>
+               <title>16 HOW SUPPLIED/STORAGE AND HANDLING</title>
+               <text>
+                  <paragraph ID="ID124">Polyethylene glycol 3350 and electrolytes for oral solution is supplied in a 4-liter disposable jug containing 236 g polyethylene glycol 3350, 22.74 g sodium sulfate (anhydrous),</paragraph>
+                  <paragraph>6.74 g sodium bicarbonate, 5.86 g sodium chloride and 2.97 g potassium chloride as a white to off white powder.</paragraph>
+                  <paragraph>$$UnOrderedlist</paragraph>
+                  <paragraph>• When reconstituted with water to a volume of 4 liters, the solution contains 59 g/L PEG3350, 5.69 g/L sodium sulfate, 1.69 g/L sodium bicarbonate, 1.47 g/L sodium chloride and 0.743 g/L potassium chloride.</paragraph>
+                  <paragraph>$$EndUnOrderedlist</paragraph>
+                  <paragraph>Polyethylene glycol 3350 and electrolytes for oral solution 4 Liter Disposable Jug                                 NDC 40032-090-19</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Storage:</content>
+                  </paragraph>
+                  <paragraph>Store in sealed container at 15° to 30°C (59° to 86°F). Store reconstituted solution of PEG-3350 and electrolytes for oral solution at 2° to 8°C (36° to 46°F). Do not freeze <content styleCode="italics">[see Dosage and Administration (<linkHtml href="#ID43">2.1</linkHtml>)].</content>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20230208"/>
+            </section>
+         </component>
+         <component>
+            <section ID="ID125">
+               <id root="72cb568a-4319-4962-9a41-bce0332a2280"/>
+               <code code="34076-0" codeSystem="2.16.840.1.113883.6.1" displayName="INFORMATION FOR PATIENTS SECTION"/>
+               <title>17 PATIENT COUNSELING INFORMATION</title>
+               <text>
+                  <paragraph ID="ID126">Advise the patient to read the FDA-Approved Patient Labeling (Medication Guide and Instructions for Use). Instruct patients:</paragraph>
+                  <list listType="unordered" ID="ID127" styleCode="Disc">
+                     <item>  To reconstitute PEG-3350 and electrolyte for oral solution with water prior to ingestion.</item>
+                     <item>  Not to take other laxatives while they are taking PEG-3350 and electrolyte for oral solution.</item>
+                     <item>  Not to take oral medications within 1 hour before the start or during the administration of PEG-3350 and electrolyte for oral solution.</item>
+                     <item>  To take only clear liquids but avoid red and purple liquids.</item>
+                     <item>  To consume water or other clear liquids during the bowel preparation and after completion of the bowel preparation up until 2 hours before the time of the colonoscopy.</item>
+                     <item>  To follow the directions in the Instructions for Use on how to prepare and administer the product.</item>
+                     <item>  If they experience severe bloating, distention or abdominal pain, to slow or temporarily discontinue drinking the solution and to contact their healthcare provider.</item>
+                     <item>  To contact their healthcare provider if they develop signs and symptoms of dehydration or if they experience altered consciousness or seizures. <content styleCode="italics">[see Warnings and Precautions (<linkHtml href="#ID66">5.1</linkHtml>, <linkHtml href="#ID68">5.2</linkHtml>, <linkHtml href="#ID70">5.3</linkHtml>, <linkHtml href="#ID72">5.4</linkHtml>)].</content>
+                     </item>
+                     <item>  To discontinue administration of the solution and contact their healthcare provider if they develop symptoms of a hypersensitivity reaction <content styleCode="italics">[see Warnings and Precautions (<linkHtml href="#ID80">5.8</linkHtml>)].</content>
+                     </item>
+                  </list>
+                  <paragraph ID="ID128">Manufactured by:</paragraph>
+                  <paragraph>Novel Laboratories, Inc.</paragraph>
+                  <paragraph>Somerset, NJ 08873</paragraph>
+                  <paragraph>SAP Code: 272706</paragraph>
+                  <paragraph>Rev: 01/2023</paragraph>
+               </text>
+               <effectiveTime value="20230208"/>
+            </section>
+         </component>
+         <component>
+            <section ID="ID129">
+               <id root="72939e09-8c88-47a9-b662-ac4b89b94628"/>
+               <code code="42231-1" codeSystem="2.16.840.1.113883.6.1" displayName="SPL MEDGUIDE SECTION"/>
+               <title>MEDICATION GUIDE</title>
+               <effectiveTime value="20230209"/>
+               <component>
+                  <section ID="ID130">
+                     <id root="d31f385e-f456-4d40-9b85-1f875a1ae4e9"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <text>
+                        <paragraph ID="ID131">
+                           <content styleCode="bold">PEG-3350 and Electrolytes for Oral Solution</content>
+                        </paragraph>
+                        <paragraph>Read this Medication Guide before you start taking PEG-3350 and electrolytes for oral solution. This information does not take the place of talking with your healthcare provider about your medical condition or your treatment.</paragraph>
+                     </text>
+                     <effectiveTime value="20161216"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="ID132">
+                     <id root="f4a3172b-d5cf-4bf6-a80d-f730a542436d"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <text>
+                        <paragraph ID="ID133">
+                           <content styleCode="bold">What is the most important information I should know about PEG-3350 and electrolytes for oral solution?</content>
+                        </paragraph>
+                        <paragraph>
+                           <content styleCode="bold">PEG-3350 and electrolytes for oral solution and other osmotic bowel preparations can cause serious side effects, including:</content>
+                        </paragraph>
+                        <paragraph>
+                           <content styleCode="bold">Serious loss of body fluid (dehydration) and changes in blood salts (electrolytes) in your blood.</content>
+                        </paragraph>
+                        <paragraph>
+                           <content styleCode="bold">These changes can cause:</content>
+                        </paragraph>
+                        <list listType="unordered" ID="ID134" styleCode="Disc">
+                           <item>
+                              <content styleCode="bold">abnormal heartbeats (arrhythmias)  that can cause death</content>
+                           </item>
+                           <item>
+                              <content styleCode="bold">seizures.</content>This can happen even if you have never had a seizure.</item>
+                           <item>
+                              <content styleCode="bold">kidney problems</content>
+                           </item>
+                        </list>
+                        <paragraph ID="ID135">
+                           <content styleCode="bold">Your chance of having fluid loss and changes in body salts with PEG-3350 and electrolytes  for oral solution is higher if you:</content>
+                        </paragraph>
+                        <list listType="unordered" ID="ID136" styleCode="Disc">
+                           <item>have heart problems</item>
+                           <item>have kidney problems</item>
+                           <item>take water pills or non-steroidal anti-inflammatory drugs      (NSAIDS)</item>
+                        </list>
+                        <paragraph ID="ID137">
+                           <content styleCode="bold">Tell your healthcare provider right away if you have any of these symptoms of a loss of too much body fluid (dehydration) while taking PEG-3350 and electrolytes for oral solution:</content>
+                        </paragraph>
+                        <list listType="unordered" ID="ID138" styleCode="Disc">
+                           <item>vomiting that prevents you from keeping down the solution</item>
+                           <item>dizziness</item>
+                           <item>urinating less often than normal</item>
+                           <item>headache</item>
+                        </list>
+                        <paragraph ID="ID139">
+                           <content styleCode="bold">See Section "what are the possible side effects of peg-3350 and electrolytes for oral solution" for more information about side effects.</content>
+                        </paragraph>
+                     </text>
+                     <effectiveTime value="20230208"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="ID140">
+                     <id root="d3ba3f36-4f21-4b86-8954-1af39f6693c2"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <text>
+                        <paragraph ID="ID141">
+                           <content styleCode="bold">What is PEG-3350 and electrolytes for oral solution?</content>
+                        </paragraph>
+                        <paragraph>PEG-3350 and electrolytes for oral solution is a prescription medicine used by adults to clean the colon before a colonoscopy or barium enema X-ray examination. PEG-3350 and electrolytes for oral solution cleans your colon by causing you to have diarrhea (loose stools). Cleaning your colon helps your healthcare provider see the inside of your colon more clearly during your colonoscopy. </paragraph>
+                        <paragraph>It is not known if PEG-3350 and electrolytes for oral solution is safe and effective in children.</paragraph>
+                        <paragraph>
+                           <content styleCode="bold">Who should not take PEG-3350 and electrolytes for oral solution?</content>
+                        </paragraph>
+                        <paragraph>Do not take PEG-3350 and electrolytes for oral solution if your heathcare provider has told you that you have:</paragraph>
+                        <list listType="unordered" ID="ID142" styleCode="Disc">
+                           <item>a blockage in your bowel (obstruction)</item>
+                           <item>an opening in the wall of your stomach or intestine (bowel perforation)</item>
+                           <item>problems with food and fluid emptying from your stomach (gastric retention)</item>
+                           <item>a very dilated intestine (toxic megacolon)</item>
+                           <item>a problem with food moving too slowly through your intestines (ileus). </item>
+                           <item>an allergy to any of the ingredients in PEG-3350 and electrolytes for oral solution . See the end of this Medication Guide for a complete list of ingredients in PEG-3350 and electrolytes for oral solution.</item>
+                        </list>
+                        <paragraph ID="ID143">
+                           <content styleCode="bold">What should I tell my healthcare provider before taking PEG-3350 and electrolytes for oral solution?</content>
+                        </paragraph>
+                        <paragraph>
+                           <content styleCode="bold">Before you take PEG-3350 and electrolytes for oral solution, tell your healthcare provider if you:</content>
+                        </paragraph>
+                        <list listType="unordered" ID="ID144" styleCode="Disc">
+                           <item>have heart problems</item>
+                           <item>have stomach or bowel problems</item>
+                           <item>have ulcerative colitis</item>
+                           <item>have problems with swallowing or gastric reflux</item>
+                           <item>have a history of seizures</item>
+                           <item>are withdrawing from drinking alcohol</item>
+                           <item>have a low blood salt (sodium) level</item>
+                           <item>have kidney problems</item>
+                           <item>have any other medical conditions</item>
+                           <item>are pregnant. It is not known if PEG-3350 and electrolytes for oral solution will harm your unborn baby. Talk to your doctor if you are pregnant or plan to become pregnant.</item>
+                           <item>are breastfeeding or plan to breastfeed. It is not known if PEG-3350 and electrolytes for oral solution passes into your breast milk. You and your healthcare provider should decide if you will take PEG-3350 and electrolytes for oral solution while breastfeeding.</item>
+                        </list>
+                        <paragraph ID="ID145">
+                           <content styleCode="bold">Tell your healthcare provider about all the medicines you take,</content> including prescription and over-the-counter medicines, vitamins, and herbal supplements. </paragraph>
+                        <paragraph>PEG-3350 and electrolytes for oral solution may affect how other medicines work. Do not take medicines by mouth within 1 hour of starting PEG-3350 and electrolytes for oral solution or after you start taking PEG-3350 and electrolytes for oral solution.</paragraph>
+                        <paragraph>
+                           <content styleCode="bold">Especially tell your healthcare provider if you take:</content>
+                        </paragraph>
+                        <list listType="unordered" ID="ID146" styleCode="Disc">
+                           <item>medicines for blood pressure or heart problems</item>
+                           <item>medicines for kidney problems</item>
+                           <item>medicines for seizures</item>
+                           <item>water pills (diuretics)</item>
+                           <item>non-steroidal anti-inflammatory medicines (NSAID) pain medicines</item>
+                           <item>laxatives</item>
+                           <item>starch-based thickeners. For patients who have trouble swallowing, do not mix PEG-3350 and electrolytes for oral solution with starch-based thickeners.</item>
+                        </list>
+                        <paragraph ID="ID147">Ask your healthcare provider or pharmacist for a list of these medicines if you are not sure if you are taking any of the medicines listed above.</paragraph>
+                        <paragraph>Know the medicines you take. Keep a list of them to show your healthcare provider and pharmacist when you get a new medicine.</paragraph>
+                     </text>
+                     <effectiveTime value="20230208"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="ID148">
+                     <id root="77ef4fb0-d546-4338-b173-272f985b805f"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <text>
+                        <paragraph ID="ID149">
+                           <content styleCode="bold">How should I take PEG-3350 and electrolytes for oral solution?</content>
+                        </paragraph>
+                        <paragraph>
+                           <content styleCode="bold">You must read, understand, and follow these instructions to take PEG-3350 and electrolytes for oral solution the right way.</content>
+                        </paragraph>
+                        <list listType="unordered" ID="ID150" styleCode="Disc">
+                           <item>  Take PEG-3350 and electrolytes for oral solution exactly as your healthcare provider tells you to take it.</item>
+                           <item>  See the "Instructions for Use" on the bottle label for instructions on how to mix, take or give PEG-3350 and electrolytes for oral solution.</item>
+                           <item>  <content styleCode="bold">Do not take undissolved PEG-3350 and electrolytes for oral solution powder that has not been mixed with water (diluted), it may increase your risk of nausea, vomiting and fluid loss (dehydration).</content>
+                           </item>
+                           <item>  Do not take other laxatives while taking PEG-3350 and electrolytes for oral solution.</item>
+                           <item>  Drink reconstituted solution at a rate of 8 ounces (240 ml) every 10 minutes. Rapid drinking of each portion is better than drinking small amounts.</item>
+                           <item>  <content styleCode="bold">Do not eat or drink anything colored red or purple. </content>
+                           </item>
+                           <item>  <content styleCode="bold">Do not eat solid foods at least 2 hours before taking PEG-3350 and electrolytes for oral solution</content>. You may eat a light breakfast 2 hours before taking PEG-3350 and electrolytes for oral solution. For best results, do not consume solid food for 3 to 4 hours before drinking PEG-3350 and electrolytes for oral solution.</item>
+                           <item>  Drink only water and clear liquids:</item>
+                           <item>  $$$UnOrderedlist</item>
+                           <item>  the day before your colonoscopy</item>
+                           <item>  while taking PEG-3350 and electrolytes for oral solution</item>
+                           <item>  after taking PEG-3350 and electrolytes for oral solution until 2 hours before your colonoscopy.</item>
+                           <item>  $$$EndUnOrderedlist</item>
+                           <item>  Drink clear liquids before, during, and after you take PEG-3350 and electrolytes for oral solution to avoid fluid loss (dehydrated). Examples of clear liquids are:</item>
+                           <item>  $$$UnOrderedlist</item>
+                           <item>  water</item>
+                           <item>  clear broth</item>
+                           <item>  clear fruit juices without pulp including apple, white grape, or white cranberry</item>
+                           <item>  clear soda</item>
+                           <item>  strained limeade or lemonade</item>
+                           <item>  gelatin (without added fruit or topping)</item>
+                           <item>  coffee or tea (Do not use any dairy or non-dairy creamer)</item>
+                           <item>  popsicles without pieces of fruit or fruit pulp</item>
+                           <item>  $$$EndUnOrderedlist</item>
+                           <item>  You may experience some abdominal bloating and distention before the bowels start to move. If severe discomfort or distention occur, slow or temporarily stop (discontinue) drinking the solution and contact your healthcare provider.</item>
+                           <item>  The first bowel movement should occur approximately one hour after you start drinking the solution.</item>
+                           <item>  Continue drinking until the watery stool is clear and free of solid matter</item>
+                        </list>
+                     </text>
+                     <effectiveTime value="20230209"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="ID154">
+                     <id root="219bf660-e3be-4660-9d4c-aae0b7e94024"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <text>
+                        <paragraph ID="ID155">
+                           <content styleCode="bold">What are the possible side effects of PEG-3350 and electrolytes for oral solution?</content>
+                        </paragraph>
+                        <paragraph>PEG-3350 and electrolytes for oral solution can cause serious side effects, including:</paragraph>
+                        <list listType="unordered" ID="ID156" styleCode="Disc">
+                           <item>
+                              <content styleCode="bold">See Section "<content styleCode="underline">what is the most important information i should know about peg-3350 and electrolytes for oral solution ?</content>"</content>
+                           </item>
+                           <item>
+                              <content styleCode="bold">changes in certain blood tests.</content>Your healthcare provider may do blood tests before and after you take PEG-3350 and electrolytes for oral solution to check your blood for changes. Tell your healthcare provider if you have any symptoms of too much fluid loss, including:</item>
+                           <item>vomiting</item>
+                           <item>nausea</item>
+                           <item>bloating</item>
+                           <item>dizziness</item>
+                           <item>stomach (abdominal) cramping</item>
+                           <item>headache</item>
+                           <item>urinate less than usual</item>
+                           <item>trouble drinking clear liquid</item>
+                           <item>
+                              <content styleCode="bold">ulcers of the bowel or bowel problems (ischemic colitis).</content>Tell your healthcare provider right away if you have severe stomach-area (abdomen) pain or rectal bleeding.</item>
+                        </list>
+                        <paragraph ID="ID157">The most common side effects of PEG-3350 and electrolytes for oral solution include:</paragraph>
+                        <list listType="unordered" ID="ID158" styleCode="Disc">
+                           <item>nausea</item>
+                           <item>stomach (abdominal) fullness</item>
+                           <item>bloating</item>
+                           <item>stomach (abdominal) cramps</item>
+                           <item>vomiting</item>
+                           <item>chest x-ray that shows water in the lungs (infiltrate) after vomiting or inhaling food or liquid (aspirate).</item>
+                           <item>anal irritation</item>
+                           <item>esophageal bleeding</item>
+                        </list>
+                        <paragraph ID="ID159">Tell your healthcare provider if you have any side effect that bothers you or that does not go away.</paragraph>
+                        <paragraph>These are not all the possible side effects of PEG-3350 and electrolytes for oral solution. For more information, ask your healthcare provider or pharmacist.</paragraph>
+                        <paragraph>Call your doctor for medical advice about side effects. You may report side effects to FDA at 1-800-FDA-1088.</paragraph>
+                     </text>
+                     <effectiveTime value="20230208"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="ID160">
+                     <id root="1948ea67-5314-4fab-8541-ddafde623c24"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <text>
+                        <paragraph ID="ID161">
+                           <content styleCode="bold">How should I store PEG-3350 and electrolytes for oral solution?</content>
+                        </paragraph>
+                        <list listType="unordered" ID="ID162" styleCode="Disc">
+                           <item>Store PEG-3350 and electrolytes for oral solution in a      sealed container at room temperature, between 59°F to 86°F (15°C to      30°C).</item>
+                           <item>Store mixed (reconstituted) solution of PEG-3350 and      electrolytes for oral solution at 36° to 46°F (2°C to 8°C). Do not      freeze.</item>
+                           <item>Use mixed (reconstituted) solution of PEG-3350 and      electrolytes for oral solution within 48 hours.</item>
+                           <item>After 48 hours, throw away (discard) any mixed      (reconstituted) solution of PEG-3350 and electrolytes for oral solution      that is not used.</item>
+                        </list>
+                        <paragraph ID="ID163">
+                           <content styleCode="bold">Keep PEG-3350 and electrolytes for oral solution and all medicines out of the reach of children.</content>
+                        </paragraph>
+                        <paragraph>
+                           <content styleCode="bold">General information about the safe and effective use of PEG-3350 and electrolytes for oral solution.</content>
+                        </paragraph>
+                        <paragraph>Medicines are sometimes prescribed for purposes other than those listed in a Medication Guide. Do not use PEG-3350 and electrolytes for oral solution for a condition for which it was not prescribed. Do not give PEG-3350 and electrolytes for oral solution to other people, even if they are going to have the same procedure you are. It may harm them.</paragraph>
+                        <paragraph>This Medication Guide summarizes important information about PEG-3350 and electrolytes for oral solution. If you would like more information, talk with your healthcare provider. You can ask your pharmacist or healthcare provider for information that is written for healthcare professionals.</paragraph>
+                        <paragraph>For more information call 1-866-403-7592.</paragraph>
+                     </text>
+                     <effectiveTime value="20230208"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="ID164">
+                     <id root="7d16a683-7e14-4984-b116-e5dfa0d52afb"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <text>
+                        <paragraph ID="ID165">
+                           <content styleCode="bold">What are the ingredients in PEG-3350 and electrolytes for oral solution?</content>
+                        </paragraph>
+                        <paragraph>PEG-3350 and electrolytes for oral solution comes in a 4-liter jug with PEG-3350 and electrolytes for oral solution powder.</paragraph>
+                        <paragraph>
+                           <content styleCode="bold">Active ingredients:</content> polyethylene glycol 3350, sodium sulfate, sodium bicarbonate, sodium chloride, and potassium chloride.</paragraph>
+                        <paragraph>
+                           <content styleCode="bold">Inactive ingredients:</content> Lemon Flavored PEG-3350 and electrolytes for oral solution only (natural lemon flavor, maltodextrin, sodium saccharin)</paragraph>
+                        <paragraph>This Medication Guide has been approved by the U.S. Food and Drug Administration.</paragraph>
+                        <paragraph>Manufactured by:</paragraph>
+                        <paragraph>Novel Laboratories, Inc.</paragraph>
+                        <paragraph>Somerset, NJ 08873</paragraph>
+                        <paragraph>SAP Code: 272706</paragraph>
+                        <paragraph>Rev: 01/2023</paragraph>
+                     </text>
+                     <effectiveTime value="20230208"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="ID166">
+               <id root="52a54962-2de6-4ade-a237-779626e379cd"/>
+               <code code="51945-4" codeSystem="2.16.840.1.113883.6.1" displayName="PACKAGE LABEL.PRINCIPAL DISPLAY PANEL"/>
+               <title>PACKAGE LABEL.PRINCIPAL DISPLAY PANEL</title>
+               <text>
+                  <paragraph ID="ID167">PEG-3350 and electrolytes for oral solution, USP </paragraph>
+                  <paragraph>Container Label</paragraph>
+                  <renderMultiMedia referencedObject="MM4"/>
+                  <paragraph ID="ID173">Lemon Flavor Pack</paragraph>
+                  <renderMultiMedia referencedObject="MM5"/>
+               </text>
+               <effectiveTime value="20161216"/>
+               <component>
+                  <observationMedia ID="MM4">
+                     <text>label</text>
+                     <value xsi:type="ED" mediaType="image/jpeg">
+                        <reference value="f2f502c8-49f4-4552-86a9-1c8a0466dfbe-04.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+               <component>
+                  <observationMedia ID="MM5">
+                     <text>lemon flavor pack</text>
+                     <value xsi:type="ED" mediaType="image/jpeg">
+                        <reference value="f2f502c8-49f4-4552-86a9-1c8a0466dfbe-05.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+      </structuredBody>
+   </component>
+</document>

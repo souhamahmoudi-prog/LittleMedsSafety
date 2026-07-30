@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="https://www.accessdata.fda.gov/spl/stylesheet/spl.xsl" type="text/xsl"?>
+<document xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 https://www.accessdata.fda.gov/spl/schema/spl.xsd">
+   <id root="03227927-05d9-4f0b-8080-e0206bb4aee2"/>
+   <code code="58476-3" codeSystem="2.16.840.1.113883.6.1" displayName="DIETARY SUPPLEMENT"/>
+   <title>ONE-VITE<br/>Ferrous Sulfate<br/>220 mg / 5 mL<br/>Iron Supplement Liquid<br/>
+      <br/>
+      <br/>For the treatment of iron deficiency and iron deficiency anemia</title>
+   <effectiveTime value="20240129"/>
+   <setId root="117fa038-d2f7-4dff-9e0e-9ea4fcb9a82d"/>
+   <versionNumber value="1"/>
+   <author>
+      <time/>
+      <assignedEntity>
+         <representedOrganization>
+            <id root="1.3.6.1.4.1.519.1" extension="047437707"/>
+            <name>ATLANTIC BIOLOGICALS CORP</name>
+            <assignedEntity>
+               <assignedOrganization>
+                  <assignedEntity>
+                     <assignedOrganization>
+                        <id root="1.3.6.1.4.1.519.1" extension="360804194"/>
+                        <name>UNIT DOSE SOLUTIONS</name>
+                     </assignedOrganization>
+                     <performance>
+                        <actDefinition>
+                           <code code="C73606" displayName="repack" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <product>
+                              <manufacturedProduct classCode="MANU">
+                                 <manufacturedMaterialKind>
+                                    <code code="17856-0042" codeSystem="2.16.840.1.113883.6.69"/>
+                                 </manufacturedMaterialKind>
+                              </manufacturedProduct>
+                           </product>
+                        </actDefinition>
+                     </performance>
+                  </assignedEntity>
+               </assignedOrganization>
+            </assignedEntity>
+         </representedOrganization>
+      </assignedEntity>
+   </author>
+   <component>
+      <structuredBody>
+         <component>
+            <section>
+               <id root="3f380eac-17e6-4c76-917a-324acddcb01a"/>
+               <code code="48780-1" codeSystem="2.16.840.1.113883.6.1" displayName="SPL product data elements section"/>
+               <title/>
+               <text/>
+               <effectiveTime value="20240122"/>
+               <subject>
+                  <manufacturedProduct>
+                     <manufacturedProduct>
+                        <code code="17856-0042" codeSystem="2.16.840.1.113883.6.69"/>
+                        <name>ONE VITE Iron Supplement Liquid</name>
+                        <formCode code="C42953" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="LIQUID"/>
+                        <asEntityWithGeneric>
+                           <genericMedicine>
+                              <name>FERROUS SULFATE</name>
+                           </genericMedicine>
+                        </asEntityWithGeneric>
+                        <asEquivalentEntity classCode="EQUIV">
+                           <code code="C64637" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <definingMaterialKind>
+                              <code code="71399-0040" codeSystem="2.16.840.1.113883.6.69"/>
+                           </definingMaterialKind>
+                        </asEquivalentEntity>
+                        <ingredient classCode="ACTIM">
+                           <quantity>
+                              <numerator value="220" unit="mg"/>
+                              <denominator value="5" unit="mL"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="39R4TAN1VT" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>FERROUS SULFATE</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="GW89581OWR" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>FERROUS CATION</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="XF417D3PSL" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>ANHYDROUS CITRIC ACID</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="H77VEI93A8" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>FD&amp;C YELLOW NO. 6</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="OJ245FE5EU" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>SODIUM BENZOATE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="96K6UQ3ZD4" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>SUCRALOSE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="C151H8M554" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>SUCROSE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="059QF0KO0R" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>WATER</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <asContent>
+                           <quantity>
+                              <numerator value="6.82" unit="mL"/>
+                              <denominator value="1" unit="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code code="17856-0042-4" codeSystem="2.16.840.1.113883.6.69"/>
+                              <formCode code="C43188" displayName="CUP, UNIT-DOSE" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                              <asContent>
+                                 <quantity>
+                                    <numerator value="72" unit="1"/>
+                                    <denominator value="1" unit="1"/>
+                                 </quantity>
+                                 <containerPackagedProduct>
+                                    <code code="17856-0042-2" codeSystem="2.16.840.1.113883.6.69"/>
+                                    <formCode code="C43179" displayName="BOX, UNIT-DOSE" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                                 </containerPackagedProduct>
+                              </asContent>
+                           </containerPackagedProduct>
+                        </asContent>
+                        <asContent>
+                           <quantity>
+                              <numerator value="5" unit="mL"/>
+                              <denominator value="1" unit="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code code="17856-0042-3" codeSystem="2.16.840.1.113883.6.69"/>
+                              <formCode code="C43188" displayName="CUP, UNIT-DOSE" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                              <asContent>
+                                 <quantity>
+                                    <numerator value="72" unit="1"/>
+                                    <denominator value="1" unit="1"/>
+                                 </quantity>
+                                 <containerPackagedProduct>
+                                    <code code="17856-0042-1" codeSystem="2.16.840.1.113883.6.69"/>
+                                    <formCode code="C43179" displayName="BOX, UNIT-DOSE" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                                 </containerPackagedProduct>
+                              </asContent>
+                           </containerPackagedProduct>
+                        </asContent>
+                     </manufacturedProduct>
+                     <subjectOf>
+                        <marketingAct>
+                           <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <statusCode code="active"/>
+                           <effectiveTime>
+                              <low value="20230804"/>
+                           </effectiveTime>
+                        </marketingAct>
+                     </subjectOf>
+                     <subjectOf>
+                        <approval>
+                           <code code="C86952" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="dietary supplement"/>
+                           <author>
+                              <territorialAuthority>
+                                 <territory>
+                                    <code code="USA" codeSystem="2.16.840.1.113883.5.28"/>
+                                 </territory>
+                              </territorialAuthority>
+                           </author>
+                        </approval>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic>
+                           <code code="SPLFLAVOR" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value code="C73375" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="CHERRY" xsi:type="CE"/>
+                        </characteristic>
+                     </subjectOf>
+                     <consumedIn>
+                        <substanceAdministration>
+                           <routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ORAL"/>
+                        </substanceAdministration>
+                     </consumedIn>
+                  </manufacturedProduct>
+               </subject>
+            </section>
+         </component>
+         <component>
+            <section ID="Ldad412cf-e467-42df-b26f-882801e4fd71">
+               <id root="6cd3c94f-1c3a-46cc-ac66-190bd2c09291"/>
+               <code code="69718-5" codeSystem="2.16.840.1.113883.6.1" displayName="STATEMENT OF IDENTITY SECTION"/>
+               <text>
+                  <table width="100%">
+                     <caption>Supplement Facts </caption>
+                     <tbody>
+                        <tr>
+                           <td> Serving Size: 1 teaspoonful (5 mL)<br/>Servings per container: 94</td>
+                           <td/>
+                        </tr>
+                        <tr>
+                           <td> Amount per teaspoonful (5 mL) %Daily Value * </td>
+                           <td> % Daily Value</td>
+                        </tr>
+                        <tr>
+                           <td> Calories 4</td>
+                           <td/>
+                        </tr>
+                        <tr>
+                           <td> Total Carbohydrate       1g</td>
+                           <td> &lt;1%</td>
+                        </tr>
+                        <tr>
+                           <td> Total Sugars                 1g</td>
+                           <td> **</td>
+                        </tr>
+                        <tr>
+                           <td> includes 1g Added Sugars</td>
+                           <td> 2%</td>
+                        </tr>
+                        <tr>
+                           <td> Iron (elemental)<br/>(from ferrous sulfate)      44mg</td>
+                           <td> 244%</td>
+                        </tr>
+                        <tr>
+                           <td> *% Daily Value tells you how much a nutrient in a serving<br/>of food contributes to a daily diet. 2,000 calories a day is<br/>used for general nutrition advice.<br/>**Daily Value not established</td>
+                           <td/>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <paragraph/>
+               </text>
+               <effectiveTime value="20240129"/>
+            </section>
+         </component>
+         <component>
+            <section ID="L1a1a82e9-527b-4bf8-b644-7f5ab979da1b">
+               <id root="e870947e-c7e1-4385-8f48-3717478e7e4c"/>
+               <code code="69719-3" codeSystem="2.16.840.1.113883.6.1" displayName="HEALTH CLAIM SECTION"/>
+               <text>
+                  <paragraph>Each teaspoonful (5mL) contains 220mg Ferrous Sulfate, providing approximately 44mg of elemental iron.</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">OTHER INGREDIENTS:</content> Anhydrous citric acid, Dye FD&amp;C yellow #6, Flavor cherry, Sodium Benzoate, Sucralose, Sucrose, Purified water.</paragraph>
+               </text>
+               <effectiveTime value="20240129"/>
+            </section>
+         </component>
+         <component>
+            <section ID="Lce1d03dc-810d-4d20-bb69-45c40df5fc0a">
+               <id root="69486e71-2466-4555-85f5-9dd7b906946a"/>
+               <code code="50741-8" codeSystem="2.16.840.1.113883.6.1" displayName="SAFE HANDLING WARNING SECTION"/>
+               <text>
+                  <table width="100%">
+                     <caption/>
+                     <tbody>
+                        <tr styleCode="First Last">
+                           <td>
+                              <content styleCode="bold">WARNING:</content> Accidental overdose of iron containing supplements is a leading cause of fatal poisoning in children under 6.<br/>
+                              <content styleCode="bold">KEEP THIS PRODUCT OUT OF REACH OF CHILDREN.</content>
+                              <br/>In case of accidental overdose, call a doctor or Poison Control Center immediately.</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <paragraph/>
+               </text>
+               <effectiveTime value="20240129"/>
+            </section>
+         </component>
+         <component>
+            <section ID="L0cad1dd0-721b-47a4-bc2b-c5a1608ae76a">
+               <id root="9ac767e1-18ff-426f-bbe1-6bbcf0f4659b"/>
+               <code code="34071-1" codeSystem="2.16.840.1.113883.6.1" displayName="WARNINGS SECTION"/>
+               <text>
+                  <paragraph>see boxed warning above.</paragraph>
+               </text>
+               <effectiveTime value="20240129"/>
+            </section>
+         </component>
+         <component>
+            <section ID="L4f834483-4df7-4907-98b0-78a3d6c6513e">
+               <id root="884da26c-82e0-4af5-8f21-dc8fd03a4eb2"/>
+               <code code="42232-9" codeSystem="2.16.840.1.113883.6.1" displayName="PRECAUTIONS SECTION"/>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">CAUTION: </content>
+                     <content>Do not exceed suggested serving size.</content>
+                  </paragraph>
+                  <paragraph>The treatment of any anemic condition should be under the advice and supervision of a doctor. Since oral iron products interfere with absorption of oral tetracycline antibiotics, these products should not be taken within two (2) hours of each other.<br/>This product may occasionally cause constipation, diarrhea, or may color stool black. It may cause gastrointestinal discomfort (such as nausea) which may be minimized by taking with meals.<content styleCode="bold">
+                        <br/>As with any supplement, </content>if you are pregnant, nursing, taking medication, or under a doctor's care for any condition, ask a health professional before use.<content styleCode="bold">
+                        <br/>OTHER INFORMATION: </content>Store at room temperature 15-30°C (59-86°F)</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Tamper-Evident: </content>Do not use if foil seal over bottle opening is torn, broken or missing.<content styleCode="bold">
+                        <br/>Pharmacist: </content>Dispense in a tight, light-resistant container with a child resistant cap as defined in the USP.</paragraph>
+               </text>
+               <effectiveTime value="20240129"/>
+            </section>
+         </component>
+         <component>
+            <section ID="L6dcae694-615f-45bf-a7c7-237999f81583">
+               <id root="08f0402c-29b9-4bf0-8456-21f399b8334e"/>
+               <code code="34068-7" codeSystem="2.16.840.1.113883.6.1" displayName="DOSAGE &amp; ADMINISTRATION SECTION"/>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">SUGGESTED USE:</content> Adults and children 12 years and over, take one (1) teaspoonful daily with or after a meal as a dietary supplement, or as directed by your doctor.<br/>Children under 12, consult a doctor.<br/>Mix with water or juice to avoid temporary staining of teeth. Do not mix with milk or wine-based vehicles.</paragraph>
+                  <paragraph/>
+                  <paragraph>DISTRIBUTED BY</paragraph>
+                  <paragraph>ATLANTIC BIOLOGICALS CORP</paragraph>
+                  <paragraph>MIAMI, FL 33179</paragraph>
+               </text>
+               <effectiveTime value="20240129"/>
+            </section>
+         </component>
+         <component>
+            <section ID="Lb16d9ae5-6342-4fc7-8e97-9426f081d6b2">
+               <id root="d300fc5f-c8a5-4f57-966d-dd2a1eb61c69"/>
+               <code code="51945-4" codeSystem="2.16.840.1.113883.6.1" displayName="PACKAGE LABEL.PRINCIPAL DISPLAY PANEL"/>
+               <text>
+                  <paragraph>
+                     <renderMultiMedia referencedObject="Lea3e251d-f3fd-4ba2-b1fe-eeb6a3b8c7c2"/>
+                  </paragraph>
+                  <paragraph>
+                     <renderMultiMedia referencedObject="L838a6a3f-b204-400e-9db8-ab1a2fd5fc69"/>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20240129"/>
+               <component>
+                  <observationMedia ID="Lea3e251d-f3fd-4ba2-b1fe-eeb6a3b8c7c2">
+                     <text>image description</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="17856-0042-01.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+               <component>
+                  <observationMedia ID="L838a6a3f-b204-400e-9db8-ab1a2fd5fc69">
+                     <text>image description</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="17856-0042-02.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+      </structuredBody>
+   </component>
+</document>

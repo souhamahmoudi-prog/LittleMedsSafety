@@ -1,0 +1,867 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="https://www.accessdata.fda.gov/spl/stylesheet/spl.xsl" type="text/xsl"?>
+<document xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 https://www.accessdata.fda.gov/spl/schema/spl.xsd">
+   <id root="4333393f-9b1f-4773-8be2-05f6bde98e6c"/>
+   <code code="34390-5" codeSystem="2.16.840.1.113883.6.1" displayName="HUMAN OTC DRUG LABEL"/>
+   <title>BodyAnew Multipack</title>
+   <effectiveTime value="20230822"/>
+   <setId root="e5f86823-624d-44a6-830f-2d5c7187fdef"/>
+   <versionNumber value="7"/>
+   <author>
+      <time/>
+      <assignedEntity>
+         <representedOrganization>
+            <id root="1.3.6.1.4.1.519.1" extension="079324099"/>
+            <name>MediNatura Inc</name>
+            <assignedEntity>
+               <assignedOrganization>
+                  <assignedEntity>
+                     <assignedOrganization>
+                        <id root="1.3.6.1.4.1.519.1" extension="102783016"/>
+                        <name>MediNatura Inc</name>
+                     </assignedOrganization>
+                     <performance>
+                        <actDefinition>
+                           <code code="C43360" displayName="manufacture" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <product>
+                              <manufacturedProduct classCode="MANU">
+                                 <manufacturedMaterialKind>
+                                    <code code="62795-2004" codeSystem="2.16.840.1.113883.6.69"/>
+                                 </manufacturedMaterialKind>
+                              </manufacturedProduct>
+                           </product>
+                        </actDefinition>
+                     </performance>
+                  </assignedEntity>
+               </assignedOrganization>
+            </assignedEntity>
+         </representedOrganization>
+      </assignedEntity>
+   </author>
+   <component>
+      <structuredBody>
+         <component>
+            <section>
+               <id root="110591c4-ca7d-4f3f-813a-ad1cfbe3641c"/>
+               <code code="48780-1" codeSystem="2.16.840.1.113883.6.1" displayName="SPL product data elements section"/>
+               <title/>
+               <text/>
+               <effectiveTime value="20230822"/>
+               <subject>
+                  <manufacturedProduct>
+                     <manufacturedProduct>
+                        <code code="62795-2004" codeSystem="2.16.840.1.113883.6.69"/>
+                        <name>BodyAnew</name>
+                        <formCode code="C47916" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="KIT"/>
+                        <asEntityWithGeneric>
+                           <genericMedicine>
+                              <name>BodyAnew</name>
+                           </genericMedicine>
+                        </asEntityWithGeneric>
+                        <asContent>
+                           <quantity>
+                              <numerator value="1" unit="1"/>
+                              <denominator value="1" unit="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code code="62795-2004-4" codeSystem="2.16.840.1.113883.6.69"/>
+                              <formCode code="C43197" displayName="KIT" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           </containerPackagedProduct>
+                           <subjectOf>
+                              <marketingAct>
+                                 <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                                 <statusCode code="active"/>
+                                 <effectiveTime>
+                                    <low value="20180101"/>
+                                 </effectiveTime>
+                              </marketingAct>
+                           </subjectOf>
+                        </asContent>
+                        <part>
+                           <quantity>
+                              <numerator value="50" unit="mL"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <partProduct>
+                              <code code="62795-2008" codeSystem="2.16.840.1.113883.6.69"/>
+                              <name>BodyAnew Colon Liver</name>
+                              <formCode code="C42953" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="LIQUID"/>
+                              <asEntityWithGeneric>
+                                 <genericMedicine>
+                                    <name>BRYONIA ALBA ROOT, CHELIDONIUM MAJUS, CITRULLUS COLOCYNTHIS FRUIT PULP, LYCOPODIUM CLAVATUM SPORE, and STRYCHNOS NUX-VOMICA SEED</name>
+                                 </genericMedicine>
+                              </asEntityWithGeneric>
+                              <ingredient classCode="ACTIB">
+                                 <quantity>
+                                    <numerator value="3" unit="[hp_X]"/>
+                                    <denominator value="50" unit="mL"/>
+                                 </quantity>
+                                 <ingredientSubstance>
+                                    <code code="T7J046YI2B" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>BRYONIA ALBA ROOT</name>
+                                    <activeMoiety>
+                                       <activeMoiety>
+                                          <code code="T7J046YI2B" codeSystem="2.16.840.1.113883.4.9"/>
+                                          <name>BRYONIA ALBA ROOT</name>
+                                       </activeMoiety>
+                                    </activeMoiety>
+                                 </ingredientSubstance>
+                              </ingredient>
+                              <ingredient classCode="ACTIB">
+                                 <quantity>
+                                    <numerator value="3" unit="[hp_X]"/>
+                                    <denominator value="50" unit="mL"/>
+                                 </quantity>
+                                 <ingredientSubstance>
+                                    <code code="7E889U5RNN" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>CHELIDONIUM MAJUS</name>
+                                    <activeMoiety>
+                                       <activeMoiety>
+                                          <code code="7E889U5RNN" codeSystem="2.16.840.1.113883.4.9"/>
+                                          <name>CHELIDONIUM MAJUS</name>
+                                       </activeMoiety>
+                                    </activeMoiety>
+                                 </ingredientSubstance>
+                              </ingredient>
+                              <ingredient classCode="ACTIB">
+                                 <quantity>
+                                    <numerator value="3" unit="[hp_X]"/>
+                                    <denominator value="50" unit="mL"/>
+                                 </quantity>
+                                 <ingredientSubstance>
+                                    <code code="23H32AOH17" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>CITRULLUS COLOCYNTHIS FRUIT PULP</name>
+                                    <activeMoiety>
+                                       <activeMoiety>
+                                          <code code="23H32AOH17" codeSystem="2.16.840.1.113883.4.9"/>
+                                          <name>CITRULLUS COLOCYNTHIS FRUIT PULP</name>
+                                       </activeMoiety>
+                                    </activeMoiety>
+                                 </ingredientSubstance>
+                              </ingredient>
+                              <ingredient classCode="ACTIB">
+                                 <quantity>
+                                    <numerator value="9" unit="[hp_X]"/>
+                                    <denominator value="50" unit="mL"/>
+                                 </quantity>
+                                 <ingredientSubstance>
+                                    <code code="C88X29Y479" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>LYCOPODIUM CLAVATUM SPORE</name>
+                                    <activeMoiety>
+                                       <activeMoiety>
+                                          <code code="C88X29Y479" codeSystem="2.16.840.1.113883.4.9"/>
+                                          <name>LYCOPODIUM CLAVATUM SPORE</name>
+                                       </activeMoiety>
+                                    </activeMoiety>
+                                 </ingredientSubstance>
+                              </ingredient>
+                              <ingredient classCode="ACTIB">
+                                 <quantity>
+                                    <numerator value="3" unit="[hp_X]"/>
+                                    <denominator value="50" unit="mL"/>
+                                 </quantity>
+                                 <ingredientSubstance>
+                                    <code code="269XH13919" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>STRYCHNOS NUX-VOMICA SEED</name>
+                                    <activeMoiety>
+                                       <activeMoiety>
+                                          <code code="269XH13919" codeSystem="2.16.840.1.113883.4.9"/>
+                                          <name>STRYCHNOS NUX-VOMICA SEED</name>
+                                       </activeMoiety>
+                                    </activeMoiety>
+                                 </ingredientSubstance>
+                              </ingredient>
+                              <ingredient classCode="IACT">
+                                 <ingredientSubstance>
+                                    <code code="3K9958V90M" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>ALCOHOL</name>
+                                 </ingredientSubstance>
+                              </ingredient>
+                              <ingredient classCode="IACT">
+                                 <ingredientSubstance>
+                                    <code code="059QF0KO0R" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>WATER</name>
+                                 </ingredientSubstance>
+                              </ingredient>
+                              <asContent>
+                                 <quantity>
+                                    <numerator value="50" unit="mL"/>
+                                    <denominator value="1" unit="1"/>
+                                 </quantity>
+                                 <containerPackagedProduct>
+                                    <code code="62795-2008-4" codeSystem="2.16.840.1.113883.6.69"/>
+                                    <formCode code="C43169" displayName="BOTTLE" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                                 </containerPackagedProduct>
+                                 <subjectOf>
+                                    <characteristic classCode="OBS">
+                                       <code code="SPLCMBPRDTP" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                                       <value code="C112160" displayName="Type 0: Not a Combination Product" codeSystem="2.16.840.1.113883.3.26.1.1" xsi:type="CE"/>
+                                    </characteristic>
+                                 </subjectOf>
+                              </asContent>
+                           </partProduct>
+                           <subjectOf>
+                              <approval>
+                                 <code code="C73614" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="unapproved homeopathic"/>
+                                 <author>
+                                    <territorialAuthority>
+                                       <territory>
+                                          <code code="USA" codeSystem="2.16.840.1.113883.5.28"/>
+                                       </territory>
+                                    </territorialAuthority>
+                                 </author>
+                              </approval>
+                           </subjectOf>
+                           <subjectOf>
+                              <marketingAct>
+                                 <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                                 <statusCode code="active"/>
+                                 <effectiveTime>
+                                    <low value="20180101"/>
+                                 </effectiveTime>
+                              </marketingAct>
+                           </subjectOf>
+                           <consumedIn>
+                              <substanceAdministration>
+                                 <routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ORAL"/>
+                              </substanceAdministration>
+                           </consumedIn>
+                        </part>
+                        <part>
+                           <quantity>
+                              <numerator value="50" unit="mL"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <partProduct>
+                              <code code="62795-2009" codeSystem="2.16.840.1.113883.6.69"/>
+                              <name>BodyAnew Kidney</name>
+                              <formCode code="C42953" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="LIQUID"/>
+                              <asEntityWithGeneric>
+                                 <genericMedicine>
+                                    <name>BERBERIS VULGARIS ROOT BARK, CITRULLUS COLOCYNTHIS FRUIT PULP,   SOLIDAGO VIRGAUREA FLOWERING TOP, and VERATRUM ALBUM ROOT</name>
+                                 </genericMedicine>
+                              </asEntityWithGeneric>
+                              <ingredient classCode="ACTIB">
+                                 <quantity>
+                                    <numerator value="3" unit="[hp_X]"/>
+                                    <denominator value="50" unit="mL"/>
+                                 </quantity>
+                                 <ingredientSubstance>
+                                    <code code="1TH8Q20J0U" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>BERBERIS VULGARIS ROOT BARK</name>
+                                    <activeMoiety>
+                                       <activeMoiety>
+                                          <code code="1TH8Q20J0U" codeSystem="2.16.840.1.113883.4.9"/>
+                                          <name>BERBERIS VULGARIS ROOT BARK</name>
+                                       </activeMoiety>
+                                    </activeMoiety>
+                                 </ingredientSubstance>
+                              </ingredient>
+                              <ingredient classCode="ACTIB">
+                                 <quantity>
+                                    <numerator value="3" unit="[hp_X]"/>
+                                    <denominator value="50" unit="mL"/>
+                                 </quantity>
+                                 <ingredientSubstance>
+                                    <code code="23H32AOH17" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>CITRULLUS COLOCYNTHIS FRUIT PULP</name>
+                                    <activeMoiety>
+                                       <activeMoiety>
+                                          <code code="23H32AOH17" codeSystem="2.16.840.1.113883.4.9"/>
+                                          <name>CITRULLUS COLOCYNTHIS FRUIT PULP</name>
+                                       </activeMoiety>
+                                    </activeMoiety>
+                                 </ingredientSubstance>
+                              </ingredient>
+                              <ingredient classCode="ACTIB">
+                                 <quantity>
+                                    <numerator value="3" unit="[hp_X]"/>
+                                    <denominator value="50" unit="mL"/>
+                                 </quantity>
+                                 <ingredientSubstance>
+                                    <code code="5405K23S50" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>SOLIDAGO VIRGAUREA FLOWERING TOP</name>
+                                    <activeMoiety>
+                                       <activeMoiety>
+                                          <code code="5405K23S50" codeSystem="2.16.840.1.113883.4.9"/>
+                                          <name>SOLIDAGO VIRGAUREA FLOWERING TOP</name>
+                                       </activeMoiety>
+                                    </activeMoiety>
+                                 </ingredientSubstance>
+                              </ingredient>
+                              <ingredient classCode="ACTIB">
+                                 <quantity>
+                                    <numerator value="3" unit="[hp_X]"/>
+                                    <denominator value="50" unit="mL"/>
+                                 </quantity>
+                                 <ingredientSubstance>
+                                    <code code="QNS6W5US1Z" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>VERATRUM ALBUM ROOT</name>
+                                    <activeMoiety>
+                                       <activeMoiety>
+                                          <code code="QNS6W5US1Z" codeSystem="2.16.840.1.113883.4.9"/>
+                                          <name>VERATRUM ALBUM ROOT</name>
+                                       </activeMoiety>
+                                    </activeMoiety>
+                                 </ingredientSubstance>
+                              </ingredient>
+                              <ingredient classCode="IACT">
+                                 <ingredientSubstance>
+                                    <code code="3K9958V90M" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>ALCOHOL</name>
+                                 </ingredientSubstance>
+                              </ingredient>
+                              <ingredient classCode="IACT">
+                                 <ingredientSubstance>
+                                    <code code="059QF0KO0R" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>WATER</name>
+                                 </ingredientSubstance>
+                              </ingredient>
+                              <asContent>
+                                 <quantity>
+                                    <numerator value="50" unit="mL"/>
+                                    <denominator value="1" unit="1"/>
+                                 </quantity>
+                                 <containerPackagedProduct>
+                                    <code code="62795-2009-4" codeSystem="2.16.840.1.113883.6.69"/>
+                                    <formCode code="C43169" displayName="BOTTLE" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                                 </containerPackagedProduct>
+                                 <subjectOf>
+                                    <characteristic classCode="OBS">
+                                       <code code="SPLCMBPRDTP" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                                       <value code="C112160" displayName="Type 0: Not a Combination Product" codeSystem="2.16.840.1.113883.3.26.1.1" xsi:type="CE"/>
+                                    </characteristic>
+                                 </subjectOf>
+                              </asContent>
+                           </partProduct>
+                           <subjectOf>
+                              <approval>
+                                 <code code="C73614" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="unapproved homeopathic"/>
+                                 <author>
+                                    <territorialAuthority>
+                                       <territory>
+                                          <code code="USA" codeSystem="2.16.840.1.113883.5.28"/>
+                                       </territory>
+                                    </territorialAuthority>
+                                 </author>
+                              </approval>
+                           </subjectOf>
+                           <subjectOf>
+                              <marketingAct>
+                                 <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                                 <statusCode code="active"/>
+                                 <effectiveTime>
+                                    <low value="20180101"/>
+                                 </effectiveTime>
+                              </marketingAct>
+                           </subjectOf>
+                           <consumedIn>
+                              <substanceAdministration>
+                                 <routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ORAL"/>
+                              </substanceAdministration>
+                           </consumedIn>
+                        </part>
+                        <part>
+                           <quantity>
+                              <numerator value="50" unit="mL"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <partProduct>
+                              <code code="62795-2007" codeSystem="2.16.840.1.113883.6.69"/>
+                              <name>BodyAnew Lymph Lungs</name>
+                              <formCode code="C42953" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="LIQUID"/>
+                              <asEntityWithGeneric>
+                                 <genericMedicine>
+                                    <name>APIS MELLIFERA, TRIBASIC CALCIUM PHOSPHATE, SOLANUM DULCAMARA TOP, EQUISETUM HYEMALE, FERROUS IODIDE, FUMARIA OFFICINALIS FLOWERING TOP, GENTIANA LUTEA ROOT, GERANIUM ROBERTIANUM,  POTASSIUM IODIDE, NASTURTIUM OFFICINALE, SODIUM SULFATE, PINUS SYLVESTRIS LEAFY TWIG, SMILAX REGELII ROOT, SCROPHULARIA NODOSA, LOBARIA PULMONARIA, TEUCRIUM SCORODONIA FLOWERING TOP, and VERONICA OFFICINALIS FLOWERING TOP</name>
+                                 </genericMedicine>
+                              </asEntityWithGeneric>
+                              <ingredient classCode="ACTIB">
+                                 <quantity>
+                                    <numerator value="6" unit="[hp_X]"/>
+                                    <denominator value="50" unit="mL"/>
+                                 </quantity>
+                                 <ingredientSubstance>
+                                    <code code="7S82P3R43Z" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>APIS MELLIFERA</name>
+                                    <activeMoiety>
+                                       <activeMoiety>
+                                          <code code="7S82P3R43Z" codeSystem="2.16.840.1.113883.4.9"/>
+                                          <name>APIS MELLIFERA</name>
+                                       </activeMoiety>
+                                    </activeMoiety>
+                                 </ingredientSubstance>
+                              </ingredient>
+                              <ingredient classCode="ACTIM">
+                                 <quantity>
+                                    <numerator value="12" unit="[hp_X]"/>
+                                    <denominator value="50" unit="mL"/>
+                                 </quantity>
+                                 <ingredientSubstance>
+                                    <code code="91D9GV0Z28" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>TRIBASIC CALCIUM PHOSPHATE</name>
+                                    <activeMoiety>
+                                       <activeMoiety>
+                                          <code code="2M83C4R6ZB" codeSystem="2.16.840.1.113883.4.9"/>
+                                          <name>CALCIUM CATION</name>
+                                       </activeMoiety>
+                                    </activeMoiety>
+                                 </ingredientSubstance>
+                              </ingredient>
+                              <ingredient classCode="ACTIB">
+                                 <quantity>
+                                    <numerator value="6" unit="[hp_X]"/>
+                                    <denominator value="50" unit="mL"/>
+                                 </quantity>
+                                 <ingredientSubstance>
+                                    <code code="KPS1B1162N" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>SOLANUM DULCAMARA TOP</name>
+                                    <activeMoiety>
+                                       <activeMoiety>
+                                          <code code="KPS1B1162N" codeSystem="2.16.840.1.113883.4.9"/>
+                                          <name>SOLANUM DULCAMARA TOP</name>
+                                       </activeMoiety>
+                                    </activeMoiety>
+                                 </ingredientSubstance>
+                              </ingredient>
+                              <ingredient classCode="ACTIB">
+                                 <quantity>
+                                    <numerator value="4" unit="[hp_X]"/>
+                                    <denominator value="50" unit="mL"/>
+                                 </quantity>
+                                 <ingredientSubstance>
+                                    <code code="59677RXH25" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>EQUISETUM HYEMALE</name>
+                                    <activeMoiety>
+                                       <activeMoiety>
+                                          <code code="59677RXH25" codeSystem="2.16.840.1.113883.4.9"/>
+                                          <name>EQUISETUM HYEMALE</name>
+                                       </activeMoiety>
+                                    </activeMoiety>
+                                 </ingredientSubstance>
+                              </ingredient>
+                              <ingredient classCode="ACTIB">
+                                 <quantity>
+                                    <numerator value="12" unit="[hp_X]"/>
+                                    <denominator value="50" unit="mL"/>
+                                 </quantity>
+                                 <ingredientSubstance>
+                                    <code code="F5452U54PN" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>FERROUS IODIDE</name>
+                                    <activeMoiety>
+                                       <activeMoiety>
+                                          <code code="F5452U54PN" codeSystem="2.16.840.1.113883.4.9"/>
+                                          <name>FERROUS IODIDE</name>
+                                       </activeMoiety>
+                                    </activeMoiety>
+                                 </ingredientSubstance>
+                              </ingredient>
+                              <ingredient classCode="ACTIB">
+                                 <quantity>
+                                    <numerator value="4" unit="[hp_X]"/>
+                                    <denominator value="50" unit="mL"/>
+                                 </quantity>
+                                 <ingredientSubstance>
+                                    <code code="VH659J61ZL" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>FUMARIA OFFICINALIS FLOWERING TOP</name>
+                                    <activeMoiety>
+                                       <activeMoiety>
+                                          <code code="VH659J61ZL" codeSystem="2.16.840.1.113883.4.9"/>
+                                          <name>FUMARIA OFFICINALIS FLOWERING TOP</name>
+                                       </activeMoiety>
+                                    </activeMoiety>
+                                 </ingredientSubstance>
+                              </ingredient>
+                              <ingredient classCode="ACTIB">
+                                 <quantity>
+                                    <numerator value="5" unit="[hp_X]"/>
+                                    <denominator value="50" unit="mL"/>
+                                 </quantity>
+                                 <ingredientSubstance>
+                                    <code code="S72O3284MS" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>GENTIANA LUTEA ROOT</name>
+                                    <activeMoiety>
+                                       <activeMoiety>
+                                          <code code="S72O3284MS" codeSystem="2.16.840.1.113883.4.9"/>
+                                          <name>GENTIANA LUTEA ROOT</name>
+                                       </activeMoiety>
+                                    </activeMoiety>
+                                 </ingredientSubstance>
+                              </ingredient>
+                              <ingredient classCode="ACTIB">
+                                 <quantity>
+                                    <numerator value="4" unit="[hp_X]"/>
+                                    <denominator value="50" unit="mL"/>
+                                 </quantity>
+                                 <ingredientSubstance>
+                                    <code code="R5I1HK0UBL" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>GERANIUM ROBERTIANUM</name>
+                                    <activeMoiety>
+                                       <activeMoiety>
+                                          <code code="R5I1HK0UBL" codeSystem="2.16.840.1.113883.4.9"/>
+                                          <name>GERANIUM ROBERTIANUM</name>
+                                       </activeMoiety>
+                                    </activeMoiety>
+                                 </ingredientSubstance>
+                              </ingredient>
+                              <ingredient classCode="ACTIB">
+                                 <quantity>
+                                    <numerator value="8" unit="[hp_X]"/>
+                                    <denominator value="50" unit="mL"/>
+                                 </quantity>
+                                 <ingredientSubstance>
+                                    <code code="1C4QK22F9J" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>POTASSIUM IODIDE</name>
+                                    <activeMoiety>
+                                       <activeMoiety>
+                                          <code code="09G4I6V86Q" codeSystem="2.16.840.1.113883.4.9"/>
+                                          <name>IODIDE ION</name>
+                                       </activeMoiety>
+                                    </activeMoiety>
+                                 </ingredientSubstance>
+                              </ingredient>
+                              <ingredient classCode="ACTIB">
+                                 <quantity>
+                                    <numerator value="3" unit="[hp_X]"/>
+                                    <denominator value="50" unit="mL"/>
+                                 </quantity>
+                                 <ingredientSubstance>
+                                    <code code="0YPR65R21J" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>SODIUM SULFATE</name>
+                                    <activeMoiety>
+                                       <activeMoiety>
+                                          <code code="36KCS0R750" codeSystem="2.16.840.1.113883.4.9"/>
+                                          <name>SODIUM SULFATE ANHYDROUS</name>
+                                       </activeMoiety>
+                                    </activeMoiety>
+                                 </ingredientSubstance>
+                              </ingredient>
+                              <ingredient classCode="ACTIB">
+                                 <quantity>
+                                    <numerator value="4" unit="[hp_X]"/>
+                                    <denominator value="50" unit="mL"/>
+                                 </quantity>
+                                 <ingredientSubstance>
+                                    <code code="Q1RGP4UB73" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>PINUS SYLVESTRIS LEAFY TWIG</name>
+                                    <activeMoiety>
+                                       <activeMoiety>
+                                          <code code="Q1RGP4UB73" codeSystem="2.16.840.1.113883.4.9"/>
+                                          <name>PINUS SYLVESTRIS LEAFY TWIG</name>
+                                       </activeMoiety>
+                                    </activeMoiety>
+                                 </ingredientSubstance>
+                              </ingredient>
+                              <ingredient classCode="ACTIB">
+                                 <quantity>
+                                    <numerator value="6" unit="[hp_X]"/>
+                                    <denominator value="50" unit="mL"/>
+                                 </quantity>
+                                 <ingredientSubstance>
+                                    <code code="2H1576D5WG" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>SMILAX ORNATA ROOT</name>
+                                    <activeMoiety>
+                                       <activeMoiety>
+                                          <code code="2H1576D5WG" codeSystem="2.16.840.1.113883.4.9"/>
+                                          <name>SMILAX ORNATA ROOT</name>
+                                       </activeMoiety>
+                                    </activeMoiety>
+                                 </ingredientSubstance>
+                              </ingredient>
+                              <ingredient classCode="ACTIB">
+                                 <quantity>
+                                    <numerator value="3" unit="[hp_X]"/>
+                                    <denominator value="50" unit="mL"/>
+                                 </quantity>
+                                 <ingredientSubstance>
+                                    <code code="7H443NUB2T" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>SCROPHULARIA NODOSA</name>
+                                    <activeMoiety>
+                                       <activeMoiety>
+                                          <code code="7H443NUB2T" codeSystem="2.16.840.1.113883.4.9"/>
+                                          <name>SCROPHULARIA NODOSA</name>
+                                       </activeMoiety>
+                                    </activeMoiety>
+                                 </ingredientSubstance>
+                              </ingredient>
+                              <ingredient classCode="ACTIB">
+                                 <quantity>
+                                    <numerator value="5" unit="[hp_X]"/>
+                                    <denominator value="50" unit="mL"/>
+                                 </quantity>
+                                 <ingredientSubstance>
+                                    <code code="D1YM0P5Z2T" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>LOBARIA PULMONARIA</name>
+                                    <activeMoiety>
+                                       <activeMoiety>
+                                          <code code="D1YM0P5Z2T" codeSystem="2.16.840.1.113883.4.9"/>
+                                          <name>LOBARIA PULMONARIA</name>
+                                       </activeMoiety>
+                                    </activeMoiety>
+                                 </ingredientSubstance>
+                              </ingredient>
+                              <ingredient classCode="ACTIB">
+                                 <quantity>
+                                    <numerator value="3" unit="[hp_X]"/>
+                                    <denominator value="50" unit="mL"/>
+                                 </quantity>
+                                 <ingredientSubstance>
+                                    <code code="LOK3I16O7G" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>TEUCRIUM SCORODONIA FLOWERING TOP</name>
+                                    <activeMoiety>
+                                       <activeMoiety>
+                                          <code code="LOK3I16O7G" codeSystem="2.16.840.1.113883.4.9"/>
+                                          <name>TEUCRIUM SCORODONIA FLOWERING TOP</name>
+                                       </activeMoiety>
+                                    </activeMoiety>
+                                 </ingredientSubstance>
+                              </ingredient>
+                              <ingredient classCode="ACTIB">
+                                 <quantity>
+                                    <numerator value="3" unit="[hp_X]"/>
+                                    <denominator value="50" unit="mL"/>
+                                 </quantity>
+                                 <ingredientSubstance>
+                                    <code code="9IH82J936J" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>VERONICA OFFICINALIS FLOWERING TOP</name>
+                                    <activeMoiety>
+                                       <activeMoiety>
+                                          <code code="9IH82J936J" codeSystem="2.16.840.1.113883.4.9"/>
+                                          <name>VERONICA OFFICINALIS FLOWERING TOP</name>
+                                       </activeMoiety>
+                                    </activeMoiety>
+                                 </ingredientSubstance>
+                              </ingredient>
+                              <ingredient classCode="IACT">
+                                 <ingredientSubstance>
+                                    <code code="3K9958V90M" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>ALCOHOL</name>
+                                 </ingredientSubstance>
+                              </ingredient>
+                              <ingredient classCode="IACT">
+                                 <ingredientSubstance>
+                                    <code code="059QF0KO0R" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>WATER</name>
+                                 </ingredientSubstance>
+                              </ingredient>
+                              <asContent>
+                                 <quantity>
+                                    <numerator value="50" unit="mL"/>
+                                    <denominator value="1" unit="1"/>
+                                 </quantity>
+                                 <containerPackagedProduct>
+                                    <code code="62795-2007-4" codeSystem="2.16.840.1.113883.6.69"/>
+                                    <formCode code="C43169" displayName="BOTTLE" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                                 </containerPackagedProduct>
+                                 <subjectOf>
+                                    <characteristic classCode="OBS">
+                                       <code code="SPLCMBPRDTP" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                                       <value code="C112160" displayName="Type 0: Not a Combination Product" codeSystem="2.16.840.1.113883.3.26.1.1" xsi:type="CE"/>
+                                    </characteristic>
+                                 </subjectOf>
+                              </asContent>
+                           </partProduct>
+                           <subjectOf>
+                              <approval>
+                                 <code code="C73614" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="unapproved homeopathic"/>
+                                 <author>
+                                    <territorialAuthority>
+                                       <territory>
+                                          <code code="USA" codeSystem="2.16.840.1.113883.5.28"/>
+                                       </territory>
+                                    </territorialAuthority>
+                                 </author>
+                              </approval>
+                           </subjectOf>
+                           <subjectOf>
+                              <marketingAct>
+                                 <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                                 <statusCode code="active"/>
+                                 <effectiveTime>
+                                    <low value="20180101"/>
+                                 </effectiveTime>
+                              </marketingAct>
+                           </subjectOf>
+                           <consumedIn>
+                              <substanceAdministration>
+                                 <routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ORAL"/>
+                              </substanceAdministration>
+                           </consumedIn>
+                        </part>
+                     </manufacturedProduct>
+                     <subjectOf>
+                        <approval>
+                           <code code="C73614" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="unapproved homeopathic"/>
+                           <author>
+                              <territorialAuthority>
+                                 <territory>
+                                    <code code="USA" codeSystem="2.16.840.1.113883.5.28"/>
+                                 </territory>
+                              </territorialAuthority>
+                           </author>
+                        </approval>
+                     </subjectOf>
+                     <subjectOf>
+                        <marketingAct>
+                           <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <statusCode code="active"/>
+                           <effectiveTime>
+                              <low value="20180101"/>
+                           </effectiveTime>
+                        </marketingAct>
+                     </subjectOf>
+                  </manufacturedProduct>
+               </subject>
+            </section>
+         </component>
+         <component>
+            <section ID="L5267723f-4090-4a6c-ad7e-eabe187e9caa">
+               <id root="80dcdb23-5a4c-4149-98b1-50740c4bb20d"/>
+               <code code="55106-9" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - ACTIVE INGREDIENT SECTION"/>
+               <title>ACTIVE INGREDIENTS</title>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">BodyAnew Colon &amp; Liver:</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Active Ingredients:</content> 30 drops contain:<br/>*Colocynthis 3X 0.3%, *Colocynthis 30X 0.3%, *Colocynthis 200X 0.3%, *Lycopodium clavatum 3X 0.3%, *Lycopodium clavatum 200X 0.3%, *Lycopodium clavatum 1000X 0.3%, *Bryonia 9X 0.22%, Bryonia 29X 0.22%, *Bryonia 3X 0.2%, *Bryonia 15X 0.2%, *Bryonia 200X 0.2%, *Bryonia 1000X 0.2%, *Chelidonium majus 3X 0.2%, *Nux vomica 3X 0.2%, *Nux vomica 10X 0.2%, *Nux vomica 15X 0.2%, *Nux vomica    30X   0.2%, *Nux vomica 200X 0.2%, *Nux vomica 1000X 0.2%, *Colocynthis 9X 0.03%, *Lycopodium clavatum 9X 0.03%,<br/>*Lycopodium clavatum 29X 0.03%, *Bryonia 5X 0.02%</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">*Natural Ingredients</content>
+                  </paragraph>
+                  <paragraph/>
+                  <paragraph>
+                     <content styleCode="bold">BodyAnew Kidney:</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Active Ingredients:</content> 30 drops contain:<br/>*Berberis vulgaris 3X 10%, *Colocynthis 6X 10%, *Veratrum album 6X 10%, *Colocynthis 3X 3%, *Berberis vulgaris 10X 0.4%, *Berberis vulgaris 30X 0.4%, *Berberis vulgaris 200X 0.4%, *Solidago virgaurea 3X 0.4%, *Solidago virgaurea 10X 0.4%, *Solidago virgaurea 30X 0.4%, *Solidago virgaurea 200X 0.4%, *Colocynthis 30X 0.3%, *Colocynthis 200X 0.3%, *Veratrum album 3X 0.3%, *Veratrum album 30X 0.3%, *Veratrum album 200X 0.3%</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">*Natural Ingredients</content>
+                  </paragraph>
+                  <paragraph/>
+                  <paragraph/>
+                  <paragraph>
+                     <content styleCode="bold">BodyAnew Lymph &amp; Lungs:</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Active Ingredients:</content> 30 drops contain:<br/>I*Myosotis arvensis 3X, Natrum sulphuricum 3X, *Scrophularia nodosa 3X, *Teucrium scorodonia 3X, *Veronica officinalis 3X, *Equisetum hyemale 4X, *Fumaria officinalis 4X, *Geranium robertianum 4X, *Nasturtium aquaticum 4X, *Pinus sylvestris 4X, *Gentiana lutea 5X, *Sticta pulmonaria 5X, *Apis mellifica 6X, *Dulcamara 6X, *Sarsaparilla 6X, Kali iodatum 8X, Calcarea phosphorica 12X, Ferrum iodatum 12X, Thyroidinum<br/>12X 5% each</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">*Natural ingredient</content>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20230822"/>
+            </section>
+         </component>
+         <component>
+            <section ID="L4e5f5f66-e584-44e9-b3cf-a9914bfec97f">
+               <id root="ff481956-1e06-443c-b034-52edcca79c91"/>
+               <code code="55105-1" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - PURPOSE SECTION"/>
+               <title>PURPOSE</title>
+               <text>
+                  <paragraph>For the temporary relief of occasional low energy, minor abdominal bloating, upper respiratory symtoms such as cough, runny nose, urinary pain.</paragraph>
+                  <paragraph/>
+               </text>
+               <effectiveTime value="20220718"/>
+            </section>
+         </component>
+         <component>
+            <section ID="Laed62938-543d-435e-9ad8-38fec56fb01d">
+               <id root="6358e74d-35c0-490f-b392-5b8aa629a77a"/>
+               <code code="50565-1" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - KEEP OUT OF REACH OF CHILDREN SECTION"/>
+               <title>KEEP OUT OF REACH OF CHILDREN</title>
+               <text>
+                  <paragraph>BodyAnew Rejuveo:</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Keep out of reach of children.</content>
+                  </paragraph>
+                  <paragraph/>
+                  <paragraph>BodyAnew Purity:</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Keep out of reach of children.</content>
+                  </paragraph>
+                  <paragraph/>
+                  <paragraph>BodyAnew Fatigue:</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Keep out of reach of children.</content>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20220718"/>
+            </section>
+         </component>
+         <component>
+            <section ID="Le850a67a-71f2-44ff-a7ed-dcaf78ed8911">
+               <id root="2ebc5b25-e73e-4329-8bae-ea41a3abe781"/>
+               <code code="34067-9" codeSystem="2.16.840.1.113883.6.1" displayName="INDICATIONS &amp; USAGE SECTION"/>
+               <title>INDICATIONS AND USAGE</title>
+               <text>
+                  <paragraph>For the temporary relief of occasional low energy, minor abdominal bloating, upper respiratory symtoms such as cough, runny nose, urinary pain.</paragraph>
+               </text>
+               <effectiveTime value="20220718"/>
+            </section>
+         </component>
+         <component>
+            <section ID="L53110d22-e0a9-49d6-94bc-5455f85c341d">
+               <id root="8aa365e2-ea8f-480f-ad21-bf1bb7df35ff"/>
+               <code code="34071-1" codeSystem="2.16.840.1.113883.6.1" displayName="WARNINGS SECTION"/>
+               <title>WARNINGS</title>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">If pregnant or breast-feeding,</content> ask a healthcare professsional before use. <content styleCode="bold">Keep out of reach of children.</content>
+                     <content styleCode="bold">Do not use</content> if known hypersensitivity to BodyAnew Colon &amp; Liver™, BodyAnew Kidney™, or BodyAnew Lymph &amp; Lungs™ or any of its ingredients exists. Mild symptoms such as skin outbreaks, and loose stools may occur. <content styleCode="bold">Stop and see a doctor</content> if these symtoms persist.</paragraph>
+                  <paragraph/>
+               </text>
+               <effectiveTime value="20220718"/>
+            </section>
+         </component>
+         <component>
+            <section ID="Lfaa08a32-ee9c-4beb-a985-3d591bea01d7">
+               <id root="b90bbf92-7562-46d1-97bc-8b762e2e2a5d"/>
+               <code code="34068-7" codeSystem="2.16.840.1.113883.6.1" displayName="DOSAGE &amp; ADMINISTRATION SECTION"/>
+               <title>  DIRECTIONS
+</title>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">Directions:</content>
+                  </paragraph>
+                  <paragraph>Use for up to 2 weeks. <content styleCode="bold">Adults </content>: Add 30 drops or 2 half dropperfuls of each BodyAnew™ formula( Lymph &amp; Lungs, Kidney, Colon &amp; Liver) to water and consume throughtout the day. Do not exceed more than 4 half dropperfuls of each formula per day.perday, taking 10 drops every 4 to 6 hours.</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">For children under 18 years: </content>Consult your health practitioner.</paragraph>
+                  <paragraph/>
+               </text>
+               <effectiveTime value="20220718"/>
+            </section>
+         </component>
+         <component>
+            <section ID="L86a12d43-899e-46d0-910c-3bbe21e70ee3">
+               <id root="368449a9-5aa2-45f4-a80b-cea3d535172a"/>
+               <code code="51727-6" codeSystem="2.16.840.1.113883.6.1" displayName="INACTIVE INGREDIENT SECTION"/>
+               <title>INACTIVE INGREDIENTS</title>
+               <text>
+                  <paragraph>Organic ethanol, Purified water</paragraph>
+                  <paragraph/>
+               </text>
+               <effectiveTime value="20220718"/>
+            </section>
+         </component>
+         <component>
+            <section ID="Ld8960f03-7e99-4b80-a900-1db81dc796f8">
+               <id root="c4075a69-65dc-4bd2-9fcb-faec15a0470b"/>
+               <code code="51945-4" codeSystem="2.16.840.1.113883.6.1" displayName="PACKAGE LABEL.PRINCIPAL DISPLAY PANEL"/>
+               <title/>
+               <text>
+                  <paragraph>
+                     <renderMultiMedia referencedObject="Le09f97ae-a4d4-46eb-a969-bd2ba196bb48"/>
+                  </paragraph>
+                  <paragraph>Add image transcription here...</paragraph>
+               </text>
+               <effectiveTime value="20230822"/>
+               <component>
+                  <observationMedia ID="Le09f97ae-a4d4-46eb-a969-bd2ba196bb48">
+                     <text>BodyAnew Multipack</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="BodyAnew Multipack.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+      </structuredBody>
+   </component>
+</document>

@@ -1,0 +1,762 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="https://www.accessdata.fda.gov/spl/stylesheet/spl.xsl" type="text/xsl"?>
+<document xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 https://www.accessdata.fda.gov/spl/schema/spl.xsd">
+   <id root="faf7a0b9-0ca6-4265-a280-b3b5f7d270b2"/>
+   <code code="34391-3" codeSystem="2.16.840.1.113883.6.1" displayName="HUMAN PRESCRIPTION DRUG LABEL"/>
+   <title>Baclofen tablets, USP<br/>5 mg<br/>10 mg<br/>20 mg<br/>Muscle Relaxant,<br/>Antispastic<br/>Rx only<br/>Prescribing Information</title>
+   <effectiveTime value="20251003"/>
+   <setId root="ab5fd609-3081-4400-90cd-c83b6834d381"/>
+   <versionNumber value="1"/>
+   <author>
+      <time/>
+      <assignedEntity>
+         <representedOrganization>
+            <id extension="171714327" root="1.3.6.1.4.1.519.1"/>
+            <name>Bryant Ranch Prepack</name>
+            <assignedEntity>
+               <assignedOrganization>
+                  <id extension="171714327" root="1.3.6.1.4.1.519.1"/>
+                  <name>Bryant Ranch Prepack</name>
+                  <assignedEntity>
+                     <assignedOrganization>
+                        <id extension="171714327" root="1.3.6.1.4.1.519.1"/>
+                        <name>Bryant Ranch Prepack</name>
+                     </assignedOrganization>
+                     <performance>
+                        <actDefinition>
+                           <code code="C73606" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="REPACK"/>
+                           <product>
+                              <manufacturedProduct classCode="MANU">
+                                 <manufacturedMaterialKind>
+                                    <code codeSystem="2.16.840.1.113883.6.69" code="71335-2756"/>
+                                 </manufacturedMaterialKind>
+                              </manufacturedProduct>
+                           </product>
+                        </actDefinition>
+                     </performance>
+                     <performance>
+                        <actDefinition>
+                           <code code="C73607" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="RELABEL"/>
+                           <product>
+                              <manufacturedProduct classCode="MANU">
+                                 <manufacturedMaterialKind>
+                                    <code codeSystem="2.16.840.1.113883.6.69" code="71335-2756"/>
+                                 </manufacturedMaterialKind>
+                              </manufacturedProduct>
+                           </product>
+                        </actDefinition>
+                     </performance>
+                  </assignedEntity>
+               </assignedOrganization>
+            </assignedEntity>
+         </representedOrganization>
+      </assignedEntity>
+   </author>
+   <component>
+      <structuredBody>
+         <component>
+            <section>
+               <id root="5cc4fe10-4065-4531-98c9-bc6b9e05a338"/>
+               <code code="48780-1" codeSystem="2.16.840.1.113883.6.1" displayName="SPL Product Data Elements Section"/>
+               <effectiveTime value="20230608"/>
+               <subject>
+                  <manufacturedProduct>
+                     <manufacturedProduct>
+                        <code code="71335-2756" codeSystem="2.16.840.1.113883.6.69"/>
+                        <name>Baclofen</name>
+                        <formCode code="C42998" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TABLET"/>
+                        <asEntityWithGeneric>
+                           <genericMedicine>
+                              <name>Baclofen</name>
+                           </genericMedicine>
+                        </asEntityWithGeneric>
+                        <asEquivalentEntity classCode="EQUIV">
+                           <code code="C64637" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <definingMaterialKind>
+                              <code code="29300-344" codeSystem="2.16.840.1.113883.6.69"/>
+                           </definingMaterialKind>
+                        </asEquivalentEntity>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator value="20" unit="mg"/>
+                              <denominator value="1" unit="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="H789N3FKE8" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>BACLOFEN</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="H789N3FKE8" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>BACLOFEN</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="OP1R32D61U" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>MICROCRYSTALLINE CELLULOSE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="70097M6I30" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>MAGNESIUM STEARATE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="FZ989GH94E" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>POVIDONE, UNSPECIFIED</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="ETJ7Z6XBU4" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>SILICON DIOXIDE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="O8232NY3SJ" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>STARCH, CORN</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <asContent>
+                           <quantity>
+                              <numerator value="90" unit="1"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code code="71335-2756-1" codeSystem="2.16.840.1.113883.6.69"/>
+                              <formCode code="C43169" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOTTLE"/>
+                           </containerPackagedProduct>
+                           <subjectOf>
+                              <characteristic>
+                                 <code code="SPLCMBPRDTP" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                                 <value code="C112160" displayName="Type 0: Not a Combination Product" codeSystem="2.16.840.1.113883.3.26.1.1" xsi:type="CV"/>
+                              </characteristic>
+                           </subjectOf>
+                           <subjectOf>
+                              <marketingAct>
+                                 <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                                 <statusCode code="active"/>
+                                 <effectiveTime>
+                                    <low value="20251003"/>
+                                 </effectiveTime>
+                              </marketingAct>
+                           </subjectOf>
+                        </asContent>
+                        <asContent>
+                           <quantity>
+                              <numerator value="20" unit="1"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code code="71335-2756-2" codeSystem="2.16.840.1.113883.6.69"/>
+                              <formCode code="C43169" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOTTLE"/>
+                           </containerPackagedProduct>
+                           <subjectOf>
+                              <characteristic>
+                                 <code code="SPLCMBPRDTP" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                                 <value code="C112160" displayName="Type 0: Not a Combination Product" codeSystem="2.16.840.1.113883.3.26.1.1" xsi:type="CV"/>
+                              </characteristic>
+                           </subjectOf>
+                           <subjectOf>
+                              <marketingAct>
+                                 <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                                 <statusCode code="active"/>
+                                 <effectiveTime>
+                                    <low value="20251003"/>
+                                 </effectiveTime>
+                              </marketingAct>
+                           </subjectOf>
+                        </asContent>
+                        <asContent>
+                           <quantity>
+                              <numerator value="60" unit="1"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code code="71335-2756-3" codeSystem="2.16.840.1.113883.6.69"/>
+                              <formCode code="C43169" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOTTLE"/>
+                           </containerPackagedProduct>
+                           <subjectOf>
+                              <characteristic>
+                                 <code code="SPLCMBPRDTP" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                                 <value code="C112160" displayName="Type 0: Not a Combination Product" codeSystem="2.16.840.1.113883.3.26.1.1" xsi:type="CV"/>
+                              </characteristic>
+                           </subjectOf>
+                           <subjectOf>
+                              <marketingAct>
+                                 <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                                 <statusCode code="active"/>
+                                 <effectiveTime>
+                                    <low value="20251003"/>
+                                 </effectiveTime>
+                              </marketingAct>
+                           </subjectOf>
+                        </asContent>
+                        <asContent>
+                           <quantity>
+                              <numerator value="45" unit="1"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code code="71335-2756-4" codeSystem="2.16.840.1.113883.6.69"/>
+                              <formCode code="C43169" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOTTLE"/>
+                           </containerPackagedProduct>
+                           <subjectOf>
+                              <characteristic>
+                                 <code code="SPLCMBPRDTP" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                                 <value code="C112160" displayName="Type 0: Not a Combination Product" codeSystem="2.16.840.1.113883.3.26.1.1" xsi:type="CV"/>
+                              </characteristic>
+                           </subjectOf>
+                           <subjectOf>
+                              <marketingAct>
+                                 <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                                 <statusCode code="active"/>
+                                 <effectiveTime>
+                                    <low value="20251003"/>
+                                 </effectiveTime>
+                              </marketingAct>
+                           </subjectOf>
+                        </asContent>
+                        <asContent>
+                           <quantity>
+                              <numerator value="112" unit="1"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code code="71335-2756-5" codeSystem="2.16.840.1.113883.6.69"/>
+                              <formCode code="C43169" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOTTLE"/>
+                           </containerPackagedProduct>
+                           <subjectOf>
+                              <characteristic>
+                                 <code code="SPLCMBPRDTP" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                                 <value code="C112160" displayName="Type 0: Not a Combination Product" codeSystem="2.16.840.1.113883.3.26.1.1" xsi:type="CV"/>
+                              </characteristic>
+                           </subjectOf>
+                           <subjectOf>
+                              <marketingAct>
+                                 <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                                 <statusCode code="active"/>
+                                 <effectiveTime>
+                                    <low value="20251003"/>
+                                 </effectiveTime>
+                              </marketingAct>
+                           </subjectOf>
+                        </asContent>
+                        <asContent>
+                           <quantity>
+                              <numerator value="30" unit="1"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code code="71335-2756-6" codeSystem="2.16.840.1.113883.6.69"/>
+                              <formCode code="C43169" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOTTLE"/>
+                           </containerPackagedProduct>
+                           <subjectOf>
+                              <characteristic>
+                                 <code code="SPLCMBPRDTP" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                                 <value code="C112160" displayName="Type 0: Not a Combination Product" codeSystem="2.16.840.1.113883.3.26.1.1" xsi:type="CV"/>
+                              </characteristic>
+                           </subjectOf>
+                           <subjectOf>
+                              <marketingAct>
+                                 <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                                 <statusCode code="active"/>
+                                 <effectiveTime>
+                                    <low value="20251003"/>
+                                 </effectiveTime>
+                              </marketingAct>
+                           </subjectOf>
+                        </asContent>
+                        <asContent>
+                           <quantity>
+                              <numerator value="56" unit="1"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code code="71335-2756-7" codeSystem="2.16.840.1.113883.6.69"/>
+                              <formCode code="C43169" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOTTLE"/>
+                           </containerPackagedProduct>
+                           <subjectOf>
+                              <characteristic>
+                                 <code code="SPLCMBPRDTP" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                                 <value code="C112160" displayName="Type 0: Not a Combination Product" codeSystem="2.16.840.1.113883.3.26.1.1" xsi:type="CV"/>
+                              </characteristic>
+                           </subjectOf>
+                           <subjectOf>
+                              <marketingAct>
+                                 <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                                 <statusCode code="active"/>
+                                 <effectiveTime>
+                                    <low value="20251003"/>
+                                 </effectiveTime>
+                              </marketingAct>
+                           </subjectOf>
+                        </asContent>
+                        <asContent>
+                           <quantity>
+                              <numerator value="15" unit="1"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code code="71335-2756-8" codeSystem="2.16.840.1.113883.6.69"/>
+                              <formCode code="C43169" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOTTLE"/>
+                           </containerPackagedProduct>
+                           <subjectOf>
+                              <characteristic>
+                                 <code code="SPLCMBPRDTP" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                                 <value code="C112160" displayName="Type 0: Not a Combination Product" codeSystem="2.16.840.1.113883.3.26.1.1" xsi:type="CV"/>
+                              </characteristic>
+                           </subjectOf>
+                           <subjectOf>
+                              <marketingAct>
+                                 <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                                 <statusCode code="active"/>
+                                 <effectiveTime>
+                                    <low value="20251003"/>
+                                 </effectiveTime>
+                              </marketingAct>
+                           </subjectOf>
+                        </asContent>
+                        <asContent>
+                           <quantity>
+                              <numerator value="84" unit="1"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code code="71335-2756-9" codeSystem="2.16.840.1.113883.6.69"/>
+                              <formCode code="C43169" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOTTLE"/>
+                           </containerPackagedProduct>
+                           <subjectOf>
+                              <characteristic>
+                                 <code code="SPLCMBPRDTP" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                                 <value code="C112160" displayName="Type 0: Not a Combination Product" codeSystem="2.16.840.1.113883.3.26.1.1" xsi:type="CV"/>
+                              </characteristic>
+                           </subjectOf>
+                           <subjectOf>
+                              <marketingAct>
+                                 <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                                 <statusCode code="active"/>
+                                 <effectiveTime>
+                                    <low value="20251003"/>
+                                 </effectiveTime>
+                              </marketingAct>
+                           </subjectOf>
+                        </asContent>
+                        <asContent>
+                           <quantity>
+                              <numerator value="120" unit="1"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code code="71335-2756-0" codeSystem="2.16.840.1.113883.6.69"/>
+                              <formCode code="C43169" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOTTLE"/>
+                           </containerPackagedProduct>
+                           <subjectOf>
+                              <characteristic>
+                                 <code code="SPLCMBPRDTP" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                                 <value code="C112160" displayName="Type 0: Not a Combination Product" codeSystem="2.16.840.1.113883.3.26.1.1" xsi:type="CV"/>
+                              </characteristic>
+                           </subjectOf>
+                           <subjectOf>
+                              <marketingAct>
+                                 <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                                 <statusCode code="active"/>
+                                 <effectiveTime>
+                                    <low value="20251003"/>
+                                 </effectiveTime>
+                              </marketingAct>
+                           </subjectOf>
+                        </asContent>
+                     </manufacturedProduct>
+                     <subjectOf>
+                        <approval>
+                           <id extension="ANDA212067" root="2.16.840.1.113883.3.150"/>
+                           <code code="C73584" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ANDA"/>
+                           <author>
+                              <territorialAuthority>
+                                 <territory>
+                                    <code code="USA" codeSystem="2.16.840.1.113883.5.28"/>
+                                 </territory>
+                              </territorialAuthority>
+                           </author>
+                        </approval>
+                     </subjectOf>
+                     <subjectOf>
+                        <marketingAct>
+                           <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <statusCode code="active"/>
+                           <effectiveTime>
+                              <low value="20200709"/>
+                           </effectiveTime>
+                        </marketingAct>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLCOLOR" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value xsi:type="CE" code="C48325" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="WHITE">
+                              <originalText>White to off white</originalText>
+                           </value>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLSHAPE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value xsi:type="CE" code="C48348" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ROUND">
+                              <originalText>Flat-faced,beveled-edge</originalText>
+                           </value>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLSIZE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value xsi:type="PQ" value="11" unit="mm"/>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLSCORE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value xsi:type="INT" value="2"/>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLIMPRINT" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value xsi:type="ST">U;344</value>
+                        </characteristic>
+                     </subjectOf>
+                     <consumedIn>
+                        <substanceAdministration>
+                           <routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ORAL"/>
+                        </substanceAdministration>
+                     </consumedIn>
+                  </manufacturedProduct>
+               </subject>
+               <component>
+                  <observationMedia ID="MM1">
+                     <text>Image</text>
+                     <value xsi:type="ED" mediaType="image/jpeg">
+                        <reference value="513de439-4155-4a5d-a25c-bced499e293a-01.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="ID1">
+               <id root="99e4d65b-c6af-44e0-aa87-c77a82fee051"/>
+               <code code="34089-3" codeSystem="2.16.840.1.113883.6.1" displayName="DESCRIPTION SECTION"/>
+               <title>DESCRIPTION</title>
+               <text>
+                  <paragraph ID="ID2">Baclofen USP, is a muscle relaxant and antispastic, available as 5-mg, 10-mg and 20-mg tablets for oral administration. Its chemical name is 4-amino-3-(4-chlorophenyl)- butanoic acid, and its structural formula is</paragraph>
+                  <renderMultiMedia referencedObject="MM1"/>
+                  <paragraph ID="ID13">Baclofen USP is a white or creamy white powder, with a molecular weight of 213.66. It is slightly soluble in water, insoluble in organic solvents, dissolves in dilute mineral acids and alkali hydroxides.</paragraph>
+                  <paragraph>
+                     <content styleCode="italics">Inactive Ingredients.</content> colloidal silicon dioxide, magnesium stearate, microcrystalline cellulose, povidone, and pregelatinized starch.</paragraph>
+               </text>
+               <effectiveTime value="20251003"/>
+            </section>
+         </component>
+         <component>
+            <section ID="ID3">
+               <id root="eca55822-6092-4a3e-881d-69ce5b24cde7"/>
+               <code code="34090-1" codeSystem="2.16.840.1.113883.6.1" displayName="CLINICAL PHARMACOLOGY SECTION"/>
+               <title>CLINICAL PHARMACOLOGY</title>
+               <text>
+                  <paragraph ID="ID14">The precise mechanism of action of baclofen is not fully known. Baclofen is capable of inhibiting both monosynaptic and polysynaptic reflexes at the spinal level, possibly by hyperpolarization of afferent terminals, although actions at supraspinal sites may also occur and contribute to its clinical effect. Although baclofen is an analog of the putative inhibitory neurotransmitter gamma-aminobutyric acid (GABA), there is no conclusive evidence that actions on GABA systems are involved in the production of its clinical effects. In studies with animals, baclofen has been shown to have general CNS depressant properties as indicated by the production of sedation with tolerance, somnolence, ataxia, and respiratory and cardiovascular depression. Baclofen is rapidly and extensively absorbed and eliminated. Absorption may be dose-dependent, being reduced with increasing doses. Baclofen is excreted primarily by the kidney in unchanged form and there is relatively large intersubject variation in absorption and/or elimination.</paragraph>
+               </text>
+               <effectiveTime value="20221108"/>
+            </section>
+         </component>
+         <component>
+            <section ID="ID4">
+               <id root="402292c1-88e6-4890-80a4-a38dbb404407"/>
+               <code code="34067-9" codeSystem="2.16.840.1.113883.6.1" displayName="INDICATIONS &amp; USAGE SECTION"/>
+               <title>INDICATIONS AND USAGE</title>
+               <text>
+                  <paragraph ID="ID15">Baclofen tablets are useful for the alleviation of signs and symptoms of spasticity resulting from multiple sclerosis, particularly for the relief of flexor spasms and concomitant pain, clonus, and muscular rigidity.</paragraph>
+                  <paragraph>Patients should have reversible spasticity so that baclofen tablets treatment will aid in restoring residual function.</paragraph>
+                  <paragraph>Baclofen tablets may also be of some value in patients with spinal cord injuries and other spinal cord diseases.</paragraph>
+                  <paragraph>Baclofen tablets are not indicated in the treatment of skeletal muscle spasm resulting from rheumatic disorders.</paragraph>
+                  <paragraph>The efficacy of baclofen tablets in stroke, cerebral palsy, and Parkinson's disease has not been established and, therefore, it is not recommended for these conditions.</paragraph>
+               </text>
+               <effectiveTime value="20230608"/>
+            </section>
+         </component>
+         <component>
+            <section ID="ID5">
+               <id root="572b1d2e-3fd3-4f7c-9a10-e8b05a4d38eb"/>
+               <code code="34070-3" codeSystem="2.16.840.1.113883.6.1" displayName="CONTRAINDICATIONS SECTION"/>
+               <title>CONTRAINDICATIONS</title>
+               <text>
+                  <paragraph ID="ID16">Hypersensitivity to baclofen.</paragraph>
+               </text>
+               <effectiveTime value="20230608"/>
+            </section>
+         </component>
+         <component>
+            <section ID="ID6">
+               <id root="e6dd49b9-2691-4edb-be4f-00eae9ad0392"/>
+               <code code="34071-1" codeSystem="2.16.840.1.113883.6.1" displayName="WARNINGS SECTION"/>
+               <title>WARNINGS</title>
+               <effectiveTime value="20221108"/>
+               <component>
+                  <section ID="ID17">
+                     <id root="32f67ed5-ed1e-46d3-ba84-c6cf1232621c"/>
+                     <title>
+                        <content styleCode="bold">a. Neonatal Withdrawal Symptoms:</content>
+                     </title>
+                     <text>
+                        <paragraph ID="ID18">Withdrawal symptoms have been reported starting hours to days after delivery in neonates whose mothers were treated with oral baclofen throughout pregnancy. The symptoms of withdrawal in these infants have included increased muscle tone, tremor, jitteriness, and seizure. If the potential benefit justifies the potential risk to the fetus and oral baclofen is continued during pregnancy, gradually reduce the dose and discontinue baclofen before delivery. If slow withdrawal is not feasible, advise the parents or caregivers of the potential for neonatal withdrawal.</paragraph>
+                     </text>
+                     <effectiveTime value="20221108"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="ID19">
+                     <id root="4e42b796-87da-4aad-bd81-a8f6b7a821e3"/>
+                     <title>
+                        <content styleCode="bold">b. Abrupt Drug Withdrawal:</content>
+                     </title>
+                     <text>
+                        <paragraph ID="ID20">Hallucinations and seizures have occurred on abrupt withdrawal of baclofen. Therefore, except for serious adverse reactions, the dose should be reduced slowly when the drug is discontinued.</paragraph>
+                     </text>
+                     <effectiveTime value="20221108"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="ID21">
+                     <id root="8d8bc8e8-385a-458c-bbcc-8336446b0462"/>
+                     <title>
+                        <content styleCode="bold">c. Impaired Renal Function:</content>
+                     </title>
+                     <text>
+                        <paragraph ID="ID26">Because baclofen is primarily excreted unchanged through the kidneys, it should be given with caution, and it may be necessary to reduce the dosage.</paragraph>
+                     </text>
+                     <effectiveTime value="20221108"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="ID22">
+                     <id root="d0f94173-9fdd-4c51-9972-ee687d8e1c04"/>
+                     <title>
+                        <content styleCode="bold">d. Stroke:</content>
+                     </title>
+                     <text>
+                        <paragraph ID="ID25">Baclofen has not significantly benefited patients with stroke. These patients have also shown poor tolerability to the drug.</paragraph>
+                     </text>
+                     <effectiveTime value="20221108"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="ID23">
+                     <id root="c2ad817c-d9c2-4c40-bc64-eaf0a7bd880e"/>
+                     <title>
+                        <content styleCode="bold">e. Pregnancy:</content>
+                     </title>
+                     <text>
+                        <paragraph ID="ID24">Baclofen has been shown to increase the incidence of omphaloceles (ventral hernias) in fetuses of rats given approximately 13 times the maximum dose recommended for human use, at a dose which caused significant reductions in food intake and weight gain in dams. This abnormality was not seen in mice or rabbits.</paragraph>
+                        <paragraph>There was also an increased incidence of incomplete sternebral ossification in fetuses of rats given approximately 13 times the maximum recommended human dose, and an increased incidence of unossified phalangeal nuclei of forelimbs and hindlimbs in fetuses of rabbits given approximately 7 times the maximum recommended human dose. In mice, no teratogenic effects were observed, although reductions in mean fetal weight with consequent delays in skeletal ossification were present when dams were given 17 or 34 times the human daily dose. There are no studies in pregnant women. Baclofen should be used during pregnancy only if the benefit clearly justifies the potential risk to the fetus.</paragraph>
+                     </text>
+                     <effectiveTime value="20221108"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="ID7">
+               <id root="0f0143a3-ebee-4296-a032-4f004bbb7633"/>
+               <code code="42232-9" codeSystem="2.16.840.1.113883.6.1" displayName="PRECAUTIONS SECTION"/>
+               <title>PRECAUTIONS</title>
+               <text>
+                  <paragraph ID="ID27">Because of the possibility of sedation, patients should be cautioned regarding the operation of automobiles or other dangerous machinery, and activities made hazardous by decreased alertness. Patients should also be cautioned that the central nervous system effects of baclofen may be additive to those of alcohol and other CNS depressants.</paragraph>
+                  <paragraph>Baclofen should be used with caution where spasticity is utilized to sustain upright posture and balance in locomotion or whenever spasticity is utilized to obtain increased function.</paragraph>
+                  <paragraph>In patients with epilepsy, the clinical state and electroencephalogram should be monitored at regular intervals, since deterioration in seizure control and EEG have been reported occasionally in patients taking baclofen.</paragraph>
+                  <paragraph>It is not known whether this drug is excreted in human milk. As a general rule, nursing should not be undertaken while a patient is on a drug since many drugs are excreted in human milk.</paragraph>
+                  <paragraph>A dose-related increase in incidence of ovarian cysts and a less marked increase in enlarged and/or hemorrhagic adrenal glands was observed in female rats treated chronically with baclofen.</paragraph>
+                  <paragraph>Ovarian cysts have been found by palpation in about 4% of the multiple sclerosis patients that were treated with baclofen for up to one year. In most cases these cysts disappeared spontaneously while patients continued to receive the drug. Ovarian cysts are estimated to occur spontaneously in approximately 1% to 5% of the normal female population.</paragraph>
+               </text>
+               <effectiveTime value="20221108"/>
+               <component>
+                  <section ID="ID31">
+                     <id root="b7193b37-3f80-4c56-95a8-f13b2cb05329"/>
+                     <title>Pediatric Use</title>
+                     <text>
+                        <paragraph ID="ID32">Safety and effectiveness in pediatric patients below the age of 12 years have not been established.</paragraph>
+                     </text>
+                     <effectiveTime value="20221108"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="ID8">
+               <id root="444d6090-2727-4562-87e7-c7bff91b242b"/>
+               <code code="34084-4" codeSystem="2.16.840.1.113883.6.1" displayName="ADVERSE REACTIONS SECTION"/>
+               <title>ADVERSE REACTIONS</title>
+               <text>
+                  <paragraph ID="ID30">The most common is transient drowsiness (10%-63%). In one controlled study of 175 patients, transient drowsiness was observed in 63% of those receiving baclofen compared to 36% of those in the placebo group. Other common adverse reactions are dizziness (5%-15%), weakness (5%-15%) and fatigue (2%-4%). Others reported:</paragraph>
+               </text>
+               <effectiveTime value="20230608"/>
+               <component>
+                  <section ID="ID33">
+                     <id root="7667e5a6-f7ae-4b14-a60a-4ab5e50340f8"/>
+                     <title>
+                        <content styleCode="xmChange">
+                           <content styleCode="bold">Neuropsychiatric:</content>
+                        </content>
+                     </title>
+                     <text>
+                        <paragraph ID="ID34">Confusion (1%-11%), headache (4%-8%), insomnia (2%-7%); and, rarely, euphoria, excitement, depression, hallucinations, paresthesia, muscle pain, tinnitus, slurred speech, coordination disorder, tremor, rigidity, dystonia, ataxia, blurred vision, nystagmus, strabismus, miosis, mydriasis, diplopia, dysarthria, epileptic seizure.</paragraph>
+                     </text>
+                     <effectiveTime value="20221108"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="ID35">
+                     <id root="bb0e6756-261e-4c12-b469-9a97418b1115"/>
+                     <title>
+                        <content styleCode="bold">Cardiovascular:</content>
+                     </title>
+                     <text>
+                        <paragraph ID="ID39">Hypotension (0%-9%). Rare instances of dyspnea, palpitation, chest pain, syncope.</paragraph>
+                     </text>
+                     <effectiveTime value="20221108"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="ID36">
+                     <id root="595e7f3e-65cb-44b5-aa4a-41da3675ce56"/>
+                     <title>
+                        <content styleCode="bold">Gastrointestinal:</content>
+                     </title>
+                     <text>
+                        <paragraph ID="ID40">Nausea (4%-12%), constipation (2%-6%); and, rarely, dry mouth, anorexia, taste disorder, abdominal pain, vomiting, diarrhea, and positive test for occult blood in stool.</paragraph>
+                     </text>
+                     <effectiveTime value="20230608"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="ID37">
+                     <id root="295cb5d8-ae3c-4e1d-9b67-2a9052f13cef"/>
+                     <title>
+                        <content styleCode="bold">Genitourinary:</content>
+                     </title>
+                     <text>
+                        <paragraph ID="ID41">Urinary frequency (2%-6%); and, rarely, enuresis, urinary retention, dysuria, impotence, inability to ejaculate, nocturia, hematuria.</paragraph>
+                     </text>
+                     <effectiveTime value="20221108"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="ID38">
+                     <id root="91266bf8-674e-44ea-bb50-f0e7f1696180"/>
+                     <title>Other:</title>
+                     <text>
+                        <paragraph ID="ID42">Instances of rash, pruritus, ankle edema, excessive perspiration, weight gain, nasal congestion. Some of the CNS and genitourinary symptoms may be related to the underlying disease rather than to drug therapy.</paragraph>
+                        <paragraph>The following laboratory tests have been found to be abnormal in a few patients receiving baclofen: increased SGOT, elevated alkaline phosphatase, and elevation of blood sugar.</paragraph>
+                     </text>
+                     <effectiveTime value="20221108"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="ID9">
+               <id root="53c84e0b-7259-42b7-874d-92b556e8ada2"/>
+               <code code="34088-5" codeSystem="2.16.840.1.113883.6.1" displayName="OVERDOSAGE SECTION"/>
+               <title>OVERDOSAGE</title>
+               <effectiveTime value="20230608"/>
+               <component>
+                  <section ID="ID54">
+                     <id root="84107f74-8327-4fdf-a32c-effe80dd316d"/>
+                     <title>
+                        <content styleCode="bold">Signs and Symptoms:</content>
+                     </title>
+                     <text>
+                        <paragraph ID="ID55">Vomiting, muscular hypotonia, drowsiness, accommodation disorders, coma, respiratory depression, and seizures.</paragraph>
+                     </text>
+                     <effectiveTime value="20221108"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="ID52">
+                     <id root="598ae227-dcf9-428c-9543-6404f070870c"/>
+                     <title>
+                        <content styleCode="bold">Treatment:</content>
+                     </title>
+                     <text>
+                        <paragraph ID="ID53">In the alert patient, empty the stomach promptly by induced emesis followed by lavage. In the obtunded patient, secure the airway with a cuffed endotracheal tube before beginning lavage (do not induce emesis). Maintain adequate respiratory exchange, do not use respiratory stimulants.</paragraph>
+                     </text>
+                     <effectiveTime value="20230608"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="ID10">
+               <id root="ff06f6ea-8c98-4629-ae74-5f0d94cb0f1a"/>
+               <code code="34068-7" codeSystem="2.16.840.1.113883.6.1" displayName="DOSAGE &amp; ADMINISTRATION SECTION"/>
+               <title>DOSAGE AND ADMINISTRATION</title>
+               <text>
+                  <paragraph ID="ID44">The determination of optimal dosage requires individual titration. Start therapy at a low dosage and increase gradually until optimum effect is achieved (usually between 40-80 mg daily).</paragraph>
+                  <paragraph>The following dosage titration schedule is suggested:</paragraph>
+                  <paragraph>5 mg t.i.d. for 3 days</paragraph>
+                  <paragraph>10 mg t.i.d. for 3 days</paragraph>
+                  <paragraph>15 mg t.i.d. for 3 days</paragraph>
+                  <paragraph>20 mg t.i.d. for 3 days</paragraph>
+                  <paragraph>Thereafter additional increases may be necessary but the total daily dose should not exceed a maximum of 80 mg daily (20 mg q.i.d.).</paragraph>
+                  <paragraph>The lowest dose compatible with an optimal response is recommended. If benefits are not evident after a reasonable trial period, patients should be slowly withdrawn from the drug (see WARNINGS <content styleCode="italics">Abrupt Drug Withdrawal</content>).</paragraph>
+               </text>
+               <effectiveTime value="20221108"/>
+            </section>
+         </component>
+         <component>
+            <section ID="ID11">
+               <id root="a7296242-2222-4da5-be1c-175434cc23f9"/>
+               <code code="34069-5" codeSystem="2.16.840.1.113883.6.1" displayName="HOW SUPPLIED SECTION"/>
+               <title>HOW SUPPLIED</title>
+               <text>
+                  <paragraph>Baclofen tablets USP, 20 mg are available as a white to off white, round, flat-faced, beveled-edge uncoated tablets debossed with "344" on one side of score line and "U" on the other side of score line on one side of tablet and plain on other side, containing 20 mg baclofen, USP.</paragraph>
+                  <paragraph>NDC: 71335-2756-1: 90 Tablets in a BOTTLE</paragraph>
+                  <paragraph>NDC: 71335-2756-2: 20 Tablets in a BOTTLE</paragraph>
+                  <paragraph>NDC: 71335-2756-3: 60 Tablets in a BOTTLE</paragraph>
+                  <paragraph>NDC: 71335-2756-4: 45 Tablets in a BOTTLE</paragraph>
+                  <paragraph>NDC: 71335-2756-5: 112 Tablets in a BOTTLE</paragraph>
+                  <paragraph>NDC: 71335-2756-6: 30 Tablets in a BOTTLE</paragraph>
+                  <paragraph>NDC: 71335-2756-7: 56 Tablets in a BOTTLE</paragraph>
+                  <paragraph>NDC: 71335-2756-8: 15 Tablets in a BOTTLE</paragraph>
+                  <paragraph>NDC: 71335-2756-9: 84 Tablets in a BOTTLE</paragraph>
+                  <paragraph>NDC: 71335-2756-0: 120 Tablets in a BOTTLE</paragraph>
+                  <paragraph>Store at 20º to 25ºC (68º to 77ºF) [see USP controlled Room Temperature].</paragraph>
+                  <paragraph>Repackaged/Relabeled by:<br/>Bryant Ranch Prepack, Inc.<br/>Burbank, CA 91504</paragraph>
+                  <paragraph/>
+               </text>
+               <effectiveTime value="20251003"/>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="229d9948-d4f8-4685-a67b-ec2d10e5ab14"/>
+               <code code="51945-4" codeSystem="2.16.840.1.113883.6.1" displayName="PACKAGE LABEL.PRINCIPAL DISPLAY PANEL"/>
+               <text>
+                  <paragraph styleCode="bold">Baclofen 20mg Tablet</paragraph>
+                  <renderMultiMedia ID="F30" referencedObject="mm63629"/>
+               </text>
+               <effectiveTime value="20111230"/>
+               <component>
+                  <observationMedia ID="mm63629">
+                     <text>Label</text>
+                     <value xsi:type="ED" mediaType="image/jpeg">
+                        <reference value="lbl713352756.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+      </structuredBody>
+   </component>
+</document>

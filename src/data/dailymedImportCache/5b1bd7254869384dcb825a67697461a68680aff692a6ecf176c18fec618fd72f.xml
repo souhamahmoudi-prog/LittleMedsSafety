@@ -1,0 +1,667 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="http://www.accessdata.fda.gov/spl/stylesheet/spl.xsl" type="text/xsl"?>
+<document xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 http://www.accessdata.fda.gov/spl/schema/spl.xsd">
+   <id root="6b066c78-72a9-4975-ba86-d37f2a6dd6c6"/>
+   <code code="58476-3" displayName="DIETARY SUPPLEMENT" codeSystem="2.16.840.1.113883.6.1"/>
+   <title>Dothelle DHA</title>
+   <effectiveTime value="20150820"/>
+   <setId root="f3a46fb0-5f62-49b6-b228-9bde6206a669"/>
+   <versionNumber value="1"/>
+   <author>
+      <time/>
+      <assignedEntity>
+         <representedOrganization>
+            <id extension="060216698" root="1.3.6.1.4.1.519.1"/>
+            <name>Method Pharmaceuticals, LLC</name>
+            <assignedEntity>
+               <assignedOrganization/>
+            </assignedEntity>
+         </representedOrganization>
+      </assignedEntity>
+   </author>
+   <component>
+      <structuredBody>
+         <component>
+            <section>
+               <id root="12351ec1-6c90-4d4e-8ea6-4db2c3c39fa1"/>
+               <code code="48780-1" displayName="SPL LISTING DATA ELEMENTS SECTION" codeSystem="2.16.840.1.113883.6.1"/>
+               <effectiveTime value="20150831"/>
+               <subject>
+                  <manufacturedProduct>
+                     <manufacturedProduct>
+                        <code code="58657-121" codeSystem="2.16.840.1.113883.6.69"/>
+                        <name>Dothelle DHA</name>
+                        <formCode code="C42954" displayName="CAPSULE, LIQUID FILLED" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                        <asEntityWithGeneric>
+                           <genericMedicine>
+                              <name>ferrous fumarate, iron, ascorbic acid, folic acid, thiamine mononitrate, riboflavin, niacin, calcium pantothenate, pyridoxine hydrochloride, biotin, cyanocobalamin, cupric sulfate, magnesium sulfate, unspecified form, zinc sulfate, unspecified form, omega-3 fatty acids, doconexent and icosapent</name>
+                           </genericMedicine>
+                        </asEntityWithGeneric>
+                        <ingredient classCode="ACTIM">
+                           <quantity>
+                              <numerator unit="mg" value="53.5"/>
+                              <denominator unit="1" value="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="R5L488RY0Q" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>FERROUS FUMARATE</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="GW89581OWR" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>FERROUS CATION</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator unit="mg" value="38"/>
+                              <denominator unit="1" value="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="E1UOL152H7" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>IRON</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="E1UOL152H7" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>IRON</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator unit="mg" value="25"/>
+                              <denominator unit="1" value="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="PQ6CK8PD0R" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>ASCORBIC ACID</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="PQ6CK8PD0R" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>ASCORBIC ACID</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator unit="mg" value="1"/>
+                              <denominator unit="1" value="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="935E97BOY8" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>FOLIC ACID</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="935E97BOY8" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>FOLIC ACID</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIR">
+                           <quantity>
+                              <numerator unit="mg" value="2"/>
+                              <denominator unit="1" value="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="8K0I04919X" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>THIAMINE MONONITRATE</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="4ABT0J945J" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>Thiamine ION</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                              <asEquivalentSubstance>
+                                 <definingSubstance>
+                                    <code code="X66NSO3N35" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>THIAMINE</name>
+                                 </definingSubstance>
+                              </asEquivalentSubstance>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator unit="mg" value="3"/>
+                              <denominator unit="1" value="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="TLM2976OFR" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>RIBOFLAVIN</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="TLM2976OFR" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>RIBOFLAVIN</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator unit="mg" value="1.8"/>
+                              <denominator unit="1" value="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="2679MF687A" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>NIACIN</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="2679MF687A" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>NIACIN</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIM">
+                           <quantity>
+                              <numerator unit="mg" value="5"/>
+                              <denominator unit="1" value="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="568ET80C3D" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>CALCIUM PANTOTHENATE</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="19F5HK2737" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>PANTOTHENIC ACID</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator unit="mg" value="25"/>
+                              <denominator unit="1" value="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="68Y4CF58BV" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>PYRIDOXINE HYDROCHLORIDE</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="KV2JZ1BI6Z" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>PYRIDOXINE</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator unit="ug" value="300"/>
+                              <denominator unit="1" value="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="6SO6U10H04" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>BIOTIN</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="6SO6U10H04" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>BIOTIN</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator unit="ug" value="12.5"/>
+                              <denominator unit="1" value="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="P6YC3EG204" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>CYANOCOBALAMIN</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="P6YC3EG204" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>CYANOCOBALAMIN</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIM">
+                           <quantity>
+                              <numerator unit="mg" value="2"/>
+                              <denominator unit="1" value="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="LRX7AJ16DT" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>CUPRIC SULFATE</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="8CBV67279L" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>CUPRIC CATION</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator unit="mg" value="5"/>
+                              <denominator unit="1" value="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="DE08037SAB" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>MAGNESIUM SULFATE, UNSPECIFIED FORM</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="T6V3LHY838" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>MAGNESIUM CATION</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIM">
+                           <quantity>
+                              <numerator unit="mg" value="10"/>
+                              <denominator unit="1" value="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="89DS0H96TB" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>ZINC SULFATE, UNSPECIFIED FORM</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="13S1S8SF37" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>ZINC CATION</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator unit="mg" value="200"/>
+                              <denominator unit="1" value="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="71M78END5S" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>OMEGA-3 FATTY ACIDS</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="71M78END5S" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>OMEGA-3 FATTY ACIDS</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator unit="mg" value="156"/>
+                              <denominator unit="1" value="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="ZAD9OKH9JC" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>DOCONEXENT</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="ZAD9OKH9JC" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>DOCONEXENT</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator unit="mg" value="39"/>
+                              <denominator unit="1" value="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="AAN7QOV9EA" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>ICOSAPENT</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="AAN7QOV9EA" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>ICOSAPENT</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="2G86QN327L" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>GELATIN</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="PDC6A3C0OX" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>GLYCERIN</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="1DI56QDM62" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>LECITHIN, SOYBEAN</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="2ZA36H0S2V" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>YELLOW WAX</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="TTL6G7LIWZ" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>LYSINE ACETATE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="BD70459I50" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>CITRUS BIOFLAVONOIDS</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="H3R47K3TBD" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>FD&amp;C BLUE NO. 1</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="1Q73Q2JULR" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>SODIUM CITRATE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="15FIX9V2JP" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>TITANIUM DIOXIDE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="YC9ST449YJ" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>ETHYL VANILLIN</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="H77VEI93A8" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>FD&amp;C YELLOW NO. 6</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <asContent>
+                           <quantity>
+                              <numerator unit="1" value="30"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code code="58657-121-30" codeSystem="2.16.840.1.113883.6.69"/>
+                              <formCode code="C43169" displayName="BOTTLE" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           </containerPackagedProduct>
+                        </asContent>
+                     </manufacturedProduct>
+                     <subjectOf>
+                        <approval>
+                           <code code="C86952" displayName="DIETARY SUPPLEMENT" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <author>
+                              <territorialAuthority>
+                                 <territory>
+                                    <code code="USA" codeSystem="2.16.840.1.113883.5.28"/>
+                                 </territory>
+                              </territorialAuthority>
+                           </author>
+                        </approval>
+                     </subjectOf>
+                     <subjectOf>
+                        <marketingAct>
+                           <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <statusCode code="active"/>
+                           <effectiveTime>
+                              <low value="20150820"/>
+                           </effectiveTime>
+                        </marketingAct>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLCOLOR" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value code="C48333" displayName="BLUE" codeSystem="2.16.840.1.113883.3.26.1.1" xsi:type="CV"/>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLFLAVOR" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value code="C73406" displayName="ORANGE" codeSystem="2.16.840.1.113883.3.26.1.1" xsi:type="CV">
+                              <originalText>Natural Creamy Orange</originalText>
+                           </value>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLIMPRINT" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value xsi:type="ST">M121</value>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLSCORE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value value="1" xsi:type="INT"/>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLSHAPE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value code="C48345" displayName="OVAL" codeSystem="2.16.840.1.113883.3.26.1.1" xsi:type="CV"/>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLSIZE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value unit="mm" value="15" xsi:type="PQ"/>
+                        </characteristic>
+                     </subjectOf>
+                     <consumedIn>
+                        <substanceAdministration>
+                           <routeCode code="C38288" displayName="ORAL" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                        </substanceAdministration>
+                     </consumedIn>
+                  </manufacturedProduct>
+               </subject>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="f68d61b8-d714-40e7-90b0-ac2f3d448d89"/>
+               <code codeSystem="2.16.840.1.113883.6.1" code="69718-5" displayName="STATEMENT OF IDENTITY SECTION"/>
+               <title>
+                  <content styleCode="bold">STATEMENT OF IDENTITY:</content>
+               </title>
+               <text>
+                  <paragraph>Dothelle DHA is an orally administered prescription dietary supplement and should be administered under the supervision of a licensed medical practitioner.</paragraph>
+               </text>
+               <effectiveTime value="20150820"/>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="262af3e0-8459-4de1-ad63-4e3810594d2d"/>
+               <code codeSystem="2.16.840.1.113883.6.1" code="34071-1" displayName="WARNINGS SECTION"/>
+               <title>
+                  <content styleCode="bold">WARNING:</content>
+               </title>
+               <text>
+                  <paragraph>Accidental overdose of iron-containing products is a leading cause of fatal poisoning in children under 6. Keep this product out of reach of children. In case of accidental overdose, call a doctor or poison control center immediately.</paragraph>
+               </text>
+               <effectiveTime value="20150820"/>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="b21b48c3-fd4e-4b4c-a127-8dbd4f7194e1"/>
+               <code codeSystem="2.16.840.1.113883.6.1" code="34068-7" displayName="DOSAGE &amp; ADMINISTRATION SECTION"/>
+               <title>
+                  <content styleCode="bold">DOSAGE AND ADMINISTRATION:</content>
+               </title>
+               <text>
+                  <paragraph>Adults (persons over 12 years of age), One (1) capsule daily, between meals, or as prescribed by a physician. Do not exceed recommended dosage. Do not administer to children under the age of 12.</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Supplement Facts</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Servings per Bottle: 30</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Serving Size: </content>1 Capsule <content styleCode="bold">%DV for Pregnant</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Each Capsule contains and Lactating Women</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Ferrous Fumarate </content>(anhydrous) <content styleCode="bold">53.5 mg</content>
+                  </paragraph>
+                  <paragraph>(Equiv. to about 17.5 mg of Elemental Iron)</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Polysaccharide Iron Complex 38 mg 194%¶</content>
+                  </paragraph>
+                  <paragraph>(Equiv. to about 17.5 mg of Elemental Iron)</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Vitamin C* 25 mg 42%</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Folic Acid 1 mg 125%</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Vitamin </content>
+                     <content styleCode="bold">B1</content>
+                     <content styleCode="bold"> </content>(thiamine mononitrate) <content styleCode="bold">2 mg 118%</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Vitamin B2 </content>(riboflavin) <content styleCode="bold">3 mg 150%</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Vitamin B3</content>* <content styleCode="bold">1.8 mg 9%</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Vitamin B5 </content>(d-calcium pantothenate) <content styleCode="bold">5 mg 50%</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Vitamin </content>
+                     <content styleCode="bold">B6</content>
+                     <content styleCode="bold"> </content>(pyridoxine HCl) <content styleCode="bold">25 mg 1000%</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Vitamin</content>
+                     <content styleCode="bold"> </content>
+                     <content styleCode="bold">B7</content>
+                     <content styleCode="bold"> </content>(biotin) <content styleCode="bold">300 </content>
+                     <content styleCode="bold">mcg</content>
+                     <content styleCode="bold"> 100%</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Vitamin</content>
+                     <content styleCode="bold"> </content>
+                     <content styleCode="bold">B12</content>
+                     <content styleCode="bold"> </content>(cyanocobalamin) <content styleCode="bold">12.5 </content>
+                     <content styleCode="bold">mcg</content>
+                     <content styleCode="bold"> 156%</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Copper </content>(as copper sulfate) <content styleCode="bold">2 mg 100%</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Magnesium </content>(as magnesium sulfate) <content styleCode="bold">5 mg 1%</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Zinc </content>(as zinc sulfate) <content styleCode="bold">10 mg 67%</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Omega-3 Fatty acids† 200 mg ‡</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">DHA </content>(docosahexaenoic acid) <content styleCode="bold">156 mg ‡</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">EPA </content>(eicosapentaenoic acid) <content styleCode="bold">39 mg ‡</content>
+                  </paragraph>
+                  <paragraph>* Also containing Ascorbic Acid Precursors as <content styleCode="bold">(1) </content>Acid Metabolites including niacinamide ascorbate, calcium ascorbate, magnesium ascorbate, potassium ascorbate and sodium ascorbate <content styleCode="bold">(2) </content>Basic Amino Acids including lysine acetate; <content styleCode="bold">(3) </content>Flavonoids including hesperidin; and <content styleCode="bold">(4) </content>Glutathione.</paragraph>
+                  <paragraph>¶ Total Iron: Ferrous Fumarate + Polysaccharide Iron Complex.</paragraph>
+                  <paragraph>† At least 200 mg Omega-3 Fatty Acids derived from 310 mg fish oil. ‡ Daily value not established.</paragraph>
+                  <paragraph>ALSO CONTAINS: Gelatin, Glycerin, Soy Lecithin, Yellow Beeswax, Natural Creamy Orange Flavour, L-Lysine Acetate, Hesperidin Complex,  D&amp;C Blue # 1, Sodium Citrate, Titanium Dioxide, Ethyl Vanillin, L-Glutathione, FD&amp;C Yellow # 6.</paragraph>
+                  <paragraph>HOW SUPPLIED: The Dothelle DHA capsule is an oval, blue soft gelatin capsule, and is imprinted with "M121". Dothelle DHA is dispensed in child-resistant bottles of 30 capsules.</paragraph>
+               </text>
+               <effectiveTime value="20150820"/>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="809d8db3-f68f-43b4-b36e-8f567aafc19f"/>
+               <code codeSystem="2.16.840.1.113883.6.1" code="42232-9" displayName="PRECAUTIONS SECTION"/>
+               <title>
+                  <content styleCode="bold">PRECAUTIONS/WARNING:</content>
+                  <content styleCode="bold"> </content>
+               </title>
+               <text>
+                  <paragraph>WARNING: Ingestion of more than 3 grams of omega-3 fatty acids from fish oils per day may have potential antithrombotic effects, including an increased bleeding time and INR (International Normalized Ratio). Omega-3 fatty acids from fish oils (e.g., DHA) should be avoided in patients with inherited or acquired bleeding diatheses, including those taking anticoagulants.</paragraph>
+                  <paragraph>WARNING: Folic acid alone is improper therapy in the treatment of pernicious anemia and other megaloblastic anemias where vitamin B12 is deficient.</paragraph>
+                  <paragraph>PRECAUTIONS</paragraph>
+                  <paragraph>General: Folic acid in doses above 0.1 mg daily may obscure pernicious anemia, in that hematologic remission can occur while neurological manifestations remain progressive.</paragraph>
+                  <paragraph>Pediatric Use: Safety and effectiveness of this product have not been established in pediatric patients.</paragraph>
+                  <paragraph>Geriatric Use: No clinical studies have been performed in patients 65 and older to determine whether older persons respond differently from younger persons. Dosage should always begin at the low end of the dosage scale and should consider that elderly persons may have decreased hepatic, renal, or cardiac function and/or concomitant diseases.</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">STORAGE:</content>
+                     <content styleCode="bold"> </content>Store at 20°-25° C (68°-77° F). Excursions permitted to 15°-30° C (59°-86° F). [See USP Controlled Room Temperature]. Protect from light and moisture. Dispense in a tight, light-resistant container.</paragraph>
+               </text>
+               <effectiveTime value="20150820"/>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="6363d94d-619e-40be-8ccd-0986765daca6"/>
+               <code codeSystem="2.16.840.1.113883.6.1" code="69719-3" displayName="HEALTH CLAIM SECTION"/>
+               <title>
+                  <content styleCode="bold">HEALTH CLAIMS:</content>
+               </title>
+               <text>
+                  <paragraph>Prescription Vitamin B9 Containing Dietary Supplement</paragraph>
+               </text>
+               <effectiveTime value="20150820"/>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="fb057f72-0f2f-4545-9bc5-fe2b6f223169"/>
+               <code codeSystem="2.16.840.1.113883.6.1" code="51945-4" displayName="PACKAGE LABEL.PRINCIPAL DISPLAY PANEL"/>
+               <title>
+                  <content styleCode="bold">
+                     <br/>PRINCIPAL DISPLAY PANEL</content>
+               </title>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">NDC</content>
+                     <content styleCode="bold"> 58657-1</content>
+                     <content styleCode="bold">21</content>
+                     <content styleCode="bold">-30</content>
+                     <br/>
+                     <content styleCode="bold">Dothelle</content>
+                     <content styleCode="bold"> </content>
+                     <content styleCode="bold">DHA</content>
+                     <br/>
+                     <content styleCode="bold">Softgels</content>
+                     <content styleCode="bold">
+                        <br/>Rx</content>
+                     <content styleCode="bold">
+                        <br/>30 Capsules</content>
+                  </paragraph>
+                  <paragraph>
+                     <renderMultiMedia referencedObject="MM03000001"/>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20150820"/>
+               <component>
+                  <observationMedia ID="MM03000001">
+                     <text>PRINCIPAL DISPLAY PANEL
+NDC 58657-121-30
+Dothelle DHA
+Softgels
+Rx
+30 Capsules</text>
+                     <value xsi:type="ED" mediaType="image/jpeg">
+                        <reference value="dothelle-dha-01.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+      </structuredBody>
+   </component>
+</document>

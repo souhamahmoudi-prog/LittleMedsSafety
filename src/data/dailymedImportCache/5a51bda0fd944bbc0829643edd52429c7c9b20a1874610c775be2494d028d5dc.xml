@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="https://www.accessdata.fda.gov/spl/stylesheet/spl.xsl" type="text/xsl"?>
+<document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 https://www.accessdata.fda.gov/spl/schema/spl.xsd">
+   <id root="16420fc3-2366-f20e-e063-6294a90a7ef8"/>
+   <code code="34390-5" codeSystem="2.16.840.1.113883.6.1" displayName="HUMAN OTC DRUG LABEL"/>
+   <effectiveTime value="20240417"/>
+   <setId root="16423890-f64a-1b02-e063-6294a90a403e"/>
+   <versionNumber value="1"/>
+   <author>
+      <time/>
+      <assignedEntity>
+         <representedOrganization>
+            <id root="1.3.6.1.4.1.519.1" extension="844456666"/>
+            <name>Bowong Technology (ShenZhen) Co.,Ltd</name>
+            <assignedEntity>
+               <assignedOrganization>
+                  <assignedEntity>
+                     <assignedOrganization>
+                        <id root="1.3.6.1.4.1.519.1" extension="844456666"/>
+                        <name>Bowong Technology (ShenZhen) Co.,Ltd</name>
+                     </assignedOrganization>
+                     <performance>
+                        <actDefinition>
+                           <code code="C43360" displayName="manufacture" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <product>
+                              <manufacturedProduct classCode="MANU">
+                                 <manufacturedMaterialKind>
+                                    <code code="84264-001" codeSystem="2.16.840.1.113883.6.69"/>
+                                 </manufacturedMaterialKind>
+                              </manufacturedProduct>
+                           </product>
+                        </actDefinition>
+                     </performance>
+                  </assignedEntity>
+               </assignedOrganization>
+            </assignedEntity>
+         </representedOrganization>
+      </assignedEntity>
+   </author>
+   <component>
+      <structuredBody>
+         <component>
+            <section>
+               <id root="164c15be-4848-99e7-e063-6394a90ab5e3"/>
+               <code code="48780-1" codeSystem="2.16.840.1.113883.6.1" displayName="SPL product data elements section"/>
+               <effectiveTime value="20240417"/>
+               <subject>
+                  <manufacturedProduct>
+                     <manufacturedProduct>
+                        <code code="84264-001" codeSystem="2.16.840.1.113883.6.69"/>
+                        <name>Allexpert 24HR Antihistamine Cetirizine Hydrochloride Oral Solution</name>
+                        <formCode code="C42986" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="SOLUTION"/>
+                        <asEntityWithGeneric>
+                           <genericMedicine>
+                              <name>Allexpert 24HR Antihistamine Cetirizine Hydrochloride</name>
+                           </genericMedicine>
+                        </asEntityWithGeneric>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="OJ245FE5EU" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>SODIUM BENZOATE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="Z0H242BBR1" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>ASPARTAME</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="GR686LBA74" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>SODIUM PHOSPHATE, DIBASIC</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="059QF0KO0R" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>WATER</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="ADV7FS82PV" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>AZITHROMYCIN SODIUM DIHYDROGEN PHOSPHATE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator unit="mg" value="1"/>
+                              <denominator unit="mL" value="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="64O047KTOA" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>CETIRIZINE HYDROCHLORIDE</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="YO7261ME24" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>CETIRIZINE</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <asContent>
+                           <quantity>
+                              <numerator value="150" unit="mL"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code code="84264-001-01" codeSystem="2.16.840.1.113883.6.69"/>
+                              <formCode code="C43169" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOTTLE"/>
+                           </containerPackagedProduct>
+                           <subjectOf>
+                              <characteristic>
+                                 <code code="SPLCMBPRDTP" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                                 <value code="C112160" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="Type 0: Not a Combination Product" xsi:type="CV"/>
+                              </characteristic>
+                           </subjectOf>
+                           <subjectOf>
+                              <marketingAct>
+                                 <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                                 <statusCode code="active"/>
+                                 <effectiveTime>
+                                    <low value="20240417"/>
+                                 </effectiveTime>
+                              </marketingAct>
+                           </subjectOf>
+                        </asContent>
+                     </manufacturedProduct>
+                     <subjectOf>
+                        <approval>
+                           <code code="C73627" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="unapproved drug other"/>
+                           <author>
+                              <territorialAuthority>
+                                 <territory>
+                                    <code code="USA" codeSystem="2.16.840.1.113883.5.28"/>
+                                 </territory>
+                              </territorialAuthority>
+                           </author>
+                        </approval>
+                     </subjectOf>
+                     <subjectOf>
+                        <marketingAct>
+                           <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <statusCode code="active"/>
+                           <effectiveTime>
+                              <low value="20240417"/>
+                           </effectiveTime>
+                        </marketingAct>
+                     </subjectOf>
+                     <consumedIn>
+                        <substanceAdministration>
+                           <routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ORAL"/>
+                        </substanceAdministration>
+                     </consumedIn>
+                  </manufacturedProduct>
+               </subject>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_a2b72ed6-1d66-30cb-e053-2a95a90a0f48">
+               <id root="16425659-8177-27bc-e063-6294a90aa4f7"/>
+               <code code="55106-9" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - ACTIVE INGREDIENT SECTION"/>
+               <title>Active Ingredient(s)</title>
+               <text>
+                  <paragraph>Cetirizine HCI 5mg.(in each 5ml)  </paragraph>
+               </text>
+               <effectiveTime value="20240417"/>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_a2b718f7-b797-112d-e053-2a95a90a8033">
+               <id root="16428793-e75c-2e47-e063-6294a90a143b"/>
+               <code code="55105-1" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - PURPOSE SECTION"/>
+               <title>Purpose</title>
+               <text>
+                  <paragraph>Antihistamine</paragraph>
+               </text>
+               <effectiveTime value="20240417"/>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_16427b5b-158d-2e31-e063-6294a90a08ca">
+               <id root="16427b5b-158c-2e31-e063-6294a90a08ca"/>
+               <code code="34067-9" codeSystem="2.16.840.1.113883.6.1" displayName="INDICATIONS &amp; USAGE SECTION"/>
+               <title>Use</title>
+               <text>
+                  <paragraph>temporarily relieves these symptoms due to hay fever or other upper respiratory  allergies:
+  <br/>
+■Runny nose
+  <br/>
+■Sneezing
+  <br/>
+■Itchy, watery eyes
+  <br/>
+■Itching of the nose or throat
+ </paragraph>
+                  <paragraph/>
+               </text>
+               <effectiveTime value="20240417"/>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_a2b72fe6-b19e-0b1a-e053-2995a90a01cd">
+               <id root="1642983e-6259-2e4b-e063-6294a90a0501"/>
+               <code code="34071-1" codeSystem="2.16.840.1.113883.6.1" displayName="WARNINGS SECTION"/>
+               <title>Warnings</title>
+               <text>
+                  <paragraph>1.ASK A DOCTOR before use if you have Iver or kidney disoaso. Your doctor should dotermine iI you need a dilferent dose.
+  <br/>
+2.ASK A DOCTOR or phamaclst belore use i you aro taking tranqulzors or sodativcs.
+ </paragraph>
+                  <paragraph/>
+               </text>
+               <effectiveTime value="20240417"/>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_1642a0c2-bf51-2e49-e063-6294a90a0916">
+               <id root="1642a0c2-bf50-2e49-e063-6294a90a0916"/>
+               <code code="50570-1" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - DO NOT USE SECTION"/>
+               <title>Do not use</title>
+               <text>
+                  <paragraph> if you have over had an allorgic  reaclion lo ths product or any ol ils ingredients  or to an anlihislamine conlaining hydroxydine
+  <br/>
+or other Piperazine derivatives .
+ </paragraph>
+                  <paragraph/>
+               </text>
+               <effectiveTime value="20240417"/>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_1642a5a9-cb3d-2e26-e063-6294a90a4cdd">
+               <id root="1642a5a9-cb3c-2e26-e063-6294a90a4cdd"/>
+               <code code="50567-7" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - WHEN USING SECTION"/>
+               <text>
+                  <paragraph>■drowsiness may occur
+  <br/>
+■avoid alcoholic drinks
+  <br/>
+■alcohol, sedatives, and tranquilizers may increase drowsiness
+  <br/>
+■be careful when driving a motor vehicle or operating machinery
+ </paragraph>
+                  <paragraph/>
+               </text>
+               <effectiveTime value="20240417"/>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_1642aa0f-7891-583b-e063-6294a90a9ed8">
+               <id root="1642aa0f-7890-583b-e063-6294a90a9ed8"/>
+               <code code="50566-9" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - STOP USE SECTION"/>
+               <text>
+                  <paragraph>if an allergic reoclion lo this product occurs. Seek medical  help right away.</paragraph>
+                  <paragraph/>
+               </text>
+               <effectiveTime value="20240417"/>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_1642a5f9-290c-2e28-e063-6294a90a5c4d">
+               <id root="1642a5f9-290b-2e28-e063-6294a90a5c4d"/>
+               <code code="50565-1" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - KEEP OUT OF REACH OF CHILDREN SECTION"/>
+               <text>
+                  <paragraph>In cose of overdose. get medical help or contact a Poison Control Center right away.</paragraph>
+                  <paragraph/>
+               </text>
+               <effectiveTime value="20240417"/>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_1642b61c-cb65-e14c-e063-6394a90a146d">
+               <id root="1642b61c-cb64-e14c-e063-6394a90a146d"/>
+               <code code="34068-7" codeSystem="2.16.840.1.113883.6.1" displayName="DOSAGE &amp; ADMINISTRATION SECTION"/>
+               <title>Directions</title>
+               <text>
+                  <paragraph>See Outer box</paragraph>
+                  <paragraph/>
+               </text>
+               <effectiveTime value="20240417"/>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_1642a2f1-d4da-c558-e063-6394a90a686f">
+               <id root="1642aa0f-7896-583b-e063-6294a90a9ed8"/>
+               <code code="44425-7" codeSystem="2.16.840.1.113883.6.1" displayName="STORAGE AND HANDLING SECTION"/>
+               <title>Other information</title>
+               <text>
+                  <paragraph>■store between 20* to 25C (68* to 77*F)</paragraph>
+                  <paragraph>■see bottom panel for lot number and  expiration date.</paragraph>
+               </text>
+               <effectiveTime value="20240417"/>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_a2b72fe6-b1b0-0b1a-e053-2995a90a01cd">
+               <id root="1642ca2d-18e7-e9fd-e063-6394a90a1237"/>
+               <code code="51727-6" codeSystem="2.16.840.1.113883.6.1" displayName="INACTIVE INGREDIENT SECTION"/>
+               <title>Inactive ingredients</title>
+               <text>
+                  <paragraph>Sodium Dihydrogen Phosphate, Dibasic
+  <br/>
+Sodium Phosphate, Sodium Benzoate,
+  <br/>
+Aspartame, purified water.
+ </paragraph>
+                  <paragraph/>
+               </text>
+               <effectiveTime value="20240417"/>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_16427b5b-158f-2e31-e063-6294a90a08ca">
+               <id root="16427b5b-158e-2e31-e063-6294a90a08ca"/>
+               <code code="43683-2" codeSystem="2.16.840.1.113883.6.1" displayName="RECENT MAJOR CHANGES SECTION"/>
+               <effectiveTime value="20240416"/>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_a2b72df1-a5dc-047c-e053-2995a90ac28e">
+               <id root="16459d44-30e1-9667-e063-6294a90a8868"/>
+               <code code="51945-4" codeSystem="2.16.840.1.113883.6.1" displayName="PACKAGE LABEL.PRINCIPAL DISPLAY PANEL"/>
+               <title>Package Label - Principal Display Panel</title>
+               <text>
+                  <paragraph>
+                     <renderMultiMedia referencedObject="img_1645784a-1383-88b5-e063-6294a90a9284"/>
+                     <renderMultiMedia referencedObject="img_16459cee-e585-c37d-e063-6394a90a773d"/>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20240417"/>
+               <component>
+                  <observationMedia ID="img_1645784a-1383-88b5-e063-6294a90a9284">
+                     <text>label</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="label.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+               <component>
+                  <observationMedia ID="img_16459cee-e585-c37d-e063-6394a90a773d">
+                     <text>label1</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="label1.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+      </structuredBody>
+   </component>
+</document>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="http://www.accessdata.fda.gov/spl/stylesheet/spl.xsl" type="text/xsl"?>
+<document xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 http://www.accessdata.fda.gov/spl/schema/spl.xsd">
+   <id root="6932eb25-6744-4760-937d-68057f99e175"/>
+   <code code="50577-6" codeSystem="2.16.840.1.113883.6.1" displayName="OTC ANIMAL DRUG LABEL"/>
+   <title>Hemostat Powder</title>
+   <effectiveTime value="20170626"/>
+   <setId root="77dc3efa-e33a-49b9-9a75-490bcab22ef0"/>
+   <versionNumber value="2"/>
+   <author>
+      <time/>
+      <assignedEntity>
+         <representedOrganization>
+            <id extension="150711039" root="1.3.6.1.4.1.519.1"/>
+            <name>Clipper Distributing Company, LLC</name>
+         </representedOrganization>
+      </assignedEntity>
+   </author>
+   <component>
+      <structuredBody>
+         <component>
+            <section>
+               <id root="e667973c-636a-43db-a4a9-d00ee82e82f6"/>
+               <code code="48780-1" codeSystem="2.16.840.1.113883.6.1" displayName="SPL listing data elements section"/>
+               <effectiveTime value="20170622"/>
+               <subject>
+                  <manufacturedProduct>
+                     <manufacturedProduct>
+                        <code code="57319-392" codeSystem="2.16.840.1.113883.6.69"/>
+                        <name>Hemostat<suffix/>
+                        </name>
+                        <formCode code="C42972" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="POWDER"/>
+                        <asEntityWithGeneric>
+                           <genericMedicine>
+                              <name>IRON</name>
+                           </genericMedicine>
+                        </asEntityWithGeneric>
+                        <ingredient classCode="ACTIM">
+                           <quantity>
+                              <numerator value="76.6" unit="g"/>
+                              <denominator value="454" unit="g"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="39R4TAN1VT" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>FERROUS SULFATE</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="GW89581OWR" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>FERROUS CATION</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <asContent>
+                           <quantity>
+                              <numerator value="454" unit="g"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code code="57319-392-21" codeSystem="2.16.840.1.113883.6.69"/>
+                              <formCode code="C43195" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="JAR"/>
+                           </containerPackagedProduct>
+                        </asContent>
+                     </manufacturedProduct>
+                     <subjectOf>
+                        <marketingAct>
+                           <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <statusCode code="active"/>
+                           <effectiveTime>
+                              <low value="20090207"/>
+                           </effectiveTime>
+                        </marketingAct>
+                     </subjectOf>
+                     <subjectOf>
+                        <approval>
+                           <code code="C73627" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="unapproved drug other"/>
+                           <author>
+                              <territorialAuthority>
+                                 <territory>
+                                    <code code="USA" codeSystem="2.16.840.1.113883.5.28"/>
+                                 </territory>
+                              </territorialAuthority>
+                           </author>
+                        </approval>
+                     </subjectOf>
+                     <consumedIn>
+                        <substanceAdministration>
+                           <routeCode code="C38304" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TOPICAL"/>
+                        </substanceAdministration>
+                     </consumedIn>
+                  </manufacturedProduct>
+               </subject>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="22d23b35-0420-4fc9-a989-7d887d873682"/>
+               <code code="34067-9" codeSystem="2.16.840.1.113883.6.1" displayName="INDICATIONS &amp; USAGE SECTION"/>
+               <text>
+                  <paragraph/>
+                  <paragraph>CONTROLS MINOR BLEEDING</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">FOR ANIMAL USE ONLY<br/>
+                     </content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">KEEP OUT OF REACH OF CHILDREN</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">INDICATIONS</content>
+                  </paragraph>
+                  <paragraph>For use as an aid in controlling minor bleeding from superficial cuts and wounds and after dehorning.</paragraph>
+               </text>
+               <effectiveTime value="20170626"/>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="2627bac5-0040-4c48-946b-6a06397c6c7f"/>
+               <code code="34068-7" codeSystem="2.16.840.1.113883.6.1" displayName="DOSAGE &amp; ADMINISTRATION SECTION"/>
+               <title>DOSAGE AND ADMINISTRATION</title>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold"/>Apply powder freely to bleeding surface.  Repeat as needed. Bandage if necessary.<content styleCode="bold"/>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20170622"/>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="e2ae84bc-5c53-46e8-9abb-cb772805df59"/>
+               <code code="34070-3" codeSystem="2.16.840.1.113883.6.1" displayName="CONTRAINDICATIONS SECTION"/>
+               <title>CONTRAINDICATIONS</title>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold"/>In case of deep or puncture wounds or serious burns, consult veterinarian. If redness, irritation, or swelling persists or increases, discontinue use and consult veterinarian.</paragraph>
+               </text>
+               <effectiveTime value="20170622"/>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="3386c96b-c6bd-4cad-b43a-d96026ffdaad"/>
+               <code code="60559-2" codeSystem="2.16.840.1.113883.6.1" displayName="COMPONENTS"/>
+               <title>COMPOSITION</title>
+               <text>
+                  <paragraph>Ferrous Sulfate • 7H<sub>2</sub>O 84.0%, Ammonium Alum 5%, Chloroxylenol 1%, Tannic Acid 1%, In a free-flowing absorbent base. Not sterilized</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">For external use only.</content>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20170622"/>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="c98d0d26-c570-40e1-a819-4fa38ca8aada"/>
+               <code code="44425-7" codeSystem="2.16.840.1.113883.6.1" displayName="STORAGE AND HANDLING SECTION"/>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">Store at controlled room temperature between 15° and 30°<sup/>C (59°-86°<sup/>
+                        <sup/>F)</content>
+                     <br/>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Keep container tightly closed.</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">TAKE TIME OBSERVE LABEL DIRECTIONS</content>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20170622"/>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="d3e4bca2-2910-4d25-82ed-97e56d9aeeed"/>
+               <code code="51945-4" codeSystem="2.16.840.1.113883.6.1" displayName="PACKAGE LABEL.PRINCIPAL DISPLAY PANEL"/>
+               <text>
+                  <paragraph>
+                     <renderMultiMedia referencedObject="MM1"/>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20170622"/>
+               <component>
+                  <observationMedia classCode="OBS" moodCode="EVN" ID="MM1">
+                     <text>PX Blood Stop Powder</text>
+                     <value xsi:type="ED" mediaType="image/jpeg">
+                        <reference value="PX-Blood Stop Powder-17.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+      </structuredBody>
+   </component>
+</document>

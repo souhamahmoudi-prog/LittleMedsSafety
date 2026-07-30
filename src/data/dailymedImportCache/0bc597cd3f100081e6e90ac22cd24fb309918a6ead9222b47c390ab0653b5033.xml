@@ -1,0 +1,2115 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="https://www.accessdata.fda.gov/spl/stylesheet/spl.xsl"?>
+<document xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 https://www.accessdata.fda.gov/spl/schema/spl.xsd">
+   <id root="ddc06a12-1bc6-4006-ba9c-ed389599b532"/>
+   <code code="34391-3" displayName="HUMAN PRESCRIPTION DRUG LABEL" codeSystem="2.16.840.1.113883.6.1"/>
+   <title>
+      <content styleCode="bold">These highlights do not include all the information needed to use FAMOTIDINE FOR ORAL SUSPENSION safely and effectively. See full prescribing information for FAMOTIDINE FOR ORAL SUSPENSION.</content>
+      <br/>
+      <br/>
+      <content styleCode="bold">FAMOTIDINE for oral suspension </content>
+      <br/>
+      <content styleCode="bold">Initial U.S. Approval:1986</content>
+   </title>
+   <effectiveTime value="20210830"/>
+   <setId root="bb602b05-0ce6-4029-bd6e-291076e64efb"/>
+   <versionNumber value="6"/>
+   <author>
+      <time/>
+      <assignedEntity>
+         <representedOrganization>
+            <id extension="123797875" root="1.3.6.1.4.1.519.1"/>
+            <name>Amneal Pharmaceuticals NY LLC</name>
+            <assignedEntity>
+               <assignedOrganization>
+                  <assignedEntity>
+                     <assignedOrganization>
+                        <id extension="123797875" root="1.3.6.1.4.1.519.1"/>
+                        <name>Amneal Pharmaceuticals of New York, LLC</name>
+                     </assignedOrganization>
+                     <performance>
+                        <actDefinition>
+                           <code code="C25391" displayName="analysis" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <product>
+                              <manufacturedProduct classCode="MANU">
+                                 <manufacturedMaterialKind>
+                                    <code code="69238-2090" codeSystem="2.16.840.1.113883.6.69"/>
+                                 </manufacturedMaterialKind>
+                              </manufacturedProduct>
+                           </product>
+                        </actDefinition>
+                     </performance>
+                     <performance>
+                        <actDefinition>
+                           <code code="C84732" displayName="label" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <product>
+                              <manufacturedProduct classCode="MANU">
+                                 <manufacturedMaterialKind>
+                                    <code code="69238-2090" codeSystem="2.16.840.1.113883.6.69"/>
+                                 </manufacturedMaterialKind>
+                              </manufacturedProduct>
+                           </product>
+                        </actDefinition>
+                     </performance>
+                     <performance>
+                        <actDefinition>
+                           <code code="C43360" displayName="manufacture" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <product>
+                              <manufacturedProduct classCode="MANU">
+                                 <manufacturedMaterialKind>
+                                    <code code="69238-2090" codeSystem="2.16.840.1.113883.6.69"/>
+                                 </manufacturedMaterialKind>
+                              </manufacturedProduct>
+                           </product>
+                        </actDefinition>
+                     </performance>
+                     <performance>
+                        <actDefinition>
+                           <code code="C84731" displayName="pack" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <product>
+                              <manufacturedProduct classCode="MANU">
+                                 <manufacturedMaterialKind>
+                                    <code code="69238-2090" codeSystem="2.16.840.1.113883.6.69"/>
+                                 </manufacturedMaterialKind>
+                              </manufacturedProduct>
+                           </product>
+                        </actDefinition>
+                     </performance>
+                  </assignedEntity>
+               </assignedOrganization>
+            </assignedEntity>
+         </representedOrganization>
+      </assignedEntity>
+   </author>
+   <component>
+      <structuredBody>
+         <component>
+            <section>
+               <id root="c26378d5-0c41-4ba9-aff7-b12f90427d1f"/>
+               <code code="48780-1" displayName="SPL listing data elements section" codeSystem="2.16.840.1.113883.6.1"/>
+               <effectiveTime value="20210830"/>
+               <subject>
+                  <manufacturedProduct>
+                     <manufacturedProduct>
+                        <code code="69238-2090" codeSystem="2.16.840.1.113883.6.69"/>
+                        <name>Famotidine</name>
+                        <formCode code="C42975" displayName="POWDER, FOR SUSPENSION" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                        <asEntityWithGeneric>
+                           <genericMedicine>
+                              <name>Famotidine</name>
+                           </genericMedicine>
+                        </asEntityWithGeneric>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator unit="mg" value="40"/>
+                              <denominator unit="mL" value="5"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="5QZO15J2Z8" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>FAMOTIDINE</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="5QZO15J2Z8" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>FAMOTIDINE</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="2968PHW8QP" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>CITRIC ACID MONOHYDRATE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="SMD1X3XO9M" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>POWDERED CELLULOSE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="C151H8M554" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>SUCROSE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="TTV12P4NEE" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>XANTHAN GUM</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="OJ245FE5EU" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>SODIUM BENZOATE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="CR6K9C2NHK" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>METHYLPARABEN SODIUM</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="625NNB0G9N" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>PROPYLPARABEN SODIUM</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <asContent>
+                           <quantity>
+                              <numerator unit="mL" value="50"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code code="69238-2090-4" codeSystem="2.16.840.1.113883.6.69"/>
+                              <formCode code="C43169" displayName="BOTTLE" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           </containerPackagedProduct>
+                           <subjectOf>
+                              <characteristic>
+                                 <code code="SPLCMBPRDTP" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                                 <value code="C112160" displayName="Type 0: Not a Combination Product" codeSystem="2.16.840.1.113883.3.26.1.1" xsi:type="CV"/>
+                              </characteristic>
+                           </subjectOf>
+                           <subjectOf>
+                              <marketingAct>
+                                 <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                                 <statusCode code="active"/>
+                                 <effectiveTime>
+                                    <low value="20220805"/>
+                                 </effectiveTime>
+                              </marketingAct>
+                           </subjectOf>
+                        </asContent>
+                     </manufacturedProduct>
+                     <subjectOf>
+                        <approval>
+                           <id extension="ANDA216427" root="2.16.840.1.113883.3.150"/>
+                           <code code="C73584" displayName="ANDA" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <author>
+                              <territorialAuthority>
+                                 <territory>
+                                    <code code="USA" codeSystem="2.16.840.1.113883.5.28"/>
+                                 </territory>
+                              </territorialAuthority>
+                           </author>
+                        </approval>
+                     </subjectOf>
+                     <subjectOf>
+                        <marketingAct>
+                           <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <statusCode code="active"/>
+                           <effectiveTime>
+                              <low value="20220805"/>
+                           </effectiveTime>
+                        </marketingAct>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLCOLOR" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value code="C48325" displayName="white" codeSystem="2.16.840.1.113883.3.26.1.1" xsi:type="CV">
+                              <originalText>white to off-white</originalText>
+                           </value>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLFLAVOR" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value code="C73375" displayName="CHERRY" codeSystem="2.16.840.1.113883.3.26.1.1" xsi:type="CV"/>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLFLAVOR" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value code="C73364" displayName="BANANA" codeSystem="2.16.840.1.113883.3.26.1.1" xsi:type="CV"/>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLFLAVOR" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value code="C73408" displayName="PEPPERMINT" codeSystem="2.16.840.1.113883.3.26.1.1" xsi:type="CV"/>
+                        </characteristic>
+                     </subjectOf>
+                     <consumedIn>
+                        <substanceAdministration>
+                           <routeCode code="C38288" displayName="ORAL" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                        </substanceAdministration>
+                     </consumedIn>
+                  </manufacturedProduct>
+               </subject>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_48a0e91b-f312-4b7b-8793-a4243b21b18a">
+               <id root="b18e419a-4561-4ea5-9a26-7f924825cc9c"/>
+               <code code="34067-9" codeSystem="2.16.840.1.113883.6.1" displayName="INDICATIONS &amp; USAGE SECTION"/>
+               <title>1 INDICATIONS AND USAGE</title>
+               <text>
+                  <paragraph>Famotidine for oral suspension is indicated in adults for the treatment of: </paragraph>
+                  <list listType="unordered" styleCode="Disc">
+                     <item>active duodenal ulcer (DU). </item>
+                     <item>active gastric ulcer (GU). </item>
+                     <item>symptomatic nonerosive gastroesophageal reflux disease (GERD). </item>
+                     <item>erosive esophagitis due to GERD, diagnosed by biopsy. </item>
+                     <item>treatment of pathological hypersecretory conditions (e.g., Zollinger-Ellison syndrome, multiple endocrine neoplasias). </item>
+                     <item>reduction of the risk of duodenal ulcer recurrence. </item>
+                  </list>
+                  <paragraph>Famotidine for oral suspension is indicated in pediatric patients 1 year of age and older for the treatment of: </paragraph>
+                  <list listType="unordered" styleCode="Disc">
+                     <item>peptic ulcer disease. </item>
+                     <item>GERD with or without esophagitis and ulcerations. </item>
+                  </list>
+                  <paragraph>Famotidine for oral suspension is indicated in pediatric patients from birth to less than 1 year of age for the treatment of: </paragraph>
+                  <list listType="unordered" styleCode="Disc">
+                     <item>GERD. </item>
+                  </list>
+               </text>
+               <effectiveTime value="20210830"/>
+               <excerpt>
+                  <highlight>
+                     <text>
+                        <paragraph>Famotidine for oral suspension is a histamine-2 (H<sub>2</sub>) receptor antagonist indicated <linkHtml href="#LINK_48a0e91b-f312-4b7b-8793-a4243b21b18a">(1)</linkHtml>: </paragraph>
+                        <paragraph>In adults for the treatment of: </paragraph>
+                        <list listType="unordered" styleCode="Disc">
+                           <item>active duodenal ulcer (DU). </item>
+                           <item>active gastric ulcer (GU). </item>
+                           <item>symptomatic nonerosive gastroesophageal reflux disease (GERD). </item>
+                           <item>erosive esophagitis due to GERD, diagnosed by biopsy. </item>
+                           <item>treatment of pathological hypersecretory conditions (e.g., Zollinger-Ellison syndrome, multiple endocrine neoplasias). </item>
+                           <item>reduction of the risk of DU recurrence. </item>
+                        </list>
+                        <paragraph>In pediatric patients 1 year of age and older for the treatment of: </paragraph>
+                        <list listType="unordered" styleCode="Disc">
+                           <item>peptic ulcer </item>
+                           <item>GERD with or without esophagitis and ulcerations </item>
+                        </list>
+                        <paragraph>In pediatric patients from birth to less than 1 year of age for the treatment of: </paragraph>
+                        <list listType="unordered" styleCode="Disc">
+                           <item>GERD. </item>
+                        </list>
+                     </text>
+                  </highlight>
+               </excerpt>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_1ac300b1-ede1-4e26-9636-5af2ec1aa9c9">
+               <id root="35765498-998a-416c-b58f-01361374a74d"/>
+               <code code="34068-7" codeSystem="2.16.840.1.113883.6.1" displayName="DOSAGE &amp; ADMINISTRATION SECTION"/>
+               <title>2 DOSAGE AND ADMINISTRATION</title>
+               <text/>
+               <effectiveTime value="20210830"/>
+               <excerpt>
+                  <highlight>
+                     <text>
+                        <list listType="unordered" styleCode="Disc">
+                           <item>Recommended adult dosage by indication <linkHtml href="#LINK_a2f24762-1e5e-4435-ae6e-05a1dec003b5">(2.1)</linkHtml>:</item>
+                        </list>
+                        <table width="99.9%" cellspacing="0" cellpadding="0" border="1">
+                           <col width="1pt"/>
+                           <col width="41%"/>
+                           <tbody>
+                              <tr>
+                                 <td>
+                                    <paragraph>Active DU </paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>40 mg once daily; or 20 mg twice daily </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>Active GU </paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>40 mg once daily </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>Symptomatic Nonerosive GERD </paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>20 mg twice daily </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>Erosive Esophagitis due to GERD </paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>20 mg twice daily; or 40 mg twice daily </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>Pathological Hypersecretory Conditions </paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>20 mg every 6 hours; adjust to patient needs; maximum 160 mg every 6 hours </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>Risk Reduction of DU Recurrence </paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>20 mg once daily </paragraph>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <list listType="unordered" styleCode="Disc">
+                           <item>Recommended pediatric dosage by indication <linkHtml href="#LINK_472efa45-f489-4d87-9db0-8a309a689ef0">(2.2)</linkHtml>:</item>
+                        </list>
+                        <table width="99.9%" cellspacing="0" cellpadding="0" border="1">
+                           <col width="1pt"/>
+                           <col width="60.8%"/>
+                           <tbody>
+                              <tr>
+                                 <td>
+                                    <paragraph>Peptic Ulcer Disease </paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>
+                                       <content styleCode="underline">1 year to less than 17 years</content>
+                                       <br/> Starting dosage 0.5 mg/kg once daily; or 0.25 mg/kg twice daily; may increase to 1 mg/kg once daily at bedtime or 0.5 mg/kg twice daily; Maximum of 40 mg per day </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td rowspan="2" styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>GERD</paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>
+                                       <content styleCode="underline">Birth to less than 3 months</content>
+                                       <br/> Starting dosage 0.5 mg/kg once daily; may increase to 1 mg/kg once daily </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>
+                                       <content styleCode="underline">3 months to less than 1 year</content>
+                                       <br/> Starting dosage 0.5 mg/kg twice daily; may increase to 1 mg/kg twice daily; Maximum of 40 mg per day </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>GERD with or without esophagitis and ulcerations</paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>
+                                       <content styleCode="underline">1 year to less than 17 years</content>
+                                       <br/> 0.5 mg/kg twice daily Maximum of 40 mg twice daily</paragraph>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <list listType="unordered" styleCode="Disc">
+                           <item>See full prescribing information for complete dosing information in adults and pediatrics, recommended treatment duration by indication, and dosage adjustment for adult patients with renal impairment. <linkHtml href="#LINK_a2f24762-1e5e-4435-ae6e-05a1dec003b5">(2.1</linkHtml>, <linkHtml href="#LINK_472efa45-f489-4d87-9db0-8a309a689ef0">2.2</linkHtml>, <linkHtml href="#LINK_3d9064e2-8223-4dcf-b6c4-bcfd89cdaf1d">2.3)</linkHtml> <paragraph>
+                                 <content styleCode="underline">Administration <linkHtml href="#LINK_3d9064e2-8223-4dcf-b6c4-bcfd89cdaf1d">(2.3)</linkHtml>: </content>
+                              </paragraph>
+                           </item>
+                           <item>Take once daily before bedtime or twice daily in the morning and before bedtime with or without food.</item>
+                        </list>
+                     </text>
+                  </highlight>
+               </excerpt>
+               <component>
+                  <section ID="LINK_a2f24762-1e5e-4435-ae6e-05a1dec003b5">
+                     <id root="80176ad5-e069-4a78-8e11-c732e5964748"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>2.1 Recommended Dosage in Adults</title>
+                     <text>
+                        <paragraph>The recommended dosage and duration of famotidine for oral suspension in adults with normal renal function is shown in Table 1. </paragraph>
+                        <table width="99.9%" cellspacing="0" cellpadding="0" border="1">
+                           <col width="100%"/>
+                           <col/>
+                           <col/>
+                           <tbody>
+                              <tr>
+                                 <td colspan="3" styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>
+                                       <content styleCode="bold">Table 1: Recommended Dosage and Duration of Famotidine for Oral Suspension<sup>a</sup> in Adults with Normal Renal Function</content>
+                                    </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>
+                                       <content styleCode="bold">Indication</content>
+                                    </paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>
+                                       <content styleCode="bold">Recommended Dosage</content>
+                                    </paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>
+                                       <content styleCode="bold">Recommended Duration</content>
+                                    </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>
+                                       <content styleCode="bold">Active DU </content>
+                                    </paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>40 mg once daily; or 20 mg twice daily<sup>b</sup>
+                                    </paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>Up to 8 weeks<sup>c,d</sup>
+                                    </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>
+                                       <content styleCode="bold">Active GU </content>
+                                    </paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>40 mg once daily </paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>Up to 8 weeks<sup>d</sup>
+                                    </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>
+                                       <content styleCode="bold">Symptomatic nonerosive GERD </content>
+                                    </paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>20 mg twice daily </paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>Up to 6 weeks<sup>d</sup>
+                                    </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>
+                                       <content styleCode="bold">Erosive esophagitis due to GERD, diagnosed by endoscopy </content>
+                                    </paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>20 mg twice daily; or 40 mg twice daily<sup>b</sup>
+                                    </paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>Up to 12 weeks </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>
+                                       <content styleCode="bold">Pathological hypersecretory conditions </content>
+                                    </paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>Starting dosage: 20 mg every 6 hours; adjust dosage to individual patient needs Maximum dosage 160 mg every 6 hours </paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>As clinically indicated </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>
+                                       <content styleCode="bold">Reduction of the risk of DU recurrence </content>
+                                    </paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>20 mg once daily </paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>1 year<sup>c,d</sup> or as clinically indicated </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td colspan="3" styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>
+                                       <sup>a</sup> After preparation, the concentration of famotidine oral suspension is 8 mg/mL <content styleCode="italics">[see <linkHtml href="#LINK_3d9064e2-8223-4dcf-b6c4-bcfd89cdaf1d">Dosage and Administration (2.3)</linkHtml>]</content>. </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td colspan="3" styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>
+                                       <sup>b</sup> Both dosages demonstrated effectiveness in clinical trials <content styleCode="italics">[see <linkHtml href="#LINK_995374a6-9348-42d8-aeae-912d8e71b14b">Clinical Studies (14)</linkHtml>]</content>. </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td colspan="3" styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>
+                                       <sup>c</sup> In clinical trials, the majority of patients healed within 4 weeks. For patients who do not heal after 4 weeks, consider an additional 2 to 4 weeks of treatment <content styleCode="italics">[see <linkHtml href="#LINK_d5b92a97-4557-4a58-95c4-8286ec98afbc">Clinical Studies (14.1)</linkHtml>]</content>. </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td colspan="3" styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>
+                                       <sup>d</sup> Longer treatment durations have not been studied in clinical trials <content styleCode="italics">[see <linkHtml href="#LINK_d5b92a97-4557-4a58-95c4-8286ec98afbc">Clinical Studies (14.1</linkHtml>, <linkHtml href="#LINK_fe499f15-4cfa-4184-8492-ac9451c75acc">14.2</linkHtml>, <linkHtml href="#LINK_2b3d2a4b-bff1-494a-8f8a-a1d7e1dc0428">14.3)</linkHtml>]</content>.</paragraph>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </text>
+                     <effectiveTime value="20210830"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_472efa45-f489-4d87-9db0-8a309a689ef0">
+                     <id root="ff0b0070-8778-4e7a-b2aa-cc370938b8c2"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>2.2 Recommended Dosage in Pediatric Patients</title>
+                     <text>
+                        <paragraph>The recommended dosage and duration of famotidine for oral suspension in pediatric patients with normal renal function is shown in Table 2. </paragraph>
+                        <table width="99.9%" cellspacing="0" cellpadding="0" border="1">
+                           <col width="100%"/>
+                           <col/>
+                           <col/>
+                           <col/>
+                           <tbody>
+                              <tr>
+                                 <td colspan="4" styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>
+                                       <content styleCode="bold">Table 2: Recommended Dosage and Duration of Famotidine for Oral Suspension<sup>a</sup> in Pediatric Patients with Normal Renal Function</content>
+                                    </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>
+                                       <content styleCode="bold">Indication</content>
+                                    </paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>
+                                       <content styleCode="bold">Pediatric Age Range</content>
+                                    </paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>
+                                       <content styleCode="bold">Recommended Dosage<sup>a</sup>
+                                       </content>
+                                    </paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>
+                                       <content styleCode="bold">Duration</content>
+                                    </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>
+                                       <content styleCode="bold">Peptic Ulcer Disease </content>
+                                    </paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>1 year to less than 17 years </paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>Starting dosage 0.5 mg/kg once daily; or 0.25 mg/kg twice daily. </paragraph>
+                                    <paragraph>May increase to 1 mg/kg once daily at bedtime or 0.5 mg/kg twice daily </paragraph>
+                                    <paragraph>Maximum of 40 mg per day </paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>8 weeks<sup>b</sup>
+                                    </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td rowspan="2" styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>
+                                       <content styleCode="bold">GERD </content>
+                                    </paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>Birth to less than 3 months </paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>Starting dosage 0.5 mg/kg once daily. May increase to 1 mg/kg once daily<sup>b</sup>
+                                    </paragraph>
+                                 </td>
+                                 <td rowspan="2" styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>Up to 8 weeks<sup>b,c,d</sup>
+                                    </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>3 months to less than 1 year </paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>Starting dosage 0.5 mg/kg twice daily. May increase to 1 mg/kg twice daily<sup>c</sup>
+                                    </paragraph>
+                                    <paragraph>Maximum of 40 mg per day </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>
+                                       <content styleCode="bold">GERD with or without esophagitis and ulcerations </content>
+                                    </paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>1 year to less than 17 years </paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>0.5 mg/kg twice daily </paragraph>
+                                    <paragraph>Maximum of 40 mg twice daily </paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>6 to 12 weeks<sup>b</sup>
+                                    </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td colspan="4" styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>
+                                       <sup>a</sup> After preparation, the concentration of famotidine oral suspension is 8 mg/mL <content styleCode="italics">[see <linkHtml href="#LINK_3d9064e2-8223-4dcf-b6c4-bcfd89cdaf1d">Dosage and Administration (2.3)</linkHtml>]</content>. </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td colspan="4" styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>
+                                       <sup>b</sup> Treatment duration based on adult recommendations (see Table 1). Individualize the dose and duration based upon clinical response an/or pH determinations (gastric or esophageal) and endoscopy. </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td colspan="4" styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>
+                                       <sup>c</sup> Use conservative measures (e.g., thickened feedings) concurrently <content styleCode="italics">[see <linkHtml href="#LINK_2a76746e-04aa-4ca6-8470-1aa0e68d79ac">Use in Specific Populations (8.4)</linkHtml>]</content>.</paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td colspan="4" styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>
+                                       <sup>d</sup> After 4 weeks of treatment re-evaluate the patient. Consider an additional 4 weeks of treatment if treatment benefit outweighs potential risks. </paragraph>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </text>
+                     <effectiveTime value="20210830"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_3d9064e2-8223-4dcf-b6c4-bcfd89cdaf1d">
+                     <id root="449d19a6-7b6f-434a-a24d-8152456ee32c"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>2.3 Recommended Dosage in Adults with Renal Impairment</title>
+                     <text>
+                        <paragraph>Recommended dosage adjustments for adults with moderate to severe renal impairment (creatinine clearance less than 60 mL/min) by indication are shown in Table 4. Use the lowest effective dosage <content styleCode="italics">[see <linkHtml href="#LINK_2a76746e-04aa-4ca6-8470-1aa0e68d79ac">Use in Specific Populations (8.6)</linkHtml>]</content>. </paragraph>
+                        <paragraph>A safe and effective dosage has not been established in pediatric patients with renal impairment. </paragraph>
+                        <table width="99.9%" cellspacing="0" cellpadding="0" border="1">
+                           <col width="100%"/>
+                           <col/>
+                           <col/>
+                           <tbody>
+                              <tr>
+                                 <td colspan="3" styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>
+                                       <content styleCode="bold">Table 3: Recommended Maximum Dosage of Famotidine for Oral Suspension in Adults with Moderate and Severe Renal Impairment</content>
+                                    </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td rowspan="2" styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>
+                                       <content styleCode="bold">Indication</content>
+                                    </paragraph>
+                                 </td>
+                                 <td colspan="2" styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>
+                                       <content styleCode="bold">Recommended Maximum Dosages</content>
+                                    </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>
+                                       <content styleCode="bold">Creatinine clearance <br/> 30 to 60 mL/minute</content>
+                                    </paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>
+                                       <content styleCode="bold">Creatinine clearance <br/> less than 30 mL/minute</content>
+                                    </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>
+                                       <content styleCode="bold">Active DU </content>
+                                    </paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>20 mg once daily; or <br/> 40 mg every other day </paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>10 mg once daily; or <br/> 20 mg every other day </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>
+                                       <content styleCode="bold">Active GU </content>
+                                    </paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>20 mg once daily; or <br/> 40 mg every other day </paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>10 mg once daily; or <br/> 20 mg every other day </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>
+                                       <content styleCode="bold">Symptomatic nonerosive GERD </content>
+                                    </paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>20 mg once daily </paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>10 mg once daily; or <br/> 20 mg every other day </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>
+                                       <content styleCode="bold">Erosive esophagitis due to GERD, diagnosed by endoscopy<sup>a</sup>
+                                       </content>
+                                    </paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>20 mg once daily; or <br/> 40 mg every other day<sup>b</sup>
+                                       <br/> 40 mg once daily<sup>b</sup>
+                                    </paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>10 mg once daily; or <br/> 20 mg every other day<sup>b</sup>
+                                       <br/> 20 mg once daily<sup>b</sup>
+                                    </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>
+                                       <content styleCode="bold">Pathological hypersecretory conditions </content>
+                                    </paragraph>
+                                 </td>
+                                 <td colspan="2" styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>Avoid use<sup>b</sup>
+                                    </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>
+                                       <content styleCode="bold">Reduction of the risk of DU recurrence </content>
+                                    </paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>10 mg once daily; or 20 mg every other day </paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>10 mg every other day </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td colspan="3" styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>
+                                       <sup>a</sup> Dosage adjustments for renal impairment are provided for both dosing regimens (20 mg twice daily and 40 mg twice daily) which showed effectiveness for the treatment of erosive esophagitis in clinical trials <content styleCode="italics">[see <linkHtml href="#LINK_9cb7146f-0fbd-493b-bfaf-1172114dd975">Clinical Studies (14.4)</linkHtml>]</content>. </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td colspan="3" styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>
+                                       <sup>b</sup> The dosage required to treat pathological hypersecretory conditions may exceed the maximum dosage evaluated in patients with impaired renal function. The risk for increased adverse reactions in renally impaired patients treated with famotidine for oral suspension for pathological hypersecretory conditions is unknown. </paragraph>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </text>
+                     <effectiveTime value="20210830"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_5c6954d6-a98b-49e6-9e81-6d29e9992f0c">
+                     <id root="a15a1c2b-6ec7-4877-89fd-8b1590ca7c00"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>2.4 Administration Instructions</title>
+                     <text>
+                        <paragraph>
+                           <content styleCode="underline">Preparation of Constituted Suspension by a Healthcare Provider Prior to Dispensing </content>
+                        </paragraph>
+                        <list listType="unordered" styleCode="Disc">
+                           <item>Prior to dispensing, constitute famotidine for oral suspension by slowly adding 46 mL of Purified Water to the bottle. Shake vigorously for 5 to 10 seconds immediately after adding the water. </item>
+                           <item>The constituted suspension contains 40 mg of famotidine per 5 mL, and should be a smooth, mobile, white to off-white homogeneous suspension free from lumps. </item>
+                        </list>
+                        <paragraph>
+                           <content styleCode="underline">Administration and Storage of Constituted Suspension </content>
+                        </paragraph>
+                        <list listType="unordered" styleCode="Disc">
+                           <item>Shake the bottle of constituted famotidine for oral suspension vigorously for 5 to 10 seconds prior to each use. </item>
+                           <item>Take famotidine for oral suspension once daily before bedtime or twice daily in the morning and before bedtime, as recommended. </item>
+                           <item>Famotidine for oral suspension may be taken with or without food <content styleCode="italics">[see <linkHtml href="#LINK_40da22ab-9880-419c-aac4-3222230c217b">Clinical Pharmacology (12.3)</linkHtml>]</content>. </item>
+                           <item>Famotidine for oral suspension may be given with antacids. </item>
+                           <item>Store the constituted suspension at 25°C (77°F). Protect from freezing. Discard unused constituted suspension after 30 days. </item>
+                        </list>
+                        <br/>
+                     </text>
+                     <effectiveTime value="20210830"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_ed9cc327-a9b2-497e-8154-bd9219fd4770">
+               <id root="573782c5-7142-49ea-8c42-7c8dfef1e6b3"/>
+               <code code="43678-2" codeSystem="2.16.840.1.113883.6.1" displayName="DOSAGE FORMS &amp; STRENGTHS SECTION"/>
+               <title>3 DOSAGE FORMS AND STRENGTHS</title>
+               <text>
+                  <paragraph>For Oral Suspension: 400 mg as a white to off-white granular powder. When constituted as directed, famotidine for oral suspension, USP is a smooth, mobile, white to off-white homogeneous suspension with cherry-banana-peppermint flavor free from lumps, containing 40 mg of famotidine, USP per 5 mL. </paragraph>
+               </text>
+               <effectiveTime value="20210830"/>
+               <excerpt>
+                  <highlight>
+                     <text>
+                        <paragraph>For oral suspension: 40 mg/5 mL <linkHtml href="#LINK_ed9cc327-a9b2-497e-8154-bd9219fd4770">(3)</linkHtml> </paragraph>
+                     </text>
+                  </highlight>
+               </excerpt>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_7600ad47-5a2d-4055-b6a8-9334addd62c5">
+               <id root="58bcecac-a790-4276-9ec2-c38c6f89c047"/>
+               <code code="34070-3" codeSystem="2.16.840.1.113883.6.1" displayName="CONTRAINDICATIONS SECTION"/>
+               <title>4 CONTRAINDICATIONS</title>
+               <text>
+                  <paragraph>Famotidine for oral suspension is contraindicated in patients with a history of serious hypersensitivity reactions (e.g., anaphylaxis) to famotidine or other histamine-2 (H<sub>2</sub>) receptor antagonists. </paragraph>
+               </text>
+               <effectiveTime value="20210830"/>
+               <excerpt>
+                  <highlight>
+                     <text>
+                        <paragraph>History of serious hypersensitivity reactions (e.g., anaphylaxis) to famotidine or other H<sub>2</sub> receptor antagonists. <linkHtml href="#LINK_7600ad47-5a2d-4055-b6a8-9334addd62c5">(4)</linkHtml>
+                        </paragraph>
+                     </text>
+                  </highlight>
+               </excerpt>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_4e1684e1-bdaa-4046-ac6f-e2816f5fb48e">
+               <id root="03dd6a86-0962-48e5-8098-31f6635cc079"/>
+               <code code="43685-7" codeSystem="2.16.840.1.113883.6.1" displayName="WARNINGS AND PRECAUTIONS SECTION"/>
+               <title>5 WARNINGS AND PRECAUTIONS</title>
+               <text/>
+               <effectiveTime value="20210830"/>
+               <excerpt>
+                  <highlight>
+                     <text>
+                        <list listType="unordered" styleCode="Disc">
+                           <item>
+                              <content styleCode="underline">Central Nervous System (CNS) Adverse Reactions:</content> Elderly patients and patients with renal impairment at increased risk; reduce the dosage. <linkHtml href="#LINK_472efa45-f489-4d87-9db0-8a309a689ef0">(2.2</linkHtml>, <linkHtml href="#LINK_6478d3f6-b00b-4cd2-a547-9d8552f59adf">5.1</linkHtml>, <linkHtml href="#LINK_1ba70efa-3f59-4ca4-bd18-d2b2f7217ba4">8.5</linkHtml>, <linkHtml href="#LINK_5e824468-9142-4aa1-a5dd-b5a7985a5549">8.6)</linkHtml> </item>
+                           <item>
+                              <content styleCode="underline">GI Malignancy:</content> Absence of GI symptoms does not preclude the presence of gastric malignancy; evaluate prior to initiating therapy. <linkHtml href="#LINK_442ce331-8357-4254-aeae-e82e1708d95b">(5.2)</linkHtml>
+                           </item>
+                        </list>
+                     </text>
+                  </highlight>
+               </excerpt>
+               <component>
+                  <section ID="LINK_6478d3f6-b00b-4cd2-a547-9d8552f59adf">
+                     <id root="53c532fa-ba47-449a-b961-f1b7e8519652"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>5.1 Central Nervous System Adverse Reactions</title>
+                     <text>
+                        <paragraph>Central nervous system (CNS) adverse reactions, including confusion, delirium, hallucinations, disorientation, agitation, seizures, and lethargy, have been reported in elderly patients and patients with moderate and severe renal impairment treated with famotidine. Since famotidine blood levels are higher in patients with renal impairment than in patients with normal renal function, dosage adjustments are recommended in patients with renal impairment <content styleCode="italics">[see <linkHtml href="#LINK_472efa45-f489-4d87-9db0-8a309a689ef0">Dosage and Administration (2.2)</linkHtml>, <linkHtml href="#LINK_40da22ab-9880-419c-aac4-3222230c217b">Clinical Pharmacology (12.3)</linkHtml>]</content>. </paragraph>
+                     </text>
+                     <effectiveTime value="20210830"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_442ce331-8357-4254-aeae-e82e1708d95b">
+                     <id root="ed834fcc-96b4-402c-8f34-b997e17033b0"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>5.2 Concurrent Gastric Malignancy</title>
+                     <text>
+                        <paragraph>In adults, symptomatic response to therapy with famotidine for oral suspension does not preclude the presence of gastric malignancy. Consider evaluation for gastric malignancy in adult patients who have a suboptimal response or an early symptomatic relapse after completing treatment with famotidine for oral suspension. </paragraph>
+                     </text>
+                     <effectiveTime value="20210830"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_9440e503-baf7-441c-991f-439bc85d32c3">
+               <id root="60be6b87-4d88-40bb-afa2-a72abbc2903b"/>
+               <code code="34084-4" codeSystem="2.16.840.1.113883.6.1" displayName="ADVERSE REACTIONS SECTION"/>
+               <title>6 ADVERSE REACTIONS</title>
+               <text/>
+               <effectiveTime value="20210830"/>
+               <excerpt>
+                  <highlight>
+                     <text>
+                        <paragraph>The most common adverse reactions are: headache, dizziness, constipation, and diarrhea. <linkHtml href="#LINK_17afa651-8002-4b31-a096-ac501c23e561">(6.1)</linkHtml> </paragraph>
+                        <paragraph>
+                           <content styleCode="bold">To report SUSPECTED ADVERSE REACTIONS, contact Amneal Pharmaceuticals at 1-877-835-5472 or FDA at 1-800-FDA-1088 or www.fda.gov/medwatch.</content>
+                        </paragraph>
+                     </text>
+                  </highlight>
+               </excerpt>
+               <component>
+                  <section ID="LINK_17afa651-8002-4b31-a096-ac501c23e561">
+                     <id root="74c3da51-03ae-43a4-9451-607a64d716e4"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>6.1 Clinical Trial Experience</title>
+                     <text>
+                        <paragraph>Because clinical trials are conducted under widely varying conditions, adverse reaction rates observed in the clinical trials of a drug cannot be directly compared to rates in the clinical trials of another drug and may not reflect the rates observed in practice. </paragraph>
+                        <paragraph>The safety of famotidine for oral suspension has been established based on adequate and well-controlled studies of another oral famotidine product <content styleCode="italics">[see <linkHtml href="#LINK_995374a6-9348-42d8-aeae-912d8e71b14b">Clinical Studies (14)</linkHtml>]</content>. The following is a summary of the adverse reactions reported in those studies. </paragraph>
+                        <paragraph>Oral famotidine was studied in 7 US and international placebo- and active-controlled trials in approximately 2,500 patients <content styleCode="italics">[see <linkHtml href="#LINK_995374a6-9348-42d8-aeae-912d8e71b14b">Clinical Studies (14)</linkHtml>]</content>. A total of 1,442 patients were treated with famotidine, including 302 treated with 40 mg twice daily, 456 treated with 20 mg twice daily, 461 treated with 40 mg once daily, and 396 treated with 20 mg once daily. The population was 17 to 91 years old, fairly well distributed between sex and race; however, the predominant race was Caucasian. </paragraph>
+                        <paragraph>The following adverse reactions occurred in greater than or equal to 1% of famotidine-treated patients: headache, dizziness and constipation. </paragraph>
+                        <paragraph>The following other adverse reactions were reported in less than 1% of patients in clinical trials: </paragraph>
+                        <paragraph>
+                           <content styleCode="italics">Body as a Whole:</content> fever, asthenia, fatigue </paragraph>
+                        <paragraph>
+                           <content styleCode="italics">Cardiovascular:</content> palpitations </paragraph>
+                        <paragraph>
+                           <content styleCode="italics">Gastrointestinal:</content> elevated liver enzymes, vomiting, nausea, abdominal discomfort, anorexia, dry mouth <content styleCode="italics">Hematologic:</content> thrombocytopenia </paragraph>
+                        <paragraph>
+                           <content styleCode="italics">Hypersensitivity:</content> orbital edema, rash, conjunctival injection, bronchospasm </paragraph>
+                        <paragraph>
+                           <content styleCode="italics">Musculoskeletal:</content> musculoskeletal pain, arthralgia </paragraph>
+                        <paragraph>
+                           <content styleCode="italics">Nervous System/Psychiatric:</content> seizure, hallucinations, depression, anxiety, decreased libido, insomnia, somnolence </paragraph>
+                        <paragraph>
+                           <content styleCode="italics">Skin:</content> pruritus, dry skin, flushing </paragraph>
+                        <paragraph>
+                           <content styleCode="italics">Special Senses:</content> tinnitus, taste disorder </paragraph>
+                        <paragraph>
+                           <content styleCode="italics">Other:</content> impotence </paragraph>
+                        <paragraph>
+                           <content styleCode="underline">Pediatric Patients Less Than One Year of Age </content>
+                        </paragraph>
+                        <paragraph>In a clinical study in 35 pediatric patients less than 1 year of age with GERD symptoms, two patients discontinued due to adverse reactions. Agitation observed in 5 patients resolved when famotidine was discontinued <content styleCode="italics">[see <linkHtml href="#LINK_2a76746e-04aa-4ca6-8470-1aa0e68d79ac">Use in Specific Populations (8.4)</linkHtml>]</content>. </paragraph>
+                     </text>
+                     <effectiveTime value="20210830"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_945ea5d0-2aa7-478b-b24b-f78904d90464">
+                     <id root="1f9eb4cb-990d-43d5-916d-49eef955a608"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>6.2 Postmarketing Experience</title>
+                     <text>
+                        <paragraph>The following adverse reactions have been identified during post-approval use of famotidine. Because these reactions are reported voluntarily from a population of uncertain size, it is not always possible to reliably estimate their frequency or establish a causal relationship to drug exposure. </paragraph>
+                        <paragraph>
+                           <content styleCode="italics">Cardiovascular:</content> arrhythmia, AV block, prolonged QT interval </paragraph>
+                        <paragraph>
+                           <content styleCode="italics">Gastrointestinal:</content> cholestatic jaundice, hepatitis </paragraph>
+                        <paragraph>
+                           <content styleCode="italics">Hematologic:</content> agranulocytosis, pancytopenia, leukopenia </paragraph>
+                        <paragraph>
+                           <content styleCode="italics">Hypersensitivity:</content> anaphylaxis, angioedema, facial edema, urticaria </paragraph>
+                        <paragraph>
+                           <content styleCode="italics">Musculoskeletal:</content> rhabdomyolysis, muscle cramps </paragraph>
+                        <paragraph>
+                           <content styleCode="italics">Nervous System/Psychiatric:</content> confusion, agitation, paresthesia </paragraph>
+                        <paragraph>
+                           <content styleCode="italics">Respiratory:</content> interstitial pneumonia </paragraph>
+                        <paragraph>
+                           <content styleCode="italics">Skin:</content> toxic epidermal necrolysis/Stevens-Johnson syndrome </paragraph>
+                     </text>
+                     <effectiveTime value="20210830"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_502b69ea-bc62-44f2-99bf-3b1e2befd8e4">
+               <id root="f40ed4e7-7b80-46aa-b9ca-51430285a402"/>
+               <code code="34073-7" codeSystem="2.16.840.1.113883.6.1" displayName="DRUG INTERACTIONS SECTION"/>
+               <title>7 DRUG INTERACTIONS</title>
+               <text/>
+               <effectiveTime value="20210830"/>
+               <excerpt>
+                  <highlight>
+                     <text>
+                        <list listType="unordered" styleCode="Disc">
+                           <item>
+                              <content styleCode="underline">Drugs Dependent on Gastric pH for Absorption:</content> Systemic exposure of the concomitant drug may be significantly reduced leading to loss of efficacy. See full prescribing information for a list of interacting drugs. <linkHtml href="#LINK_48cf8afb-430d-4b7f-93c4-66504ba1deec">(7.1)</linkHtml> </item>
+                           <item>
+                              <content styleCode="underline">Tizanidine (CYP1A2) Substrate:</content> Potential for substantial increases in blood concentrations of tizanidine resulting in hypotension, bradycardia or excessive drowsiness; avoid concomitant use, if possible. <linkHtml href="#LINK_2be3b98b-31f6-439a-98a6-808849e7667f">(7.2)</linkHtml>
+                           </item>
+                        </list>
+                     </text>
+                  </highlight>
+               </excerpt>
+               <component>
+                  <section ID="LINK_48cf8afb-430d-4b7f-93c4-66504ba1deec">
+                     <id root="d362e00f-740a-4644-adfe-bbc67f6a400b"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>7.1 Drugs Dependent on Gastric pH for Absorption</title>
+                     <text>
+                        <paragraph>Famotidine can reduce the absorption of other drugs, due to its effect on reducing intragastric acidity, leading to loss of efficacy of the concomitant drug. </paragraph>
+                        <paragraph>Concomitant administration of famotidine for oral suspension with dasatinib, delavirdine mesylate, cefditoren, and fosamprenavir is not recommended. </paragraph>
+                        <paragraph>See the prescribing information for other drugs dependent on gastric pH for absorption for administration instructions, including atazanavir, erlotinib, ketoconazole, itraconazole, ledipasvir/sofosbuvir, nilotinib, and rilpivirine. </paragraph>
+                     </text>
+                     <effectiveTime value="20210830"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_2be3b98b-31f6-439a-98a6-808849e7667f">
+                     <id root="81a76811-54bc-4bbf-86d3-892ff2e7ad23"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>7.2 Tizanidine (CYP1A2 Substrate)</title>
+                     <text>
+                        <paragraph>Although not studied clinically, famotidine is considered a weak CYP1A2 inhibitor and may lead to substantial increases in blood concentrations of tizanidine, a CYP1A2 substrate. Avoid concomitant use with famotidine for oral suspension. If concomitant use is necessary, monitor for hypotension, bradycardia or excessive drowsiness. Refer to the full prescribing information for tizanidine. </paragraph>
+                     </text>
+                     <effectiveTime value="20210830"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_d8fb27d1-edc0-46b8-9cc1-d87f6735066d">
+               <id root="843d3f8a-4d58-4a50-b256-f16eb59aeae8"/>
+               <code code="43684-0" codeSystem="2.16.840.1.113883.6.1" displayName="USE IN SPECIFIC POPULATIONS SECTION"/>
+               <title>8 USE IN SPECIFIC POPULATIONS</title>
+               <text/>
+               <effectiveTime value="20210830"/>
+               <excerpt>
+                  <highlight>
+                     <text>
+                        <list listType="unordered" styleCode="Disc">
+                           <item>
+                              <content styleCode="underline">Geriatric Use:</content> Use the lowest effective dose for an elderly patient and monitor renal function. <linkHtml href="#LINK_472efa45-f489-4d87-9db0-8a309a689ef0">(2.2</linkHtml>, <linkHtml href="#LINK_6478d3f6-b00b-4cd2-a547-9d8552f59adf">5.1</linkHtml>, <linkHtml href="#LINK_1ba70efa-3f59-4ca4-bd18-d2b2f7217ba4">8.5)</linkHtml> </item>
+                           <item>
+                              <content styleCode="underline">Renal Impairment:</content> Risk of CNS adverse reactions and QT prolongation in patients with moderate and severe renal impairment; reduce the dosage in adults. <linkHtml href="#LINK_472efa45-f489-4d87-9db0-8a309a689ef0">(2.2</linkHtml>, <linkHtml href="#LINK_5e824468-9142-4aa1-a5dd-b5a7985a5549">8.6)</linkHtml>
+                           </item>
+                        </list>
+                     </text>
+                  </highlight>
+               </excerpt>
+               <component>
+                  <section ID="LINK_c7ddff79-330d-427b-b47b-400ef0464579">
+                     <id root="6541a28b-5bcd-46de-8484-2edf8988a72e"/>
+                     <code code="42228-7" codeSystem="2.16.840.1.113883.6.1" displayName="PREGNANCY SECTION"/>
+                     <title>8.1 Pregnancy</title>
+                     <text>
+                        <paragraph>
+                           <content styleCode="underline">Risk Summary </content>
+                        </paragraph>
+                        <paragraph>Available data with H<sub>2</sub>-receptor antagonists, including famotidine, in pregnant women are insufficient to establish a drug-associated risk of major birth defects, miscarriage or adverse maternal or fetal outcomes. In animal reproduction studies, no adverse development effects were observed with oral administration of famotidine at doses up to approximately 243 and 122 times, respectively, the recommended human dose of 80 mg per day for the treatment of erosive esophagitis <content styleCode="italics">(see <linkHtml href="#LINK_5e05d9f5-4a93-4b9f-ae93-620c2823b636">Data</linkHtml>)</content>. </paragraph>
+                        <paragraph>The estimated background risk for major birth defects and miscarriage for the indicated population is unknown. All pregnancies have a background risk of birth defect, loss, or other adverse outcomes. In the U.S. general population, the background risk of major birth defects and miscarriage in clinically recognized pregnancies is 2 to 4% and 15% to 20%, respectively. </paragraph>
+                     </text>
+                     <effectiveTime value="20210830"/>
+                     <component>
+                        <section ID="LINK_5e05d9f5-4a93-4b9f-ae93-620c2823b636">
+                           <id root="12c63be7-864f-40e5-8e96-914a73276b10"/>
+                           <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                           <title>
+                              <content styleCode="underline">Data</content>
+                           </title>
+                           <text>
+                              <paragraph>
+                                 <content styleCode="italics">Animal Data</content>
+                              </paragraph>
+                              <paragraph>Reproductive studies have been performed in rats and rabbits at oral doses of up to 2,000 and 500 mg/kg/day, respectively, and in both species at intravenous doses of up to 200 mg/kg/day, and have revealed no significant evidence of impaired fertility or harm to the fetus due to famotidine. While no direct fetotoxic effects have been observed, sporadic abortions occurring only in mothers displaying marked decreased food intake were seen in some rabbits at oral doses of 200 mg/kg/day (about 49 times the recommended human dose of 80 mg per day, based on body surface area) or higher. There are, however, no adequate or well-controlled studies in pregnant women. Because animal reproductive studies are not always predictive of human response, this drug should be used during pregnancy only if clearly needed.</paragraph>
+                           </text>
+                           <effectiveTime value="20210830"/>
+                        </section>
+                     </component>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_b6a0645b-75e0-4d44-80e3-18b6b0e91f71">
+                     <id root="0ebd3a30-cd40-4b33-9cbc-fa0f1503ff2f"/>
+                     <code code="77290-5" codeSystem="2.16.840.1.113883.6.1" displayName="LACTATION SECTION"/>
+                     <title>8.2 Lactation</title>
+                     <text>
+                        <paragraph>
+                           <content styleCode="underline">Risk Summary</content>
+                        </paragraph>
+                        <paragraph>There are limited data available on the presence of famotidine in human breast milk. There were no effects on the breastfed infant. There are no data on famotidine effects on milk production. Famotidine is present in the milk of lactating rats <content styleCode="italics">(see <linkHtml href="#LINK_4a3a573c-9c08-4720-baef-9f8df5bcfa10">Data</linkHtml>)</content>. </paragraph>
+                        <paragraph>The developmental and health benefits of breastfeeding should be considered along with the mother’s clinical need for famotidine and any potential adverse effects on the breastfed child from famotidine for oral suspension or from the underlying maternal condition. </paragraph>
+                     </text>
+                     <effectiveTime value="20210830"/>
+                     <component>
+                        <section ID="LINK_4a3a573c-9c08-4720-baef-9f8df5bcfa10">
+                           <id root="c8cb1aa9-c70f-450d-b12a-dea54aa2b61c"/>
+                           <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                           <title>
+                              <content styleCode="underline">Data</content>
+                           </title>
+                           <text>
+                              <paragraph>
+                                 <content styleCode="italics">Animal Data</content>
+                              </paragraph>
+                              <paragraph>Transient growth depression was observed in young rats suckling from mothers treated with maternotoxic doses of famotidine at least 600 times the usual human dose.</paragraph>
+                           </text>
+                           <effectiveTime value="20210830"/>
+                        </section>
+                     </component>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_2a76746e-04aa-4ca6-8470-1aa0e68d79ac">
+                     <id root="a4c2e265-933d-465f-b303-8268dcad0b08"/>
+                     <code code="34081-0" codeSystem="2.16.840.1.113883.6.1" displayName="PEDIATRIC USE SECTION"/>
+                     <title>8.4 Pediatric Use</title>
+                     <text>
+                        <paragraph>
+                           <content styleCode="underline">Peptic Ulcer Disease and GERD With or Without Esophagitis and Ulcerations </content>
+                        </paragraph>
+                        <paragraph>
+                           <content styleCode="italics">Pediatric Patients One Year to Less than 17 Years of Age </content>
+                        </paragraph>
+                        <paragraph>The safety and effectiveness of famotidine for oral suspension have been established in pediatric patients 1 year to less than 17 years of age for the treatment of peptic ulcer disease and GERD with or without esophagitis and ulcerations. Use of famotidine in this age group is supported by evidence from adequate and well-controlled studies of famotidine in adults with additional pharmacokinetic and pharmacodynamic data in pediatric patients 1 year to less than 17 years of age <content styleCode="italics">[see <linkHtml href="#LINK_a2f24762-1e5e-4435-ae6e-05a1dec003b5">Dosage and Administration (2.1)</linkHtml>, <linkHtml href="#LINK_341097fb-f403-4324-b506-0e5f01fc8f3a">Clinical Pharmacology (12.2</linkHtml>, <linkHtml href="#LINK_40da22ab-9880-419c-aac4-3222230c217b">12.3)</linkHtml>]</content>. The safety and effectiveness of famotidine for oral suspension for the treatment of peptic ulcer disease in pediatric patients less than one year of age have not been established. </paragraph>
+                        <paragraph>
+                           <content styleCode="underline">GERD </content>
+                        </paragraph>
+                        <paragraph>
+                           <content styleCode="italics">Pediatric Patients Less Than One Year of Age </content>
+                        </paragraph>
+                        <paragraph>The safety and effectiveness of famotidine for oral suspension have been established in pediatric patients from birth to less than 1 year of age for the treatment of GERD. The use of famotidine this is age group is supported by evidence from adequate and well-controlled studies of famotidine in adults and with supportive data in pediatric patients from birth to less than 1 year of age <content styleCode="italics">[see <linkHtml href="#LINK_a2f24762-1e5e-4435-ae6e-05a1dec003b5">Dosage and Administration (2.1)</linkHtml>, <linkHtml href="#LINK_341097fb-f403-4324-b506-0e5f01fc8f3a">Clinical Pharmacology (12.2</linkHtml>, <linkHtml href="#LINK_40da22ab-9880-419c-aac4-3222230c217b">12.3)</linkHtml>, <linkHtml href="#LINK_a8026739-9e7f-45b0-8c8a-f0a9df7596f6">Clinical Studies (14.7)</linkHtml>]</content>. </paragraph>
+                        <paragraph>
+                           <content styleCode="underline">Other Conditions </content>
+                        </paragraph>
+                        <paragraph>The safety and effectiveness for the treatment of pathological hypersecretory conditions and reduction of risk of duodenal ulcer recurrence have not been established in pediatric patients. </paragraph>
+                        <paragraph>A safe and effective dosage has not been established in pediatric patients with renal impairment. </paragraph>
+                     </text>
+                     <effectiveTime value="20210830"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_1ba70efa-3f59-4ca4-bd18-d2b2f7217ba4">
+                     <id root="7aab1182-f505-49c3-ba54-b93303334fd0"/>
+                     <code code="34082-8" codeSystem="2.16.840.1.113883.6.1" displayName="GERIATRIC USE SECTION"/>
+                     <title>8.5 Geriatric Use</title>
+                     <text>
+                        <paragraph>Of the 1,442 famotidine-treated patients in clinical studies, approximately 10% were 65 and older. In these studies, no overall differences in safety or effectiveness were observed between elderly and younger patients. In postmarketing experience, CNS adverse reactions have been reported in elderly patients with and without renal impairment receiving famotidine <content styleCode="italics">[see <linkHtml href="#LINK_6478d3f6-b00b-4cd2-a547-9d8552f59adf">Warnings and Precautions (5.1)</linkHtml>]</content>. </paragraph>
+                        <paragraph>Famotidine is known to be substantially excreted by the kidney, and the risk of adverse reactions to famotidine for oral suspension may be greater in elderly patients, particularly those with impaired renal function <content styleCode="italics">[see <linkHtml href="#LINK_5e824468-9142-4aa1-a5dd-b5a7985a5549">Use in Specific Populations (8.6)</linkHtml>]</content>. </paragraph>
+                        <paragraph>In general, use the lowest effective dose of famotidine for oral suspension for an elderly patient and monitor renal function <content styleCode="italics">[see <linkHtml href="#LINK_472efa45-f489-4d87-9db0-8a309a689ef0">Dosage and Administration (2.2)</linkHtml>]</content>. </paragraph>
+                     </text>
+                     <effectiveTime value="20210830"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_5e824468-9142-4aa1-a5dd-b5a7985a5549">
+                     <id root="13c7a4b7-e3c6-4b12-9823-83cf20720484"/>
+                     <code code="88828-9" codeSystem="2.16.840.1.113883.6.1" displayName="RENAL IMPAIRMENT SUBSECTION"/>
+                     <title>8.6 Renal Impairment</title>
+                     <text>
+                        <paragraph>CNS adverse reactions and prolonged QT intervals have been reported in patients with moderate and severe renal impairment <content styleCode="italics">[see <linkHtml href="#LINK_6478d3f6-b00b-4cd2-a547-9d8552f59adf">Warnings and Precautions (5.1)</linkHtml>]</content>. The clearance of famotidine is reduced in adults with moderate and severe renal impairment compared to adults with normal renal function <content styleCode="italics">[see <linkHtml href="#LINK_40da22ab-9880-419c-aac4-3222230c217b">Clinical Pharmacology (12.3)</linkHtml>]</content>. No dosage adjustment is needed in adults with mild renal impairment (creatinine clearance greater than or equal to 60 mL/minute). Dosage reduction is recommended in adults with moderate or severe renal impairment (creatinine clearance less than 60 mL/minute) <content styleCode="italics">[see <linkHtml href="#LINK_3d9064e2-8223-4dcf-b6c4-bcfd89cdaf1d">Dosage and Administration (2.3)</linkHtml>]</content>. Data are not available to establish a safe and effective dosage in pediatric patients with renal impairment. </paragraph>
+                     </text>
+                     <effectiveTime value="20210830"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_7672321b-456b-49d1-95e6-3b804a643ebe">
+               <id root="8a059a9b-d7ed-4f4d-bf69-b24cee972163"/>
+               <code code="34088-5" codeSystem="2.16.840.1.113883.6.1" displayName="OVERDOSAGE SECTION"/>
+               <title>10 OVERDOSAGE</title>
+               <text>
+                  <paragraph>The types of adverse reactions in overdosage of famotidine are similar to the adverse reactions encountered with use of recommended dosages <content styleCode="italics">[see <linkHtml href="#LINK_17afa651-8002-4b31-a096-ac501c23e561">Adverse Reactions (6.1)</linkHtml>]</content>. </paragraph>
+                  <paragraph>In the event of overdosage, treatment should be symptomatic and supportive. Unabsorbed material should be removed from the gastrointestinal tract, the patient should be monitored, and supportive therapy should be employed. </paragraph>
+                  <paragraph>Due to low binding to plasma proteins, famotidine is eliminated by hemodialysis. There is limited experience on the usefulness of hemodialysis as a treatment for famotidine overdosage. </paragraph>
+               </text>
+               <effectiveTime value="20210830"/>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_94dfdaa6-3893-42c2-9260-ca4a11462f2f">
+               <id root="fa4541b1-85f6-4ee6-9745-dcbe3db32b24"/>
+               <code code="34089-3" codeSystem="2.16.840.1.113883.6.1" displayName="DESCRIPTION SECTION"/>
+               <title>11 DESCRIPTION</title>
+               <text>
+                  <paragraph>The active ingredient in famotidine for oral suspension, USP is a histamine-2 (H<sub>2</sub>) receptor antagonist. Famotidine, USP is propanimidamide,<content styleCode="italics"> N'</content>-(aminosulfonyl)-3-[[[2-[(diaminomethylene)amino]-4-thiazolyl]methyl]thio]-. The empirical formula of famotidine, USP is C<sub>8</sub>H<sub>15</sub>N<sub>7</sub>O<sub>2</sub>S<sub>3</sub> and its molecular weight is 337.45. Its structural formula is:</paragraph>
+                  <renderMultiMedia referencedObject="MM1"/>
+                  <paragraph>Each 5 mL of famotidine for oral suspension, USP when prepared as directed contains 40 mg of famotidine, USP and the following inactive ingredients: citric acid monohydrate, flavors (cherry, banana, and peppermint), powdered cellulose, sucrose and xanthan gum. Added as preservatives are sodium benzoate 0.1%, methylparaben sodium 0.1% and propylparaben sodium 0.02%. </paragraph>
+                  <paragraph>Famotidine, USP is a white to pale yellow crystalline compound that is freely soluble in glacial acetic acid, slightly soluble in methanol, very slightly soluble in water, and practically insoluble in ethanol. </paragraph>
+               </text>
+               <effectiveTime value="20210830"/>
+               <component>
+                  <observationMedia ID="MM1">
+                     <text>Structural Formula</text>
+                     <value xsi:type="ED" mediaType="image/jpeg">
+                        <reference value="famotidine-for-oral-suspension-usp-1.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_bccb04cc-3991-4ea2-b6f4-04a6afd0b8f3">
+               <id root="18e3f8b6-1ca9-473a-8f9c-a1aa858a0783"/>
+               <code code="34090-1" codeSystem="2.16.840.1.113883.6.1" displayName="CLINICAL PHARMACOLOGY SECTION"/>
+               <title>12 CLINICAL PHARMACOLOGY</title>
+               <effectiveTime value="20210830"/>
+               <component>
+                  <section ID="LINK_f1abae1d-7871-43d7-bbb1-77ffe4b1ffb5">
+                     <id root="668f5fc1-1e74-4324-80a1-6cbd1aeda72f"/>
+                     <code code="43679-0" codeSystem="2.16.840.1.113883.6.1" displayName="MECHANISM OF ACTION SECTION"/>
+                     <title>12.1 Mechanism of Action</title>
+                     <text>
+                        <paragraph>Famotidine is a competitive inhibitor of histamine-2 (H<sub>2</sub>) receptors. The primary clinically important pharmacologic activity of famotidine is inhibition of gastric secretion. Both the acid concentration and volume of gastric secretion are suppressed by famotidine, while changes in pepsin secretion are proportional to volume output. </paragraph>
+                     </text>
+                     <effectiveTime value="20210830"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_4da84c96-3760-40e2-a939-5273202085ee">
+                     <id root="d20b688b-3d99-42ff-88b0-465251d684b8"/>
+                     <code code="43681-6" codeSystem="2.16.840.1.113883.6.1" displayName="PHARMACODYNAMICS SECTION"/>
+                     <title>12.2 Pharmacodynamics</title>
+                     <text>
+                        <paragraph>
+                           <content styleCode="underline">Adults </content>
+                        </paragraph>
+                        <paragraph>Famotidine inhibited both basal and nocturnal gastric secretion, as well as secretion stimulated by food and pentagastrin. After oral administration of famotidine, the onset of the antisecretory effect occurred within one hour; the maximum effect was dose-dependent, occurring within one to three hours. Duration of inhibition of secretion by doses of 20 mg and 40 mg was 10 to 12 hours. </paragraph>
+                        <paragraph>Single evening oral doses of 20 mg and 40 mg inhibited basal and nocturnal acid secretion in all subjects; mean nocturnal gastric acid secretion was inhibited by 86% and 94%, respectively, for a period of at least 10 hours. The same doses given in the morning suppressed food-stimulated acid secretion in all subjects. The mean suppression was 76% and 84%, respectively, 3 to 5 hours after administration, and 25% and 30%, respectively, 8 to 10 hours after administration. In some subjects who received the 20 mg dose, however, the antisecretory effect was dissipated within 6 to 8 hours. There was no cumulative effect with repeated doses. The nocturnal intragastric pH was raised by evening doses of 20 mg and 40 mg of famotidine to mean values of 5.0 and 6.4, respectively. When famotidine was given after breakfast, the basal daytime interdigestive pH at 3 and 8 hours after 20 mg or 40 mg of famotidine was raised to about 5. </paragraph>
+                        <paragraph>Famotidine had little or no effect on fasting or postprandial serum gastrin levels. Gastric emptying and exocrine pancreatic function were not affected by famotidine. </paragraph>
+                        <paragraph>In clinical pharmacology studies, systemic effects of famotidine in the CNS, cardiovascular, respiratory or endocrine systems were not noted. Also, no anti-androgenic effects were noted. Serum hormone levels, including prolactin, cortisol, thyroxine (T<sub>4</sub>), and testosterone, were not altered after treatment with famotidine. </paragraph>
+                        <paragraph>
+                           <content styleCode="underline">Pediatric Patients </content>
+                        </paragraph>
+                        <paragraph>Pharmacodynamics of famotidine, assessed by gastric pH, were evaluated in 5 pediatric patients 2 years to 13 years of age using the sigmoid E<sub>max</sub> model. These data suggest that the relationship between serum concentration of famotidine and gastric acid suppression is similar to that observed in adults (see Table 3). </paragraph>
+                        <table width="99.9%" cellspacing="0" cellpadding="0" border="1">
+                           <col width="100%"/>
+                           <col/>
+                           <tbody>
+                              <tr>
+                                 <td colspan="2" styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>
+                                       <content styleCode="bold">Table 3: Serum Concentrations of Famotidine Associated with Gastric Acid Reduction in Famotidine-Treated Pediatric and Adult Patients<sup>a</sup>
+                                       </content>
+                                    </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule"/>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>
+                                       <content styleCode="bold">EC<sub>50</sub> (ng/mL)<sup>a</sup>
+                                       </content>
+                                    </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>Pediatric Patients </paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>26 ± 13</paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>Adults </paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule"/>
+                              </tr>
+                              <tr>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>Healthy adult subjects </paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>26.5 ± 10.3</paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>Adult patients with upper GI bleeding </paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>18.7 ± 10.8</paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td colspan="2" styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>
+                                       <sup>a</sup> Using the Sigmoid E<sub>max</sub> model, serum concentrations of famotidine associated with 50% maximum gastric acid reduction are presented as means ± SD. </paragraph>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <paragraph>In a study examining the effect of famotidine on gastric pH and duration of acid suppression in pediatric patients, four pediatric patients ages 11 to 15 years of age using the oral formulation at a dose of 0.5 mg/kg, maintained a gastric pH above 5 for 13.5 ± 1.8 hours. </paragraph>
+                     </text>
+                     <effectiveTime value="20210830"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_40da22ab-9880-419c-aac4-3222230c217b">
+                     <id root="46c36c53-a436-4f0e-b8a1-af92e49214f8"/>
+                     <code code="43682-4" codeSystem="2.16.840.1.113883.6.1" displayName="PHARMACOKINETICS SECTION"/>
+                     <title>12.3 Pharmacokinetics</title>
+                     <text>
+                        <paragraph>
+                           <content styleCode="underline">Absorption </content>
+                        </paragraph>
+                        <paragraph>Famotidine is incompletely absorbed. The bioavailability of oral doses is 40% to 45%. Bioavailability may be slightly increased by food, or slightly decreased by antacids; however, these effects are of no clinical consequence. </paragraph>
+                        <paragraph>Peak famotidine plasma levels occur in 1 to 3 hours. Plasma levels after multiple dosages are similar to those after single doses. </paragraph>
+                        <paragraph>
+                           <content styleCode="underline">Distribution </content>
+                        </paragraph>
+                        <paragraph>Fifteen to 20% of famotidine in plasma is protein bound. </paragraph>
+                        <paragraph>
+                           <content styleCode="underline">Elimination </content>
+                        </paragraph>
+                        <paragraph>
+                           <content styleCode="italics">Metabolism </content>
+                        </paragraph>
+                        <paragraph>Famotidine undergoes minimal first-pass metabolism. Twenty-five to 30% of an oral dose was recovered in the urine as unchanged compound. The only metabolite identified in humans is the S-oxide.</paragraph>
+                        <paragraph>
+                           <content styleCode="italics">Excretion </content>
+                        </paragraph>
+                        <paragraph>Famotidine has an elimination half-life of 2.5 to 3.5 hours. Famotidine is eliminated by renal (65% to 70%) and metabolic (30% to 35%) routes. Renal clearance is 250 to 450 mL/minute, indicating some tubular excretion. </paragraph>
+                        <paragraph>
+                           <content styleCode="underline">Specific Populations </content>
+                        </paragraph>
+                        <paragraph>
+                           <content styleCode="italics">Pediatric Patients </content>
+                        </paragraph>
+                        <paragraph>
+                           <content styleCode="italics">
+                              <content styleCode="underline">Infants from birth to 12 Months </content>
+                           </content>
+                        </paragraph>
+                        <paragraph>After a single oral dose administration of 0.5 mg/kg orally in patients from birth to 12 months, the bioavailability is approximately 42%. </paragraph>
+                        <paragraph>The AUC increased 1.4-fold after single oral dose of 1 mg/kg compared to 0.5 mg/kg and 2.7-fold after multiple oral doses of 1 mg/kg compared to 0.5 mg/kg. </paragraph>
+                        <paragraph>Plasma clearance is reduced and elimination half-life is prolonged in pediatric patients from birth to 3 months of age compared to older pediatric patients. Following intravenous administration of 0.5 mg/kg, CL<sub>Total</sub> was 0.13 ± 0.06 L/hr/kg, 0.21 ± 0.06 L/hr/kg, and 0.49 ± 0.17 L/hr/kg in pediatric patients &lt;1 month of age, &lt;3 months of age, and &gt;3 to 12 months of age, respectively. Elimination half-life was 10.5 hours, 8.1 hours, and 4.5 hours in pediatric patients &lt;1 month of age, &lt;3 months of age, and &gt;3 to 12 months of age, respectively. </paragraph>
+                        <paragraph>
+                           <content styleCode="italics">
+                              <content styleCode="underline">Patients 11 Years to 15 Years </content>
+                           </content>
+                        </paragraph>
+                        <paragraph>The mean bioavailability in 8 pediatric patients was 50% compared to adult values of 42% to 49%. </paragraph>
+                        <paragraph>Pharmacokinetic parameters in pediatrics 11 years to 15 years is compared to infants from birth to 12 months in Table 4. </paragraph>
+                        <table width="99.9%" cellspacing="0" cellpadding="0" border="1">
+                           <col width="100%"/>
+                           <col/>
+                           <col/>
+                           <tbody>
+                              <tr>
+                                 <td colspan="3" styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>
+                                       <content styleCode="bold">Table 4: Mean Pharmacokinetic Parameters Following a Single Oral Dose of 0.5 mg/kg in Infants and Pediatric Patients</content>
+                                    </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule"/>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>Infants <br/> from Birth to 12 Months <br/> (N=5)</paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>Pediatric Patients <br/> 11 Years to 15 Years <br/> (N=8)</paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>AUC<sub>0-∞</sub> (ng*hr/mL) <sup>a</sup>
+                                    </paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>645 ± 249</paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>580 ± 60</paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>C<sub>max</sub> (ng/mL) </paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>79.2</paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>97.3</paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>T<sub>max</sub> (hr)<sup>b</sup>
+                                    </paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>2.0 (1.0, 4.1)<sup>c</sup>
+                                    </paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>2.3 (2.1, 2.9)<sup>d</sup>
+                                    </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>T<sub>1/2</sub> (hr) </paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>5.82</paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>2.13</paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td colspan="3" styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>
+                                       <sup>a</sup> arithmetic mean ± S.D. </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td colspan="3" styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>
+                                       <sup>b</sup> median </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td colspan="3" styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>
+                                       <sup>c</sup> observed minimum and maximum values </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td colspan="3" styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>
+                                       <sup>d</sup> reported minimum and maximum values </paragraph>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <paragraph>
+                           <content styleCode="italics">Patients with Renal Impairment </content>
+                        </paragraph>
+                        <paragraph>In adult patients with severe renal impairment (creatinine clearance less than 30 mL/minute), the systemic exposure (AUC) of famotidine increased at least 5-fold. In adult patients with moderate renal impairment (creatinine clearance between 30 to 60 mL/minute), the AUC of famotidine increased at least 2-fold <content styleCode="italics">[see <linkHtml href="#LINK_3d9064e2-8223-4dcf-b6c4-bcfd89cdaf1d">Dosage and Administration (2.3)</linkHtml>, <linkHtml href="#LINK_5e824468-9142-4aa1-a5dd-b5a7985a5549">Use in Specific Populations (8.6)</linkHtml>]</content>. </paragraph>
+                        <paragraph>
+                           <content styleCode="underline">Drug Interaction Studies </content>
+                        </paragraph>
+                        <paragraph>
+                           <content styleCode="italics">Human Organic Anion Transporter (OAT) 1 and 3:</content>
+                           <content styleCode="italics">In vitro</content> studies indicate that famotidine is a substrate for OAT1 and OAT3. Following co-administration of probenecid (1,500 mg), an inhibitor of OAT1 and OAT3, with a single oral 20 mg dose of famotidine in 8 healthy subjects, the serum AUC<sub>0-10h</sub> of famotidine increased from 424 to 768 ng∙hr/mL and the maximum serum concentration (C<sub>max</sub>) increased from 73 to 113 ng/mL. Renal clearance, urinary excretion rate and amount of famotidine excreted unchanged in urine were decreased. The clinical relevance of this interaction is unknown. </paragraph>
+                        <paragraph>
+                           <content styleCode="italics">Multidrug and Toxin Extrusion Protein 1 (MATE-1):</content> An <content styleCode="italics">in vitro</content> study showed that famotidine is an inhibitor of MATE-1. However, no clinically significant interaction with metformin, a substrate for MATE-1, was observed.</paragraph>
+                        <paragraph>
+                           <content styleCode="italics">CYP1A2:</content> Famotidine is a weak CYP1A2 inhibitor. </paragraph>
+                     </text>
+                     <effectiveTime value="20210830"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_5daa79e6-a212-4003-bec5-c4661f04ac51">
+               <id root="61a505b3-3778-41d7-ae2c-03bd035136f7"/>
+               <code code="43680-8" codeSystem="2.16.840.1.113883.6.1" displayName="NONCLINICAL TOXICOLOGY SECTION"/>
+               <title>13 NONCLINICAL TOXICOLOGY</title>
+               <effectiveTime value="20210830"/>
+               <component>
+                  <section ID="LINK_de7b6a6c-102a-443a-8563-e9fb72cae2d9">
+                     <id root="f56541eb-1418-4cf8-9373-24893505b5f5"/>
+                     <code code="34083-6" codeSystem="2.16.840.1.113883.6.1" displayName="CARCINOGENESIS &amp; MUTAGENESIS &amp; IMPAIRMENT OF FERTILITY SECTION"/>
+                     <title>13.1 Carcinogenesis, Mutagenesis, Impairment of Fertility</title>
+                     <text>
+                        <paragraph>Carcinogenic potential of famotidine was assessed in a 106-week oral carcinogenicity study in rats and a 92-week oral carcinogenicity study in mice. In the 106-week study in rats and the 92-week study in mice at oral doses of up to 2,000 mg/kg/day (approximately 243 and 122 times, respectively, based on body surface area, the recommended human dose of 80 mg per day for the treatment of erosive esophagitis), there was no evidence of carcinogenic potential for famotidine. </paragraph>
+                        <paragraph>Famotidine was negative in the microbial mutagen test (Ames test) using <content styleCode="italics">Salmonella typhimurium </content>and<content styleCode="italics"> Escherichia coli</content> with or without rat liver enzyme activation at concentrations up to 10,000 mcg/plate. In <content styleCode="italics">in vivo</content> studies in mice, with a micronucleus test and a chromosomal aberration test, no evidence of a mutagenic effect was observed. </paragraph>
+                        <paragraph>In studies with rats given oral doses of up to 2,000 mg/kg/day (approximately 243 times, based on body surface area, the recommended human dose of 80 mg per day) fertility and reproductive performance were not affected. </paragraph>
+                     </text>
+                     <effectiveTime value="20210830"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_995374a6-9348-42d8-aeae-912d8e71b14b">
+               <id root="275c83fe-ac12-4aad-bec2-aacb8df891e5"/>
+               <code code="34092-7" codeSystem="2.16.840.1.113883.6.1" displayName="CLINICAL STUDIES SECTION"/>
+               <title>14 CLINICAL STUDIES</title>
+               <text>
+                  <paragraph>The safety and effectiveness of famotidine for oral suspension have been established based on adequate and well-controlled studies of another oral famotidine product. The following is a summary of the efficacy results reported in those studies. </paragraph>
+               </text>
+               <effectiveTime value="20210830"/>
+               <component>
+                  <section ID="LINK_d5b92a97-4557-4a58-95c4-8286ec98afbc">
+                     <id root="1ef59fb0-8214-43df-a912-168ea4838aef"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>14.1 Active Duodenal Ulcer</title>
+                     <text>
+                        <paragraph>In a U.S. multicenter, double-blind trial in adult outpatients with endoscopically confirmed duodenal ulcer (DU), orally administered famotidine was compared to placebo. As shown in Table 4, 70% of patients treated with famotidine 40 mg at bedtime were healed by Week 4. Most patients’ DU healed within 4 weeks. </paragraph>
+                        <paragraph>Patients not healed by Week 4 were continued in the trial. By Week 8, 83% of patients treated with famotidine had healed DU, compared to 45% of patients treated with placebo. The incidence of DU healing with famotidine was greater than with placebo at each time point based on proportion of endoscopically confirmed healed DUs. Trials have not assessed the safety of famotidine in uncomplicated active DU for periods of more than 8 weeks. </paragraph>
+                        <table width="99.9%" cellspacing="0" cellpadding="0" border="1">
+                           <col width="100%"/>
+                           <col/>
+                           <col/>
+                           <col/>
+                           <tbody>
+                              <tr>
+                                 <td colspan="4" styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>
+                                       <content styleCode="bold">Table 4: Patients with Endoscopically Confirmed Healed Duodenal Ulcers</content>
+                                    </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule"/>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>Famotidine <br/> 40 mg at bedtime <br/> (N=89)</paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>Famotidine <br/> 20 mg twice daily <br/> (N=84)</paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>Placebo <br/> at bedtime <br/> (N=97)</paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>Week 2 </paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>32%<sup>a</sup>
+                                    </paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>38%<sup>a</sup>
+                                    </paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>17%</paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>Week 4 </paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>70%<sup>a</sup>
+                                    </paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>67%<sup>a</sup>
+                                    </paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>31%</paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td colspan="4" styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>
+                                       <sup>a</sup>p&lt;0.001 vs. placebo </paragraph>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <paragraph>In this study, time to relief of daytime and nocturnal pain was shorter for patients receiving famotidine than for patients receiving placebo; patients receiving famotidine also took less antacid than patients receiving placebo. </paragraph>
+                     </text>
+                     <effectiveTime value="20210830"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_fe499f15-4cfa-4184-8492-ac9451c75acc">
+                     <id root="c24ab82d-66ac-4c08-b5c2-1d97c2cf1ef9"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>14.2 Active Gastric Ulcer</title>
+                     <text>
+                        <paragraph>In both a U.S. and an international multicenter, double-blind trials in patients with endoscopically confirmed active gastric ulcer (GU), orally administered famotidine 40 mg at bedtime was compared to placebo. Antacids were permitted during the trials, but consumption was not significantly different between the famotidine and placebo groups. </paragraph>
+                        <paragraph>As shown in Table 5, the incidence of GU healing confirmed by endoscopy (dropouts counted as unhealed) with famotidine was greater than placebo at Weeks 6 and 8 in the U.S. trial, and at Weeks 4, 6 and 8 in the international trial.</paragraph>
+                        <paragraph>In these trials, most famotidine-treated patients healed within 6 weeks. Trials have not assessed the safety of famotidine in uncomplicated active GU for periods of more than 8 weeks. </paragraph>
+                        <table width="99.9%" cellspacing="0" cellpadding="0" border="1">
+                           <col width="100%"/>
+                           <col/>
+                           <col/>
+                           <col/>
+                           <col/>
+                           <tbody>
+                              <tr>
+                                 <td colspan="5" styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>
+                                       <content styleCode="bold">Table 5: Patients with Endoscopically Confirmed Healed Gastric Ulcers</content>
+                                    </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td rowspan="2" styleCode=" Botrule Toprule Lrule Rrule"/>
+                                 <td colspan="2" styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>U.S. Study (N=149)</paragraph>
+                                 </td>
+                                 <td colspan="2" styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>International Study (N=294)</paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>Famotidine <br/> 40 mg at bedtime <br/> (N=74)</paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>Placebo <br/> at bedtime <br/> (N=75)</paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>Famotidine <br/> 40 mg at bedtime <br/> (N=149)</paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>Placebo <br/> at bedtime <br/> (N=145)</paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>Week 4 </paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>45%</paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>39%</paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>47%<sup>a</sup>
+                                    </paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>31%</paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>Week 6 </paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>66%<sup>a</sup>
+                                    </paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>44%</paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>65%<sup>a</sup>
+                                    </paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>46%</paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>Week 8 </paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>78%<sup>b</sup>
+                                    </paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>64%</paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>80%<sup>a</sup>
+                                    </paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>54%</paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td colspan="5" styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>
+                                       <sup>a</sup> p≤0.01 vs. placebo </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td colspan="5" styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>
+                                       <sup>b</sup> p≤0.05 vs. placebo </paragraph>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <paragraph>Time to complete relief of daytime and nighttime pain was statistically significantly shorter for patients receiving famotidine than for patients receiving placebo; however, neither trial demonstrated a statistically significant difference in the proportion of patients whose pain was relieved by the end of the trial (Week 8). </paragraph>
+                     </text>
+                     <effectiveTime value="20210830"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_2b3d2a4b-bff1-494a-8f8a-a1d7e1dc0428">
+                     <id root="e3212393-6d34-4f4f-9acc-d03c122699f3"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>14.3 Symptomatic Gastroesophageal Reflux Disease (GERD)</title>
+                     <text>
+                        <paragraph>Orally administered famotidine was compared to placebo in a U.S. trial that enrolled patients with symptoms of GERD and without endoscopic evidence of esophageal erosion or ulceration. As shown in Table 6, patients treated with famotidine 20 mg twice daily had greater improvement in symptomatic GERD than patients treated with 40 mg at bedtime or placebo. </paragraph>
+                        <table width="99.9%" cellspacing="0" cellpadding="0" border="1">
+                           <col width="100%"/>
+                           <col/>
+                           <col/>
+                           <col/>
+                           <tbody>
+                              <tr>
+                                 <td colspan="4" styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>
+                                       <content styleCode="bold">Table 6: Patients with Improvement of Symptomatic GERD (N=376)</content>
+                                    </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule"/>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>Famotidine <br/> 20 mg twice daily <br/> (N=154)</paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>Famotidine <br/> 40 mg at bedtime <br/> (N=149)</paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>Placebo <br/> at bedtime <br/> (N=73)</paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>Week 6 </paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>82%<sup>a</sup>
+                                    </paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>69%</paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>62%</paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td colspan="4" styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>
+                                       <sup>a</sup> p≤0.01 vs. placebo </paragraph>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </text>
+                     <effectiveTime value="20210830"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_9cb7146f-0fbd-493b-bfaf-1172114dd975">
+                     <id root="e1bb09cb-f87b-4fe8-83e3-181c3cb64f2c"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>14.4 Erosive Esophagitis due to GERD</title>
+                     <text>
+                        <paragraph>Healing of endoscopically verified erosion and symptomatic improvement were studied in a U.S. and an international double-blind trials. Healing was defined as complete resolution of all erosions visible with endoscopy. The U.S. trial comparing orally administered famotidine 40 mg twice daily to placebo and orally administered famotidine 20 mg twice daily showed a significantly greater percentage of healing of erosive esophagitis for famotidine 40 mg twice daily at Weeks 6 and 12 (Table 7). </paragraph>
+                        <table width="99.9%" cellspacing="0" cellpadding="0" border="1">
+                           <col width="100%"/>
+                           <col/>
+                           <col/>
+                           <col/>
+                           <tbody>
+                              <tr>
+                                 <td colspan="4" styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>
+                                       <content styleCode="bold">Table 7: Patients with Endoscopic Healing of Erosive Esophagitis - U.S. Study (N=318)</content>
+                                    </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule"/>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>Famotidine <br/> 40 mg twice daily <br/> (N=127)</paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>Famotidine <br/> 20 mg twice daily <br/> (N=125)</paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>Placebo <br/> twice daily <br/> (N=66)</paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>Week 6 </paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>48%<sup>a,b</sup>
+                                    </paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>32%</paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>18%</paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>Week 12 </paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>69%<sup>a,c</sup>
+                                    </paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>54%<sup>a</sup>
+                                    </paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>29%</paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td colspan="4" styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>
+                                       <sup>a</sup> p≤0.01 vs. placebo</paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td colspan="4" styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>
+                                       <sup>b</sup> p≤0.01 vs. famotidine 20 mg twice daily</paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td colspan="4" styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>
+                                       <sup>c</sup> p≤0.05 vs. famotidine 20 mg twice daily </paragraph>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <paragraph>As compared to placebo, patients in the U.S. trial who received famotidine had faster relief of daytime and nighttime heartburn, and a greater percentage of famotidine-treated patients experienced complete relief of nighttime heartburn. These differences were statistically significant. </paragraph>
+                        <paragraph>In the international trial, when orally administered famotidine 40 mg twice daily was compared to orally administered ranitidine 150 mg twice daily, a statistically significantly greater percentage of healing of erosive esophagitis was observed with famotidine 40 mg twice daily at Week 12 (Table 8). There was, however, no significant difference in symptom relief among treatment groups. </paragraph>
+                        <table width="99.9%" cellspacing="0" cellpadding="0" border="1">
+                           <col width="100%"/>
+                           <col/>
+                           <col/>
+                           <col/>
+                           <tbody>
+                              <tr>
+                                 <td colspan="4" styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>
+                                       <content styleCode="bold">Table 8: Patients with Endoscopic Healing of Erosive Esophagitis - International Study (N=440)</content>
+                                    </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule"/>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>Famotidine <br/> 40 mg twice daily <br/> (N=175)</paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>Famotidine <br/> 20 mg twice daily <br/> (N=93)</paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>Ranitidine <br/> 150 mg twice daily <br/> (N=172)</paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>Week 6 </paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>48%</paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>52%</paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>42%</paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>Week 12 </paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>71%<sup>a</sup>
+                                    </paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>68%</paragraph>
+                                 </td>
+                                 <td styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>60%</paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td colspan="4" styleCode=" Botrule Toprule Lrule Rrule">
+                                    <paragraph>
+                                       <sup>a</sup> p≤0.05 vs ranitidine 150 mg twice daily </paragraph>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </text>
+                     <effectiveTime value="20210830"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_aab45f23-83cc-4dd9-9b3b-d6133d78eb64">
+                     <id root="8f2f357b-890e-4446-90f9-e62113d50205"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>14.5 Pathological Hypersecretory Conditions</title>
+                     <text>
+                        <paragraph>In trials of patients with pathological hypersecretory conditions such as Zollinger-Ellison syndrome with or without multiple endocrine neoplasias, famotidine significantly inhibited gastric acid secretion and controlled associated symptoms. Orally administered famotidine dosages from 20 mg to 160 mg every 6 hours maintained basal acid secretion below 10 mEq/hour; initial dosages were titrated to the individual patient need and subsequent adjustments were necessary with time in some patients. </paragraph>
+                     </text>
+                     <effectiveTime value="20210830"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_f99c0883-67c7-4185-8e2b-bc0d921c2dfe">
+                     <id root="8e22d5cf-8a95-4849-b775-50fd08cb01a4"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>14.6 Risk Reduction of Duodenal Ulcer Recurrence</title>
+                     <text>
+                        <paragraph>Two randomized, double-blind, multicenter trials in patients with endoscopically confirmed healed DUs demonstrated that patients receiving treatment with orally administered famotidine 20 mg at bedtime had lower rates of DU recurrence, as compared with placebo. </paragraph>
+                        <list listType="unordered" styleCode="Disc">
+                           <item>In the U.S. trial, DU recurrence within 12 months was 2.4 times greater in patients treated with placebo than in the patients treated with famotidine. The 89 famotidine-treated patients had a cumulative observed DU recurrence rate of 23%, compared to a 57% in the 89 patients receiving placebo (p&lt;0.01). </item>
+                           <item>In the international trial, the cumulative observed DU recurrence within 12 months in the 307 famotidine-treated patients was 36%, compared to 76% in the 325 patients who received placebo (p&lt;0.01). </item>
+                        </list>
+                        <paragraph>Controlled trials have not extended beyond one year. </paragraph>
+                     </text>
+                     <effectiveTime value="20210830"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_a8026739-9e7f-45b0-8c8a-f0a9df7596f6">
+                     <id root="fcd92936-23bd-4215-ad48-f24785f22136"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>14.7 GERD in Pediatric Patients Less than 1 Year of Age</title>
+                     <text>
+                        <paragraph>In a double-blind, randomized, treatment-withdrawal study, 35 pediatric patients less than 1 year of age who were diagnosed with GERD, primarily by history of vomiting (spitting up) and irritability (fussiness), were treated for up to 4 weeks with famotidine oral suspension 0.5 mg/kg or 1 mg/kg administered once daily for patients less than 3 months of age and administered twice daily for patients 3 months to less than 12 months of age. Caregivers were instructed to provide conservative treatment including thickened feedings. After 4 weeks of treatment, patients were randomly withdrawn from the treatment and followed an additional 4 weeks for vomiting (spitting up), irritability (fussiness) and global assessments of improvement. The study patients ranged in age at entry from 1.3 to 10.5 months (mean 5.6 ± 2.9 months), 57% were female, 91% were white and 6% were black. Most patients (27/35) continued into the treatment-withdrawal phase of the study. Most patients improved during the initial treatment phase of the study. Results of the treatment-withdrawal phase were difficult to interpret because of small numbers of patients.</paragraph>
+                     </text>
+                     <effectiveTime value="20210830"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_a0b45d85-af35-4ea1-b85b-0827eb4c813b">
+               <id root="4eadffc0-e73a-453d-914d-55561edbe1e6"/>
+               <code code="34069-5" codeSystem="2.16.840.1.113883.6.1" displayName="HOW SUPPLIED SECTION"/>
+               <title>16 HOW SUPPLIED/STORAGE AND HANDLING</title>
+               <text>
+                  <paragraph>Famotidine for oral suspension, USP is supplied as follows:</paragraph>
+                  <table width="99.9%" cellspacing="0" cellpadding="0" border="1">
+                     <col width="1pt"/>
+                     <col width="12.54%"/>
+                     <col width="12.52%"/>
+                     <col width="59.96%"/>
+                     <tbody>
+                        <tr>
+                           <td>
+                              <paragraph>
+                                 <content styleCode="bold">NDC</content>
+                              </paragraph>
+                           </td>
+                           <td styleCode=" Botrule Toprule Lrule Rrule">
+                              <paragraph>
+                                 <content styleCode="bold">Strength</content>
+                              </paragraph>
+                           </td>
+                           <td styleCode=" Botrule Toprule Lrule Rrule">
+                              <paragraph>
+                                 <content styleCode="bold">Quantity</content>
+                              </paragraph>
+                           </td>
+                           <td styleCode=" Botrule Toprule Lrule Rrule">
+                              <paragraph>
+                                 <content styleCode="bold">Description</content>
+                              </paragraph>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td styleCode=" Botrule Toprule Lrule Rrule">
+                              <paragraph>69238-­2090-4 </paragraph>
+                           </td>
+                           <td styleCode=" Botrule Toprule Lrule Rrule">
+                              <paragraph>40 mg </paragraph>
+                           </td>
+                           <td styleCode=" Botrule Toprule Lrule Rrule">
+                              <paragraph>Bottle </paragraph>
+                           </td>
+                           <td styleCode=" Botrule Toprule Lrule Rrule">
+                              <paragraph>white to off-white granular powder. When constituted as directed, famotidine for oral suspension, USP is a smooth, mobile, white to off-white homogeneous suspension with a cherry-banana-peppermint flavor free from lumps, containing 40 mg of famotidine, USP per 5 mL.  </paragraph>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <paragraph>Prior to dispensing, constitute famotidine for oral suspension, USP <content styleCode="italics">[see <linkHtml href="#LINK_3d9064e2-8223-4dcf-b6c4-bcfd89cdaf1d">Dosage and Administration (2.3)</linkHtml>]</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="underline">Storage </content>
+                  </paragraph>
+                  <paragraph>Store famotidine for oral suspension, USP dry powder and constituted suspension at 20° to 25°C (68° to 77°F); excursions permitted between 15° to 30°C (59° to 86°F) [see USP Controlled Room Temperature]. </paragraph>
+                  <paragraph>Protect from freezing. Discard unused constituted suspension after 30 days. </paragraph>
+                  <paragraph>Dispense in a USP tight, light-resistant container. </paragraph>
+               </text>
+               <effectiveTime value="20210830"/>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_7f1499bb-6eb0-433e-ad99-1e4cdeab02da">
+               <id root="c1482cbc-bc87-4286-af5e-5d93b105c392"/>
+               <code code="34076-0" codeSystem="2.16.840.1.113883.6.1" displayName="INFORMATION FOR PATIENTS SECTION"/>
+               <title>17 PATIENT COUNSELING INFORMATION</title>
+               <text>
+                  <paragraph>
+                     <content styleCode="underline">Central Nervous System (CNS) Adverse Reactions </content>
+                  </paragraph>
+                  <paragraph>Advise elderly patients and those with moderate and severe renal impairment of the risk of CNS adverse reactions, including confusion, delirium, hallucinations, disorientation, agitation, seizures, and lethargy <content styleCode="italics">[see <linkHtml href="#LINK_6478d3f6-b00b-4cd2-a547-9d8552f59adf">Warnings and Precautions (5.1)</linkHtml>]</content>. Report symptoms immediately to a healthcare provider. </paragraph>
+                  <paragraph>
+                     <content styleCode="underline">QT Prolongation </content>
+                  </paragraph>
+                  <paragraph>Advise patients with moderate and severe renal impairment of the risk of QT interval prolongation <content styleCode="italics">[see <linkHtml href="#LINK_5e824468-9142-4aa1-a5dd-b5a7985a5549">Use in Specific Populations (8.6)</linkHtml>]</content>. Report new cardiac symptoms, such as palpitations, fainting and dizziness or lightheadedness immediately to a healthcare provider. </paragraph>
+                  <paragraph>
+                     <content styleCode="underline">Administration </content>
+                  </paragraph>
+                  <paragraph>Advise patients to take and caregivers to administer: </paragraph>
+                  <list listType="unordered" styleCode="Disc">
+                     <item>Famotidine once daily before bedtime or twice daily in the morning and before bedtime, as recommended. <paragraph>Advise patients and caregivers: </paragraph>
+                     </item>
+                     <item>Famotidine may be taken with or without food. </item>
+                     <item>Famotidine may be given with antacids. </item>
+                  </list>
+                  <paragraph>Distributed by: <br/>
+                     <content styleCode="bold">Amneal Pharmaceuticals LLC</content>
+                     <br/> Bridgewater, NJ 08807</paragraph>
+                  <paragraph>Rev. 08-2021-00</paragraph>
+               </text>
+               <effectiveTime value="20210830"/>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_3d87df18-2dda-4d16-b4be-ede5d6584ea0">
+               <id root="8236cfba-2d97-4ad9-abe3-b64f296195a0"/>
+               <code code="51945-4" codeSystem="2.16.840.1.113883.6.1" displayName="PACKAGE LABEL.PRINCIPAL DISPLAY PANEL"/>
+               <title>PRINCIPAL DISPLAY PANEL</title>
+               <text>
+                  <renderMultiMedia referencedObject="MM2"/>
+               </text>
+               <effectiveTime value="20210830"/>
+               <component>
+                  <observationMedia ID="MM2">
+                     <text>label</text>
+                     <value xsi:type="ED" mediaType="image/jpeg">
+                        <reference value="famotidine-for-oral-suspension-usp-2.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+      </structuredBody>
+   </component>
+</document>

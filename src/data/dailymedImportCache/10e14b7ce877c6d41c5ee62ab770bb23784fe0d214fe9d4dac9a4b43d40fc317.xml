@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="http://www.accessdata.fda.gov/spl/stylesheet/spl.xsl" type="text/xsl"?>
+<document xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 http://www.accessdata.fda.gov/spl/schema/spl.xsd">
+   <id root="984e1bfa-732a-4fd6-af74-11daf34b0b12"/>
+   <code code="34390-5" codeSystem="2.16.840.1.113883.6.1" displayName="HUMAN OTC DRUG LABEL"/>
+   <title>BodyAnew Fatigue HCP Tablet </title>
+   <effectiveTime value="20150309"/>
+   <setId root="2e289c15-23b8-4195-8887-f87c4e12e02f"/>
+   <versionNumber value="1"/>
+   <author>
+      <time/>
+      <assignedEntity>
+         <representedOrganization>
+            <id root="1.3.6.1.4.1.519.1" extension="079324099"/>
+            <name>MediNatura Inc</name>
+            <assignedEntity>
+               <assignedOrganization>
+                  <assignedEntity>
+                     <assignedOrganization>
+                        <id root="1.3.6.1.4.1.519.1" extension="102783016"/>
+                        <name>MediNatura Inc</name>
+                     </assignedOrganization>
+                     <performance>
+                        <actDefinition>
+                           <code code="C43360" displayName="manufacture" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <product>
+                              <manufacturedProduct classCode="MANU">
+                                 <manufacturedMaterialKind>
+                                    <code code="62795-1032" codeSystem="2.16.840.1.113883.6.69"/>
+                                 </manufacturedMaterialKind>
+                              </manufacturedProduct>
+                           </product>
+                        </actDefinition>
+                     </performance>
+                  </assignedEntity>
+               </assignedOrganization>
+            </assignedEntity>
+         </representedOrganization>
+      </assignedEntity>
+   </author>
+   <component>
+      <structuredBody>
+         <component>
+            <section>
+               <id root="293fb67a-58c6-494d-ad70-edb12c07b36e"/>
+               <code code="48780-1" codeSystem="2.16.840.1.113883.6.1" displayName="SPL product data elements section"/>
+               <title/>
+               <text/>
+               <effectiveTime value="20150309"/>
+               <subject>
+                  <manufacturedProduct>
+                     <manufacturedProduct>
+                        <code code="62795-1032" codeSystem="2.16.840.1.113883.6.69"/>
+                        <name>BodyAnew Fatigue HCP</name>
+                        <formCode code="C42998" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TABLET"/>
+                        <asEntityWithGeneric>
+                           <genericMedicine>
+                              <name>APIS MELLIFERA, TRIBASIC CALCIUM PHOSPHATE, SOLANUM DULCAMARA TOP, EQUISETUM HYEMALE, FERROUS IODIDE, FUMARIA OFFICINALIS FLOWERING TOP, GENTIANA LUTEA ROOT, GERANIUM ROBERTIANUM, NASTURTIUM OFFICINALE, SODIUM SULFATE,PINUS SYLVESTRIS LEAFY TWIG, SMILAX REGELII ROOT, SCROPHULARIA NODOSA, LOBARIA PULMONARIA, TEUCRIUM SCORODONIA FLOWERING TOP, and TEUCRIUM SCORODONIA FLOWERING TOP</name>
+                           </genericMedicine>
+                        </asEntityWithGeneric>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator value="6" unit="[hp_X]"/>
+                              <denominator value="1" unit="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="7S82P3R43Z" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>APIS MELLIFERA</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="7S82P3R43Z" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>APIS MELLIFERA</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIM">
+                           <quantity>
+                              <numerator value="12" unit="[hp_X]"/>
+                              <denominator value="1" unit="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="91D9GV0Z28" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>TRIBASIC CALCIUM PHOSPHATE</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="2M83C4R6ZB" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>CALCIUM CATION</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator value="6" unit="[hp_X]"/>
+                              <denominator value="1" unit="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="KPS1B1162N" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>SOLANUM DULCAMARA TOP</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="KPS1B1162N" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>SOLANUM DULCAMARA TOP</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator value="4" unit="[hp_X]"/>
+                              <denominator value="1" unit="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="59677RXH25" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>EQUISETUM HYEMALE</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="59677RXH25" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>EQUISETUM HYEMALE</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator value="12" unit="[hp_X]"/>
+                              <denominator value="1" unit="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="F5452U54PN" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>FERROUS IODIDE</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="F5452U54PN" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>FERROUS IODIDE</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator value="4" unit="[hp_X]"/>
+                              <denominator value="1" unit="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="VH659J61ZL" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>FUMARIA OFFICINALIS FLOWERING TOP</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="VH659J61ZL" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>FUMARIA OFFICINALIS FLOWERING TOP</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator value="5" unit="[hp_X]"/>
+                              <denominator value="1" unit="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="S72O3284MS" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>GENTIANA LUTEA ROOT</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="S72O3284MS" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>GENTIANA LUTEA ROOT</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator value="4" unit="[hp_X]"/>
+                              <denominator value="1" unit="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="R5I1HK0UBL" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>GERANIUM ROBERTIANUM</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="R5I1HK0UBL" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>GERANIUM ROBERTIANUM</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIM">
+                           <quantity>
+                              <numerator value="8" unit="[hp_X]"/>
+                              <denominator value="1" unit="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="1C4QK22F9J" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>POTASSIUM IODIDE</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="09G4I6V86Q" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>IODIDE ION</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator value="4" unit="[hp_X]"/>
+                              <denominator value="1" unit="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="YH89GMV676" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>NASTURTIUM OFFICINALE</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="YH89GMV676" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>NASTURTIUM AQUATICUM</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator value="3" unit="[hp_X]"/>
+                              <denominator value="1" unit="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="0YPR65R21J" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>SODIUM SULFATE</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="36KCS0R750" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>SODIUM SULFATE ANHYDROUS</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator value="4" unit="[hp_X]"/>
+                              <denominator value="1" unit="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="Q1RGP4UB73" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>PINUS SYLVESTRIS LEAFY TWIG</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="Q1RGP4UB73" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>PINUS SYLVESTRIS LEAFY TWIG</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator value="6 " unit="[hp_X]"/>
+                              <denominator value="1" unit="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="2H1576D5WG" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>SMILAX REGELII ROOT</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="2H1576D5WG" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>SARSAPARILLA</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator value="3" unit="[hp_X]"/>
+                              <denominator value="1" unit="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="7H443NUB2T" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>SCROPHULARIA NODOSA</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="7H443NUB2T" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>SCROPHULARIA NODOSA</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator value="5" unit="[hp_X]"/>
+                              <denominator value="1" unit="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="D1YM0P5Z2T" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>LOBARIA PULMONARIA</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="D1YM0P5Z2T" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>LOBARIA PULMONARIA</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator value="3" unit="[hp_X]"/>
+                              <denominator value="1" unit="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="LOK3I16O7G" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>TEUCRIUM SCORODONIA FLOWERING TOP</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="LOK3I16O7G" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>TEUCRIUM SCORODONIA FLOWERING TOP</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="J2B2A4N98G" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>LACTOSE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="70097M6I30" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>MAGNESIUM STEARATE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <asContent>
+                           <quantity>
+                              <numerator value="100" unit="1"/>
+                              <denominator value="1" unit="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code code="62795-1032-2" codeSystem="2.16.840.1.113883.6.69"/>
+                              <formCode code="C43169" displayName="BOTTLE" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           </containerPackagedProduct>
+                        </asContent>
+                     </manufacturedProduct>
+                     <subjectOf>
+                        <marketingAct>
+                           <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <statusCode code="active"/>
+                           <effectiveTime>
+                              <low value="20140830"/>
+                           </effectiveTime>
+                        </marketingAct>
+                     </subjectOf>
+                     <subjectOf>
+                        <approval>
+                           <code code="C73614" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="unapproved homeopathic"/>
+                           <author>
+                              <territorialAuthority>
+                                 <territory>
+                                    <code code="USA" codeSystem="2.16.840.1.113883.5.28"/>
+                                 </territory>
+                              </territorialAuthority>
+                           </author>
+                        </approval>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic>
+                           <code code="SPLCOLOR" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value code="C48325" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="white" xsi:type="CE"/>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic>
+                           <code code="SPLSHAPE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value code="C48348" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ROUND" xsi:type="CE"/>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic>
+                           <code code="SPLSIZE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value unit="mm" value="9" xsi:type="PQ"/>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic>
+                           <code code="SPLSCORE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value xsi:type="INT" value="1"/>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic>
+                           <code code="SPLIMPRINT" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value xsi:type="ST">Radiantman</value>
+                        </characteristic>
+                     </subjectOf>
+                     <consumedIn>
+                        <substanceAdministration>
+                           <routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ORAL"/>
+                        </substanceAdministration>
+                     </consumedIn>
+                  </manufacturedProduct>
+               </subject>
+            </section>
+         </component>
+         <component>
+            <section ID="L0def3955-cfe9-47b5-b282-8e4d90e4d78f">
+               <id root="bd7e9627-7be9-4dbf-9072-439d7d66ae9c"/>
+               <code code="34067-9" codeSystem="2.16.840.1.113883.6.1" displayName="INDICATIONS &amp; USAGE SECTION"/>
+               <title>USES</title>
+               <text>
+                  <paragraph>To help restore mental alertness when experiencing fatigue.</paragraph>
+               </text>
+               <effectiveTime value="20150309"/>
+            </section>
+         </component>
+         <component>
+            <section ID="L537dd8b4-7d43-41f7-ab0b-9410b14d5a55">
+               <id root="5a3fec1a-5078-4f59-b39e-eec200919a06"/>
+               <code code="55106-9" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - ACTIVE INGREDIENT SECTION"/>
+               <title>ACTIVE INGREDIENT</title>
+               <text>
+                  <paragraph>*Apis mellifica 6X, Calcarea phosphorica 12X, *Dulcamara 6X, *Equisetum hyemale 4X, Ferrum iodatum 12X, *Fumaria officinalis 4X, *Gentiana lutea 5X, *Geranium robertianum 4X, Kali iodatum 8X, *Nasturtium aquaticum 4X, Natrum sulphuricum 3X, *Pinus sylvestris 4X, *Sarsaparilla 6X,*Scrophularia nodosa 3X, *Sticta pulmonaria 5X, *Teurcium scorodonia 3X, *Veronica officinalis 3X.</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">*Natural Ingredients.</content>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20150309"/>
+            </section>
+         </component>
+         <component>
+            <section ID="L9881462b-10a0-4834-96c2-416bd8820d5d">
+               <id root="f7d769d4-40d4-4e16-8da6-ac5426838599"/>
+               <code code="51727-6" codeSystem="2.16.840.1.113883.6.1" displayName="INACTIVE INGREDIENT SECTION"/>
+               <title/>
+               <text>
+                  <paragraph>Lactose, Magnesium stearate.</paragraph>
+               </text>
+               <effectiveTime value="20150309"/>
+            </section>
+         </component>
+         <component>
+            <section ID="L43569265-1a23-4cbc-a727-9ccc5da6b473">
+               <id root="b672cdeb-e584-4cd5-81a9-019d7e9094b7"/>
+               <code code="55105-1" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - PURPOSE SECTION"/>
+               <title>PURPOSE</title>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">Alertness Aid</content>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20150309"/>
+            </section>
+         </component>
+         <component>
+            <section ID="Lcb9c32d2-6fba-4fcb-83bc-a8ae86f03636">
+               <id root="51dedac5-b0c7-457f-9cf1-9053540878fc"/>
+               <code code="34068-7" codeSystem="2.16.840.1.113883.6.1" displayName="DOSAGE &amp; ADMINISTRATION SECTION"/>
+               <title>  Directions
+</title>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">At first sign of symptoms: Adults and children </content>
+                     <content styleCode="bold">12 years and older: </content>1 tablet every ½ to 1 hour until symptoms lessen, then continue with standard dosage. Do not exceed 12 tablets in 24 hours. <content styleCode="bold">Children 4 to 11 </content>
+                     <content styleCode="bold">years: </content>1 tablet every ½ to hour until symptoms lessen, then continue with standard dosage. Do not exceed 8 tablets in 24 hours.</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">For children under 4 years, </content>consult your health professional.</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Standard Dosage: Adults and children 12 </content>
+                     <content styleCode="bold">years and older: </content>3 tablets per day, taking 1 tablet every 4 to 6 hours.</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Children 4 to 11 years: </content>2 tablets per day, taking 1 tablet every 6 to 8 hours.</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">For children under 4 years, </content>consult your health professional.</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Allow tablets to dissolve completely in the mouth, do not swallow.</content>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20150309"/>
+            </section>
+         </component>
+         <component>
+            <section ID="L0ebd3143-ccff-43b4-b246-a78e1b90a8cf">
+               <id root="64fddf69-7384-41fc-8e9f-b6c645fe477a"/>
+               <code code="34071-1" codeSystem="2.16.840.1.113883.6.1" displayName="WARNINGS SECTION"/>
+               <title>WARNINGS</title>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">If pregnant or breast-feeding, </content>ask a health professional before use.</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Keep out of reach of children. </content>For occasional use only. Not a substitute for sleep. If symptoms persist or worsen, a health professional should be consulted. <content styleCode="bold">Do not use</content> if known hypersensitivity to BodyAnew<sup>TM </sup>Fatigue or any of its ingredients exists.</paragraph>
+               </text>
+               <effectiveTime value="20150309"/>
+            </section>
+         </component>
+         <component>
+            <section ID="Laa7b4083-1eae-4156-9348-bb5e62d21753">
+               <id root="3a8c74d3-f993-4a94-bd78-74e3a7ace47e"/>
+               <code code="50565-1" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - KEEP OUT OF REACH OF CHILDREN SECTION"/>
+               <title>KEEP OUT OF REACH OF CHILDREN</title>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">Keep out of reach of children.</content>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20150309"/>
+            </section>
+         </component>
+         <component>
+            <section ID="La4cd5be7-288e-48e8-a9d8-9d7aa9ba14c7">
+               <id root="67e4a8a5-a0e0-4b82-b065-845427da2d54"/>
+               <code code="51945-4" codeSystem="2.16.840.1.113883.6.1" displayName="PACKAGE LABEL.PRINCIPAL DISPLAY PANEL"/>
+               <title/>
+               <text>
+                  <paragraph>
+                     <renderMultiMedia referencedObject="L889adfc4-c210-464a-b681-677809d90df3"/>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20150309"/>
+               <component>
+                  <observationMedia ID="L889adfc4-c210-464a-b681-677809d90df3">
+                     <text>BodyAnew Fatigue Tablet.jpg</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="BodyAnew Fatigue Tablet.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+      </structuredBody>
+   </component>
+</document>

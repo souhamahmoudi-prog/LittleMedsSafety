@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="https://www.accessdata.fda.gov/spl/stylesheet/spl.xsl" type="text/xsl"?>
+<document xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 https://www.accessdata.fda.gov/spl/schema/spl.xsd">
+   <id root="3f85e4f8-a226-40a2-8508-ae59b5e484fb"/>
+   <code code="58476-3" displayName="DIETARY SUPPLEMENT" codeSystem="2.16.840.1.113883.6.1"/>
+   <effectiveTime value="20181030"/>
+   <setId root="21c64db9-718e-4fbd-9baf-6ab101940595"/>
+   <versionNumber value="1"/>
+   <author>
+      <time/>
+      <assignedEntity>
+         <representedOrganization>
+            <id root="1.3.6.1.4.1.519.1" extension="156893695"/>
+            <name>PD-Rx Pharmaceuticals, Inc.</name>
+            <assignedEntity>
+               <assignedOrganization>
+                  <id root="1.3.6.1.4.1.519.1" extension="156893695"/>
+                  <name>PD-Rx Pharmaceuticals, Inc.</name>
+                  <assignedEntity>
+                     <assignedOrganization>
+                        <id root="1.3.6.1.4.1.519.1" extension="156893695"/>
+                        <name>PD-Rx Pharmaceuticals, Inc.</name>
+                     </assignedOrganization>
+                     <performance>
+                        <actDefinition>
+                           <code code="C73606" displayName="repack" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <product>
+                              <manufacturedProduct classCode="MANU">
+                                 <manufacturedMaterialKind>
+                                    <code code="43063-922" codeSystem="2.16.840.1.113883.6.69"/>
+                                 </manufacturedMaterialKind>
+                              </manufacturedProduct>
+                           </product>
+                        </actDefinition>
+                     </performance>
+                  </assignedEntity>
+               </assignedOrganization>
+            </assignedEntity>
+         </representedOrganization>
+      </assignedEntity>
+   </author>
+   <component>
+      <structuredBody>
+         <component>
+            <section>
+               <id root="c5f97072-4638-49e3-b473-67722a782f58"/>
+               <code code="48780-1" displayName="SPL LISTING DATA ELEMENTS SECTION" codeSystem="2.16.840.1.113883.6.1"/>
+               <effectiveTime value="20210921"/>
+               <subject>
+                  <manufacturedProduct>
+                     <manufacturedProduct>
+                        <code code="43063-922" codeSystem="2.16.840.1.113883.6.69"/>
+                        <name>Right Step<suffix>Prenatal Vitamins</suffix>
+                        </name>
+                        <formCode code="C42998" displayName="TABLET" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                        <asEntityWithGeneric>
+                           <genericMedicine>
+                              <name> palmite, ascorbic acid, cholecalciferol, thiamine mononitrate, riboflavin, niacinamide, pyridoxine HCl,  Folic Acid, cyanocobalamin, calcim sulfate, ferrous fumarate, kelp leaf, magnesium oxide, zinc sulfate, cupric sulfate, manganese sulfate and potassium sulfate.</name>
+                           </genericMedicine>
+                        </asEntityWithGeneric>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator unit="[iU]" value="4000"/>
+                              <denominator unit="1" value="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="81G40H8B0T" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>VITAMIN A</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="81G40H8B0T" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>VITAMIN A</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator unit="mg" value="50"/>
+                              <denominator unit="1" value="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="PQ6CK8PD0R" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>ASCORBIC ACID</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="PQ6CK8PD0R" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>ASCORBIC ACID</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator unit="[iU]" value="400"/>
+                              <denominator unit="1" value="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="9VU1KI44GP" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>VITAMIN D</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="1C6V77QF41" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>CHOLECALCIFEROL</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator unit="mg" value="3"/>
+                              <denominator unit="1" value="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="X66NSO3N35" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>THIAMINE</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="4ABT0J945J" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>THIAMINE ION</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator unit="mg" value="2"/>
+                              <denominator unit="1" value="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="TLM2976OFR" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>RIBOFLAVIN</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="TLM2976OFR" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>RIBOFLAVIN</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator unit="mg" value="10"/>
+                              <denominator unit="1" value="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="25X51I8RD4" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>NIACINAMIDE</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="25X51I8RD4" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>NIACINAMIDE</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator unit="mg" value="1"/>
+                              <denominator unit="1" value="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="68Y4CF58BV" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>PYRIDOXINE HYDROCHLORIDE</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="KV2JZ1BI6Z" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>PYRIDOXINE</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator unit="mg" value="0.8"/>
+                              <denominator unit="1" value="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="935E97BOY8" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>FOLIC ACID</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="935E97BOY8" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>FOLIC ACID</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator unit="ug" value="2"/>
+                              <denominator unit="1" value="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="P6YC3EG204" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>CYANOCOBALAMIN</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="P6YC3EG204" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>CYANOCOBALAMIN</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIM">
+                           <quantity>
+                              <numerator unit="mg" value="250"/>
+                              <denominator unit="1" value="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="WAT0DDB505" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>CALCIUM SULFATE</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="2M83C4R6ZB" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>CALCIUM CATION</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIM">
+                           <quantity>
+                              <numerator unit="mg" value="27"/>
+                              <denominator unit="1" value="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="R5L488RY0Q" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>FERROUS FUMARATE</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="GW89581OWR" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>FERROUS CATION</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator unit="mg" value=".01"/>
+                              <denominator unit="1" value="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="15E7C67EE8" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>LAMINARIA DIGITATA</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="15E7C67EE8" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>LAMINARIA DIGITATA</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator unit="mg" value="15"/>
+                              <denominator unit="1" value="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="3A3U0GI71G" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>MAGNESIUM OXIDE</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="T6V3LHY838" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>MAGNESIUM CATION</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator unit="mg" value="0.085"/>
+                              <denominator unit="1" value="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="SOI2LOH54Z" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>ZINC OXIDE</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="SOI2LOH54Z" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>ZINC OXIDE</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator unit="mg" value=".15"/>
+                              <denominator unit="1" value="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="789U1901C5" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>COPPER</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="789U1901C5" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>COPPER</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator value="0.835" unit="mg"/>
+                              <denominator value="1" unit="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="1K573LC5TV" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>POTASSIUM SULFATE</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="295O53K152" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>POTASSIUM CATION</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="L11K75P92J" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>CALCIUM PHOSPHATE, DIBASIC, ANHYDROUS</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="M28OL1HH48" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>CROSCARMELLOSE SODIUM</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="ETJ7Z6XBU4" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>SILICON DIOXIDE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="4ELV7Z65AP" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>STEARIC ACID</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="70097M6I30" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>MAGNESIUM STEARATE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="7Z8S9VYZ4B" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>ETHYLCELLULOSES</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <asContent>
+                           <quantity>
+                              <numerator value="30" unit="1"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code code="43063-922-30" codeSystem="2.16.840.1.113883.6.69"/>
+                              <formCode code="C43173" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOTTLE, PLASTIC"/>
+                           </containerPackagedProduct>
+                        </asContent>
+                        <asContent>
+                           <quantity>
+                              <numerator value="100" unit="1"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code code="43063-922-01" codeSystem="2.16.840.1.113883.6.69"/>
+                              <formCode code="C43173" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOTTLE, PLASTIC"/>
+                           </containerPackagedProduct>
+                        </asContent>
+                     </manufacturedProduct>
+                     <subjectOf>
+                        <approval>
+                           <code code="C86952" displayName="DIETARY SUPPLEMENT" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <author>
+                              <territorialAuthority>
+                                 <territory>
+                                    <code code="USA" codeSystem="2.16.840.1.113883.5.28"/>
+                                 </territory>
+                              </territorialAuthority>
+                           </author>
+                        </approval>
+                     </subjectOf>
+                     <subjectOf>
+                        <marketingAct>
+                           <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <statusCode code="active"/>
+                           <effectiveTime>
+                              <low value="20130713"/>
+                           </effectiveTime>
+                        </marketingAct>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLCOLOR" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value code="C48328" displayName="pink" codeSystem="2.16.840.1.113883.3.26.1.1" xsi:type="CV">
+                              <originalText>Tan</originalText>
+                           </value>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLSHAPE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value code="C48336" displayName="CAPSULE" codeSystem="2.16.840.1.113883.3.26.1.1" xsi:type="CV">
+                              <originalText>capsule shaped tablet</originalText>
+                           </value>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLSIZE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value unit="mm" value="19" xsi:type="PQ"/>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic>
+                           <code code="SPLSCORE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value value="1" xsi:type="INT"/>
+                        </characteristic>
+                     </subjectOf>
+                     <consumedIn>
+                        <substanceAdministration>
+                           <routeCode code="C38288" displayName="ORAL" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                        </substanceAdministration>
+                     </consumedIn>
+                  </manufacturedProduct>
+               </subject>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_75dd4aa9-eab2-4e02-927c-e5041478d516">
+               <id root="5de97d31-d319-41a2-89c1-205abfcd73e3"/>
+               <code code="69718-5" codeSystem="2.16.840.1.113883.6.1" displayName="STATEMENT OF IDENTITY SECTION"/>
+               <title>SUPPLEMENT FACTS</title>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">Other Ingredients: </content>stearic acid, magnesium stearate, gum guar, dibasic calcium phosphate, croscarmellose sodium, silicon dioxide, ethylcellulose.</paragraph>
+                  <paragraph>Use as a dietary supplement for pregnant or lactating women. </paragraph>
+               </text>
+               <effectiveTime value="20181030"/>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_43a50c9e-957c-4970-8eb5-ddaa96de6cdd">
+               <id root="1664ccc3-7bfd-4097-8862-a4c0dff71b37"/>
+               <code code="34071-1" codeSystem="2.16.840.1.113883.6.1" displayName="WARNINGS SECTION"/>
+               <title>WARNINGS</title>
+               <text>
+                  <table>
+                     <col width="100%"/>
+                     <tbody>
+                        <tr>
+                           <td valign="top" styleCode="     Botrule          Toprule         Lrule          Rrule     ">
+                              <content styleCode="bold">WARNING: Accidental overdose of iron-containing products is a leading cause of fatal poisoning in children under 6. KEEP THIS PRODUCT OUT OF THE REACH OF CHILDREN. In case of accidental overdose, call a doctor or poison control center immediately.</content>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </text>
+               <effectiveTime value="20181030"/>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_c22bf063-7ae3-4aeb-aa5f-fedc445de1e4">
+               <id root="e5efca60-33e9-41f2-ba6c-c82fe0205fcf"/>
+               <code code="69718-5" codeSystem="2.16.840.1.113883.6.1" displayName="STATEMENT OF IDENTITY SECTION"/>
+               <title>DESCRIPTION</title>
+               <text>
+                  <paragraph>Right Step is a tan capsule shaped tablet. </paragraph>
+               </text>
+               <effectiveTime value="20181030"/>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_9c10710d-260a-4bec-bdc9-5ed9f0d1884a">
+               <id root="f7c2c2de-6c5e-482d-975d-e5e027dee627"/>
+               <code code="34068-7" codeSystem="2.16.840.1.113883.6.1" displayName="DOSAGE &amp; ADMINISTRATION SECTION"/>
+               <title>DIRECTIONS FOR USE</title>
+               <text>
+                  <paragraph>Take one tablet daily. </paragraph>
+               </text>
+               <effectiveTime value="20181030"/>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_c4517b82-279e-4bf2-b926-55c21772b33d">
+               <id root="540403b2-39de-4621-a41e-7a18e9bc931e"/>
+               <code code="69719-3" codeSystem="2.16.840.1.113883.6.1" displayName="HEALTH CLAIM SECTION"/>
+               <title>HOW SUPPLIED</title>
+               <text>
+                  <paragraph>Right Step is available as a tan capsule shaped tablet. Available in bottles 30 and 100.</paragraph>
+                  <paragraph>Tamper-Evident Feature: Each bottle is sealed with a tamper-evident safety seal for your protection.  Do not use if this seal is missing or broken.</paragraph>
+               </text>
+               <effectiveTime value="20181030"/>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_86ad0d7c-4d9e-4e3b-a3e0-89f38cf7b418">
+               <id root="38fd5cd1-77e3-4318-aae3-6f62c47755ac"/>
+               <code code="50741-8" codeSystem="2.16.840.1.113883.6.1" displayName="SAFE HANDLING WARNING SECTION"/>
+               <title>STORAGE</title>
+               <text>
+                  <paragraph>Store in a dry, cool place protected from light. </paragraph>
+               </text>
+               <effectiveTime value="20181030"/>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_938c287e-a7cc-4b9e-b271-78ec0940d178">
+               <id root="92cb43bb-74d2-4114-b133-8de0cdfed704"/>
+               <code code="42232-9" codeSystem="2.16.840.1.113883.6.1" displayName="PRECAUTIONS SECTION"/>
+               <title/>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">KEEP OUT OF REACH OF CHILDREN. </content>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20181030"/>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_2a00fd0e-e819-44d3-a664-34d8aa09aea2">
+               <id root="e59868c9-8555-4d50-9f03-e68aca5ec297"/>
+               <code code="51945-4" codeSystem="2.16.840.1.113883.6.1" displayName="PACKAGE LABEL.PRINCIPAL DISPLAY PANEL"/>
+               <title>PRINCIPAL DISPLAY PANEL</title>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">Right Step </content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Prenatal Vitamin</content>
+                  </paragraph>
+                  <paragraph>Marketed and Packaged by PD-Rx Pharmaceuticals, Inc. Oklahoma City, OK 73127 1-405-942-3040</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">
+                        <renderMultiMedia referencedObject="MM3"/>
+                     </content>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20210921"/>
+               <component>
+                  <observationMedia ID="MM3">
+                     <text>43063922 Label</text>
+                     <value xsi:type="ED" mediaType="image/jpeg">
+                        <reference value="43063922.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+      </structuredBody>
+   </component>
+</document>

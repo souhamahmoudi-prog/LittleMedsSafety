@@ -1,0 +1,1154 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="https://www.accessdata.fda.gov/spl/stylesheet/spl.xsl" type="text/xsl"?>
+<document xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 https://www.accessdata.fda.gov/spl/schema/spl.xsd">
+   <id root="3839c7fd-e7c4-45c6-ae02-0302b40046b0"/>
+   <code code="34391-3" codeSystem="2.16.840.1.113883.6.1" displayName="HUMAN PRESCRIPTION DRUG LABEL"/>
+   <title>These highlights do not include all the information needed to use GaviLyte &amp;ndash; N safely and effectively. See full prescribing information for GaviLyte &amp;ndash; N<br/>
+      <br/>GaviLyte&amp;trade; &amp;ndash; N (polyethylene glycol 3350 (420 g), sodium chloride, sodium bicarbonate and potassium chloride for oral solution)<br/>Initial U.S. Approval: 1991</title>
+   <effectiveTime value="20250910"/>
+   <setId root="27195187-75a3-431f-90d9-84da1b94e849"/>
+   <versionNumber value="7"/>
+   <author>
+      <time/>
+      <assignedEntity>
+         <representedOrganization>
+            <id extension="089153071" root="1.3.6.1.4.1.519.1"/>
+            <name>Lupin Pharmaceuticals,Inc.</name>
+            <assignedEntity>
+               <assignedOrganization>
+                  <id extension="793518643" root="1.3.6.1.4.1.519.1"/>
+                  <name>Novel Laboratories, Inc.</name>
+                  <assignedEntity>
+                     <assignedOrganization>
+                        <id extension="793518643" root="1.3.6.1.4.1.519.1"/>
+                        <name>Novel Laboratories, Inc.</name>
+                     </assignedOrganization>
+                     <performance>
+                        <actDefinition>
+                           <code code="C43360" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MANUFACTURE"/>
+                           <product>
+                              <manufacturedProduct classCode="MANU">
+                                 <manufacturedMaterialKind>
+                                    <code code="43386-050" codeSystem="2.16.840.1.113883.6.69"/>
+                                 </manufacturedMaterialKind>
+                              </manufacturedProduct>
+                           </product>
+                        </actDefinition>
+                     </performance>
+                     <performance>
+                        <actDefinition>
+                           <code code="C25391" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ANALYSIS"/>
+                           <product>
+                              <manufacturedProduct classCode="MANU">
+                                 <manufacturedMaterialKind>
+                                    <code code="43386-050" codeSystem="2.16.840.1.113883.6.69"/>
+                                 </manufacturedMaterialKind>
+                              </manufacturedProduct>
+                           </product>
+                        </actDefinition>
+                     </performance>
+                     <performance>
+                        <actDefinition>
+                           <code code="C84731" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="PACK"/>
+                           <product>
+                              <manufacturedProduct classCode="MANU">
+                                 <manufacturedMaterialKind>
+                                    <code code="43386-050" codeSystem="2.16.840.1.113883.6.69"/>
+                                 </manufacturedMaterialKind>
+                              </manufacturedProduct>
+                           </product>
+                        </actDefinition>
+                     </performance>
+                  </assignedEntity>
+               </assignedOrganization>
+            </assignedEntity>
+         </representedOrganization>
+      </assignedEntity>
+   </author>
+   <component>
+      <structuredBody>
+         <component>
+            <section>
+               <id root="b35ff5b8-fa86-4d72-ad3a-79ef2575a36f"/>
+               <code code="48780-1" codeSystem="2.16.840.1.113883.6.1" displayName="SPL Product Data Elements Section"/>
+               <effectiveTime value="20250910"/>
+               <subject>
+                  <manufacturedProduct>
+                     <manufacturedProduct>
+                        <code code="43386-050" codeSystem="2.16.840.1.113883.6.69"/>
+                        <name>GAVILYTE-N</name>
+                        <formCode code="C42973" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="POWDER, FOR SOLUTION"/>
+                        <asEntityWithGeneric>
+                           <genericMedicine>
+                              <name>polyethylene glycol-3350, sodium chloride, potassium chloride and sodium bicarbonate</name>
+                           </genericMedicine>
+                        </asEntityWithGeneric>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator value="420" unit="g"/>
+                              <denominator value="438.4" unit="g"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="G2M7P15E5P" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>POLYETHYLENE GLYCOL 3350</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="G2M7P15E5P" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>POLYETHYLENE GLYCOL 3350</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator value="11.2" unit="g"/>
+                              <denominator value="438.4" unit="g"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="451W47IQ8X" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>SODIUM CHLORIDE</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="Q32ZN48698" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>CHLORIDE ION</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator value="5.72" unit="g"/>
+                              <denominator value="438.4" unit="g"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="8MDF5V39QO" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>SODIUM BICARBONATE</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="LYR4M0NH37" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>SODIUM CATION</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator value="1.48" unit="g"/>
+                              <denominator value="438.4" unit="g"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="660YQ98I10" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>POTASSIUM CHLORIDE</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="295O53K152" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>POTASSIUM CATION</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="SB8ZUX40TY" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>SACCHARIN SODIUM</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="7CVR7L4A2D" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>MALTODEXTRIN</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <asContent>
+                           <quantity>
+                              <numerator value="438.4" unit="g"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code code="43386-050-19" codeSystem="2.16.840.1.113883.6.69"/>
+                              <formCode code="C43169" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOTTLE"/>
+                           </containerPackagedProduct>
+                           <subjectOf>
+                              <marketingAct>
+                                 <code code="C96974" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                                 <statusCode code="active"/>
+                                 <effectiveTime>
+                                    <low value="20090528"/>
+                                 </effectiveTime>
+                              </marketingAct>
+                           </subjectOf>
+                           <subjectOf>
+                              <characteristic classCode="OBS">
+                                 <code code="SPLCMBPRDTP" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                                 <value code="C112160" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="Type 0: Not a Combination Product" xsi:type="CE"/>
+                              </characteristic>
+                           </subjectOf>
+                        </asContent>
+                     </manufacturedProduct>
+                     <subjectOf>
+                        <approval>
+                           <id extension="ANDA090019" root="2.16.840.1.113883.3.150"/>
+                           <code code="C73584" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ANDA"/>
+                           <author>
+                              <territorialAuthority>
+                                 <territory>
+                                    <code code="USA" codeSystem="2.16.840.1.113883.5.28"/>
+                                 </territory>
+                              </territorialAuthority>
+                           </author>
+                        </approval>
+                     </subjectOf>
+                     <subjectOf>
+                        <marketingAct>
+                           <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <statusCode code="active"/>
+                           <effectiveTime>
+                              <low value="20090528"/>
+                           </effectiveTime>
+                        </marketingAct>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLFLAVOR" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value code="C73396" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="LEMON" xsi:type="CE"/>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLFLAVOR" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value code="C73375" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="CHERRY" xsi:type="CE"/>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLFLAVOR" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value code="C73406" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ORANGE" xsi:type="CE"/>
+                        </characteristic>
+                     </subjectOf>
+                     <consumedIn>
+                        <substanceAdministration>
+                           <routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ORAL"/>
+                        </substanceAdministration>
+                     </consumedIn>
+                  </manufacturedProduct>
+               </subject>
+            </section>
+         </component>
+         <component>
+            <section ID="ID203">
+               <id root="b27e7765-3868-4d69-9e55-935a9bd2de5c"/>
+               <code code="43683-2" codeSystem="2.16.840.1.113883.6.1" displayName="RECENT MAJOR CHANGES SECTION"/>
+               <title>RECENT MAJOR CHANGES</title>
+               <effectiveTime value="20220505"/>
+               <excerpt>
+                  <highlight>
+                     <text>
+                        <paragraph ID="ID205">Warnings and Precautions, Aspiration: (<linkHtml href="#ID250">5.7</linkHtml>)                    05/2021</paragraph>
+                     </text>
+                  </highlight>
+               </excerpt>
+            </section>
+         </component>
+         <component>
+            <section ID="ID206">
+               <id root="372f0553-9662-4e24-b077-787551148920"/>
+               <code code="34067-9" codeSystem="2.16.840.1.113883.6.1" displayName="INDICATIONS &amp; USAGE SECTION"/>
+               <title>1 INDICATIONS AND USAGE</title>
+               <effectiveTime value="20220511"/>
+               <excerpt>
+                  <highlight>
+                     <text>
+                        <paragraph ID="ID208">GaviLyte-N is a combination of PEG 3350, an osmotic laxative, and electrolytes indicated for cleansing of the colon in preparation for colonoscopy in adults and pediatric patients aged 6 months or greater (<linkHtml href="#ID206">1</linkHtml>)</paragraph>
+                     </text>
+                  </highlight>
+               </excerpt>
+               <component>
+                  <section ID="ID209">
+                     <id root="826a3d8f-4fc4-4231-9e2f-c40612b4ef53"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <text>
+                        <paragraph ID="ID210">GaviLyte-N is indicated for bowel cleansing prior to colonoscopy in adults and pediatric patients aged 6 months or greater.</paragraph>
+                     </text>
+                     <effectiveTime value="20171101"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="ID211">
+               <id root="8a799725-ee76-483a-8249-fc8c505fbe38"/>
+               <code code="34068-7" codeSystem="2.16.840.1.113883.6.1" displayName="DOSAGE &amp; ADMINISTRATION SECTION"/>
+               <title>2 DOSAGE AND ADMINISTRATION</title>
+               <effectiveTime value="20220511"/>
+               <excerpt>
+                  <highlight>
+                     <text>
+                        <list listType="unordered" ID="ID213" styleCode="Disc">
+                           <item>GaviLyte-N, supplied as a powder, must be reconstituted      with water before its use (<linkHtml href="#ID215">2.1</linkHtml>, <linkHtml href="#ID252">5.8</linkHtml>)</item>
+                           <item>On day prior to colonoscopy, instruct patients to:<list listType="unordered" styleCode="Circle">
+                                 <item>Eat a light breakfast or have clear liquids (avoid red and      purple liquids) (<linkHtml href="#ID217">2.2</linkHtml>).</item>
+                                 <item>If adding a GaviLyte-N flavor pack, pour the contents of      flavor powder (i.e., cherry, lemon or orange) into container prior to      reconstitution (<linkHtml href="#ID217">2.2</linkHtml>).</item>
+                                 <item>Early in the evening prior to colonoscopy, fill container      containing GaviLyte-N powder with lukewarm water to 4 liter fill line      (<linkHtml href="#ID217">2.2</linkHtml>).</item>
+                                 <item>After capping container, shake vigorously several times      (<linkHtml href="#ID217">2.2</linkHtml>).</item>
+                              </list>
+                           </item>
+                           <item>Instruct patients to consume water or clear liquids during      and after bowel preparation up until 2 hours before time of colonoscopy (<linkHtml href="#ID220">2.3</linkHtml>).</item>
+                           <item>
+                              <content styleCode="bold">Adults: </content> Drink at a rate of 240 mL (8 oz.) every 10      minutes, until 4 liters are consumed or rectal effluent is clear. For      nasogastric tube (NGT), rate is 1.2 to 1.8 liters per hour (<linkHtml href="#ID220">2.3</linkHtml>)</item>
+                           <item>
+                              <content styleCode="bold">Pediatric patients (aged 6 months or greater</content> ):      Drink 25 mL/kg/hour orally or administer by NGT. Continue drinking until      watery stool is clear and free of solid matter (<linkHtml href="#ID220">2.3</linkHtml>).</item>
+                        </list>
+                     </text>
+                  </highlight>
+               </excerpt>
+               <component>
+                  <section ID="ID215">
+                     <id root="4db2abdb-5167-4a19-8c22-c08c61cf30e4"/>
+                     <title>2.1 Dosage Overview</title>
+                     <text>
+                        <list listType="unordered" ID="ID340" styleCode="Disc">
+                           <item>  GaviLyte-N, supplied as a powder, must be reconstituted with water before its use; it is not for direct ingestion <content styleCode="italics">[see <linkHtml href="#ID217">Dosage and Administration (2.2)</linkHtml>, <linkHtml href="#ID252">Warnings and Precautions (5.8)</linkHtml>]. </content>
+                           </item>
+                           <item>  Do not reconstitute with other liquids and/or add starch-based thickeners to the mixing container <content styleCode="italics">[see <linkHtml href="#ID250">Warnings and Precautions (5.7)</linkHtml>].</content>
+                           </item>
+                           <item>  The 4-liter reconstituted GaviLyte-N solution contains: 420 grams of polyethylene glycol (PEG) 3350, 5.72 grams of sodium bicarbonate, 11.2 grams of sodium chloride, and 1.4 grams of potassium chloride. GaviLyte-N may be used with or without one of the supplied flavor packs.</item>
+                        </list>
+                     </text>
+                     <effectiveTime value="20220511"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="ID217">
+                     <id root="3e3625c4-f5e3-48b2-b72d-5bb4c5760ee9"/>
+                     <title>2.2 Administration Instructions Prior to Dosage</title>
+                     <text>
+                        <paragraph ID="ID218">On the day prior to the colonoscopy, instruct patients to:</paragraph>
+                        <list listType="ordered" ID="ID219" styleCode="LittleAlpha">
+                           <item>Take only clear liquids, but avoid red and purple liquids. Patients may consume a light breakfast.</item>
+                           <item>If adding a GaviLyte-N flavor pack, pour the contents of the 2 gram flavor powder (i.e., cherry, lemon, or orange) into the container prior to reconstitution. No additional flavorings should be added. Discard unused flavor packs. The GaviLyte-N flavor packs are for use only in combination with the contents of the accompanying 4 liter container<content styleCode="bold">.</content>
+                           </item>
+                           <item>
+                              <content styleCode="underline">Early in the evening prior to colonoscopy</content>, fill the supplied container containing the GaviLyte-N powder (and if applicable, a flavor powder) with lukewarm water (to facilitate dissolution) to the 4 liter fill line.  The solution is clear and colorless when reconstituted to a final volume of 4 liters.</item>
+                           <item>After capping the container, shake vigorously several times to ensure that the ingredients are dissolved.  When reconstituted use within 48 hours.</item>
+                        </list>
+                     </text>
+                     <effectiveTime value="20220511"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="ID220">
+                     <id root="eeb58b81-71fc-44af-b302-7b96b6b1244c"/>
+                     <title>2.3 Dosage</title>
+                     <text>
+                        <paragraph ID="ID221">The following is the recommended dose of reconstituted GaviLyte-N solution for adults and pediatric patients ≥ 6 months. Instruct patients they may consume water or clear liquids during the bowel preparation and after completion of the bowel preparation up until 2 hours before the time of the colonoscopy. The solution is more palatable if chilled prior to administration.</paragraph>
+                        <list listType="unordered" ID="ID222" styleCode="Disc">
+                           <item>
+                              <content styleCode="bold">Adults:  </content> Instruct patients to drink a total of up      to 4 liters at a rate of 240 mL (8 oz.) every 10 minutes, until 4 liters      are consumed or the rectal effluent is clear. Rapid drinking of each      portion is preferred to drinking small amounts continuously. For NGT, rate      is 20 -30 mL per minute (1.2 – 1.8 liters per hour).</item>
+                           <item>
+                              <content styleCode="bold">Pediatric Patients ≥ 6 Months: </content> Pediatric      patients should drink 25 mL/kg/hour until the stool is watery, clear, and      free of solid matter. If pediatric patients are unable to drink the      reconstituted GaviLyte-N solution, the solution may be given by      nasogastric (NGT). NGT administration is at the rate of 25 mL/kg/hour.</item>
+                        </list>
+                        <paragraph ID="ID223">The first bowel movements should occur approximately one hour after the start of GaviLyte-N administration.  Continue drinking until the watery stool is clear and free of solid matter.</paragraph>
+                     </text>
+                     <effectiveTime value="20220511"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="ID224">
+               <id root="05e24045-d328-411e-ba1f-138868eb9cff"/>
+               <code code="43678-2" codeSystem="2.16.840.1.113883.6.1" displayName="DOSAGE FORMS &amp; STRENGTHS SECTION"/>
+               <title>3 DOSAGE FORMS AND STRENGTHS</title>
+               <effectiveTime value="20171101"/>
+               <excerpt>
+                  <highlight>
+                     <text>
+                        <paragraph ID="ID226">For oral solution:  polyethylene glycol 3350 420 grams, sodium bicarbonate 5.72 grams, sodium chloride 11.2 grams, potassium chloride 1.48 grams, and flavoring ingredients 2 grams; supplied in one 4 liter disposable jug(<linkHtml href="#ID224">3</linkHtml>)</paragraph>
+                     </text>
+                  </highlight>
+               </excerpt>
+               <component>
+                  <section ID="ID227">
+                     <id root="c2501ef1-9647-4b1e-9dee-6d9cd33ac1f7"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <text>
+                        <paragraph ID="ID228">For oral solution:  One 4 liter jug with powder for reconstitution with water.</paragraph>
+                        <paragraph>Each 4 liter jug contains: polyethylene glycol 3350 420 g, sodium bicarbonate 5.72 g, sodium chloride 11.2 g, potassium chloride 1.48 g and flavoring ingredients 2 g. When made up to 4 liters volume with water, the solution contains PEG-3350 31.3 mmol/L, sodium 65 mmol/L, chloride 53 mmol/L, bicarbonate 17 mmol/L and potassium 5 mmol/L.</paragraph>
+                     </text>
+                     <effectiveTime value="20171101"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="ID229">
+               <id root="628a9424-fa59-418b-8bc6-77c63f760618"/>
+               <code code="34070-3" codeSystem="2.16.840.1.113883.6.1" displayName="CONTRAINDICATIONS SECTION"/>
+               <title>4 CONTRAINDICATIONS</title>
+               <effectiveTime value="20220517"/>
+               <excerpt>
+                  <highlight>
+                     <text>
+                        <list listType="unordered" ID="ID231" styleCode="Disc">
+                           <item>Gastrointestinal (GI) obstruction, ileus, or gastric      retention (<linkHtml href="#ID229">4</linkHtml>, <linkHtml href="#ID248">5.6</linkHtml>)</item>
+                           <item>Bowel perforation (<linkHtml href="#ID229">4</linkHtml>, <linkHtml href="#ID248">5.6</linkHtml>)</item>
+                           <item>Toxic colitis or toxic megacolon (<linkHtml href="#ID229">4</linkHtml>)</item>
+                           <item>Known allergy or hypersensitivity to components of      GaviLyte-N (<linkHtml href="#ID229">4</linkHtml>, <linkHtml href="#ID277">11</linkHtml>)</item>
+                        </list>
+                     </text>
+                  </highlight>
+               </excerpt>
+               <component>
+                  <section ID="ID232">
+                     <id root="b05135bd-c8d0-437e-a1a0-0a7438960d29"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <text>
+                        <paragraph ID="ID233">GaviLyte-N is contraindicated in the following conditions:</paragraph>
+                        <list listType="unordered" ID="ID234" styleCode="Disc">
+                           <item>Gastrointestinal (GI) obstruction, ileus, or gastric retention</item>
+                           <item>Bowel perforation</item>
+                           <item>Toxic colitis or toxic megacolon</item>
+                           <item>Known allergy or hypersensitivity to any component of GaviLyte-N for oral solution <content styleCode="italics">[see <linkHtml href="#ID293">How Supplied/Storage and Handling (16)</linkHtml>]</content>
+                           </item>
+                        </list>
+                     </text>
+                     <effectiveTime value="20220517"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="ID235">
+               <id root="7f04f5a2-d11a-4f0a-9039-ef46d63d1904"/>
+               <code code="43685-7" codeSystem="2.16.840.1.113883.6.1" displayName="WARNINGS AND PRECAUTIONS SECTION"/>
+               <title>5 WARNINGS AND PRECAUTIONS</title>
+               <effectiveTime value="20220517"/>
+               <excerpt>
+                  <highlight>
+                     <text>
+                        <list listType="unordered" ID="ID237" styleCode="Disc">
+                           <item>Risk of fluid and electrolyte abnormalities, arrhythmias,      seizures and renal impairment– assess concurrent medications and      consider testing in some patients (<linkHtml href="#ID238">5.1</linkHtml>, <linkHtml href="#ID240">5.2</linkHtml>,<linkHtml href="#ID242">5.3</linkHtml>, <linkHtml href="#ID244">5.4</linkHtml>)</item>
+                           <item>Patients with renal insufficiency– use caution, ensure      adequate hydration and consider testing (<linkHtml href="#ID244">5.4</linkHtml>)</item>
+                           <item>Suspected GI obstruction or perforation – rule out the      diagnosis before administration (<linkHtml href="#ID229">4</linkHtml>, <linkHtml href="#ID248">5.6</linkHtml>)</item>
+                           <item>Patients at risk for aspiration – observe during administration      (<linkHtml href="#ID250">5.7</linkHtml>)</item>
+                           <item>Not for direct ingestion – dilute and take with      additional water (<linkHtml href="#ID252">5.8</linkHtml>)</item>
+                        </list>
+                     </text>
+                  </highlight>
+               </excerpt>
+               <component>
+                  <section ID="ID238">
+                     <id root="2474e113-855b-4078-bc1c-4a5b35667f6b"/>
+                     <title>5.1 Serious Fluid and Serum Chemistry Abnormalities</title>
+                     <text>
+                        <paragraph ID="ID239">Advise patients to hydrate adequately before, during, and after the use of GaviLyte-N. Use caution in patients with congestive heart failure when replacing fluids. If a patient develops significant vomiting or signs of dehydration including signs of orthostatic hypotension after taking GaviLyte-N, consider performing post-colonoscopy lab tests (electrolytes, creatinine, and BUN) and treat accordingly. Fluid and electrolyte disturbances can lead to serious adverse events including cardiac arrhythmias, seizures and renal impairment. Fluid and electrolyte abnormalities should be corrected before treatment with GaviLyte-N.</paragraph>
+                        <paragraph>In addition, use caution when prescribing GaviLyte-N for patients who have conditions, or who are using medications, that increase the risk for fluid and electrolyte disturbances or may increase the risk of adverse events of seizure, arrhythmias, and renal impairment <content styleCode="italics">[see <linkHtml href="#ID262">Drug Interactions (7.1)</linkHtml>]</content>
+                        </paragraph>
+                     </text>
+                     <effectiveTime value="20220517"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="ID240">
+                     <id root="dbb75c09-461a-4765-9108-8ce4ec53522b"/>
+                     <title>5.2 Cardiac Arrhythmias</title>
+                     <text>
+                        <paragraph ID="ID241">There have been rare reports of serious arrhythmias associated with the use of ionic osmotic laxative products for bowel preparation.  Use caution when prescribing GaviLyte-N for patients at increased risk of arrhythmias (e.g., patients with a history of prolonged QT, uncontrolled arrhythmias, recent myocardial infarction, unstable angina, congestive heart failure, or cardiomyopathy).  Pre-dose and post-colonoscopy ECGs should be considered in patients at increased risk of serious cardiac arrhythmias.</paragraph>
+                     </text>
+                     <effectiveTime value="20171101"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="ID242">
+                     <id root="5bb98903-3d7f-413b-8460-8ece78b81775"/>
+                     <title>5.3 Seizures</title>
+                     <text>
+                        <paragraph ID="ID243">There have been reports of generalized tonic-clonic seizures and/or loss of consciousness associated with use of bowel preparation products in patients with no prior history of seizures. The seizure cases were associated with electrolyte abnormalities (e.g., hyponatremia, hypokalemia, hypocalcemia, and hypomagnesemia) and low serum osmolality. The neurologic abnormalities resolved with correction of fluid and electrolyte abnormalities.</paragraph>
+                        <paragraph>Use caution when prescribing GaviLyte-N for patients with a history of seizures and in patients at increased risk of seizure, such as patients taking medications that lower the seizure threshold (e.g., tricyclic antidepressants), patients withdrawing from alcohol or benzodiazepines, or patients with known or suspected hyponatremia.</paragraph>
+                     </text>
+                     <effectiveTime value="20171101"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="ID244">
+                     <id root="392c4011-c792-45d7-bb4e-a9d783915c2c"/>
+                     <title>5.4 Renal Impairment</title>
+                     <text>
+                        <paragraph ID="ID245">Use caution when prescribing GaviLyte-N for patients with impaired renal function or patients taking concomitant medications that may affect renal function (such as diuretics, angiotensin converting enzyme inhibitors, angiotensin receptor blockers, or non-steroidal anti-inflammatory drugs).  Advise these patients of the importance of adequate hydration, and consider performing baseline and post-colonoscopy laboratory tests (electrolytes, creatinine, and BUN) in these patients.</paragraph>
+                     </text>
+                     <effectiveTime value="20171101"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="ID246">
+                     <id root="6dec8653-625a-4598-a3ed-dcaaadb31233"/>
+                     <title>5.5 Colonic Mucosal Ulcerations and Ischemic Colitis</title>
+                     <text>
+                        <paragraph ID="ID247">Administration of osmotic laxative products may produce colonic mucosal aphthous ulcerations, and there have been reports of more serious cases of ischemic colitis requiring hospitalization. Concurrent use of stimulant laxatives and GaviLyte-N may increase this risk. The potential for mucosal ulcerations resulting from the bowel preparation should be considered when interpreting colonoscopy findings in patients with known or suspect inflammatory bowel disease (IBD).</paragraph>
+                     </text>
+                     <effectiveTime value="20171101"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="ID248">
+                     <id root="a1c6dedd-7ad4-4a1f-9c53-d93ed7df54fb"/>
+                     <title>5.6 Use in Patients with Significant Gastrointestinal Disease</title>
+                     <text>
+                        <paragraph ID="ID249">If gastrointestinal obstruction or perforation is suspected, perform appropriate diagnostic studies to rule out these conditions before administering GaviLyte-N. If a patient experiences severe bloating, distention or abdominal pain, administration should be slowed or temporarily discontinued until the symptoms abate. If gastrointestinal obstruction or perforation is suspected, appropriate studies should be performed to rule out these conditions before administration of GaviLyte-N. Use with caution in patients with severe active ulcerative colitis.</paragraph>
+                     </text>
+                     <effectiveTime value="20171101"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="ID250">
+                     <id root="9481146f-a51c-4c39-bc97-855329266389"/>
+                     <title>5.7 Aspiration</title>
+                     <text>
+                        <paragraph ID="ID251">Use with caution in patients with impaired gag reflex, unconscious, or semiconscious patients, and patients prone to regurgitation or aspiration.  Such patients should be observed during administration of GaviLyte-N, especially if it is administered via nasogastric tube.</paragraph>
+                        <paragraph>Do not combine GaviLyte- N with starch-based thickeners <content styleCode="italics">[see <linkHtml href="#ID211">Dosage and Administration (2.1)</linkHtml>]. </content>Polyethylene glycol (PEG), a component of GaviLyte - N, when mixed with starch-thickened liquids reduces the viscosity of the starch-thickened liquid. When a PEG-based product used for another indication was mixed in starch-based pre-thickened liquids used in patients with dysphagia, thinning of the liquid occurred and cases of choking and potential aspiration were reported.</paragraph>
+                     </text>
+                     <effectiveTime value="20220517"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="ID252">
+                     <id root="c4303270-61db-4819-83ba-5478fa48725e"/>
+                     <title>5.8 Not for Direct Ingestion</title>
+                     <text>
+                        <paragraph ID="ID253">The contents of each jug must be diluted with water to a final volume of 4 liters (4 L) and ingestion of additional water is important to patient tolerance. Direct ingestion of the undissolved powder may increase the risk of nausea, vomiting, dehydration, and electrolyte disturbances.</paragraph>
+                     </text>
+                     <effectiveTime value="20171101"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="ID254">
+               <id root="c0fe707c-df52-43de-926d-ec10e4283435"/>
+               <code code="34084-4" codeSystem="2.16.840.1.113883.6.1" displayName="ADVERSE REACTIONS SECTION"/>
+               <title>6 ADVERSE REACTIONS</title>
+               <effectiveTime value="20220511"/>
+               <excerpt>
+                  <highlight>
+                     <text>
+                        <paragraph ID="ID256">Most common adverse reactions (≥3%) are: nausea, abdominal fullness and bloating. Abdominal cramps, vomiting and anal irritation occur less frequently (<linkHtml href="#ID254">6</linkHtml>)</paragraph>
+                        <paragraph>
+                           <content styleCode="bold">To report SUSPECTED ADVERSE REACTIONS, contact Lupin Pharmaceuticals, Inc. at 1-866-403-7592 or FDA at 1-800-FDA-1088 or </content>
+                           <content styleCode="bold">
+                              <content styleCode="italics">
+                                 <linkHtml href="#ID">www.fda.gov/medwatch</linkHtml>.</content>
+                           </content>
+                        </paragraph>
+                     </text>
+                  </highlight>
+               </excerpt>
+               <component>
+                  <section ID="ID257">
+                     <id root="61fd1997-7a38-4c3a-9374-63fcec987295"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <text>
+                        <paragraph ID="ID341">The following serious or otherwise important adverse reactions are described elsewhere in the labeling:</paragraph>
+                        <list listType="unordered" ID="ID342" styleCode="Disc">
+                           <item>  Serious Fluid and Serum Chemistry Abnormalities <content styleCode="italics">[see Warnings and Precautions (<linkHtml href="#ID238">5.1</linkHtml>)]</content> .</item>
+                           <item>  Cardiac Arrhythmias <content styleCode="italics">[see Warnings and Precautions (<linkHtml href="#ID240">5.2</linkHtml>)]</content> .</item>
+                           <item>  Seizures <content styleCode="italics">[see Warnings and Precautions (<linkHtml href="#ID242">5.3</linkHtml>)]</content> .</item>
+                           <item>  Renal Impairment <content styleCode="italics">[see Warnings and Precautions (<linkHtml href="#ID244">5.4</linkHtml>)]</content> .</item>
+                           <item>  Colonic Mucosal Ulcerations, Ischemic Colitis and Ulcerative Colitis <content styleCode="italics">[see Warnings and Precautions (<linkHtml href="#ID246">5.5</linkHtml>)]</content> .</item>
+                           <item>  Patients with Significant Gastrointestinal Disease <content styleCode="italics">[see Warnings and Precautions (<linkHtml href="#ID248">5.6</linkHtml>)]</content> .</item>
+                           <item>  Aspiration <content styleCode="italics">[see Warnings and Precautions (<linkHtml href="#ID250">5.7</linkHtml>)]</content> .</item>
+                           <item>  Direct Ingestion <content styleCode="italics">[see Warnings and Precautions (<linkHtml href="#ID252">5.8</linkHtml>)]</content> .</item>
+                        </list>
+                        <paragraph ID="ID258">The following adverse reactions have been identified during post-approval use of GaviLyte-N. Because these reactions are reported voluntarily from a population of uncertain size, it is not always possible to reliably estimate their frequency or establish a causal relationship to drug exposure.</paragraph>
+                        <paragraph>Nausea, abdominal fullness and bloating are the most common adverse reactions (occurred in up to 50% of patients) to administration of GaviLyte-N. Abdominal cramps, vomiting and anal irritation occur less frequently. These adverse reactions are transient and usually subside rapidly. Isolated cases of urticaria, rhinorrhea, dermatitis and (rarely) anaphylactic reaction have been reported which may represent allergic reactions.</paragraph>
+                        <paragraph>Published literature contains isolated reports of serious adverse reactions following the administration of PEG-electrolyte solution products in patients over 60 years of age. These adverse events include upper GI bleeding from Mallory-Weiss Tear, esophageal perforation, asystole, sudden dyspnea with pulmonary edema, and "butterfly-like" infiltrates on chest X-ray after vomiting and aspirating PEG.</paragraph>
+                     </text>
+                     <effectiveTime value="20220511"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="ID259">
+               <id root="2e10ec52-483d-4aea-a489-49cc8e24f5d9"/>
+               <code code="34073-7" codeSystem="2.16.840.1.113883.6.1" displayName="DRUG INTERACTIONS SECTION"/>
+               <title>7 DRUG INTERACTIONS</title>
+               <effectiveTime value="20220511"/>
+               <excerpt>
+                  <highlight>
+                     <text>
+                        <list listType="unordered" ID="ID261" styleCode="Disc">
+                           <item>Some drugs increase risks due to fluid and electrolyte      changes (<linkHtml href="#ID262">7.1</linkHtml>)</item>
+                           <item>Oral medication taken within 1 hour of start of each dose      may not be absorbed properly (<linkHtml href="#ID264">7.2</linkHtml>)</item>
+                        </list>
+                     </text>
+                  </highlight>
+               </excerpt>
+               <component>
+                  <section ID="ID262">
+                     <id root="a3ccbdb3-1392-4752-b6f3-99e493daf457"/>
+                     <title>7.1 Drugs that May Lead to Fluid and Electrolyte Abnormalities</title>
+                     <text>
+                        <paragraph ID="ID263">Use caution when prescribing GaviLyte-N for patients who are using medications that increase the risk for fluid and electrolyte disturbances or may increase the risk of adverse events of seizure, arrhythmias, and prolonged QT in the setting of fluid and electrolyte abnormalities. Consider additional patient evaluations as appropriate<content styleCode="italics"> [see Warnings and Precautions (<linkHtml href="#ID238">5.1</linkHtml>, <linkHtml href="#ID240">5.2</linkHtml>, <linkHtml href="#ID242">5.3</linkHtml>, and <linkHtml href="#ID244">5.4</linkHtml>)]</content> in patients taking these concomitant medications.</paragraph>
+                     </text>
+                     <effectiveTime value="20220511"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="ID264">
+                     <id root="664ba74f-f681-4dad-b9de-0d9baafed995"/>
+                     <title>7.2 Potential for Altered Drug Absorption</title>
+                     <text>
+                        <paragraph ID="ID265">Oral medication administered within one hour of the start of administration of GaviLyte-N may be flushed from the gastrointestinal tract and the medication may not be absorbed properly.</paragraph>
+                     </text>
+                     <effectiveTime value="20171101"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="ID266">
+                     <id root="471bc6e3-bebf-4bcc-9908-0fcb60667e11"/>
+                     <title>7.3 Stimulant Laxatives</title>
+                     <text>
+                        <paragraph ID="ID267">Concurrent use of stimulant laxatives and GaviLyte-N may increase the risk of mucosal ulceration or ischemic colitis. Avoid use of stimulant laxatives (e.g., bisacodyl, sodium picosulfate) while taking GaviLyte-N.</paragraph>
+                     </text>
+                     <effectiveTime value="20171101"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="ID268">
+               <id root="50e64d94-2169-45d9-9d78-665f9ed33d16"/>
+               <code code="43684-0" codeSystem="2.16.840.1.113883.6.1" displayName="USE IN SPECIFIC POPULATIONS SECTION"/>
+               <title>8 USE IN SPECIFIC POPULATIONS</title>
+               <effectiveTime value="20220505"/>
+               <component>
+                  <section ID="ID269">
+                     <id root="eef77825-0500-4df9-9b2e-cc841e60e6f3"/>
+                     <code code="42228-7" codeSystem="2.16.840.1.113883.6.1" displayName="PREGNANCY SECTION"/>
+                     <title>8.1 Pregnancy</title>
+                     <text>
+                        <paragraph ID="ID270">Animal reproduction studies have not been conducted with GaviLyte-N. It is also not known whether GaviLyte-N can cause fetal harm when administered to a pregnant woman or can affect reproductive capacity. GaviLyte-N should be given to a pregnant woman only if clearly needed.</paragraph>
+                     </text>
+                     <effectiveTime value="20220505"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="ID271">
+                     <id root="6aaaf441-a8c1-460a-a654-e957a22bbd35"/>
+                     <code code="34080-2" codeSystem="2.16.840.1.113883.6.1" displayName="NURSING MOTHERS SECTION"/>
+                     <title>8.3 Nursing Mothers</title>
+                     <text>
+                        <paragraph ID="ID272">It is not known whether this drug is excreted in human milk. Because many drugs are excreted in human milk, caution should be exercised when GaviLyte-N is administered to a nursing woman.</paragraph>
+                     </text>
+                     <effectiveTime value="20171101"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="ID273">
+                     <id root="cb7891c1-9a89-4a37-b520-68e7d3b0d853"/>
+                     <code code="34081-0" codeSystem="2.16.840.1.113883.6.1" displayName="PEDIATRIC USE SECTION"/>
+                     <title>8.4 Pediatric Use</title>
+                     <text>
+                        <paragraph ID="ID274">Safety and effectiveness of GaviLyte-N in pediatric patients aged 6 months and older is supported by evidence from adequate and well-controlled clinical trials of GaviLyte-N in adults with additional safety and efficacy data from published studies of similar formulations. Use of GaviLyte-N in children younger than 2 years of age should be carefully monitored for occurrence of possible hypoglycemia, as this solution has no caloric substrate. Dehydration has been reported in one child and hypokalemia has been reported in 3 children.</paragraph>
+                     </text>
+                     <effectiveTime value="20171101"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="ID275">
+                     <id root="f0ed91a5-4a68-4401-8af5-b34ee11bf729"/>
+                     <code code="34082-8" codeSystem="2.16.840.1.113883.6.1" displayName="GERIATRIC USE SECTION"/>
+                     <title>8.5 Geriatric Use</title>
+                     <text>
+                        <paragraph ID="ID276">Clinical studies of GaviLyte-N did not include sufficient numbers of subjects aged 65 and over to determine whether they respond differently from younger subjects. Other reported clinical experience has not identified differences in responses between the elderly and younger patients.</paragraph>
+                     </text>
+                     <effectiveTime value="20171101"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="ID277">
+               <id root="9242f040-c34d-4ece-a63c-14a3a5bf0a7e"/>
+               <code code="34089-3" codeSystem="2.16.840.1.113883.6.1" displayName="DESCRIPTION SECTION"/>
+               <title>11 DESCRIPTION</title>
+               <text>
+                  <paragraph ID="ID278">For oral solution: Each 4 liter (4L) GaviLyte-N jug contains a white powder for reconstitution. GaviLyte-N is a combination of polyethylene glycol 3350, an osmotic laxative, and electrolytes (sodium chloride, sodium bicarbonate and potassium chloride) for oral solution.</paragraph>
+                  <paragraph>Each 4 liter jug contains: polyethylene glycol 3350 420g, sodium bicarbonate 5.72 g, sodium chloride 11.2 g, potassium chloride 1.4 g. The solution is clear and colorless when reconstituted to a final volume of 4 liters with water.</paragraph>
+                  <paragraph>Polyethylene Glycol 3350, NF</paragraph>
+                  <renderMultiMedia referencedObject="MM1"/>
+                  <paragraph ID="ID280">Sodium Bicarbonate, USP</paragraph>
+                  <paragraph>The chemical name is NaHCO<sub>3</sub>. The average Molecular Weight is 84.01. The structural formula is:</paragraph>
+                  <renderMultiMedia referencedObject="MM2"/>
+                  <paragraph ID="ID282">Sodium Chloride, USP</paragraph>
+                  <paragraph>The chemical name is NaCl. The average Molecular Weight: 58.44. The structural formula is:</paragraph>
+                  <paragraph>Na+ Cl-</paragraph>
+                  <paragraph>Potassium Chloride, USP</paragraph>
+                  <paragraph>The chemical name is KCl. The average Molecular Weight: 74.55. The structural formula is:</paragraph>
+                  <paragraph>K-Cl</paragraph>
+               </text>
+               <effectiveTime value="20250910"/>
+               <component>
+                  <observationMedia ID="MM1">
+                     <text>PEG structure</text>
+                     <value xsi:type="ED" mediaType="image/jpeg">
+                        <reference value="3839c7fd-e7c4-45c6-ae02-0302b40046b0-01.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+               <component>
+                  <observationMedia ID="MM2">
+                     <text>Sod-Bicarbonate</text>
+                     <value xsi:type="ED" mediaType="image/jpeg">
+                        <reference value="3839c7fd-e7c4-45c6-ae02-0302b40046b0-02.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="ID283">
+               <id root="87286f17-c634-4204-b511-31efda865367"/>
+               <code code="34090-1" codeSystem="2.16.840.1.113883.6.1" displayName="CLINICAL PHARMACOLOGY SECTION"/>
+               <title>12 CLINICAL PHARMACOLOGY</title>
+               <effectiveTime value="20220511"/>
+               <component>
+                  <section ID="ID284">
+                     <id root="57c735f1-ac3f-48ed-9e3e-425ef3736ddf"/>
+                     <code code="43679-0" codeSystem="2.16.840.1.113883.6.1" displayName="MECHANISM OF ACTION SECTION"/>
+                     <title>12.1 Mechanism of Action</title>
+                     <text>
+                        <paragraph ID="ID285">The primary mode of action is thought to be through the osmotic effect of polyethylene glycol 3350 which causes water to be retained in the colon and produces a watery stool.</paragraph>
+                     </text>
+                     <effectiveTime value="20171101"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="ID286">
+                     <id root="15f52d18-c96b-4411-908a-0f18bdbddbb5"/>
+                     <code code="43681-6" codeSystem="2.16.840.1.113883.6.1" displayName="PHARMACODYNAMICS SECTION"/>
+                     <title>12.2 Pharmacodynamics</title>
+                     <text>
+                        <paragraph ID="ID287">GaviLyte-N induces as diarrhea which rapidly cleanses the bowel, usually within four hours.</paragraph>
+                     </text>
+                     <effectiveTime value="20220511"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="ID288">
+                     <id root="a26503d9-7c57-4aae-b37b-06b76bd941a8"/>
+                     <code code="43682-4" codeSystem="2.16.840.1.113883.6.1" displayName="PHARMACOKINETICS SECTION"/>
+                     <title>12.3 Pharmacokinetics</title>
+                     <text>
+                        <paragraph ID="ID289">The pharmacokinetics of PEG3350 following administration of GaviLyte-N were not assessed. Available pharmacokinetic information for oral PEG3350 suggests that it is poorly absorbed.</paragraph>
+                     </text>
+                     <effectiveTime value="20171101"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="ID290">
+               <id root="4740567b-8058-4449-b23f-185b8047d84e"/>
+               <code code="43680-8" codeSystem="2.16.840.1.113883.6.1" displayName="NONCLINICAL TOXICOLOGY SECTION"/>
+               <title>13 NONCLINICAL TOXICOLOGY</title>
+               <effectiveTime value="20171101"/>
+               <component>
+                  <section ID="ID291">
+                     <id root="b98e5026-21b3-42b4-89ef-6262a0d32d95"/>
+                     <title>13.1 Carcinogenesis, Mutagenesis, Impairment of Fertility</title>
+                     <text>
+                        <paragraph ID="ID292">Long term studies in animals have not been performed to evaluate carcinogenic potential of GaviLyte-N. Studies to evaluate the possible impairment of fertility or mutagenic potential of GaviLyte-N have not been performed.</paragraph>
+                     </text>
+                     <effectiveTime value="20171101"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="ID293">
+               <id root="8e9ee060-35d6-41e7-a52b-696948b0a0d2"/>
+               <code code="34069-5" codeSystem="2.16.840.1.113883.6.1" displayName="HOW SUPPLIED SECTION"/>
+               <title>16 HOW SUPPLIED/STORAGE AND HANDLING</title>
+               <text>
+                  <paragraph ID="ID294">In powdered form, for oral administration as a solution following reconstitution. GaviLyte-N is available in a disposable jug in powdered form containing:</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">GaviLyte-N with Flavor Packs</content>
+                     <content styleCode="bold">:</content> polyethylene glycol 3350 420 g, sodium bicarbonate 5.72 g, sodium chloride 11.2 g, potassium chloride 1.48 g and flavoring ingredients 2.0 g (optional). When made up to 4 liters volume with water, the solution contains PEG-3350 31.3 mmol/L, sodium 65 mmol/L, chloride 53 mmol/L, bicarbonate 17 mmol/L and potassium 5 mmol/L. Each jug has an attached package containing 3 flavor packs (optional); one each 2.0 g: Cherry, Lemon, and Orange flavoring, in powdered form, for the addition of ONE pack by the pharmacist prior to dispensing.</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Lemon Flavor GaviLyte-N</content>
+                     <content styleCode="bold">:</content>  polyethylene glycol 3350 420 g, sodium bicarbonate 5.72 g, sodium chloride 11.2 g, potassium chloride 1.48 g and flavoring ingredients 2.0 g. When made up to 4 liters volume with water, the solution contains PEG-3350 31.3 mmol/L, sodium 65 mmol/L, chloride 53 mmol/L, bicarbonate 17 mmol/L and potassium 5 mmol/L.</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Storage:</content>
+                  </paragraph>
+                  <paragraph>Store at 25°C (77°F); excursions permitted to 15-30°C (59-86°F) [see USP Controlled Room Temperature].  When reconstituted, keep solution refrigerated. Use within 48 hours. Discard unused portion.</paragraph>
+                  <paragraph>Keep out of reach of children.</paragraph>
+                  <paragraph>GaviLyte-N with Flavor Packs NDC 43386-050-19 </paragraph>
+               </text>
+               <effectiveTime value="20220511"/>
+            </section>
+         </component>
+         <component>
+            <section ID="ID295">
+               <id root="ae4cc215-dbeb-47cd-aef7-c3d9bf1cb933"/>
+               <code code="34076-0" codeSystem="2.16.840.1.113883.6.1" displayName="INFORMATION FOR PATIENTS SECTION"/>
+               <title>17 PATIENT COUNSELING INFORMATION</title>
+               <text>
+                  <paragraph ID="ID296">See FDA-Approved Patient Labeling (Medication Guide).  Instruct patients:</paragraph>
+                  <list listType="unordered" ID="ID297" styleCode="Disc">
+                     <item>To let you know if they have trouble swallowing or are prone to regurgitation or aspiration.</item>
+                     <item>Not to take other laxatives while they are taking GaviLyte-N.</item>
+                     <item>To consume water or clear liquids during the bowel preparation and after completion of the bowel preparation up until 2 hours before the time of the colonoscopy.</item>
+                     <item>That if they experience severe bloating, distention or abdominal pain, the administration of the solution should be slowed or temporarily discontinued until the symptoms abate. Advise patients to report these events to their health care provider.</item>
+                     <item>That if they have hives, rashes, or any allergic reaction, they should discontinue the medication and contact their health care provider. Medication should be discontinued until they speak to their physician.</item>
+                     <item>To contact their healthcare provider if they develop signs and symptoms of dehydration <content styleCode="italics">[see <linkHtml href="#ID238">Warnings and Precautions (5.1)</linkHtml>].</content>
+                     </item>
+                     <item>That oral medication administered within one hour of the start of administration of GaviLyte-N solution may be flushed from the GI tract and the medication may not be absorbed completely.</item>
+                  </list>
+                  <paragraph ID="ID298">LUPIN and the <renderMultiMedia referencedObject="IMGID2981"/> are registered trademarks of Lupin Pharmaceuticals, Inc.</paragraph>
+                  <paragraph>Manufactured by:</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Novel Laboratories, Inc.</content>
+                  </paragraph>
+                  <paragraph>Somerset, NJ 08873</paragraph>
+                  <paragraph>Manufactured for:</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Lupin Pharmaceuticals, Inc.</content>
+                  </paragraph>
+                  <paragraph>Naples FL, 34108</paragraph>
+                  <paragraph>SAP Code: 276329</paragraph>
+                  <paragraph>Rev. 11/2024</paragraph>
+               </text>
+               <effectiveTime value="20250910"/>
+               <component>
+                  <observationMedia ID="IMGID2981">
+                     <text>Image</text>
+                     <value xsi:type="ED" mediaType="image/jpeg">
+                        <reference value="3839c7fd-e7c4-45c6-ae02-0302b40046b0-298-1.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="ID299">
+               <id root="ff484dc3-ae79-41d6-8801-fa4ca67a1a4b"/>
+               <code code="42231-1" codeSystem="2.16.840.1.113883.6.1" displayName="SPL MEDGUIDE SECTION"/>
+               <title>MEDICATION GUIDE</title>
+               <effectiveTime value="20250910"/>
+               <component>
+                  <section ID="ID300">
+                     <id root="bc786d5e-14b0-4071-9eb0-301c64587927"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <text>
+                        <paragraph ID="ID301">
+                           <content styleCode="bold">GaviLyte™- N (GAV-ee-LITE-N) </content>
+                        </paragraph>
+                        <paragraph>
+                           <content styleCode="bold">(polyethylene glycol 3350 (420 g), sodium chloride, sodium bicarbonate and potassium chloride oral solution)</content>
+                        </paragraph>
+                        <paragraph>Read this Medication Guide before you start taking GaviLyte-N. This information does not take the place of talking with your healthcare provider about your medical condition or your treatment.</paragraph>
+                     </text>
+                     <effectiveTime value="20220511"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="ID302">
+                     <id root="2d83f6e0-26b8-4068-9a05-d32e7ab32040"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <text>
+                        <paragraph ID="ID303">
+                           <content styleCode="bold">What is the most important information I should know about GaviLyte-N? </content>
+                        </paragraph>
+                        <paragraph>
+                           <content styleCode="bold">GaviLyte-N and other osmotic bowel preparations can cause serious side effects, including:</content>
+                        </paragraph>
+                        <paragraph>
+                           <content styleCode="bold">Serious loss of body fluid (dehydration) and changes in blood salts (electrolytes) in your blood.</content>
+                        </paragraph>
+                        <paragraph>
+                           <content styleCode="bold">These changes can cause:</content>
+                        </paragraph>
+                        <list listType="unordered" ID="ID304" styleCode="Disc">
+                           <item>
+                              <content styleCode="bold">abnormal heartbeats that can cause death</content>
+                           </item>
+                           <item>
+                              <content styleCode="bold">seizures</content> . This can happen even if you have never      had a seizure.</item>
+                           <item>
+                              <content styleCode="bold">kidney problems</content>
+                           </item>
+                        </list>
+                        <paragraph ID="ID305">
+                           <content styleCode="bold">Your chance of having fluid loss and changes in body salts with GaviLyte-N is higher if you:</content>
+                        </paragraph>
+                        <list listType="unordered" ID="ID306" styleCode="Disc">
+                           <item>have heart problems</item>
+                           <item>have kidney problems</item>
+                           <item>take water pills or non-steroidal anti-inflammatory drugs      (NSAIDS)</item>
+                        </list>
+                        <paragraph ID="ID307">
+                           <content styleCode="bold">Tell your healthcare provider right away if you have any of these symptoms of a loss of too much body fluid (dehydration) while taking GaviLyte-N:</content>
+                        </paragraph>
+                        <list listType="unordered" ID="ID308" styleCode="Disc">
+                           <item>vomiting that prevents you from keeping down the solution</item>
+                           <item>dizziness</item>
+                           <item>urinating less often than normal</item>
+                           <item>headache</item>
+                        </list>
+                        <paragraph ID="ID309">
+                           <content styleCode="bold">See Section "What are the possible side effects of GaviLyte-N" for more information about side effects.</content>
+                        </paragraph>
+                     </text>
+                     <effectiveTime value="20171101"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="ID310">
+                     <id root="35a8890f-3225-43a4-9445-393313dbb2fe"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <text>
+                        <paragraph ID="ID311">
+                           <content styleCode="bold">What is GaviLyte-N?</content>
+                        </paragraph>
+                        <paragraph>GaviLyte-N is a prescription medicine used by adults to clean the colon before a colonoscopy. GaviLyte-N cleans your colon by causing you to have diarrhea. Cleaning your colon helps your healthcare provider see the inside of your colon more clearly during your colonoscopy.</paragraph>
+                        <paragraph>GaviLyte-N is safe and effective for use in pediatric patients aged 6 months and older.</paragraph>
+                        <paragraph>
+                           <content styleCode="bold">Who should not take GaviLyte-N?</content>
+                        </paragraph>
+                        <paragraph>Do not take GaviLyte-N if your healthcare provider has told you that you have:</paragraph>
+                        <list listType="unordered" ID="ID312" styleCode="Disc">
+                           <item>a blockage in your bowel (obstruction)</item>
+                           <item>an opening in the wall of your stomach or intestine (bowel      perforation)</item>
+                           <item>problems with food and fluid emptying from your stomach      (gastric retention)</item>
+                           <item>a very dilated intestine (bowel)</item>
+                           <item>an allergy to any of the ingredients in GaviLyte-N. See      the end of this leaflet for a complete list of ingredients in GaviLyte-N.</item>
+                        </list>
+                     </text>
+                     <effectiveTime value="20171107"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="ID313">
+                     <id root="374978f6-9e1c-42ce-9d63-459b658b6b5e"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <text>
+                        <paragraph ID="ID314">
+                           <content styleCode="bold">What should I tell my healthcare provider before taking GaviLyte-N? </content>
+                        </paragraph>
+                        <paragraph>
+                           <content styleCode="bold">Before you take GaviLyte-N, tell your healthcare provider if you:</content>
+                        </paragraph>
+                        <list listType="unordered" ID="ID315" styleCode="Disc">
+                           <item>have heart problems</item>
+                           <item>have stomach or bowel problems</item>
+                           <item>have ulcerative colitis</item>
+                           <item>have problems with swallowing or gastric reflux</item>
+                           <item>have a history of seizures</item>
+                           <item>are withdrawing from drinking alcohol</item>
+                           <item>have a low blood salt (sodium) level</item>
+                           <item>have kidney problems</item>
+                           <item>any other medical conditions</item>
+                           <item>are pregnant. It is not known if GaviLyte-N will harm your      unborn baby.</item>
+                        </list>
+                        <paragraph ID="ID316">Talk to your doctor if you are pregnant or plan to become pregnant.</paragraph>
+                        <list listType="unordered" ID="ID317" styleCode="Disc">
+                           <item>are breastfeeding or plan to breastfeed. It is not known      if GaviLyte-N passes into your breast milk. You and your healthcare      provider should decide if you will take GaviLyte-N while breastfeeding.</item>
+                        </list>
+                        <paragraph ID="ID318">
+                           <content styleCode="bold">Tell your healthcare provider about all the medicines you take, </content>including prescription and non-prescription medicines, vitamins, and herbal supplements.</paragraph>
+                        <paragraph>GaviLyte-N may affect how other medicines work. Medicines taken by mouth may not be absorbed properly when taken within 1 hour before the start of GaviLyte-N.</paragraph>
+                        <paragraph>
+                           <content styleCode="bold">Especially tell your healthcare provider if you take:</content>
+                        </paragraph>
+                        <list listType="unordered" ID="ID319" styleCode="Disc">
+                           <item>medicines for blood pressure or heart problems</item>
+                           <item>medicines for kidney problems</item>
+                           <item>medicines for seizures</item>
+                           <item>water pills (diuretics)</item>
+                           <item>non-steroidal anti-inflammatory medicines (NSAID) pain medicines</item>
+                           <item>laxatives</item>
+                           <item>starch-based thickeners. For patients who have trouble swallowing, do not mix GaviLyte-N with starch-based thickeners.</item>
+                        </list>
+                        <paragraph ID="ID320">Ask your healthcare provider or pharmacist for a list of these medicines if you are not sure if you are taking any of the medicines listed above.</paragraph>
+                        <paragraph>Know the medicines you take. Keep a list of them to show your healthcare provider and pharmacist when you get a new medicine.</paragraph>
+                     </text>
+                     <effectiveTime value="20220505"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="ID321">
+                     <id root="36e723b0-13c6-4060-9e4b-568c8bf9998c"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <text>
+                        <paragraph ID="ID322">
+                           <content styleCode="bold">How should I take GaviLyte-N?</content>
+                        </paragraph>
+                        <paragraph>
+                           <content styleCode="bold">You must read, understand, and follow these instructions to take GaviLyte-N the right way.</content>
+                        </paragraph>
+                        <list listType="unordered" ID="ID323" styleCode="Disc">
+                           <item>Take GaviLyte-N exactly as your healthcare provider tells      you to take it.</item>
+                           <item>Drink 240 mL (8 oz.) every 10 minutes. Rapid drinking of      each portion is better than drinking small amounts.</item>
+                           <item>The first bowel movement should occur approximately one      hour after you start drinking the solution.</item>
+                           <item>You may experience some abdominal bloating and distention      before the bowels start to move. If severe discomfort or distention occur,      stop drinking temporarily or drink each portion at longer intervals until      the discomfort goes away.</item>
+                           <item>Continue drinking until the watery stool is clear and free      of solid matter. This usually requires 3 liters and it is best to drink      all of the solution.</item>
+                           <item>
+                              <content styleCode="bold">Do not take undissolved GaviLyte-N powder that has not      been mixed with water (diluted), it may increase your risk of nausea,      vomiting and fluid loss (dehydration).</content>
+                           </item>
+                           <item>Each jug of GaviLyte-N must be reconstituted with water      (diluted) to 4 liters total volume before drinking.</item>
+                           <item>Do not take other laxatives while taking GaviLyte-N.</item>
+                           <item>
+                              <content styleCode="bold">Do not eat solid foods on the day before your      colonoscopy and until after your colonoscopy</content> . Drink only clear      liquids:<list listType="unordered" styleCode="Circle">
+                                 <item>the day before your colonoscopy</item>
+                                 <item>while taking GaviLyte-N</item>
+                                 <item>after taking GaviLyte-N until 2 hours before your      colonoscopy</item>
+                              </list>
+                           </item>
+                        </list>
+                     </text>
+                     <effectiveTime value="20220511"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="ID324">
+                     <id root="e354b07b-e5d7-46ae-864e-97259c98b46b"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <text>
+                        <paragraph ID="ID325">
+                           <content styleCode="bold">What are the possible side effects of GaviLyte-N?</content>
+                        </paragraph>
+                        <paragraph>GaviLyte-N can cause serious side effects, including:</paragraph>
+                        <list listType="unordered" ID="ID326" styleCode="Disc">
+                           <item>
+                              <content styleCode="bold">See Section "What is the most important information I should know about GaviLyte-N?"</content>
+                           </item>
+                           <item>
+                              <content styleCode="bold">changes in certain blood tests</content> . Your healthcare provider may do blood tests after you take GaviLyte-N to check your blood for changes. Tell your healthcare provider if you have any symptoms of too much fluid loss, including:<list listType="unordered" styleCode="Circle">
+                                 <item>vomiting</item>
+                                 <item>nausea</item>
+                                 <item>bloating</item>
+                                 <item>dizziness</item>
+                                 <item>stomach (abdominal) cramping</item>
+                                 <item>headache</item>
+                                 <item>urinate less than usual</item>
+                                 <item>trouble drinking clear liquid</item>
+                              </list>
+                           </item>
+                        </list>
+                        <list listType="unordered" ID="ID327" styleCode="Disc">
+                           <item>
+                              <content styleCode="bold">heart problems. GaviLyte-N may cause irregular      heartbeats.</content>
+                           </item>
+                           <item>
+                              <content styleCode="bold">seizures</content>
+                           </item>
+                           <item>
+                              <content styleCode="bold">ulcers of the bowel or bowel problems (ischemic      colitis). </content> Tell your healthcare provider right away if you have severe      stomach-area (abdomen) pain or rectal bleeding.</item>
+                        </list>
+                        <paragraph ID="ID328">The most common side effects of GaviLyte-N include:</paragraph>
+                        <list listType="unordered" ID="ID329" styleCode="Disc">
+                           <item>nausea</item>
+                           <item>stomach (abdominal) fullness</item>
+                           <item>bloating</item>
+                           <item>stomach (abdominal) cramps</item>
+                           <item>vomiting</item>
+                           <item>anal irritation</item>
+                        </list>
+                        <paragraph ID="ID330">Tell your healthcare provider if you have any side effect that bothers you or that does not go away.</paragraph>
+                        <paragraph>These are not all the possible side effects of GaviLyte-N. For more information, ask your healthcare provider or pharmacist.</paragraph>
+                        <paragraph>Call your doctor for medical advice about side effects. You may report side effects to FDA at 1-800-FDA-1088.</paragraph>
+                     </text>
+                     <effectiveTime value="20220511"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="ID331">
+                     <id root="73c739bc-e667-4061-9db1-3ffeb7f4991e"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <text>
+                        <paragraph ID="ID332">
+                           <content styleCode="bold">How should I store GaviLyte-N?</content>
+                        </paragraph>
+                        <list listType="unordered" ID="ID333" styleCode="Disc">
+                           <item>Store GaviLyte-N at room temperature, between 59ºF to      86°F (15ºC to 30°C).</item>
+                        </list>
+                        <paragraph ID="ID334">
+                           <content styleCode="bold">Keep GaviLyte-N and all medicines out of the reach of children.</content>
+                        </paragraph>
+                        <paragraph>
+                           <content styleCode="bold">General information about the safe and effective use of GaviLyte-N.</content>
+                        </paragraph>
+                        <paragraph>Medicines are sometimes prescribed for purposes other than those listed in a Medication Guide. Do not use GaviLyte-N for a condition for which it was not prescribed. Do not give GaviLyte-N to other people, even if they are going to have the same procedure you are. It may harm them.</paragraph>
+                        <paragraph>This Medication Guide summarizes important information about GaviLyte-N. If you would like more information, talk with your healthcare provider. You can ask your pharmacist or healthcare provider for information that is written for healthcare professionals.</paragraph>
+                        <paragraph>For more information, call 1-866-403-7592.</paragraph>
+                        <paragraph>
+                           <content styleCode="bold">What are the ingredients in GaviLyte-N?</content>
+                        </paragraph>
+                        <paragraph>
+                           <content styleCode="bold">Active ingredients</content>
+                           <content styleCode="bold">:</content> polyethylene glycol 3350, sodium bicarbonate, sodium chloride, and potassium chloride.</paragraph>
+                        <paragraph>
+                           <content styleCode="bold">Inactive ingredients</content>
+                           <content styleCode="bold">:</content> cherry flavoring, lemon flavoring, orange flavoring (flavor packs only)</paragraph>
+                        <paragraph>LUPIN and the <renderMultiMedia referencedObject="IMGID3341"/> are registered trademarks of Lupin Pharmaceuticals, Inc.</paragraph>
+                        <paragraph>Manufactured by:</paragraph>
+                        <paragraph>
+                           <content styleCode="bold">Novel Laboratories, Inc.</content>
+                        </paragraph>
+                        <paragraph>Somerset, NJ 08873</paragraph>
+                        <paragraph>Manufactured for:</paragraph>
+                        <paragraph>
+                           <content styleCode="bold">Lupin Pharmaceuticals, Inc.</content>
+                        </paragraph>
+                        <paragraph>Naples FL, 34108</paragraph>
+                        <paragraph>This Medication Guide has been approved by the U.S. Food and Drug Administration.</paragraph>
+                        <paragraph>SAP Code: 276329</paragraph>
+                        <paragraph>Rev. 11/2024</paragraph>
+                     </text>
+                     <effectiveTime value="20250910"/>
+                  </section>
+               </component>
+               <component>
+                  <observationMedia ID="IMGID3341">
+                     <text>Image</text>
+                     <value xsi:type="ED" mediaType="image/jpeg">
+                        <reference value="3839c7fd-e7c4-45c6-ae02-0302b40046b0-334-1.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="ID335">
+               <id root="b6d711df-27ce-4fbf-8d57-20efa2bc0350"/>
+               <code code="51945-4" codeSystem="2.16.840.1.113883.6.1" displayName="PACKAGE LABEL.PRINCIPAL DISPLAY PANEL"/>
+               <title>PACKAGE LABEL.PRINCIPAL DISPLAY PANEL</title>
+               <text>
+                  <paragraph ID="ID336">GaviLyte-N</paragraph>
+                  <paragraph>Container Label</paragraph>
+                  <renderMultiMedia referencedObject="MM3"/>
+                  <paragraph ID="ID338">Flavor Packs (Cherry Flavor, Lemon Flavor and Orange Flavor)</paragraph>
+                  <renderMultiMedia referencedObject="MM4"/>
+               </text>
+               <effectiveTime value="20250910"/>
+               <component>
+                  <observationMedia ID="MM3">
+                     <text>label</text>
+                     <value xsi:type="ED" mediaType="image/jpeg">
+                        <reference value="3839c7fd-e7c4-45c6-ae02-0302b40046b0-03.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+               <component>
+                  <observationMedia ID="MM4">
+                     <text>Flavor Packs</text>
+                     <value xsi:type="ED" mediaType="image/jpeg">
+                        <reference value="3839c7fd-e7c4-45c6-ae02-0302b40046b0-04.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+      </structuredBody>
+   </component>
+</document>

@@ -1,0 +1,831 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="https://www.accessdata.fda.gov/spl/stylesheet/spl.xsl" type="text/xsl"?>
+<document xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 https://www.accessdata.fda.gov/spl/schema/spl.xsd">
+   <id root="76315824-49db-4c7c-a721-ecf9763a6d62"/>
+   <code code="58476-3" codeSystem="2.16.840.1.113883.6.1" displayName="DIETARY SUPPLEMENT"/>
+   <title>WesNate DHA</title>
+   <effectiveTime value="20250709"/>
+   <setId root="8a359ea4-b9f7-4a4c-ba96-b5c0a38933a9"/>
+   <versionNumber value="2"/>
+   <author>
+      <time/>
+      <assignedEntity>
+         <representedOrganization>
+            <id extension="079516651" root="1.3.6.1.4.1.519.1"/>
+            <name>Westminster Pharmaceuticals, LLC</name>
+            <assignedEntity>
+               <assignedOrganization/>
+            </assignedEntity>
+         </representedOrganization>
+      </assignedEntity>
+   </author>
+   <component>
+      <structuredBody>
+         <component>
+            <section ID="DLDE">
+               <id root="b2884e51-7c02-403f-bd36-b7567475c32f"/>
+               <code code="48780-1" codeSystem="2.16.840.1.113883.6.1" displayName="SPL PRODUCT DATA ELEMENTS SECTION"/>
+               <effectiveTime value="20250709"/>
+               <subject>
+                  <manufacturedProduct>
+                     <manufacturedProduct>
+                        <code code="69367-317" codeSystem="2.16.840.1.113883.6.69"/>
+                        <name>WesNate DHA</name>
+                        <formCode code="C42936" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="CAPSULE, GELATIN COATED"/>
+                        <asEntityWithGeneric>
+                           <genericMedicine>
+                              <name>ascorbic acid, cholecalciferol, .alpha.-tocopherol, d-, thiamine mononitrate, riboflavin, pyridoxine hydrochloride, folic acid, cyanocobalamin, ferrous fumarate, magnesium oxide, zinc oxide, cupric sulfate, and omega-3 fatty acids</name>
+                           </genericMedicine>
+                        </asEntityWithGeneric>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator value="100" unit="mg"/>
+                              <denominator value="1" unit="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="PQ6CK8PD0R" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>ASCORBIC ACID</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="PQ6CK8PD0R" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>ASCORBIC ACID</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator value="400" unit="[iU]"/>
+                              <denominator value="1" unit="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="1C6V77QF41" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>CHOLECALCIFEROL</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="1C6V77QF41" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>CHOLECALCIFEROL</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator value="30" unit="[iU]"/>
+                              <denominator value="1" unit="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="N9PR3490H9" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>.ALPHA.-TOCOPHEROL, D-</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="N9PR3490H9" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>.ALPHA.-TOCOPHEROL, D-</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIR">
+                           <quantity>
+                              <numerator value="3" unit="mg"/>
+                              <denominator value="1" unit="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="8K0I04919X" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>THIAMINE MONONITRATE</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="4ABT0J945J" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>THIAMINE ION</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                              <asEquivalentSubstance>
+                                 <definingSubstance>
+                                    <code code="X66NSO3N35" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>THIAMINE</name>
+                                 </definingSubstance>
+                              </asEquivalentSubstance>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator value="3" unit="mg"/>
+                              <denominator value="1" unit="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="TLM2976OFR" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>RIBOFLAVIN</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="TLM2976OFR" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>RIBOFLAVIN</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIM">
+                           <quantity>
+                              <numerator value="20" unit="mg"/>
+                              <denominator value="1" unit="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="68Y4CF58BV" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>PYRIDOXINE HYDROCHLORIDE</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="KV2JZ1BI6Z" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>PYRIDOXINE</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator value="1" unit="mg"/>
+                              <denominator value="1" unit="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="935E97BOY8" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>FOLIC ACID</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="935E97BOY8" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>FOLIC ACID</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator value="15" unit="ug"/>
+                              <denominator value="1" unit="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="P6YC3EG204" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>CYANOCOBALAMIN</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="P6YC3EG204" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>CYANOCOBALAMIN</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIM">
+                           <quantity>
+                              <numerator value="28" unit="mg"/>
+                              <denominator value="1" unit="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="R5L488RY0Q" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>FERROUS FUMARATE</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="GW89581OWR" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>FERROUS CATION</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIM">
+                           <quantity>
+                              <numerator value="30" unit="mg"/>
+                              <denominator value="1" unit="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="3A3U0GI71G" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>MAGNESIUM OXIDE</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="T6V3LHY838" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>MAGNESIUM CATION</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIM">
+                           <quantity>
+                              <numerator value="20" unit="mg"/>
+                              <denominator value="1" unit="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="SOI2LOH54Z" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>ZINC OXIDE</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="13S1S8SF37" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>ZINC CATION</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIM">
+                           <quantity>
+                              <numerator value="1" unit="mg"/>
+                              <denominator value="1" unit="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="LRX7AJ16DT" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>CUPRIC SULFATE</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="8CBV67279L" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>CUPRIC CATION</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator value="200" unit="mg"/>
+                              <denominator value="1" unit="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="71M78END5S" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>OMEGA-3 FATTY ACIDS</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="71M78END5S" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>OMEGA-3 FATTY ACIDS</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="2G86QN327L" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>GELATIN, UNSPECIFIED</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="PDC6A3C0OX" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>GLYCERIN</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="241ATL177A" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>SOYBEAN OIL</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="2ZA36H0S2V" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>YELLOW WAX</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="059QF0KO0R" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>WATER</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="1DI56QDM62" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>SOYBEAN LECITHIN</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="15FIX9V2JP" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>TITANIUM DIOXIDE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="YC9ST449YJ" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>ETHYL VANILLIN</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="H77VEI93A8" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>FD&amp;C YELLOW NO. 6</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="WZB9127XOA" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>FD&amp;C RED NO. 40</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <asContent>
+                           <quantity>
+                              <numerator value="30" unit="1"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code code="69367-317-30" codeSystem="2.16.840.1.113883.6.69"/>
+                              <formCode code="C43173" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOTTLE, PLASTIC"/>
+                           </containerPackagedProduct>
+                        </asContent>
+                     </manufacturedProduct>
+                     <subjectOf>
+                        <approval>
+                           <code code="C86952" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="DIETARY SUPPLEMENT"/>
+                           <author>
+                              <territorialAuthority>
+                                 <territory>
+                                    <code code="USA" codeSystem="2.16.840.1.113883.5.28"/>
+                                 </territory>
+                              </territorialAuthority>
+                           </author>
+                        </approval>
+                     </subjectOf>
+                     <subjectOf>
+                        <marketingAct>
+                           <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <statusCode code="active"/>
+                           <effectiveTime>
+                              <low value="20211214"/>
+                           </effectiveTime>
+                        </marketingAct>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLCOLOR" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value code="C48331" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ORANGE" xsi:type="CE">
+                              <originalText/>
+                           </value>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLSCORE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value value="1" xsi:type="INT"/>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLSHAPE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value code="C48345" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="OVAL" xsi:type="CE">
+                              <originalText/>
+                           </value>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLSIZE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value unit="mm" value="13" xsi:type="PQ"/>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLIMPRINT" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value xsi:type="ST">317</value>
+                        </characteristic>
+                     </subjectOf>
+                     <consumedIn>
+                        <substanceAdministration>
+                           <routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ORAL"/>
+                        </substanceAdministration>
+                     </consumedIn>
+                  </manufacturedProduct>
+               </subject>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="650e3123-8c02-4eff-a346-bedcdc9bef7d"/>
+               <code code="69719-3" codeSystem="2.16.840.1.113883.6.1" displayName="HEALTH CLAIM SECTION"/>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">Prenatal/Postnatal Prescription Dietary Supplement</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">69367-317-30<br/>Rx</content>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20250709"/>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="fd1201ca-cbaf-40fe-ad57-ad1c798d95f9"/>
+               <code code="69719-3" codeSystem="2.16.840.1.113883.6.1" displayName="HEALTH CLAIM SECTION"/>
+               <title>DESCRIPTION</title>
+               <text>
+                  <paragraph>WesNate DHA is an orally administered prenatal/postnatal prescription dietary supplement with DHA and should be administered under the supervision of a licensed medical practitioner.</paragraph>
+               </text>
+               <effectiveTime value="20250709"/>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="da48be60-ac1c-49d4-85c2-9080e2ccd6c6"/>
+               <code code="69719-3" codeSystem="2.16.840.1.113883.6.1" displayName="HEALTH CLAIM SECTION"/>
+               <title>DIRECTIONS FOR USE</title>
+               <text>
+                  <paragraph>One softgel daily, regardless of lactation status, or as prescribed by a licensed medical practitioner</paragraph>
+               </text>
+               <effectiveTime value="20250709"/>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="6c47a600-2f94-4347-8db6-4a2a0f55d163"/>
+               <code code="69718-5" codeSystem="2.16.840.1.113883.6.1" displayName="STATEMENT OF IDENTITY SECTION"/>
+               <text>
+                  <table width="65%">
+                     <col width="43%" align="left" valign="top"/>
+                     <col width="37%" align="right" valign="top"/>
+                     <col width="20%" align="center" valign="top"/>
+                     <thead>
+                        <tr>
+                           <th styleCode="Lrule Rrule" colspan="3">Supplement Facts</th>
+                        </tr>
+                        <tr styleCode="Botrule">
+                           <th styleCode="Lrule Rrule" colspan="3">Serving Size: 1 Softgel</th>
+                        </tr>
+                        <tr>
+                           <th styleCode="Lrule" valign="bottom">Amount Per Serving</th>
+                           <th/>
+                           <th styleCode="Rrule" align="center">% Daily Value for Pregnant and Lactating Women</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr styleCode="Botrule">
+                           <td styleCode="Lrule">
+                              <content styleCode="bold">Vitamin C</content> (as ascorbic acid)</td>
+                           <td>100 mg</td>
+                           <td styleCode="Rrule">83%</td>
+                        </tr>
+                        <tr styleCode="Botrule">
+                           <td styleCode="Lrule">
+                              <content styleCode="bold">Vitamin D</content> (Vitamin D3 as cholecalciferol)</td>
+                           <td>10 mcg (400 IU)</td>
+                           <td styleCode="Rrule">67%</td>
+                        </tr>
+                        <tr styleCode="Botrule">
+                           <td styleCode="Lrule">
+                              <content styleCode="bold">Vitamin E</content> (as d-alpha tocopherol)</td>
+                           <td>20.1 mg (30 IU)</td>
+                           <td styleCode="Rrule">106%</td>
+                        </tr>
+                        <tr styleCode="Botrule">
+                           <td styleCode="Lrule">
+                              <content styleCode="bold">Thiamin</content> (as thiamine mononitrate)</td>
+                           <td>3 mg</td>
+                           <td styleCode="Rrule">214%</td>
+                        </tr>
+                        <tr styleCode="Botrule">
+                           <td styleCode="Lrule">
+                              <content styleCode="bold">Riboflavin</content>
+                           </td>
+                           <td>3 mg</td>
+                           <td styleCode="Rrule">188%</td>
+                        </tr>
+                        <tr styleCode="Botrule">
+                           <td styleCode="Lrule">
+                              <content styleCode="bold">Vitamin B6</content> (as pyridoxine HCl)</td>
+                           <td>20 mg</td>
+                           <td styleCode="Rrule">1000%</td>
+                        </tr>
+                        <tr styleCode="Botrule">
+                           <td styleCode="Lrule">
+                              <content styleCode="bold">Folate</content>
+                           </td>
+                           <td>1700 mcg DFE (1 mg Folic Acid)</td>
+                           <td styleCode="Rrule">283%</td>
+                        </tr>
+                        <tr styleCode="Botrule">
+                           <td styleCode="Lrule">
+                              <content styleCode="bold">Vitamin B12</content> (as cyanocobalamin)</td>
+                           <td>15 mcg</td>
+                           <td styleCode="Rrule">536%</td>
+                        </tr>
+                        <tr styleCode="Botrule">
+                           <td styleCode="Lrule">
+                              <content styleCode="bold">Iron</content> (as ferrous fumarate)</td>
+                           <td>28 mg</td>
+                           <td styleCode="Rrule">104%</td>
+                        </tr>
+                        <tr styleCode="Botrule">
+                           <td styleCode="Lrule">
+                              <content styleCode="bold">Magnesium</content> (as magnesium oxide)</td>
+                           <td>30 mg</td>
+                           <td styleCode="Rrule">8 %</td>
+                        </tr>
+                        <tr styleCode="Botrule">
+                           <td styleCode="Lrule">
+                              <content styleCode="bold">Zinc</content> (as zinc oxide)</td>
+                           <td>20 mg</td>
+                           <td styleCode="Rrule">154%</td>
+                        </tr>
+                        <tr styleCode="Botrule">
+                           <td styleCode="Lrule">
+                              <content styleCode="bold">Copper</content> (as cupric sulfate)</td>
+                           <td>1 mg</td>
+                           <td styleCode="Rrule">77%</td>
+                        </tr>
+                        <tr>
+                           <td styleCode="Lrule">
+                              <content styleCode="bold">Omega-3 Fatty Acids</content> (DHA-EPA)</td>
+                           <td>200 mg</td>
+                           <td styleCode="Rrule" align="center">
+                              <footnote ID="supfacts">Daily Value not established</footnote>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <paragraph>Other ingredients: Gelatin, Soybean Oil, Glycerin, Purified Water, Yellow Beeswax, Soy Lecithin, Titanium Dioxide, Ethyl Vanillin, FD&amp;C Yellow #6, FD&amp;C Red #40.</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Contains:</content> Fish and Soy</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">KEEP THIS OUT OF REACH OF CHILDREN</content>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20250709"/>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="6707d4d0-ff1c-4d64-802b-710ea28e2598"/>
+               <code code="69719-3" codeSystem="2.16.840.1.113883.6.1" displayName="HEALTH CLAIM SECTION"/>
+               <title>CONTRAINDICTIONS</title>
+               <text>
+                  <paragraph>WesNate DHA should not be used by patients with known history of hypersensitivity to any of its ingredients.</paragraph>
+                  <table width="90%" styleCode="Noautorules">
+                     <col width="100%" align="left" valign="middle"/>
+                     <tbody>
+                        <tr styleCode="Botrule">
+                           <td styleCode="Toprule Lrule Rrule">
+                              <content styleCode="bold">WARNING: Accidental overdose of iron-containing products is a leading cause of fatal poisoning in children under 6. KEEP THIS PRODUCT OUT OF REACH OF CHILDREN. In case of accidental overdose, call a doctor or poison control center immediately.</content>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </text>
+               <effectiveTime value="20250709"/>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="24d350dc-0a6d-4c8d-9caa-599a695007bd"/>
+               <code code="69719-3" codeSystem="2.16.840.1.113883.6.1" displayName="HEALTH CLAIM SECTION"/>
+               <title>CAUTIONS</title>
+               <text>
+                  <paragraph>High levels of folic acid may, especially in older adults, hide signs of Vitamin B-12 deficiency (such as pernicious anemia, a condition that can cause nerve damage).</paragraph>
+                  <paragraph>Concurrent use of folic acid has been associated with enhanced phenytoin metabolism, lowering the level of the AED in the blood and allowing breakthrough seizures to occur. Caution should be used when prescribing this product among patients who are receiving treatment with phenytoin or other anticonvulsants.</paragraph>
+                  <paragraph>Exercise caution with the concomitant use of folinic acid and trimethoprim-sulfamethoxazole for the acute treatment of Pneumocystis carinii pneumonia in patients with HIV infection as it is associated with increased rates of treatment failure and mortality in a placebo controlled study<content styleCode="bold">.</content>
+                  </paragraph>
+                  <paragraph>The action of levodopa is antagonized by pyridoxine.</paragraph>
+                  <paragraph>Products containing iron should not be used during dimercaprol therapy. Dimercaprol can bind to iron and cause kidney damage.</paragraph>
+                  <paragraph>Avoid administering omega-3 fatty acids to patients with inherited or acquired predisposition toward bleeding, including patients taking anticoagulants. Exercise caution with these patients to ensure that the prescribed dosage of DHA does not exceed 1 gram (1000 mg) per day.</paragraph>
+               </text>
+               <effectiveTime value="20250709"/>
+               <component>
+                  <section>
+                     <id root="e6492369-af59-4a29-bbc7-b3115b600bea"/>
+                     <code code="69719-3" codeSystem="2.16.840.1.113883.6.1" displayName="HEALTH CLAIM SECTION"/>
+                     <title>Side Effects</title>
+                     <text>
+                        <paragraph>Allergic reactions have been reported following oral administration of folic acid.</paragraph>
+                        <paragraph>Iron can cause mild gastrointestinal side effects, particularly when taken on an empty stomach.</paragraph>
+                     </text>
+                     <effectiveTime value="20250709"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="01d73c2f-08bb-4e7d-9ab5-5f56ef101164"/>
+               <code code="69719-3" codeSystem="2.16.840.1.113883.6.1" displayName="HEALTH CLAIM SECTION"/>
+               <title>DRUG INTERACTIONS</title>
+               <effectiveTime value="20250709"/>
+               <component>
+                  <section>
+                     <id root="a9dbc3c4-fea4-4346-913e-8f261945886b"/>
+                     <code code="69719-3" codeSystem="2.16.840.1.113883.6.1" displayName="HEALTH CLAIM SECTION"/>
+                     <title>Folic Acid</title>
+                     <text>
+                        <paragraph>Concurrent use of folic acid has been associated with enhanced phenytoin metabolism, lowering the level of the AED in the blood and allowing breakthrough seizures to occur.</paragraph>
+                        <paragraph>Folinic acid may enhance the toxicity of fluorouracil.</paragraph>
+                        <paragraph>High levels of folic acid may result in decreased serum levels of pyrimethamine.</paragraph>
+                        <paragraph>Concurrent administration of chloramphenicol and folinic acid in folate-deficient patients may result in antagonism of the hematopoietic response to folate.</paragraph>
+                        <paragraph>Antiepileptic drugs (including, but not limited to, phenytoin, carbamazepine, primidone, valproic acid, fosphenytoin, valproate, phenobarbital and lamotrigine) have been shown to impair folate absorption and increase the metabolism of circulating folate.</paragraph>
+                     </text>
+                     <effectiveTime value="20250709"/>
+                     <component>
+                        <section>
+                           <id root="138b16df-8d3d-4478-98d6-0929b861df86"/>
+                           <code code="69719-3" codeSystem="2.16.840.1.113883.6.1" displayName="HEALTH CLAIM SECTION"/>
+                           <title>Fluoxetine</title>
+                           <text>
+                              <paragraph>Fluoxetine exerts a noncompetitive inhibition of the 5-methyltetrahydrofolate active transport system in the intestine.</paragraph>
+                              <paragraph>Decreased folic acid levels have been reported to be associated with the administration of Cholestyramine, Colestipol, Cycloserine, Dihydrofolate Reductase Inhibitors (aminopterin, methotrexate, pyrimethamine, triamterene, and trimethoprim), L-dopa, colchicine, oral contraceptives, methylprednisolone, pancreatic extracts (pancreatin, pancrelipase), prolonged intravenous pentamidine, smoking and alcohol consumption, sulfasalazine, metformin, heme iron, isotretinoin, and after a 6-month course of therapy, warfarin can produce a significant impairment of folate status.</paragraph>
+                           </text>
+                           <effectiveTime value="20250709"/>
+                        </section>
+                     </component>
+                  </section>
+               </component>
+               <component>
+                  <section>
+                     <id root="982e3fab-aa31-4724-959c-e7c08bc148a2"/>
+                     <code code="69719-3" codeSystem="2.16.840.1.113883.6.1" displayName="HEALTH CLAIM SECTION"/>
+                     <title>Thiamin (Vitamin B1)</title>
+                     <text>
+                        <paragraph>Furosemide, a loop diuretic, can decrease thiamin levels.</paragraph>
+                        <paragraph>There have been case reports that fluorouracil may increase thiamin metabolism.</paragraph>
+                     </text>
+                     <effectiveTime value="20250709"/>
+                  </section>
+               </component>
+               <component>
+                  <section>
+                     <id root="b98af033-6ce8-4440-ab71-a16454d82af9"/>
+                     <code code="69719-3" codeSystem="2.16.840.1.113883.6.1" displayName="HEALTH CLAIM SECTION"/>
+                     <title>Vitamin B6</title>
+                     <text>
+                        <paragraph>Vitamin B6 should not be given to patients receiving the drug levodopa because the action of levodopa is antagonized by Vitamin B6. However, Vitamin B6 may be used concurrently in patients receiving a preparation containing both carbidopa and levodopa.</paragraph>
+                        <paragraph>Isoniazid can produce a Vitamin B6 deficiency.</paragraph>
+                     </text>
+                     <effectiveTime value="20250709"/>
+                  </section>
+               </component>
+               <component>
+                  <section>
+                     <id root="7ae9a69a-6d8e-4b56-879f-d6dfaa611496"/>
+                     <code code="69719-3" codeSystem="2.16.840.1.113883.6.1" displayName="HEALTH CLAIM SECTION"/>
+                     <title>Vitamin B12</title>
+                     <text>
+                        <paragraph>Antibiotics, cholestyramine, colchicine, colestipol, metformin, para-aminosalicylic acid, and potassium chloride may decrease the absorption of vitamin B12 , and nitrous oxide can produce a functional vitamin B12 deficiency.</paragraph>
+                     </text>
+                     <effectiveTime value="20250709"/>
+                  </section>
+               </component>
+               <component>
+                  <section>
+                     <id root="d805a2ff-108f-45a0-ac6e-d7439c9e3a7e"/>
+                     <code code="69719-3" codeSystem="2.16.840.1.113883.6.1" displayName="HEALTH CLAIM SECTION"/>
+                     <title>Vitamin D3</title>
+                     <text>
+                        <paragraph>Some thiazide diuretics, such as hydrochlorothiazide, as well as antacids, bile acid sequestrants (such as cholestyramine), mineral oil, orlistat, olestra, cimetidine, and anticonvulsant medications may reduce the absorption or increase the catabolism of Vitamin D.</paragraph>
+                        <paragraph>Vitamin D supplementation should not be given with calcium to patients with hypercalcemia or conditions that may lead to hypercalcemia such as hyperparathyroidism or those who form calcium-containing kidney stones.</paragraph>
+                     </text>
+                     <effectiveTime value="20250709"/>
+                  </section>
+               </component>
+               <component>
+                  <section>
+                     <id root="3e08ff9d-ac8e-4230-932d-ffd2c7ce9c03"/>
+                     <code code="69719-3" codeSystem="2.16.840.1.113883.6.1" displayName="HEALTH CLAIM SECTION"/>
+                     <title>Iron</title>
+                     <text>
+                        <paragraph>Iron supplements might reduce the amounts of levodopa available to the body and diminish its clinical effectiveness.</paragraph>
+                        <paragraph>Levothyroxine ingested simultaneously with iron can result in clinically significant reductions in levothyroxine efficacy.</paragraph>
+                        <paragraph>Proton pump inhibitors reduce the acidity of stomach contents and can reduce iron absorption.</paragraph>
+                     </text>
+                     <effectiveTime value="20250709"/>
+                  </section>
+               </component>
+               <component>
+                  <section>
+                     <id root="4a42ebd1-394b-42ea-aa85-279f63688780"/>
+                     <code code="69719-3" codeSystem="2.16.840.1.113883.6.1" displayName="HEALTH CLAIM SECTION"/>
+                     <title>Zinc</title>
+                     <text>
+                        <paragraph>Zinc may decrease absorption of quinolone or tetracycline antibiotics.</paragraph>
+                     </text>
+                     <effectiveTime value="20250709"/>
+                  </section>
+               </component>
+               <component>
+                  <section>
+                     <id root="404f5d8f-b135-4ba3-af76-51064651ebd5"/>
+                     <code code="69719-3" codeSystem="2.16.840.1.113883.6.1" displayName="HEALTH CLAIM SECTION"/>
+                     <title>Cupric oxide</title>
+                     <text>
+                        <paragraph>Concomitant use of penicillamine and copper can cause decreased absorption of both substances.</paragraph>
+                     </text>
+                     <effectiveTime value="20250709"/>
+                  </section>
+               </component>
+               <component>
+                  <section>
+                     <id root="e3e2a7ca-380c-4217-9f36-f7903ce04271"/>
+                     <code code="69719-3" codeSystem="2.16.840.1.113883.6.1" displayName="HEALTH CLAIM SECTION"/>
+                     <title>Omega-3 Fatty Acids</title>
+                     <text>
+                        <paragraph>Ingestion of more than 3 grams per day of omega-3 fatty acids (ALA, EPA, and DHA) may have potential antithrombotic effects, and may increase bleeding times.</paragraph>
+                        <paragraph>Avoid administering omega-3 fatty acids to patients with inherited or acquired predisposition toward bleeding, including patients taking anticoagulants. Exercise caution with these patients to ensure that the prescribed dosage of DHA does not exceed 1 gram (1000 mg) per day.</paragraph>
+                     </text>
+                     <effectiveTime value="20250709"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="6306687a-66a4-47ea-b074-2f44e624c91d"/>
+               <code code="69719-3" codeSystem="2.16.840.1.113883.6.1" displayName="HEALTH CLAIM SECTION"/>
+               <title>PREGNANT AND NURSING MOTHERS</title>
+               <text>
+                  <paragraph>WesNate DHA s a prescription folate dietary supplement formulated for use before, during and/ or after pregnancy regardless of lactation status.</paragraph>
+               </text>
+               <effectiveTime value="20250709"/>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="adf85959-a1c5-411c-8497-719860ff92db"/>
+               <code code="69719-3" codeSystem="2.16.840.1.113883.6.1" displayName="HEALTH CLAIM SECTION"/>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">KEEP THIS PRODUCT OUT OF REACH OF CHILDREN.</content>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20250709"/>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="06234179-e3ea-4334-b5a9-82e9476133da"/>
+               <code code="69719-3" codeSystem="2.16.840.1.113883.6.1" displayName="HEALTH CLAIM SECTION"/>
+               <title>HOW SUPPLIED</title>
+               <text>
+                  <paragraph>WesNate DHA is supplied as oval, orange colored softgel, imprinted with "317" dispensed in bottles of 30 softgels.</paragraph>
+                  <paragraph>69367-317-30</paragraph>
+               </text>
+               <effectiveTime value="20250709"/>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="837331ec-dc42-4fc1-bd40-d458ab15ff2b"/>
+               <code code="69719-3" codeSystem="2.16.840.1.113883.6.1" displayName="HEALTH CLAIM SECTION"/>
+               <title>STORAGE</title>
+               <text>
+                  <paragraph>Store at controlled room temperature 15° to 30°C (59° to 86°F).</paragraph>
+                  <paragraph>Protect from light and moisture. Dispense in a tight, light-resistant container.</paragraph>
+               </text>
+               <effectiveTime value="20250709"/>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="113a8346-5248-4717-a654-8aa2005ef4b5"/>
+               <code code="69719-3" codeSystem="2.16.840.1.113883.6.1" displayName="HEALTH CLAIM SECTION"/>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">Call your medical practitioner about side effects. You may report side effects by calling Westminster at 1-844-221-7294 or FDA at 1-800-FDA-1088.</content>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20250709"/>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="cf219211-b685-449c-8812-b08575324674"/>
+               <code code="69719-3" codeSystem="2.16.840.1.113883.6.1" displayName="HEALTH CLAIM SECTION"/>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">KEEP THIS AND ALL DRUGS OUT OF REACH OF CHILDREN</content>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20250709"/>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="185a051c-de6e-4fb5-b0cc-8bf9588ad70c"/>
+               <code code="69719-3" codeSystem="2.16.840.1.113883.6.1" displayName="HEALTH CLAIM SECTION"/>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">Rx<br/>Manufactured for:</content>
+                     <br/>Westminster Pharmaceuticals, LLC<br/>Nashville, TN 37217<br/>Rev. 03/25</paragraph>
+               </text>
+               <effectiveTime value="20250709"/>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="9ade4b2e-57a3-45a5-8740-400868d2462f"/>
+               <code code="51945-4" codeSystem="2.16.840.1.113883.6.1" displayName="PACKAGE LABEL.PRINCIPAL DISPLAY PANEL"/>
+               <title>PRINCIPAL DISPLAY PANEL - 30 Softgel Bottle Label</title>
+               <text>
+                  <paragraph>69367-317-30<br/>Rx</paragraph>
+                  <paragraph>WesNate DHA</paragraph>
+                  <paragraph>PRENATAL/POSTNATAL</paragraph>
+                  <paragraph>Prescription Dietary<br/>Supplement with DHA</paragraph>
+                  <paragraph>30 Softgels</paragraph>
+                  <paragraph>Westminster<br/>Pharmaceuticals</paragraph>
+                  <renderMultiMedia referencedObject="MM1"/>
+               </text>
+               <effectiveTime value="20250709"/>
+               <component>
+                  <observationMedia ID="MM1">
+                     <text>PRINCIPAL DISPLAY PANEL - 30 Softgel Bottle Label</text>
+                     <value xsi:type="ED" mediaType="image/jpeg">
+                        <reference value="wesnate-01.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+      </structuredBody>
+   </component>
+</document>

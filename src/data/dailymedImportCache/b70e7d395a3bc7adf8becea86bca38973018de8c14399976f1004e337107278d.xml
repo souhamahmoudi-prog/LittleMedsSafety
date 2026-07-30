@@ -1,0 +1,776 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="https://www.accessdata.fda.gov/spl/stylesheet/spl.xsl" type="text/xsl"?>
+<document xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 https://www.accessdata.fda.gov/spl/schema/spl.xsd">
+   <id root="f1930e91-fc54-48fe-af40-d93090c6e749"/>
+   <code code="50578-4" displayName="PRESCRIPTION ANIMAL DRUG LABEL" codeSystem="2.16.840.1.113883.6.1"/>
+   <title>Antirobe Aquadrops®</title>
+   <effectiveTime value="20230331"/>
+   <setId root="a2224602-6f04-4b83-968a-8c193230998f"/>
+   <versionNumber value="6"/>
+   <author>
+      <time/>
+      <assignedEntity>
+         <representedOrganization>
+            <id extension="828851555" root="1.3.6.1.4.1.519.1"/>
+            <name>Zoetis Inc.</name>
+            <assignedEntity>
+               <assignedOrganization/>
+            </assignedEntity>
+         </representedOrganization>
+      </assignedEntity>
+   </author>
+   <component>
+      <structuredBody>
+         <component>
+            <section>
+               <id root="427b1905-cc58-4778-9b4f-6223bb6969fd"/>
+               <code code="48780-1" displayName="SPL listing data elements section" codeSystem="2.16.840.1.113883.6.1"/>
+               <effectiveTime value="20230331"/>
+               <subject>
+                  <manufacturedProduct>
+                     <manufacturedProduct>
+                        <code code="54771-3179" codeSystem="2.16.840.1.113883.6.69"/>
+                        <name>Antirobe Aquadrops</name>
+                        <formCode code="C42953" displayName="LIQUID" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                        <asEntityWithGeneric>
+                           <genericMedicine>
+                              <name>clindamycin hydrochloride</name>
+                           </genericMedicine>
+                        </asEntityWithGeneric>
+                        <ingredient classCode="ACTIM">
+                           <quantity>
+                              <numerator unit="mg" value="25"/>
+                              <denominator unit="mL" value="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="T20OQ1YN1W" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>CLINDAMYCIN HYDROCHLORIDE</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="3U02EL437C" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>CLINDAMYCIN</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <quantity>
+                              <numerator unit="mL" value="0.0864"/>
+                              <denominator unit="mL" value="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="3K9958V90M" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>ALCOHOL</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <asContent>
+                           <quantity>
+                              <numerator unit="mL" value="20"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code/>
+                              <formCode code="C43169" displayName="BOTTLE" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                              <asContent>
+                                 <quantity>
+                                    <numerator unit="1" value="1"/>
+                                    <denominator value="1"/>
+                                 </quantity>
+                                 <containerPackagedProduct>
+                                    <code code="54771-3179-1" codeSystem="2.16.840.1.113883.6.69"/>
+                                    <formCode code="C43182" displayName="CARTON" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                                    <asContent>
+                                       <quantity>
+                                          <numerator unit="1" value="12"/>
+                                          <denominator value="1"/>
+                                       </quantity>
+                                       <containerPackagedProduct>
+                                          <code code="54771-3179-2" codeSystem="2.16.840.1.113883.6.69"/>
+                                          <formCode code="C43184" displayName="CASE" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                                       </containerPackagedProduct>
+                                    </asContent>
+                                 </containerPackagedProduct>
+                              </asContent>
+                           </containerPackagedProduct>
+                        </asContent>
+                     </manufacturedProduct>
+                     <subjectOf>
+                        <approval>
+                           <id extension="NADA135940" root="2.16.840.1.113883.3.150"/>
+                           <code code="C73593" displayName="NADA" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <author>
+                              <territorialAuthority>
+                                 <territory>
+                                    <code code="USA" codeSystem="2.16.840.1.113883.5.28"/>
+                                 </territory>
+                              </territorialAuthority>
+                           </author>
+                        </approval>
+                     </subjectOf>
+                     <subjectOf>
+                        <marketingAct>
+                           <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <statusCode code="active"/>
+                           <effectiveTime>
+                              <low value="19850517"/>
+                           </effectiveTime>
+                        </marketingAct>
+                     </subjectOf>
+                     <consumedIn>
+                        <substanceAdministration>
+                           <routeCode code="C38288" displayName="ORAL" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                        </substanceAdministration>
+                     </consumedIn>
+                  </manufacturedProduct>
+               </subject>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_cd649aa1-9dba-4499-bb12-e9ea82693633">
+               <id root="8ce3629c-8221-4d96-b18a-c8393cd01039"/>
+               <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+               <title/>
+               <text>
+                  <paragraph>Antirobe Aquadrops® brand of clindamycin hydrochloride oral solution</paragraph>
+               </text>
+               <effectiveTime value="20230331"/>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_c16d6ee9-ca6f-4cd7-bcee-a8a5bf529a90">
+               <id root="3cf599ba-5ba2-45fd-8e87-4fc6db81aa73"/>
+               <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+               <title>Caution</title>
+               <text>
+                  <paragraph>Federal law restricts this drug to use by or on the order of a licensed veterinarian.</paragraph>
+               </text>
+               <effectiveTime value="20230331"/>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_67e93a42-9863-49d9-9df5-b97e683c6402">
+               <id root="57a9f9fc-b440-42e8-bc52-4b55509e3172"/>
+               <code code="34089-3" codeSystem="2.16.840.1.113883.6.1" displayName="DESCRIPTION SECTION"/>
+               <title>DESCRIPTION</title>
+               <text>
+                  <paragraph>ANTIROBE Capsules and ANTIROBE AQUADROPS Liquid contain clindamycin hydrochloride which is the hydrated salt of clindamycin. Clindamycin is a semisynthetic antibiotic produced by a 7(S)-chlorosubstitution of the 7(R)-hydroxyl group of a naturally produced antibiotic produced by <content styleCode="italics">Streptomyces lincolnensis var. lincolnensis.</content>
+                  </paragraph>
+                  <paragraph>ANTIROBE Capsules (For Use in Dogs Only):</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">25 mg Capsule,</content> each yellow and white capsule contains clindamycin hydrochloride equivalent to 25 mg of clindamycin.</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">75 mg Capsule,</content> each green capsule contains clindamycin hydrochloride equivalent to 75 mg of clindamycin.</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">150 mg Capsule,</content> each light blue and green capsule contains clindamycin hydrochloride equivalent to 150 mg of clindamycin.</paragraph>
+                  <paragraph>ANTIROBE AQUADROPS Liquid (For Use in Dogs and Cats) is a palatable formulation intended for oral administration. Each mL of ANTIROBE AQUADROPS Liquid contains clindamycin hydrochloride equivalent to 25 mg clindamycin; and ethyl alcohol, 7.4%.</paragraph>
+               </text>
+               <effectiveTime value="20230331"/>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_7c28450a-621e-4da7-92cd-b856ed00f398">
+               <id root="898741a5-4efe-4896-8882-1030b4a3b95c"/>
+               <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+               <title>ACTIONS</title>
+               <effectiveTime value="20230331"/>
+               <component>
+                  <section ID="LINK_c5c1bbf9-db64-40d2-bb96-f882d9a5fa4e">
+                     <id root="f48da33e-775c-43f2-a64f-26b0abaa4985"/>
+                     <code code="43679-0" codeSystem="2.16.840.1.113883.6.1" displayName="MECHANISM OF ACTION SECTION"/>
+                     <title>Site and Mode of Action</title>
+                     <text>
+                        <paragraph>
+                           <content styleCode="bold"> </content> Clindamycin is an inhibitor of protein synthesis in the bacterial cell. The site of binding appears to be in the 5OS sub-unit of the ribosome. Binding occurs to the soluble RNA fraction of certain ribosomes, thereby inhibiting the binding of amino acids to those ribosomes. Clindamycin differs from cell wall inhibitors in that it causes irreversible modification of the protein-synthesizing subcellular elements at the ribosomal level.</paragraph>
+                     </text>
+                     <effectiveTime value="20230331"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_66bae386-faa6-45a4-b18a-4be18929c17f">
+                     <id root="a3a405d2-1f24-455e-bb4b-32abed7b0991"/>
+                     <code code="49489-8" codeSystem="2.16.840.1.113883.6.1" displayName="MICROBIOLOGY SECTION"/>
+                     <title>MICROBIOLOGY</title>
+                     <text>
+                        <paragraph> Clindamycin is a lincosaminide antimicrobial agent with activity against a wide variety of aerobic and anaerobic bacterial pathogens. Clindamycin is a bacteriostatic compound that inhibits bacterial protein synthesis by binding to the 5OS ribosomal sub-unit. The minimum inhibitory concentrations (MICs) of Gram-positive and obligate anaerobic pathogens isolated from dogs and cats in the United States are presented in Table 1 and Table 2. Bacteria were isolated in 1998-1999. All MICs were performed in accordance with the National Committee for Clinical Laboratory Standards (NCCLS).</paragraph>
+                        <table>
+                           <caption>Table 1. Clindamycin MIC Values (μg/mL) from Diagnostic Laboratory Survey Data Evaluating Canine Pathogens in the U.S. during 1998-99<footnote ID="FOOT_9746">The correlation between the <content styleCode="italics">in vitro</content> susceptibility data and clinical response has not been determined.</footnote>
+                           </caption>
+                           <col/>
+                           <col/>
+                           <col/>
+                           <col/>
+                           <col/>
+                           <col/>
+                           <thead>
+                              <tr>
+                                 <th valign="top"> Organism</th>
+                                 <th align="center" valign="bottom"> Number of Isolates</th>
+                                 <th align="center" valign="bottom"> MIC<sub>50</sub>
+                                 </th>
+                                 <th align="center" valign="bottom"> MIC<sub>85</sub>
+                                 </th>
+                                 <th align="center" valign="bottom"> MIC<sub>90</sub>
+                                 </th>
+                                 <th align="center" valign="bottom"> Range</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr>
+                                 <td valign="bottom"> Soft Tissue/Wound<footnote ID="FOOT_9747">Soft Tissue/Wound: includes samples labeled wound, abscess, aspirate, exudates, draining tract, lesion, and mass</footnote>
+                                 </td>
+                                 <td align="center" valign="bottom"> </td>
+                                 <td align="center" valign="bottom"> </td>
+                                 <td align="center" valign="bottom"> </td>
+                                 <td align="center" valign="bottom"> </td>
+                                 <td align="center" valign="bottom"> </td>
+                              </tr>
+                              <tr>
+                                 <td valign="bottom">   <content styleCode="italics">Staphylococcus aureus</content>
+                                 </td>
+                                 <td align="center" valign="bottom"> 17</td>
+                                 <td align="center" valign="bottom"> 0.5</td>
+                                 <td align="center" valign="bottom"> 0.5</td>
+                                 <td align="center" valign="bottom"> ≥4.0</td>
+                                 <td align="center" valign="bottom"> 0.25-≥4.0</td>
+                              </tr>
+                              <tr>
+                                 <td valign="bottom">   <content styleCode="italics">Staphylococcus intermedius</content>
+                                 </td>
+                                 <td align="center" valign="bottom"> 28</td>
+                                 <td align="center" valign="bottom"> 0.25</td>
+                                 <td align="center" valign="bottom"> 0.5</td>
+                                 <td align="center" valign="bottom"> ≥4.0</td>
+                                 <td align="center" valign="bottom"> 0.125-≥4.0</td>
+                              </tr>
+                              <tr>
+                                 <td valign="bottom">   <content styleCode="italics">Staphylococcus </content> spp.</td>
+                                 <td align="center" valign="bottom"> 18</td>
+                                 <td align="center" valign="bottom"> 0.5</td>
+                                 <td align="center" valign="bottom"> 0.5</td>
+                                 <td align="center" valign="bottom"> ≥4.0</td>
+                                 <td align="center" valign="bottom"> 0.25-≥4.0</td>
+                              </tr>
+                              <tr>
+                                 <td valign="bottom">   Beta-hemolytic streptococci</td>
+                                 <td align="center" valign="bottom"> 46</td>
+                                 <td align="center" valign="bottom"> 0.5</td>
+                                 <td align="center" valign="bottom"> 0.5</td>
+                                 <td align="center" valign="bottom"> ≥4.0</td>
+                                 <td align="center" valign="bottom"> 0.25-≥4.0</td>
+                              </tr>
+                              <tr>
+                                 <td valign="bottom" styleCode=" Botrule">   <content styleCode="italics">Streptococcus</content> spp.</td>
+                                 <td align="center" valign="bottom" styleCode=" Botrule"> 11</td>
+                                 <td align="center" valign="bottom" styleCode=" Botrule"> 0.5</td>
+                                 <td align="center" valign="bottom" styleCode=" Botrule"> ≥4.0</td>
+                                 <td align="center" valign="bottom" styleCode=" Botrule"> ≥4.0</td>
+                                 <td align="center" valign="bottom" styleCode=" Botrule"> 0.25-≥4.0</td>
+                              </tr>
+                              <tr>
+                                 <td valign="bottom"> Osteomyelitis/Bone<footnote ID="FOOT_9748">Osteomyelitis/Bone: includes samples labeled bone, fracture, joint, tendon</footnote>
+                                 </td>
+                                 <td align="center" valign="bottom"> </td>
+                                 <td align="center" valign="bottom"> </td>
+                                 <td align="center" valign="bottom"> </td>
+                                 <td align="center" valign="bottom"> </td>
+                                 <td align="center" valign="bottom"> </td>
+                              </tr>
+                              <tr>
+                                 <td valign="bottom">   <content styleCode="italics">Staphylococcus aureus</content>
+                                 </td>
+                                 <td align="center" valign="bottom"> 20</td>
+                                 <td align="center" valign="bottom"> 0.5</td>
+                                 <td align="center" valign="bottom"> 0.5</td>
+                                 <td align="center" valign="bottom"> 0.5</td>
+                                 <td align="center" valign="bottom"> 0.5<footnote ID="FOOT_9749">No range, all isolates yielded the same value</footnote>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td valign="bottom">   <content styleCode="italics">Staphylococcus intermedius</content>
+                                 </td>
+                                 <td align="center" valign="bottom"> 15</td>
+                                 <td align="center" valign="bottom"> 0.5</td>
+                                 <td align="center" valign="bottom"> ≥4.0</td>
+                                 <td align="center" valign="bottom"> ≥4.0</td>
+                                 <td align="center" valign="bottom"> 0.25-≥4.0</td>
+                              </tr>
+                              <tr>
+                                 <td valign="bottom">   <content styleCode="italics">Staphylococcus </content> spp.</td>
+                                 <td align="center" valign="bottom"> 18</td>
+                                 <td align="center" valign="bottom"> 0.5</td>
+                                 <td align="center" valign="bottom"> ≥4.0</td>
+                                 <td align="center" valign="bottom"> ≥4.0</td>
+                                 <td align="center" valign="bottom"> 0.25-≥4.0</td>
+                              </tr>
+                              <tr>
+                                 <td valign="bottom">   Beta-hemolytic streptococci</td>
+                                 <td align="center" valign="bottom"> 21</td>
+                                 <td align="center" valign="bottom"> 0.5</td>
+                                 <td align="center" valign="bottom"> 2.0</td>
+                                 <td align="center" valign="bottom"> 2.0</td>
+                                 <td align="center" valign="bottom"> 0.25-≥4.0</td>
+                              </tr>
+                              <tr>
+                                 <td valign="bottom" styleCode=" Botrule">   <content styleCode="italics">Streptococcus </content> spp.</td>
+                                 <td align="center" valign="bottom" styleCode=" Botrule"> 21</td>
+                                 <td align="center" valign="bottom" styleCode=" Botrule"> ≥4.0</td>
+                                 <td align="center" valign="bottom" styleCode=" Botrule"> ≥4.0</td>
+                                 <td align="center" valign="bottom" styleCode=" Botrule"> ≥4.0</td>
+                                 <td align="center" valign="bottom" styleCode=" Botrule"> 0.25-≥4.0</td>
+                              </tr>
+                              <tr>
+                                 <td valign="bottom"> Dermal/Skin<footnote ID="FOOT_9750">Dermal/Skin: includes samples labeled skin, skin swab, biopsy, incision, lip</footnote>
+                                 </td>
+                                 <td align="center" valign="bottom"> </td>
+                                 <td align="center" valign="bottom"> </td>
+                                 <td align="center" valign="bottom"> </td>
+                                 <td align="center" valign="bottom"> </td>
+                                 <td align="center" valign="bottom"> </td>
+                              </tr>
+                              <tr>
+                                 <td valign="bottom">   <content styleCode="italics">Staphylococcus aureus</content>
+                                 </td>
+                                 <td align="center" valign="bottom"> 25</td>
+                                 <td align="center" valign="bottom"> 0.5</td>
+                                 <td align="center" valign="bottom"> ≥4.0</td>
+                                 <td align="center" valign="bottom"> ≥4.0</td>
+                                 <td align="center" valign="bottom"> 0.25-≥4.0</td>
+                              </tr>
+                              <tr>
+                                 <td valign="bottom">   <content styleCode="italics">Staphylococcus intermedius</content>
+                                 </td>
+                                 <td align="center" valign="bottom"> 48</td>
+                                 <td align="center" valign="bottom"> 0.5</td>
+                                 <td align="center" valign="bottom"> ≥4.0</td>
+                                 <td align="center" valign="bottom"> ≥4.0</td>
+                                 <td align="center" valign="bottom"> 0.125-≥4.0</td>
+                              </tr>
+                              <tr>
+                                 <td valign="bottom">   <content styleCode="italics">Staphylococcus </content> spp.</td>
+                                 <td align="center" valign="bottom"> 32</td>
+                                 <td align="center" valign="bottom"> 0.5</td>
+                                 <td align="center" valign="bottom"> ≥4.0</td>
+                                 <td align="center" valign="bottom"> ≥4.0</td>
+                                 <td align="center" valign="bottom"> 0.25-≥4.0</td>
+                              </tr>
+                              <tr>
+                                 <td valign="bottom">   Beta-hemolytic streptococci</td>
+                                 <td align="center" valign="bottom"> 17</td>
+                                 <td align="center" valign="bottom"> 0.5</td>
+                                 <td align="center" valign="bottom"> 0.5</td>
+                                 <td align="center" valign="bottom"> 0.5</td>
+                                 <td align="center" valign="bottom"> 0.25-0.5</td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table>
+                           <caption>Table 2. Clindamycin MIC Values (μg/mL) from Diagnostic Laboratory Survey Data Evaluating Feline Pathogens from Wound and Abscess Samples in the U.S. during 1998<footnote ID="FOOT_9751">The correlation between the <content styleCode="italics"> in vitro </content> susceptibility data and clinical response has not been determined.</footnote>
+                           </caption>
+                           <col/>
+                           <col/>
+                           <col/>
+                           <col/>
+                           <col/>
+                           <thead>
+                              <tr>
+                                 <th valign="top"> Organism</th>
+                                 <th align="center" valign="bottom"> Number of Isolates</th>
+                                 <th align="center" valign="bottom"> MIC<sub>50</sub>
+                                 </th>
+                                 <th align="center" valign="bottom"> MIC<sub>90</sub>
+                                 </th>
+                                 <th align="center" valign="bottom"> Range</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr>
+                                 <td valign="bottom" styleCode=" Botrule"> Bacteroides/Prevotella</td>
+                                 <td align="center" valign="bottom" styleCode=" Botrule"> 30</td>
+                                 <td align="center" valign="bottom" styleCode=" Botrule"> 0.06</td>
+                                 <td align="center" valign="bottom" styleCode=" Botrule"> 4.0</td>
+                                 <td align="center" valign="bottom" styleCode=" Botrule"> ≤0.015-4.0</td>
+                              </tr>
+                              <tr>
+                                 <td valign="bottom" styleCode=" Botrule"> Fusobacterium spp.</td>
+                                 <td align="center" valign="bottom" styleCode=" Botrule"> 17</td>
+                                 <td align="center" valign="bottom" styleCode=" Botrule"> 0.25</td>
+                                 <td align="center" valign="bottom" styleCode=" Botrule"> 0.25</td>
+                                 <td align="center" valign="bottom" styleCode=" Botrule"> ≤0.015-0.5</td>
+                              </tr>
+                              <tr>
+                                 <td valign="bottom" styleCode=" Botrule"> Peptostreptococcus spp.</td>
+                                 <td align="center" valign="bottom" styleCode=" Botrule"> 18</td>
+                                 <td align="center" valign="bottom" styleCode=" Botrule"> 0.13</td>
+                                 <td align="center" valign="bottom" styleCode=" Botrule"> 0.5</td>
+                                 <td align="center" valign="bottom" styleCode=" Botrule"> ≤0.015-8.0</td>
+                              </tr>
+                              <tr>
+                                 <td valign="bottom"> Porphyromonas spp.</td>
+                                 <td align="center" valign="bottom"> 13</td>
+                                 <td align="center" valign="bottom"> 0.06</td>
+                                 <td align="center" valign="bottom"> 0.25</td>
+                                 <td align="center" valign="bottom"> ≤0.015-8.0</td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </text>
+                     <effectiveTime value="20230331"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_01829733-b410-4d5c-a2f2-46ab89b53417">
+               <id root="fc2d6a51-d808-4705-bdeb-8232b1936710"/>
+               <code code="34090-1" codeSystem="2.16.840.1.113883.6.1" displayName="CLINICAL PHARMACOLOGY SECTION"/>
+               <title>PHARMACOLOGY</title>
+               <effectiveTime value="20230331"/>
+               <component>
+                  <section ID="LINK_54806c9f-625f-4033-8f9b-a8cc0cfea211">
+                     <id root="4af1dc31-fa43-40cd-b01d-e55edf63c9fc"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>Absorption</title>
+                     <text>
+                        <paragraph> Clindamycin hydrochloride is rapidly absorbed from the canine and feline gastrointestinal tract.</paragraph>
+                     </text>
+                     <effectiveTime value="20230331"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_6bf986f8-764d-4424-994c-886322807663">
+                     <id root="53c13d7c-807b-469e-879a-64d944d4adeb"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>Dog Serum Levels</title>
+                     <text>
+                        <paragraph> Serum levels at or above 0.5 μg/mL can be maintained by oral dosing at a rate of 2.5 mg/lb of clindamycin hydrochloride every 12 hours. This same study revealed that average peak serum concentrations of clindamycin occur 1 hour and 15 minutes after oral dosing. The elimination half-life for clindamycin in dog serum was approximately 5 hours. There was no bioactivity accumulation after a regimen of multiple oral doses in healthy dogs.</paragraph>
+                        <table>
+                           <col width="100%"/>
+                           <tbody>
+                              <tr>
+                                 <td align="center" valign="top"> Clindamycin Serum Concentrations 2.5 mg/lb (5.5 mg/kg) After B.I.D. Oral Dose of Antirobe Capsules to Dogs</td>
+                              </tr>
+                              <tr>
+                                 <td align="center" valign="top"> <renderMultiMedia referencedObject="MM1"/>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </text>
+                     <effectiveTime value="20230331"/>
+                     <component>
+                        <observationMedia ID="MM1">
+                           <text>Figure 1</text>
+                           <value xsi:type="ED" mediaType="image/jpeg">
+                              <reference value="antirobe-1.jpg"/>
+                           </value>
+                        </observationMedia>
+                     </component>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_ada9f321-d39f-48a0-a6b1-66b4eaa3beae">
+                     <id root="45747be9-e6b1-469b-ad4d-28c82749d7ed"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>Cat Serum Levels</title>
+                     <text>
+                        <paragraph>
+                           <content styleCode="bold"> </content> Serum levels at or above 0.5 μg/mL can be maintained by oral dosing at a rate of 5 mg/lb of clindamycin hydrochloride liquid every 24 hours. The average peak serum concentration of clindamycin occurs approximately 1 hour after oral dosing. The elimination half-life of clindamycin in feline serum is approximately 7.5 hours. In healthy cats, minimal accumulation occurs after multiple oral doses of clindamycin hydrochloride, and steady-state should be achieved by the third dose.</paragraph>
+                        <table>
+                           <col width="100%"/>
+                           <tbody>
+                              <tr>
+                                 <td align="center" valign="top"> Clindamycin Serum Concentrations 5 mg/lb (11 mg/kg) After Single Oral Dose of Antirobe Aquadrops to Cats</td>
+                              </tr>
+                              <tr>
+                                 <td align="center" valign="top"> <renderMultiMedia referencedObject="MM2"/>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </text>
+                     <effectiveTime value="20230331"/>
+                     <component>
+                        <observationMedia ID="MM2">
+                           <text>Figure 2</text>
+                           <value xsi:type="ED" mediaType="image/jpeg">
+                              <reference value="antirobe-2.jpg"/>
+                           </value>
+                        </observationMedia>
+                     </component>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_804fc337-03b9-4d99-b30f-da39e2f41d87">
+               <id root="ebce15ec-ca7c-45ad-880d-c156e3f884cf"/>
+               <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+               <title>METABOLISM AND EXCRETION</title>
+               <text>
+                  <paragraph>Extensive studies of the metabolism and excretion of clindamycin hydrochloride administered orally in animals and humans have shown that unchanged drug and bioactive and bioinactive metabolites are excreted in urine and feces. Almost all of the bioactivity detected in serum after ANTIROBE product administration is due to the parent molecule (clindamycin). Urine bioactivity, however, reflects a mixture of clindamycin and active metabolites, especially N-demethyl clindamycin and clindamycin sulfoxide.</paragraph>
+               </text>
+               <effectiveTime value="20230331"/>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_f0524440-ec16-45f4-845f-5d25ae5d4310">
+               <id root="3e0b2ca7-0e3c-4124-9379-bc7df0b7392d"/>
+               <code code="34091-9" codeSystem="2.16.840.1.113883.6.1" displayName="ANIMAL PHARMACOLOGY &amp; OR TOXICOLOGY SECTION"/>
+               <title>ANIMAL SAFETY SUMMARY</title>
+               <effectiveTime value="20230331"/>
+               <component>
+                  <section ID="LINK_3f4238c4-5a64-4184-b83d-fb83068ff78e">
+                     <id root="f51a0333-932d-4d6b-912f-395ad311674e"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>Rat and Dog Data</title>
+                     <text>
+                        <paragraph> One year oral toxicity studies in rats and dogs at doses of 30, 100 and 300 mg/kg/day (13.6, 45.5 and 136.4 mg/lb/day) have shown clindamycin hydrochloride capsules to be well tolerated. Differences did not occur in the parameters evaluated to assess toxicity when comparing groups of treated animals with contemporary controls. Rats administered clindamycin hydrochloride at 600 mg/kg/day (272.7 mg/lb/day) for six months tolerated the drug well; however, dogs orally dosed at 600 mg/kg/day (272.7 mg/lb/day) vomited, had anorexia, and subsequently lost weight. At necropsy these dogs had erosive gastritis and focal areas of necrosis of the mucosa of the gallbladder.</paragraph>
+                        <paragraph>Safety in gestating bitches or breeding males has not been established.</paragraph>
+                     </text>
+                     <effectiveTime value="20230331"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_0b2b044a-c81f-45cb-b663-ef9b14a5f6ad">
+                     <id root="be5fea89-fa79-48f0-85a4-479a61c516fc"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>Cat Data</title>
+                     <text>
+                        <paragraph> The recommended daily therapeutic dose range for clindamycin hydrochloride (ANTIROBE AQUADROPS oral solution) is 11 to 33 mg/kg/day (5 to 15 mg/lb/day) depending on the severity of the condition. Clindamycin hydrochloride (ANTIROBE AQUADROPS oral soluation) was tolerated with little evidence of toxicity in domestic shorthair cats when administered orally at 10× the minimum recommended therapeutic daily dose (11 mg/kg; 5 mg/lb) for 15 days, and at doses up to 5× the minimum recommended therapeutic dose for 42 days. Gastrointestinal tract upset (soft feces to diarrhea) occurred in control and treated cats with emesis occurring at doses 3× or greater than the minimum recommended therapeutic dose (11 mg/kg/day; 5 mg/lb/day). Lymphocytic inflammation of the gallbladder was noted in a greater number of treated cats at the 110 mg/kg/day (50 mg/lb/day) dose level than for control cats. No other effects were noted. Safety in gestating queens or breeding male cats has not been established.</paragraph>
+                     </text>
+                     <effectiveTime value="20230331"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_0e421dd5-907f-44f1-9746-8a5eff4ae42f">
+               <id root="8eb127b3-5580-438e-8c53-10ec1d199547"/>
+               <code code="34067-9" codeSystem="2.16.840.1.113883.6.1" displayName="INDICATIONS &amp; USAGE SECTION"/>
+               <title>INDICATIONS</title>
+               <text>
+                  <paragraph>ANTIROBE (brand of clindamycin hydrochloride) Capsules (for use in dogs only) and AQUADROPS oral solution (for use in dogs and cats) are indicated for the treatment of infections caused by susceptible strains of the designated microorganisms in the specific conditions listed below:</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Dogs: Skin infections (wounds and abscesses) </content> due to coagulase positive staphylococci (<content styleCode="italics">Staphylococcus aureus </content> or <content styleCode="italics">Staphylococcus intermedius</content>). <content styleCode="bold">Deep wounds and abscesses </content> due to <content styleCode="italics">Bacteroides fragilis, Prevotella melaninogenicus, Fusobacterium necrophorum </content> and <content styleCode="italics"> Clostridium perfringens</content>. <content styleCode="bold">Dental infections</content> due to <content styleCode="italics"> Staphylococcus aureus, Bacteroides fragilis, Prevotella melaninogenicus, Fusobacterium necrophorum </content> and <content styleCode="italics"> Clostridium perfringens</content>. <content styleCode="bold">Osteomyelitis </content> due to <content styleCode="italics">Staphylococcus aureus, Bacteroides fragilis, Prevotella melaninogenicus, Fusobacterium necrophorum</content> and <content styleCode="italics">Clostridium perfringens</content>.</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Cats: Skin infections (wounds and abscesses) </content> due to <content styleCode="italics"> Staphylococcus aureus, Staphylococcus intermedius, Streptococcus </content> spp. <content styleCode="bold"> Deep wounds and abscesses </content> due to <content styleCode="italics"> Clostridium perfringens </content> and <content styleCode="italics"> Bacteroides fragilis</content>.</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Dental infections </content> due to <content styleCode="italics"> Staphylococcus aureus, Staphylococcus intermedius, Streptococcus </content> spp., <content styleCode="italics"> Clostridium perfringens </content> and <content styleCode="italics"> Bacteroides fragilis.</content>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20230331"/>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_8c700583-c971-4d1f-b2d4-91f3bf8e4356">
+               <id root="212bc817-f210-49b7-890f-925fccbc30ee"/>
+               <code code="34070-3" codeSystem="2.16.840.1.113883.6.1" displayName="CONTRAINDICATIONS SECTION"/>
+               <title>CONTRAINDICATIONS</title>
+               <text>
+                  <paragraph>ANTIROBE Capsules and ANTIROBE AQUADROPS oral solution are contraindicated in animals with a history of hypersensitivity to preparations containing clindamycin or lincomycin.</paragraph>
+                  <paragraph>Because of potential adverse gastrointestinal effects, do not administer to rabbits, hamsters, guinea pigs, horses, chinchillas or ruminating animals.</paragraph>
+               </text>
+               <effectiveTime value="20230331"/>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_872bc2ed-f0d5-45a9-89b5-b91115d599ca">
+               <id root="7a97a06a-225e-4044-8a32-af6811ce2a2e"/>
+               <code code="34071-1" codeSystem="2.16.840.1.113883.6.1" displayName="WARNINGS SECTION"/>
+               <title>WARNINGS</title>
+               <text>
+                  <paragraph>Keep out of reach of children. Not for human use.</paragraph>
+               </text>
+               <effectiveTime value="20230331"/>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_50309bc1-5abd-460b-b5a9-829793e6e8c3">
+               <id root="1cf7b48b-ed01-4f72-8fa0-18191c041d68"/>
+               <code code="42232-9" codeSystem="2.16.840.1.113883.6.1" displayName="PRECAUTIONS SECTION"/>
+               <title>PRECAUTIONS</title>
+               <text>
+                  <paragraph>During prolonged therapy of one month or greater, periodic liver and kidney function tests and blood counts should be performed.</paragraph>
+                  <paragraph>The use of ANTIROBE occasionally results in overgrowth of non-susceptible organisms such as clostridia and yeasts. Therefore, the administration of ANTIROBE should be avoided in those species sensitive to the gastrointestinal effects of clindamycin (see <content styleCode="bold">
+                        <linkHtml href="#LINK_8c700583-c971-4d1f-b2d4-91f3bf8e4356">CONTRAINDICATIONS</linkHtml>
+                     </content>). Should superinfections occur, appropriate measures should be taken as indicated by the clinical situation.</paragraph>
+                  <paragraph>Patients with very severe renal disease and/or very severe hepatic disease accompanied by severe metabolic aberrations should be dosed with caution, and serum clindamycin levels monitored during high-dose therapy.</paragraph>
+                  <paragraph>Clindamycin hydrochloride has been shown to have neuromuscular blocking properties that may enhance the action of other neuromuscular blocking agents. Therefore, ANTIROBE should be used with caution in animals receiving such agents.</paragraph>
+                  <paragraph>Safety in gestating bitches and queens or breeding male dogs and cats has not been established.</paragraph>
+               </text>
+               <effectiveTime value="20230331"/>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_fa9b7127-f05c-45f1-badf-f2626c38e5c7">
+               <id root="b5ba1d45-eac4-41e4-8748-e61804d287c6"/>
+               <code code="34084-4" codeSystem="2.16.840.1.113883.6.1" displayName="ADVERSE REACTIONS SECTION"/>
+               <title>ADVERSE REACTIONS</title>
+               <text>
+                  <paragraph>Side effects occasionally observed in either clinical trials or during clinical use were vomiting and diarrhea.</paragraph>
+                  <paragraph>To report adverse reactions or a suspected adverse reaction call 1-888-963-8471.</paragraph>
+               </text>
+               <effectiveTime value="20230331"/>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_aafa40c5-a5eb-4e36-9bf1-0333122a7d5f">
+               <id root="3034ba74-e705-4057-99e4-f97009e65ea1"/>
+               <code code="34068-7" codeSystem="2.16.840.1.113883.6.1" displayName="DOSAGE &amp; ADMINISTRATION SECTION"/>
+               <title>DOSAGE AND ADMINISTRATION</title>
+               <effectiveTime value="20230331"/>
+               <component>
+                  <section ID="LINK_63bbac4f-1cdc-46df-a7a4-6a1bf08b477e">
+                     <id root="45aad3cf-1c53-4190-b355-a6d8c25cb0ae"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>Dogs</title>
+                     <text>
+                        <paragraph>
+                           <content styleCode="bold">Infected Wounds, Abscesses, and Dental Infections </content>
+                        </paragraph>
+                        <paragraph>
+                           <content styleCode="bold">Oral: </content>2.5-15.0 mg/lb body weight every 12 hours.</paragraph>
+                        <paragraph>
+                           <content styleCode="bold">Duration: </content>Treatment with ANTIROBE products may be continued up to a maximum of 28 days if clinical judgment indicates. Treatment of acute infections should not be continued for more than three or four days if no response to therapy is seen.</paragraph>
+                        <paragraph>
+                           <content styleCode="bold">Dosage Schedule:</content>
+                        </paragraph>
+                        <paragraph>
+                           <content styleCode="bold">Capsules</content>
+                        </paragraph>
+                        <paragraph>
+                           <content styleCode="bold">ANTIROBE 25 mg, </content>administer 1-6 capsules every 12 hours for each 10 pounds of body weight.</paragraph>
+                        <paragraph>
+                           <content styleCode="bold">ANTIROBE 75 mg, </content>administer 1-6 capsules every 12 hours for each 30 pounds of body weight.</paragraph>
+                        <paragraph>
+                           <content styleCode="bold">ANTIROBE 150 mg, </content>administer 1-6 capsules every 12 hours for each 60 pounds of body weight.</paragraph>
+                        <paragraph>
+                           <content styleCode="bold">Oral Solution</content>
+                        </paragraph>
+                        <paragraph>
+                           <content styleCode="bold">ANTIROBE AQUADROPS, </content>administer 1-6 mL/10 lbs body weight every 12 hours.</paragraph>
+                     </text>
+                     <effectiveTime value="20230331"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_7820b878-391e-482a-9b3a-03d24c50dff4">
+                     <id root="3fa1ed5d-d4af-4e33-8640-d830356b4076"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>Dogs</title>
+                     <text>
+                        <paragraph>
+                           <content styleCode="bold">Osteomyelitis</content>
+                        </paragraph>
+                        <paragraph>
+                           <content styleCode="bold">Oral: </content>5.0-15.0 mg/lb body weight every 12 hours</paragraph>
+                        <paragraph>
+                           <content styleCode="bold">Duration: </content>Treatment with ANTIROBE is recommended for a minimum of 28 days. Treatment should not be continued for longer than 28 days if no response to therapy is seen.</paragraph>
+                        <paragraph>
+                           <content styleCode="bold">Dosage Schedule:</content>
+                        </paragraph>
+                        <paragraph>
+                           <content styleCode="bold">Capsules</content>
+                        </paragraph>
+                        <paragraph>
+                           <content styleCode="bold">ANTIROBE 25 mg, </content>administer 2-6 capsules every 12 hours for each 10 pounds of body weight.</paragraph>
+                        <paragraph>
+                           <content styleCode="bold">ANTIROBE 75 mg, </content>administer 2-6 capsules every 12 hours for each 30 pounds of body weight.</paragraph>
+                        <paragraph>
+                           <content styleCode="bold">ANTIROBE 150 mg, </content>administer 2-6 capsules every 12 hours for each 60 pounds of body weight.</paragraph>
+                        <paragraph>
+                           <content styleCode="bold">Oral Solution</content>
+                        </paragraph>
+                        <paragraph>
+                           <content styleCode="bold">ANTIROBE AQUADROPS, </content>administer 2-6 mL/ 10 lbs body weight every 12 hours.</paragraph>
+                     </text>
+                     <effectiveTime value="20230331"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_39f839b9-3d51-48dc-a45c-8e50b9f2ed3c">
+                     <id root="7e3baad9-48cd-4139-8aed-a675beccc043"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>Cats</title>
+                     <text>
+                        <paragraph>
+                           <content styleCode="bold">Infected Wounds, Abscesses, and Dental Infections</content>
+                        </paragraph>
+                        <paragraph>5.0 - 15.0 mg/lb body weight once every 24 hours depending on the severity of the condition.</paragraph>
+                        <paragraph>
+                           <content styleCode="bold">Duration: </content>Treatment with ANTIROBE AQUADROPS oral solution may be continued up to a maximum of 14 days if clinical judgment indicates. Treatment of acute infections should not be continued for more than three to four days if no clinical response to therapy is seen.</paragraph>
+                        <paragraph>
+                           <content styleCode="bold">Dosage Schedule:</content>
+                        </paragraph>
+                        <paragraph>
+                           <content styleCode="bold">ANTIROBE AQUADROPS, </content>to provide 5.0 mg/lb, administer 1 mL/5 lbs body weight once every 24 hours; to provide 15.0 mg/lb, administer 3 mL/5 lbs body weight once every 24 hours.</paragraph>
+                     </text>
+                     <effectiveTime value="20230331"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_08d61602-51f5-4649-a271-4a4f00ac08f1">
+               <id root="58d966d2-fd5e-496d-89c9-f11f8e1c8abd"/>
+               <code code="34069-5" codeSystem="2.16.840.1.113883.6.1" displayName="HOW SUPPLIED SECTION"/>
+               <title>HOW SUPPLIED</title>
+               <text>
+                  <paragraph>ANTIROBE AQUADROPS oral solution is available as 20 mL filled in 30 mL bottles (25 mg/mL) supplied in packers containing 12 cartoned bottles with direction labels and calibrated dosing droppers.<br/>
+                     <br/>Approved by FDA under NADA # 135-940<br/>
+                     <br/>For a copy of the Safety Data Sheet (SDS) or to report adverse reactions call Zoetis Inc. at 1-888-963-8471. For additional information aboutadverse drug experience reporting for animaldrugs, contact FDA at 1-888-FDA-VETS or http://www.fda.gov/reportanimalae.</paragraph>
+               </text>
+               <effectiveTime value="20230331"/>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_04f4dfd9-afbc-41c0-8990-ce7d368bbb75">
+               <id root="17cb234a-183d-4394-8a76-dab7cd98e82d"/>
+               <code code="44425-7" codeSystem="2.16.840.1.113883.6.1" displayName="STORAGE AND HANDLING SECTION"/>
+               <title>Storage</title>
+               <text>
+                  <paragraph>Store at controlled room temperature 20° to 25° C (68° to 77° F).</paragraph>
+               </text>
+               <effectiveTime value="20230331"/>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_9d0e4d30-128b-480f-9fca-6c2b9b56f8cd">
+               <id root="cbf2fd27-d8bd-4fc6-954d-9a55332cc8d3"/>
+               <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+               <title/>
+               <text>
+                  <paragraph>ANTIROBE AQUADROPS<br/>Distributed by:<br/>Zoetis Inc.<br/>Kalamazoo, MI 49007<br/>
+                     <br/>ANTIROBE Capsules<br/>Manufactured for:<br/>Zoetis Inc. by Patheon Inc.<br/>Whitby, Canada<br/>
+                     <br/>Distributed by:<br/>Zoetis Inc.<br/>Kalamazoo, MI 49007<br/>
+                     <br/>Product of China<br/>
+                     <br/>Revised: September 2022<br/>
+                     <br/>40040699</paragraph>
+               </text>
+               <effectiveTime value="20230331"/>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_4e02ba6d-277d-4998-9394-c0a1e806e735">
+               <id root="ed8c13d8-ead1-43f8-a656-1a919612a909"/>
+               <code code="51945-4" codeSystem="2.16.840.1.113883.6.1" displayName="PACKAGE LABEL.PRINCIPAL DISPLAY PANEL"/>
+               <title>PRINCIPAL DISPLAY PANEL - 20 mL Bottle Carton</title>
+               <text>
+                  <paragraph>
+                     <renderMultiMedia referencedObject="MM3"/>
+                     <br/>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20230331"/>
+               <component>
+                  <observationMedia ID="MM3">
+                     <text>Carton label</text>
+                     <value xsi:type="ED" mediaType="image/jpeg">
+                        <reference value="antirobe-3.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+      </structuredBody>
+   </component>
+</document>

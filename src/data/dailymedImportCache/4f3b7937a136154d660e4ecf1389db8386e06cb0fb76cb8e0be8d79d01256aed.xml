@@ -1,0 +1,847 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="https://www.accessdata.fda.gov/spl/stylesheet/spl.xsl" type="text/xsl"?>
+<document xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 https://www.accessdata.fda.gov/spl/schema/spl.xsd">
+   <id root="ad8a9263-1e3a-4604-9588-f9daf271f37d"/>
+   <code code="50578-4" codeSystem="2.16.840.1.113883.6.1" displayName="PRESCRIPTION ANIMAL DRUG LABEL"/>
+   <title>Clindamycin Hydrochloride Oral Drops</title>
+   <effectiveTime value="20240319"/>
+   <setId root="5ea88ad7-8dbc-456b-a3cd-88bcd44c0024"/>
+   <versionNumber value="10"/>
+   <author>
+      <time/>
+      <assignedEntity>
+         <representedOrganization>
+            <id root="1.3.6.1.4.1.519.1" extension="179925722"/>
+            <name>FIRST PRIORITY INCORPORATED</name>
+            <assignedEntity>
+               <assignedOrganization>
+                  <assignedEntity>
+                     <assignedOrganization>
+                        <id root="1.3.6.1.4.1.519.1" extension="179925722"/>
+                        <name>FIRST PRIORITY INCORPORATED</name>
+                     </assignedOrganization>
+                     <performance>
+                        <actDefinition>
+                           <code code="C43360" displayName="manufacture" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                        </actDefinition>
+                     </performance>
+                  </assignedEntity>
+               </assignedOrganization>
+            </assignedEntity>
+         </representedOrganization>
+      </assignedEntity>
+   </author>
+   <component>
+      <structuredBody>
+         <component>
+            <section>
+               <id root="998f5b6c-14a3-44cb-9feb-186b18151620"/>
+               <code code="48780-1" codeSystem="2.16.840.1.113883.6.1" displayName="SPL product data elements section"/>
+               <title/>
+               <text/>
+               <effectiveTime value="20230927"/>
+               <subject>
+                  <manufacturedProduct>
+                     <manufacturedProduct>
+                        <code code="58829-309" codeSystem="2.16.840.1.113883.6.69"/>
+                        <name>Clindamycin Hydrochloride<suffix>Oral Drops</suffix>
+                        </name>
+                        <formCode code="C42953" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="LIQUID"/>
+                        <asEntityWithGeneric>
+                           <genericMedicine>
+                              <name>Clinamycin Hydrochloride</name>
+                           </genericMedicine>
+                        </asEntityWithGeneric>
+                        <ingredient classCode="ACTIM">
+                           <quantity>
+                              <numerator value="25" unit="mg"/>
+                              <denominator value="1" unit="mL"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="T20OQ1YN1W" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>CLINDAMYCIN HYDROCHLORIDE</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="3U02EL437C" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>CLINDAMYCIN</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <asContent>
+                           <quantity>
+                              <numerator value="20" unit="mL"/>
+                              <denominator value="1" unit="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code/>
+                              <formCode code="C43172" displayName="BOTTLE, GLASS" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                              <asContent>
+                                 <quantity>
+                                    <numerator value="1" unit="1"/>
+                                    <denominator value="1" unit="1"/>
+                                 </quantity>
+                                 <containerPackagedProduct>
+                                    <code/>
+                                    <formCode code="C43182" displayName="CARTON" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                                    <asContent>
+                                       <quantity>
+                                          <numerator value="12" unit="1"/>
+                                          <denominator value="1" unit="1"/>
+                                       </quantity>
+                                       <containerPackagedProduct>
+                                          <code code="58829-309-20" codeSystem="2.16.840.1.113883.6.69"/>
+                                          <formCode code="C43184" displayName="CASE" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                                       </containerPackagedProduct>
+                                    </asContent>
+                                 </containerPackagedProduct>
+                              </asContent>
+                           </containerPackagedProduct>
+                        </asContent>
+                     </manufacturedProduct>
+                     <subjectOf>
+                        <marketingAct>
+                           <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <statusCode code="active"/>
+                           <effectiveTime>
+                              <low value="20110801"/>
+                           </effectiveTime>
+                        </marketingAct>
+                     </subjectOf>
+                     <subjectOf>
+                        <approval>
+                           <id extension="ANADA200398" root="2.16.840.1.113883.3.150"/>
+                           <code code="C73583" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ANADA"/>
+                           <author>
+                              <territorialAuthority>
+                                 <territory>
+                                    <code code="USA" codeSystem="2.16.840.1.113883.5.28"/>
+                                 </territory>
+                              </territorialAuthority>
+                           </author>
+                        </approval>
+                     </subjectOf>
+                     <consumedIn>
+                        <substanceAdministration>
+                           <routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ORAL"/>
+                        </substanceAdministration>
+                     </consumedIn>
+                  </manufacturedProduct>
+               </subject>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="4a0b308f-0ee1-49ad-8c2b-7b834fbc49d6"/>
+               <code code="43685-7" codeSystem="2.16.840.1.113883.6.1" displayName="WARNINGS AND PRECAUTIONS SECTION"/>
+               <text>
+                  <paragraph>(clindamycin hydrochloride oral solution)</paragraph>
+                  <paragraph>Approved for use in dogs and cats.</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Caution:</content> Federal (USA) law restricts this drug to use by or on the order of a licensed veterinarian.</paragraph>
+               </text>
+               <effectiveTime value="20230927"/>
+            </section>
+         </component>
+         <component>
+            <section ID="L5ab7babe-5614-4e5b-a7d7-0761a5fed1cf">
+               <id root="88721d2b-9ceb-4d52-b8c3-337dbce68f5a"/>
+               <code code="42232-9" codeSystem="2.16.840.1.113883.6.1" displayName="PRECAUTIONS SECTION"/>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">CAUTION:</content> Federal law restricts this drug to use by or on the order of a licensed veterinarian.</paragraph>
+                  <paragraph>
+                     <content>
+                        <content styleCode="bold">​Not For Use in Humans • Keep Out of Reach of Children</content>
+                     </content>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20230927"/>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="e78b8a39-84fe-4e69-ba61-f6938403fa0f"/>
+               <code code="34089-3" codeSystem="2.16.840.1.113883.6.1" displayName="DESCRIPTION SECTION"/>
+               <title>DESCRIPTION</title>
+               <text>
+                  <paragraph>Clindamycin Hydrochloride Oral Drops (clindamycin hydrochloride oral solution) contains clindamycin hydrochloride which is the hydrated salt of clindamycin. Clindamycin is a semisynthetic antibiotic produced by a 7(S)-chlorosubstitution of the 7(R)-hydroxyl group of a naturally produced antibiotic produced by <content styleCode="italics">Streptomyces lincolnensis </content>
+                     <content styleCode="italics">var. lincolnensis</content>.</paragraph>
+                  <paragraph>Clindamycin Hydrochloride Oral Drops (For Use in Dogs and Cats) is a palatable formulation intended for oral administration. Each mL of Clindamycin Hydrochloride Oral Drops contains clindamycin hydrochloride equivalent to 25 mg clindamycin; and ethyl alcohol, 8.64%.</paragraph>
+               </text>
+               <effectiveTime value="20230927"/>
+            </section>
+         </component>
+         <component>
+            <section ID="L1b7cc581-eaff-43df-a85c-1b5f1bdd9d15">
+               <id root="d87e144b-d29d-4219-964d-6c830d715ced"/>
+               <code code="34067-9" codeSystem="2.16.840.1.113883.6.1" displayName="INDICATIONS &amp; USAGE SECTION"/>
+               <title>INDICATIONS</title>
+               <text>
+                  <paragraph>Clindamycin Hydrochloride Oral Drops (for use in dogs and cats) is indicated for the treatment of infections caused by susceptible strains of the designated microorganisms in the specific conditions listed below:</paragraph>
+               </text>
+               <effectiveTime value="20130401"/>
+               <component>
+                  <section ID="L65bce06e-6880-467b-a320-3a4861f40881">
+                     <id root="239e0d06-16c9-4f37-b231-f2b7aa75b6e0"/>
+                     <code code="43684-0" codeSystem="2.16.840.1.113883.6.1" displayName="USE IN SPECIFIC POPULATIONS SECTION"/>
+                     <title>DOGS:</title>
+                     <text>
+                        <paragraph>
+                           <content styleCode="bold">Skin infections</content>
+                           <content styleCode="bold">(wounds and abscesses)</content> due to coagulase positive staphylococci (<content styleCode="italics">Staphylococcus aureus</content> or <content styleCode="italics">Staphylococcus intermedius</content>). <content styleCode="bold">Deep wounds and abscesses</content> due to <content styleCode="italics">Bacteroides fragilis</content>, <content styleCode="italics">Prevotella melaninogenicus</content>, <content styleCode="italics">Fusobacterium necrophorum</content> and <content styleCode="italics">Clostridium perfringens</content>. <content styleCode="bold">Dental infections</content> due to <content styleCode="italics">Staphylococcus aureus</content>, <content styleCode="italics">Bacteroides fragilis</content>, <content styleCode="italics">Prevotella melaninogenicus</content>, <content styleCode="italics">Fusobacterium necrophorum</content> and <content styleCode="italics">Clostridium </content>
+                           <content styleCode="italics">perfringens</content>. <content styleCode="bold">Osteomyelitis</content> due to <content styleCode="italics">Staphylococcus aureus</content>, <content styleCode="italics">Bacteroides fragilis</content>, <content styleCode="italics">Prevotella melaninogenicus</content>, <content styleCode="italics">Fusobacterium necrophorum</content> and <content styleCode="italics">Clostridium perfringens</content>.</paragraph>
+                     </text>
+                     <effectiveTime value="20130401"/>
+                     <component>
+                        <section ID="L4ae20e6e-4468-4de4-89f2-d7a7262aba86">
+                           <id root="e95162d5-338b-44c6-afbe-5d0122fa9ac6"/>
+                           <code code="43684-0" codeSystem="2.16.840.1.113883.6.1" displayName="USE IN SPECIFIC POPULATIONS SECTION"/>
+                           <title>CATS:</title>
+                           <text>
+                              <paragraph>
+                                 <content styleCode="bold">Skin infections (wounds and abscesses)</content> due to <content styleCode="italics">Staphylococcus aureus</content>, <content styleCode="italics">Staphylococcus intermedius</content> and <content styleCode="italics">Streptococcus</content> spp. <content styleCode="bold">Deep wounds and infections</content> due to <content styleCode="italics">Clostridium perfringens</content> and <content styleCode="italics">Bacteroides fragilis</content>. <content styleCode="bold">Dental infections</content> due to <content styleCode="italics">Staphylococcus aureus</content>, <content styleCode="italics">Staphylococcus</content>
+                                 <content styleCode="italics">intermedius</content>, <content styleCode="italics">Streptococcus</content> spp., <content styleCode="italics">Clostridium perfringens</content> and <content styleCode="italics">Bacteroides fragilis.</content>
+                              </paragraph>
+                           </text>
+                           <effectiveTime value="20130401"/>
+                        </section>
+                     </component>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="L6c8fac05-c53a-474d-b48f-f330a3446811">
+               <id root="5f50e4e9-331f-43e9-abd2-65cf46bf1ce0"/>
+               <code code="34068-7" codeSystem="2.16.840.1.113883.6.1" displayName="DOSAGE &amp; ADMINISTRATION SECTION"/>
+               <title>DOSAGE AND ADMINISTRATION</title>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">Dogs:</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Infected Wounds, Abscesses and Dental Infections</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Oral:</content> 2.5 - 15.0 mg/lb body weight every 12 hours.</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Duration:</content> Treatment with Clindamycin Hydrochloride Oral Drops products may be continued up to a maximum of 28 days if clinical judgment indicates. Treatment of acute infections should not be continued for more than three or four days if no response to therapy is seen.</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Dosage Schedule:</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Oral Solution</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Clindamycin Hydrochloride Oral Drops</content>, administer 1-6 mL/10 lbs body weight every 12 hours.</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Dogs:</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Osteomyelitis</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Oral:</content> 5.0-15.0 mg/lb body weight every 12 hours.</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Duration:</content> Treatment with Clindamycin Hydrochloride Oral Drops is recommended for a minimum of 28 days. Treatment should not be continued for longer than 28 days if no response to therapy is seen.</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Dosage Schedule:</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Oral Solution</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Clindamycin Hydrochloride Oral Drops</content>, administer 2-6 mL/10 lbs body weight every 12 hours.</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Cats:</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Infected Wounds, Abscesses and Dental Infections</content>
+                  </paragraph>
+                  <paragraph>5.0 - 15.0 mg/lb body weight once every 24 hours depending on the severity of the condition.</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Duration:</content> Treatment with Clindamycin Hydrochloride Oral Drops may be continued up to a maximum of 14 days if clinical judgment indicates. Treatment of acute infections should not be continued for more than three to four days if no clinical response to therapy is seen.</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Dosage Schedule:</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Clindamycin Hydrochloride Oral Drops</content>, to provide 5.0 mg/lb, administer 1 mL/5 lbs body weight once every 24 hours; to provide 15.0 mg/lb, administer 3 mL/5 lbs body weight once every 24 hours.</paragraph>
+               </text>
+               <effectiveTime value="20230927"/>
+            </section>
+         </component>
+         <component>
+            <section ID="L4b57c2e9-23b2-473e-94e6-504b1120a7e6">
+               <id root="d9d00320-5758-475d-ad9d-9cc3cd6c0788"/>
+               <code code="34070-3" codeSystem="2.16.840.1.113883.6.1" displayName="CONTRAINDICATIONS SECTION"/>
+               <title>CONTRAINDICATIONS</title>
+               <text>
+                  <paragraph>Clindamycin Hydrochloride Oral Drops is contraindicated in animals with a history of hypersensitivity to preparations containing clindamycin or lincomycin.</paragraph>
+                  <paragraph>Because of potential adverse gastrointestinal effects, do not administer to rabbits, hamsters, guinea pigs, horses, chinchillas or ruminating animals.</paragraph>
+               </text>
+               <effectiveTime value="20130315"/>
+            </section>
+         </component>
+         <component>
+            <section ID="Ld9f653b4-f82f-485f-a811-284ab62e496a">
+               <id root="ec91cc8c-3bd2-4d82-ae60-3e50ac1d7042"/>
+               <code code="50744-2" codeSystem="2.16.840.1.113883.6.1" displayName="INFORMATION FOR OWNERS/CAREGIVERS SECTION"/>
+               <title>ACTIVE INGREDIENT:</title>
+               <text>
+                  <paragraph>Each mL contains:<br/>Clindamycin hydrochloride equivalent to 25 mg clindamycin; and ethyl alcohol, 8.64%.</paragraph>
+               </text>
+               <effectiveTime value="20230927"/>
+            </section>
+         </component>
+         <component>
+            <section ID="Lda888f93-ba15-4478-91c1-3669bec30170">
+               <id root="c7568c5a-1f22-4e97-aa76-5058e886c852"/>
+               <code code="34071-1" codeSystem="2.16.840.1.113883.6.1" displayName="WARNINGS SECTION"/>
+               <title>WARNINGS</title>
+               <text>
+                  <paragraph>Not for use in humans. Keep out of reach of children. To obtain a Safety Data Sheet(s), contact First Priority, Inc. at (800) 650-4899 or www.prioritycare.com. Keep Clindamycin Hydrochloride Oral Drops in a secure location out of reach of dogs, cats, and other animals to prevent accidental ingestion or overdose.</paragraph>
+               </text>
+               <effectiveTime value="20230927"/>
+            </section>
+         </component>
+         <component>
+            <section ID="La13feca3-f3a2-4cef-af17-f1b2c0d211b6">
+               <id root="425c85a7-c87d-43f0-8ac3-e8f5edbce92b"/>
+               <code code="42232-9" codeSystem="2.16.840.1.113883.6.1" displayName="PRECAUTIONS SECTION"/>
+               <title>PRECAUTIONS</title>
+               <text>
+                  <paragraph>During prolonged therapy of one month or greater, periodic liver and kidney function tests and blood counts should be performed.</paragraph>
+                  <paragraph>The use of Clindamycin Hydrochloride Oral Drops occasionally results in overgrowth of non-susceptible organisms such as clostridia and yeasts. Therefore, the administration of Clindamycin Hydrochloride Oral Drops should be avoided in those species sensitive to the gastrointestinal effects of clindamycin (see <content styleCode="bold">CONTRAINDICATIONS</content>). Should superinfections occur, appropriate measures should be taken as indicated by the clinical situation.</paragraph>
+                  <paragraph>Patients with very severe renal disease and/or very severe hepatic disease accompanied by severe metabolic aberrations should be dosed with caution, and serum clindamycin levels monitored during high-dose therapy.</paragraph>
+                  <paragraph>Clindamycin hydrochloride has been shown to have neuromuscular blocking properties that may enhance the action of other neuromuscular blocking agents. Therefore, Clindamycin Hydrochloride Oral Drops should be used with caution in animals receiving such agents.</paragraph>
+                  <paragraph>Safety in gestating bitches and queens or breeding male dogs and cats has not been established.</paragraph>
+               </text>
+               <effectiveTime value="20130315"/>
+            </section>
+         </component>
+         <component>
+            <section ID="L1542661f-4494-4d60-b8ef-6832ac5bda2a">
+               <id root="e10f9b04-b44a-4bfa-898f-b046bb4d5588"/>
+               <code code="34084-4" codeSystem="2.16.840.1.113883.6.1" displayName="ADVERSE REACTIONS SECTION"/>
+               <title>  ADVERSE REACTIONS
+</title>
+               <text>
+                  <paragraph>Side effects occasionally observed in either clinical trials or during clinical use were vomiting and diarrhea.</paragraph>
+                  <paragraph>To report adverse reactions or a suspected adverse reaction, call 1-800-650-4899.</paragraph>
+               </text>
+               <effectiveTime value="20230927"/>
+            </section>
+         </component>
+         <component>
+            <section ID="L57e8eb4c-6c0f-4715-bf49-2b4da5172ac8">
+               <id root="cc773cb6-a88d-4300-acf3-ca5ca6da2464"/>
+               <code code="43679-0" codeSystem="2.16.840.1.113883.6.1" displayName="MECHANISM OF ACTION SECTION"/>
+               <title>  ACTIONS
+</title>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">Site and Mode of Action: </content>Clindamycin is an inhibitor of protein synthesis in the bacterial cell. The site of binding appears to be in the 50S sub-unit of the ribosome. Binding occurs to the soluble RNA fraction of certain ribosomes, thereby inhibiting the binding of amino acids to those ribosomes. Clindamycin differs from cell wall inhibitors in that it causes irreversible modification of the protein-synthesizing subcellular elements at the ribosomal level.</paragraph>
+               </text>
+               <effectiveTime value="20230927"/>
+               <component>
+                  <section ID="L4176abdc-cedc-41e4-9496-17fa7fe78c80">
+                     <id root="8da7a51d-b2c3-4777-bd4f-ba6fbe869c78"/>
+                     <code code="49489-8" codeSystem="2.16.840.1.113883.6.1" displayName="MICROBIOLOGY SECTION"/>
+                     <text>
+                        <paragraph>
+                           <content styleCode="bold">Microbiology:</content> Clindamycin is a lincosaminide antimicrobial agent with activity against a wide variety of aerobic and anaerobic bacterial pathogens. Clindamycin is a bacteriostatic compound that inhibits bacterial protein synthesis by binding to the 5OS ribosomal sub-unit. The minimum inhibitory concentrations (MICs) of Gram-positive and obligate anaerobic pathogens isolated from dogs and cats in the United States are presented in Table 1 and Table 2. Bacteria were isolated in 1998-1999. All MICs were performed in accordance with the National Committee for Clinical Laboratory Standards (NCCLS).</paragraph>
+                     </text>
+                     <effectiveTime value="20230927"/>
+                     <component>
+                        <section ID="Lc7331a58-043e-45fc-96d0-f0aefbcda627">
+                           <id root="8b6e5300-b179-467f-8d95-6050f7897051"/>
+                           <code code="34075-2" codeSystem="2.16.840.1.113883.6.1" displayName="LABORATORY TESTS SECTION"/>
+                           <text>
+                              <table>
+                                 <caption>Table 1. Clindamycin MIC Values (µg/mL) from Diagnostic Laboratory Survey Data Evaluating Canine Pathogens in the U.S. During 1998-99<sup>1</sup>
+                                 </caption>
+                                 <tbody>
+                                    <tr>
+                                       <td>
+                                          <content styleCode="bold"> Organism</content>
+                                       </td>
+                                       <td>
+                                          <paragraph>
+                                             <content styleCode="bold"> Number of</content>
+                                          </paragraph>
+                                          <paragraph>
+                                             <content styleCode="bold">Isolates</content>
+                                          </paragraph>
+                                       </td>
+                                       <td>
+                                          <content styleCode="bold"> MIC<sub>50</sub>
+                                          </content>
+                                       </td>
+                                       <td>
+                                          <content styleCode="bold"> MIC<sub>85</sub>
+                                          </content>
+                                       </td>
+                                       <td>
+                                          <content styleCode="bold"> MIC<sub>90</sub>
+                                          </content>
+                                       </td>
+                                       <td>
+                                          <content styleCode="bold"> Range</content>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td> Soft Tissue/Wound<sup>2</sup>
+                                       </td>
+                                       <td/>
+                                       <td/>
+                                       <td/>
+                                       <td/>
+                                       <td/>
+                                    </tr>
+                                    <tr>
+                                       <td>
+                                          <content styleCode="italics">Staphylococcus aureus</content>
+                                       </td>
+                                       <td> 17</td>
+                                       <td> 0.5</td>
+                                       <td> 0.5</td>
+                                       <td>
+                                          <content styleCode="underline">&gt;</content>4.0</td>
+                                       <td> 0.25-<content styleCode="underline">&gt;</content>4.0</td>
+                                    </tr>
+                                    <tr>
+                                       <td>
+                                          <content styleCode="italics">Staphylococcus intermedius</content>
+                                       </td>
+                                       <td> 28</td>
+                                       <td> 0.25</td>
+                                       <td> 0.5</td>
+                                       <td>
+                                          <content styleCode="underline">&gt;</content>4.0</td>
+                                       <td> 0.125-<content styleCode="underline">&gt;</content>4.0</td>
+                                    </tr>
+                                    <tr>
+                                       <td>
+                                          <content styleCode="italics">Staphylococcus</content> spp.</td>
+                                       <td> 18</td>
+                                       <td> 0.5</td>
+                                       <td> 0.5</td>
+                                       <td>
+                                          <content styleCode="underline">&gt;</content>4.0</td>
+                                       <td> 0.25-<content styleCode="underline">&gt;</content>4.0</td>
+                                    </tr>
+                                    <tr>
+                                       <td>   Beta-hemolytic streptococci</td>
+                                       <td> 46</td>
+                                       <td> 0.5</td>
+                                       <td> 0.5</td>
+                                       <td>
+                                          <content styleCode="underline">&gt;</content>4.0</td>
+                                       <td> 0.25-<content styleCode="underline">&gt;</content>4.0</td>
+                                    </tr>
+                                    <tr>
+                                       <td>
+                                          <content styleCode="italics">Streptococcus</content> spp.</td>
+                                       <td> 11</td>
+                                       <td> 0.5</td>
+                                       <td>
+                                          <content styleCode="underline">&gt;</content>4.0</td>
+                                       <td>
+                                          <content styleCode="underline">&gt;</content>4.0</td>
+                                       <td> 0.25-<content styleCode="underline">&gt;</content>4.0</td>
+                                    </tr>
+                                    <tr>
+                                       <td> Osteomyelitis/Bone<sup>3</sup>
+                                       </td>
+                                       <td/>
+                                       <td/>
+                                       <td/>
+                                       <td/>
+                                       <td/>
+                                    </tr>
+                                    <tr>
+                                       <td>
+                                          <content styleCode="italics">Staphylococcus aureus</content>
+                                       </td>
+                                       <td> 20</td>
+                                       <td> 0.5</td>
+                                       <td> 0.5</td>
+                                       <td> 0.5</td>
+                                       <td> 0.5<sup>4</sup>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td>
+                                          <content styleCode="italics">Staphylococcus intermedius</content>
+                                       </td>
+                                       <td> 15</td>
+                                       <td> 0.5</td>
+                                       <td>
+                                          <content styleCode="underline">&gt;</content>4.0</td>
+                                       <td>
+                                          <content styleCode="underline">&gt;</content>4.0</td>
+                                       <td> 0.25-<content styleCode="underline">&gt;</content>4.0</td>
+                                    </tr>
+                                    <tr>
+                                       <td>
+                                          <content styleCode="italics">Staphylococcu</content>s spp.</td>
+                                       <td> 18</td>
+                                       <td> 0.5</td>
+                                       <td>
+                                          <content styleCode="underline">&gt;</content>4.0</td>
+                                       <td>
+                                          <content styleCode="underline">&gt;</content>4.0</td>
+                                       <td> 0.25-<content styleCode="underline">&gt;</content>4.0</td>
+                                    </tr>
+                                    <tr>
+                                       <td>   Beta-hemolytic streptococci</td>
+                                       <td> 21</td>
+                                       <td> 0.5</td>
+                                       <td> 2.0</td>
+                                       <td> 2.0</td>
+                                       <td> 0.25-<content styleCode="underline">&gt;</content>4.0</td>
+                                    </tr>
+                                    <tr>
+                                       <td>
+                                          <content styleCode="italics">Streptococcus</content> spp.</td>
+                                       <td> 21</td>
+                                       <td>
+                                          <content styleCode="underline">&gt;</content>4.0</td>
+                                       <td>
+                                          <content styleCode="underline">&gt;</content>4.0</td>
+                                       <td>
+                                          <content styleCode="underline">&gt;</content>4.0</td>
+                                       <td> 0.25-<content styleCode="underline">&gt;</content>4.0</td>
+                                    </tr>
+                                    <tr>
+                                       <td> Dermal/Skin<sup>5</sup>
+                                       </td>
+                                       <td/>
+                                       <td/>
+                                       <td/>
+                                       <td/>
+                                       <td/>
+                                    </tr>
+                                    <tr>
+                                       <td>
+                                          <content styleCode="italics">Staphylococcus aureus</content>
+                                       </td>
+                                       <td> 25</td>
+                                       <td> 0.5</td>
+                                       <td>
+                                          <content styleCode="underline">&gt;</content>4.0</td>
+                                       <td>
+                                          <content styleCode="underline">&gt;</content>4.0</td>
+                                       <td> 0.25-<content styleCode="underline">&gt;</content>4.0</td>
+                                    </tr>
+                                    <tr>
+                                       <td>
+                                          <content styleCode="italics">Staphylococcus intermedius</content>
+                                       </td>
+                                       <td> 48</td>
+                                       <td> 0.5</td>
+                                       <td>
+                                          <content styleCode="underline">&gt;</content>4.0</td>
+                                       <td>
+                                          <content styleCode="underline">&gt;</content>4.0</td>
+                                       <td> 0.125-<content styleCode="underline">&gt;</content>4.0</td>
+                                    </tr>
+                                    <tr>
+                                       <td>
+                                          <content styleCode="italics">Staphlyococcus</content> spp.</td>
+                                       <td> 32</td>
+                                       <td> 0.5</td>
+                                       <td>
+                                          <content styleCode="underline">&gt;</content>4.0</td>
+                                       <td>
+                                          <content styleCode="underline">&gt;</content>4.0</td>
+                                       <td> 0.25-<content styleCode="underline">&gt;</content>4.0</td>
+                                    </tr>
+                                    <tr>
+                                       <td>   Beta-hemolytic streptococci</td>
+                                       <td> 17</td>
+                                       <td> 0.5</td>
+                                       <td> 0.5</td>
+                                       <td> 0.5</td>
+                                       <td> 0.25-0.5</td>
+                                    </tr>
+                                 </tbody>
+                              </table>
+                              <paragraph>
+                                 <sup>1</sup> The correlation between the <content styleCode="italics">in vitro</content> susceptibility data and clinical response has not been determined.</paragraph>
+                              <paragraph>
+                                 <sup>2</sup> Soft Tissue/Wound: includes samples labeled wound, abscess, aspirate, exudates, draining tract, lesion, and mass</paragraph>
+                              <paragraph>
+                                 <sup>3</sup> Osteomyelitis/Bone: includes samples labeled bone, fracture, joint, tendon</paragraph>
+                              <paragraph>
+                                 <sup>4</sup> No range, all isolates yielded the same value</paragraph>
+                              <paragraph>
+                                 <sup>5</sup> Dermal/Skin: includes samples labeled skin, skin swab, biopsy, incision, lip</paragraph>
+                           </text>
+                           <effectiveTime value="20230927"/>
+                           <component>
+                              <section ID="Lb6b62b39-16a2-42cb-a286-b1cd2b657295">
+                                 <id root="96c9329e-0871-4184-919a-841bbc4212d1"/>
+                                 <code code="34075-2" codeSystem="2.16.840.1.113883.6.1" displayName="LABORATORY TESTS SECTION"/>
+                                 <text>
+                                    <table>
+                                       <caption>Table 2. Clindamycin MIC Values (µg/mL) from Diagnostic Laboratory Survey Data Evaluating Feline Pathogens from Wound and Abscess Samples in the U.S. During 1998<sup>1</sup>
+                                       </caption>
+                                       <tbody>
+                                          <tr>
+                                             <td>
+                                                <content styleCode="bold"> Organism</content>
+                                             </td>
+                                             <td>
+                                                <paragraph>
+                                                   <content styleCode="bold"> Number of </content>
+                                                </paragraph>
+                                                <paragraph>
+                                                   <content styleCode="bold">Isolates</content>
+                                                </paragraph>
+                                             </td>
+                                             <td>
+                                                <content styleCode="bold"> MIC<sub>50</sub>
+                                                </content>
+                                             </td>
+                                             <td>
+                                                <content styleCode="bold"> MIC<sub>90</sub>
+                                                </content>
+                                             </td>
+                                             <td>
+                                                <content styleCode="bold"> Range</content>
+                                             </td>
+                                          </tr>
+                                          <tr>
+                                             <td>
+                                                <content styleCode="italics">Bacteroides/Prevotella</content>
+                                             </td>
+                                             <td> 30</td>
+                                             <td> 0.06</td>
+                                             <td> 4.0</td>
+                                             <td>
+                                                <content styleCode="underline">&lt;</content>0.015-4.0</td>
+                                          </tr>
+                                          <tr>
+                                             <td>
+                                                <content styleCode="italics">Fusobacterium</content> spp.</td>
+                                             <td> 17</td>
+                                             <td> 0.25</td>
+                                             <td> 0.25</td>
+                                             <td>
+                                                <content styleCode="underline">&lt;</content>0.015-0.5</td>
+                                          </tr>
+                                          <tr>
+                                             <td>
+                                                <content styleCode="italics">Peptostreptococcus</content> spp.</td>
+                                             <td> 18</td>
+                                             <td> 0.13</td>
+                                             <td> 0.5</td>
+                                             <td>
+                                                <content styleCode="underline">&lt;</content>0.015-8.0</td>
+                                          </tr>
+                                          <tr>
+                                             <td>
+                                                <content styleCode="italics">Porphyromonas</content> spp.</td>
+                                             <td> 13</td>
+                                             <td> 0.06</td>
+                                             <td> 0.25</td>
+                                             <td>
+                                                <content styleCode="underline">&lt;</content>0.015-8.0</td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                    <paragraph>
+                                       <sup>1</sup> The correlation between the <content styleCode="italics">in vitro</content> susceptibility data and clinical response has not been determined.</paragraph>
+                                 </text>
+                                 <effectiveTime value="20230927"/>
+                              </section>
+                           </component>
+                        </section>
+                     </component>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="Leeb4cb5d-de2b-426b-88e6-a41e47a2321c">
+               <id root="82367515-bf3f-40f1-ae0f-b8f576db09b8"/>
+               <code code="34090-1" codeSystem="2.16.840.1.113883.6.1" displayName="CLINICAL PHARMACOLOGY SECTION"/>
+               <title>PHARMACOLOGY</title>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">Absorption:</content> Clindamycin hydrochloride is rapidly absorbed from the canine and feline gastrointestinal tract.</paragraph>
+               </text>
+               <effectiveTime value="20230927"/>
+               <component>
+                  <section ID="L9cc3b28a-e46a-4acf-a5c0-a8da752d3f68">
+                     <id root="01ba2cf2-7859-493f-b24d-67bff42c0cbe"/>
+                     <code code="34092-7" codeSystem="2.16.840.1.113883.6.1" displayName="CLINICAL STUDIES SECTION"/>
+                     <title>Dog Serum Levels:</title>
+                     <text>
+                        <paragraph>
+                           <renderMultiMedia referencedObject="L1da65795-b34a-4536-87ad-f9d6b3db4299"/>
+                        </paragraph>
+                        <paragraph>Serum levels at or above 0.5 μg/mL can be maintained by oral dosing at a rate of 5.0 mg/lb of clindamycin hydrochloride every 12 hours. This same study revealed that average peak serum concentrations of clindamycin occur 1 hour and 15 minutes after oral dosing. The elimination half-life for clindamycin in dog serum was approximately 5 hours. There was no bioactivity accumulation after a regimen of multiple oral doses in healthy dogs.</paragraph>
+                     </text>
+                     <effectiveTime value="20230927"/>
+                     <component>
+                        <section ID="Lb714287d-2e27-4820-8caa-3fa50c5250d7">
+                           <id root="f6d8a653-9a90-48d0-ab39-3c194ace3dac"/>
+                           <code code="34092-7" codeSystem="2.16.840.1.113883.6.1" displayName="CLINICAL STUDIES SECTION"/>
+                           <title>  Cat Serum Levels:
+</title>
+                           <text>
+                              <paragraph>
+                                 <renderMultiMedia referencedObject="Leb413b65-9247-452e-8c5a-e96ee513070b"/>
+                              </paragraph>
+                              <paragraph>Serum levels at or above 0.5 μg/mL can be maintained by oral dosing at a rate of 5.0 mg/lb of clindamycin hydrochloride every 24 hours. The average peak serum concentration of clindamycin occurs approximately 1 hour after oral dosing. The elimination half-life of clindamycin in feline serum is approximately 7.5 hours. In healthy cats, minimal accumulation occurs after multiple oral doses of clindamycin hydrochloride, and steady-state should be achieved by the third dose.</paragraph>
+                           </text>
+                           <effectiveTime value="20230927"/>
+                           <component>
+                              <observationMedia ID="Leb413b65-9247-452e-8c5a-e96ee513070b">
+                                 <text>image of cat serum level</text>
+                                 <value mediaType="image/jpeg" xsi:type="ED">
+                                    <reference value="CatSerumLevel_cpd.jpg"/>
+                                 </value>
+                              </observationMedia>
+                           </component>
+                        </section>
+                     </component>
+                     <component>
+                        <observationMedia ID="L1da65795-b34a-4536-87ad-f9d6b3db4299">
+                           <text>image of dog serum level</text>
+                           <value mediaType="image/jpeg" xsi:type="ED">
+                              <reference value="DogSerumLevel_cpd.jpg"/>
+                           </value>
+                        </observationMedia>
+                     </component>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="L6dd2162f-12dc-4951-ad58-75aef02000e2">
+               <id root="7f85756d-0a1b-4437-915e-5347a4dfed46"/>
+               <code code="50744-2" codeSystem="2.16.840.1.113883.6.1" displayName="INFORMATION FOR OWNERS/CAREGIVERS SECTION"/>
+               <title>METABOLISM AND EXCRETION</title>
+               <text>
+                  <paragraph>Extensive studies of the metabolism and excretion of clindamycin hydrochloride administered orally in animals and humans have shown that unchanged drug and bioactive and bioinactive metabolites are excreted in urine and feces. Almost all of the bioactivity detected in serum after Clindamycin Hydrochloride Oral Drops product administration is due to the parent molecule (clindamycin). Urine bioactivity, however, reflects a mixture of clindamycin and active metabolites, especially N-demethyl clindamycin and clindamycin sulfoxide.</paragraph>
+               </text>
+               <effectiveTime value="20150812"/>
+            </section>
+         </component>
+         <component>
+            <section ID="L414f8354-bd93-434f-b1b1-87e53f0387c5">
+               <id root="971e0b9d-d30f-49df-aca5-a3c6e330dfd6"/>
+               <code code="34091-9" codeSystem="2.16.840.1.113883.6.1" displayName="ANIMAL PHARMACOLOGY &amp; OR TOXICOLOGY SECTION"/>
+               <title>ANIMAL SAFETY SUMMARY</title>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">Rat and Dog Data:</content> One year oral toxicity studies in rats and dogs at doses of 30, 100 and 300 mg/kg/day (13.6, 45.5 and 136.4 mg/lb/day) have shown clindamycin hydrochloride to be well tolerated. Differences did not occur in the parameters evaluated to assess toxicity when comparing groups of treated animals with contemporary controls. Rats administered clindamycin hydrochloride at 600 mg/kg/day (272.7 mg/lb/day) for six months tolerated the drug well; however, dogs orally dosed at 600 mg/kg/day (272.7 mg/lb/day) vomited, had anorexia, and subsequently lost weight. At necropsy these dogs had erosive gastritis and focal areas of necrosis of the mucosa of the gallbladder.</paragraph>
+                  <paragraph>Safety in gestating bitches or breeding males has not been established.</paragraph>
+               </text>
+               <effectiveTime value="20230927"/>
+               <component>
+                  <section ID="L5e40e0f0-df67-4c71-ab16-34fb75f844b2">
+                     <id root="7432c199-7897-495e-b2f0-5bb43f038a3f"/>
+                     <code code="34091-9" codeSystem="2.16.840.1.113883.6.1" displayName="ANIMAL PHARMACOLOGY &amp; OR TOXICOLOGY SECTION"/>
+                     <title>ANIMAL SAFETY SUMMARY</title>
+                     <text>
+                        <paragraph>
+                           <content styleCode="bold">Cat Data:</content> The recommended daily therapeutic dose range for clindamycin hydrochloride (Clindamycin Hydrochloride Oral Drops) is 11 to 33 mg/kg/day (5 to 15 mg/lb/day) depending on the severity of the condition. Clindamycin hydrochloride (Clindamycin Hydrochloride Oral Drops) was tolerated with little evidence of toxicity in domestic shorthair cats when administered orally at 10x the minimum recommended therapeutic daily dose (11 mg/kg; 5 mg/lb) for 15 days, and at doses up to 5x the minimum recommended therapeutic dose for 42 days.</paragraph>
+                        <paragraph>Gastrointestinal tract upset (soft feces to diarrhea) occurred in control and treated cats with emesis occurring at doses 3x or greater than the minimum recommended therapeutic dose (11 mg/kg/day; 5 mg/lb/day). Lymphocytic inflammation of the gallbladder was noted in a greater number of treated cats at the 110 mg/kg/day (50 mg/lb/day) dose level than for control cats. No other effects were noted. Safety in gestating queens or breeding male cats has not been established.</paragraph>
+                     </text>
+                     <effectiveTime value="20230927"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="Lb3f0310d-43dd-4afa-9849-96a2a727cee8">
+               <id root="64e4457f-c126-4621-838f-822aa58fceeb"/>
+               <code code="34069-5" codeSystem="2.16.840.1.113883.6.1" displayName="HOW SUPPLIED SECTION"/>
+               <title>  HOW SUPPLIED
+</title>
+               <text>
+                  <paragraph>Clindamycin Hydrochloride Oral Drops is available as 20 mL filled in 30 mL bottles (25 mg/mL) supplied in packers containing 12 cartoned bottles with direction labels and calibrated dosing droppers.</paragraph>
+               </text>
+               <effectiveTime value="20150812"/>
+            </section>
+         </component>
+         <component>
+            <section ID="L0936d371-e8a2-4c59-854b-90e1f848f483">
+               <id root="46e4e73c-5c4f-4119-975d-5b6dcd349311"/>
+               <code code="44425-7" codeSystem="2.16.840.1.113883.6.1" displayName="STORAGE AND HANDLING SECTION"/>
+               <title>  STORAGE
+</title>
+               <text>
+                  <paragraph>Store at controlled room temperature between 20° to 25° C (68° to 77° F) [see USP].</paragraph>
+                  <paragraph>Keep container tightly closed when not in use.</paragraph>
+                  <paragraph>Approved by FDA under ANADA # 200-398</paragraph>
+                  <paragraph>Manufactured by:</paragraph>
+                  <paragraph>First Priority, Inc., Elgin, IL 60123</paragraph>
+                  <paragraph>www.prioritycare.com</paragraph>
+                  <paragraph>Rev. 10-22</paragraph>
+                  <paragraph>
+                     <renderMultiMedia referencedObject="La32c83d1-784f-4080-a3e5-244236b8184d"/>
+                  </paragraph>
+                  <paragraph>Lot No. Exp. Date</paragraph>
+                  <paragraph>Made in U.S.A.</paragraph>
+               </text>
+               <effectiveTime value="20240319"/>
+               <component>
+                  <observationMedia ID="La32c83d1-784f-4080-a3e5-244236b8184d">
+                     <text>image of eye clock</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="Eye clock.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="L8936d7f9-8044-450d-a884-f54ab921077a">
+               <id root="917dac6d-11c0-4a77-ae62-f7e597e5afdc"/>
+               <code code="51945-4" codeSystem="2.16.840.1.113883.6.1" displayName="PACKAGE LABEL.PRINCIPAL DISPLAY PANEL"/>
+               <title>Net Contents: 20 mL (0.68 fl oz)Bottle/Case label</title>
+               <text>
+                  <paragraph>
+                     <renderMultiMedia referencedObject="L87f977e6-fe35-402d-8719-b0cb2894cb74"/>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20240319"/>
+               <component>
+                  <observationMedia ID="L87f977e6-fe35-402d-8719-b0cb2894cb74">
+                     <text>image of bottle/case label</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="LBPCOM090_r1022.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="L5b56ae3f-d5de-4279-89a7-163467e7ab61">
+               <id root="80eac900-6e1c-4de9-bbcd-27c09ed5538c"/>
+               <code code="51945-4" codeSystem="2.16.840.1.113883.6.1" displayName="PACKAGE LABEL.PRINCIPAL DISPLAY PANEL"/>
+               <title>Net Contents: 20 mL (0.68 fl oz)<br/>Carton label</title>
+               <text>
+                  <paragraph>
+                     <renderMultiMedia referencedObject="Lcfaad97a-8e2e-4c73-bf27-7f8c41771d72"/>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20240319"/>
+               <component>
+                  <observationMedia ID="Lcfaad97a-8e2e-4c73-bf27-7f8c41771d72">
+                     <text>Image of Carton Label</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="PBXPCOM090_r1022.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+      </structuredBody>
+   </component>
+</document>

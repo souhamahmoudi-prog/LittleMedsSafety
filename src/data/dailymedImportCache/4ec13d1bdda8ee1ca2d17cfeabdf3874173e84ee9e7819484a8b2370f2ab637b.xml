@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="https://www.accessdata.fda.gov/spl/stylesheet/spl.xsl" type="text/xsl"?>
+<document xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 https://www.accessdata.fda.gov/spl/schema/spl.xsd">
+   <id root="5923be71-3005-4460-9278-288334f41381"/>
+   <code code="34390-5" codeSystem="2.16.840.1.113883.6.1" displayName="HUMAN OTC DRUG LABEL"/>
+   <title>CVS Pharmacy, Inc. Children’s Allergy Relief Drug Facts</title>
+   <effectiveTime value="20251022"/>
+   <setId root="8b539dc0-5487-4b11-babd-52bf341a8947"/>
+   <versionNumber value="6"/>
+   <author>
+      <time/>
+      <assignedEntity>
+         <representedOrganization>
+            <id extension="062312574" root="1.3.6.1.4.1.519.1"/>
+            <name>CVS Pharmacy</name>
+         </representedOrganization>
+      </assignedEntity>
+   </author>
+   <component>
+      <structuredBody>
+         <component>
+            <section>
+               <id root="d5d5fca1-d62d-49ee-add3-260ceb86e131"/>
+               <code code="48780-1" codeSystem="2.16.840.1.113883.6.1" displayName="SPL product data elements section"/>
+               <effectiveTime value="20251022"/>
+               <subject>
+                  <manufacturedProduct>
+                     <manufacturedProduct>
+                        <code code="59779-874" codeSystem="2.16.840.1.113883.6.69"/>
+                        <name>allergy relief<suffix>childrens</suffix>
+                        </name>
+                        <formCode code="C42986" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="SOLUTION"/>
+                        <asEntityWithGeneric>
+                           <genericMedicine>
+                              <name>Diphenhydramine HCl</name>
+                           </genericMedicine>
+                        </asEntityWithGeneric>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator unit="mg" value="12.5"/>
+                              <denominator unit="mL" value="5"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="TC2D6JAD40" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>DIPHENHYDRAMINE HYDROCHLORIDE</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="8GTS82S83M" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>DIPHENHYDRAMINE</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="XF417D3PSL" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>ANHYDROUS CITRIC ACID</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="9DBA0SBB0L" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>D&amp;C RED NO. 33</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="WZB9127XOA" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>FD&amp;C RED NO. 40</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="XY6UN3QB6S" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>HIGH FRUCTOSE CORN SYRUP</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="TUF2IVW3M2" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>POLOXAMER 407</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="059QF0KO0R" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>WATER</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="OJ245FE5EU" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>SODIUM BENZOATE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="451W47IQ8X" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>SODIUM CHLORIDE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="1Q73Q2JULR" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>SODIUM CITRATE, UNSPECIFIED FORM</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="8KW3E207O2" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>SORBITOL SOLUTION</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="PDC6A3C0OX" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>GLYCERIN</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <asContent>
+                           <quantity>
+                              <numerator unit="mL" value="118"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code/>
+                              <formCode code="C43169" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOTTLE"/>
+                              <asContent>
+                                 <quantity>
+                                    <numerator unit="1" value="1"/>
+                                    <denominator value="1"/>
+                                 </quantity>
+                                 <containerPackagedProduct>
+                                    <code code="59779-874-26" codeSystem="2.16.840.1.113883.6.69"/>
+                                    <formCode code="C43182" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="CARTON"/>
+                                 </containerPackagedProduct>
+                                 <subjectOf>
+                                    <marketingAct>
+                                       <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                                       <statusCode code="active"/>
+                                       <effectiveTime>
+                                          <low value="20150903"/>
+                                       </effectiveTime>
+                                    </marketingAct>
+                                 </subjectOf>
+                              </asContent>
+                           </containerPackagedProduct>
+                           <subjectOf>
+                              <characteristic classCode="OBS">
+                                 <code code="SPLCMBPRDTP" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                                 <value code="C112160" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="Type 0: Not a Combination Product" xsi:type="CE"/>
+                              </characteristic>
+                           </subjectOf>
+                        </asContent>
+                        <asContent>
+                           <quantity>
+                              <numerator unit="mL" value="236"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code/>
+                              <formCode code="C43169" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOTTLE"/>
+                              <asContent>
+                                 <quantity>
+                                    <numerator unit="1" value="1"/>
+                                    <denominator value="1"/>
+                                 </quantity>
+                                 <containerPackagedProduct>
+                                    <code code="59779-874-34" codeSystem="2.16.840.1.113883.6.69"/>
+                                    <formCode code="C43182" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="CARTON"/>
+                                 </containerPackagedProduct>
+                                 <subjectOf>
+                                    <marketingAct>
+                                       <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                                       <statusCode code="completed"/>
+                                       <effectiveTime>
+                                          <low value="20150903"/>
+                                          <high value="20251130"/>
+                                       </effectiveTime>
+                                    </marketingAct>
+                                 </subjectOf>
+                              </asContent>
+                           </containerPackagedProduct>
+                           <subjectOf>
+                              <characteristic classCode="OBS">
+                                 <code code="SPLCMBPRDTP" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                                 <value code="C112160" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="Type 0: Not a Combination Product" xsi:type="CE"/>
+                              </characteristic>
+                           </subjectOf>
+                        </asContent>
+                     </manufacturedProduct>
+                     <subjectOf>
+                        <approval>
+                           <id extension="M012" root="2.16.840.1.113883.3.9421"/>
+                           <code code="C200263" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="OTC Monograph Drug"/>
+                           <author>
+                              <territorialAuthority>
+                                 <territory>
+                                    <code code="USA" codeSystem="2.16.840.1.113883.5.28"/>
+                                 </territory>
+                              </territorialAuthority>
+                           </author>
+                        </approval>
+                     </subjectOf>
+                     <subjectOf>
+                        <marketingAct>
+                           <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <statusCode code="active"/>
+                           <effectiveTime>
+                              <low value="20150903"/>
+                           </effectiveTime>
+                        </marketingAct>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLCOLOR" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value code="C48326" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="RED" xsi:type="CE">
+                              <originalText>Bluish-Red</originalText>
+                           </value>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLFLAVOR" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value code="C73375" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="CHERRY" xsi:type="CE"/>
+                        </characteristic>
+                     </subjectOf>
+                     <consumedIn>
+                        <substanceAdministration>
+                           <routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ORAL"/>
+                        </substanceAdministration>
+                     </consumedIn>
+                  </manufacturedProduct>
+               </subject>
+            </section>
+         </component>
+         <component>
+            <section ID="i4i_OTC_Active_Ingredient_id_4885c19c-922c-4303-8dfb-0e778aeeeef3">
+               <id root="c881adf3-15fb-48f8-b952-b5ae031cc84a"/>
+               <code code="55106-9" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - ACTIVE INGREDIENT SECTION"/>
+               <title>Active ingredient (in each 5 mL)</title>
+               <text>
+                  <paragraph>Diphenhydramine HCl 12.5 mg</paragraph>
+               </text>
+               <effectiveTime value="20160316"/>
+            </section>
+         </component>
+         <component>
+            <section ID="i4i_OTC_Purpose_id_7ee0a081-88e4-41f6-83ec-08e7d248ad55">
+               <id root="9a9d2ffe-8b32-4b2c-a7b2-5a8847cfb986"/>
+               <code code="55105-1" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - PURPOSE SECTION"/>
+               <title>Purpose</title>
+               <text>
+                  <paragraph>Antihistamine</paragraph>
+               </text>
+               <effectiveTime value="20151007"/>
+            </section>
+         </component>
+         <component>
+            <section ID="i4i_indications_id_b02cdee1-f16a-4713-bdcf-29b5149c229f">
+               <id root="03b20616-d052-4f80-a8ac-1a90108e61d2"/>
+               <code code="34067-9" codeSystem="2.16.840.1.113883.6.1" displayName="INDICATIONS &amp; USAGE SECTION"/>
+               <title>Uses</title>
+               <text>
+                  <list listType="unordered">
+                     <item>
+                        <caption>•</caption>temporarily relieves these symptoms due to hay fever or other upper respiratory allergies:<list listType="unordered">
+                           <item>
+                              <caption>•</caption>sneezing</item>
+                           <item>
+                              <caption>•</caption>itching of the nose or throat</item>
+                           <item>
+                              <caption>•</caption>runny nose</item>
+                           <item>
+                              <caption>•</caption>itchy, watery eyes</item>
+                        </list>
+                     </item>
+                  </list>
+               </text>
+               <effectiveTime value="20240717"/>
+            </section>
+         </component>
+         <component>
+            <section ID="i4i_warnings_id_1d6bc427-ede7-44b4-9cee-9bb03e3a84e9">
+               <id root="dcee5248-1498-45a7-84fc-e29c3110a654"/>
+               <code code="34071-1" codeSystem="2.16.840.1.113883.6.1" displayName="WARNINGS SECTION"/>
+               <title>Warnings</title>
+               <effectiveTime value="20160316"/>
+               <component>
+                  <section ID="i4i_OTC_Do_not_use_id_e0f5ca45-25b3-41b8-a5e2-622d6748cc9c">
+                     <id root="5476a669-bf5c-479a-b287-a38cd8de6c09"/>
+                     <code code="50570-1" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - DO NOT USE SECTION"/>
+                     <title>Do not use</title>
+                     <text>
+                        <list listType="unordered">
+                           <item>
+                              <caption>•</caption>with any other product containing diphenhydramine, even one used on skin</item>
+                           <item>
+                              <caption>•</caption>to make a child sleepy</item>
+                        </list>
+                     </text>
+                     <effectiveTime value="20160316"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="i4i_OTC_Ask_Doctor_id_547aef4b-7d15-4314-bc53-39f91d951576">
+                     <id root="74af6314-3edd-4e3e-ae81-15ae35d1367c"/>
+                     <code code="50569-3" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - ASK DOCTOR SECTION"/>
+                     <title>Ask a doctor before use if the child has</title>
+                     <text>
+                        <list listType="unordered">
+                           <item>
+                              <caption>•</caption>a breathing problem such as chronic bronchitis</item>
+                           <item>
+                              <caption>•</caption>glaucoma</item>
+                           <item>
+                              <caption>•</caption>a sodium-restricted diet</item>
+                        </list>
+                     </text>
+                     <effectiveTime value="20160316"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="i4i_OTC_Ask_Doctor_Pharmacist_id_6e2aee18-fcc8-417f-a870-97bbb77dcfb6">
+                     <id root="648b95e4-0aaa-4d45-824d-67a3019d8ee4"/>
+                     <code code="50568-5" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - ASK DOCTOR/PHARMACIST SECTION"/>
+                     <title>Ask a doctor or pharmacist before use if the child is</title>
+                     <text>
+                        <paragraph>taking sedatives or tranquilizers</paragraph>
+                     </text>
+                     <effectiveTime value="20151007"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="i4i_OTC_When_Using_id_366a6f26-2348-436c-927b-77f1b3a37c21">
+                     <id root="6bb4d230-4638-4c39-81cd-03ae9331dcda"/>
+                     <code code="50567-7" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - WHEN USING SECTION"/>
+                     <title>When using this product</title>
+                     <text>
+                        <list listType="unordered">
+                           <item>
+                              <caption>•</caption>marked drowsiness may occur</item>
+                           <item>
+                              <caption>•</caption>excitability may occur, especially in children</item>
+                           <item>
+                              <caption>•</caption>sedatives and tranquilizers may increase drowsiness</item>
+                        </list>
+                     </text>
+                     <effectiveTime value="20151007"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="i4i_OTC_Keep_Away_Children_id_9a635c7b-76a7-4422-8c18-fe2971341d71">
+                     <id root="e71a442f-bc4f-4c57-835b-e4877270dbd3"/>
+                     <code code="50565-1" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - KEEP OUT OF REACH OF CHILDREN SECTION"/>
+                     <title>Keep out of reach of children.</title>
+                     <text>
+                        <paragraph>In case of overdose, get medical help or contact a Poison Control Center right away (1-800-222-1222).</paragraph>
+                     </text>
+                     <effectiveTime value="20151215"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="i4i_dosage_admin_id_56947ed0-7a02-450e-8cfe-1fc3e649716e">
+               <id root="a4932baf-e005-4718-9884-2a90ca69a217"/>
+               <code code="34068-7" codeSystem="2.16.840.1.113883.6.1" displayName="DOSAGE &amp; ADMINISTRATION SECTION"/>
+               <title>Directions</title>
+               <text>
+                  <list listType="unordered">
+                     <item>
+                        <caption>•</caption>find right dose on chart below</item>
+                     <item>
+                        <caption>•</caption>mL = milliliter</item>
+                     <item>
+                        <caption>•</caption>take every 4 to 6 hours, or as directed by a doctor</item>
+                     <item>
+                        <caption>•</caption>do not take more than 6 doses in 24 hours</item>
+                  </list>
+                  <table width="100%">
+                     <col width="33%"/>
+                     <col width="49%"/>
+                     <tbody>
+                        <tr>
+                           <td styleCode="Rrule Botrule Lrule Toprule " valign="top">
+                              <paragraph>
+                                 <content styleCode="bold">Age (yr)</content>
+                              </paragraph>
+                           </td>
+                           <td styleCode="Rrule Botrule Lrule Toprule " valign="middle">
+                              <paragraph>
+                                 <content styleCode="bold">Dose (mL)</content>
+                              </paragraph>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td styleCode="Rrule Lrule Botrule " valign="top">
+                              <paragraph>children under 2 years</paragraph>
+                           </td>
+                           <td styleCode="Rrule Lrule Toprule Botrule " valign="middle">
+                              <paragraph>do not use</paragraph>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td styleCode="Rrule Lrule Botrule " valign="top">
+                              <paragraph>children 2 to 5 years</paragraph>
+                           </td>
+                           <td styleCode="Rrule Lrule Toprule Botrule " valign="top">
+                              <paragraph>do not use unless directed by a doctor</paragraph>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td styleCode="Rrule Botrule Lrule Toprule " valign="top">
+                              <paragraph>children 6 to 11 years</paragraph>
+                           </td>
+                           <td styleCode="Rrule Botrule Lrule Toprule " valign="top">
+                              <paragraph>5 mL to 10 mL</paragraph>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <paragraph>
+                     <content styleCode="bold">Attention: </content>use only enclosed dosing cup specifically designed for use with this product. Do not use any other dosing device.</paragraph>
+               </text>
+               <effectiveTime value="20240717"/>
+            </section>
+         </component>
+         <component>
+            <section ID="i4i_storage_id_d6d3a0e7-1b82-41a7-a1bf-bfe714c2446d">
+               <id root="f215c8f7-2055-4874-8fb8-0dbb1ee72e8c"/>
+               <code code="44425-7" codeSystem="2.16.840.1.113883.6.1" displayName="STORAGE AND HANDLING SECTION"/>
+               <title>Other information</title>
+               <text>
+                  <list listType="unordered">
+                     <item>
+                        <caption>•</caption>
+                        <content styleCode="bold">each 5 mL contains:</content> sodium 15 mg</item>
+                     <item>
+                        <caption>•</caption>store at 20-25°C (68-77°F). Protect from light. Store in outer carton until contents used.</item>
+                     <item>
+                        <caption>•</caption>
+                        <content styleCode="bold">do not use if printed neckband is broken or missing</content>
+                     </item>
+                  </list>
+               </text>
+               <effectiveTime value="20240717"/>
+            </section>
+         </component>
+         <component>
+            <section ID="i4i_inactive_ingredients_id_ec00d675-eca5-4143-b905-93b1c173fa15">
+               <id root="091b30cf-16b3-4116-b64f-b586480023d3"/>
+               <code code="51727-6" codeSystem="2.16.840.1.113883.6.1" displayName="INACTIVE INGREDIENT SECTION"/>
+               <title>Inactive ingredients</title>
+               <text>
+                  <paragraph>anhydrous citric acid, D&amp;C red #33, FD&amp;C red #40, flavor, glycerin, high fructose corn syrup, poloxamer 407, purified water, sodium benzoate, sodium chloride, sodium citrate, sorbitol solution</paragraph>
+               </text>
+               <effectiveTime value="20151007"/>
+            </section>
+         </component>
+         <component>
+            <section ID="i4i_OTC_Questions_id_2afcead4-cfed-4ad3-aa60-f5ce5e16757f">
+               <id root="69f3bb3a-0581-41a0-900b-2e7906300a49"/>
+               <code code="53413-1" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - QUESTIONS SECTION"/>
+               <title>Questions or comments?</title>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">1-800-719-9260</content>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20191121"/>
+            </section>
+         </component>
+         <component>
+            <section ID="i4i_Principal_display_panel_id_bf3571b9-6377-4cc7-920f-91849a2b16cb">
+               <id root="a04ef9a6-7ad4-40e9-abb0-40f24e1a93a0"/>
+               <code code="51945-4" codeSystem="2.16.840.1.113883.6.1" displayName="PACKAGE LABEL.PRINCIPAL DISPLAY PANEL"/>
+               <title>Principal Display Panel</title>
+               <text>
+                  <paragraph>CVS Health<sub>® </sub>
+                  </paragraph>
+                  <paragraph>Compare to the active ingredient in Children’s Benadryl<sup>®</sup> Allergy Liquid</paragraph>
+                  <paragraph>Children’s Allergy Relief</paragraph>
+                  <paragraph>LIQUID MEDICATION</paragraph>
+                  <paragraph>DIPHENHYDRAMINE HCl 12.5 mg/5 mL ORAL SOLUTION</paragraph>
+                  <paragraph>Antihistamine</paragraph>
+                  <paragraph>Relief of:</paragraph>
+                  <paragraph>• Sneezing</paragraph>
+                  <paragraph>• Runny nose</paragraph>
+                  <paragraph>• Itchy, watery eyes</paragraph>
+                  <paragraph>• Itchy throat</paragraph>
+                  <paragraph>Cherry Flavor</paragraph>
+                  <paragraph>Dosage Cup Included</paragraph>
+                  <paragraph>Free of alcohol &amp; gluten</paragraph>
+                  <paragraph>4 FL OZ (118 mL)</paragraph>
+                  <renderMultiMedia ID="id992212254" referencedObject="ID_90aabb0a-289b-46b4-b5f0-17c7f5b2db4b"/>
+               </text>
+               <effectiveTime value="20240717"/>
+               <component>
+                  <observationMedia ID="ID_90aabb0a-289b-46b4-b5f0-17c7f5b2db4b">
+                     <text>Children's Allergy Relief Cherry Carton Image</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="Carton Image.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+      </structuredBody>
+   </component>
+</document>

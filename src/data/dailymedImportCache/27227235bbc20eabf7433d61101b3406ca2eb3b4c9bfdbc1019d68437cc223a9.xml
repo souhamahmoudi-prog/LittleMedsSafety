@@ -1,0 +1,894 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="https://www.accessdata.fda.gov/spl/stylesheet/spl.xsl" type="text/xsl"?>
+<document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 https://www.accessdata.fda.gov/spl/schema/spl.xsd">
+   <id root="ec98a8b7-7c90-6912-e053-2a95a90a2791"/>
+   <code code="34391-3" codeSystem="2.16.840.1.113883.6.1" displayName="HUMAN PRESCRIPTION DRUG LABEL"/>
+   <title>Clindamycin Phosphate</title>
+   <effectiveTime value="20221103"/>
+   <setId root="ab4e9054-348c-4e7b-ae04-1163ac9a15f9"/>
+   <versionNumber value="4"/>
+   <author>
+      <time/>
+      <assignedEntity>
+         <representedOrganization>
+            <id root="1.3.6.1.4.1.519.1" extension="782540215"/>
+            <name>Marlex Pharmaceuticals Inc</name>
+            <assignedEntity>
+               <assignedOrganization/>
+            </assignedEntity>
+         </representedOrganization>
+      </assignedEntity>
+   </author>
+   <component>
+      <structuredBody>
+         <component>
+            <section>
+               <id root="ec98b1c9-4e21-7e72-e053-2995a90ab69d"/>
+               <code code="48780-1" codeSystem="2.16.840.1.113883.6.1" displayName="SPL product data elements section"/>
+               <effectiveTime value="20221103"/>
+               <subject>
+                  <manufacturedProduct>
+                     <manufacturedProduct>
+                        <code code="10135-691" codeSystem="2.16.840.1.113883.6.69"/>
+                        <name>Clindamycin Phosphate</name>
+                        <formCode code="C42986" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="SOLUTION"/>
+                        <asEntityWithGeneric>
+                           <genericMedicine>
+                              <name>Clindamycin Phosphate</name>
+                           </genericMedicine>
+                        </asEntityWithGeneric>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="059QF0KO0R" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>WATER</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="6DC9Q167V3" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>PROPYLENE GLYCOL</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="ND2M416302" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>ISOPROPYL ALCOHOL</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="55X04QC32I" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>SODIUM HYDROXIDE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator unit="mg" value="11.9"/>
+                              <denominator unit="mL" value="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="EH6D7113I8" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>CLINDAMYCIN PHOSPHATE</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="3U02EL437C" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>CLINDAMYCIN</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <asContent>
+                           <quantity>
+                              <numerator value="60" unit="mL"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code/>
+                              <formCode code="C43177" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOTTLE, WITH APPLICATOR"/>
+                              <asContent>
+                                 <quantity>
+                                    <numerator value="1" unit="1"/>
+                                    <denominator value="1"/>
+                                 </quantity>
+                                 <containerPackagedProduct>
+                                    <code code="10135-691-61" codeSystem="2.16.840.1.113883.6.69"/>
+                                    <formCode code="C43182" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="CARTON"/>
+                                 </containerPackagedProduct>
+                                 <subjectOf>
+                                    <marketingAct>
+                                       <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                                       <statusCode code="active"/>
+                                       <effectiveTime>
+                                          <low value="20200301"/>
+                                       </effectiveTime>
+                                    </marketingAct>
+                                 </subjectOf>
+                              </asContent>
+                           </containerPackagedProduct>
+                           <subjectOf>
+                              <characteristic>
+                                 <code code="SPLCMBPRDTP" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                                 <value code="C112160" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="Type 0: Not a Combination Product" xsi:type="CV"/>
+                              </characteristic>
+                           </subjectOf>
+                        </asContent>
+                     </manufacturedProduct>
+                     <subjectOf>
+                        <approval>
+                           <id extension="ANDA209846" root="2.16.840.1.113883.3.150"/>
+                           <code code="C73584" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ANDA"/>
+                           <author>
+                              <territorialAuthority>
+                                 <territory>
+                                    <code code="USA" codeSystem="2.16.840.1.113883.5.28"/>
+                                 </territory>
+                              </territorialAuthority>
+                           </author>
+                        </approval>
+                     </subjectOf>
+                     <subjectOf>
+                        <marketingAct>
+                           <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <statusCode code="active"/>
+                           <effectiveTime>
+                              <low value="20200301"/>
+                           </effectiveTime>
+                        </marketingAct>
+                     </subjectOf>
+                     <consumedIn>
+                        <substanceAdministration>
+                           <routeCode code="C38304" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TOPICAL"/>
+                        </substanceAdministration>
+                     </consumedIn>
+                  </manufacturedProduct>
+               </subject>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="cd4193d2-5d41-aae9-e053-2a95a90ac077"/>
+               <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+               <title/>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">Clindamycin Phosphate Topical Solution, USP 1%</content>
+                  </paragraph>
+                  <paragraph>For External Use</paragraph>
+               </text>
+               <effectiveTime value="20200317"/>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="cd4193d2-5d42-aae9-e053-2a95a90ac077"/>
+               <code code="34089-3" codeSystem="2.16.840.1.113883.6.1" displayName="DESCRIPTION SECTION"/>
+               <title>
+                  <content styleCode="bold">DESCRIPTION</content>
+               </title>
+               <text>
+                  <paragraph>Clindamycin Phosphate Topical Solution contains clindamycin phosphate, USP, at a concentration equivalent to 10 mg clindamycin per milliliter.</paragraph>
+                  <paragraph>Clindamycin phosphate is a water-soluble ester of the semi-synthetic antibiotic produced by a 7(S) - chloro-substitution of the 7(R)-hydroxyl group of the parent antibiotic lincomycin. The solution contains isopropyl alcohol 50% v/v, propylene glycol, sodium hydroxide, and water. The structural formula is represented below:</paragraph>
+                  <paragraph>
+                     <renderMultiMedia referencedObject="MM03000001"/>
+                  </paragraph>
+                  <paragraph>The chemical name for clindamycin phosphate is Methyl-7-chloro-6,7,8-trideoxy-6-(1-methyl- 
+       
+ 
+  <content styleCode="italics">trans</content>-4- propyl-L-2-pyrrolidinecarboxamido)-1-thio-L- 
+       
+ 
+  <content styleCode="italics">threo</content>-α-D- 
+       
+ 
+  <content styleCode="italics">galacto</content>-octopyranoside 2-(dihydrogen phosphate).
+      
+
+ </paragraph>
+               </text>
+               <effectiveTime value="20200317"/>
+               <component>
+                  <observationMedia ID="MM03000001">
+                     <text>The structural formula represented below is Clindamycin phosphate is a water-soluble ester of the semi-synthetic antibiotic produced by a 7(S) - chloro-substitution of the 7(R)-hydroxyl group of the p</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="clindamycin-phosphate-01.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="cd4193d2-5d43-aae9-e053-2a95a90ac077"/>
+               <code code="34090-1" codeSystem="2.16.840.1.113883.6.1" displayName="CLINICAL PHARMACOLOGY SECTION"/>
+               <title>
+                  <content styleCode="bold">CLINICAL PHARMACOLOGY</content>
+               </title>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">Mechanism of Action</content>
+                  </paragraph>
+                  <paragraph>The mechanism of action of clindamycin in treating acne vulgaris is unknown.</paragraph>
+               </text>
+               <effectiveTime value="20200317"/>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="cd4193d2-5d44-aae9-e053-2a95a90ac077"/>
+               <code code="43682-4" codeSystem="2.16.840.1.113883.6.1" displayName="PHARMACOKINETICS SECTION"/>
+               <title>
+                  <content styleCode="bold">Pharmacokinetics</content>
+               </title>
+               <text>
+                  <paragraph>Following multiple topical applications of clindamycin phosphate at a concentration equivalent to 10 mg clindamycin per mL in an isopropyl alcohol and water solution, very low levels of clindamycin are present in the serum (0–3 ng/mL) and less than 0.2% of the dose is recovered in urine as   clindamycin.</paragraph>
+                  <paragraph>Although clindamycin phosphate is inactive 
+       
+ 
+  <content styleCode="italics">in </content>
+                     <content styleCode="italics">vitro</content>, rapid 
+       
+ 
+  <content styleCode="italics">in </content>
+                     <content styleCode="italics">vivo </content>hydrolysis converts this compound to the antibacterially active clindamycin.
+      
+
+ </paragraph>
+               </text>
+               <effectiveTime value="20200317"/>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="cd4193d2-5d45-aae9-e053-2a95a90ac077"/>
+               <code code="49489-8" codeSystem="2.16.840.1.113883.6.1" displayName="MICROBIOLOGY SECTION"/>
+               <title>
+                  <content styleCode="bold">Microbiology</content>
+               </title>
+               <text>
+                  <paragraph>Clindamycin inhibits bacterial protein synthesis by binding to the 23S RNA of the 50S subunit of the ribosome. Clindamycin is bacteriostatic.</paragraph>
+                  <paragraph>
+                     <content styleCode="underline">Antimicrobial Activity</content>
+                  </paragraph>
+                  <paragraph>Clindamycin is active 
+       
+ 
+  <content styleCode="italics">in vitro </content>against most isolates of 
+       
+ 
+  <content styleCode="italics">Propionibacterium acnes</content>; however, the clinical significance is unknown.
+      
+
+ </paragraph>
+                  <paragraph>
+                     <content styleCode="underline">Resistance</content>
+                  </paragraph>
+                  <paragraph>Resistance to clindamycin is most often caused by modification of specific bases of the 23S ribosomal RNA. Cross-resistance between clindamycin and lincomycin is complete. Because the binding sites for these antibacterial drugs overlap, cross-resistance is sometimes observed among lincosamides, macrolides and streptogramin B. Macrolide inducible resistance to clindamycin occurs in some isolates of macrolide-resistant bacteria.</paragraph>
+               </text>
+               <effectiveTime value="20200317"/>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="cd4193d2-5d46-aae9-e053-2a95a90ac077"/>
+               <code code="34067-9" codeSystem="2.16.840.1.113883.6.1" displayName="INDICATIONS &amp; USAGE SECTION"/>
+               <title>
+                  <content styleCode="bold">INDICATIONS AND USAGE</content>
+               </title>
+               <text>
+                  <paragraph>Clindamycin Phosphate Topical Solution USP, 1% is indicated in the treatment of acne vulgaris. In view of the potential for diarrhea, bloody diarrhea and pseudomembranous colitis, the physician should consider whether other agents are more appropriate. (See 
+       
+ 
+  <linkHtml href="#_CONTRAINDICATIONS">CONTRAINDICATIONS</linkHtml>,
+       
+ 
+  <linkHtml href="#_WARNINGS"> WARNINGS</linkHtml> and 
+       
+ 
+  <linkHtml href="#_ADVERSE_REACTIONS">ADVERSE REACTIONS</linkHtml>).
+      
+
+ </paragraph>
+               </text>
+               <effectiveTime value="20200317"/>
+            </section>
+         </component>
+         <component>
+            <section ID="_CONTRAINDICATIONS">
+               <id root="cd4193d2-5d47-aae9-e053-2a95a90ac077"/>
+               <code code="34070-3" codeSystem="2.16.840.1.113883.6.1" displayName="CONTRAINDICATIONS SECTION"/>
+               <title>
+                  <content styleCode="bold">CONTRAINDICATIONS</content>
+               </title>
+               <text>
+                  <paragraph>Clindamycin Phosphate Topical Solution USP, 1% is contraindicated in individuals with a history of hypersensitivity to preparations containing clindamycin or lincomycin, a history of regional enteritis or ulcerative colitis, or a history of antibiotic-associated colitis.</paragraph>
+               </text>
+               <effectiveTime value="20200317"/>
+            </section>
+         </component>
+         <component>
+            <section ID="_WARNINGS">
+               <id root="cd4193d2-5d48-aae9-e053-2a95a90ac077"/>
+               <code code="34071-1" codeSystem="2.16.840.1.113883.6.1" displayName="WARNINGS SECTION"/>
+               <title>
+                  <content styleCode="bold">WARNINGS</content>
+               </title>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">Orally and parenterally </content>
+                     <content styleCode="bold">administered </content>
+                     <content styleCode="bold">clindamycin </content>
+                     <content styleCode="bold">has </content>
+                     <content styleCode="bold">been </content>
+                     <content styleCode="bold">associated </content>
+                     <content styleCode="bold">with </content>
+                     <content styleCode="bold">severe </content>
+                     <content styleCode="bold">colitis which</content>
+                     <content styleCode="bold"> may</content>
+                     <content styleCode="bold"> </content>
+                     <content styleCode="bold">result </content>
+                     <content styleCode="bold">in </content>
+                     <content styleCode="bold">patient </content>
+                     <content styleCode="bold">death. </content>
+                     <content styleCode="bold">Use </content>
+                     <content styleCode="bold">of </content>
+                     <content styleCode="bold">the </content>
+                     <content styleCode="bold">topical </content>
+                     <content styleCode="bold">formulation </content>
+                     <content styleCode="bold">of </content>
+                     <content styleCode="bold">clindamycin </content>
+                     <content styleCode="bold">results </content>
+                     <content styleCode="bold">in </content>
+                     <content styleCode="bold">absorption </content>
+                     <content styleCode="bold">of </content>
+                     <content styleCode="bold">the antibiotic </content>
+                     <content styleCode="bold">from </content>
+                     <content styleCode="bold">the </content>
+                     <content styleCode="bold">skin </content>
+                     <content styleCode="bold">surface. </content>
+                     <content styleCode="bold">Diarrhea, </content>
+                     <content styleCode="bold">bloody </content>
+                     <content styleCode="bold">diarrhea, and colitis (including </content>
+                     <content styleCode="bold">pseudomembranous </content>
+                     <content styleCode="bold">colitis</content>
+                     <content styleCode="bold">) </content>
+                     <content styleCode="bold">have been</content>
+                     <content styleCode="bold"> </content>
+                     <content styleCode="bold">reported </content>
+                     <content styleCode="bold">with</content>
+                     <content styleCode="bold"> the </content>
+                     <content styleCode="bold">use </content>
+                     <content styleCode="bold">of </content>
+                     <content styleCode="bold">topical </content>
+                     <content styleCode="bold">and </content>
+                     <content styleCode="bold">systemic</content>
+                     <content styleCode="bold"> </content>
+                     <content styleCode="bold">clindamycin.</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Studies indicate a </content>
+                     <content styleCode="bold">toxin(s) </content>
+                     <content styleCode="bold">produced </content>
+                     <content styleCode="bold">by </content>
+                     <content styleCode="bold">clostridia </content>
+                     <content styleCode="bold">is </content>
+                     <content styleCode="bold">one </content>
+                     <content styleCode="bold">primary </content>
+                     <content styleCode="bold">cause </content>
+                     <content styleCode="bold">of </content>
+                     <content styleCode="bold">antibiotic-associated </content>
+                     <content styleCode="bold">colitis. </content>
+                     <content styleCode="bold">The </content>
+                     <content styleCode="bold">colitis </content>
+                     <content styleCode="bold">is </content>
+                     <content styleCode="bold">usually </content>
+                     <content styleCode="bold">characterized </content>
+                     <content styleCode="bold">by </content>
+                     <content styleCode="bold">severe </content>
+                     <content styleCode="bold">persistent </content>
+                     <content styleCode="bold">diarrhea and </content>
+                     <content styleCode="bold">severe </content>
+                     <content styleCode="bold">abdominal </content>
+                     <content styleCode="bold">cramps </content>
+                     <content styleCode="bold">and </content>
+                     <content styleCode="bold">may </content>
+                     <content styleCode="bold">be </content>
+                     <content styleCode="bold">associated </content>
+                     <content styleCode="bold">with the </content>
+                     <content styleCode="bold">passage </content>
+                     <content styleCode="bold">of </content>
+                     <content styleCode="bold">blood </content>
+                     <content styleCode="bold">and </content>
+                     <content styleCode="bold">mucus. </content>
+                     <content styleCode="bold">Endoscopic </content>
+                     <content styleCode="bold">examination may</content>
+                     <content styleCode="bold"> reveal </content>
+                     <content styleCode="bold">pseudomembranous </content>
+                     <content styleCode="bold">colitis</content>
+                     <content styleCode="bold">. </content>
+                     <content styleCode="bold">
+                        <content styleCode="underline">Stool </content>
+                     </content>
+                     <content styleCode="bold">
+                        <content styleCode="underline">culture </content>
+                     </content>
+                     <content styleCode="bold">
+                        <content styleCode="underline">for </content>
+                     </content>
+                     <content styleCode="bold">
+                        <content styleCode="italics">
+                           <content styleCode="underline">Clostridium </content>
+                        </content>
+                     </content>
+                     <content styleCode="bold">
+                        <content styleCode="italics">
+                           <content styleCode="underline">difficile </content>
+                        </content>
+                     </content>
+                     <content styleCode="bold">
+                        <content styleCode="underline">and s </content>
+                     </content>
+                     <content styleCode="bold">
+                        <content styleCode="underline">tool </content>
+                     </content>
+                     <content styleCode="bold">
+                        <content styleCode="underline">assay </content>
+                     </content>
+                     <content styleCode="bold">
+                        <content styleCode="underline">for </content>
+                     </content>
+                     <content styleCode="bold">
+                        <content styleCode="italics">
+                           <content styleCode="underline">C. </content>
+                        </content>
+                     </content>
+                     <content styleCode="bold">
+                        <content styleCode="italics">
+                           <content styleCode="underline">difficile </content>
+                        </content>
+                     </content>
+                     <content styleCode="bold">
+                        <content styleCode="underline">toxin </content>
+                     </content>
+                     <content styleCode="bold">
+                        <content styleCode="underline">may </content>
+                     </content>
+                     <content styleCode="bold">
+                        <content styleCode="underline">be helpful</content>
+                     </content>
+                     <content styleCode="bold">
+                        <content styleCode="underline"> </content>
+                     </content>
+                     <content styleCode="bold">
+                        <content styleCode="underline">diagnos</content>
+                     </content>
+                     <content styleCode="bold">
+                        <content styleCode="underline">tically.</content>
+                     </content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">When s</content>
+                     <content styleCode="bold">ignificant diarrhea occurs, the drug should be discontinued. Large bowel end</content>
+                     <content styleCode="bold">oscopy should be considered to </content>
+                     <content styleCode="bold">es</content>
+                     <content styleCode="bold">tablish a definitive diagnosis in cases of severe </content>
+                     <content styleCode="bold">diarrhea.</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Antiperistaltic agents</content>
+                     <content styleCode="bold"> </content>
+                     <content styleCode="bold">such </content>
+                     <content styleCode="bold">as </content>
+                     <content styleCode="bold">opiates </content>
+                     <content styleCode="bold">and diphenoxylate with atropine </content>
+                     <content styleCode="bold">may prolong </content>
+                     <content styleCode="bold">and/or </content>
+                     <content styleCode="bold">worsen </content>
+                     <content styleCode="bold">the </content>
+                     <content styleCode="bold">condition. </content>
+                     <content styleCode="bold">Vancomycin </content>
+                     <content styleCode="bold">has </content>
+                     <content styleCode="bold">been </content>
+                     <content styleCode="bold">found </content>
+                     <content styleCode="bold">to </content>
+                     <content styleCode="bold">be </content>
+                     <content styleCode="bold">effective </content>
+                     <content styleCode="bold">in </content>
+                     <content styleCode="bold">the </content>
+                     <content styleCode="bold">treatment </content>
+                     <content styleCode="bold">of </content>
+                     <content styleCode="bold">antibiotic- </content>
+                     <content styleCode="bold">associated </content>
+                     <content styleCode="bold">pseudomembranous </content>
+                     <content styleCode="bold">colitis </content>
+                     <content styleCode="bold">produced </content>
+                     <content styleCode="bold">by </content>
+                     <content styleCode="bold">
+                        <content styleCode="italics">Clostridium </content>
+                     </content>
+                     <content styleCode="bold">
+                        <content styleCode="italics">difficile</content>
+                     </content>
+                     <content styleCode="bold">. </content>
+                     <content styleCode="bold">The </content>
+                     <content styleCode="bold">usual </content>
+                     <content styleCode="bold">adult </content>
+                     <content styleCode="bold">dosage </content>
+                     <content styleCode="bold">is </content>
+                     <content styleCode="bold">500 </content>
+                     <content styleCode="bold">milligrams </content>
+                     <content styleCode="bold">to </content>
+                     <content styleCode="bold">2 </content>
+                     <content styleCode="bold">grams </content>
+                     <content styleCode="bold">of </content>
+                     <content styleCode="bold">vancomycin </content>
+                     <content styleCode="bold">orally </content>
+                     <content styleCode="bold">per </content>
+                     <content styleCode="bold">day </content>
+                     <content styleCode="bold">in </content>
+                     <content styleCode="bold">three </content>
+                     <content styleCode="bold">to </content>
+                     <content styleCode="bold">four </content>
+                     <content styleCode="bold">divided </content>
+                     <content styleCode="bold">doses </content>
+                     <content styleCode="bold">administered </content>
+                     <content styleCode="bold">for </content>
+                     <content styleCode="bold">7 </content>
+                     <content styleCode="bold">to </content>
+                     <content styleCode="bold">10 </content>
+                     <content styleCode="bold">days. </content>
+                     <content styleCode="bold">
+                        <content styleCode="underline">Choles </content>
+                     </content>
+                     <content styleCode="bold">
+                        <content styleCode="underline">tyramine </content>
+                     </content>
+                     <content styleCode="bold">
+                        <content styleCode="underline">or </content>
+                     </content>
+                     <content styleCode="bold">
+                        <content styleCode="underline">coles </content>
+                     </content>
+                     <content styleCode="bold">
+                        <content styleCode="underline">tipol </content>
+                     </content>
+                     <content styleCode="bold">
+                        <content styleCode="underline">res </content>
+                     </content>
+                     <content styleCode="bold">
+                        <content styleCode="underline">ins </content>
+                     </content>
+                     <content styleCode="bold">
+                        <content styleCode="underline">bind </content>
+                     </content>
+                     <content styleCode="bold">
+                        <content styleCode="underline">vancomycin </content>
+                     </content>
+                     <content styleCode="bold">
+                        <content styleCode="italics">
+                           <content styleCode="underline">in </content>
+                        </content>
+                     </content>
+                     <content styleCode="bold">
+                        <content styleCode="italics">
+                           <content styleCode="underline">vitro</content>
+                        </content>
+                     </content>
+                     <content styleCode="bold">
+                        <content styleCode="underline">. </content>
+                     </content>
+                     <content styleCode="bold">If </content>
+                     <content styleCode="bold">both </content>
+                     <content styleCode="bold">a </content>
+                     <content styleCode="bold">resin </content>
+                     <content styleCode="bold">and </content>
+                     <content styleCode="bold">vancomycin </content>
+                     <content styleCode="bold">are </content>
+                     <content styleCode="bold">to </content>
+                     <content styleCode="bold">be </content>
+                     <content styleCode="bold">administered </content>
+                     <content styleCode="bold">concurrently, </content>
+                     <content styleCode="bold">it </content>
+                     <content styleCode="bold">may </content>
+                     <content styleCode="bold">be </content>
+                     <content styleCode="bold">advisable </content>
+                     <content styleCode="bold">to </content>
+                     <content styleCode="bold">separate </content>
+                     <content styleCode="bold">the time </content>
+                     <content styleCode="bold">of </content>
+                     <content styleCode="bold">administration </content>
+                     <content styleCode="bold">of </content>
+                     <content styleCode="bold">each</content>
+                     <content styleCode="bold"> </content>
+                     <content styleCode="bold">drug.</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Diarrhea, colitis</content>
+                     <content styleCode="bold">, and pseudomembranous colitis have been observed to begin up to several </content>
+                     <content styleCode="bold">weeks following </content>
+                     <content styleCode="bold">cessation of oral and parenteral therapy with clindamycin.</content>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20200317"/>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="cd4193d2-5d49-aae9-e053-2a95a90ac077"/>
+               <code code="42232-9" codeSystem="2.16.840.1.113883.6.1" displayName="PRECAUTIONS SECTION"/>
+               <title>
+                  <content styleCode="bold">PRECAUTIONS</content>
+               </title>
+               <effectiveTime value="20200317"/>
+               <component>
+                  <section>
+                     <id root="cd4193d2-5d4a-aae9-e053-2a95a90ac077"/>
+                     <code code="34072-9" codeSystem="2.16.840.1.113883.6.1" displayName="GENERAL PRECAUTIONS SECTION"/>
+                     <title>
+                        <content styleCode="bold">General</content>
+                     </title>
+                     <text>
+                        <paragraph>Clindamycin Phosphate Topical Solution USP, 1% contains an alcohol base which will cause burning   and irritation of the eye. In the event of accidental contact with sensitive surfaces (eye, abraded skin, mucous membranes), bathe with copious amounts of cool tap water. The solution has an unpleasant taste and caution should be exercised when applying medication around the mouth.</paragraph>
+                        <paragraph>Clindamycin Phosphate Topical Solution USP, 1% should be prescribed with caution in atopic individuals.</paragraph>
+                     </text>
+                     <effectiveTime value="20200317"/>
+                  </section>
+               </component>
+               <component>
+                  <section>
+                     <id root="cd4193d2-5d4b-aae9-e053-2a95a90ac077"/>
+                     <code code="34073-7" codeSystem="2.16.840.1.113883.6.1" displayName="DRUG INTERACTIONS SECTION"/>
+                     <title>
+                        <content styleCode="bold">Drug Interactions</content>
+                     </title>
+                     <text>
+                        <paragraph>Clindamycin has been shown to have neuromuscular blocking properties that may enhance the action of other neuromuscular blocking agents. Therefore it should be used with caution in patients receiving such agents.</paragraph>
+                     </text>
+                     <effectiveTime value="20200317"/>
+                  </section>
+               </component>
+               <component>
+                  <section>
+                     <id root="cd4193d2-5d4c-aae9-e053-2a95a90ac077"/>
+                     <code code="42228-7" codeSystem="2.16.840.1.113883.6.1" displayName="PREGNANCY SECTION"/>
+                     <title>
+                        <content styleCode="bold">Pregnancy</content>
+                     </title>
+                     <text>
+                        <paragraph>Teratogenic effects</paragraph>
+                        <paragraph>In clinical trials with pregnant women, the systemic administration of clindamycin during the second and third trimesters has not been associated with an increased frequency of congenital abnormalities. There are no adequate studies in pregnant women during the first trimester of pregnancy. Clindamycin should be used during the first trimester of pregnancy only if clearly needed.</paragraph>
+                     </text>
+                     <effectiveTime value="20200317"/>
+                  </section>
+               </component>
+               <component>
+                  <section>
+                     <id root="cd4193d2-5d4d-aae9-e053-2a95a90ac077"/>
+                     <code code="34080-2" codeSystem="2.16.840.1.113883.6.1" displayName="NURSING MOTHERS SECTION"/>
+                     <title>
+                        <content styleCode="bold">Nursing Mothers</content>
+                     </title>
+                     <text>
+                        <paragraph>It is not known whether clindamycin is excreted in human breast milk following use of Clindamycin Phosphate Topical Solution. Clindamycin has been reported to appear in human breast milk in ranges from &lt;0.5 to 3.8 µg/mL following systemic use. Clindamycin has the potential to cause adverse effects   on the breastfed infant's gastrointestinal flora. If oral or intravenous clindamycin is required by a nursing mother, it is not a reason to discontinue breastfeeding, but an alternate drug may be preferred. Monitor   the infant for possible adverse effects on the gastrointestinal flora, such as diarrhea, candidiasis (thrush, diaper rash) or rarely, blood in the stool indicating possible antibiotic-associated colitis.</paragraph>
+                        <paragraph>The developmental and health benefits of breastfeeding should be considered along with the mother's clinical need for clindamycin and any potential adverse effects on the breastfed child from clindamycin or from the underlying maternal condition.</paragraph>
+                     </text>
+                     <effectiveTime value="20200317"/>
+                  </section>
+               </component>
+               <component>
+                  <section>
+                     <id root="cd4193d2-5d4e-aae9-e053-2a95a90ac077"/>
+                     <code code="34081-0" codeSystem="2.16.840.1.113883.6.1" displayName="PEDIATRIC USE SECTION"/>
+                     <title>
+                        <content styleCode="bold">Pediatric Use</content>
+                     </title>
+                     <text>
+                        <paragraph>Safety and effectiveness in pediatric patients under the age of 12 have not been established.</paragraph>
+                     </text>
+                     <effectiveTime value="20200317"/>
+                  </section>
+               </component>
+               <component>
+                  <section>
+                     <id root="cd4193d2-5d4f-aae9-e053-2a95a90ac077"/>
+                     <code code="34082-8" codeSystem="2.16.840.1.113883.6.1" displayName="GERIATRIC USE SECTION"/>
+                     <title>
+                        <content styleCode="bold">Geriatric Use</content>
+                     </title>
+                     <text>
+                        <paragraph>Clinical studies for Clindamycin Phosphate Topical Solution did not include sufficient number of subjects aged 65 and over to determine whether they respond differently from younger subjects. Other reported clinical experience has not identified differences in response between the elderly and younger patients.</paragraph>
+                     </text>
+                     <effectiveTime value="20200317"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="_ADVERSE_REACTIONS">
+               <id root="cd4193d2-5d50-aae9-e053-2a95a90ac077"/>
+               <code code="34084-4" codeSystem="2.16.840.1.113883.6.1" displayName="ADVERSE REACTIONS SECTION"/>
+               <title>
+                  <content styleCode="bold">ADVERSE REACTIONS</content>
+               </title>
+               <text>
+                  <paragraph>In 18 clinical studies of various formulations of Clindamycin Phosphate Topical Solution using placebo vehicle and/or active comparator drugs as controls, patients experienced a number of treatment emergent adverse dermatologic events [see table   below].</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Number of Patients </content>
+                     <content styleCode="bold">Reporting Event</content>
+                  </paragraph>
+                  <table>
+                     <col width="248"/>
+                     <col width="105"/>
+                     <tbody>
+                        <tr>
+                           <td>
+                              <content styleCode="bold">Treatment Emergent Adverse Event</content>
+                           </td>
+                           <td>
+                              <content styleCode="bold">Solution n=553(%)</content>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td>Burning</td>
+                           <td>62 (11)</td>
+                        </tr>
+                        <tr>
+                           <td>Itching</td>
+                           <td>36 (7)</td>
+                        </tr>
+                        <tr>
+                           <td>Burning/Itching</td>
+                           <td>60 (11)</td>
+                        </tr>
+                        <tr>
+                           <td>Dryness</td>
+                           <td>105 (19)</td>
+                        </tr>
+                        <tr>
+                           <td>Erythema</td>
+                           <td>86 (16)</td>
+                        </tr>
+                        <tr>
+                           <td>Oiliness/Oily Skin</td>
+                           <td>8 (1)</td>
+                        </tr>
+                        <tr>
+                           <td>Peeling</td>
+                           <td>61 (11)</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <paragraph>Orally and parenterally administered clindamycin has been associated with severe colitis which may end fatally.</paragraph>
+                  <paragraph>Cases of diarrhea, bloody diarrhea and colitis (including pseudomembranous colitis) have been reported as adverse reactions in patients treated with oral and parenteral formulations of clindamycin and rarely with topical clindamycin (see 
+       
+ 
+  <linkHtml href="#_WARNINGS">WARNINGS</linkHtml>).
+      
+
+ </paragraph>
+                  <paragraph>Abdominal pain, gastrointestinal disturbances, gram-negative folliculitis, eye pain and contact dermatitis have also been reported in association with the use of topical formulations of   clindamycin.</paragraph>
+               </text>
+               <effectiveTime value="20200317"/>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="cd4193d2-5d51-aae9-e053-2a95a90ac077"/>
+               <code code="34088-5" codeSystem="2.16.840.1.113883.6.1" displayName="OVERDOSAGE SECTION"/>
+               <title>
+                  <content styleCode="bold">OVERDOSAGE</content>
+               </title>
+               <text>
+                  <paragraph>Topically applied Clindamycin Phosphate Topical Solution can be absorbed in sufficient amounts to produce systemic effects (see 
+       
+ 
+  <linkHtml href="#_WARNINGS">WARNINGS</linkHtml>).
+      
+
+ </paragraph>
+               </text>
+               <effectiveTime value="20200317"/>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="cd4193d2-5d52-aae9-e053-2a95a90ac077"/>
+               <code code="34068-7" codeSystem="2.16.840.1.113883.6.1" displayName="DOSAGE &amp; ADMINISTRATION SECTION"/>
+               <title>
+                  <content styleCode="bold">DOSAGE </content>
+                  <content styleCode="bold">AND ADMINISTRATION</content>
+               </title>
+               <text>
+                  <paragraph>Apply a thin film of Clindamycin Phosphate Topical Solution USP, 1% twice daily to affected area. Keep all liquid dosage forms in containers tightly closed.</paragraph>
+               </text>
+               <effectiveTime value="20200317"/>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="cd4193d2-5d53-aae9-e053-2a95a90ac077"/>
+               <code code="34069-5" codeSystem="2.16.840.1.113883.6.1" displayName="HOW SUPPLIED SECTION"/>
+               <title>
+                  <content styleCode="bold">HOW SUPPLIED</content>
+               </title>
+               <text>
+                  <paragraph>Clindamycin Phosphate Topical Solution USP, 1% containing clindamycin phosphate equivalent to 10 mg clindamycin per milliliter is available in the following size:</paragraph>
+                  <paragraph>60 mL applicator bottle – NDC – 10135-0691-61
+		     
+	</paragraph>
+                  <paragraph>Store at controlled room temperature 20 to 25 °C (68 to 77 °F) [see USP]. Protect from freezing.</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Rx only</content>
+                  </paragraph>
+                  <paragraph>To report SUSPECTED ADVERSE REACTIONS, contact FDA at 1-800-FDA-1088 or</paragraph>
+                  <paragraph>www.fda.gov/medwatch.</paragraph>
+                  <paragraph>
+                     <content styleCode="italics">Manufactured for</content> &amp; Distributed by: 
+      
+
+ </paragraph>
+                  <paragraph>  Marlex Pharmaceuticals, Inc.</paragraph>
+                  <paragraph>  New Castle, DE 19720</paragraph>
+                  <paragraph>Rev. 02/20 GH     </paragraph>
+               </text>
+               <effectiveTime value="20200317"/>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="cd4193d2-5d54-aae9-e053-2a95a90ac077"/>
+               <code code="51945-4" codeSystem="2.16.840.1.113883.6.1" displayName="PACKAGE LABEL.PRINCIPAL DISPLAY PANEL"/>
+               <title>
+                  <content styleCode="bold">PRINCIPAL DISPLAY PANEL</content>
+               </title>
+               <text>
+                  <paragraph>NDC 10135-0691-61
+       
+ 
+  <br/>Clindamycin Phosphate
+       
+ 
+  <br/>60 mL
+       
+ 
+  <br/>Rx Only
+      
+
+ </paragraph>
+                  <paragraph>
+                     <renderMultiMedia referencedObject="MM03000002"/>
+                  </paragraph>
+                  <paragraph>
+                     <renderMultiMedia referencedObject="MM03000003"/>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20200317"/>
+               <component>
+                  <observationMedia ID="MM03000002">
+                     <text>PRINCIPAL DISPLAY PANEL
+NDC 10135-0691-61
+Clindamycin Phosphate
+60 mL
+Rx Only
+</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="clindamycin-phosphate-02.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+               <component>
+                  <observationMedia ID="MM03000003">
+                     <text>PRINCIPAL DISPLAY PANEL
+NDC 10135-0691-61
+Clindamycin Phosphate
+60 mL
+Rx Only
+</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="clindamycin-phosphate-03.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+      </structuredBody>
+   </component>
+</document>

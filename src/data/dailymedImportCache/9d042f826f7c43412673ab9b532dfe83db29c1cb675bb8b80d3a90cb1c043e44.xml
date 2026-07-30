@@ -1,0 +1,1520 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="https://www.accessdata.fda.gov/spl/stylesheet/spl.xsl" type="text/xsl"?>
+<document xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 https://www.accessdata.fda.gov/spl/schema/spl.xsd">
+   <id root="4057e10f-332f-48e1-8c97-e80b93331add"/>
+   <code code="34391-3" displayName="HUMAN PRESCRIPTION DRUG LABEL" codeSystem="2.16.840.1.113883.6.1"/>
+   <title>
+      <content styleCode="bold">These highlights do not include all the information needed to use LYVISPAH safely and effectively. See full prescribing information for LYVISPAH.
+			<br/>
+         <br/>LYVISPAH (baclofen) oral granules 
+			<br/>Initial U.S. Approval: 1977</content>
+   </title>
+   <effectiveTime value="20211126"/>
+   <setId root="a7d2dc58-e167-4ebc-ac1d-932f000fb412"/>
+   <versionNumber value="2"/>
+   <author>
+      <time/>
+      <assignedEntity>
+         <representedOrganization>
+            <id extension="080040201" root="1.3.6.1.4.1.519.1"/>
+            <name>Saol Therapeutics Inc</name>
+            <assignedEntity>
+               <assignedOrganization/>
+            </assignedEntity>
+         </representedOrganization>
+      </assignedEntity>
+   </author>
+   <component>
+      <structuredBody>
+         <component>
+            <section>
+               <id root="4f64a5da-ee6f-4c97-921f-66e3504d86ab"/>
+               <code code="48780-1" displayName="SPL listing data elements section" codeSystem="2.16.840.1.113883.6.1"/>
+               <effectiveTime value="20230113"/>
+               <subject>
+                  <manufacturedProduct>
+                     <manufacturedProduct>
+                        <code code="70257-412" codeSystem="2.16.840.1.113883.6.69"/>
+                        <name>Lyvispah</name>
+                        <formCode code="C42938" displayName="GRANULE" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                        <asEntityWithGeneric>
+                           <genericMedicine>
+                              <name>baclofen</name>
+                           </genericMedicine>
+                        </asEntityWithGeneric>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator unit="mg" value="5"/>
+                              <denominator unit="1" value="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="H789N3FKE8" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>BACLOFEN</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="H789N3FKE8" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>BACLOFEN</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <asContent>
+                           <quantity>
+                              <numerator unit="1" value="1"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code/>
+                              <formCode code="C43199" displayName="PACKET" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                              <asContent>
+                                 <quantity>
+                                    <numerator unit="1" value="90"/>
+                                    <denominator value="1"/>
+                                 </quantity>
+                                 <containerPackagedProduct>
+                                    <code code="70257-412-87" codeSystem="2.16.840.1.113883.6.69"/>
+                                    <formCode code="C43176" displayName="BOTTLE, UNIT-DOSE" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                                 </containerPackagedProduct>
+                                 <subjectOf>
+                                    <marketingAct>
+                                       <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                                       <statusCode code="active"/>
+                                       <effectiveTime>
+                                          <low value="20211122"/>
+                                       </effectiveTime>
+                                    </marketingAct>
+                                 </subjectOf>
+                              </asContent>
+                           </containerPackagedProduct>
+                           <subjectOf>
+                              <characteristic>
+                                 <code code="SPLCMBPRDTP" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                                 <value code="C112160" displayName="Type 0: Not a Combination Product" codeSystem="2.16.840.1.113883.3.26.1.1" xsi:type="CV"/>
+                              </characteristic>
+                           </subjectOf>
+                        </asContent>
+                     </manufacturedProduct>
+                     <subjectOf>
+                        <approval>
+                           <id extension="NDA215422" root="2.16.840.1.113883.3.150"/>
+                           <code code="C73594" displayName="NDA" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <author>
+                              <territorialAuthority>
+                                 <territory>
+                                    <code code="USA" codeSystem="2.16.840.1.113883.5.28"/>
+                                 </territory>
+                              </territorialAuthority>
+                           </author>
+                        </approval>
+                     </subjectOf>
+                     <subjectOf>
+                        <marketingAct>
+                           <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <statusCode code="active"/>
+                           <effectiveTime>
+                              <low value="20211122"/>
+                           </effectiveTime>
+                        </marketingAct>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLCOLOR" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value code="C48325" displayName="white" codeSystem="2.16.840.1.113883.3.26.1.1" xsi:type="CV">
+                              <originalText>off-white</originalText>
+                           </value>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLFLAVOR" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value code="C73417" displayName="STRAWBERRY" codeSystem="2.16.840.1.113883.3.26.1.1" xsi:type="CV">
+                              <originalText>STRAWBERRY</originalText>
+                           </value>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLSCORE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value value="1" xsi:type="INT"/>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLSHAPE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value code="C48340" displayName="FREEFORM" codeSystem="2.16.840.1.113883.3.26.1.1" xsi:type="CV">
+                              <originalText>FREEFORM</originalText>
+                           </value>
+                        </characteristic>
+                     </subjectOf>
+                     <consumedIn>
+                        <substanceAdministration>
+                           <routeCode code="C38288" displayName="ORAL" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                        </substanceAdministration>
+                     </consumedIn>
+                  </manufacturedProduct>
+               </subject>
+               <subject>
+                  <manufacturedProduct>
+                     <manufacturedProduct>
+                        <code code="70257-414" codeSystem="2.16.840.1.113883.6.69"/>
+                        <name>Lyvispah</name>
+                        <formCode code="C42938" displayName="GRANULE" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                        <asEntityWithGeneric>
+                           <genericMedicine>
+                              <name>baclofen</name>
+                           </genericMedicine>
+                        </asEntityWithGeneric>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator unit="mg" value="10"/>
+                              <denominator unit="1" value="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="H789N3FKE8" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>BACLOFEN</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="H789N3FKE8" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>BACLOFEN</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <asContent>
+                           <quantity>
+                              <numerator unit="1" value="1"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code/>
+                              <formCode code="C43199" displayName="PACKET" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                              <asContent>
+                                 <quantity>
+                                    <numerator unit="1" value="90"/>
+                                    <denominator value="1"/>
+                                 </quantity>
+                                 <containerPackagedProduct>
+                                    <code code="70257-414-87" codeSystem="2.16.840.1.113883.6.69"/>
+                                    <formCode code="C43176" displayName="BOTTLE, UNIT-DOSE" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                                 </containerPackagedProduct>
+                                 <subjectOf>
+                                    <marketingAct>
+                                       <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                                       <statusCode code="active"/>
+                                       <effectiveTime>
+                                          <low value="20211122"/>
+                                       </effectiveTime>
+                                    </marketingAct>
+                                 </subjectOf>
+                              </asContent>
+                           </containerPackagedProduct>
+                           <subjectOf>
+                              <characteristic>
+                                 <code code="SPLCMBPRDTP" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                                 <value code="C112160" displayName="Type 0: Not a Combination Product" codeSystem="2.16.840.1.113883.3.26.1.1" xsi:type="CV"/>
+                              </characteristic>
+                           </subjectOf>
+                        </asContent>
+                     </manufacturedProduct>
+                     <subjectOf>
+                        <approval>
+                           <id extension="NDA215422" root="2.16.840.1.113883.3.150"/>
+                           <code code="C73594" displayName="NDA" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <author>
+                              <territorialAuthority>
+                                 <territory>
+                                    <code code="USA" codeSystem="2.16.840.1.113883.5.28"/>
+                                 </territory>
+                              </territorialAuthority>
+                           </author>
+                        </approval>
+                     </subjectOf>
+                     <subjectOf>
+                        <marketingAct>
+                           <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <statusCode code="active"/>
+                           <effectiveTime>
+                              <low value="20211122"/>
+                           </effectiveTime>
+                        </marketingAct>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLCOLOR" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value code="C48325" displayName="white" codeSystem="2.16.840.1.113883.3.26.1.1" xsi:type="CV">
+                              <originalText>off-white</originalText>
+                           </value>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLFLAVOR" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value code="C73417" displayName="STRAWBERRY" codeSystem="2.16.840.1.113883.3.26.1.1" xsi:type="CV">
+                              <originalText>STRAWBERRY</originalText>
+                           </value>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLSCORE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value value="1" xsi:type="INT"/>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLSHAPE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value code="C48340" displayName="FREEFORM" codeSystem="2.16.840.1.113883.3.26.1.1" xsi:type="CV">
+                              <originalText>FREEFORM</originalText>
+                           </value>
+                        </characteristic>
+                     </subjectOf>
+                     <consumedIn>
+                        <substanceAdministration>
+                           <routeCode code="C38288" displayName="ORAL" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                        </substanceAdministration>
+                     </consumedIn>
+                  </manufacturedProduct>
+               </subject>
+               <subject>
+                  <manufacturedProduct>
+                     <manufacturedProduct>
+                        <code code="70257-416" codeSystem="2.16.840.1.113883.6.69"/>
+                        <name>Lyvispah</name>
+                        <formCode code="C42938" displayName="GRANULE" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                        <asEntityWithGeneric>
+                           <genericMedicine>
+                              <name>baclofen</name>
+                           </genericMedicine>
+                        </asEntityWithGeneric>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator unit="mg" value="20"/>
+                              <denominator unit="1" value="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="H789N3FKE8" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>BACLOFEN</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="H789N3FKE8" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>BACLOFEN</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <asContent>
+                           <quantity>
+                              <numerator unit="1" value="1"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code/>
+                              <formCode code="C43199" displayName="PACKET" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                              <asContent>
+                                 <quantity>
+                                    <numerator unit="1" value="90"/>
+                                    <denominator value="1"/>
+                                 </quantity>
+                                 <containerPackagedProduct>
+                                    <code code="70257-416-87" codeSystem="2.16.840.1.113883.6.69"/>
+                                    <formCode code="C43176" displayName="BOTTLE, UNIT-DOSE" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                                 </containerPackagedProduct>
+                                 <subjectOf>
+                                    <marketingAct>
+                                       <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                                       <statusCode code="active"/>
+                                       <effectiveTime>
+                                          <low value="20211122"/>
+                                       </effectiveTime>
+                                    </marketingAct>
+                                 </subjectOf>
+                              </asContent>
+                           </containerPackagedProduct>
+                           <subjectOf>
+                              <characteristic>
+                                 <code code="SPLCMBPRDTP" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                                 <value code="C112160" displayName="Type 0: Not a Combination Product" codeSystem="2.16.840.1.113883.3.26.1.1" xsi:type="CV"/>
+                              </characteristic>
+                           </subjectOf>
+                        </asContent>
+                     </manufacturedProduct>
+                     <subjectOf>
+                        <approval>
+                           <id extension="NDA215422" root="2.16.840.1.113883.3.150"/>
+                           <code code="C73594" displayName="NDA" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <author>
+                              <territorialAuthority>
+                                 <territory>
+                                    <code code="USA" codeSystem="2.16.840.1.113883.5.28"/>
+                                 </territory>
+                              </territorialAuthority>
+                           </author>
+                        </approval>
+                     </subjectOf>
+                     <subjectOf>
+                        <marketingAct>
+                           <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <statusCode code="active"/>
+                           <effectiveTime>
+                              <low value="20211122"/>
+                           </effectiveTime>
+                        </marketingAct>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLCOLOR" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value code="C48325" displayName="white" codeSystem="2.16.840.1.113883.3.26.1.1" xsi:type="CV">
+                              <originalText>off-white</originalText>
+                           </value>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLFLAVOR" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value code="C73417" displayName="STRAWBERRY" codeSystem="2.16.840.1.113883.3.26.1.1" xsi:type="CV">
+                              <originalText>STRAWBERRY</originalText>
+                           </value>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLSCORE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value value="1" xsi:type="INT"/>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLSHAPE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value code="C48340" displayName="FREEFORM" codeSystem="2.16.840.1.113883.3.26.1.1" xsi:type="CV">
+                              <originalText>FREEFORM</originalText>
+                           </value>
+                        </characteristic>
+                     </subjectOf>
+                     <consumedIn>
+                        <substanceAdministration>
+                           <routeCode code="C38288" displayName="ORAL" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                        </substanceAdministration>
+                     </consumedIn>
+                  </manufacturedProduct>
+               </subject>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_3b0bcefa-c631-49f1-9713-72b684a0a3e6">
+               <id root="3b0bcefa-c631-49f1-9713-72b684a0a3e6"/>
+               <code code="34067-9" codeSystem="2.16.840.1.113883.6.1" displayName="INDICATIONS &amp; USAGE SECTION"/>
+               <title>1 INDICATIONS AND USAGE</title>
+               <text>
+                  <paragraph>LYVISPAH is indicated for the treatment of spasticity resulting from multiple sclerosis, particularly for the relief of flexor spasms and concomitant pain, clonus, and muscular rigidity.</paragraph>
+                  <paragraph>LYVISPAH may also be of some value in patients with spinal cord injuries and other spinal cord diseases.</paragraph>
+                  <paragraph>
+                     <content styleCode="underline">Limitations of Use</content>
+                  </paragraph>
+                  <paragraph>LYVISPAH is not indicated in the treatment of skeletal muscle spasm resulting from rheumatic disorders.</paragraph>
+               </text>
+               <effectiveTime value="20211130"/>
+               <excerpt>
+                  <highlight>
+                     <text>
+                        <list listType="unordered" styleCode="Disk">
+                           <item>LYVISPAH is a gamma-aminobutyric acid (GABA-ergic) agonist indicated for the treatment of spasticity resulting from multiple sclerosis, particularly for the relief of flexor spasms and concomitant pain, clonus, and muscular rigidity. (<linkHtml href="#LINK_3b0bcefa-c631-49f1-9713-72b684a0a3e6">1</linkHtml>)</item>
+                           <item>LYVISPAH may also be of some value in patients with spinal cord injuries and other spinal cord diseases. (<linkHtml href="#LINK_3b0bcefa-c631-49f1-9713-72b684a0a3e6">1</linkHtml>)</item>
+                        </list>
+                        <paragraph>
+                           <content styleCode="underline">Limitations of Use</content>
+                           <br/>
+									LYVISPAH is not indicated in the treatment of skeletal muscle spasm resulting from rheumatic disorders. (<linkHtml href="#LINK_3b0bcefa-c631-49f1-9713-72b684a0a3e6">1</linkHtml>)</paragraph>
+                     </text>
+                  </highlight>
+               </excerpt>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_9b449172-40ae-4b4c-8357-a4bbbe6f1ecc">
+               <id root="9b449172-40ae-4b4c-8357-a4bbbe6f1ecc"/>
+               <code code="34068-7" codeSystem="2.16.840.1.113883.6.1" displayName="DOSAGE &amp; ADMINISTRATION SECTION"/>
+               <title>2 DOSAGE AND ADMINISTRATION</title>
+               <text/>
+               <effectiveTime value="20211130"/>
+               <excerpt>
+                  <highlight>
+                     <text>
+                        <list listType="unordered" styleCode="Disk">
+                           <item>Initiate LYVISPAH with a low dosage, preferably in divided doses, administered orally. Increase gradually based on clinical response and tolerability. (<linkHtml href="#LINK_392fae89-ad49-4aba-8806-99796ee6d9fc">2.1</linkHtml>))</item>
+                           <item>The maximum dosage is 80 mg daily (20 mg four times a day). (<linkHtml href="#LINK_392fae89-ad49-4aba-8806-99796ee6d9fc">2.1</linkHtml>)</item>
+                           <item>LYVISPAH can be taken with or without water. (<linkHtml href="#LINK_d2709c71-c89f-4c9b-a9a0-9185f33ffd15">2.2</linkHtml>)</item>
+                           <item>LYVISPAH oral granules can be mixed with soft food for administration within 2 hours. (<linkHtml href="#LINK_d2709c71-c89f-4c9b-a9a0-9185f33ffd15">2.2</linkHtml>)</item>
+                           <item>LYVISPAH oral granules can be administered via enteral feeding tubes. (<linkHtml href="#LINK_d2709c71-c89f-4c9b-a9a0-9185f33ffd15">2.2</linkHtml>)</item>
+                           <item>When discontinuing, reduce the dose slowly. (<linkHtml href="#LINK_d2709c71-c89f-4c9b-a9a0-9185f33ffd15">2.2</linkHtml>)</item>
+                        </list>
+                     </text>
+                  </highlight>
+               </excerpt>
+               <component>
+                  <section ID="LINK_392fae89-ad49-4aba-8806-99796ee6d9fc">
+                     <id root="392fae89-ad49-4aba-8806-99796ee6d9fc"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>2.1	Recommended Dosage</title>
+                     <text>
+                        <paragraph>Initiate LYVISPAH with a low dosage, preferably in divided doses, administered orally. The following gradually increasing dosage regimen is suggested, but should be adjusted based on clinical response and tolerability:</paragraph>
+                        <paragraph>5 mg three times a day for three days<br/> 10 mg three times a day for three days<br/> 15 mg three times a day for three days<br/> 20 mg three times a day for three days</paragraph>
+                        <paragraph>Additional increases may be necessary up to the maximum recommended dosage of 80 mg daily (20 mg four times a day). Multiple packets or multiple strengths can be used to achieve the prescribed dosage.</paragraph>
+                     </text>
+                     <effectiveTime value="20211130"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_d2709c71-c89f-4c9b-a9a0-9185f33ffd15">
+                     <id root="d2709c71-c89f-4c9b-a9a0-9185f33ffd15"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>2.2	Administration Instructions</title>
+                     <text>
+                        <paragraph>The entire contents of the packet should be emptied into the mouth. The granules will dissolve in the mouth or can be swallowed. LYVISPAH can be taken with liquids or soft foods if needed.</paragraph>
+                        <paragraph>
+                           <content styleCode="underline">Administration with Liquids or Soft Foods</content>
+                           <br/>
+									LYVISPAH can be administered orally as a mixture with liquids or soft foods, such as apple sauce, yogurt, or pudding. The contents of one packet can be emptied and mixed with up to 15 mL of liquid or soft food. The mixture should be administered no more than 2 hours after mixing. If multiple packets are to be administered, each packet must be mixed with a separate volume of liquid or soft food.
+								</paragraph>
+                        <paragraph>
+                           <content styleCode="underline">dministration via Feeding Tube</content>
+                           <br/>
+									LYVISPAH can also be administered via enteral feeding tubes such as nasogastric (NG) at sizes 8 FR or higher, gastrostomy (G) at sizes 12 FR or higher, percutaneous endoscopic gastrostomy (PEG) at sizes 14 FR or higher, and gastrojejunostomy (GJ) tubes at sizes 16 FR or higher.
+								</paragraph>
+                        <list listType="unordered" styleCode="Disk">
+                           <item>Flush the feeding tube with up to 15 mL of water using a catheter tip syringe.</item>
+                           <item>Open and empty the full contents of one packet of LYVISPAH in 15 mL of liquid, such as apple juice or milk, in a clean container. Mix the suspension to ensure all granules are wetted.</item>
+                           <item>Draw up the suspension of granules into a dosing syringe immediately after mixing and administer the dose via the feeding tube. Administration should be no longer than two hours after mixing. If the syringe is allowed to stand for 15 minutes before administration, invert the syringe three times.</item>
+                           <item>Refill the dosing syringe with 15 mL of water and flush the feeding tube.</item>
+                           <item>If multiple packets are to be administered, each packet must be mixed with a separate volume of liquid.</item>
+                        </list>
+                     </text>
+                     <effectiveTime value="20211130"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_e55da906-22c6-475c-b4be-b799ffda014c">
+                     <id root="e55da906-22c6-475c-b4be-b799ffda014c"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>2.3	Discontinuation of LYVISPAH</title>
+                     <text>
+                        <paragraph>When discontinuing LYVISPAH, reduce the dosage slowly and avoid abrupt withdrawal from the drug to help minimize the risk of adverse reactions <content styleCode="italics">[see Warnings and Precautions (<linkHtml href="#LINK_b30348d2-6a33-4121-bedb-b1cabddffb5f">5.1</linkHtml>)].</content>
+                        </paragraph>
+                     </text>
+                     <effectiveTime value="20211130"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_226e62bf-54ce-4e36-8191-985cec8df28b">
+               <id root="226e62bf-54ce-4e36-8191-985cec8df28b"/>
+               <code code="43678-2" codeSystem="2.16.840.1.113883.6.1" displayName="DOSAGE FORMS &amp; STRENGTHS SECTION"/>
+               <title>3 DOSAGE FORMS AND STRENGTHS</title>
+               <text>
+                  <paragraph>Oral Granules: 5 mg, 10 mg, or 20 mg baclofen as white to off-white, strawberry flavored granules in a single dose packet.</paragraph>
+               </text>
+               <effectiveTime value="20211130"/>
+               <excerpt>
+                  <highlight>
+                     <text>
+                        <paragraph>Oral granules: 5 mg, 10 mg, or 20 mg baclofen in a packet (<linkHtml href="#LINK_226e62bf-54ce-4e36-8191-985cec8df28b">3</linkHtml>)</paragraph>
+                     </text>
+                  </highlight>
+               </excerpt>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_063f7544-494a-4bcb-a5a7-1d1bdb937184">
+               <id root="063f7544-494a-4bcb-a5a7-1d1bdb937184"/>
+               <code code="34070-3" codeSystem="2.16.840.1.113883.6.1" displayName="CONTRAINDICATIONS SECTION"/>
+               <title>4 CONTRAINDICATIONS</title>
+               <text>
+                  <paragraph>LYVISPAH is contraindicated in patients with hypersensitivity to baclofen.</paragraph>
+               </text>
+               <effectiveTime value="20211130"/>
+               <excerpt>
+                  <highlight>
+                     <text>
+                        <list listType="unordered" styleCode="Disk">
+                           <item>Hypersensitivity to baclofen (<linkHtml href="#LINK_063f7544-494a-4bcb-a5a7-1d1bdb937184">4</linkHtml>)</item>
+                        </list>
+                     </text>
+                  </highlight>
+               </excerpt>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_bccbb0b3-5e87-447f-820c-47d0514d09e8">
+               <id root="bccbb0b3-5e87-447f-820c-47d0514d09e8"/>
+               <code code="43685-7" codeSystem="2.16.840.1.113883.6.1" displayName="WARNINGS AND PRECAUTIONS SECTION"/>
+               <title>5 WARNINGS AND PRECAUTIONS</title>
+               <text/>
+               <effectiveTime value="20211130"/>
+               <excerpt>
+                  <highlight>
+                     <text>
+                        <list listType="unordered" styleCode="Disk">
+                           <item>Abrupt discontinuation of baclofen has resulted in serious adverse reactions including death; therefore, reduce the dosage slowly when LYVISPAH is discontinued. (<linkHtml href="#LINK_b30348d2-6a33-4121-bedb-b1cabddffb5f">5.1</linkHtml>)</item>
+                           <item>Neonatal withdrawal symptoms can occur; gradually reduce the dosage and discontinue LYVISPAH before delivery. (<linkHtml href="#LINK_95ebd8e3-b92e-4833-b786-af6ee8eaa81e">5.2</linkHtml>)</item>
+                           <item>LYVISPAH can cause drowsiness and sedation. Patients should avoid the operation of automobiles or other dangerous machinery until they know how the drug affects them. Advise patients that the central nervous system effects of LYVISPAH may be additive to those of alcohol and other CNS depressants. (<linkHtml href="#LINK_d6d08a5d-4f8a-4c40-9d1d-44b8bbba47e2">5.3</linkHtml>)</item>
+                           <item>LYVISPAH can cause exacerbation of the following: psychotic disorders, schizophrenia, or confusional states; autonomic dysreflexia; epilepsy. Use with caution in patients with these conditions.  (<linkHtml href="#LINK_533570f5-482c-4988-b26b-72abc0884174">5.5</linkHtml>, <linkHtml href="#LINK_0c41c5ff-7c74-4273-8f09-da0b1394f893">5.6</linkHtml>, <linkHtml href="#LINK_cd83885f-1caf-40eb-b0c2-bb205ccf3898">5.7</linkHtml>)</item>
+                        </list>
+                     </text>
+                  </highlight>
+               </excerpt>
+               <component>
+                  <section ID="LINK_b30348d2-6a33-4121-bedb-b1cabddffb5f">
+                     <id root="b30348d2-6a33-4121-bedb-b1cabddffb5f"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>5.1	Adverse Reactions from Abrupt Withdrawal of LYVISPAH</title>
+                     <text>
+                        <paragraph>Abrupt discontinuation of baclofen, regardless of the cause, has resulted in adverse reactions that include hallucinations, seizures, high fever, altered mental status, exaggerated rebound spasticity, and muscle rigidity, that in rare cases has advanced to rhabdomyolysis, multiple organ-system failure, and death. Therefore, reduce the dosage slowly when LYVISPAH is discontinued, unless the clinical situation justifies a rapid withdrawal.</paragraph>
+                     </text>
+                     <effectiveTime value="20211130"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_95ebd8e3-b92e-4833-b786-af6ee8eaa81e">
+                     <id root="95ebd8e3-b92e-4833-b786-af6ee8eaa81e"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>5.2	Neonatal Withdrawal Symptoms</title>
+                     <text>
+                        <paragraph>Withdrawal symptoms in neonates whose mothers were treated with oral baclofen throughout pregnancy have been reported starting hours to days after delivery. The symptoms of withdrawal in these infants have included increased muscle tone, tremor, jitteriness, and seizure. If the potential benefit justifies the potential risk to the fetus and LYVISPAH is continued during pregnancy, gradually reduce the dosage, and discontinue LYVISPAH before delivery. If slow withdrawal is not feasible, advise the parents or caregivers of the exposed neonate of the potential for neonatal withdrawal.</paragraph>
+                     </text>
+                     <effectiveTime value="20211130"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_d6d08a5d-4f8a-4c40-9d1d-44b8bbba47e2">
+                     <id root="d6d08a5d-4f8a-4c40-9d1d-44b8bbba47e2"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>5.3	Drowsiness and Sedation</title>
+                     <text>
+                        <paragraph>Drowsiness and sedation have been reported in up to 63% of patients taking baclofen, the active ingredient in LYVISPAH <content styleCode="italics">[see Adverse Reactions (<linkHtml href="#LINK_48463d20-ebe8-4233-a28a-e14523bd6e50">6.1</linkHtml>)].</content> Patients should avoid operation of automobiles or other dangerous machinery and activities made hazardous by decreased alertness when starting LYVISPAH or increasing the dosage until they know how the drug affects them. Advise patients that the central nervous system depressant effects of LYVISPAH may be an additive to those of alcohol and other CNS depressants.</paragraph>
+                     </text>
+                     <effectiveTime value="20211130"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_010f8063-0bf8-43d1-a799-226bdbf552f8">
+                     <id root="010f8063-0bf8-43d1-a799-226bdbf552f8"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>5.4	Poor Tolerability in Stroke Patients</title>
+                     <text>
+                        <paragraph>LYVISPAH should be used with caution in patients who have had a stroke. Baclofen has not significantly benefited patients with stroke. These patients have also shown poor tolerability to the drug.</paragraph>
+                     </text>
+                     <effectiveTime value="20211130"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_533570f5-482c-4988-b26b-72abc0884174">
+                     <id root="533570f5-482c-4988-b26b-72abc0884174"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>5.5	Exacerbation of Psychotic Disorders, Schizophrenia, or Confusional States</title>
+                     <text>
+                        <paragraph>LYVISPAH should be used with caution in patients suffering from psychotic disorders, schizophrenia, or confusional states. If treated with LYVISPAH, these patients should be kept under careful surveillance because exacerbations of these conditions have been observed with oral baclofen administration.</paragraph>
+                     </text>
+                     <effectiveTime value="20211130"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_0c41c5ff-7c74-4273-8f09-da0b1394f893">
+                     <id root="0c41c5ff-7c74-4273-8f09-da0b1394f893"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>5.6	Exacerbation of Autonomic Dysreflexia</title>
+                     <text>
+                        <paragraph>LYVISPAH should be used with caution in patients with a history of autonomic dysreflexia. The presence of nociceptive stimuli or abrupt withdrawal of LYVISPAH may cause an autonomic dysreflexic episode.</paragraph>
+                     </text>
+                     <effectiveTime value="20211130"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_cd83885f-1caf-40eb-b0c2-bb205ccf3898">
+                     <id root="cd83885f-1caf-40eb-b0c2-bb205ccf3898"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>5.7	Exacerbation of Epilepsy</title>
+                     <text>
+                        <paragraph>LYVISPAH should be used with caution in patients with epilepsy. Deterioration in seizure control has been reported in patients taking baclofen.</paragraph>
+                     </text>
+                     <effectiveTime value="20211130"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_b0d4ae7a-e5ee-43df-bcdb-e5be4380be83">
+                     <id root="b0d4ae7a-e5ee-43df-bcdb-e5be4380be83"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>5.8	Posture and Balance Effects</title>
+                     <text>
+                        <paragraph>LYVISPAH should be used with caution in patients where spasticity is utilized to sustain upright posture and balance in locomotion or whenever spasticity is utilized to obtain increased function.</paragraph>
+                     </text>
+                     <effectiveTime value="20211130"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_a3e6c1e7-8671-4939-a5e8-96621da47c2e">
+                     <id root="a3e6c1e7-8671-4939-a5e8-96621da47c2e"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>5.9	Ovarian Cysts</title>
+                     <text>
+                        <paragraph>A dose-related increase in incidence of ovarian cysts was observed in female rats treated chronically with oral baclofen. Ovarian cysts have been found by palpation in about 4% of the multiple sclerosis patients who were treated with oral baclofen for up to one year. In most cases, these cysts disappeared spontaneously while patients continue to receive the drug. Ovarian cysts are estimated to occur spontaneously in approximately 1% to 5% of the normal female population.</paragraph>
+                     </text>
+                     <effectiveTime value="20211130"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_7527f669-b753-4a21-a6eb-b6c4a0df0683">
+               <id root="7527f669-b753-4a21-a6eb-b6c4a0df0683"/>
+               <code code="34084-4" codeSystem="2.16.840.1.113883.6.1" displayName="ADVERSE REACTIONS SECTION"/>
+               <title>6 ADVERSE REACTIONS</title>
+               <text>
+                  <paragraph>The following clinically significant adverse reactions are described elsewhere in the labeling:</paragraph>
+                  <list listType="unordered" styleCode="Disk">
+                     <item>Adverse Reactions from Abrupt Withdrawal of LYVISPAH<content styleCode="italics"> [see Warnings and Precautions<linkHtml href="#LINK_b30348d2-6a33-4121-bedb-b1cabddffb5f"> (5.1)</linkHtml>]</content>
+                     </item>
+                     <item>Neonatal Withdrawal Symptoms <content styleCode="italics">[see Warnings and Precautions<linkHtml href="#LINK_95ebd8e3-b92e-4833-b786-af6ee8eaa81e"> (5.2)</linkHtml>]</content>
+                     </item>
+                     <item>Drowsiness and Sedation <content styleCode="italics">[see Warnings and Precautions<linkHtml href="#LINK_d6d08a5d-4f8a-4c40-9d1d-44b8bbba47e2"> (5.3)</linkHtml>]</content>
+                     </item>
+                     <item>Poor Tolerability in Stroke Patients <content styleCode="italics">[see Warnings and Precautions<linkHtml href="#LINK_010f8063-0bf8-43d1-a799-226bdbf552f8"> (5.4)</linkHtml>]</content>
+                     </item>
+                     <item>Exacerbation of Psychotic Disorders, Schizophrenia, or Confusional States <content styleCode="italics">[see Warnings and Precautions<linkHtml href="#LINK_533570f5-482c-4988-b26b-72abc0884174"> (5.5)</linkHtml>]</content>
+                     </item>
+                     <item>Exacerbation of Autonomic Dysreflexia <content styleCode="italics">[see Warnings and Precautions<linkHtml href="#LINK_0c41c5ff-7c74-4273-8f09-da0b1394f893"> (5.6)</linkHtml>]</content>
+                     </item>
+                     <item>Exacerbation of Epilepsy <content styleCode="italics">[see Warnings and Precautions<linkHtml href="#LINK_cd83885f-1caf-40eb-b0c2-bb205ccf3898"> (5.7)</linkHtml>]</content>
+                     </item>
+                     <item>Posture and Balance Effects <content styleCode="italics">[see Warnings and Precautions<linkHtml href="#LINK_b0d4ae7a-e5ee-43df-bcdb-e5be4380be83"> (5.8)</linkHtml>]</content>
+                     </item>
+                     <item>Ovarian Cysts <content styleCode="italics">[see Warnings and Precautions<linkHtml href="#LINK_a3e6c1e7-8671-4939-a5e8-96621da47c2e"> (5.9)</linkHtml>]</content>
+                     </item>
+                  </list>
+               </text>
+               <effectiveTime value="20211130"/>
+               <excerpt>
+                  <highlight>
+                     <text>
+                        <paragraph>The most common adverse reactions (up to 15% or more) in patients were drowsiness, dizziness, and weakness. (6.1)</paragraph>
+                        <br/>
+                        <paragraph>
+                           <content styleCode="bold">To report SUSPECTED ADVERSE REACTIONS, contact Saol Therapeutics at toll-free phone 1-833 644-4216 or FDA at 1-800-FDA-1088 or <content styleCode="underline">www.fda.gov/medwatch</content>.</content>
+                        </paragraph>
+                        <br/>
+                     </text>
+                  </highlight>
+               </excerpt>
+               <component>
+                  <section ID="LINK_48463d20-ebe8-4233-a28a-e14523bd6e50">
+                     <id root="48463d20-ebe8-4233-a28a-e14523bd6e50"/>
+                     <code code="90374-0" codeSystem="2.16.840.1.113883.6.1" displayName="CLINICAL TRIALS EXPERIENCE SECTION"/>
+                     <title>6.1	Clinical Trials Experience</title>
+                     <text>
+                        <paragraph>Because clinical trials are conducted under widely varying conditions, adverse reaction rates observed in the clinical trials of a drug cannot be directly compared to rates in the clinical trials of another drug and may not reflect the rates observed in practice.</paragraph>
+                        <paragraph>The most common adverse reaction is transient drowsiness. In one controlled study of 175 patients, transient drowsiness was observed in 63% of those receiving baclofen compared to 36% of those in the placebo group. Other common adverse reactions (up to 15%) are dizziness and weakness. Adverse reactions with a frequency of ≥1% are listed in Table 1.</paragraph>
+                        <table ID="LINK_8e299d93-a791-4e94-bd2e-4a99f222a77c">
+                           <caption>Table 1. Common (≥1%) Adverse Reactions in Patients Treated with Baclofen for Spasticity</caption>
+                           <col width="50%"/>
+                           <col width="50%"/>
+                           <tbody>
+                              <tr>
+                                 <td align="center" valign="top" styleCode=" Toprule Lrule Rrule">
+                                    <content styleCode="bold">ADVERSE REACTION</content>
+                                 </td>
+                                 <td align="center" valign="top" styleCode=" Toprule Lrule Rrule">
+                                    <content styleCode="bold">PERCENT</content>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td align="center" valign="top" styleCode=" Toprule Lrule Rrule">Drowsiness</td>
+                                 <td align="center" valign="top" styleCode=" Toprule Lrule Rrule">10-63%</td>
+                              </tr>
+                              <tr>
+                                 <td align="center" valign="top" styleCode=" Toprule Lrule Rrule">Dizziness</td>
+                                 <td align="center" valign="top" styleCode=" Toprule Lrule Rrule">5-15%</td>
+                              </tr>
+                              <tr>
+                                 <td align="center" valign="top" styleCode=" Toprule Lrule Rrule">Weakness</td>
+                                 <td align="center" valign="top" styleCode=" Toprule Lrule Rrule">5-15%</td>
+                              </tr>
+                              <tr>
+                                 <td align="center" valign="top" styleCode=" Toprule Lrule Rrule">Nausea</td>
+                                 <td align="center" valign="top" styleCode=" Toprule Lrule Rrule">4-12%</td>
+                              </tr>
+                              <tr>
+                                 <td align="center" valign="top" styleCode=" Toprule Lrule Rrule">Confusion</td>
+                                 <td align="center" valign="top" styleCode=" Toprule Lrule Rrule">1-11%</td>
+                              </tr>
+                              <tr>
+                                 <td align="center" valign="top" styleCode=" Toprule Lrule Rrule">Hypotension</td>
+                                 <td align="center" valign="top" styleCode=" Toprule Lrule Rrule">0-9%</td>
+                              </tr>
+                              <tr>
+                                 <td align="center" valign="top" styleCode=" Toprule Lrule Rrule">Headache</td>
+                                 <td align="center" valign="top" styleCode=" Toprule Lrule Rrule">4-8%</td>
+                              </tr>
+                              <tr>
+                                 <td align="center" valign="top" styleCode=" Toprule Lrule Rrule">Insomnia</td>
+                                 <td align="center" valign="top" styleCode=" Toprule Lrule Rrule">2-7%</td>
+                              </tr>
+                              <tr>
+                                 <td align="center" valign="top" styleCode=" Toprule Lrule Rrule">Constipation</td>
+                                 <td align="center" valign="top" styleCode=" Toprule Lrule Rrule">2-6%</td>
+                              </tr>
+                              <tr>
+                                 <td align="center" valign="top" styleCode=" Toprule Lrule Rrule">Urinary Frequency</td>
+                                 <td align="center" valign="top" styleCode=" Toprule Lrule Rrule">2-6%</td>
+                              </tr>
+                              <tr>
+                                 <td align="center" valign="top" styleCode=" Botrule Toprule Lrule Rrule">Fatigue</td>
+                                 <td align="center" valign="top" styleCode=" Botrule Toprule Lrule Rrule">2-4%</td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <paragraph>The following adverse reactions not included in Table 1, classified by body system, were also reported:</paragraph>
+                        <paragraph>
+                           <content styleCode="bold">Neuropsychiatric:</content> euphoria, excitement, depression, hallucinations, paresthesia, muscle pain, tinnitus, slurred speech, coordination disorder, tremor, rigidity, dystonia, ataxia, blurred vision, nystagmus, strabismus, miosis, mydriasis, diplopia, dysarthria, epileptic seizure <br/>
+                           <content styleCode="bold">Cardiovascular: </content>dyspnea, palpitation, chest pain, syncope<br/>
+                           <content styleCode="bold">Gastrointestinal:</content> dry mouth, anorexia, taste disorder, abdominal pain, vomiting, diarrhea, and positive test for occult blood in stool<br/>
+                           <content styleCode="bold">Genitourinary: </content>enuresis, urinary retention, dysuria, impotence, inability to ejaculate, nocturia, hematuria<br/>
+                           <content styleCode="bold">Other: </content>rash, pruritus, ankle edema, excessive perspiration, weight gain, nasal congestion</paragraph>
+                        <paragraph>The following laboratory tests have been found to be abnormal in patients receiving baclofen: increased SGOT, elevated alkaline phosphatase, and elevation of blood sugar.</paragraph>
+                     </text>
+                     <effectiveTime value="20211130"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_48dd64f7-6b11-4e7a-ba21-635d5d16d1b4">
+               <id root="48dd64f7-6b11-4e7a-ba21-635d5d16d1b4"/>
+               <code code="34073-7" codeSystem="2.16.840.1.113883.6.1" displayName="DRUG INTERACTIONS SECTION"/>
+               <title>7 DRUG INTERACTIONS</title>
+               <text/>
+               <effectiveTime value="20211130"/>
+               <component>
+                  <section ID="LINK_28ed90e9-4a5d-4196-8864-ab4fd5ae60d3">
+                     <id root="28ed90e9-4a5d-4196-8864-ab4fd5ae60d3"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>7.1	CNS Depressants and Alcohol</title>
+                     <text>
+                        <paragraph>LYVISPAH can cause CNS depression, including drowsiness and sedation, which may be an additive when used concomitantly with other CNS depressants or alcohol <content styleCode="italics">[see Warnings and Precautions <linkHtml href="#LINK_d6d08a5d-4f8a-4c40-9d1d-44b8bbba47e2">(5.3)</linkHtml>]</content>.</paragraph>
+                     </text>
+                     <effectiveTime value="20211130"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_3b53328f-2acd-4286-b95c-4a5dcc71ce4d">
+               <id root="3b53328f-2acd-4286-b95c-4a5dcc71ce4d"/>
+               <code code="43684-0" codeSystem="2.16.840.1.113883.6.1" displayName="USE IN SPECIFIC POPULATIONS SECTION"/>
+               <title>8 USE IN SPECIFIC POPULATIONS</title>
+               <text/>
+               <effectiveTime value="20211130"/>
+               <excerpt>
+                  <highlight>
+                     <text>
+                        <list listType="unordered" styleCode="Disk">
+                           <item>Pregnancy: Based on animal data, may cause fetal harm (<linkHtml href="#LINK_37745219-dc80-4a0a-bfa7-9eca5408daa3">8.1</linkHtml>)</item>
+                           <item>Because baclofen is excreted unchanged through the kidneys it may be necessary to reduce the dosage in patients with impaired renal function. (<linkHtml href="#LINK_fa101278-656e-416c-8683-89f8a8ef9ee5">8.6</linkHtml>)</item>
+                        </list>
+                     </text>
+                  </highlight>
+               </excerpt>
+               <component>
+                  <section ID="LINK_37745219-dc80-4a0a-bfa7-9eca5408daa3">
+                     <id root="37745219-dc80-4a0a-bfa7-9eca5408daa3"/>
+                     <code code="42228-7" codeSystem="2.16.840.1.113883.6.1" displayName="PREGNANCY SECTION"/>
+                     <title>8.1 Pregnancy</title>
+                     <text>
+                        <paragraph>
+                           <content styleCode="underline">Risk Summary</content>
+                           <br/>There are no adequate data on the risk of major birth defects, miscarriages, or other maternal adverse outcomes associated with the use of LYVISPAH in pregnant women. There are adverse effects on fetal outcomes associated with withdrawal from baclofen after delivery <content styleCode="italics">(see Clinical Considerations)</content>. Oral administration of baclofen to pregnant rats resulted in an increased incidence of fetal structural abnormalities at a dose which was also associated with maternal toxicity. The background risk of major birth defects and miscarriage for the indicated population is unknown. In the U.S. general population, the estimated background risk of major birth defects and miscarriage in clinically recognized pregnancies is 2-4% and 15-20%, respectively.</paragraph>
+                        <paragraph>
+                           <content styleCode="underline">Clinical Considerations</content>
+                           <br/>
+                           <content styleCode="italics">Fetal/Neonatal Adverse Reactions</content>
+                           <br/>LYVISPAH may increase the risk of late-onset neonatal withdrawal symptoms <content styleCode="italics">[see Warnings and Precautions <linkHtml href="#LINK_95ebd8e3-b92e-4833-b786-af6ee8eaa81e">(5.2)</linkHtml>]</content>.</paragraph>
+                        <paragraph>
+                           <content styleCode="underline">Data</content>
+                           <br/>
+                           <content styleCode="italics">Animal Data</content>
+                           <br/>Baclofen given orally has been shown to increase the incidence of omphaloceles (ventral hernias) in fetuses of rats given approximately 13 times on a mg/kg basis, or 3 times on a mg/m<sup>2</sup> basis, the maximum oral dose recommended for human use; this dose also caused reductions in food intake and weight gain in the dams. This abnormality was not seen in mice or rabbits.</paragraph>
+                     </text>
+                     <effectiveTime value="20211130"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_a60e4017-3b0d-4179-8e1b-0a6dc0cc48d8">
+                     <id root="a60e4017-3b0d-4179-8e1b-0a6dc0cc48d8"/>
+                     <code code="77290-5" codeSystem="2.16.840.1.113883.6.1" displayName="LACTATION SECTION"/>
+                     <title>8.2 Lactation</title>
+                     <text>
+                        <paragraph>
+                           <content styleCode="underline">Risk Summary</content>
+                           <br/>At recommended oral doses, baclofen is present in human milk. There are no human data on effects of baclofen on milk production. Withdrawal symptoms can occur in breastfed infants when maternal administration of LYVISPAH is stopped, or when breastfeeding is stopped <content styleCode="italics">[see Warnings and Precautions <linkHtml href="#LINK_95ebd8e3-b92e-4833-b786-af6ee8eaa81e">(5.2)</linkHtml>]</content>. There are no adequate data on other effects of baclofen on the breastfed infant.</paragraph>
+                        <paragraph>The developmental and health benefits of breastfeeding should be considered along with the mother’s clinical need for LYVISPAH and any potential adverse effects on the breastfed infant from LYVISPAH or from the underlying maternal condition.</paragraph>
+                     </text>
+                     <effectiveTime value="20211130"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_0b2790b5-a98b-4361-a265-e2bcaae712b1">
+                     <id root="0b2790b5-a98b-4361-a265-e2bcaae712b1"/>
+                     <code code="34081-0" codeSystem="2.16.840.1.113883.6.1" displayName="PEDIATRIC USE SECTION"/>
+                     <title>8.4 Pediatric Use</title>
+                     <text>
+                        <paragraph>Safety and effectiveness in pediatric patients below the age of 12 have not been established.</paragraph>
+                     </text>
+                     <effectiveTime value="20211130"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_27d87b30-5e50-410a-aee9-8add8c68d6b4">
+                     <id root="27d87b30-5e50-410a-aee9-8add8c68d6b4"/>
+                     <code code="34082-8" codeSystem="2.16.840.1.113883.6.1" displayName="GERIATRIC USE SECTION"/>
+                     <title>8.5 Geriatric Use</title>
+                     <text>
+                        <paragraph>In general, dose selection for an elderly patient should be cautious, usually starting at the low end of the dosing range, reflecting the greater frequency of decreased hepatic, renal, or cardiac function, and of concomitant disease or other drug therapy. This drug is known to be substantially excreted by the kidney, and the risk of adverse reactions to this drug may be greater in patients with impaired renal function. Because elderly patients are more likely to have decreased renal function, care should be taken in dose selection, and it may be useful to monitor renal function <content styleCode="italics">[see Use in Specific Populations <linkHtml href="#LINK_fa101278-656e-416c-8683-89f8a8ef9ee5">(8.6)</linkHtml>]</content>.</paragraph>
+                     </text>
+                     <effectiveTime value="20211130"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_fa101278-656e-416c-8683-89f8a8ef9ee5">
+                     <id root="fa101278-656e-416c-8683-89f8a8ef9ee5"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>8.6	Renal Impairment</title>
+                     <text>
+                        <paragraph>Because baclofen is primarily excreted unchanged through the kidneys, LYVISPAH should be given with caution to patients with renal impairment, and it may be necessary to reduce the dosage.</paragraph>
+                     </text>
+                     <effectiveTime value="20211130"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_b3c7d407-fe89-4da8-80c7-bcddd77e4e2a">
+               <id root="b3c7d407-fe89-4da8-80c7-bcddd77e4e2a"/>
+               <code code="34088-5" codeSystem="2.16.840.1.113883.6.1" displayName="OVERDOSAGE SECTION"/>
+               <title>10 OVERDOSAGE</title>
+               <text/>
+               <effectiveTime value="20211130"/>
+               <component>
+                  <section ID="LINK_b44e474b-5b5d-4e38-a007-375592fb08bd">
+                     <id root="b44e474b-5b5d-4e38-a007-375592fb08bd"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>10.1 Symptoms of Baclofen Overdose</title>
+                     <text>
+                        <paragraph>With overdose of baclofen, patients may present in coma or with progressive drowsiness, lightheadedness, dizziness, somnolence, accommodation disorders, respiratory depression, seizures, or hypotonia progressing to loss of consciousness.</paragraph>
+                     </text>
+                     <effectiveTime value="20211130"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_e8d39aa1-c174-4b51-a255-562c7628e910">
+                     <id root="e8d39aa1-c174-4b51-a255-562c7628e910"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>10.2 Treatment for Overdose</title>
+                     <text>
+                        <paragraph>The treatment of baclofen overdose includes gastric decontamination, maintaining an adequate airway and respirations.</paragraph>
+                     </text>
+                     <effectiveTime value="20211130"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_41527a39-9779-4844-bc3d-12037bce577a">
+               <id root="41527a39-9779-4844-bc3d-12037bce577a"/>
+               <code code="34089-3" codeSystem="2.16.840.1.113883.6.1" displayName="DESCRIPTION SECTION"/>
+               <title>11 DESCRIPTION</title>
+               <text>
+                  <paragraph>LYVISPAH (baclofen) oral granules is a gamma-aminobutyric acid (GABA-ergic) agonist available as 5 mg, 10 mg, or 20 mg of baclofen oral granules in a packet. Its chemical name is 4-amino-3-(4- chlorophenyl)-butanoic acid and its structural formula is:</paragraph>
+                  <renderMultiMedia ID="LINK_0decc7d1-19d0-49f3-b4de-9c5237d360c3" referencedObject="MM1"/>
+                  <paragraph>Molecular formula is C<sub>10</sub>H<sub>12</sub>ClNO<sub>2</sub>
+                  </paragraph>
+                  <paragraph>Molecular Weight is 213.66.</paragraph>
+                  <paragraph>Baclofen USP is a white to off-white, odorless or practically odorless crystalline powder. It is slightly soluble in water, very slightly soluble in methanol, and insoluble in chloroform.</paragraph>
+                  <paragraph>LYVISPAH (baclofen) oral granules inactive ingredients include amino methacrylate copolymer, calcium stearate, colloidal silicon dioxide, crospovidone, hypromellose, mannitol, saccharin sodium, strawberry flavor, talc, and xylitol.</paragraph>
+               </text>
+               <effectiveTime value="20211130"/>
+               <component>
+                  <observationMedia ID="MM1">
+                     <text>chemical-structure</text>
+                     <value xsi:type="ED" mediaType="image/jpeg">
+                        <reference value="lyvispah-1.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_81bf5be6-dfd9-4ef9-a2e4-a5782e34b140">
+               <id root="81bf5be6-dfd9-4ef9-a2e4-a5782e34b140"/>
+               <code code="34090-1" codeSystem="2.16.840.1.113883.6.1" displayName="CLINICAL PHARMACOLOGY SECTION"/>
+               <title>12 CLINICAL PHARMACOLOGY</title>
+               <text/>
+               <effectiveTime value="20211130"/>
+               <component>
+                  <section ID="LINK_7c976ba4-c944-479d-86b3-24308e17a670">
+                     <id root="7c976ba4-c944-479d-86b3-24308e17a670"/>
+                     <code code="43679-0" codeSystem="2.16.840.1.113883.6.1" displayName="MECHANISM OF ACTION SECTION"/>
+                     <title>12.1 Mechanism of Action</title>
+                     <text>
+                        <paragraph>The precise mechanism of action of baclofen is not fully understood. Baclofen inhibits both monosynaptic and polysynaptic reflexes at the spinal level, possibly by decreasing excitatory neurotransmitter release from afferent terminals, although actions at supraspinal sites may also occur and contribute to its clinical effect. Baclofen is a structural analog of the inhibitory neurotransmitter gamma-aminobutyric acid (GABA), and may exert its effects by stimulation of the GABA-β receptor subtype.</paragraph>
+                     </text>
+                     <effectiveTime value="20211130"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_454979eb-d21c-4888-93af-9a81b95c6905">
+                     <id root="454979eb-d21c-4888-93af-9a81b95c6905"/>
+                     <code code="43681-6" codeSystem="2.16.840.1.113883.6.1" displayName="PHARMACODYNAMICS SECTION"/>
+                     <title>12.2 Pharmacodynamics</title>
+                     <text>
+                        <paragraph>Baclofen has been shown to have general CNS depressant properties, as indicated by the production of sedation with tolerance, somnolence, ataxia, and respiratory and cardiovascular depression <content styleCode="italics">[see Warnings and Precautions <linkHtml href="#LINK_d6d08a5d-4f8a-4c40-9d1d-44b8bbba47e2">(5.3)</linkHtml>, Adverse Reactions <linkHtml href="#LINK_48463d20-ebe8-4233-a28a-e14523bd6e50">(6.1)</linkHtml>, and Overdosage <linkHtml href="#LINK_b44e474b-5b5d-4e38-a007-375592fb08bd">(10.1)</linkHtml>]</content>.</paragraph>
+                     </text>
+                     <effectiveTime value="20211130"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_12398742-acd4-4f1d-9695-25ce2b958a7e">
+                     <id root="12398742-acd4-4f1d-9695-25ce2b958a7e"/>
+                     <code code="43682-4" codeSystem="2.16.840.1.113883.6.1" displayName="PHARMACOKINETICS SECTION"/>
+                     <title>12.3 Pharmacokinetics</title>
+                     <text>
+                        <paragraph>Pharmacokinetic studies in heathy adult subjects under fasting conditions at 20 mg dose level demonstrated similar bioavailability for baclofen oral granules and oral tablets.</paragraph>
+                        <paragraph>
+                           <content styleCode="underline">Absorption</content>
+                           <br/>The peak plasma concentrations of baclofen oral granule formulation were achieved in about one hour and the apparent elimination half-life is about 5.5 hours. The exposure of baclofen was dose proportional across the dose range of 5 mg, 10 mg, and 20 mg.</paragraph>
+                        <paragraph>
+                           <content styleCode="italics">Effect of Food</content>
+                           <br/>Administering LYVISPAH with or without water, or with applesauce did not affect the bioavailability of baclofen oral granules. Administration with a high fat meal resulted in 10% decrease in AUC and 29% decrease in C<sub>max</sub> compared to the fasted state.</paragraph>
+                        <paragraph>
+                           <content styleCode="underline">Elimination</content>
+                           <br/>Baclofen is excreted primarily by the kidney in unchanged form, and there is relatively large intersubject variation in absorption and/or elimination.</paragraph>
+                     </text>
+                     <effectiveTime value="20211130"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_acfdc3a0-fbe2-431f-bea7-12142dbd60f7">
+               <id root="acfdc3a0-fbe2-431f-bea7-12142dbd60f7"/>
+               <code code="43680-8" codeSystem="2.16.840.1.113883.6.1" displayName="NONCLINICAL TOXICOLOGY SECTION"/>
+               <title>13 NONCLINICAL TOXICOLOGY</title>
+               <text/>
+               <effectiveTime value="20211130"/>
+               <component>
+                  <section ID="LINK_3d087ba0-26d4-4666-bdab-70f5db11b5e3">
+                     <id root="3d087ba0-26d4-4666-bdab-70f5db11b5e3"/>
+                     <code code="34083-6" codeSystem="2.16.840.1.113883.6.1" displayName="CARCINOGENESIS &amp; MUTAGENESIS &amp; IMPAIRMENT OF FERTILITY SECTION"/>
+                     <title>13.1 Carcinogenesis, Mutagenesis, Impairment of Fertility</title>
+                     <text>
+                        <paragraph>
+                           <content styleCode="underline">Carcinogenesis</content>
+                           <br/>No increase in tumors was seen in rats receiving baclofen orally for two years at approximately 30 to 60 times on a mg/kg basis, or 10 to 20 times on a mg/m<sup>2</sup> basis, the maximum oral dose recommended for human use.</paragraph>
+                        <paragraph>
+                           <content styleCode="underline">Mutagenesis</content>
+                           <br/>Genetic toxicology assays have not been conducted for baclofen.</paragraph>
+                        <paragraph>
+                           <content styleCode="underline">Impairment of Fertility</content>
+                           <br/>Studies to evaluate the effects of baclofen on fertility have not been conducted.</paragraph>
+                     </text>
+                     <effectiveTime value="20211130"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_aa52dea7-9fe5-4d37-9f86-6d62157b0915">
+               <id root="aa52dea7-9fe5-4d37-9f86-6d62157b0915"/>
+               <code code="34092-7" codeSystem="2.16.840.1.113883.6.1" displayName="CLINICAL STUDIES SECTION"/>
+               <title>14 CLINICAL STUDIES</title>
+               <text>
+                  <paragraph>The efficacy of LYVISPAH is based upon a bioavailability study in healthy adults comparing baclofen oral tablets to LYVISPAH <content styleCode="italics">[see Clinical Pharmacology <linkHtml href="#LINK_12398742-acd4-4f1d-9695-25ce2b958a7e">(12.3)</linkHtml>]</content>.</paragraph>
+               </text>
+               <effectiveTime value="20211130"/>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_a180796f-7397-41b2-b4ee-62f34c9e07f4">
+               <id root="a180796f-7397-41b2-b4ee-62f34c9e07f4"/>
+               <code code="34069-5" codeSystem="2.16.840.1.113883.6.1" displayName="HOW SUPPLIED SECTION"/>
+               <title>16 HOW SUPPLIED/STORAGE AND HANDLING</title>
+               <text/>
+               <effectiveTime value="20211130"/>
+               <component>
+                  <section ID="LINK_20144464-79fb-4e31-8fc7-26ab407c6974">
+                     <id root="20144464-79fb-4e31-8fc7-26ab407c6974"/>
+                     <code code="34069-5" codeSystem="2.16.840.1.113883.6.1" displayName="HOW SUPPLIED SECTION"/>
+                     <title>16.1 How Supplied</title>
+                     <text>
+                        <paragraph>LYVISPAH (baclofen) oral granules is supplied as follows:</paragraph>
+                        <list listType="unordered" styleCode="Disk">
+                           <item>5 mg white to off-white, strawberry flavored oral granules in a child-resistant single dose packet
+											<list listType="unordered" styleCode="Circle">
+                                 <item>NDC 70257-412-87: carton of 90 containing packets</item>
+                              </list>
+                           </item>
+                        </list>
+                        <list listType="unordered" styleCode="Disk">
+                           <item>10 mg white to off-white, strawberry flavored oral granules in a child-resistant single dose packet
+										<list listType="unordered" styleCode="Circle">
+                                 <item>NDC 70257-414-87: carton of 90 containing packets</item>
+                              </list>
+                           </item>
+                        </list>
+                        <list listType="unordered" styleCode="Disk">
+                           <item>20 mg white to off-white, strawberry flavored oral granules in a child-resistant single dose packet
+										<list listType="unordered" styleCode="Circle">
+                                 <item>NDC 70257-416-87: carton of 90 containing packets</item>
+                              </list>
+                           </item>
+                        </list>
+                     </text>
+                     <effectiveTime value="20211130"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_ad28dce5-ad9d-49b1-bb14-40c02f89dd4e">
+                     <id root="ad28dce5-ad9d-49b1-bb14-40c02f89dd4e"/>
+                     <code code="44425-7" codeSystem="2.16.840.1.113883.6.1" displayName="STORAGE AND HANDLING SECTION"/>
+                     <title>16.2 Storage and Handling</title>
+                     <text>
+                        <paragraph>Store at room temperature, 20°C to 25°C (68°F to 77°F). Excursions permitted between 15°C to 30°C (59°F to 86°F) [see USP Controlled Room Temperature].</paragraph>
+                     </text>
+                     <effectiveTime value="20211130"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_671d0ff0-3bd9-4367-b5b6-613548d1489a">
+               <id root="671d0ff0-3bd9-4367-b5b6-613548d1489a"/>
+               <code code="34076-0" codeSystem="2.16.840.1.113883.6.1" displayName="INFORMATION FOR PATIENTS SECTION"/>
+               <title>17 PATIENT COUNSELING INFORMATION</title>
+               <text>
+                  <paragraph>Advise the patient or caregiver to read the FDA-approved patient labeling (Patient Information and Instructions for Use).</paragraph>
+                  <paragraph>
+                     <content styleCode="underline">General Administration Instructions</content>
+                     <br/>Instruct patient or caregiver to carefully open the LYVISPAH packet and empty the entire contents, to obtain the prescribed amount of medication. Packet contents can be administered directly into the mouth. The contents of the packet can be swallowed or will dissolve in the mouth. LYVISPAH may be taken with liquids or can also be administered in soft foods if needed <content styleCode="italics">[see Dosage and Administration <linkHtml href="#LINK_d2709c71-c89f-4c9b-a9a0-9185f33ffd15">(2.2)</linkHtml>]</content>.</paragraph>
+                  <paragraph>
+                     <content styleCode="underline">Administration Instructions with Soft Foods</content>
+                     <br/>LYVISPAH can also be administered by mouth as a mixture with liquids or soft foods, such as apple sauce, yogurt, or pudding. One packet can be mixed with up to 15 mL (one tablespoonful) of soft food. The mixture should be administered no more than 2 hours after mixing <content styleCode="italics">[see Dosage and Administration <linkHtml href="#LINK_d2709c71-c89f-4c9b-a9a0-9185f33ffd15">(2.2)</linkHtml>]</content>.</paragraph>
+                  <paragraph>
+                     <content styleCode="underline">Administration Instructions via Feeding Tubes</content>
+                     <br/>LYVISPAH can be administered via enteral feeding tubes, such a nasogastric (NG), gastrostomy (G), percutaneous endoscopic gastrostomy (PEG), and gastrojejunostomy (GJ) tubes.</paragraph>
+                  <list listType="unordered" styleCode="Disk">
+                     <item>Flush the feeding tube with up to 15 mL (one tablespoonful) of water.</item>
+                     <item>Open and empty the full contents of one packet of LYVISPAH in 15 mL (one tablespoonful) of the preferred liquid. Stir the suspension to ensure all granules are wetted.</item>
+                     <item>Draw up the suspension of granules into a dosing syringe immediately after stirring and administer the dose via the feeding tube. Administer no longer than two hours after mixing.</item>
+                     <item>Refill the dosing syringe with 15 mL (one tablespoonful) of water and flush the feeding tube with the remaining contents.</item>
+                     <item>Any unused suspensions should be discarded.</item>
+                  </list>
+                  <paragraph>
+                     <content styleCode="underline">Risks Related to Sudden Withdrawal of LYVISPAH</content>
+                     <br/>Advise patients and caregivers not to discontinue use of LYVISPAH without consulting with their healthcare provider because sudden withdrawal of LYVISPAH can result in serious complications that include hallucinations, seizures, high fever, confusion, muscle stiffness, multiple organ-system failure, and death <content styleCode="italics">[see Warnings and Precautions <linkHtml href="#LINK_b30348d2-6a33-4121-bedb-b1cabddffb5f">(5.1)</linkHtml>]</content>. Inform patients that early symptoms of LYVISPAH withdrawal may include increased spasticity, itching, and tingling of extremities.</paragraph>
+                  <paragraph>
+                     <content styleCode="underline">Neonatal Withdrawal Symptoms</content>
+                     <br/>Advise patients to notify their healthcare provider if they are pregnant, plan to become pregnant, or plan to breastfeed <content styleCode="italics">[see Warnings and Precautions <linkHtml href="#LINK_95ebd8e3-b92e-4833-b786-af6ee8eaa81e">(5.2)</linkHtml> and Use in Specific Populations <linkHtml href="#LINK_a60e4017-3b0d-4179-8e1b-0a6dc0cc48d8">(8.2)</linkHtml>]</content>.</paragraph>
+                  <paragraph>
+                     <content styleCode="underline">Increased Risk of Drowsiness with Alcohol and Other CNS Depressants</content>
+                     <br/>Advise patients that LYVISPAH may cause drowsiness, and that they should avoid the operation of automobiles or other dangerous machinery, or activities made hazardous by decreased alertness when starting LYVISPAH or increasing the dose of LYVISPAH until they know how the drug affects them <content styleCode="italics">[see Warnings and Precautions <linkHtml href="#LINK_d6d08a5d-4f8a-4c40-9d1d-44b8bbba47e2">(5.3)</linkHtml>]</content>. Inform patients and their caregivers that the drowsiness associated with LYVISPAH use can be worsened by alcohol and other CNS depressants. Advise patients to read all medicine labels carefully, and to tell their healthcare provider about all prescription and nonprescription drugs they may use.</paragraph>
+                  <br/>
+                  <paragraph>Distributed by:
+							<br/>Saol Therapeutics, Inc. 
+							<br/>Roswell, GA 30076</paragraph>
+                  <br/>
+               </text>
+               <effectiveTime value="20211130"/>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_c327b13b-2527-477c-bcd0-84bcec60c6b5">
+               <id root="c327b13b-2527-477c-bcd0-84bcec60c6b5"/>
+               <code code="42231-1" codeSystem="2.16.840.1.113883.6.1" displayName="SPL MEDGUIDE SECTION"/>
+               <title/>
+               <text>
+                  <table ID="LINK_f6e36d90-b9e9-4062-ad7e-587683430267">
+                     <col/>
+                     <col/>
+                     <tfoot>
+                        <tr>
+                           <td valign="top">This Patient Information has been approved by the U.S. Food and Drug Administration</td>
+                           <td align="right" valign="top">Issued: 11/2021</td>
+                        </tr>
+                     </tfoot>
+                     <tbody>
+                        <tr>
+                           <td align="center" colspan="2" styleCode=" Botrule Toprule Lrule Rrule">
+                              <paragraph>
+                                 <content styleCode="bold">PATIENT INFORMATION</content>
+                                 <br/>LYVISPAH (lye vis' pah)<br/>(baclofen)<br/>oral granules</paragraph>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td colspan="2" styleCode=" Botrule Toprule Lrule Rrule">
+                              <paragraph>
+                                 <content styleCode="bold">What is LYVISPAH?</content>
+                              </paragraph>
+                              <list listType="unordered" styleCode="Disk">
+                                 <item>LYVISPAH is a prescription medicine used to treat muscle stiffness, spasms, and pain from multiple sclerosis.</item>
+                                 <item>LYVISPAH may be used to treat people with spinal cord injuries and other spinal cord diseases.</item>
+                                 <item>LYVISPAH should not be used to treat muscle spasms from inflammatory (rheumatic) disorders.</item>
+                                 <item>It is not known if LYVISPAH is safe and effective in children under 12 years of age.</item>
+                              </list>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td colspan="2" styleCode=" Botrule Toprule Lrule Rrule">
+                              <paragraph>
+                                 <content styleCode="bold">Do not take LYVISPAH if you:</content>
+                              </paragraph>
+                              <list listType="unordered" styleCode="Disk">
+                                 <item>are allergic to baclofen. See the end of this Patient Information leaflet for a complete list of ingredients in LYVISPAH.</item>
+                              </list>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td colspan="2" styleCode=" Botrule Toprule Lrule Rrule">
+                              <paragraph>
+                                 <content styleCode="bold">Before taking LYVISPAH, tell your healthcare provider about all of your medical conditions, including if you:</content>
+                              </paragraph>
+                              <list listType="unordered" styleCode="Disk">
+                                 <item>take certain medicines that cause drowsiness.</item>
+                                 <item>have had a stroke.</item>
+                                 <item>are being treated for mental illness, especially a psychotic disorder, schizophrenia, or other illness that may cause you to become confused.</item>
+                                 <item>have or have had high blood pressure.</item>
+                                 <item>have or have had seizures.</item>
+                                 <item>have kidney problems.</item>
+                                 <item>have problems with posture and balance.</item>
+                                 <item>have a history of ovarian cysts</item>
+                                 <item>drink alcohol.</item>
+                                 <item>are pregnant or plan to become pregnant. It is not known if LYVISPAH will harm your unborn baby.</item>
+                                 <item>are breastfeeding or plan to breastfeed. LYVISPAH can pass into your breast milk and may harm your baby. Talk to your healthcare provider about the best way to feed your baby if you take LYVISPAH.</item>
+                              </list>
+                              <paragraph>
+                                 <content styleCode="bold">Tell your healthcare provider about all the medicines you take,</content> including prescription and over-the- counter medicines, vitamins, and herbal supplements.</paragraph>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td colspan="2" styleCode=" Botrule Toprule Lrule Rrule">
+                              <paragraph>
+                                 <content styleCode="bold">How should I take LYVISPAH?<br/>See the “<linkHtml href="#LINK_ffac18e1-5bad-45cf-a7a2-141cd9f00e6d">Instructions for Use</linkHtml>” at the end of this Patient Information leaflet for instructions on how to take or give LYVISPAH.</content>
+                              </paragraph>
+                              <list listType="unordered" styleCode="Disk">
+                                 <item>Take LYVISPAH exactly as your healthcare provider tells you to.</item>
+                                 <item>Your healthcare provider will start you on a low dose of LYVISPAH and slowly increase your dose as needed.</item>
+                                 <item>LYVISPAH can be taken the following different ways:
+												<list listType="unordered" styleCode="Circle">
+                                       <item>LYVISPAH granules can be emptied into the mouth. You can let the granules dissolve in your mouth or you can swallow them. LYVISPAH can be taken with or without liquids or with soft foods.</item>
+                                       <item>LYVISPAH granules from a packet can be mixed with a tablespoonful of liquid or soft foods like apple sauce, yogurt, or pudding. Take LYVISPAH within 2 hours of mixing.</item>
+                                       <item>LYVISPAH can be given through feeding tubes. </item>
+                                    </list>
+                                    <paragraph>See the Instructions for Use for more information.</paragraph>
+                                 </item>
+                                 <item>
+                                    <content styleCode="bold">Do not</content> stop taking LYVISPAH without talking to your healthcare provider first. Stopping LYVISPAH suddenly can cause serious problems such as severe muscle spasms, organ failure, and death. See <content styleCode="bold">“What are the possible side effects of LYVISPAH?”</content>.</item>
+                              </list>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td colspan="2" styleCode=" Botrule Toprule Lrule Rrule">
+                              <paragraph>
+                                 <content styleCode="bold">What should I avoid while taking LYVISPAH?</content>
+                              </paragraph>
+                              <list listType="unordered" styleCode="Disk">
+                                 <item>
+                                    <content styleCode="bold">Do not </content>drive, operate dangerous machinery, or do any other dangerous activities until you know how LYVISPAH affects you. LYVISPAH can make you drowsy and less alert when you first start taking LYVISPAH and when your LYVISPAH dose is increased.</item>
+                              </list>
+                              <paragraph>
+                                 <content styleCode="bold">What are the possible side effects of LYVISPAH?</content>
+                              </paragraph>
+                              <paragraph>
+                                 <content styleCode="bold">LYVISPAH can cause serious side effects, including:</content>
+                              </paragraph>
+                              <list listType="unordered" styleCode="Disk">
+                                 <item>
+                                    <content styleCode="bold">risk of symptoms from stopping LYVISPAH</content>. Stopping LYVISPAH suddenly can cause severe muscle problems, organ failure, and death. <content styleCode="bold">Early symptoms</content> include increased muscle stiffness, itching, and tingling in hands and feet. <content styleCode="bold">Other symptoms</content> include seeing or hearing things that are not there (hallucinations), seizures, high fever, and confusion (altered mental status). Your healthcare provider will slowly reduce your dose of LYVISPAH when stopping treatment.</item>
+                                 <item>
+                                    <content styleCode="bold">withdrawal symptoms in infants (Neonatal Withdrawal Symptoms).</content> LYVISPAH can cause withdrawal symptoms in infants after delivery. Symptoms of withdrawal of LYVISPAH in infants include stiffness in arms or legs, tremor, jitteriness, and seizure.</item>
+                                 <item>
+                                    <content styleCode="bold">drowsiness and sedation</content>. If you take certain medicines or drink alcohol while taking LYVISPAH, your drowsiness may get worse. See <content styleCode="bold">“What should I avoid while taking LYVISPAH?” and “Before taking LYVISPAH, tell your healthcare provider about all of your medical conditions, including if you:”</content>.</item>
+                                 <item>
+                                    <content styleCode="bold">decreased effectiveness. </content>People who have had a stroke may not respond to or tolerate baclofen, the active ingredient in LYVISPAH.</item>
+                                 <item>
+                                    <content styleCode="bold">increase in symptoms of mental illness especially in people with psychotic disorders, schizophrenia, or other illness that may cause you to become confused</content>.</item>
+                                 <item>
+                                    <content styleCode="bold">sudden increase in high blood pressure (autonomic dysreflexia)</content>.</item>
+                                 <item>
+                                    <content styleCode="bold">decrease in seizure control.</content> People who have seizures (epilepsy) may have seizures more often than normal.</item>
+                                 <item>
+                                    <content styleCode="bold">changes in posture and balance</content>. People who take LYVISPAH may have more problems standing or sitting up straight (posture) and keeping their balance.</item>
+                                 <item>
+                                    <content styleCode="bold">fluid filled sac on ovary (ovarian cysts).</content> People may be at increased risk of developing ovarian cysts while taking LYVISPAH.</item>
+                              </list>
+                              <paragraph>The most common side effects of LYVISPAH include drowsiness, dizziness, and weakness.</paragraph>
+                              <paragraph>These are not all the side effects of LYVISPAH. Call your doctor for medical advice about side effects. You may report side effects to the FDA at 1-800-FDA-1088 or Saol Therapeutics at 1-833-644-4216.</paragraph>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td colspan="2" styleCode=" Botrule Toprule Lrule Rrule">
+                              <paragraph>
+                                 <content styleCode="bold">How should I store LYVISPAH?</content>
+                                 <br/>Store LYVISPAH at room temperature between 68°F to 77°F (20°C to 25°C).</paragraph>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td colspan="2" styleCode=" Botrule Toprule Lrule Rrule">
+                              <paragraph>
+                                 <content styleCode="bold">General information about the safe and effective use of LYVISPAH.</content>
+                              </paragraph>
+                              <paragraph>Medicines are sometimes prescribed for purposes other than those listed in a Patient Information leaflet. Do not use LYVISPAH for a condition for which it was not prescribed. Do not give LYVISPAH to other people, even if they have the same symptoms that you have. It may harm them. You can ask your pharmacist or healthcare provider for information about LYVISPAH that is written for health professionals.</paragraph>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td colspan="2" styleCode=" Botrule Toprule Lrule Rrule">
+                              <paragraph>
+                                 <content styleCode="bold">What are the ingredients in LYVISPAH?</content>
+                              </paragraph>
+                              <paragraph>
+                                 <content styleCode="bold">Active ingredient: </content>baclofen</paragraph>
+                              <paragraph>
+                                 <content styleCode="bold">Inactive ingredients: </content>amino methacrylate copolymer, calcium stearate, colloidal silicon dioxide, crospovidone, hypromellose, mannitol, saccharin sodium, strawberry flavor, talc, and xylitol.</paragraph>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td colspan="2" styleCode=" Botrule Toprule Lrule Rrule">
+                              <paragraph>
+                                 <content styleCode="bold">For more information visit <content styleCode="underline">www.lyvispah.com</content> or contact Saol Therapeutics at 1-833-644-4216</content>
+                              </paragraph>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <br/>
+               </text>
+               <effectiveTime value="20211202"/>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_ffac18e1-5bad-45cf-a7a2-141cd9f00e6d">
+               <id root="ffac18e1-5bad-45cf-a7a2-141cd9f00e6d"/>
+               <code code="59845-8" codeSystem="2.16.840.1.113883.6.1" displayName="INSTRUCTIONS FOR USE SECTION"/>
+               <title/>
+               <text>
+                  <table ID="LINK_6b0f78b6-58a9-49d7-9aa1-d282ce8f01be">
+                     <col/>
+                     <col/>
+                     <tbody>
+                        <tr>
+                           <td align="center" colspan="2">
+                              <paragraph>
+                                 <content styleCode="bold">INSTRUCTIONS FOR USE</content>
+                              </paragraph>
+                              <paragraph>
+                                 <content styleCode="bold">LYVISPAH </content>(lye vis' pah) 
+											<br/>
+                                 <content styleCode="bold">(baclofen)</content>
+                                 <br/>
+                                 <content styleCode="bold">oral granules</content>
+                              </paragraph>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <paragraph>
+                     <content styleCode="bold">Important information to know before taking LYVISPAH</content>
+                  </paragraph>
+                  <paragraph>LYVISPAH can be taken without liquids.</paragraph>
+                  <paragraph>If needed, LYVISPAH can be mixed with liquids or soft foods. LYVISPAH should be taken within 2 hours of mixing into liquids or soft foods.</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">How to take LYVISPAH? </content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Opening LYVISPAH</content>
+                  </paragraph>
+                  <paragraph>Shake the packet to distribute settled granules to the bottom of the packet. Carefully open the LYVISPAH packet by cutting the dotted lines across the top of the packet (see the Figure).</paragraph>
+                  <renderMultiMedia ID="LINK_1c54a78d-8563-425e-aa91-c100b62e3da8" referencedObject="MM2"/>
+                  <paragraph>
+                     <content styleCode="bold">Taking LYVISPAH by emptying the granules into the mouth</content>
+                     <br/>Empty all the granules in the LYVISPAH packet directly into your mouth. The granules will dissolve in your mouth or can be swallowed. After taking LYVISPAH, you can drink water if needed to swallow any granules left in your mouth.</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Taking LYVISPAH with liquids or soft foods</content>
+                  </paragraph>
+                  <paragraph>LYVISPAH can be taken or given by mouth as a mixture with liquids such as milk or apple juice. LYVISPAH can also be taken or given by mouth as a mixture with soft foods such as apple sauce, yogurt, or pudding.</paragraph>
+                  <list listType="unordered" styleCode="Disk">
+                     <item>Open 1 packet of LYVISPAH (see the figure above).</item>
+                     <item>Empty the full contents of the LYVISPAH packet into 1 tablespoon (15 mL) liquid or soft food and mix it.</item>
+                     <item>Take LYVISPAH within 2 hours of mixing into liquids or soft foods</item>
+                     <item>If more than 1 packet of LYVISPAH is needed for your prescribed dose, mix each packet with a separate amount of liquid or soft food.</item>
+                  </list>
+                  <paragraph>
+                     <content styleCode="bold">Giving LYVISPAH through a feeding tube</content>
+                  </paragraph>
+                  <paragraph>LYVISPAH can be given through enteral feeding tubes such as nasogastric (NG), gastrostomy (G), percutaneous endoscopic gastrostomy (PEG), and gastrojejunostomy (GJ) tubes.</paragraph>
+                  <list listType="unordered" styleCode="Disk">
+                     <item>Flush the feeding tube with up to 1 tablespoon (15 mL) of water using a catheter tip syringe.</item>
+                     <item>Open and empty the full contents of 1 packet of LYVISPAH into a clean container and mix with 1 tablespoon (15 mL) of liquid (apple juice or milk).</item>
+                     <item>Stir the mixture to make sure all the granules are wet.</item>
+                     <item>Draw up the mixture of granules into a dosing syringe right away after stirring.</item>
+                     <item>Give the dose of LYVISPAH through the feeding tube within 2 hours after mixing. If the mixture is in the dosing syringe for 15 minutes and not given, turn the dosing syringe upside down 3 times before you give the dose.</item>
+                     <item>Fill the dosing syringe with 1 tablespoon (15 mL) of water and flush the feeding tube.</item>
+                     <item>If more than 1 packet of LYVISPAH is needed for the prescribed dose, mix each packet with a separate amount of liquid.</item>
+                     <item>Throw away (dispose of) any unused mixture.</item>
+                  </list>
+                  <paragraph>
+                     <content styleCode="bold">Important Information</content>
+                  </paragraph>
+                  <paragraph>Take the entire packet of LYVISPAH to get the prescribed dose. <content styleCode="bold">Do not</content> take only part of the medicine. Do not save a portion for later.</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Keep LYVISPAH and all medicines out of the reach of children.</content>
+                  </paragraph>
+                  <br/>
+                  <br/>
+                  <paragraph>Distributed by: Saol Therapeutics, Inc. Roswell, GA <br/>Part Code DI41601</paragraph>
+                  <paragraph>This Patient Information and Instructions for Use have been approved by the US Food and Drug Administration.          Approved 11/2021</paragraph>
+               </text>
+               <effectiveTime value="20211202"/>
+               <component>
+                  <observationMedia ID="MM2">
+                     <text>packet-image</text>
+                     <value xsi:type="ED" mediaType="image/jpeg">
+                        <reference value="lyvispah-2.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_cd029020-5e00-42f0-ab9b-8bc4f7d233cc">
+               <id root="cd029020-5e00-42f0-ab9b-8bc4f7d233cc"/>
+               <code code="51945-4" codeSystem="2.16.840.1.113883.6.1" displayName="PACKAGE LABEL.PRINCIPAL DISPLAY PANEL"/>
+               <title>PRINCIPAL DISPLAY PANEL - NDC: 70257-412-87 - 5mg Carton</title>
+               <text>
+                  <renderMultiMedia ID="LINK_1d8fd3d0-6da1-4486-938f-b9120a7281b8" referencedObject="MM3"/>
+                  <br/>
+                  <br/>
+               </text>
+               <effectiveTime value="20211207"/>
+               <component>
+                  <observationMedia ID="MM3">
+                     <text>5mg Carton</text>
+                     <value xsi:type="ED" mediaType="image/jpeg">
+                        <reference value="lyvispah-3.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_a7b7f02c-a123-4cdd-977c-8ea4dedb1d85">
+               <id root="a7b7f02c-a123-4cdd-977c-8ea4dedb1d85"/>
+               <code code="51945-4" codeSystem="2.16.840.1.113883.6.1" displayName="PACKAGE LABEL.PRINCIPAL DISPLAY PANEL"/>
+               <title>PRINCIPAL DISPLAY PANEL - NDC: 70257-412-87 - 5mg Container</title>
+               <text>
+                  <renderMultiMedia ID="LINK_ec711f9b-fd21-4aee-b01b-0d15b65ea73b" referencedObject="MM4"/>
+                  <br/>
+                  <br/>
+               </text>
+               <effectiveTime value="20211207"/>
+               <component>
+                  <observationMedia ID="MM4">
+                     <text>5mg Container</text>
+                     <value xsi:type="ED" mediaType="image/jpeg">
+                        <reference value="lyvispah-4.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_0d23a32b-2e63-4583-90b7-dc1b82b23912">
+               <id root="0d23a32b-2e63-4583-90b7-dc1b82b23912"/>
+               <code code="51945-4" codeSystem="2.16.840.1.113883.6.1" displayName="PACKAGE LABEL.PRINCIPAL DISPLAY PANEL"/>
+               <title>PRINCIPAL DISPLAY PANEL - NDC: 70257-414-87 - 10mg Container</title>
+               <text>
+                  <renderMultiMedia ID="LINK_7957ca4f-ea09-4900-af25-43751a5bc98c" referencedObject="MM5"/>
+                  <br/>
+                  <br/>
+               </text>
+               <effectiveTime value="20211207"/>
+               <component>
+                  <observationMedia ID="MM5">
+                     <text>10mg Carton</text>
+                     <value xsi:type="ED" mediaType="image/jpeg">
+                        <reference value="lyvispah-5.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_b97ffeb7-16a8-4f27-858b-fd0a32d3caee">
+               <id root="b97ffeb7-16a8-4f27-858b-fd0a32d3caee"/>
+               <code code="51945-4" codeSystem="2.16.840.1.113883.6.1" displayName="PACKAGE LABEL.PRINCIPAL DISPLAY PANEL"/>
+               <title>PRINCIPAL DISPLAY PANEL - NDC: 70257-414-87 - 10mg Container</title>
+               <text>
+                  <renderMultiMedia ID="LINK_55ab0189-faba-4eef-883c-c0c24040e880" referencedObject="MM6"/>
+                  <br/>
+                  <br/>
+               </text>
+               <effectiveTime value="20211207"/>
+               <component>
+                  <observationMedia ID="MM6">
+                     <text>10mg Container</text>
+                     <value xsi:type="ED" mediaType="image/jpeg">
+                        <reference value="lyvispah-6.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_3c057a04-388e-483b-aba9-858a2913e270">
+               <id root="3c057a04-388e-483b-aba9-858a2913e270"/>
+               <code code="51945-4" codeSystem="2.16.840.1.113883.6.1" displayName="PACKAGE LABEL.PRINCIPAL DISPLAY PANEL"/>
+               <title>PRINCIPAL DISPLAY PANEL - NDC: 70257-416-87 - 20mg Container</title>
+               <text>
+                  <renderMultiMedia ID="LINK_329e7d04-40b3-49b9-ae3d-89a77c36fab8" referencedObject="MM7"/>
+                  <br/>
+                  <br/>
+               </text>
+               <effectiveTime value="20211207"/>
+               <component>
+                  <observationMedia ID="MM7">
+                     <text>20mg Carton</text>
+                     <value xsi:type="ED" mediaType="image/jpeg">
+                        <reference value="lyvispah-7.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_9a8b7a3f-5326-4995-93ff-770207cc1a5b">
+               <id root="9a8b7a3f-5326-4995-93ff-770207cc1a5b"/>
+               <code code="51945-4" codeSystem="2.16.840.1.113883.6.1" displayName="PACKAGE LABEL.PRINCIPAL DISPLAY PANEL"/>
+               <title>PRINCIPAL DISPLAY PANEL - NDC: 70257-416-87 - 20mg Container</title>
+               <text>
+                  <renderMultiMedia ID="LINK_66c0ac3f-fffb-4917-9368-31c02dcc1b77" referencedObject="MM8"/>
+                  <br/>
+                  <br/>
+               </text>
+               <effectiveTime value="20211207"/>
+               <component>
+                  <observationMedia ID="MM8">
+                     <text>20mg Container</text>
+                     <value xsi:type="ED" mediaType="image/jpeg">
+                        <reference value="lyvispah-8.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+      </structuredBody>
+   </component>
+</document>

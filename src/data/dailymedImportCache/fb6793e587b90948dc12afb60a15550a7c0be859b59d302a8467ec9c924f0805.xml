@@ -1,0 +1,899 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="https://www.accessdata.fda.gov/spl/stylesheet/spl.xsl" type="text/xsl"?>
+<document xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 https://www.accessdata.fda.gov/spl/schema/spl.xsd">
+   <id root="78e0ae1e-9c06-4831-b962-e1aa65546110"/>
+   <code code="34391-3" codeSystem="2.16.840.1.113883.6.1" displayName="Human Prescription Drug Label"/>
+   <title>Clindamycin Palmitate Hydrochloride for Oral Solution, USP (Pediatric) <br/> Rx only</title>
+   <effectiveTime value="20240109"/>
+   <setId root="0bfe1e25-f0a1-4e11-9827-82912557c46b"/>
+   <versionNumber value="13"/>
+   <author>
+      <time/>
+      <assignedEntity>
+         <representedOrganization>
+            <id extension="650082092" root="1.3.6.1.4.1.519.1"/>
+            <name>Aurobindo Pharma Limited</name>
+            <assignedEntity>
+               <assignedOrganization>
+                  <assignedEntity>
+                     <assignedOrganization>
+                        <id extension="918917642" root="1.3.6.1.4.1.519.1"/>
+                        <name>Aurobindo Pharma Limited</name>
+                     </assignedOrganization>
+                     <performance>
+                        <actDefinition>
+                           <code code="C25391" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ANALYSIS"/>
+                           <product>
+                              <manufacturedProduct classCode="MANU">
+                                 <manufacturedMaterialKind>
+                                    <code code="65862-596" codeSystem="2.16.840.1.113883.6.69"/>
+                                 </manufacturedMaterialKind>
+                              </manufacturedProduct>
+                           </product>
+                        </actDefinition>
+                     </performance>
+                     <performance>
+                        <actDefinition>
+                           <code code="C43360" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MANUFACTURE"/>
+                           <product>
+                              <manufacturedProduct classCode="MANU">
+                                 <manufacturedMaterialKind>
+                                    <code code="65862-596" codeSystem="2.16.840.1.113883.6.69"/>
+                                 </manufacturedMaterialKind>
+                              </manufacturedProduct>
+                           </product>
+                        </actDefinition>
+                     </performance>
+                  </assignedEntity>
+               </assignedOrganization>
+            </assignedEntity>
+         </representedOrganization>
+      </assignedEntity>
+   </author>
+   <component>
+      <structuredBody>
+         <component>
+            <section>
+               <id root="97da7ade-35b1-4c39-8107-c5dab3e18d32"/>
+               <code code="48780-1" codeSystem="2.16.840.1.113883.6.1" displayName="SPL PRODUCT DATA ELEMENTS SECTION"/>
+               <effectiveTime value="20240109"/>
+               <subject>
+                  <manufacturedProduct>
+                     <manufacturedProduct>
+                        <code code="65862-596" codeSystem="2.16.840.1.113883.6.69"/>
+                        <name>Clindamycin Palmitate Hydrochloride (Pediatric)<suffix/>
+                        </name>
+                        <formCode code="C42986" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="SOLUTION"/>
+                        <asEntityWithGeneric>
+                           <genericMedicine>
+                              <name>Clindamycin Palmitate Hydrochloride (Pediatric)</name>
+                           </genericMedicine>
+                        </asEntityWithGeneric>
+                        <ingredient classCode="ACTIM">
+                           <quantity>
+                              <numerator value="75" unit="mg"/>
+                              <denominator value="5" unit="mL"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="VN9A8JM7M7" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>CLINDAMYCIN PALMITATE HYDROCHLORIDE</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="3U02EL437C" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>CLINDAMYCIN</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="2NX48Z0A9G" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>ICODEXTRIN</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="14255EXE39" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>ETHYLPARABEN</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="ND2M416302" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>ISOPROPYL ALCOHOL</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="LQA7B6G8JG" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>POLOXAMER 188</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="92RU3N3Y1O" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>DIMETHICONE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="ETJ7Z6XBU4" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>SILICON DIOXIDE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="C151H8M554" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>SUCROSE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="BUC5I9595W" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>CHERRY</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <asContent>
+                           <quantity>
+                              <numerator value="100" unit="mL"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code/>
+                              <formCode code="C43169" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOTTLE"/>
+                              <asContent>
+                                 <quantity>
+                                    <numerator value="1" unit="1"/>
+                                    <denominator value="1"/>
+                                 </quantity>
+                                 <containerPackagedProduct>
+                                    <code code="65862-596-01" codeSystem="2.16.840.1.113883.6.69"/>
+                                    <formCode code="C43182" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="CARTON"/>
+                                 </containerPackagedProduct>
+                                 <subjectOf>
+                                    <marketingAct>
+                                       <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                                       <statusCode code="active"/>
+                                       <effectiveTime>
+                                          <low value="20130430"/>
+                                       </effectiveTime>
+                                    </marketingAct>
+                                 </subjectOf>
+                              </asContent>
+                           </containerPackagedProduct>
+                           <subjectOf>
+                              <characteristic>
+                                 <code code="SPLCMBPRDTP" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                                 <value code="C112160" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="Type 0: Not a Combination Product" xsi:type="CV"/>
+                              </characteristic>
+                           </subjectOf>
+                        </asContent>
+                        <asContent>
+                           <quantity>
+                              <numerator value="100" unit="mL"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code/>
+                              <formCode code="C43173" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOTTLE, PLASTIC"/>
+                              <asContent>
+                                 <quantity>
+                                    <numerator value="1" unit="1"/>
+                                    <denominator value="1"/>
+                                 </quantity>
+                                 <containerPackagedProduct>
+                                    <code code="65862-596-02" codeSystem="2.16.840.1.113883.6.69"/>
+                                    <formCode code="C43182" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="CARTON"/>
+                                 </containerPackagedProduct>
+                                 <subjectOf>
+                                    <marketingAct>
+                                       <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                                       <statusCode code="active"/>
+                                       <effectiveTime>
+                                          <low value="20221114"/>
+                                       </effectiveTime>
+                                    </marketingAct>
+                                 </subjectOf>
+                              </asContent>
+                           </containerPackagedProduct>
+                           <subjectOf>
+                              <characteristic>
+                                 <code code="SPLCMBPRDTP" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                                 <value code="C112160" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="Type 0: Not a Combination Product" xsi:type="CV"/>
+                              </characteristic>
+                           </subjectOf>
+                        </asContent>
+                     </manufacturedProduct>
+                     <subjectOf>
+                        <approval>
+                           <id extension="ANDA202409" root="2.16.840.1.113883.3.150"/>
+                           <code code="C73584" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ANDA"/>
+                           <author>
+                              <territorialAuthority>
+                                 <territory>
+                                    <code code="USA" codeSystem="2.16.840.1.113883.5.28"/>
+                                 </territory>
+                              </territorialAuthority>
+                           </author>
+                        </approval>
+                     </subjectOf>
+                     <subjectOf>
+                        <marketingAct>
+                           <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <statusCode code="active"/>
+                           <effectiveTime>
+                              <low value="20130430"/>
+                           </effectiveTime>
+                        </marketingAct>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLCOLOR" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value xsi:type="CV" code="C48325" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="WHITE"/>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLFLAVOR" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value code="C73375" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="CHERRY" xsi:type="CV">
+                              <originalText>Art. Cherry Flavor</originalText>
+                           </value>
+                        </characteristic>
+                     </subjectOf>
+                     <consumedIn>
+                        <substanceAdministration>
+                           <routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ORAL"/>
+                        </substanceAdministration>
+                     </consumedIn>
+                  </manufacturedProduct>
+               </subject>
+            </section>
+         </component>
+         <component>
+            <section ID="Section_20">
+               <id root="0245d838-d409-4dec-ab27-a2812d984958"/>
+               <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+               <text>
+                  <paragraph>To reduce the development of drug-resistant bacteria and maintain the effectiveness of clindamycin palmitate hydrochloride for oral solution (Pediatric) and other antibacterial drugs, clindamycin palmitate hydrochloride for oral solution (Pediatric) should be used only to treat or prevent infections that are proven or strongly suspected to be caused by bacteria.</paragraph>
+                  <br/>
+                  <br/>
+                  <paragraph>
+                     <content styleCode="italics">Not for Injection</content>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20240109"/>
+            </section>
+         </component>
+         <component>
+            <section ID="Section_0">
+               <id root="6e494f59-a482-4a8f-b87b-6abb2b8f98aa"/>
+               <code code="34066-1" codeSystem="2.16.840.1.113883.6.1" displayName="Boxed Warning Section"/>
+               <title>WARNING</title>
+               <text>
+                  <br/>
+                  <paragraph>
+                     <content styleCode="bold">
+                        <content styleCode="italics">Clostridium difficile </content>associated diarrhea (CDAD) has been reported with use of nearly all antibacterial agents, including clindamycin and may range in severity from mild diarrhea to fatal colitis. Treatment with antibacterial agents alters the normal flora of the colon leading to overgrowth of <content styleCode="italics">C.difficile</content>.</content>
+                     <br/>
+                     <br/>
+                     <content styleCode="bold">Because clindamycin therapy has been associated with severe colitis which may end fatally, it should be reserved for serious infections where less toxic antimicrobial agents are inappropriate, as described in the <linkHtml href="#Section_3">INDICATIONS AND USAGE</linkHtml> section. It should not be used in patients with nonbacterial infections such as most upper respiratory tract infections. </content>
+                     <content styleCode="bold">
+                        <content styleCode="italics">C.difficile </content>produces toxins A and B which contribute to the development of CDAD. Hypertoxin producing strains of <content styleCode="italics">C.difficile </content>cause increased morbidity and mortality, as these infections can be refractory to antimicrobial therapy and may require colectomy. CDAD must be considered in all patients who present with diarrhea following antibiotic use. Careful medical history is necessary since CDAD has been reported to occur over two months after the administration of antibacterial agents. If CDAD is suspected or confirmed, ongoing antibiotic use not directed against <content styleCode="italics">C.difficile </content>may need to be discontinued. Appropriate fluid and electrolyte management, protein supplementation, antibiotic treatment of <content styleCode="italics">C.difficile</content>, and surgical evaluation should be instituted as clinically indicated.</content>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20240109"/>
+            </section>
+         </component>
+         <component>
+            <section ID="Section_1">
+               <id root="dfdd3136-d251-4a74-b46e-368fc45d3274"/>
+               <code code="34089-3" codeSystem="2.16.840.1.113883.6.1" displayName="Description Section"/>
+               <title>DESCRIPTION</title>
+               <text>
+                  <br/>
+                  <paragraph>Clindamycin palmitate hydrochloride is a water soluble hydrochloride salt of the ester of clindamycin and palmitic acid. Clindamycin is a semisynthetic antibiotic produced by a 7(S)-chloro-substitution of the 7(R)-hydroxyl group of the parent compound lincomycin.<br/>
+                     <br/>The structural formula is represented below:</paragraph>
+                  <br/>
+                  <renderMultiMedia referencedObject="MM1"/>
+                  <br/>
+                  <paragraph>The chemical name for clindamycin palmitate hydrochloride is Methyl 7-chloro-6, 7, 8-trideoxy-6-(1-methyl-<content styleCode="italics">trans</content>-4-propyl-L-2-pyrrolidinecarboxamido)-1-thio-L-<content styleCode="italics">threo</content>-α-D-<content styleCode="italics">galacto</content>-octopyranoside 2-palmitate monohydrochloride.<br/>
+                     <br/> Clindamycin palmitate hydrochloride for oral solution, USP (Pediatric) is white flavored granules containing clindamycin palmitate hydrochloride USP and becomes colorless to off-white with cherry flavored solution after reconstitution. Each 5 mL contains the equivalent of 75 mg clindamycin. Inactive ingredients: artificial cherry flavor, dextrin, ethylparaben, isopropyl alcohol, poloxamer, simethicone emulsion, and sucrose.</paragraph>
+               </text>
+               <effectiveTime value="20240109"/>
+               <component>
+                  <observationMedia ID="MM1">
+                     <text>Strucutre</text>
+                     <value xsi:type="ED" mediaType="image/jpeg">
+                        <reference value="clindamycin-str.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="Section_2">
+               <id root="bc23da98-ce81-44e1-a569-a725a0eaea97"/>
+               <code code="34090-1" codeSystem="2.16.840.1.113883.6.1" displayName="Clinical Pharmacology Section"/>
+               <title>CLINICAL PHARMACOLOGY</title>
+               <effectiveTime value="20240109"/>
+               <component>
+                  <section ID="Section_2.2">
+                     <id root="651245f4-1379-4d86-bd83-9cd60ec0ad93"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="Spl Unclassified Section"/>
+                     <title>Human Pharmacology</title>
+                     <text>
+                        <paragraph>
+                           <content styleCode="bold">Absorption </content>
+                        </paragraph>
+                        <br/>
+                        <paragraph>Blood level studies comparing clindamycin palmitate hydrochloride with clindamycin hydrochloride show that both drugs reach their peak active serum levels at the same time, indicating a rapid hydrolysis of the palmitate to the clindamycin.</paragraph>
+                        <br/>
+                        <paragraph>Serum level studies with clindamycin palmitate hydrochloride in normal pediatric patients weighing 50 to 100 lbs given 2, 3 or 4 mg/kg every 6 hours (8, 12 or 16 mg/kg/day) demonstrated mean peak clindamycin serum levels of 1.24, 2.25 and 2.44 mcg/mL respectively, one hour after the first dose. By the fifth dose, the 6-hour serum concentration had reached equilibrium. Peak serum concentrations after this time would be about 2.46, 2.98 and 3.79 mcg/mL with doses of 8, 12 and 16 mg/kg/day, respectively. Serum levels have been uniform and predictable from person to person and dose to dose.</paragraph>
+                        <br/>
+                        <paragraph>
+                           <content styleCode="bold">Distribution </content>
+                        </paragraph>
+                        <br/>
+                        <paragraph>Multiple-dose studies in neonates and infants up to 6 months of age show that the drug does not accumulate in the serum and is excreted rapidly. Serum levels exceed the MICs for most indicated organisms for at least six hours following administration of the usually recommended doses of clindamycin palmitate hydrochloride for oral solution (Pediatric) in adults and pediatric patients. Clindamycin is widely distributed in body fluids and tissues (including bones).</paragraph>
+                        <br/>
+                        <paragraph>No significant levels of clindamycin are attained in the cerebrospinal fluid, even in the presence of inflamed meninges. </paragraph>
+                        <br/>
+                        <paragraph>
+                           <content styleCode="bold">Metabolism </content>
+                        </paragraph>
+                        <br/>
+                        <paragraph>
+                           <content styleCode="italics">In vitro </content>studies in human liver and intestinal microsomes indicated that clindamycin is predominantly metabolized by Cytochrome P450 3A4 (CYP3A4), with minor contribution from CYP3A5, to form clindamycin sulfoxide and a minor metabolite, N-desmethylclindamycin. </paragraph>
+                        <br/>
+                        <paragraph>
+                           <content styleCode="bold">Excretion </content>
+                        </paragraph>
+                        <br/>
+                        <paragraph>Approximately 10% of the bioactivity is excreted in the urine and 3.6% in the feces; the remainder is excreted as bioinactive metabolites. </paragraph>
+                        <br/>
+                        <paragraph>The average serum half-life after doses of clindamycin palmitate hydrochloride for oral solution (Pediatric) is approximately two hours in pediatric patients. </paragraph>
+                        <br/>
+                        <paragraph>
+                           <content styleCode="bold">Special Populations </content>
+                        </paragraph>
+                        <br/>
+                        <paragraph>
+                           <content styleCode="italics">Patients with Renal Impairment </content>
+                        </paragraph>
+                        <br/>
+                        <paragraph>Serum half-life of clindamycin is increased slightly in patients with markedly reduced renal function. Hemodialysis and peritoneal dialysis are not effective in removing clindamycin from the serum. </paragraph>
+                        <br/>
+                        <paragraph>
+                           <content styleCode="italics">Elderly Patients</content>
+                        </paragraph>
+                        <paragraph>Pharmacokinetic studies in elderly volunteers (61 to 79 years) and younger adults (18 to 39 years) indicate that age alone does not alter clindamycin pharmacokinetics (clearance, elimination half-life, volume of distribution, and area under the serum concentration-time curve) after IV administration of clindamycin phosphate. After oral administration of clindamycin hydrochloride, elimination half-life is increased to approximately 4.0 hours (range 3.4 to 5.1 h) in the elderly compared to 3.2 hours (range 2.1 to 4.2 h) in younger adults; administration of clindamycin palmitate hydrochloride resulted in a similar elimination half-life value of about 4.5 hours in elderly subjects. However, the extent of absorption is not different between age groups and no dosage alteration is necessary for the elderly with normal hepatic function and normal (age-adjusted) renal function<sup>1</sup>.<br/>
+                           <br/>
+                           <content styleCode="italics">Obese Pediatric Patients Aged 2 to Less than 18 Years and Obese Adults Aged 18 to 20 Years</content>
+                           <br/>
+                           <br/> An analysis of pharmacokinetic data in obese pediatric patients aged 2 to less than 18 years and obese adults aged 18 to 20 years demonstrated that clindamycin clearance and volume of distribution, normalized by total body weight, are comparable regardless of obesity.</paragraph>
+                     </text>
+                     <effectiveTime value="20240109"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="Section_2.1">
+                     <id root="21149665-c357-41f0-af98-e86163c0fe22"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>Microbiology</title>
+                     <text>
+                        <paragraph>
+                           <content styleCode="underline">Mechanism of Action</content>
+                        </paragraph>
+                        <paragraph>Clindamycin inhibits bacterial protein synthesis by binding to the 23S RNA of the 50S subunit of the ribosome. Clindamycin is bacteriostatic.<br/>
+                           <content styleCode="underline">
+                              <br/> Resistance<br/>
+                           </content>
+                           <br/> Resistance to clindamycin is most often caused by modification of specific bases of the 23S ribosomal RNA. Cross-resistance between clindamycin and lincomycin is complete. Because the binding sites for these antibacterial drugs overlap, cross-resistance is sometimes observed among lincosamides, macrolides and streptogramin B. Macrolide-inducible resistance to clindamycin occurs in some isolates of macrolide-resistant bacteria. Macrolide-resistant isolates of staphylococci and beta-hemolytic streptococci should be screened for induction of clindamycin resistance using the D-zone test.<br/>
+                           <content styleCode="underline">
+                              <br/> Antimicrobial Activity<br/>
+                           </content>
+                           <br/> Clindamycin has been shown to be active against most of the isolates of the following microorganisms, both <content styleCode="italics">in vitro </content>and in clinical infections, as described in the <content styleCode="bold">
+                              <linkHtml href="#Section_3">INDICATIONS AND USAGE</linkHtml>  </content>section.<br/>
+                           <content styleCode="bold">
+                              <br/> Gram-positive </content>
+                           <content styleCode="bold">Bacteria<br/>
+                           </content>
+                           <content styleCode="italics">
+                              <br/> Staphylococcus aureus </content>(methicillin-susceptible strains)<br/>
+                           <content styleCode="italics">Streptococcus pneumoniae </content>(penicillin-susceptible strains)<br/>
+                           <content styleCode="italics">Streptococcus pyogenes<br/>
+                           </content>
+                           <content styleCode="bold">
+                              <br/> Anaerobic Bacteria<br/>
+                           </content>
+                           <content styleCode="italics">
+                              <br/> Clostridium perfringens<br/>
+                           </content>
+                           <content styleCode="italics">Fusobacterium necrophorum<br/>
+                           </content>
+                           <content styleCode="italics">Fusobacterium nucleatum<br/>
+                           </content>
+                           <content styleCode="italics">Peptostreptococcus anaerobius<br/>
+                           </content>
+                           <content styleCode="italics">Prevotella melaninogenica<br/>
+                           </content>
+                           <br/> At least 90% of the microorganisms listed below exhibit <content styleCode="italics">in vitro</content> minimum inhibitory concentrations (MICs) less than or equal to the clindamycin susceptible MIC breakpoint for organisms of a similar type. However, the efficacy of clindamycin in treating clinical infections due to these microorganisms has not been <content styleCode="bold"> </content>established in adequate and well-controlled clinical trials.<br/>
+                           <content styleCode="bold">
+                              <br/> Gram-positive </content>
+                           <content styleCode="bold">Bacteria<br/>
+                           </content>
+                           <content styleCode="italics">
+                              <br/> Staphylococcus epidermidis </content>(methicillin-susceptible strains)<br/>
+                           <content styleCode="italics">Streptococcus agalactiae<br/>
+                           </content>
+                           <content styleCode="italics">Streptococcus anginosus<br/>
+                           </content>
+                           <content styleCode="italics">Streptococcus mitis<br/>
+                           </content>
+                           <content styleCode="italics">Streptococcus oralis<br/>
+                           </content>
+                           <content styleCode="bold">
+                              <br/> Anaerobic Bacteria<br/>
+                           </content>
+                           <content styleCode="italics">
+                              <br/> Actinomyces israelii<br/>
+                           </content>
+                           <content styleCode="italics">Clostridium clostridioforme<br/>
+                           </content>
+                           <content styleCode="italics">Eggerthella lenta<br/>
+                           </content>
+                           <content styleCode="italics">Finegoldia (Peptostreptococcus) magna<br/>
+                           </content>
+                           <content styleCode="italics">Micromonas (Peptostreptococcus) micros<br/>
+                           </content>
+                           <content styleCode="italics">Prevotella bivia<br/>
+                           </content>
+                           <content styleCode="italics">Prevotella intermedia<br/>
+                           </content>
+                           <content styleCode="italics">Propionibacterium acnes<br/>
+                           </content>
+                           <content styleCode="underline">
+                              <br/> Susceptibility Testing<br/>
+                           </content>
+                           <br/> For specific information regarding susceptibility test interpretive criteria and associated test methods and quality control standards recognized by FDA for this drug, please see: https://www.fda.gov/STIC.</paragraph>
+                     </text>
+                     <effectiveTime value="20240109"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="Section_3">
+               <id root="4a9a0c06-a3d0-4d31-9961-e5a84c1d7f9a"/>
+               <code code="34067-9" codeSystem="2.16.840.1.113883.6.1" displayName="Indications &amp; Usage Section"/>
+               <title>INDICATIONS AND USAGE</title>
+               <text>
+                  <paragraph>Clindamycin palmitate hydrochloride for oral solution (Pediatric) is indicated in the treatment of serious infections caused by susceptible anaerobic bacteria.<br/>
+                     <br/> Clindamycin is also indicated in the treatment of serious infections due to susceptible strains of streptococci, pneumococci and staphylococci. Its use should be reserved for penicillin-allergic patients or other patients for whom, in the judgment of the physician, a penicillin is inappropriate. Because of the risk of colitis, as described in the <content styleCode="bold">
+                        <linkHtml href="#Section_0">BOXED WARNING</linkHtml>
+                     </content>, before selecting clindamycin the physician should consider the nature of the infection and the suitability of less toxic alternatives (e.g., erythromycin).</paragraph>
+                  <br/>
+                  <paragraph>
+                     <content styleCode="bold">Anaerobes: </content>Serious respiratory tract infections such as empyema, anaerobic pneumonitis and lung abscess; serious skin and soft tissue infections; septicemia; intra-abdominal infections such as peritonitis and intra-abdominal abscess (typically resulting from anaerobic organisms resident in the normal gastrointestinal tract); infections of the female pelvis and genital tract such as endometritis, nongonococcal tubo-ovarian abscess, pelvic cellulitis and postsurgical vaginal cuff infection.<br/>
+                     <br/>
+                     <content styleCode="bold">Streptococci: </content>Serious respiratory tract infections; serious skin and soft tissue infections. </paragraph>
+                  <br/>
+                  <paragraph>
+                     <content styleCode="bold">Staphylococci: </content>Serious respiratory tract infections; serious skin and soft tissue infections.</paragraph>
+                  <br/>
+                  <paragraph>
+                     <content styleCode="bold">Pneumococci: </content>Serious respiratory tract infections. Bacteriologic studies should be performed to determine the causative organisms and their susceptibility to clindamycin.</paragraph>
+                  <br/>
+                  <paragraph>To reduce the development of drug-resistant bacteria and maintain the effectiveness of clindamycin palmitate hydrochloride for oral solution (Pediatric) and other antibacterial drugs, clindamycin palmitate hydrochloride for oral solution (Pediatric) should be used only to treat or prevent infections that are proven or strongly suspected to be caused by susceptible bacteria. When culture and susceptibility information are available, they should be considered in selecting or modifying antibacterial therapy. In the absence of such data, local epidemiology and susceptibility patterns may contribute to the empiric selection of therapy.</paragraph>
+               </text>
+               <effectiveTime value="20240109"/>
+            </section>
+         </component>
+         <component>
+            <section ID="Section_4">
+               <id root="929b8ce9-a533-4f7f-abdf-981e3b0600c2"/>
+               <code code="34070-3" codeSystem="2.16.840.1.113883.6.1" displayName="Contraindications Section"/>
+               <title>CONTRAINDICATIONS</title>
+               <text>
+                  <br/>
+                  <paragraph>This drug is contraindicated in individuals with a history of hypersensitivity to preparations containing clindamycin or lincomycin.</paragraph>
+               </text>
+               <effectiveTime value="20240109"/>
+            </section>
+         </component>
+         <component>
+            <section ID="Section_5">
+               <id root="1d5be17f-e5a4-443e-b9d1-abf0aa61f4bb"/>
+               <code code="34071-1" codeSystem="2.16.840.1.113883.6.1" displayName="Warnings Section"/>
+               <title>WARNINGS</title>
+               <text>
+                  <paragraph>See <content styleCode="bold">
+                        <linkHtml href="#Section_0">BOXED WARNING</linkHtml>
+                     </content>
+                     <content styleCode="bold">.</content>
+                  </paragraph>
+                  <br/>
+                  <paragraph>
+                     <content styleCode="bold">
+                        <content styleCode="italics">Clostridium difficile </content>Associated Diarrhea</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="italics">Clostridium difficile </content>associated diarrhea (CDAD) has been reported with use of nearly all antibacterial agents, including clindamycin palmitate hydrochloride for oral solution (Pediatric), and may range in severity from mild diarrhea to fatal colitis. Treatment with antibacterial agents alters the normal flora of the colon leading to overgrowth of <content styleCode="italics">C. difficile</content>.</paragraph>
+                  <br/>
+                  <paragraph>
+                     <content styleCode="italics">C. difficile </content>produces toxins A and B which contribute to the development of CDAD. Hypertoxin producing strains of <content styleCode="italics">C. difficile </content>cause increased morbidity and mortality, as these infections can be refractory to antimicrobial therapy and may require colectomy. CDAD must be considered in all patients who present with diarrhea following antibiotic use. Careful medical history is necessary since CDAD has been reported to occur over two months after the administration of antibacterial agents.</paragraph>
+                  <br/>
+                  <paragraph>If CDAD is suspected or confirmed, ongoing antibiotic use not directed against <content styleCode="italics">C. difficile </content>may need to be discontinued. Appropriate fluid and electrolyte management, protein supplementation, antibiotic treatment of <content styleCode="italics">C. difficile</content>, and surgical evaluation should be instituted as clinically indicated.</paragraph>
+                  <br/>
+                  <paragraph>
+                     <content styleCode="bold">Anaphylactic and Severe Hypersensitivity Reactions<br/>
+                     </content>
+                     <br/> Anaphylactic shock and anaphylactic reactions have been reported (see <content styleCode="bold">
+                        <linkHtml href="#Section_7">ADVERSE REACTIONS</linkHtml>
+                     </content>).</paragraph>
+                  <br/>
+                  <paragraph>Severe hypersensitivity reactions, including severe skin reactions such as toxic epidermal necrolysis (TEN), drug reaction with eosinophilia and systemic symptoms (DRESS), and Stevens-Johnson syndrome (SJS), some with fatal outcome, have been reported (see <content styleCode="bold">
+                        <linkHtml href="#Section_7">ADVERSE REACTIONS</linkHtml>
+                     </content>).</paragraph>
+                  <br/>
+                  <paragraph>In case of such an anaphylactic or severe hypersensitivity reaction, discontinue treatment permanently and institute appropriate therapy. </paragraph>
+                  <br/>
+                  <paragraph>A careful inquiry should be made concerning previous sensitivities to drugs and other allergens.</paragraph>
+                  <br/>
+                  <paragraph>
+                     <content styleCode="bold">Usage in Meningitis: </content>Since clindamycin does not diffuse adequately into the cerebrospinal fluid, the drug should not be used in the treatment of meningitis.</paragraph>
+               </text>
+               <effectiveTime value="20240109"/>
+            </section>
+         </component>
+         <component>
+            <section ID="Section_6">
+               <id root="2210239c-12c0-49d7-a53a-3cbfc9ba887a"/>
+               <code code="42232-9" codeSystem="2.16.840.1.113883.6.1" displayName="Precautions Section"/>
+               <title>PRECAUTIONS</title>
+               <effectiveTime value="20240109"/>
+               <component>
+                  <section ID="Section_6.1">
+                     <id root="f3cb0c22-6730-46db-9922-b0a41d27b789"/>
+                     <code code="34072-9" codeSystem="2.16.840.1.113883.6.1" displayName="General Precautions Section"/>
+                     <title>General</title>
+                     <text>
+                        <paragraph>Review of experience to date suggests that a subgroup of older patients with associated severe illness may tolerate diarrhea less well. When clindamycin is indicated in these patients, they should be carefully monitored for change in bowel frequency.<br/>
+                           <br/> Clindamycin palmitate hydrochloride for oral solution (Pediatric) should be prescribed with caution in individuals with a history of gastrointestinal disease, particularly colitis.<br/>
+                           <br/> Clindamycin palmitate hydrochloride for oral solution (Pediatric) should be prescribed with caution in atopic individuals.<br/>
+                           <br/> Indicated surgical procedures should be performed in conjunction with antibiotic therapy.<br/>
+                           <br/> The use of clindamycin palmitate hydrochloride for oral solution (Pediatric) occasionally results in overgrowth of nonsusceptible organisms-particularly yeasts. Should superinfections occur, appropriate measures should be taken as indicated by the clinical situation.<br/>
+                           <br/> Clindamycin dosage modification may not be necessary in patients with renal disease. In patients with moderate to severe liver disease, prolongation of clindamycin half-life has been found. However, it was postulated from studies that when given every eight hours, accumulation should rarely occur. Therefore, dosage modification in patients with liver disease may not be necessary. However, periodic liver enzyme determinations should be made when treating patients with severe liver disease.</paragraph>
+                        <br/>
+                        <paragraph>Prescribing clindamycin palmitate hydrochloride for oral solution (Pediatric) in the absence of a proven or strongly suspected bacterial infection or a prophylactic indication is unlikely to provide benefit to the patient and increases the risk of the development of drug-resistant bacteria.</paragraph>
+                     </text>
+                     <effectiveTime value="20240109"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="Section_6.2">
+                     <id root="b1c92f58-9bf9-447b-9ef3-ceeab35ad8b2"/>
+                     <code code="34076-0" codeSystem="2.16.840.1.113883.6.1" displayName="Information for Patients Section"/>
+                     <title>Information for Patients</title>
+                     <text>
+                        <paragraph>Patients should be counseled that antibacterial drugs including clindamycin palmitate hydrochloride for oral solution (Pediatric) should only be used to treat bacterial infections. They do not treat viral infections (e.g., the common cold). When clindamycin palmitate hydrochloride for oral solution (Pediatric) is prescribed to treat a bacterial infection, patients should be told that although it is common to feel better early in the course of therapy, the medication should be taken exactly as directed. Skipping doses or not completing the full course of therapy may (1) decrease the effectiveness of the immediate treatment and (2) increase the likelihood that bacteria will develop resistance and will not be treatable by clindamycin palmitate hydrochloride for oral solution (Pediatric) or other antibacterial drugs in the future.</paragraph>
+                        <br/>
+                        <paragraph>Diarrhea is a common problem caused by antibiotics which usually ends when the antibiotic is discontinued. Sometimes after starting treatment with antibiotics, patients can develop watery and bloody stools (with or without stomach cramps and fever) even as late as two or more months after having taken the last dose of the antibiotic. If this occurs, patients should contact their physician as soon as possible.</paragraph>
+                     </text>
+                     <effectiveTime value="20240109"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="Section_6.3">
+                     <id root="80c05fd1-5752-47c0-9260-852e4db34e45"/>
+                     <code code="34075-2" codeSystem="2.16.840.1.113883.6.1" displayName="Laboratory Tests Section"/>
+                     <title>Laboratory Tests</title>
+                     <text>
+                        <br/>
+                        <paragraph>During prolonged therapy, periodic liver and kidney function tests and blood counts should be performed.</paragraph>
+                     </text>
+                     <effectiveTime value="20240109"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="Section_6.4">
+                     <id root="5017b43b-5ba8-4d16-9e87-21abeff4c2ad"/>
+                     <code code="34073-7" codeSystem="2.16.840.1.113883.6.1" displayName="Drug Interactions Section"/>
+                     <title>Drug Interactions</title>
+                     <text>
+                        <paragraph>Clindamycin has been shown to have neuromuscular blocking properties that may enhance the action of other neuromuscular blocking agents. Therefore, it should be used with caution in patients receiving such agents.</paragraph>
+                        <br/>
+                        <paragraph>Clindamycin is metabolized predominantly by CYP3A4, and to a lesser extent by CYP3A5, to the major metabolite clindamycin sulfoxide and minor metabolite N-desmethylclindamycin. Therefore inhibitors of CYP3A4 and CYP3A5 may increase plasma concentrations of clindamycin and inducers of these isoenzymes may reduce plasma concentrations of clindamycin. In the presence of strong CYP3A4 inhibitors, monitor for adverse reactions. In the presence of strong CYP3A4 inducers such as rifampicin, monitor for loss of effectiveness.</paragraph>
+                        <br/>
+                        <paragraph>
+                           <content styleCode="italics">In vitro </content>studies indicate that clindamycin does not inhibit CYP1A2, CYP2C9, CYP2C19, CYP2E1 or CYP2D6 and only moderately inhibits CYP3A4.</paragraph>
+                     </text>
+                     <effectiveTime value="20240109"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="Section_6.6">
+                     <id root="d45d39bb-614e-4302-a220-123861ae9992"/>
+                     <code code="34083-6" codeSystem="2.16.840.1.113883.6.1" displayName="Carcinogenesis &amp; Mutagenesis &amp; Impairment Of Fertility Section"/>
+                     <title>Carcinogenesis, Mutagenesis, Impairment of Fertility</title>
+                     <text>
+                        <paragraph>Long term studies in animals have not been performed with clindamycin to evaluate carcinogenic potential. Genotoxicity tests performed included a rat micronucleus test and an Ames Salmonella reversion test. Both tests were negative.</paragraph>
+                        <br/>
+                        <paragraph>Fertility studies in rats treated orally with up to 300 mg/kg/day (approximately 1.6 times the highest recommended adult human oral dose based on mg/m<sup>2</sup>) revealed no effects on fertility or mating ability.</paragraph>
+                     </text>
+                     <effectiveTime value="20240109"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="Section_6.7">
+                     <id root="6ca85805-eaef-47fc-80ec-0560a17e2df7"/>
+                     <code code="42228-7" codeSystem="2.16.840.1.113883.6.1" displayName="Pregnancy Section"/>
+                     <title>Pregnancy</title>
+                     <text>
+                        <paragraph>In clinical trials with pregnant women, the systemic administration of clindamycin during the second and third trimesters, has not been associated with an increased frequency of congenital abnormalities. Clindamycin should be used during the first trimester of pregnancy only if clearly needed. There are no adequate and well-controlled studies in pregnant women during the first trimester of pregnancy. Because animal reproduction studies are not always predictive of the human response, this drug should be used during pregnancy only if clearly needed.</paragraph>
+                        <br/>
+                        <paragraph>Reproduction studies performed in rats and mice using oral doses of clindamycin up to 600 mg/kg/day (3.2 and 1.6 times the highest recommended adult human dose based on mg/m<sup>2</sup>, respectively) or subcutaneous doses of clindamycin up to 250 mg/kg/day (1.3 and 0.7 times the highest recommended adult human dose based on mg/m<sup>2</sup>, respectively) revealed no evidence of teratogenicity.</paragraph>
+                     </text>
+                     <effectiveTime value="20240109"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="Section_6.9">
+                     <id root="f5e4a8a8-acaa-47fd-9a25-39df31a11fde"/>
+                     <code code="34080-2" codeSystem="2.16.840.1.113883.6.1" displayName="Nursing Mothers Section"/>
+                     <title>Nursing Mothers</title>
+                     <text>
+                        <paragraph>Limited published data based on breast milk sampling reports that clindamycin appears in human breast milk in the range of less than 0.5 to 3.8 mcg/mL. Clindamycin has the potential to cause adverse effects on the breast-fed infant's gastrointestinal flora. If oral or intravenous clindamycin is required by a nursing mother, it is not a reason to discontinue breastfeeding, but an alternate drug may be preferred. Monitor the breast-fed infant for possible adverse effects on the gastrointestinal flora, such as diarrhea, candidiasis (thrush, diaper rash) or rarely, blood in the stool indicating possible antibiotic-associated colitis. </paragraph>
+                        <br/>
+                        <paragraph>The developmental and health benefits of breastfeeding should be considered along with the mother's clinical need for clindamycin and any potential adverse effects on the breast-fed child from clindamycin or from the underlying maternal condition.</paragraph>
+                     </text>
+                     <effectiveTime value="20240109"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="Section_6.10">
+                     <id root="50747366-ab13-476e-8a05-2546013967b3"/>
+                     <code code="34081-0" codeSystem="2.16.840.1.113883.6.1" displayName="Pediatric Use Section"/>
+                     <title>Pediatric Use</title>
+                     <text>
+                        <paragraph>When clindamycin palmitate hydrochloride for oral solution (Pediatric) is administered to the pediatric population (birth to 16 years), appropriate monitoring of organ system functions is desirable.</paragraph>
+                     </text>
+                     <effectiveTime value="20240109"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="Section_6.11">
+                     <id root="4550857e-1809-4298-bca7-70300d3b3bee"/>
+                     <code code="34082-8" codeSystem="2.16.840.1.113883.6.1" displayName="Geriatric Use Section"/>
+                     <title>Geriatric Use</title>
+                     <text>
+                        <paragraph>Clinical studies of clindamycin did not include sufficient numbers of patients age 65 and over to determine whether they respond differently from younger patients. However, other reported clinical experience indicates that antibiotic-associated colitis and diarrhea (due to <content styleCode="italics">Clostridium difficile</content>) seen in association with most antibiotics occur more frequently in the elderly (&gt;60 years) and may be more severe. These patients should be carefully monitored for the development of diarrhea.</paragraph>
+                        <br/>
+                        <paragraph>Pharmacokinetic studies with clindamycin have shown no clinically important differences between young subjects (18 to 39 years) and elderly subjects (61 to 79 years) with normal hepatic function and normal (age-adjusted) renal function after oral or intravenous administration.</paragraph>
+                     </text>
+                     <effectiveTime value="20240109"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="Section_7">
+               <id root="14a08c58-d80f-4fd9-b03d-fa93da8ec025"/>
+               <code code="34084-4" codeSystem="2.16.840.1.113883.6.1" displayName="Adverse Reactions Section"/>
+               <title>ADVERSE REACTIONS</title>
+               <text>
+                  <paragraph>The following reactions have been reported with the use of clindamycin.</paragraph>
+                  <br/>
+                  <paragraph>
+                     <content styleCode="italics">Infections and infestations: </content>
+                     <content styleCode="italics">Clostridium difficile </content>colitis<content styleCode="bold"/>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="italics">Gastrointestinal: </content>Abdominal pain, pseudomembranous colitis, esophagitis, nausea, vomiting and diarrhea (see <content styleCode="bold">
+                        <linkHtml href="#Section_0">BOXED WARNING</linkHtml>
+                     </content>). The onset of pseudomembranous colitis symptoms may occur during or after antibacterial treatment (see <content styleCode="bold">
+                        <linkHtml href="#Section_5">WARNINGS</linkHtml>
+                     </content>). An unpleasant or metallic taste has been reported after oral administration.</paragraph>
+                  <br/>
+                  <paragraph>
+                     <content styleCode="italics">Hypersensitivity Reactions:</content>
+                     <content styleCode="bold">  </content>Generalized mild to moderate morbilliform-like (maculopapular) skin rashes are the most frequently reported adverse reactions. Vesiculobullous rashes, as well as urticaria, have been observed during drug therapy. Severe skin reactions such as Toxic Epidermal Necrolysis, some with fatal outcome, have been reported (See <content styleCode="bold">
+                        <linkHtml href="#Section_5">WARNINGS</linkHtml>
+                     </content>). Cases of Acute Generalized Exanthematous Pustulosis (AGEP), erythema multiforme, some resembling Stevens-Johnson syndrome, anaphylactic shock, anaphylactic reaction and hypersensitivity have also been reported.</paragraph>
+                  <paragraph>
+                     <content styleCode="italics">Skin and Mucous Membranes: </content>Pruritus, vaginitis, angioedema, and rare instances of exfoliative dermatitis have been reported. (See<content styleCode="italics"> </content>
+                     <content styleCode="italics">Hypersensitivity Reactions</content>.)</paragraph>
+                  <br/>
+                  <paragraph>
+                     <content styleCode="italics">Liver: </content>Jaundice and abnormalities in liver function tests have been observed during clindamycin therapy.</paragraph>
+                  <br/>
+                  <paragraph>
+                     <content styleCode="italics">Renal:</content> Although no direct relationship of clindamycin to renal damage has been established, renal dysfunction as evidenced by azotemia, oliguria, and/or proteinuria has been observed.</paragraph>
+                  <br/>
+                  <paragraph>
+                     <content styleCode="italics">Hematopoietic: </content>Transient neutropenia (leukopenia) and eosinophilia have been reported. Reports of agranulocytosis and thrombocytopenia have been made. No direct etiologic relationship to concurrent clindamycin therapy could be made in any of the foregoing. </paragraph>
+                  <paragraph>
+                     <content styleCode="italics">Immune system: </content>  Drug reaction with eosinophilia and systemic symptoms (DRESS) cases have been reported.</paragraph>
+                  <br/>
+                  <paragraph>
+                     <content styleCode="italics">Musculoskeletal:</content>
+                     <content styleCode="bold">  </content>Cases of polyarthritis have been reported.</paragraph>
+               </text>
+               <effectiveTime value="20240109"/>
+            </section>
+         </component>
+         <component>
+            <section ID="Section_9">
+               <id root="dde22dae-743a-4f3e-8153-e259ce68e866"/>
+               <code code="34088-5" codeSystem="2.16.840.1.113883.6.1" displayName="Overdosage Section"/>
+               <title>OVERDOSAGE</title>
+               <text>
+                  <br/>
+                  <paragraph>Significant mortality was observed in mice at an intravenous dose of 855 mg/kg and in rats at an oral or subcutaneous dose of approximately 2618 mg/kg. In the mice, convulsions and depression were observed. Hemodialysis and peritoneal dialysis are not effective in removing clindamycin from the serum.</paragraph>
+               </text>
+               <effectiveTime value="20240109"/>
+            </section>
+         </component>
+         <component>
+            <section ID="Section_10">
+               <id root="e7c54089-fc73-4de9-a1cb-b65f43e54527"/>
+               <code code="34068-7" codeSystem="2.16.840.1.113883.6.1" displayName="Dosage &amp; Administration Section"/>
+               <title>DOSAGE AND ADMINISTRATION</title>
+               <text>
+                  <paragraph>If significant diarrhea occurs during therapy, this antibiotic should be discontinued (see  <content styleCode="bold">
+                        <linkHtml href="#Section_0">BOXED WARNING</linkHtml>
+                     </content>).</paragraph>
+                  <br/>
+                  <paragraph>Concomitant administration of food does not adversely affect the absorption of clindamycin palmitate hydrochloride contained in clindamycin palmitate hydrochloride for oral solution (Pediatric).</paragraph>
+                  <br/>
+                  <paragraph>Serious infections:<content styleCode="bold">  </content>8 to 12 mg/kg/day (4 to 6 mg/lb/day) divided into 3 or 4 equal doses.</paragraph>
+                  <br/>
+                  <paragraph>Severe infections:<content styleCode="bold">  </content>13 to 16 mg/kg/day (6.5 to 8 mg/lb/day) divided into 3 or 4 equal doses.</paragraph>
+                  <br/>
+                  <paragraph>More severe infections:<content styleCode="bold">  </content>17 to 25 mg/kg/day (8.5 to 12.5 mg/lb/day) divided into 3 or 4 equal doses.</paragraph>
+                  <br/>
+                  <paragraph>In pediatric patients weighing 10 kg or less, ½ teaspoon (37.5 mg) three times a day should be considered the minimum recommended dose. Clindamycin should be dosed based on total body weight regardless of obesity.</paragraph>
+                  <br/>
+                  <paragraph>Serious infections due to anaerobic bacteria are usually treated with clindamycin injection. However, in clinically appropriate circumstances, the physician may elect to initiate treatment or continue treatment with clindamycin palmitate hydrochloride for oral solution (Pediatric). </paragraph>
+                  <br/>
+                  <paragraph>
+                     <content styleCode="bold">NOTE:</content> In cases of β-hemolytic streptococcal infections, treatment should be continued for at least 10 days.</paragraph>
+                  <br/>
+                  <paragraph>
+                     <content styleCode="bold">Reconstitution Instructions<br/>
+                     </content>
+                     <br/> When reconstituted with water as follows, each 5 mL (teaspoon) of solution contains clindamycin palmitate hydrochloride equivalent to 75 mg clindamycin. </paragraph>
+                  <paragraph>
+                     <br/> Reconstitute bottles of 100 mL with <content styleCode="bold">75 mL </content>of water. Add a large portion of the water and shake vigorously; add the remainder of the water and shake until the solution is uniform.</paragraph>
+                  <br/>
+                  <paragraph>
+                     <content styleCode="bold">Storage Conditions<br/>
+                     </content>
+                     <br/>
+                     <content styleCode="bold">Store at </content>20° to 25°C (68° to 77°F). [See USP Controlled Room Temperature.]</paragraph>
+                  <br/>
+                  <paragraph>Do <content styleCode="bold">NOT</content> refrigerate the reconstituted solution; when chilled, the solution may thicken and be difficult to pour. The solution is stable for 2 weeks at room temperature.</paragraph>
+               </text>
+               <effectiveTime value="20240109"/>
+            </section>
+         </component>
+         <component>
+            <section ID="Section_11">
+               <id root="dabe05ec-c678-4616-b350-637927d4b6fb"/>
+               <code code="34069-5" codeSystem="2.16.840.1.113883.6.1" displayName="How Supplied Section"/>
+               <title>HOW SUPPLIED</title>
+               <text>
+                  <paragraph>Clindamycin palmitate hydrochloride for oral solution, USP (Pediatric) is white flavored granules and becomes colorless to off-white with cherry flavored solution after reconstitution. It is available in bottles of 100 mL.</paragraph>
+                  <paragraph>                                                                                                Bottles of 100 mL (Glass)        NDC 65862-596-01<br/>                                                                                                 Bottles of 100 mL (HDPE)       NDC 65862-596-02</paragraph>
+                  <br/>
+                  <paragraph>When reconstituted as directed, each bottle yields a solution containing 75 mg of clindamycin per 5 mL.</paragraph>
+                  <br/>
+                  <paragraph>
+                     <content styleCode="bold">Store at</content> 20° to 25°C (68° to 77°F). [See USP Controlled Room Temperature.]</paragraph>
+               </text>
+               <effectiveTime value="20240109"/>
+            </section>
+         </component>
+         <component>
+            <section ID="Section_14">
+               <id root="94222ec7-5440-487d-aa5d-0b9d856d19ff"/>
+               <code code="34093-5" codeSystem="2.16.840.1.113883.6.1" displayName="References Section"/>
+               <title>References</title>
+               <text>
+                  <paragraph>1. Smith RB, Phillips JP: Evaluation of CLEOCIN HCl and CLEOCIN Phosphate in an Aged Population. Upjohn TR 8147-82-9122-021, December 1982.<br/>
+                     <br/> Trademarks are the property of their respective owners.<br/>
+                     <br/> Distributed by:<br/>
+                     <content styleCode="bold">Aurobindo Pharma USA, Inc.<br/>
+                     </content>279 Princeton-Hightstown Road<br/> East Windsor, NJ 08520<br/>
+                     <br/> Manufactured by:<br/>
+                     <content styleCode="bold">Aurobindo Pharma Limited<br/>
+                     </content>Hyderabad-500 032, India<br/>
+                     <br/> Revised: 12/2022</paragraph>
+               </text>
+               <effectiveTime value="20240109"/>
+            </section>
+         </component>
+         <component>
+            <section ID="Section_18">
+               <id root="5f3f7585-e380-4088-acbe-a7750956a279"/>
+               <code code="51945-4" codeSystem="2.16.840.1.113883.6.1" displayName="PACKAGE LABEL.PRINCIPAL DISPLAY PANEL"/>
+               <title>PACKAGE LABEL-PRINCIPAL DISPLAY PANEL - 75 mg/5 mL (100 mL Bottle)</title>
+               <text>
+                  <br/>
+                  <paragraph>
+                     <content styleCode="bold">NDC 65862-596-01<br/>
+                     </content>
+                     <content styleCode="bold">Rx only</content> <br/>
+                     <content styleCode="bold">Clindamycin Palmitate</content>
+                     <br/>
+                     <content styleCode="bold">Hydrochloride<br/> for Oral Solution, USP (Pediatric)</content> <br/>
+                     <content styleCode="bold">75 mg*/5 mL</content>
+                     <br/>
+                     <content styleCode="bold">when reconstituted</content> <br/>
+                     <content styleCode="bold">
+                        <content styleCode="bold">AUROBINDO</content>              100 mL (when mixed)</content>
+                  </paragraph>
+                  <br/>
+                  <br/>
+                  <renderMultiMedia referencedObject="MM2"/>
+                  <br/>
+                  <content styleCode="bold">
+                     <br/>
+                  </content>
+               </text>
+               <effectiveTime value="20240109"/>
+               <component>
+                  <observationMedia ID="MM2">
+                     <text>PACKAGE LABEL-PRINCIPAL DISPLAY PANEL - 75 mg/5 mL (100 mL Bottle)</text>
+                     <value xsi:type="ED" mediaType="image/jpeg">
+                        <reference value="clindamycin-fig1.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="Section_19">
+               <id root="33b91fa1-3590-4a8d-9027-febbc74e0b82"/>
+               <code code="51945-4" codeSystem="2.16.840.1.113883.6.1" displayName="PACKAGE LABEL.PRINCIPAL DISPLAY PANEL"/>
+               <title>PACKAGE LABEL-PRINCIPAL DISPLAY PANEL - 75 mg/5 mL Container Carton Label</title>
+               <text>
+                  <br/>
+                  <paragraph>
+                     <content styleCode="bold">NDC 65862-596-01</content>
+                     <br/>
+                     <content styleCode="bold">
+                        <br/> Clindamycin <br/> Palmitate</content>
+                     <br/>
+                     <content styleCode="bold">Hydrochloride for <br/> Oral Solution, USP<br/> (</content>
+                     <content styleCode="bold">Pediatric)</content>
+                     <br/>
+                     <content styleCode="bold">75 mg*/5 mL</content>
+                     <br/>
+                     <content styleCode="bold">
+                        <br/> when reconstituted<br/>
+                     </content>
+                     <content styleCode="bold">
+                        <br/> Rx only              100 mL (when mixed)</content>
+                     <br/>
+                     <br/>
+                     <content styleCode="bold">
+                        <br/> AUROBINDO<br/>
+                        <br/>
+                        <renderMultiMedia referencedObject="MM3"/>
+                     </content>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20240109"/>
+               <component>
+                  <observationMedia ID="MM3">
+                     <text>PACKAGE LABEL-PRINCIPAL DISPLAY PANEL - 75 mg/5 mL Container Carton Label</text>
+                     <value xsi:type="ED" mediaType="image/jpeg">
+                        <reference value="clindamycin-fig2.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+      </structuredBody>
+   </component>
+</document>

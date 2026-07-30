@@ -321,8 +321,55 @@ async function readJsonIfExists(path, fallback) {
   }
 }
 
+function defaultPendingNotes(record) {
+  return record.extractionStatus === 'quantitative-value-found'
+    ? 'Automated candidate only. Pharmacist must verify the exact source text before approval.'
+    : 'Automated extraction only. No quantity was inferred.';
+}
+
+function preservePendingReviewFields(generatedRecord, existingRecord) {
+  if (!existingRecord || existingRecord.approvalStatus !== 'pending') return generatedRecord;
+  const generatedNotes = defaultPendingNotes(generatedRecord);
+  const preserved = { ...generatedRecord };
+
+  for (const field of ['reviewedBy', 'reviewedDate']) {
+    if (String(existingRecord[field] || '').trim()) preserved[field] = existingRecord[field];
+  }
+
+  if (
+    String(existingRecord.notes || '').trim()
+    && existingRecord.notes !== generatedNotes
+    && !/^Automated (candidate|extraction) only\./.test(existingRecord.notes)
+  ) {
+    preserved.notes = existingRecord.notes;
+  }
+
+  if (Array.isArray(existingRecord.carbohydrateIngredients) && existingRecord.carbohydrateIngredients.length) {
+    preserved.carbohydrateIngredients = existingRecord.carbohydrateIngredients;
+    const quantifiedIngredient = preserved.carbohydrateIngredients.find((ingredient) => ingredient.quantityStatus === 'quantity-published');
+    preserved.publishedAmount = quantifiedIngredient?.amount ?? null;
+    preserved.publishedUnit = quantifiedIngredient?.amountUnit || '';
+    preserved.publishedBasis = quantifiedIngredient?.amountBasis || '';
+    preserved.normalizedAmountMg = quantifiedIngredient?.normalizedAmountMg ?? null;
+    preserved.normalizedBasis = quantifiedIngredient?.normalizedBasis || '';
+    preserved.extractionStatus = quantifiedIngredient
+      ? 'quantitative-value-found'
+      : preserved.carbohydrateIngredients.length
+        ? 'carbohydrate-ingredient-found-quantity-unknown'
+        : generatedRecord.extractionStatus;
+    preserved.sourceExcerpt = preserved.carbohydrateIngredients
+      .map((ingredient) => ingredient.sourceExcerpt)
+      .filter(Boolean)
+      .join('\n\n') || generatedRecord.sourceExcerpt;
+  }
+
+  return preserved;
+}
+
 async function main() {
   const imported = JSON.parse(await readFile(inputPath, 'utf8'));
+  const existingPending = await readJsonIfExists(pendingPath, []);
+  const existingPendingById = new Map(existingPending.map((record) => [record.id, record]));
   const pending = [];
 
   for (const medication of imported.medications || []) {
@@ -338,13 +385,14 @@ async function main() {
 
       for (const productNdc of productNdcs) {
         const matchingPackage = packages.find((row) => row.packageNdc?.startsWith(productNdc)) || packages[0];
-        pending.push(recordForProduct({
+        const generatedRecord = recordForProduct({
           seed: medication.seed,
           label,
           titleFields,
           productNdc,
           packageRow: matchingPackage,
-        }));
+        });
+        pending.push(preservePendingReviewFields(generatedRecord, existingPendingById.get(generatedRecord.id)));
       }
     }
   }

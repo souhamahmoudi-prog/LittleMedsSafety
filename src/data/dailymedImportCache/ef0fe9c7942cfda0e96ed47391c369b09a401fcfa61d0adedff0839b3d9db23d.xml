@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="http://www.accessdata.fda.gov/spl/stylesheet/spl.xsl" type="text/xsl"?>
+<document xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 http://www.accessdata.fda.gov/spl/schema/spl.xsd">
+   <id root="a342cb25-d6e8-43ec-846f-a91c7fae3f99"/>
+   <code code="34390-5" codeSystem="2.16.840.1.113883.6.1" displayName="HUMAN OTC DRUG LABEL"/>
+   <title>Children's Wal-itin<sup>®</sup>
+   </title>
+   <effectiveTime value="20140324"/>
+   <setId root="14614dc4-2ed1-4601-9873-e38d74344ce8"/>
+   <versionNumber value="3"/>
+   <author>
+      <time/>
+      <assignedEntity>
+         <representedOrganization>
+            <id extension="008965063" root="1.3.6.1.4.1.519.1"/>
+            <name>Walgreen Company</name>
+            <assignedEntity>
+               <assignedOrganization>
+                  <id extension="145186370" root="1.3.6.1.4.1.519.1"/>
+                  <name>Taro Pharmaceuticals  U.S.A., Inc.</name>
+                  <assignedEntity>
+                     <assignedOrganization>
+                        <id extension="600072078" root="1.3.6.1.4.1.519.1"/>
+                        <name>Taro Pharmaceutical Industries Ltd.</name>
+                     </assignedOrganization>
+                     <performance>
+                        <actDefinition>
+                           <code code="C43360" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MANUFACTURE"/>
+                           <product>
+                              <manufacturedProduct classCode="MANU">
+                                 <manufacturedMaterialKind>
+                                    <code code="0363-2092" codeSystem="2.16.840.1.113883.6.69"/>
+                                 </manufacturedMaterialKind>
+                              </manufacturedProduct>
+                           </product>
+                        </actDefinition>
+                     </performance>
+                  </assignedEntity>
+                  <assignedEntity>
+                     <assignedOrganization>
+                        <id extension="206263295" root="1.3.6.1.4.1.519.1"/>
+                        <name>Taro Pharmaceuticals Inc.</name>
+                     </assignedOrganization>
+                     <performance>
+                        <actDefinition>
+                           <code code="C43360" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MANUFACTURE"/>
+                           <product>
+                              <manufacturedProduct classCode="MANU">
+                                 <manufacturedMaterialKind>
+                                    <code code="0363-2092" codeSystem="2.16.840.1.113883.6.69"/>
+                                 </manufacturedMaterialKind>
+                              </manufacturedProduct>
+                           </product>
+                        </actDefinition>
+                     </performance>
+                  </assignedEntity>
+               </assignedOrganization>
+            </assignedEntity>
+         </representedOrganization>
+      </assignedEntity>
+   </author>
+   <component>
+      <structuredBody>
+         <component>
+            <section ID="DLDE">
+               <id root="a6d81665-262d-4272-8ff6-c59960fa987b"/>
+               <code code="48780-1" codeSystem="2.16.840.1.113883.6.1" displayName="SPL PRODUCT DATA ELEMENTS SECTION"/>
+               <effectiveTime value="20140324"/>
+               <subject>
+                  <manufacturedProduct>
+                     <manufacturedProduct>
+                        <code code="0363-2092" codeSystem="2.16.840.1.113883.6.69"/>
+                        <name>Childrens Wal-itin</name>
+                        <formCode code="C42986" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="SOLUTION"/>
+                        <asEntityWithGeneric>
+                           <genericMedicine>
+                              <name>Loratadine</name>
+                           </genericMedicine>
+                        </asEntityWithGeneric>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator value="5" unit="mg"/>
+                              <denominator value="5" unit="mL"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="7AJO3BO7QN" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>LORATADINE</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="7AJO3BO7QN" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>LORATADINE</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="PDC6A3C0OX" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>GLYCERIN</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="506T60A25R" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>SORBITOL</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="E4GA8884NN" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>PHOSPHORIC ACID</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="3WJQ0SDW1A" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>POLYETHYLENE GLYCOLS</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="6DC9Q167V3" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>PROPYLENE GLYCOL</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="059QF0KO0R" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>WATER</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="OJ245FE5EU" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>SODIUM BENZOATE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="4VON5FNS3C" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>SODIUM METABISULFITE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="5QWK665956" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>SODIUM PHOSPHATE, MONOBASIC, DIHYDRATE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <asContent>
+                           <quantity>
+                              <numerator value="240" unit="mL"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code/>
+                              <formCode code="C43169" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOTTLE"/>
+                              <asContent>
+                                 <quantity>
+                                    <numerator value="1" unit="1"/>
+                                    <denominator value="1"/>
+                                 </quantity>
+                                 <containerPackagedProduct>
+                                    <code code="0363-2092-01" codeSystem="2.16.840.1.113883.6.69"/>
+                                    <formCode code="C43182" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="CARTON"/>
+                                 </containerPackagedProduct>
+                              </asContent>
+                           </containerPackagedProduct>
+                        </asContent>
+                        <asContent>
+                           <quantity>
+                              <numerator value="120" unit="mL"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code/>
+                              <formCode code="C43169" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOTTLE"/>
+                              <asContent>
+                                 <quantity>
+                                    <numerator value="1" unit="1"/>
+                                    <denominator value="1"/>
+                                 </quantity>
+                                 <containerPackagedProduct>
+                                    <code code="0363-2092-08" codeSystem="2.16.840.1.113883.6.69"/>
+                                    <formCode code="C43182" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="CARTON"/>
+                                 </containerPackagedProduct>
+                              </asContent>
+                           </containerPackagedProduct>
+                        </asContent>
+                     </manufacturedProduct>
+                     <subjectOf>
+                        <approval>
+                           <id extension="ANDA076805" root="2.16.840.1.113883.3.150"/>
+                           <code code="C73584" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ANDA"/>
+                           <author>
+                              <territorialAuthority>
+                                 <territory>
+                                    <code code="USA" codeSystem="2.16.840.1.113883.5.28"/>
+                                 </territory>
+                              </territorialAuthority>
+                           </author>
+                        </approval>
+                     </subjectOf>
+                     <subjectOf>
+                        <marketingAct>
+                           <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <statusCode code="active"/>
+                           <effectiveTime>
+                              <low value="20100227"/>
+                           </effectiveTime>
+                        </marketingAct>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLCOLOR" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value code="C48330" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="YELLOW" xsi:type="CE">
+                              <originalText>colorless to slightly yellow</originalText>
+                           </value>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLFLAVOR" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value code="C73391" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="GRAPE" xsi:type="CE"/>
+                        </characteristic>
+                     </subjectOf>
+                     <consumedIn>
+                        <substanceAdministration>
+                           <routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ORAL"/>
+                        </substanceAdministration>
+                     </consumedIn>
+                  </manufacturedProduct>
+               </subject>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="fa25ae05-dd2a-4485-a241-809f787cbb72"/>
+               <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold italics">Drug Facts</content>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20140324"/>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="670eea58-7d6c-442c-8e29-cd6aac6ec713"/>
+               <code code="55106-9" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - ACTIVE INGREDIENT SECTION"/>
+               <title>Active ingredient (in each 5 mL teaspoonful)</title>
+               <text>
+                  <paragraph>Loratadine 5 mg</paragraph>
+               </text>
+               <effectiveTime value="20140324"/>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="eca9f6c2-d0d3-434e-9922-f8fb950eb01b"/>
+               <code code="55105-1" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - PURPOSE SECTION"/>
+               <title>Purpose</title>
+               <text>
+                  <paragraph>Antihistamine</paragraph>
+               </text>
+               <effectiveTime value="20140324"/>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="f535a025-f31e-40d6-a876-65acb3162869"/>
+               <code code="34067-9" codeSystem="2.16.840.1.113883.6.1" displayName="INDICATIONS &amp; USAGE SECTION"/>
+               <title>Uses</title>
+               <text>
+                  <paragraph>temporarily relieves these symptoms due to hay fever or other upper respiratory allergies:</paragraph>
+                  <list listType="unordered" styleCode="disc">
+                     <item>runny nose</item>
+                     <item>itchy, watery eyes</item>
+                     <item>sneezing</item>
+                     <item>itching of the nose or throat</item>
+                  </list>
+               </text>
+               <effectiveTime value="20140324"/>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="effa172f-0ee5-4347-89ed-887ad15718bb"/>
+               <code code="34071-1" codeSystem="2.16.840.1.113883.6.1" displayName="WARNINGS SECTION"/>
+               <title>Warnings</title>
+               <effectiveTime value="20140324"/>
+               <component>
+                  <section>
+                     <id root="26469220-ad4c-44ff-96b2-193fabe1b6bc"/>
+                     <code code="50570-1" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - DO NOT USE SECTION"/>
+                     <text>
+                        <paragraph>
+                           <content styleCode="bold">Do not use </content>if you have ever had an allergic reaction to this product or any of its ingredients.</paragraph>
+                     </text>
+                     <effectiveTime value="20140324"/>
+                  </section>
+               </component>
+               <component>
+                  <section>
+                     <id root="e3a195d9-ba75-40fe-a78d-6b121aff9a4b"/>
+                     <code code="50569-3" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - ASK DOCTOR SECTION"/>
+                     <text>
+                        <paragraph>
+                           <content styleCode="bold">Ask a doctor before use if you have </content>liver or kidney disease. Your doctor should determine if you need a different dose.</paragraph>
+                     </text>
+                     <effectiveTime value="20140324"/>
+                  </section>
+               </component>
+               <component>
+                  <section>
+                     <id root="dc955db8-a537-4ea0-9ed6-029b69116dd7"/>
+                     <code code="50567-7" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - WHEN USING SECTION"/>
+                     <text>
+                        <paragraph>
+                           <content styleCode="bold">When using this product </content>do not take more than directed. Taking more than directed may cause drowsiness.</paragraph>
+                     </text>
+                     <effectiveTime value="20140324"/>
+                  </section>
+               </component>
+               <component>
+                  <section>
+                     <id root="82c96162-5d7f-47d1-b641-781b937b7110"/>
+                     <code code="50566-9" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - STOP USE SECTION"/>
+                     <text>
+                        <paragraph>
+                           <content styleCode="bold">Stop use and ask a doctor if </content>an allergic reaction to this product occurs. Seek medical help right away.</paragraph>
+                     </text>
+                     <effectiveTime value="20140324"/>
+                  </section>
+               </component>
+               <component>
+                  <section>
+                     <id root="c5fddbad-ef23-4643-ae78-3950db02b3d6"/>
+                     <code code="53414-9" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - PREGNANCY OR BREAST FEEDING SECTION"/>
+                     <text>
+                        <paragraph>
+                           <content styleCode="bold">If pregnant or breast-feeding, </content>ask a health professional before use.</paragraph>
+                     </text>
+                     <effectiveTime value="20140324"/>
+                  </section>
+               </component>
+               <component>
+                  <section>
+                     <id root="566b6665-87ae-40b7-90fa-e3f7805c8be1"/>
+                     <code code="50565-1" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - KEEP OUT OF REACH OF CHILDREN SECTION"/>
+                     <text>
+                        <paragraph>
+                           <content styleCode="bold">Keep out of reach of children. </content>In case of overdose, get medical help or contact a Poison Control Center right away. (1-800-222-1222)</paragraph>
+                     </text>
+                     <effectiveTime value="20140324"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="6f520887-417b-44aa-9fee-f14492551b1f"/>
+               <code code="34068-7" codeSystem="2.16.840.1.113883.6.1" displayName="DOSAGE &amp; ADMINISTRATION SECTION"/>
+               <title>Directions</title>
+               <text>
+                  <list listType="unordered" styleCode="disc">
+                     <item>use only with enclosed dosing cup</item>
+                  </list>
+                  <table width="60%" styleCode="Noautorules">
+                     <col width="30%" align="left" valign="top"/>
+                     <col width="70%" align="left" valign="top"/>
+                     <tbody>
+                        <tr styleCode="Botrule">
+                           <td styleCode="Rrule">adults and children 6 years and over</td>
+                           <td>2 teaspoonfuls (tsp) daily; do not take more than 2 teaspoonfuls (tsp) in 24 hours</td>
+                        </tr>
+                        <tr styleCode="Botrule">
+                           <td styleCode="Rrule">children 2 to under 6 years of age</td>
+                           <td>1 teaspoonful (tsp) daily; do not take more than 1 teaspoonful (tsp) in 24 hours</td>
+                        </tr>
+                        <tr styleCode="Botrule">
+                           <td styleCode="Rrule">children under 2 years of age</td>
+                           <td>ask a doctor</td>
+                        </tr>
+                        <tr styleCode="Botrule">
+                           <td styleCode="Rrule">consumers with liver or kidney disease</td>
+                           <td>ask a doctor</td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </text>
+               <effectiveTime value="20140324"/>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="88082fad-d4ac-4262-b9d0-94b1a9bf7a54"/>
+               <code code="44425-7" codeSystem="2.16.840.1.113883.6.1" displayName="STORAGE AND HANDLING SECTION"/>
+               <title>Other information</title>
+               <text>
+                  <list listType="unordered" styleCode="disc">
+                     <item>
+                        <content styleCode="bold">safety sealed: do not use if imprinted safety seal is torn or missing</content>
+                     </item>
+                     <item>store between 20° and 25°C (68° and 77°F)</item>
+                  </list>
+               </text>
+               <effectiveTime value="20140324"/>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="f9233e81-6d7a-4495-b2b0-87d8de215d98"/>
+               <code code="51727-6" codeSystem="2.16.840.1.113883.6.1" displayName="INACTIVE INGREDIENT SECTION"/>
+               <title>Inactive ingredients</title>
+               <text>
+                  <paragraph>glycerin, grape flavor, maltitol solution, masking agent, noncrystallizing sorbitol solution, phosphoric acid, polyethylene glycol, propylene glycol, purified water, sodium benzoate, sodium metabisulfite, sodium phosphate monobasic dihydrate, sucralose powder.</paragraph>
+               </text>
+               <effectiveTime value="20140324"/>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="8fa0cca3-8d79-4c2d-9067-2eada5c3f76e"/>
+               <code code="53413-1" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - QUESTIONS SECTION"/>
+               <title>Questions?</title>
+               <text>
+                  <paragraph>Call<content styleCode="bold"> 1-866-923-4914</content>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20140324"/>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="1c19345c-e1f1-446e-b476-9a3524e7a83f"/>
+               <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+               <text>
+                  <paragraph>DISTRIBUTED BY: WALGREEN CO.<br/>200 WILMOT RD., DEERFIELD, IL 60015</paragraph>
+               </text>
+               <effectiveTime value="20140324"/>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="cdec4f0c-2990-44ff-979a-809c191a0c1b"/>
+               <code code="51945-4" codeSystem="2.16.840.1.113883.6.1" displayName="PACKAGE LABEL.PRINCIPAL DISPLAY PANEL"/>
+               <title>PRINCIPAL DISPLAY PANEL - 120 mL Bottle Carton</title>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">Well </content>at<br/>
+                     <content styleCode="bold italics">Walgreens</content>
+                  </paragraph>
+                  <paragraph>NDC 0363-2092-08</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">WALGREENS PHARMACIST RECOMMENDED<sup>‡</sup>
+                     </content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">children's</content>
+                     <br/>
+                     <content styleCode="bold">Wal-itin<sup>®</sup>
+                     </content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Loratadine Oral Solution<br/>5 mg/5 mL / Antihistamine</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Allergy</content>
+                  </paragraph>
+                  <list listType="unordered" styleCode="disc">
+                     <item>
+                        <content styleCode="bold">Alcohol free</content>
+                     </item>
+                     <item>
+                        <content styleCode="bold">Sugar free</content>
+                     </item>
+                     <item>
+                        <content styleCode="bold">Relief of runny nose, sneezing,<br/>itchy throat or nose &amp; itchy,<br/>watery eyes</content>
+                     </item>
+                     <item>
+                        <content styleCode="bold">Non-drowsy*</content>
+                     </item>
+                     <item>
+                        <content styleCode="bold">Ages 2 years &amp; older</content>
+                     </item>
+                  </list>
+                  <paragraph>
+                     <content styleCode="bold">DYE &amp;<br/>SUGAR<br/>FREE</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">INDOOR &amp;<br/>OUTDOOR<br/>ALLERGIES</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">24<br/>HOUR<br/>RELIEF</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">4 FL OZ (120 mL)</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">GRAPE<br/>FLAVOR</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Compare to Children's Claritin<sup>®</sup>
+                        <br/>active ingredient<sup>‡‡</sup>
+                     </content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">*WHEN TAKEN AS DIRECTED. SEE DRUG FACTS PANEL.</content>
+                  </paragraph>
+                  <renderMultiMedia referencedObject="MM1"/>
+               </text>
+               <effectiveTime value="20140324"/>
+               <component>
+                  <observationMedia ID="MM1">
+                     <text>Principal Display Panel - 120 mL Bottle Carton</text>
+                     <value xsi:type="ED" mediaType="image/jpeg">
+                        <reference value="loratadine-01.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+      </structuredBody>
+   </component>
+</document>

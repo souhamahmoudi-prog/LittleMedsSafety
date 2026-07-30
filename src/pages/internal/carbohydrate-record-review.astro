@@ -755,10 +755,21 @@ const extractionStatuses = [
 
   function approvalErrors(record) {
     const errors = [];
+    const exactProductIdentity = [
+      record.genericName,
+      record.brandName || record.sourceLabelTitle,
+      record.strength,
+    ].filter(Boolean).join(' ');
+    const manufacturerOrLabeler = [
+      record.packagerName,
+      record.labelerName,
+      record.manufacturerName,
+      record.distributorName,
+      record.manufacturer,
+    ].find((value) => String(value || '').trim());
     [
-      ['generic name', record.genericName],
-      ['manufacturer or labeler', displayedManufacturer(record)],
-      ['strength', record.strength],
+      ['exact product identity', exactProductIdentity],
+      ['manufacturer or labeler', manufacturerOrLabeler],
       ['dosage form', record.normalizedDosageForm || record.dosageForm],
       ['NDC or package identifier', ndcValues(record).join(' ') || record.packageDescription || record.sourceSetId],
       ['official source URL', record.sourceUrl],
@@ -768,6 +779,9 @@ const extractionStatuses = [
     ].forEach(([label, value]) => {
       if (!String(value || '').trim()) errors.push(`${label} is required.`);
     });
+    if (!record.genericName || !(record.brandName || record.sourceLabelTitle) || !record.strength) {
+      errors.push('Exact product identity requires generic name, product label or brand name, and strength.');
+    }
 
     if (!ingredientArray(record).length) {
       errors.push('At least one reviewed carbohydrate ingredient is required.');
@@ -787,11 +801,25 @@ const extractionStatuses = [
         ) {
           errors.push('Each ingredient with an available amount requires amount in mg, unit, carbohydrate ingredient, and carbohydrate source.');
         }
+        const quantitySourceText = `${ingredient.sourceExcerpt || ''} ${record.sourceExcerpt || ''}`;
+        if (!/\b\d+(?:\.\d+)?\s*(?:mcg|mg|g|microgram|micrograms|milligram|milligrams|gram|grams)\b/i.test(quantitySourceText)) {
+          errors.push('Each quantitative amount must be explicitly present in the reviewed source excerpt.');
+        }
       });
     }
 
-    if (/\b(inferred quantity|quantity inferred|estimated quantity|quantity estimated|assumed amount|assumed quantity|another manufacturer|another formulation)\b/i.test(record.notes || '')) {
-      errors.push('Approval cannot include inferred or estimated quantity notes.');
+    const hasQuantitativeAmount = ingredientArray(record).some((ingredient) => ingredient.normalizedAmountMg !== null)
+      || record.normalizedAmountMg !== null
+      || record.publishedAmount !== null;
+    if (hasQuantitativeAmount) {
+      const inventionRiskText = [
+        record.notes,
+        record.sourceExcerpt,
+        ...ingredientArray(record).map((ingredient) => ingredient.sourceExcerpt),
+      ].join(' ');
+      if (/\b(inferred|estimated|assumed|extrapolated|calculated|not stated|not provided|another manufacturer|another formulation)\b/i.test(inventionRiskText)) {
+        errors.push('Approval cannot include invented, inferred, estimated, extrapolated, or cross-product quantitative amounts.');
+      }
     }
 
     return errors;
@@ -825,12 +853,20 @@ const extractionStatuses = [
     return merged;
   }
 
-  function hasSessionDuplicate(destination, record) {
+  function hasRecordDuplicate(records, record) {
     const id = String(record.id || '').trim();
     const key = recordKey(record);
-    return state[destination].some((item) => (
+    return records.some((item) => (
       (id && String(item.id || '').trim() === id) || recordKey(item) === key
     ));
+  }
+
+  function hasSessionDuplicate(destination, record) {
+    return hasRecordDuplicate(state[destination], record);
+  }
+
+  function hasApprovedDuplicate(record) {
+    return hasRecordDuplicate([...state.existingApproved, ...state.approved], record);
   }
 
   function selectNextRecord() {
@@ -885,6 +921,9 @@ const extractionStatuses = [
 
     if (action === 'approved') {
       const errors = approvalErrors(record);
+      if (hasApprovedDuplicate(record)) {
+        errors.push('This record is already approved or duplicates an approved exact product.');
+      }
       if (errors.length) {
         showMessage(`Approval blocked: ${errors.join(' ')}`, 'error');
         return;

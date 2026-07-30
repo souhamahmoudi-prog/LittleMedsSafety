@@ -1,0 +1,662 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="https://www.accessdata.fda.gov/spl/stylesheet/spl.xsl" type="text/xsl"?>
+<document xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 https://www.accessdata.fda.gov/spl/schema/spl.xsd">
+   <id root="6b714ab7-ee3a-4b6a-ab4b-de3c2b2b2499"/>
+   <code code="34390-5" codeSystem="2.16.840.1.113883.6.1" displayName="HUMAN OTC DRUG LABEL"/>
+   <title>Cetirizine Hydrochloride Oral Solution 1 mg/mL</title>
+   <effectiveTime value="20260518"/>
+   <setId root="9c0549cf-4c93-45d9-9eac-3948fa45554e"/>
+   <versionNumber value="5"/>
+   <author>
+      <time/>
+      <assignedEntity>
+         <representedOrganization>
+            <id extension="119101193" root="1.3.6.1.4.1.519.1"/>
+            <name>APOZEAL PHARMACEUTICALS INC</name>
+            <assignedEntity>
+               <assignedOrganization>
+                  <id extension="119101193" root="1.3.6.1.4.1.519.1"/>
+                  <name>APOZEAL PHARMACEUTICALS INC</name>
+                  <assignedEntity>
+                     <assignedOrganization>
+                        <id extension="119101193" root="1.3.6.1.4.1.519.1"/>
+                        <name>APOZEAL PHARMACEUTICALS INC</name>
+                     </assignedOrganization>
+                     <performance>
+                        <actDefinition>
+                           <code code="C43360" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MANUFACTURE"/>
+                           <product>
+                              <manufacturedProduct classCode="MANU">
+                                 <manufacturedMaterialKind>
+                                    <code code="83745-188" codeSystem="2.16.840.1.113883.6.69"/>
+                                 </manufacturedMaterialKind>
+                              </manufacturedProduct>
+                           </product>
+                        </actDefinition>
+                     </performance>
+                     <performance>
+                        <actDefinition>
+                           <code code="C25391" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ANALYSIS"/>
+                           <product>
+                              <manufacturedProduct classCode="MANU">
+                                 <manufacturedMaterialKind>
+                                    <code code="83745-188" codeSystem="2.16.840.1.113883.6.69"/>
+                                 </manufacturedMaterialKind>
+                              </manufacturedProduct>
+                           </product>
+                        </actDefinition>
+                     </performance>
+                     <performance>
+                        <actDefinition>
+                           <code code="C84731" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="pack"/>
+                           <product>
+                              <manufacturedProduct classCode="MANU">
+                                 <manufacturedMaterialKind>
+                                    <code code="83745-188" codeSystem="2.16.840.1.113883.6.69"/>
+                                 </manufacturedMaterialKind>
+                              </manufacturedProduct>
+                           </product>
+                        </actDefinition>
+                     </performance>
+                  </assignedEntity>
+               </assignedOrganization>
+            </assignedEntity>
+         </representedOrganization>
+      </assignedEntity>
+   </author>
+   <component>
+      <structuredBody>
+         <component>
+            <section ID="DLDE">
+               <id root="59cd2b2b-493c-41dd-a579-4133b797f36c"/>
+               <code code="48780-1" codeSystem="2.16.840.1.113883.6.1" displayName="SPL PRODUCT DATA ELEMENTS SECTION"/>
+               <effectiveTime value="20260518"/>
+               <subject>
+                  <manufacturedProduct>
+                     <manufacturedProduct>
+                        <code code="83745-188" codeSystem="2.16.840.1.113883.6.69"/>
+                        <name>Cetrizine Hydrochloride</name>
+                        <formCode code="C42986" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="SOLUTION"/>
+                        <asEntityWithGeneric>
+                           <genericMedicine>
+                              <name>CETIRIZINE HYDROCHLORIDE</name>
+                           </genericMedicine>
+                        </asEntityWithGeneric>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator value="1" unit="mg"/>
+                              <denominator value="1" unit="mL"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="64O047KTOA" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>CETIRIZINE HYDROCHLORIDE</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="YO7261ME24" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>CETIRIZINE</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="A2I8C7HI9T" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>METHYLPARABEN</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="Z8IX2SC1OH" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>PROPYLPARABEN</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="PDC6A3C0OX" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>GLYCERIN</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="6DC9Q167V3" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>PROPYLENE GLYCOL</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="4550K0SC9B" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>SODIUM ACETATE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="6X543N684K" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>GRAPE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="Q40Q9N063P" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>ACETIC ACID</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="C151H8M554" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>SUCROSE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="059QF0KO0R" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>WATER</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <asContent>
+                           <quantity>
+                              <numerator value="118" unit="mL"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code/>
+                              <formCode code="C43169" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOTTLE"/>
+                              <asContent>
+                                 <quantity>
+                                    <numerator value="1" unit="1"/>
+                                    <denominator value="1"/>
+                                 </quantity>
+                                 <containerPackagedProduct>
+                                    <code code="83745-188-04" codeSystem="2.16.840.1.113883.6.69"/>
+                                    <formCode code="C43182" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="CARTON"/>
+                                 </containerPackagedProduct>
+                                 <subjectOf>
+                                    <marketingAct>
+                                       <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                                       <statusCode code="active"/>
+                                       <effectiveTime>
+                                          <low value="20251222"/>
+                                       </effectiveTime>
+                                    </marketingAct>
+                                 </subjectOf>
+                              </asContent>
+                           </containerPackagedProduct>
+                           <subjectOf>
+                              <characteristic>
+                                 <code code="SPLCMBPRDTP" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                                 <value code="C112160" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="Type 0: Not a Combination Product" xsi:type="CV"/>
+                              </characteristic>
+                           </subjectOf>
+                        </asContent>
+                        <asContent>
+                           <quantity>
+                              <numerator value="237" unit="mL"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code/>
+                              <formCode code="C43169" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOTTLE"/>
+                              <asContent>
+                                 <quantity>
+                                    <numerator value="1" unit="1"/>
+                                    <denominator value="1"/>
+                                 </quantity>
+                                 <containerPackagedProduct>
+                                    <code code="83745-188-08" codeSystem="2.16.840.1.113883.6.69"/>
+                                    <formCode code="C43182" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="CARTON"/>
+                                 </containerPackagedProduct>
+                                 <subjectOf>
+                                    <marketingAct>
+                                       <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                                       <statusCode code="active"/>
+                                       <effectiveTime>
+                                          <low value="20260416"/>
+                                       </effectiveTime>
+                                    </marketingAct>
+                                 </subjectOf>
+                              </asContent>
+                           </containerPackagedProduct>
+                           <subjectOf>
+                              <characteristic>
+                                 <code code="SPLCMBPRDTP" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                                 <value code="C112160" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="Type 0: Not a Combination Product" xsi:type="CV"/>
+                              </characteristic>
+                           </subjectOf>
+                        </asContent>
+                        <asContent>
+                           <quantity>
+                              <numerator value="473" unit="mL"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code/>
+                              <formCode code="C43169" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOTTLE"/>
+                              <asContent>
+                                 <quantity>
+                                    <numerator value="1" unit="1"/>
+                                    <denominator value="1"/>
+                                 </quantity>
+                                 <containerPackagedProduct>
+                                    <code code="83745-188-16" codeSystem="2.16.840.1.113883.6.69"/>
+                                    <formCode code="C43182" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="CARTON"/>
+                                 </containerPackagedProduct>
+                                 <subjectOf>
+                                    <marketingAct>
+                                       <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                                       <statusCode code="active"/>
+                                       <effectiveTime>
+                                          <low value="20260416"/>
+                                       </effectiveTime>
+                                    </marketingAct>
+                                 </subjectOf>
+                              </asContent>
+                           </containerPackagedProduct>
+                           <subjectOf>
+                              <characteristic>
+                                 <code code="SPLCMBPRDTP" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                                 <value code="C112160" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="Type 0: Not a Combination Product" xsi:type="CV"/>
+                              </characteristic>
+                           </subjectOf>
+                        </asContent>
+                        <asContent>
+                           <quantity>
+                              <numerator value="120" unit="mL"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code code="83745-188-12" codeSystem="2.16.840.1.113883.6.69"/>
+                              <formCode code="C43173" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOTTLE, PLASTIC"/>
+                           </containerPackagedProduct>
+                           <subjectOf>
+                              <characteristic>
+                                 <code code="SPLCMBPRDTP" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                                 <value code="C112160" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="Type 0: Not a Combination Product" xsi:type="CV"/>
+                              </characteristic>
+                           </subjectOf>
+                           <subjectOf>
+                              <marketingAct>
+                                 <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                                 <statusCode code="active"/>
+                                 <effectiveTime>
+                                    <low value="20260416"/>
+                                 </effectiveTime>
+                              </marketingAct>
+                           </subjectOf>
+                        </asContent>
+                        <asContent>
+                           <quantity>
+                              <numerator value="240" unit="mL"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code code="83745-188-24" codeSystem="2.16.840.1.113883.6.69"/>
+                              <formCode code="C43173" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOTTLE, PLASTIC"/>
+                           </containerPackagedProduct>
+                           <subjectOf>
+                              <characteristic>
+                                 <code code="SPLCMBPRDTP" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                                 <value code="C112160" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="Type 0: Not a Combination Product" xsi:type="CV"/>
+                              </characteristic>
+                           </subjectOf>
+                           <subjectOf>
+                              <marketingAct>
+                                 <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                                 <statusCode code="active"/>
+                                 <effectiveTime>
+                                    <low value="20260416"/>
+                                 </effectiveTime>
+                              </marketingAct>
+                           </subjectOf>
+                        </asContent>
+                        <asContent>
+                           <quantity>
+                              <numerator value="480" unit="mL"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code code="83745-188-48" codeSystem="2.16.840.1.113883.6.69"/>
+                              <formCode code="C43173" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOTTLE, PLASTIC"/>
+                           </containerPackagedProduct>
+                           <subjectOf>
+                              <characteristic>
+                                 <code code="SPLCMBPRDTP" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                                 <value code="C112160" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="Type 0: Not a Combination Product" xsi:type="CV"/>
+                              </characteristic>
+                           </subjectOf>
+                           <subjectOf>
+                              <marketingAct>
+                                 <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                                 <statusCode code="active"/>
+                                 <effectiveTime>
+                                    <low value="20260416"/>
+                                 </effectiveTime>
+                              </marketingAct>
+                           </subjectOf>
+                        </asContent>
+                     </manufacturedProduct>
+                     <subjectOf>
+                        <approval>
+                           <id extension="ANDA090474" root="2.16.840.1.113883.3.150"/>
+                           <code code="C73584" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ANDA"/>
+                           <author>
+                              <territorialAuthority>
+                                 <territory>
+                                    <code code="USA" codeSystem="2.16.840.1.113883.5.28"/>
+                                 </territory>
+                              </territorialAuthority>
+                           </author>
+                        </approval>
+                     </subjectOf>
+                     <subjectOf>
+                        <marketingAct>
+                           <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <statusCode code="active"/>
+                           <effectiveTime>
+                              <low value="20250101"/>
+                           </effectiveTime>
+                        </marketingAct>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLCOLOR" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value code="C48330" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="YELLOW" xsi:type="CE">
+                              <originalText>Colorless to slightly yellow</originalText>
+                           </value>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLFLAVOR" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value code="C73391" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="GRAPE" xsi:type="CE"/>
+                        </characteristic>
+                     </subjectOf>
+                     <consumedIn>
+                        <substanceAdministration>
+                           <routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ORAL"/>
+                        </substanceAdministration>
+                     </consumedIn>
+                  </manufacturedProduct>
+               </subject>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="8cec6575-30fc-49d2-99ca-182a1959bb68"/>
+               <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+               <text>
+                  <paragraph>
+                     <content styleCode="Bold Italics">Drug Facts</content>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20260518"/>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="bc9b49ce-49bf-411a-b245-5b1e84b6d6eb"/>
+               <code code="55106-9" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - ACTIVE INGREDIENT SECTION"/>
+               <title>
+                  <content styleCode="italics">Active ingredient (in each 5 mL teaspoonful)       Purpose</content>
+               </title>
+               <text>
+                  <paragraph>Cetirizine HCl 5 mg----------------------------------Antihistamine</paragraph>
+               </text>
+               <effectiveTime value="20260518"/>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="a39d62fc-94a8-4a3f-a20d-e45f2442e7cd"/>
+               <code code="55105-1" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - PURPOSE SECTION"/>
+               <title>
+                  <content styleCode="italics">Purpose</content>
+               </title>
+               <text>
+                  <paragraph>Antihistamine</paragraph>
+               </text>
+               <effectiveTime value="20260518"/>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="e5f950d9-ccc8-4646-ba9e-68e300f75757"/>
+               <code code="34067-9" codeSystem="2.16.840.1.113883.6.1" displayName="INDICATIONS &amp; USAGE SECTION"/>
+               <title>
+                  <content styleCode="italics">Uses</content>
+               </title>
+               <text>
+                  <paragraph>temporarily relieves these symptoms due to hay fever or upper respiratory allergies:</paragraph>
+                  <list listType="unordered" styleCode="Square">
+                     <item>runny nose</item>
+                     <item>sneezing</item>
+                     <item>itchy, watery eyes</item>
+                     <item>itching of the nose or throat</item>
+                  </list>
+               </text>
+               <effectiveTime value="20260518"/>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="b5d48769-7b35-4097-a8be-6355de20ba03"/>
+               <code code="34071-1" codeSystem="2.16.840.1.113883.6.1" displayName="WARNINGS SECTION"/>
+               <title>
+                  <content styleCode="italics">Warnings</content>
+               </title>
+               <effectiveTime value="20260518"/>
+               <component>
+                  <section>
+                     <id root="ff95b92c-c0e7-416c-be90-ac0e0dc53ad1"/>
+                     <code code="50570-1" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - DO NOT USE SECTION"/>
+                     <text>
+                        <paragraph>
+                           <content styleCode="bold">Do not use</content> if you have ever had an allergic reaction to this product or any of its ingredients or to an antihistamine containing hydroxyzine.</paragraph>
+                     </text>
+                     <effectiveTime value="20260417"/>
+                  </section>
+               </component>
+               <component>
+                  <section>
+                     <id root="5610561a-8c24-4bda-99fa-c93bcda952c5"/>
+                     <code code="50569-3" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - ASK DOCTOR SECTION"/>
+                     <text>
+                        <paragraph>
+                           <content styleCode="bold">Ask a doctor before use if you have</content> liver or kidney disease. Your doctor should determine if you need a different dose.</paragraph>
+                     </text>
+                     <effectiveTime value="20260518"/>
+                  </section>
+               </component>
+               <component>
+                  <section>
+                     <id root="cf6d098f-7c81-4128-ade1-2550ed2cb622"/>
+                     <code code="50568-5" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - ASK DOCTOR/PHARMACIST SECTION"/>
+                     <text>
+                        <paragraph>
+                           <content styleCode="bold">Ask a doctor or pharmacist before use if you are</content> taking tranquilizers or sedatives.</paragraph>
+                     </text>
+                     <effectiveTime value="20260518"/>
+                  </section>
+               </component>
+               <component>
+                  <section>
+                     <id root="c3bd226a-abae-45f8-9a05-4f53951cef61"/>
+                     <code code="50567-7" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - WHEN USING SECTION"/>
+                     <title>When using this product</title>
+                     <text>
+                        <list listType="unordered" styleCode="Square">
+                           <item>drowsiness may occur</item>
+                           <item>avoid alcoholic drinks</item>
+                           <item>alcohol, sedatives, and tranquilizers may increase drowsiness</item>
+                           <item>be careful when driving a motor vehicle or operating machinery</item>
+                        </list>
+                     </text>
+                     <effectiveTime value="20260518"/>
+                  </section>
+               </component>
+               <component>
+                  <section>
+                     <id root="8016155d-e9ba-4966-a868-3b4e86768d73"/>
+                     <code code="50566-9" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - STOP USE SECTION"/>
+                     <text>
+                        <paragraph>
+                           <content styleCode="bold">Stop use and ask a doctor if</content> an allergic reaction to this product occurs. Seek medical help right away.</paragraph>
+                     </text>
+                     <effectiveTime value="20260518"/>
+                  </section>
+               </component>
+               <component>
+                  <section>
+                     <id root="428da40c-23f3-4a50-a675-2a91975df1e4"/>
+                     <code code="53414-9" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - PREGNANCY OR BREAST FEEDING SECTION"/>
+                     <title>If pregnant or breast-feeding:</title>
+                     <text>
+                        <list listType="unordered" styleCode="Square">
+                           <item>if breast-feeding: not recommended</item>
+                           <item>if pregnant: ask a health professional before use.</item>
+                        </list>
+                     </text>
+                     <effectiveTime value="20260518"/>
+                  </section>
+               </component>
+               <component>
+                  <section>
+                     <id root="2c28365b-1d23-4e90-911c-6780e7d6b037"/>
+                     <code code="50565-1" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - KEEP OUT OF REACH OF CHILDREN SECTION"/>
+                     <text>
+                        <paragraph>
+                           <content styleCode="bold">Keep out of reach of children.</content> In case of overdose, get medical help or contact a Poison Control Center right away. (1-800-222-1222)</paragraph>
+                     </text>
+                     <effectiveTime value="20260518"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="13b5e281-41fd-4363-a7cb-9b93a136a177"/>
+               <code code="34068-7" codeSystem="2.16.840.1.113883.6.1" displayName="DOSAGE &amp; ADMINISTRATION SECTION"/>
+               <title>
+                  <content styleCode="italics">Directions</content>
+               </title>
+               <text>
+                  <list listType="unordered" styleCode="Square">
+                     <item>use only with enclosed dosing cup </item>
+                     <item>adults and children 6 years and over: 1 teaspoonful (5 mL) or 2 teaspoonfuls (10 mL) once daily depending upon severity of symptoms; do not take more than 2 teaspoonfuls (10 mL) in 24 hours. </item>
+                     <item>adults 65 years and over: 1 teaspoonful (5 mL) once daily; do not take more than 1 teaspoonful (5 mL) in 24 hours. </item>
+                     <item>children 2 to under 6 years of age: 1/2 teaspoonful (2.5 mL) once daily. If needed, dose can be increased to a maximum of 1 teaspoonful (5 mL) once daily or 1/2 teaspoonful (2.5 mL) every 12 hours. Do not give more than 1 teaspoonful (5 mL) in 24 hours. </item>
+                     <item>children under 2 years of age: ask a doctor </item>
+                     <item>consumers with liver or kidney disease: ask a doctor</item>
+                  </list>
+               </text>
+               <effectiveTime value="20260518"/>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="2b1c0b46-ee1f-4c66-bb87-f51d68c2c093"/>
+               <code code="44425-7" codeSystem="2.16.840.1.113883.6.1" displayName="STORAGE AND HANDLING SECTION"/>
+               <title>
+                  <content styleCode="italics">Other information</content>
+               </title>
+               <text>
+                  <list listType="unordered" styleCode="Square">
+                     <item>
+                        <content styleCode="bold">Store between 20° to 25°C (68° to 77°F). </content>
+                        <content styleCode="italics">Excursions permitted to 15°–30°C (59°–86°F) [see USP Controlled Room Temperature].</content>
+                     </item>
+                     <item>
+                        <content styleCode="bold">Tamper Evident </content>
+                     </item>
+                     <item>
+                        <content styleCode="bold">Do not use if foil seal over mouth of the bottle is torn, broken or missing</content>
+                     </item>
+                     <item>
+                        <content styleCode="bold">Dosing cup should be washed and left to air dry after each use.</content>
+                     </item>
+                  </list>
+               </text>
+               <effectiveTime value="20260518"/>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="846f1e0a-e694-4f98-bbe9-ea86e4a68482"/>
+               <code code="51727-6" codeSystem="2.16.840.1.113883.6.1" displayName="INACTIVE INGREDIENT SECTION"/>
+               <title>Inactive ingredients</title>
+               <text>
+                  <paragraph>glacial acetic acid, glycerine, grape flavor, methylparaben, propylene glycol, propylparaben, purified water, sodium acetate, sucrose</paragraph>
+               </text>
+               <effectiveTime value="20260417"/>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="1aa101c5-911d-4023-846e-bd8d62834e8d"/>
+               <code code="53413-1" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - QUESTIONS SECTION"/>
+               <title>Questions or comments?</title>
+               <text>
+                  <paragraph>1-833-688-7848</paragraph>
+                  <paragraph>*This product is not manufactured or distributed by McNeil Consumer Healthcare, Division of McNeil-PPC, Inc., distributor of Children’s Zyrtec<sup>®</sup>.</paragraph>
+               </text>
+               <effectiveTime value="20260518"/>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="bc033386-27ec-4444-b6d0-45ea1b43c211"/>
+               <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+               <text>
+                  <paragraph>Distributed by:<br/>
+                     <content styleCode="bold">Apozeal Pharmaceuticals Inc.</content>
+                     <br/>Hartel St, Levittown PA 19057</paragraph>
+               </text>
+               <effectiveTime value="20260518"/>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="09ef876e-9cf2-4cf8-ae8e-ac34ae497f70"/>
+               <code code="51945-4" codeSystem="2.16.840.1.113883.6.1" displayName="PACKAGE LABEL.PRINCIPAL DISPLAY PANEL"/>
+               <title>PRINCIPAL DISPLAY PANEL </title>
+               <text>
+                  <paragraph>NDC 83745-<content styleCode="bold">188</content>-12</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Cetirizine Hydrochloride Oral Solution, USP</content>
+                  </paragraph>
+                  <paragraph>1mg/mL</paragraph>
+                  <paragraph>Grape Flavored Syrup</paragraph>
+                  <paragraph>120 mL</paragraph>
+                  <paragraph>
+                     <renderMultiMedia referencedObject="L438b0559-2a1c-46f4-984b-897bd3830fc0"/>
+                  </paragraph>
+                  <paragraph>NDC 83745-<content styleCode="bold">188</content>-24</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Cetirizine Hydrochloride Oral Solution, USP</content>
+                  </paragraph>
+                  <paragraph>1mg/mL</paragraph>
+                  <paragraph>Grape Flavored Syrup</paragraph>
+                  <paragraph>120 mL</paragraph>
+                  <paragraph>
+                     <renderMultiMedia referencedObject="Lcd5702b1-9979-434a-96e9-1be595db6142"/>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20260518"/>
+               <component>
+                  <observationMedia ID="Lcd5702b1-9979-434a-96e9-1be595db6142">
+                     <text>containerlabel240ml</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="containerlabel240ml.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+               <component>
+                  <observationMedia ID="L438b0559-2a1c-46f4-984b-897bd3830fc0">
+                     <text>containerlabel120</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="containerlabel120ml.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+      </structuredBody>
+   </component>
+</document>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="https://www.accessdata.fda.gov/spl/stylesheet/spl.xsl" type="text/xsl"?>
+<document xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 https://www.accessdata.fda.gov/spl/schema/spl.xsd">
+   <id root="2c269fb8-9504-4eda-ab7f-4d8988d29f56"/>
+   <code code="81203-2" codeSystem="2.16.840.1.113883.6.1" displayName="BULK INGREDIENT - ANIMAL DRUG"/>
+   <title>Prednisolone anhydrous Micronized</title>
+   <effectiveTime value="20231208"/>
+   <setId root="ff7ee21a-dd5d-4bab-b5f9-3f056f5f1886"/>
+   <versionNumber value="3"/>
+   <author>
+      <time/>
+      <assignedEntity>
+         <representedOrganization>
+            <id root="1.3.6.1.4.1.519.1" extension="204011316"/>
+            <name>AX Pharmaceutical Corp</name>
+            <assignedEntity>
+               <assignedOrganization>
+                  <assignedEntity>
+                     <assignedOrganization>
+                        <id root="1.3.6.1.4.1.519.1" extension="204011316"/>
+                        <name>AX Pharmaceutical Corp</name>
+                     </assignedOrganization>
+                     <performance>
+                        <actDefinition>
+                           <code code="C73606" displayName="repack" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                        </actDefinition>
+                     </performance>
+                     <performance>
+                        <actDefinition>
+                           <code code="C73607" displayName="relabel" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                        </actDefinition>
+                     </performance>
+                  </assignedEntity>
+               </assignedOrganization>
+            </assignedEntity>
+         </representedOrganization>
+      </assignedEntity>
+   </author>
+   <component>
+      <structuredBody>
+         <component>
+            <section>
+               <id root="ec4da9cb-fec2-4e8e-bcc6-d8f0301d5aaf"/>
+               <code code="48780-1" codeSystem="2.16.840.1.113883.6.1" displayName="SPL product data elements section"/>
+               <title/>
+               <text/>
+               <effectiveTime value="20231207"/>
+               <subject>
+                  <manufacturedProduct>
+                     <manufacturedProduct>
+                        <code code="73377-047" codeSystem="2.16.840.1.113883.6.69"/>
+                        <name>Prednisolone anhydrous Micronized</name>
+                        <formCode code="C42972" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="POWDER"/>
+                        <asEntityWithGeneric>
+                           <genericMedicine>
+                              <name>Prednisolone anhydrous Micronized</name>
+                           </genericMedicine>
+                        </asEntityWithGeneric>
+                        <ingredient classCode="ACTIM">
+                           <quantity>
+                              <numerator value="1" unit="kg"/>
+                              <denominator value="1" unit="kg"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="9PHQ9Y1OLM" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>PREDNISOLONE</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="9PHQ9Y1OLM" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>PREDNISOLONE</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <asContent>
+                           <quantity>
+                              <numerator value="1" unit="kg"/>
+                              <denominator value="1" unit="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code code="73377-047-01" codeSystem="2.16.840.1.113883.6.69"/>
+                              <formCode code="C43181" displayName="CANISTER" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           </containerPackagedProduct>
+                        </asContent>
+                     </manufacturedProduct>
+                     <subjectOf>
+                        <marketingAct>
+                           <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <statusCode code="active"/>
+                           <effectiveTime>
+                              <low value="20200417"/>
+                           </effectiveTime>
+                        </marketingAct>
+                     </subjectOf>
+                     <subjectOf>
+                        <approval>
+                           <code code="C98252" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="bulk ingredient for animal drug compounding"/>
+                           <author>
+                              <territorialAuthority>
+                                 <territory>
+                                    <code code="USA" codeSystem="2.16.840.1.113883.5.28"/>
+                                 </territory>
+                              </territorialAuthority>
+                           </author>
+                        </approval>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic>
+                           <code code="SPLCOLOR" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value code="C48325" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="white" xsi:type="CE"/>
+                        </characteristic>
+                     </subjectOf>
+                     <consumedIn>
+                        <substanceAdministration>
+                           <routeCode code="C48623" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="NOT APPLICABLE"/>
+                        </substanceAdministration>
+                     </consumedIn>
+                  </manufacturedProduct>
+               </subject>
+            </section>
+         </component>
+         <component>
+            <section ID="L40760ef8-36f5-4693-be40-e114da826341">
+               <id root="f9d5e8b3-fdd3-4e2d-b0bb-801cc5af4ba4"/>
+               <code code="51945-4" codeSystem="2.16.840.1.113883.6.1" displayName="PACKAGE LABEL.PRINCIPAL DISPLAY PANEL"/>
+               <title>Prednisolone anhydrous Micronized</title>
+               <text>
+                  <paragraph>
+                     <renderMultiMedia referencedObject="L60b189d7-fc30-467f-85fe-7a353339eae1"/>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20231208"/>
+               <component>
+                  <observationMedia ID="L60b189d7-fc30-467f-85fe-7a353339eae1">
+                     <text>image description</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="Prednisolone Anhydrous Micronized 500g vet Xianju.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+      </structuredBody>
+   </component>
+</document>

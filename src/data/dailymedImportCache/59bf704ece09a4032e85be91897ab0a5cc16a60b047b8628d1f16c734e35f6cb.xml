@@ -1,0 +1,1286 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="https://www.accessdata.fda.gov/spl/stylesheet/spl.xsl" type="text/xsl"?>
+<document xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 https://www.accessdata.fda.gov/spl/schema/spl.xsd">
+   <id root="65e63c9a-9be2-43c3-bbab-4b03df80e3a7"/>
+   <code code="34391-3" codeSystem="2.16.840.1.113883.6.1" displayName="HUMAN PRESCRIPTION DRUG LABEL"/>
+   <title>These highlights do not include all the information needed to use CLINDAMYCIN PHOSPHATE FOAM safely and effectively. See full prescribing information for CLINDAMYCIN PHOSPHATE FOAM.<br/>
+      <br/>CLINDAMYCIN PHOSPHATE foam, for topical use <br/>Initial U.S. Approval: 1970</title>
+   <effectiveTime value="20260129"/>
+   <setId root="d0ec3e88-40d9-4919-afc3-cf2e7e863376"/>
+   <versionNumber value="2"/>
+   <author>
+      <time/>
+      <assignedEntity>
+         <representedOrganization>
+            <id extension="130597813" root="1.3.6.1.4.1.519.1"/>
+            <name>GLENMARK PHARMACEUTICALS INC., USA</name>
+            <assignedEntity>
+               <assignedOrganization>
+                  <assignedEntity>
+                     <assignedOrganization>
+                        <id extension="650565703" root="1.3.6.1.4.1.519.1"/>
+                        <name>Glenmark Pharmaceuticals Limited</name>
+                     </assignedOrganization>
+                     <performance>
+                        <actDefinition>
+                           <code code="C43360" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MANUFACTURE"/>
+                           <product>
+                              <manufacturedProduct classCode="MANU">
+                                 <manufacturedMaterialKind>
+                                    <code code="68462-605" codeSystem="2.16.840.1.113883.6.69"/>
+                                 </manufacturedMaterialKind>
+                              </manufacturedProduct>
+                           </product>
+                        </actDefinition>
+                     </performance>
+                     <performance>
+                        <actDefinition>
+                           <code code="C25391" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ANALYSIS"/>
+                           <product>
+                              <manufacturedProduct classCode="MANU">
+                                 <manufacturedMaterialKind>
+                                    <code code="68462-605" codeSystem="2.16.840.1.113883.6.69"/>
+                                 </manufacturedMaterialKind>
+                              </manufacturedProduct>
+                           </product>
+                        </actDefinition>
+                     </performance>
+                  </assignedEntity>
+               </assignedOrganization>
+            </assignedEntity>
+         </representedOrganization>
+      </assignedEntity>
+   </author>
+   <component>
+      <structuredBody>
+         <component>
+            <section>
+               <id root="4df55473-c297-47f8-87d8-8877f32fcf6a"/>
+               <code code="48780-1" codeSystem="2.16.840.1.113883.6.1" displayName="SPL product data elements section"/>
+               <effectiveTime value="20250724"/>
+               <subject>
+                  <manufacturedProduct>
+                     <manufacturedProduct>
+                        <code code="68462-605" codeSystem="2.16.840.1.113883.6.69"/>
+                        <name>Clindamycin Phosphate</name>
+                        <formCode code="C42888" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="AEROSOL, FOAM"/>
+                        <asEntityWithGeneric>
+                           <genericMedicine>
+                              <name>Clindamycin Phosphate</name>
+                           </genericMedicine>
+                        </asEntityWithGeneric>
+                        <ingredient classCode="ACTIM">
+                           <quantity>
+                              <numerator unit="mg" value="10"/>
+                              <denominator unit="g" value="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="EH6D7113I8" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>CLINDAMYCIN PHOSPHATE</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="3U02EL437C" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>CLINDAMYCIN</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="936JST6JCN" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>CETYL ALCOHOL</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="3K9958V90M" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>ALCOHOL</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="CAL22UVI4M" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>POLYSORBATE 60</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="6DC9Q167V3" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>PROPYLENE GLYCOL</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="059QF0KO0R" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>WATER</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="2KR89I4H1Y" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>STEARYL ALCOHOL</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <asContent>
+                           <quantity>
+                              <numerator unit="g" value="50"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code/>
+                              <formCode code="C43180" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="CAN"/>
+                              <asContent>
+                                 <quantity>
+                                    <numerator unit="1" value="1"/>
+                                    <denominator value="1"/>
+                                 </quantity>
+                                 <containerPackagedProduct>
+                                    <code code="68462-605-27" codeSystem="2.16.840.1.113883.6.69"/>
+                                    <formCode code="C43182" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="CARTON"/>
+                                 </containerPackagedProduct>
+                                 <subjectOf>
+                                    <marketingAct>
+                                       <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                                       <statusCode code="active"/>
+                                       <effectiveTime>
+                                          <low value="20240123"/>
+                                       </effectiveTime>
+                                    </marketingAct>
+                                 </subjectOf>
+                              </asContent>
+                           </containerPackagedProduct>
+                           <subjectOf>
+                              <characteristic classCode="OBS">
+                                 <code code="SPLCMBPRDTP" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                                 <value code="C112160" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="Type 0: Not a Combination Product" xsi:type="CE"/>
+                              </characteristic>
+                           </subjectOf>
+                        </asContent>
+                        <asContent>
+                           <quantity>
+                              <numerator unit="g" value="100"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code/>
+                              <formCode code="C43180" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="CAN"/>
+                              <asContent>
+                                 <quantity>
+                                    <numerator unit="1" value="1"/>
+                                    <denominator value="1"/>
+                                 </quantity>
+                                 <containerPackagedProduct>
+                                    <code code="68462-605-94" codeSystem="2.16.840.1.113883.6.69"/>
+                                    <formCode code="C43182" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="CARTON"/>
+                                 </containerPackagedProduct>
+                                 <subjectOf>
+                                    <marketingAct>
+                                       <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                                       <statusCode code="active"/>
+                                       <effectiveTime>
+                                          <low value="20240123"/>
+                                       </effectiveTime>
+                                    </marketingAct>
+                                 </subjectOf>
+                              </asContent>
+                           </containerPackagedProduct>
+                           <subjectOf>
+                              <characteristic classCode="OBS">
+                                 <code code="SPLCMBPRDTP" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                                 <value code="C112160" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="Type 0: Not a Combination Product" xsi:type="CE"/>
+                              </characteristic>
+                           </subjectOf>
+                        </asContent>
+                     </manufacturedProduct>
+                     <subjectOf>
+                        <approval>
+                           <id extension="ANDA210778" root="2.16.840.1.113883.3.150"/>
+                           <code code="C73584" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ANDA"/>
+                           <author>
+                              <territorialAuthority>
+                                 <territory>
+                                    <code code="USA" codeSystem="2.16.840.1.113883.5.28"/>
+                                 </territory>
+                              </territorialAuthority>
+                           </author>
+                        </approval>
+                     </subjectOf>
+                     <subjectOf>
+                        <marketingAct>
+                           <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <statusCode code="active"/>
+                           <effectiveTime>
+                              <low value="20240123"/>
+                           </effectiveTime>
+                        </marketingAct>
+                     </subjectOf>
+                     <consumedIn>
+                        <substanceAdministration>
+                           <routeCode code="C38304" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TOPICAL"/>
+                        </substanceAdministration>
+                     </consumedIn>
+                  </manufacturedProduct>
+               </subject>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_c990b4a1-94e0-4e4a-8e95-857a29615317">
+               <id root="eb0f1627-fc4f-4dc6-8935-a9a21e165b0f"/>
+               <code code="34067-9" codeSystem="2.16.840.1.113883.6.1" displayName="INDICATIONS &amp; USAGE SECTION"/>
+               <title>1 INDICATIONS AND USAGE</title>
+               <text>
+                  <paragraph>Clindamycin phosphate foam is indicated for topical application in the treatment of acne vulgaris in patients 12 years and older.</paragraph>
+               </text>
+               <effectiveTime value="20250724"/>
+               <excerpt>
+                  <highlight>
+                     <text>
+                        <paragraph>Clindamycin phosphate foam is a lincosamide product indicated for acne vulgaris in patients 12 years and older. (<linkHtml href="#LINK_c990b4a1-94e0-4e4a-8e95-857a29615317">1</linkHtml>)</paragraph>
+                     </text>
+                  </highlight>
+               </excerpt>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_a76a3398-9ae8-4213-a2cc-0db4ee1af2e6">
+               <id root="efa47396-912e-4015-b118-6c205761041d"/>
+               <code code="34068-7" codeSystem="2.16.840.1.113883.6.1" displayName="DOSAGE &amp; ADMINISTRATION SECTION"/>
+               <title>2 DOSAGE AND ADMINISTRATION</title>
+               <text>
+                  <paragraph>Clindamycin phosphate foam is for topical use only, and not for oral, ophthalmic, or intravaginal use.</paragraph>
+                  <paragraph>Apply clindamycin phosphate foam once daily to affected areas after the skin is washed with mild soap and allowed to fully dry. Use enough to cover the entire affected area.</paragraph>
+                  <paragraph>If there has been no improvement after 6 to 8 weeks or if the condition becomes worse, treatment should be discontinued.</paragraph>
+                  <paragraph>The contents of clindamycin phosphate foam are flammable; avoid fire, flame and/or smoking during and immediately following application.</paragraph>
+               </text>
+               <effectiveTime value="20250724"/>
+               <excerpt>
+                  <highlight>
+                     <text>
+                        <list listType="unordered">
+                           <item>
+                              <caption>•</caption>For topical use only; not for oral, ophthalmic, or intravaginal use. (<linkHtml href="#LINK_a76a3398-9ae8-4213-a2cc-0db4ee1af2e6">2</linkHtml>)</item>
+                           <item>
+                              <caption>•</caption>Apply clindamycin phosphate foam once daily to affected areas. (<linkHtml href="#LINK_a76a3398-9ae8-4213-a2cc-0db4ee1af2e6">2</linkHtml>)</item>
+                           <item>
+                              <caption>•</caption>Flammable; avoid fire, flame and/or smoking during and immediately following application. (<linkHtml href="#LINK_a76a3398-9ae8-4213-a2cc-0db4ee1af2e6">2</linkHtml>)</item>
+                        </list>
+                     </text>
+                  </highlight>
+               </excerpt>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_806111bd-cebd-4fc7-9b69-ffd82d36307a">
+               <id root="23453328-7b52-45ca-a92b-2ad07bd90ebc"/>
+               <code code="43678-2" codeSystem="2.16.840.1.113883.6.1" displayName="DOSAGE FORMS &amp; STRENGTHS SECTION"/>
+               <title>3 DOSAGE FORMS AND STRENGTHS</title>
+               <text>
+                  <paragraph>Clindamycin Phosphate Foam is a white thermolabile hydroethanolic aerosol foam. Each gram of clindamycin phosphate foam contains, as dispensed, 12 mg (1.2%) of clindamycin phosphate, USP equivalent to 10 mg (1%) of clindamycin.</paragraph>
+               </text>
+               <effectiveTime value="20250724"/>
+               <excerpt>
+                  <highlight>
+                     <text>
+                        <paragraph>Foam containing 1% clindamycin as clindamycin phosphate, USP. (<linkHtml href="#LINK_806111bd-cebd-4fc7-9b69-ffd82d36307a">3</linkHtml>)</paragraph>
+                     </text>
+                  </highlight>
+               </excerpt>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_22890974-3fa0-409a-91ce-231c20d278f1">
+               <id root="fb02c8d5-f074-4bd8-8508-53b1f3f75783"/>
+               <code code="34070-3" codeSystem="2.16.840.1.113883.6.1" displayName="CONTRAINDICATIONS SECTION"/>
+               <title>4 CONTRAINDICATIONS</title>
+               <text>
+                  <paragraph>Clindamycin phosphate foam is contraindicated in individuals with a history of regional enteritis or ulcerative colitis, or a history of antibiotic-associated colitis (including pseudomembranous colitis).</paragraph>
+               </text>
+               <effectiveTime value="20250724"/>
+               <excerpt>
+                  <highlight>
+                     <text>
+                        <paragraph>Clindamycin phosphate foam is contraindicated in individuals with a history of regional enteritis or ulcerative colitis, or a history of antibiotic-associated colitis (including pseudomembranous colitis). (<linkHtml href="#LINK_22890974-3fa0-409a-91ce-231c20d278f1">4</linkHtml>)</paragraph>
+                     </text>
+                  </highlight>
+               </excerpt>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_4e68a95a-e569-47f4-b092-b26259c19ab8">
+               <id root="dd39f43f-a816-4771-aab1-141e7820b76b"/>
+               <code code="43685-7" codeSystem="2.16.840.1.113883.6.1" displayName="WARNINGS AND PRECAUTIONS SECTION"/>
+               <title>5 WARNINGS AND PRECAUTIONS</title>
+               <effectiveTime value="20250724"/>
+               <excerpt>
+                  <highlight>
+                     <text>
+                        <list listType="unordered">
+                           <item>
+                              <caption>•</caption>Colitis: Clindamycin can cause severe colitis, which may result in death. Diarrhea, bloody diarrhea, and colitis (including pseudomembranous colitis) have been reported with the use of clindamycin. Clindamycin phosphate foam should be discontinued if significant diarrhea occurs. (<linkHtml href="#LINK_7eafab97-2b24-4eaf-bd23-99036aece372">5.1</linkHtml>)</item>
+                        </list>
+                     </text>
+                  </highlight>
+               </excerpt>
+               <component>
+                  <section ID="LINK_7eafab97-2b24-4eaf-bd23-99036aece372">
+                     <id root="9898811e-ccf3-4f7d-8973-6cf20400c437"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>5.1 Colitis</title>
+                     <text>
+                        <paragraph>Systemic absorption of clindamycin has been demonstrated following topical use of this product. Diarrhea, bloody diarrhea, and colitis (including pseudomembranous colitis) have been reported with the use of topical clindamycin. If significant diarrhea occurs, clindamycin phosphate foam should be discontinued [<content styleCode="italics">see Adverse Reactions (<linkHtml href="#LINK_727047f1-a0db-42cf-b1e1-b4fb385697c9">6.2</linkHtml>)</content>].</paragraph>
+                        <paragraph>Severe colitis has occurred following oral or parenteral administration of clindamycin with an onset of up to several weeks following cessation of therapy. Antiperistaltic agents such as opiates and diphenoxylate with atropine may prolong and/or worsen severe colitis. Severe colitis may result in death.</paragraph>
+                        <paragraph>Studies indicate a toxin(s) produced by <content styleCode="italics">Clostridia</content> is one primary cause of antibiotic-associated colitis. The colitis is usually characterized by severe persistent diarrhea and severe abdominal cramps and may be associated with the passage of blood and mucus. Stool cultures for <content styleCode="italics">Clostridium difficile</content> and stool assay for <content styleCode="italics">C. difficile</content> toxin may be helpful diagnostically.</paragraph>
+                     </text>
+                     <effectiveTime value="20250724"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_7caa357a-beee-4c29-86c8-965a7ab6cff5">
+                     <id root="c1e76b06-4ca3-4280-bc53-896c8615f679"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>5.2 Irritation</title>
+                     <text>
+                        <paragraph>Clindamycin phosphate foam can cause irritation. Concomitant topical acne therapy should be used with caution since a possible cumulative irritancy effect may occur, especially with the use of peeling, desquamating, or abrasive agents. If irritation or dermatitis occurs, clindamycin should be discontinued. </paragraph>
+                        <paragraph>Avoid contact of clindamycin phosphate foam with eyes, mouth, lips, other mucous membranes or areas of broken skin. If contact occurs, rinse thoroughly with water.</paragraph>
+                        <paragraph>Clindamycin phosphate foam should be prescribed with caution in atopic individuals.</paragraph>
+                     </text>
+                     <effectiveTime value="20250724"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_d5ff0d18-a286-4e3e-a831-a1e0bf2210a5">
+               <id root="454272d0-0cbb-445c-84ad-8a77b2d30569"/>
+               <code code="34084-4" codeSystem="2.16.840.1.113883.6.1" displayName="ADVERSE REACTIONS SECTION"/>
+               <title>6 ADVERSE REACTIONS</title>
+               <effectiveTime value="20250724"/>
+               <excerpt>
+                  <highlight>
+                     <text>
+                        <paragraph>The most common adverse reactions (&gt;1%) are headache and application site reactions including burning, pruritus, and dryness. (<linkHtml href="#LINK_456e343f-ddb2-42d4-a131-b021d35d07bd">6.1</linkHtml>)</paragraph>
+                        <paragraph>
+                           <content styleCode="bold">To report SUSPECTED ADVERSE REACTIONS, contact Glenmark Pharmaceuticals Inc., USA at 1 (888) 721-7115 or FDA at 1-800-FDA-1088 or www.fda.gov/medwatch.</content>
+                        </paragraph>
+                     </text>
+                  </highlight>
+               </excerpt>
+               <component>
+                  <section ID="LINK_456e343f-ddb2-42d4-a131-b021d35d07bd">
+                     <id root="a9294b1e-dbee-49ce-97aa-2ee3a1a28368"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>6.1 Clinical Trials Experience</title>
+                     <text>
+                        <paragraph>Because clinical trials are conducted under widely varying conditions, adverse reaction rates observed in the clinical trials of a drug cannot be directly compared to rates in the clinical trials of another drug and may not reflect the rates observed in clinical practice.</paragraph>
+                        <paragraph>A total of 439 subjects with mild to moderate acne vulgaris were treated once daily for 12 weeks with clindamycin phosphate foam.</paragraph>
+                        <paragraph>The incidence of adverse reactions occurring in ≥ 1% of the subjects in clinical trials comparing clindamycin phosphate foam and its vehicle is presented in Table 1.</paragraph>
+                        <table ID="_RefID0EYGAC" width="100%">
+                           <caption>Table 1: Adverse Reactions Occurring in ≥ 1% of Subjects</caption>
+                           <col width="33%"/>
+                           <col width="34%"/>
+                           <col width="34%"/>
+                           <tbody>
+                              <tr>
+                                 <td align="center" styleCode="Rrule Botrule Lrule Toprule " valign="top">
+                                    <paragraph>
+                                       <content styleCode="bold">Adverse Reactions</content>
+                                    </paragraph>
+                                 </td>
+                                 <td align="center" colspan="2" styleCode="Rrule Botrule Toprule " valign="top">
+                                    <paragraph>
+                                       <content styleCode="bold">Number (%) of Subjects</content>
+                                    </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td rowspan="2" styleCode="Rrule Lrule Botrule " valign="top">
+                                    <paragraph> </paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule " valign="top">
+                                    <paragraph> </paragraph>
+                                    <paragraph>
+                                       <content styleCode="bold">Clindamycin Phosphate Foam</content>
+                                    </paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule " valign="top">
+                                    <paragraph> </paragraph>
+                                    <paragraph>
+                                       <content styleCode="bold">Vehicle Foam</content>
+                                    </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td align="center" styleCode="Rrule Lrule Botrule " valign="top">
+                                    <paragraph> </paragraph>
+                                    <paragraph>
+                                       <content styleCode="bold">N = 439</content>
+                                    </paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule " valign="top">
+                                    <paragraph> </paragraph>
+                                    <paragraph>
+                                       <content styleCode="bold">N = 154</content>
+                                    </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td styleCode="Rrule Lrule Botrule " valign="top">
+                                    <paragraph> </paragraph>
+                                    <paragraph>Headache</paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule " valign="top">
+                                    <paragraph> </paragraph>
+                                    <paragraph>12 (3%)</paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule " valign="top">
+                                    <paragraph> </paragraph>
+                                    <paragraph>1 (1%)</paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td styleCode="Rrule Lrule Botrule " valign="top">
+                                    <paragraph> </paragraph>
+                                    <paragraph>Application site burning</paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule " valign="top">
+                                    <paragraph> </paragraph>
+                                    <paragraph>27 (6%)</paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule " valign="top">
+                                    <paragraph> </paragraph>
+                                    <paragraph>14 (9%)</paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td styleCode="Rrule Lrule Botrule " valign="top">
+                                    <paragraph> </paragraph>
+                                    <paragraph>Application site pruritus</paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule " valign="top">
+                                    <paragraph> </paragraph>
+                                    <paragraph>5 (1%)</paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule " valign="top">
+                                    <paragraph> </paragraph>
+                                    <paragraph>5 (3%)</paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td styleCode="Rrule Lrule Botrule " valign="top">
+                                    <paragraph> </paragraph>
+                                    <paragraph>Application site dryness</paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule " valign="top">
+                                    <paragraph> </paragraph>
+                                    <paragraph>4 (1%)</paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule " valign="top">
+                                    <paragraph> </paragraph>
+                                    <paragraph>5 (3%)</paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td styleCode="Rrule Botrule Lrule " valign="top">
+                                    <paragraph> </paragraph>
+                                    <paragraph>Application site reaction, not otherwise specified</paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule " valign="top">
+                                    <paragraph> </paragraph>
+                                    <paragraph>3 (1%)</paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule " valign="top">
+                                    <paragraph> </paragraph>
+                                    <paragraph>4 (3%)</paragraph>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <paragraph>In a contact sensitization study, none of the 203 subjects developed evidence of allergic contact sensitization to clindamycin phosphate foam.</paragraph>
+                     </text>
+                     <effectiveTime value="20250724"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_727047f1-a0db-42cf-b1e1-b4fb385697c9">
+                     <id root="3f6b3762-21e7-4b47-bb80-696cad95ade8"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>6.2 Postmarketing Experience</title>
+                     <text>
+                        <paragraph>The following adverse reactions have been identified during post approval use of clindamycin phosphate foam: application site pain, application site erythema, diarrhea, urticaria, abdominal pain, hypersensitivity, rash, abdominal discomfort, nausea, seborrhea, application site rash, dizziness, pain of skin, colitis (including pseudomembranous colitis), and hemorrhagic diarrhea. Because these reactions are reported voluntarily from a population of uncertain size, it is not always possible to reliably estimate their frequency or establish a causal relationship to drug exposure.</paragraph>
+                        <paragraph>Abdominal pain and gastrointestinal disturbances, as well as gram-negative folliculitis, have also been reported in association with the use of topical formulations of clindamycin. Orally and parenterally administered clindamycin have been associated with severe colitis, which may end fatally.</paragraph>
+                     </text>
+                     <effectiveTime value="20250724"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_9ae39c65-e6e7-4791-8ba5-09799e841688">
+               <id root="0fc2d818-0039-4488-82d8-2638ae4bdb97"/>
+               <code code="34073-7" codeSystem="2.16.840.1.113883.6.1" displayName="DRUG INTERACTIONS SECTION"/>
+               <title>7 DRUG INTERACTIONS</title>
+               <effectiveTime value="20250724"/>
+               <component>
+                  <section ID="LINK_58a39a85-17b6-4065-bee2-0ad5729b20fc">
+                     <id root="5845549a-7f0b-4a8d-84c9-5399c2cea3de"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>7.1 Erythromycin</title>
+                     <text>
+                        <paragraph>Clindamycin phosphate foam should not be used in combination with topical or oral erythromycin-containing products due to possible antagonism to its clindamycin component. <content styleCode="italics">In vitro</content> studies have shown antagonism between these two antimicrobials. The clinical significance of this <content styleCode="italics">in vitro</content> antagonism is not known.</paragraph>
+                     </text>
+                     <effectiveTime value="20250724"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_df6a1069-1774-4ec7-a5b7-7f71533065f8">
+                     <id root="d7ba28b3-3d72-4b7c-916c-d0cec137ad96"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>7.2 Neuromuscular Blocking Agents</title>
+                     <text>
+                        <paragraph>Clindamycin has been shown to have neuromuscular blocking properties that may enhance the action of other neuromuscular blocking agents. Therefore, clindamycin phosphate foam should be used with caution in patients receiving such agents.</paragraph>
+                     </text>
+                     <effectiveTime value="20250724"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_38892fd0-6745-4cf5-845c-4e717ee88f75">
+               <id root="e0f6334f-eb07-4ae1-96f4-ab2980e20a18"/>
+               <code code="43684-0" codeSystem="2.16.840.1.113883.6.1" displayName="USE IN SPECIFIC POPULATIONS SECTION"/>
+               <title>8 USE IN SPECIFIC POPULATIONS</title>
+               <effectiveTime value="20250724"/>
+               <component>
+                  <section ID="LINK_81e2fcd0-7bd9-4031-92ed-7e7a49a53add">
+                     <id root="cb09bc06-212a-4034-a66f-f757b3daf367"/>
+                     <code code="42228-7" codeSystem="2.16.840.1.113883.6.1" displayName="PREGNANCY SECTION"/>
+                     <title>8.1 Pregnancy</title>
+                     <text>
+                        <paragraph>
+                           <content styleCode="underline">Risk Summary</content>
+                        </paragraph>
+                        <paragraph>There are no available data on clindamycin phosphate foam use in pregnant women to inform a drug-associated risk for adverse developmental outcomes.</paragraph>
+                        <paragraph>Animal reproduction studies have not been conducted with clindamycin phosphate foam. No evidence of fetal harm or malformations was observed in pregnant rats and mice administered daily subcutaneous or oral doses of clindamycin salts during organogenesis at doses that produced exposures up to 84 and 42 times, respectively, the maximum recommended human dose (MRHD) of clindamycin phosphate foam based on body surface area (BSA) comparisons and assuming 100% absorption <content styleCode="italics">[see Data]</content>.</paragraph>
+                        <paragraph>In the U.S. general population, the estimated background risk of major birth defects and miscarriage in clinically recognized pregnancies is 2 to 4% and 15 to 20%, respectively. </paragraph>
+                        <paragraph>
+                           <content styleCode="underline">Data</content>
+                        </paragraph>
+                        <paragraph>
+                           <content styleCode="italics">Animal Data</content>
+                        </paragraph>
+                        <paragraph>Reproduction studies have been conducted in rats and mice using subcutaneous or oral doses of clindamycin phosphate, clindamycin hydrochloride or clindamycin palmitate hydrochloride administered daily during organogenesis at doses up to the equivalent of 432 mg/kg/day clindamycin phosphate. These studies produced no evidence of fetal harm or malformations in rats or mice at exposures 84 or 42 times, respectively, the MRHD of clindamycin phosphate (i.e., 5 milliliters of clindamycin phosphate foam) based on BSA comparison and assuming 100% absorption.</paragraph>
+                     </text>
+                     <effectiveTime value="20250724"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="ID_39d425fe-13e0-4a7b-b6db-b1d9121c3c8f">
+                     <id root="b622189f-45a8-4e11-bf03-9e9b38b4c7c5"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>8.2 Lactation </title>
+                     <text>
+                        <paragraph>
+                           <content styleCode="underline">Risk Summary</content>
+                        </paragraph>
+                        <paragraph>There is no information on the presence of clindamycin in human milk, or the effects on the breast-fed child, or the effects on milk production following use of clindamycin phosphate foam. However, orally and parenterally administered clindamycin has been reported to appear in breast milk.</paragraph>
+                        <paragraph>The developmental and health benefits of breastfeeding should be considered along with the mother’s clinical need for clindamycin phosphate foam and any potential adverse effects on the breast-fed child from clindamycin phosphate foam or from the underlying maternal condition.</paragraph>
+                        <paragraph>
+                           <content styleCode="underline">Clinical Considerations</content>
+                        </paragraph>
+                        <paragraph>If used during lactation and clindamycin phosphate foam is applied to the chest, care should be taken to avoid accidental ingestion by the infant. </paragraph>
+                     </text>
+                     <effectiveTime value="20250724"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_d59694d7-40a4-4dab-bc01-70ef693b2d12">
+                     <id root="63195105-a2f4-458d-9a03-0a3f1a7cca29"/>
+                     <code code="34081-0" codeSystem="2.16.840.1.113883.6.1" displayName="PEDIATRIC USE SECTION"/>
+                     <title>8.4 Pediatric Use</title>
+                     <text>
+                        <paragraph>Safety and effectiveness of clindamycin phosphate foam in children under the age of 12 have not been studied.</paragraph>
+                     </text>
+                     <effectiveTime value="20250724"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_5cf56f5c-1f19-4734-b01a-0c849f4b1e87">
+                     <id root="5b20597c-fc23-40f4-9c11-b891f52ba1fd"/>
+                     <code code="34082-8" codeSystem="2.16.840.1.113883.6.1" displayName="GERIATRIC USE SECTION"/>
+                     <title>8.5 Geriatric Use</title>
+                     <text>
+                        <paragraph>The clinical study with clindamycin phosphate foam did not include sufficient numbers of subjects aged 65 and over to determine if they respond differently than younger subjects.</paragraph>
+                     </text>
+                     <effectiveTime value="20250724"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_35146688-f1a9-4d5f-aec8-a05e49ec0f0a">
+               <id root="8e5c3cde-3a83-48f3-84d8-091ce2cd569a"/>
+               <code code="34089-3" codeSystem="2.16.840.1.113883.6.1" displayName="DESCRIPTION SECTION"/>
+               <title>11 DESCRIPTION</title>
+               <text>
+                  <paragraph>Clindamycin Phosphate Foam contains clindamycin (1%) as clindamycin phosphate, USP.</paragraph>
+                  <paragraph>Clindamycin phosphate, USP is a water-soluble ester of the semi-synthetic antibiotic produced by a 7(S)-chloro-substitution of the 7(R)-hydroxyl group of the parent antibiotic, lincomycin.</paragraph>
+                  <paragraph>The chemical name for clindamycin phosphate, USP is methyl 7-chloro-6,7,8-trideoxy-6-(1-methyl-<content styleCode="italics">trans</content>-4-propyl-L-2-pyrrolidinecarboxamido)-1-thio-L-<content styleCode="italics">threo</content>-α-D-<content styleCode="italics">galacto</content>-octopyranoside 2-(dihydrogen phosphate). The structural formula for clindamycin phosphate, USP is represented below:</paragraph>
+                  <renderMultiMedia ID="id518" referencedObject="ID_21521f89-bf26-4c1f-ae9c-50d66a793d48"/>
+                  <paragraph>Molecular Formula: C<sub>18</sub>H<sub>34</sub>ClN<sub>2</sub>O<sub>8</sub>PS                                     Molecular Weight: 504.96 g/mol</paragraph>
+                  <paragraph>Clindamycin Phosphate Foam contains clindamycin (1%) as clindamycin phosphate, USP at a concentration equivalent to 10 mg clindamycin per gram in a thermolabile hydroethanolic foam vehicle consisting of cetyl alcohol, ethanol (58%), polysorbate 60, propylene glycol, purified water, and stearyl alcohol pressurized with a hydrocarbon (propane/butane) propellant.</paragraph>
+               </text>
+               <effectiveTime value="20250724"/>
+               <component>
+                  <observationMedia ID="ID_21521f89-bf26-4c1f-ae9c-50d66a793d48">
+                     <text>structure.jpg</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="evoclin-1.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_46c218ae-b94c-421d-abe3-f2a0058647d3">
+               <id root="9a2ff419-eab3-42ca-a64e-263c8a5af609"/>
+               <code code="34090-1" codeSystem="2.16.840.1.113883.6.1" displayName="CLINICAL PHARMACOLOGY SECTION"/>
+               <title>12 CLINICAL PHARMACOLOGY</title>
+               <effectiveTime value="20250724"/>
+               <component>
+                  <section ID="LINK_d9baa174-78d8-4ccc-8832-c3369717a041">
+                     <id root="20e7ec7d-2d70-48ee-b7b5-fd72dd8e89f1"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>12.1 Mechanism of Action</title>
+                     <text>
+                        <paragraph>Mechanism of action of clindamycin in acne vulgaris is unknown <content styleCode="italics">[see Microbiology (<linkHtml href="#LINK_e57637b7-e4da-4854-b879-990a8023aa8c">12.4</linkHtml>)].</content>
+                        </paragraph>
+                     </text>
+                     <effectiveTime value="20250724"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_664c911c-6787-42e3-a2c8-ba81d4fbf621">
+                     <id root="59f24b06-cdfb-4362-82b3-97b3aa20e9ae"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>12.2 Pharmacodynamics</title>
+                     <text>
+                        <paragraph>Pharmacodynamics of clindamycin phosphate foam is unknown.</paragraph>
+                     </text>
+                     <effectiveTime value="20250724"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_ab4d9dbe-7cf4-4ee9-8f9e-d0a336fc4f44">
+                     <id root="ee92a787-3ec6-449d-b78f-37c037fd0b31"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>12.3 Pharmacokinetics</title>
+                     <text>
+                        <paragraph>In an open label, parallel group study in 24 subjects with acne vulgaris, 12 subjects (3 male and 9 female) applied 4 grams of clindamycin phosphate foam once-daily for five days, and 12 subjects (7 male and 5 female) applied 4 grams of a clindamycin gel, 1%, once daily for five days. On Day 5, the mean C<sub>max</sub> and AUC<sub>(0 to 12)</sub> were 23% and 9% lower, respectively, for clindamycin phosphate foam than for the clindamycin gel, 1%.</paragraph>
+                        <paragraph>Following multiple applications of clindamycin phosphate foam, less than 0.024% of the total dose was excreted unchanged in the urine over 12 hours on Day 5.</paragraph>
+                     </text>
+                     <effectiveTime value="20250724"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_e57637b7-e4da-4854-b879-990a8023aa8c">
+                     <id root="b238f0f1-71a8-42eb-95e9-1bc495b2b19a"/>
+                     <code code="49489-8" codeSystem="2.16.840.1.113883.6.1" displayName="MICROBIOLOGY SECTION"/>
+                     <title>12.4 Microbiology</title>
+                     <text>
+                        <paragraph>No microbiology studies were conducted in the clinical trials with this product.</paragraph>
+                        <paragraph>Clindamycin binds to the 50S ribosomal subunits of susceptible bacteria and prevents elongation of peptide chains by interfering with peptidyl transfer, thereby suppressing protein synthesis. Clindamycin has been shown to have <content styleCode="italics">in vitro</content> activity against <content styleCode="italics">Propionibacterium acnes</content> (<content styleCode="italics">P. acnes</content>), an organism that has been associated with acne vulgaris; however, the clinical significance of this activity against <content styleCode="italics">P. acnes</content> was not examined in clinical studies with clindamycin phosphate foam. <content styleCode="italics">P. acnes</content> resistance to clindamycin has been documented.</paragraph>
+                        <paragraph>
+                           <content styleCode="bold">
+                              <content styleCode="italics">Inducible Clindamycin Resistance</content>
+                           </content>
+                        </paragraph>
+                        <paragraph>The treatment of acne with antimicrobials is associated with the development of antimicrobial resistance in <content styleCode="italics">P. acnes </content>as well as other bacteria (e.g. <content styleCode="italics">Staphylococcus aureus, Streptococcus pyogenes</content>). The use of clindamycin may result in developing inducible resistance in these organisms. This resistance is not detected by routine susceptibility testing.</paragraph>
+                        <paragraph>
+                           <content styleCode="bold">
+                              <content styleCode="italics">Cross Resistance:</content>
+                           </content>
+                        </paragraph>
+                        <paragraph>Resistance to clindamycin is often associated with resistance to erythromycin.</paragraph>
+                     </text>
+                     <effectiveTime value="20250724"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_eed4d6e1-423c-499b-bccf-13612eeed55e">
+               <id root="2ad1b2c9-cd67-4099-b765-c2265d84d325"/>
+               <code code="43680-8" codeSystem="2.16.840.1.113883.6.1" displayName="NONCLINICAL TOXICOLOGY SECTION"/>
+               <title>13 NONCLINICAL TOXICOLOGY</title>
+               <effectiveTime value="20250724"/>
+               <component>
+                  <section ID="LINK_fd0fc5fb-89fc-46d0-b7bd-99acbfe87b68">
+                     <id root="0cb51ba6-fb7c-4e8d-abca-c7a8f0274d0d"/>
+                     <code code="34083-6" codeSystem="2.16.840.1.113883.6.1" displayName="CARCINOGENESIS &amp; MUTAGENESIS &amp; IMPAIRMENT OF FERTILITY SECTION"/>
+                     <title>13.1 Carcinogenesis, Mutagenesis, Impairment of Fertility</title>
+                     <text>
+                        <paragraph>The carcinogenicity of a 1.2% clindamycin phosphate gel similar to clindamycin phosphate foam was evaluated by daily topical administration to mice for two years. The topical doses used in this study were approximately 3 and 15 times higher than the MRHD of clindamycin phosphate from clindamycin phosphate foam, based on BSA comparison and assuming 100% absorption. No significant increase in tumors was noted in the treated animals.</paragraph>
+                        <paragraph>The genotoxic potential of clindamycin was evaluated in an <content styleCode="italics">in vitro</content> Ames assay and in an <content styleCode="italics">in vivo</content> rat micronucleus test. Both tests were negative.</paragraph>
+                        <paragraph>Reproduction studies in rats using oral doses of clindamycin hydrochloride or clindamycin palmitate hydrochloride have revealed no evidence of impaired fertility.</paragraph>
+                     </text>
+                     <effectiveTime value="20250724"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_b1e07c53-8115-4c56-859a-43ba37412676">
+               <id root="7f427f9c-b0f2-48d6-9b22-99b99ce86015"/>
+               <code code="34092-7" codeSystem="2.16.840.1.113883.6.1" displayName="CLINICAL STUDIES SECTION"/>
+               <title>14 CLINICAL STUDIES</title>
+               <text>
+                  <paragraph>In one multicenter, randomized, double-blind, vehicle-controlled clinical trial, subjects with mild to moderate acne vulgaris used clindamycin phosphate foam or the vehicle foam once daily for twelve weeks. Treatment response, defined as the proportion of subjects clear or almost clear, based on the Investigator Static Global Assessment (ISGA), and the mean percent reductions in lesion counts at the end of treatment in this study are shown in Table 2.</paragraph>
+                  <table ID="_RefID0EVGAE" width="100%">
+                     <caption>Table 2: Efficacy Results at Week 12</caption>
+                     <col width="44%"/>
+                     <col width="30%"/>
+                     <col width="25%"/>
+                     <tbody>
+                        <tr styleCode="Toprule">
+                           <td align="center" styleCode="Rrule Botrule Lrule Toprule " valign="top">
+                              <paragraph>
+                                 <content styleCode="bold">Efficacy Parameters</content>
+                              </paragraph>
+                           </td>
+                           <td align="center" styleCode="Rrule Botrule Lrule Toprule " valign="top">
+                              <paragraph>
+                                 <content styleCode="bold">Clindamycin Phosphate Foam</content>
+                              </paragraph>
+                              <paragraph>
+                                 <content styleCode="bold">N=386</content>
+                              </paragraph>
+                           </td>
+                           <td align="center" styleCode="Rrule Botrule Lrule Toprule " valign="top">
+                              <paragraph>
+                                 <content styleCode="bold">Vehicle Foam</content>
+                              </paragraph>
+                              <paragraph>
+                                 <content styleCode="bold">N=127</content>
+                              </paragraph>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td styleCode="Rrule Lrule Botrule " valign="top">
+                              <paragraph> </paragraph>
+                              <paragraph>     Treatment response (ISGA)</paragraph>
+                           </td>
+                           <td styleCode="Rrule Lrule Toprule Botrule " valign="top">
+                              <paragraph> </paragraph>
+                              <paragraph>31%</paragraph>
+                           </td>
+                           <td styleCode="Rrule Lrule Toprule Botrule " valign="top">
+                              <paragraph> </paragraph>
+                              <paragraph>18%*</paragraph>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td colspan="3" styleCode="Rrule Lrule Botrule " valign="top">
+                              <paragraph> </paragraph>
+                              <paragraph>
+                                 <content styleCode="bold">Percent reduction in lesion counts</content>
+                              </paragraph>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td styleCode="Rrule Lrule Botrule " valign="top">
+                              <paragraph> </paragraph>
+                              <paragraph>     Inflammatory Lesions</paragraph>
+                           </td>
+                           <td styleCode="Rrule Lrule Toprule Botrule " valign="top">
+                              <paragraph> </paragraph>
+                              <paragraph>49%</paragraph>
+                           </td>
+                           <td styleCode="Rrule Lrule Toprule Botrule " valign="top">
+                              <paragraph> </paragraph>
+                              <paragraph>35%*</paragraph>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td styleCode="Rrule Lrule Botrule " valign="top">
+                              <paragraph> </paragraph>
+                              <paragraph>     Noninflammatory Lesions</paragraph>
+                           </td>
+                           <td styleCode="Rrule Lrule Toprule Botrule " valign="top">
+                              <paragraph> </paragraph>
+                              <paragraph>38%</paragraph>
+                           </td>
+                           <td styleCode="Rrule Lrule Toprule Botrule " valign="top">
+                              <paragraph> </paragraph>
+                              <paragraph>27%*</paragraph>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td styleCode="Rrule Lrule Botrule " valign="top">
+                              <paragraph> </paragraph>
+                              <paragraph>     Total Lesions</paragraph>
+                           </td>
+                           <td styleCode="Rrule Lrule Toprule Botrule " valign="top">
+                              <paragraph> </paragraph>
+                              <paragraph>43%</paragraph>
+                           </td>
+                           <td styleCode="Rrule Lrule Toprule Botrule " valign="top">
+                              <paragraph> </paragraph>
+                              <paragraph>31%*</paragraph>
+                           </td>
+                        </tr>
+                        <tr styleCode="Botrule">
+                           <td colspan="3" styleCode="Rrule Botrule Lrule Toprule " valign="top">
+                              <paragraph>*P &lt; 0.05</paragraph>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </text>
+               <effectiveTime value="20250724"/>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_49e7b43d-0b1b-4809-a709-a6d900d416c4">
+               <id root="6745b4a6-918f-4f18-bc9b-daf11077872e"/>
+               <code code="34069-5" codeSystem="2.16.840.1.113883.6.1" displayName="HOW SUPPLIED SECTION"/>
+               <title>16 HOW SUPPLIED/STORAGE AND HANDLING</title>
+               <effectiveTime value="20250724"/>
+               <component>
+                  <section ID="LINK_7f013fb4-8a19-4c9d-8e5d-579a6c656f94">
+                     <id root="d5bccbd9-0a2c-4c2f-b62b-4ca5d34c299f"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>16.1 How Supplied</title>
+                     <text>
+                        <paragraph>Clindamycin Phosphate Foam, 1% contains clindamycin phosphate, USP equivalent to 10 mg clindamycin per gram. The white thermolabile hydroethanolic aerosol foam is available as follows.</paragraph>
+                        <paragraph>100 gram aerosol can - NDC 68462-605-94</paragraph>
+                        <paragraph>50 gram aerosol can - NDC 68462-605-27</paragraph>
+                     </text>
+                     <effectiveTime value="20250724"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_a3927cc5-611e-46ae-b668-4ef602a5e152">
+                     <id root="377d24b1-8e5a-4fe4-b683-b7ac9d778a83"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>16.2 Storage and Handling</title>
+                     <text>
+                        <paragraph>
+                           <content styleCode="bold">Store at 20°C to 25°C (68°F to 77°F); excursions permitted to 15°C to 30°C (59°F to 86°F) [see USP Controlled Room Temperature].</content>
+                        </paragraph>
+                        <paragraph>Flammable. Avoid fire, flame or smoking during and immediately following application.</paragraph>
+                        <paragraph>Contents under pressure. Do not puncture or incinerate. Do not expose to heat or store at temperature above 120°F (49°C).</paragraph>
+                        <paragraph>Keep out of reach of children.</paragraph>
+                     </text>
+                     <effectiveTime value="20250724"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_56e42f14-858a-49ca-abe0-ea456c872c8c">
+               <id root="8e0e7c9b-a417-497e-8c96-70b5d63c7fae"/>
+               <code code="34076-0" codeSystem="2.16.840.1.113883.6.1" displayName="INFORMATION FOR PATIENTS SECTION"/>
+               <title>17 PATIENT COUNSELING INFORMATION</title>
+               <text>
+                  <paragraph>
+                     <content styleCode="italics">See FDA-Approved patient labeling (Patient Information).</content>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20250724"/>
+               <component>
+                  <section ID="LINK_c7ce1621-4a42-4b3b-a6ac-249f2f9744ed">
+                     <id root="687191df-3401-4be6-9b64-edff103f7074"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>17.1 Instructions for Use</title>
+                     <text>
+                        <list listType="unordered">
+                           <item>
+                              <caption>•</caption>Patients should be advised to wash their skin with mild soap and allow it to dry before applying clindamycin phosphate foam.</item>
+                           <item>
+                              <caption>•</caption>Patients should use enough clindamycin phosphate foam to cover the face and to apply once daily.</item>
+                           <item>
+                              <caption>•</caption>Patients should dispense clindamycin phosphate foam directly into the cap or onto a cool surface.</item>
+                           <item>
+                              <caption>•</caption>Patients should wash their hands after applying clindamycin phosphate foam.</item>
+                        </list>
+                     </text>
+                     <effectiveTime value="20250724"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_ce61ec11-03fa-492c-a2c3-ade223be5bc5">
+                     <id root="dbaa6676-d143-4940-98e9-267cbb3214dc"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>17.2 Skin Irritation</title>
+                     <text>
+                        <paragraph>Clindamycin phosphate foam may cause irritation such as erythema, scaling, itching, burning, or stinging. Patients should be advised to discontinue use if excessive irritancy or dermatitis occur.</paragraph>
+                     </text>
+                     <effectiveTime value="20250724"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_664ed814-d882-494f-beb3-832d34bff126">
+                     <id root="78d88025-3f6b-495e-a8f8-34656742a4ca"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>17.3 Colitis</title>
+                     <text>
+                        <paragraph>In the event a patient treated with clindamycin phosphate foam experiences severe diarrhea or gastrointestinal discomfort, clindamycin phosphate foam should be discontinued and a physician should be contacted.</paragraph>
+                        <paragraph>Distributed by:</paragraph>
+                        <renderMultiMedia ID="id-1160151847" referencedObject="ID_378f90e3-221d-4bca-a717-fd0714d5b473"/>
+                        <paragraph>
+                           <content styleCode="bold">Glenmark Pharmaceuticals Inc., USA</content>
+                        </paragraph>
+                        <paragraph>Elmwood Park, NJ 07407</paragraph>
+                        <paragraph>Questions? 1 (888) 721-7115</paragraph>
+                        <paragraph>
+                           <linkHtml href="http://www.glenmarkpharma-us.com">www.glenmarkpharma-us.com</linkHtml>
+                        </paragraph>
+                        <paragraph>July 2025<content styleCode="bold"/>
+                        </paragraph>
+                     </text>
+                     <effectiveTime value="20250724"/>
+                     <component>
+                        <observationMedia ID="ID_378f90e3-221d-4bca-a717-fd0714d5b473">
+                           <text>logo2</text>
+                           <value mediaType="image/jpeg" xsi:type="ED">
+                              <reference value="logo2.jpg"/>
+                           </value>
+                        </observationMedia>
+                     </component>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_59f679a5-d159-48e9-9935-eaa213c525a8">
+               <id root="3e8f5ff8-09d7-4feb-a009-ead45913f4f8"/>
+               <code code="42230-3" codeSystem="2.16.840.1.113883.6.1" displayName="SPL PATIENT PACKAGE INSERT SECTION"/>
+               <text>
+                  <list listType="unordered">
+                     <item>
+                        <caption> </caption>                                                            <content styleCode="bold">PATIENT INFORMATION</content>
+                     </item>
+                  </list>
+                  <paragraph>
+                     <content styleCode="bold">                                                                             Clindamycin Phosphate</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">                                                                           (kiln-da-MYE-sin-fos-fate)</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">                                                                                    Foam, 1%</content>
+                  </paragraph>
+                  <table width="98.04%">
+                     <col width="100%"/>
+                     <tbody>
+                        <tr>
+                           <td styleCode="Rrule Botrule Lrule Toprule " valign="top">
+                              <paragraph>
+                                 <content styleCode="bold">Important Information: Clindamycin phosphate foam is for use on the skin only. Do not use clindamycin phosphate foam in your eyes, mouth or vagina.</content>
+                              </paragraph>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <paragraph>
+                     <content styleCode="bold">What is Clindamycin Phosphate Foam?</content>
+                  </paragraph>
+                  <paragraph>Clindamycin phosphate foam is a prescription medicine used on the skin (topical) to treat acne vulgaris in people 12 years and older.</paragraph>
+                  <paragraph>It is not known if clindamycin phosphate foam is safe and effective in children under 12 years of age.</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Who should not use Clindamycin Phosphate Foam?</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Do not use clindamycin phosphate foam if you:</content>
+                  </paragraph>
+                  <list listType="unordered">
+                     <item>
+                        <caption>•</caption>have Crohn’s disease</item>
+                     <item>
+                        <caption>•</caption>have ulcerative colitis</item>
+                     <item>
+                        <caption>•</caption>have had inflammation of the colon (colitis) or severe diarrhea with past antibiotic use</item>
+                  </list>
+                  <paragraph>Tell your doctor if you are not sure if you have any of the conditions listed above.</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">What should I tell my doctor before using Clindamycin Phosphate Foam?</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Before using clindamycin phosphate foam, tell your doctor about all of your medical conditions, including if you:</content>
+                  </paragraph>
+                  <list listType="unordered">
+                     <item>
+                        <caption>•</caption>have or have had bowel problems (such as Crohn’s disease, ulcerative colitis, colitis)</item>
+                     <item>
+                        <caption>•</caption>have or have had eczema or other skin problems.</item>
+                     <item>
+                        <caption>•</caption>are planning to have surgery. Clindamycin phosphate foam may affect how certain medicines work that may be given during surgery.</item>
+                     <item>
+                        <caption>•</caption>are pregnant or plan to become pregnant. It is not known if clindamycin phosphate foam may harm your unborn baby.</item>
+                     <item>
+                        <caption>•</caption>are breastfeeding or plan to breastfeed. It is not known if clindamycin phosphate passes into your breast milk. Talk to your doctor about using clindamycin phosphate foam while breastfeeding. If you use clindamycin phosphate foam while breastfeeding and clindamycin phosphate foam is applied on the chest, take care to avoid getting clindamycin phosphate foam into your baby’s mouth.</item>
+                  </list>
+                  <paragraph>
+                     <content styleCode="bold">Tell your doctor about all the medicines you take</content> including prescription and over-the-counter medicines, vitamins and herbal supplements. </paragraph>
+                  <paragraph>Clindamycin phosphate foam may affect the way other medicines work and other medicines may affect how clindamycin phosphate foam works.</paragraph>
+                  <paragraph>Especially tell your doctor if you take medicine by mouth that contains erythromycin or use products on your skin that contain erythromycin. </paragraph>
+                  <paragraph>Know the medicines you take. Keep a list of them to show your doctor and pharmacist when you get a new medicine. </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">How should I use Clindamycin Phosphate Foam?</content>
+                  </paragraph>
+                  <list listType="unordered">
+                     <item>
+                        <caption>•</caption>Use clindamycin phosphate foam exactly as your doctor tells you to use it. See the detailed “Instructions for Use” for directions about how to apply clindamycin phosphate foam correctly.</item>
+                     <item>
+                        <caption>•</caption>Wash your skin with mild soap and water and dry before applying clindamycin phosphate foam.</item>
+                     <item>
+                        <caption>•</caption>Apply clindamycin phosphate foam 1 time each day to the affected skin area. You should apply enough clindamycin phosphate foam to cover the entire affected area.</item>
+                     <item>
+                        <caption>•</caption>Dispense clindamycin phosphate foam directly into the cap. <content styleCode="bold">Do not</content> dispense clindamycin phosphate foam directly onto your hands or face, because the foam will begin to melt on contact with warm skin.</item>
+                     <item>
+                        <caption>•</caption>Wash your hands after applying clindamycin phosphate foam.</item>
+                  </list>
+                  <paragraph>
+                     <content styleCode="bold">What should I avoid while using Clindamycin Phosphate Foam?</content>
+                  </paragraph>
+                  <list listType="unordered">
+                     <item>
+                        <caption>•</caption>Clindamycin phosphate foam is flammable. Avoid fire, flames, or smoking during and right after you apply clindamycin phosphate foam to your skin.</item>
+                     <item>
+                        <caption>•</caption>Avoid getting clindamycin phosphate foam in or near your eyes, mouth, lips, or broken skin. If you get clindamycin phosphate foam in your eyes, mouth, on lips or broken skin, rinse well with water.</item>
+                  </list>
+                  <paragraph>
+                     <content styleCode="bold">What are possible side effects with Clindamycin Phosphate Foam?</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Clindamycin phosphate foam may cause serious side effects, including:</content>
+                  </paragraph>
+                  <list listType="unordered">
+                     <item>
+                        <caption>•</caption>
+                        <content styleCode="bold">Inflammation of the colon (colitis).</content> Diarrhea, bloody diarrhea, and colitis has happened in people who use clindamycin phosphate foam. Stop using clindamycin phosphate foam and call your doctor right away if you have severe stomach (abdominal) cramps, watery diarrhea, or bloody diarrhea during treatment, and for several weeks after treatment, with clindamycin phosphate foam.</item>
+                     <item>
+                        <caption>•</caption>
+                        <content styleCode="bold">Skin irritation</content>. Stop using clindamycin phosphate foam and call your doctor if you develop skin irritation during treatment with clindamycin phosphate foam.</item>
+                  </list>
+                  <paragraph>
+                     <content styleCode="bold">The most common side effects of clindamycin phosphate foam include</content> headache and application site reactions (including burning, itching, and dryness). </paragraph>
+                  <paragraph>These are not all the possible side effects of clindamycin phosphate foam. </paragraph>
+                  <paragraph>Call your doctor for medical advice about side effects. You may report side effects to FDA at 1-800-FDA-1088. You may report side effects to Glenmark Pharmaceuticals Inc., USA at 1(888)-721-7115.</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">How should I store Clindamycin Phosphate Foam?</content>
+                  </paragraph>
+                  <list listType="unordered">
+                     <item>
+                        <caption>•</caption>Store clindamycin phosphate foam at room temperature between 68°F to 77°F (20°C to 25°C).</item>
+                     <item>
+                        <caption>•</caption>Keep clindamycin phosphate foam away from heat. Never throw the can into a fire, even if the can is empty.</item>
+                     <item>
+                        <caption>•</caption>Do not store clindamycin phosphate foam at temperatures above 120°F (49°C).</item>
+                     <item>
+                        <caption>•</caption>Do not break through (puncture) the clindamycin phosphate foam can.</item>
+                  </list>
+                  <paragraph>
+                     <content styleCode="bold">Keep clindamycin phosphate foam and all medicines out of the reach of children.</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">General information about the safe and effective use of Clindamycin Phosphate Foam:</content>
+                  </paragraph>
+                  <paragraph>Medicines are sometimes prescribed for purposes other than those listed in Patient Information leaflet. Do not use clindamycin phosphate foam for a condition for which it was not prescribed. Do not give clindamycin phosphate foam to other people, even if they have the same symptoms you have. It may harm them. You can also ask your pharmacist or doctor for information about clindamycin phosphate foam that is written for health professionals.</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">What are the ingredients in Clindamycin Phosphate Foam?</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Active ingredient:</content> clindamycin phosphate</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Inactive ingredients: </content>cetyl alcohol, ethanol (58%), polysorbate 60, propylene glycol, purified water, and stearyl alcohol. The can is pressurized with a hydrocarbon (propane/butane) propellant.</paragraph>
+                  <paragraph>This Patient Information has been approved by the U.S. Food and Drug Administration.</paragraph>
+                  <paragraph>Distributed by:</paragraph>
+                  <renderMultiMedia ID="id-1860508582" referencedObject="B27633CB-DCF3-40C2-9DEB-EA57FBC85CB1"/>
+                  <paragraph>
+                     <content styleCode="bold">Glenmark Pharmaceuticals Inc., USA</content>
+                  </paragraph>
+                  <paragraph>Elmwood Park, NJ 07407</paragraph>
+                  <paragraph>Questions? 1 (888) 721-7115</paragraph>
+                  <paragraph>
+                     <linkHtml href="http://www.glenmarkpharma-us.com">www.glenmarkpharma-us.com</linkHtml>
+                  </paragraph>
+                  <paragraph>July 2025<content styleCode="bold"/>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Instructions for Use</content>
+                  </paragraph>
+                  <list listType="unordered">
+                     <item>
+                        <caption> </caption>
+                        <content styleCode="bold">Clindamycin Phosphate</content>
+                     </item>
+                  </list>
+                  <paragraph>
+                     <content styleCode="bold">(klin-da-MYE-sin fos-fate)</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Foam, 1%</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Important Information: Clindamycin phosphate foam is for use on the skin only. Do not use clindamycin phosphate foam in your eyes, mouth or vagina.</content>
+                  </paragraph>
+                  <table cellpadding="0pt" width="100%">
+                     <col width="35%"/>
+                     <col width="65%"/>
+                     <tbody>
+                        <tr>
+                           <td styleCode="Rrule Botrule Lrule Toprule " valign="top">
+                              <paragraph>
+                                 <content styleCode="bold">Step 1: </content>Remove the clear cap from the clindamycin phosphate foam can.</paragraph>
+                           </td>
+                           <td styleCode="Rrule Botrule Lrule Toprule " valign="top">
+                              <renderMultiMedia ID="id508945059" referencedObject="ID_86cacfba-0f41-48b9-9ade-21405b6c30dd"/>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td styleCode="Rrule Lrule Botrule " valign="top">
+                              <paragraph>
+                                 <content styleCode="bold">Step 2: </content>Hold the can upright and firmly press the nozzle to dispense clindamycin phosphate foam into the clear cap.</paragraph>
+                              <list listType="unordered">
+                                 <item>
+                                    <caption>•</caption>Dispense enough clindamycin phosphate foam to cover the entire affected area.</item>
+                              </list>
+                           </td>
+                           <td styleCode="Rrule Lrule Botrule " valign="top">
+                              <renderMultiMedia ID="id573328649" referencedObject="ID_07f9501d-a219-408d-8061-24e2a633d9f4"/>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td styleCode="Rrule Lrule Botrule " valign="top">
+                              <list listType="unordered">
+                                 <item>
+                                    <caption>•</caption>If the can seems warm or the foam seems runny, run the can under cold water.</item>
+                              </list>
+                           </td>
+                           <td styleCode="Rrule Lrule Botrule " valign="top">
+                              <renderMultiMedia ID="id-1452390176" referencedObject="FFA61E8C-2FF5-43D4-94AA-9B519EF78193"/>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td styleCode="Rrule Lrule Botrule " valign="top">
+                              <paragraph>
+                                 <content styleCode="bold">Step 3: </content>Pick up small amounts of clindamycin phosphate foam with your fingertips and gently rub the foam into the affected area until the foam disappears.</paragraph>
+                           </td>
+                           <td styleCode="Rrule Lrule Botrule " valign="top">
+                              <renderMultiMedia ID="id659120681" referencedObject="ID_721deb12-e6b3-4fe1-a651-57427d6986ff"/>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td colspan="2" styleCode="Rrule Botrule Lrule " valign="top">
+                              <paragraph>
+                                 <content styleCode="bold">Step 4: </content>Wash your hands after applying clindamycin phosphate foam<content styleCode="bold">.</content>
+                              </paragraph>
+                              <paragraph>Throw away any of the unused medicine that you dispensed out of the can.</paragraph>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <paragraph>
+                     <content styleCode="bold">How should I store clindamycin phosphate foam?</content>
+                  </paragraph>
+                  <list listType="unordered">
+                     <item>
+                        <caption>•</caption>Store clindamycin phosphate foam at room temperature between 68°F to 77°F (20°C to 25°C).</item>
+                     <item>
+                        <caption>•</caption>Keep clindamycin phosphate foam away from heat. Never throw the can into a fire, even if the can is empty.</item>
+                     <item>
+                        <caption>•</caption>Do not store clindamycin phosphate foam at temperatures above 120°F (49°C).</item>
+                     <item>
+                        <caption>•</caption>Do not break through (puncture) the clindamycin phosphate foam can.</item>
+                  </list>
+                  <paragraph>
+                     <content styleCode="bold">Keep clindamycin phosphate foam and all medicines out of the reach of children.</content>
+                  </paragraph>
+                  <paragraph>The Patient Information and Instructions for Use have been approved by the U.S. Food and Drug Administration.</paragraph>
+                  <paragraph>Distributed by:</paragraph>
+                  <renderMultiMedia ID="ID0EBEBK" referencedObject="ID_93e02fa1-9e0a-4adb-981f-8f2096560b51"/>
+                  <paragraph>
+                     <content styleCode="bold">Glenmark Pharmaceuticals Inc., USA</content>
+                  </paragraph>
+                  <paragraph>Elmwood Park, NJ 07407</paragraph>
+                  <paragraph>Questions? 1 (888) 721-7115</paragraph>
+                  <paragraph>
+                     <linkHtml href="http://www.glenmarkpharma-us.com">www.glenmarkpharma-us.com</linkHtml>
+                  </paragraph>
+                  <paragraph>July 2025</paragraph>
+               </text>
+               <effectiveTime value="20250724"/>
+               <component>
+                  <observationMedia ID="B27633CB-DCF3-40C2-9DEB-EA57FBC85CB1">
+                     <text>logo1</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="logo1.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+               <component>
+                  <observationMedia ID="ID_86cacfba-0f41-48b9-9ade-21405b6c30dd">
+                     <text>image-01.jpg</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="image-01.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+               <component>
+                  <observationMedia ID="ID_07f9501d-a219-408d-8061-24e2a633d9f4">
+                     <text>image-02.jpg</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="image-03.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+               <component>
+                  <observationMedia ID="FFA61E8C-2FF5-43D4-94AA-9B519EF78193">
+                     <text>image-03.jpg</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="image-04.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+               <component>
+                  <observationMedia ID="ID_721deb12-e6b3-4fe1-a651-57427d6986ff">
+                     <text>image-04.jpg</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="image-05.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+               <component>
+                  <observationMedia ID="ID_93e02fa1-9e0a-4adb-981f-8f2096560b51">
+                     <text>logo</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="logo.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_4a006548-1c1b-4259-819b-12c3bfb946b7">
+               <id root="2d2d96e7-b7c3-4f13-8be2-6e7f3441d86e"/>
+               <code code="51945-4" codeSystem="2.16.840.1.113883.6.1" displayName="PACKAGE LABEL.PRINCIPAL DISPLAY PANEL"/>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">Principal Display Panel</content>
+                  </paragraph>
+                  <renderMultiMedia ID="id338280614" referencedObject="EE5A194D-FB2D-4A39-B22C-A49EDAC7F245"/>
+               </text>
+               <effectiveTime value="20250724"/>
+               <component>
+                  <observationMedia ID="EE5A194D-FB2D-4A39-B22C-A49EDAC7F245">
+                     <text>carton</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="carton.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+      </structuredBody>
+   </component>
+</document>

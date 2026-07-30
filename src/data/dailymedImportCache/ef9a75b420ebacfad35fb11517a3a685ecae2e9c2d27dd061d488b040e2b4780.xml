@@ -1,0 +1,687 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="https://www.accessdata.fda.gov/spl/stylesheet/spl.xsl" type="text/xsl"?>
+<document xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 https://www.accessdata.fda.gov/spl/schema/spl.xsd">
+   <id root="c535b93f-b31f-411f-848c-b5e6782f321f"/>
+   <code code="34391-3" codeSystem="2.16.840.1.113883.6.1" displayName="Human Prescription Drug Label"/>
+   <title>Prednisolone Tablets, USP<br/> Rx only<br/>
+   </title>
+   <effectiveTime value="20240216"/>
+   <setId root="070f1937-50a5-457f-bef5-4e597014e26d"/>
+   <versionNumber value="2"/>
+   <author>
+      <time/>
+      <assignedEntity>
+         <representedOrganization>
+            <id extension="650082092" root="1.3.6.1.4.1.519.1"/>
+            <name>Aurobindo Pharma Limited</name>
+            <assignedEntity>
+               <assignedOrganization>
+                  <assignedEntity>
+                     <assignedOrganization>
+                        <id extension="650918514" root="1.3.6.1.4.1.519.1"/>
+                        <name>APL HEALTHCARE LIMITED</name>
+                     </assignedOrganization>
+                     <performance>
+                        <actDefinition>
+                           <code code="C25391" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ANALYSIS"/>
+                           <product>
+                              <manufacturedProduct classCode="MANU">
+                                 <manufacturedMaterialKind>
+                                    <code code="59651-491" codeSystem="2.16.840.1.113883.6.69"/>
+                                 </manufacturedMaterialKind>
+                              </manufacturedProduct>
+                           </product>
+                        </actDefinition>
+                     </performance>
+                     <performance>
+                        <actDefinition>
+                           <code code="C43360" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MANUFACTURE"/>
+                           <product>
+                              <manufacturedProduct classCode="MANU">
+                                 <manufacturedMaterialKind>
+                                    <code code="59651-491" codeSystem="2.16.840.1.113883.6.69"/>
+                                 </manufacturedMaterialKind>
+                              </manufacturedProduct>
+                           </product>
+                        </actDefinition>
+                     </performance>
+                  </assignedEntity>
+               </assignedOrganization>
+            </assignedEntity>
+         </representedOrganization>
+      </assignedEntity>
+   </author>
+   <component>
+      <structuredBody>
+         <component>
+            <section>
+               <id root="631a6b9a-dac8-47ee-9f8b-be961069cccc"/>
+               <code code="48780-1" codeSystem="2.16.840.1.113883.6.1" displayName="SPL PRODUCT DATA ELEMENTS SECTION"/>
+               <effectiveTime value="20240216"/>
+               <subject>
+                  <manufacturedProduct>
+                     <manufacturedProduct>
+                        <code code="59651-491" codeSystem="2.16.840.1.113883.6.69"/>
+                        <name>PREDNISOLONE<suffix/>
+                        </name>
+                        <formCode code="C42998" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TABLET"/>
+                        <asEntityWithGeneric>
+                           <genericMedicine>
+                              <name>PREDNISOLONE</name>
+                           </genericMedicine>
+                        </asEntityWithGeneric>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator value="5" unit="mg"/>
+                              <denominator value="1" unit="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="9PHQ9Y1OLM" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>PREDNISOLONE</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="9PHQ9Y1OLM" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>PREDNISOLONE</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="3SY5LH9PMK" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>ANHYDROUS LACTOSE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="ETJ7Z6XBU4" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>SILICON DIOXIDE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="2S7830E561" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>CROSPOVIDONE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="CQ3XH3DET6" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>D&amp;C YELLOW NO. 10 ALUMINUM LAKE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="F05Q2T2JA0" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>DOCUSATE SODIUM</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="H77VEI93A8" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>FD&amp;C YELLOW NO. 6</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="70097M6I30" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>MAGNESIUM STEARATE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="OJ245FE5EU" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>SODIUM BENZOATE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <asContent>
+                           <quantity>
+                              <numerator value="50" unit="1"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code code="59651-491-50" codeSystem="2.16.840.1.113883.6.69"/>
+                              <formCode code="C43169" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOTTLE"/>
+                           </containerPackagedProduct>
+                           <subjectOf>
+                              <characteristic>
+                                 <code code="SPLCMBPRDTP" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                                 <value code="C112160" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="Type 0: Not a Combination Product" xsi:type="CV"/>
+                              </characteristic>
+                           </subjectOf>
+                           <subjectOf>
+                              <marketingAct>
+                                 <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                                 <statusCode code="active"/>
+                                 <effectiveTime>
+                                    <low value="20230317"/>
+                                 </effectiveTime>
+                              </marketingAct>
+                           </subjectOf>
+                        </asContent>
+                        <asContent>
+                           <quantity>
+                              <numerator value="100" unit="1"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code code="59651-491-01" codeSystem="2.16.840.1.113883.6.69"/>
+                              <formCode code="C43169" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOTTLE"/>
+                           </containerPackagedProduct>
+                           <subjectOf>
+                              <characteristic>
+                                 <code code="SPLCMBPRDTP" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                                 <value code="C112160" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="Type 0: Not a Combination Product" xsi:type="CV"/>
+                              </characteristic>
+                           </subjectOf>
+                           <subjectOf>
+                              <marketingAct>
+                                 <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                                 <statusCode code="active"/>
+                                 <effectiveTime>
+                                    <low value="20230317"/>
+                                 </effectiveTime>
+                              </marketingAct>
+                           </subjectOf>
+                        </asContent>
+                     </manufacturedProduct>
+                     <subjectOf>
+                        <approval>
+                           <id extension="ANDA215673" root="2.16.840.1.113883.3.150"/>
+                           <code code="C73584" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ANDA"/>
+                           <author>
+                              <territorialAuthority>
+                                 <territory>
+                                    <code code="USA" codeSystem="2.16.840.1.113883.5.28"/>
+                                 </territory>
+                              </territorialAuthority>
+                           </author>
+                        </approval>
+                     </subjectOf>
+                     <subjectOf>
+                        <marketingAct>
+                           <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <statusCode code="active"/>
+                           <effectiveTime>
+                              <low value="20230317"/>
+                           </effectiveTime>
+                        </marketingAct>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLCOLOR" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value xsi:type="CV" code="C48331" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ORANGE">
+                              <originalText>peach</originalText>
+                           </value>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLSHAPE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value xsi:type="CV" code="C48348" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ROUND"/>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLSIZE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value xsi:type="PQ" unit="mm" value="6"/>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLSCORE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value xsi:type="INT" value="2"/>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLIMPRINT" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value xsi:type="ST">P;L;5</value>
+                        </characteristic>
+                     </subjectOf>
+                     <consumedIn>
+                        <substanceAdministration>
+                           <routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ORAL"/>
+                        </substanceAdministration>
+                     </consumedIn>
+                  </manufacturedProduct>
+               </subject>
+            </section>
+         </component>
+         <component>
+            <section ID="Section_1">
+               <id root="f0b8fea4-c8c1-4d28-99f4-47cf8f9dc9ac"/>
+               <code code="34089-3" codeSystem="2.16.840.1.113883.6.1" displayName="DESCRIPTION SECTION"/>
+               <title>DESCRIPTION</title>
+               <text>
+                  <paragraph>Glucocorticoids are adrenocortical steroids, both naturally occurring and synthetic, which are readily absorbed from the gastrointestinal tract. Prednisolone USP is a white to practically white, odorless, crystalline powder, soluble in methanol and in dioxane, sparingly soluble in acetone and in alcohol, slightly soluble in chloroform, very slightly soluble in water. It is designated chemically as pregna-1,4-diene-3,20-dione,11,17,21-trihydroxy-, (11ß)-. The structural formula is represented below:</paragraph>
+                  <br/>
+                  <paragraph>           <renderMultiMedia referencedObject="MM1"/>                                                                                       </paragraph>
+                  <paragraph>C<sub>21</sub>H<sub>28</sub>O<sub>5</sub>             M.W. 360.45</paragraph>
+                  <paragraph>Prednisolone Tablets, USP 5 mg for oral administration contain the following inactive ingredients: anhydrous lactose, colloidal silicon dioxide, crospovidone, D&amp;C Yellow No. 10 Aluminum Lake HT, docusate sodium, FD&amp;C Yellow No. 6 Aluminum Lake, magnesium stearate and sodium benzoate.<br/>
+                     <br/> FDA approved dissolution test specifications differ from USP.</paragraph>
+               </text>
+               <effectiveTime value="20240216"/>
+               <component>
+                  <observationMedia ID="MM1">
+                     <text>structure</text>
+                     <value xsi:type="ED" mediaType="image/jpeg">
+                        <reference value="prednisolone-str.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="Section_2">
+               <id root="dce3ab80-b504-4706-a8c5-33acf0a6313d"/>
+               <code code="34090-1" codeSystem="2.16.840.1.113883.6.1" displayName="CLINICAL PHARMACOLOGY SECTION"/>
+               <title>CLINICAL PHARMACOLOGY</title>
+               <text>
+                  <paragraph>Naturally occurring glucocorticoids (hydrocortisone and cortisone), which also have salt-retaining properties, are used as replacement therapy in adrenocortical deficiency states. Prednisolone is primarily used for its potent anti-inflammatory effects in disorders of many organ systems. </paragraph>
+                  <br/>
+                  <paragraph>Glucocorticoids cause profound and varied metabolic effects. In addition, they modify the body’s immune responses to diverse stimuli.</paragraph>
+               </text>
+               <effectiveTime value="20240216"/>
+            </section>
+         </component>
+         <component>
+            <section ID="Section_3">
+               <id root="bc416ab3-2f95-437f-82f3-1bf581358248"/>
+               <code code="34067-9" codeSystem="2.16.840.1.113883.6.1" displayName="INDICATIONS &amp; USAGE SECTION"/>
+               <title>INDICATIONS AND USAGE</title>
+               <text>
+                  <paragraph>1.<content styleCode="bold"> Endocrine disorders</content>. Primary or secondary adrenocortical insufficiency (hydrocortisone or cortisone is the first choice; synthetic analogs may be used in conjunction with mineralocorticoids where applicable; in infancy mineralocorticoid supplementation is of particular importance).<br/>
+                     <br/> Congenital adrenal hyperplasia</paragraph>
+                  <paragraph>Nonsuppurative thyroiditis</paragraph>
+                  <paragraph>Hypercalcemia associated with cancer</paragraph>
+                  <br/>
+                  <paragraph>2. <content styleCode="bold">Rheumatic disorders</content>. As adjunctive therapy for short-term administration (to tide the patient over an acute episode or exacerbation) in:</paragraph>
+                  <br/>
+                  <paragraph>Psoriatic arthritis</paragraph>
+                  <paragraph>Rheumatoid arthritis; including juvenile rheumatoid arthritis (selected cases may require low-dose maintenance therapy)</paragraph>
+                  <paragraph>Ankylosing spondylitis</paragraph>
+                  <paragraph>Acute and subacute bursitis</paragraph>
+                  <paragraph>Acute nonspecific tenosynovitis</paragraph>
+                  <paragraph>Acute gouty arthritis</paragraph>
+                  <paragraph>Post-traumatic osteoarthritis</paragraph>
+                  <paragraph>Synovitis of osteoarthritis</paragraph>
+                  <paragraph>Epicondylitis</paragraph>
+                  <br/>
+                  <paragraph>3. <content styleCode="bold">Collagen diseases</content>. During an exacerbation or as maintenance therapy in selected cases of:</paragraph>
+                  <br/>
+                  <paragraph>Systemic lupus erythematosus</paragraph>
+                  <paragraph>Acute rheumatic carditis</paragraph>
+                  <paragraph>Systemic dermatomyositis (polymyositis)</paragraph>
+                  <br/>
+                  <paragraph>4. <content styleCode="bold">Dermatologic diseases</content>
+                  </paragraph>
+                  <br/>
+                  <paragraph>Pemphigus</paragraph>
+                  <paragraph>Bullous dermatitis herpetiformis</paragraph>
+                  <paragraph>Severe erythema multiforme (Stevens-Johnson syndrome)</paragraph>
+                  <paragraph>Exfoliative dermatitis</paragraph>
+                  <paragraph>Mycosis fungoides</paragraph>
+                  <paragraph>Severe psoriasis</paragraph>
+                  <paragraph>Severe seborrheic dermatitis</paragraph>
+                  <br/>
+                  <paragraph>5. <content styleCode="bold">Allergic states</content>. Control of severe or incapacitating allergic conditions intractable to adequate trials of conventional treatment:</paragraph>
+                  <br/>
+                  <paragraph>Seasonal or perennial allergic rhinitis</paragraph>
+                  <paragraph>Serum sickness</paragraph>
+                  <paragraph>Bronchial asthma</paragraph>
+                  <paragraph>Contact dermatitis</paragraph>
+                  <paragraph>Atopic dermatitis</paragraph>
+                  <paragraph>Drug hypersensitivity reactions</paragraph>
+                  <br/>
+                  <paragraph>6. <content styleCode="bold">Ophthalmic diseases</content>. Severe acute and chronic allergic and inflammatory processes involving the eye and its adnexa such as:</paragraph>
+                  <br/>
+                  <paragraph>Allergic conjunctivitis</paragraph>
+                  <paragraph>Keratitis</paragraph>
+                  <paragraph>Allergic corneal marginal ulcers</paragraph>
+                  <paragraph>Herpes zoster ophthalmicus</paragraph>
+                  <paragraph>Iritis and iridocyclitis</paragraph>
+                  <paragraph>Chorioretinitis</paragraph>
+                  <paragraph>Anterior segment inflammation</paragraph>
+                  <paragraph>Diffuse posterior uveitis and choroiditis</paragraph>
+                  <paragraph>Optic neuritis</paragraph>
+                  <paragraph>Sympathetic ophthalmia</paragraph>
+                  <br/>
+                  <paragraph>7.<content styleCode="bold"> Respiratory diseases</content>
+                  </paragraph>
+                  <paragraph>Symptomatic sarcoidosis</paragraph>
+                  <paragraph>Loeffler’s syndrome not manageable by other means</paragraph>
+                  <paragraph>Berylliosis</paragraph>
+                  <paragraph>Fulminating or disseminated pulmonary tuberculosis when used concurrently with appropriate antituberculous chemotherapy</paragraph>
+                  <paragraph>Aspiration pneumonitis</paragraph>
+                  <br/>
+                  <paragraph>8.<content styleCode="bold"> Hematologic disorders</content>
+                  </paragraph>
+                  <br/>
+                  <paragraph>Idiopathic thrombocytopenic purpura in adults</paragraph>
+                  <paragraph>Secondary thrombocytopenia in adults</paragraph>
+                  <paragraph>Acquired (autoimmune) hemolytic anemia</paragraph>
+                  <paragraph>Erythroblastopenia (RBC anemia)</paragraph>
+                  <paragraph>Congenital (erythroid) hypoplastic anemia</paragraph>
+                  <br/>
+                  <paragraph>9.<content styleCode="bold"> Neoplastic diseases.</content> For palliative management of:</paragraph>
+                  <br/>
+                  <paragraph>Leukemias and lymphomas in adults</paragraph>
+                  <paragraph>Acute leukemia of childhood</paragraph>
+                  <br/>
+                  <paragraph>10.<content styleCode="bold"> Edematous states</content>. To induce a diuresis or remission of proteinuria in the nephrotic syndrome, without uremia, of the idiopathic type or that due to lupus erythematosus.</paragraph>
+                  <br/>
+                  <paragraph>11.<content styleCode="bold"> Gastrointestinal diseases</content>. To tide the patient over a critical period of the disease in:</paragraph>
+                  <br/>
+                  <paragraph>Ulcerative colitis</paragraph>
+                  <paragraph>Regional enteritis</paragraph>
+                  <br/>
+                  <paragraph>12<content styleCode="bold">. Nervous system.</content> Acute exacerbations of multiple sclerosis</paragraph>
+                  <br/>
+                  <paragraph>13.<content styleCode="bold"> Miscellaneous</content>
+                  </paragraph>
+                  <paragraph>Tuberculous meningitis with subarachnoid block or impending block when used concurrently with appropriate antituberculous chemotherapy </paragraph>
+                  <br/>
+                  <paragraph>Trichinosis with neurologic or myocardial involvement</paragraph>
+               </text>
+               <effectiveTime value="20240216"/>
+            </section>
+         </component>
+         <component>
+            <section ID="Section_4">
+               <id root="05eb8f10-5aad-4ff1-a54c-1b73eb43bc09"/>
+               <code code="34070-3" codeSystem="2.16.840.1.113883.6.1" displayName="CONTRAINDICATIONS SECTION"/>
+               <title>CONTRAINDICATIONS</title>
+               <text>
+                  <paragraph>Systemic fungal infections</paragraph>
+               </text>
+               <effectiveTime value="20240216"/>
+            </section>
+         </component>
+         <component>
+            <section ID="Section_5">
+               <id root="6f381cc9-ba04-4563-b8f7-85becb8934c4"/>
+               <code code="34071-1" codeSystem="2.16.840.1.113883.6.1" displayName="WARNINGS SECTION"/>
+               <title>WARNINGS</title>
+               <text>
+                  <paragraph>In patients on corticosteroid therapy subjected to unusual stress increased dosage of rapidly acting corticosteroids before, during, and after the stressful situation is indicated.</paragraph>
+                  <br/>
+                  <paragraph>
+                     <content styleCode="italics">Immunosuppression and Increased Risk of Infection</content>
+                  </paragraph>
+                  <paragraph>Corticosteroids, including prednisolone, suppress the immune system and increase the risk of infection with any pathogen, including viral, bacterial, fungal, protozoan, or helminthic pathogens. Corticosteroids can:</paragraph>
+                  <br/>
+                  <list listType="unordered" styleCode="disc">
+                     <item>Reduce resistance to new infections</item>
+                     <item>Exacerbate existing infections</item>
+                     <item>Increase the risk of disseminated infections</item>
+                     <item>Increase the risk of reactivation or exacerbation of latent infections</item>
+                     <item>Mask some signs of infection</item>
+                  </list>
+                  <br/>
+                  <paragraph>Corticosteroid-associated infections can be mild but can be severe and at times fatal. The rate of infectious complications increases with increasing corticosteroid dosages.</paragraph>
+                  <br/>
+                  <paragraph>Monitor for the development of infection and consider prednisolone withdrawal or dosage reduction as needed. </paragraph>
+                  <br/>
+                  <paragraph>Do not administer prednisolone by an intraarticular, intrabursal, intratendinous, or intralesional route in the presence of acute local infection.</paragraph>
+                  <br/>
+                  <paragraph>
+                     <content styleCode="italics">Tuberculosis</content>
+                  </paragraph>
+                  <paragraph>If prednisolone is used to treat a condition in patients with latent tuberculosis or tuberculin reactivity, reactivation of tuberculosis may occur. Closely monitor such patients for reactivation. During prolonged prednisolone therapy, patients with latent tuberculosis or tuberculin reactivity should receive chemoprophylaxis.</paragraph>
+                  <br/>
+                  <paragraph>
+                     <content styleCode="italics">Varicella Zoster and Measles Viral Infections</content>
+                  </paragraph>
+                  <paragraph>Varicella and measles can have a serious or even fatal course in non-immune patients taking corticosteroids, including prednisolone. In corticosteroid-treated patients who have not had these diseases or are nonimmune, particular care should be taken to avoid exposure to varicella and measles:</paragraph>
+                  <br/>
+                  <list listType="unordered" styleCode="disc">
+                     <item>If a prednisolone-treated patient is exposed to varicella, prophylaxis with varicella zoster immune globulin may be indicated. If varicella develops, treatment with antiviral agents may be considered.</item>
+                     <item>If a prednisolone-treated patient is exposed to measles, prophylaxis with immunoglobulin may be indicated.</item>
+                  </list>
+                  <br/>
+                  <paragraph>
+                     <content styleCode="italics">Hepatitis B Virus Reactivation</content>
+                  </paragraph>
+                  <paragraph>Hepatitis B virus reactivation can occur in patients who are hepatitis B carriers treated with immunosuppressive dosages of corticosteroids, including prednisolone. Reactivation can also occur infrequently in corticosteroid-treated patients who appear to have resolved hepatitis B infection.</paragraph>
+                  <br/>
+                  <paragraph>Screen patients for hepatitis B infection before initiating immunosuppressive (e.g., prolonged) treatment with prednisolone. For patients who show evidence of hepatitis B infection, recommend consultation with physicians with expertise in managing hepatitis B regarding monitoring and consideration for hepatitis B antiviral therapy.</paragraph>
+                  <br/>
+                  <paragraph>
+                     <content styleCode="italics">Fungal Infections</content>
+                  </paragraph>
+                  <paragraph>Corticosteroids, including prednisolone, may exacerbate systemic fungal infections; therefore, avoid prednisolone use in the presence of such infections unless prednisolone is needed to control drug reactions. For patients on chronic prednisolone therapy who develop systemic fungal infections, prednisolone withdrawal or dosage reduction is recommended.</paragraph>
+                  <br/>
+                  <paragraph>
+                     <content styleCode="italics">Amebiasis</content>
+                  </paragraph>
+                  <paragraph>Corticosteroids, including prednisolone, may activate latent amebiasis. Therefore, it is recommended that latent amebiasis or active amebiasis be ruled out before initiating prednisolone in patients who have spent time in the tropics or patients with unexplained diarrhea.</paragraph>
+                  <br/>
+                  <paragraph>
+                     <content styleCode="italics">Strongyloides Infestation</content>
+                  </paragraph>
+                  <paragraph>Corticosteroids, including prednisolone, should be used with great care in patients with known or suspected Strongyloides (threadworm) infestation. In such patients, corticosteroid-induced immunosuppression may lead to Strongyloides hyperinfection and dissemination with widespread larval migration, often accompanied by severe enterocolitis and potentially fatal gram-negative septicemia.</paragraph>
+                  <br/>
+                  <paragraph>
+                     <content styleCode="italics">Cerebral Malaria</content>
+                  </paragraph>
+                  <paragraph>Avoid corticosteroids, including prednisolone, in patients with cerebral malaria.</paragraph>
+                  <br/>
+                  <paragraph>
+                     <content styleCode="italics">Kaposi’s Sarcoma</content>
+                  </paragraph>
+                  <paragraph>Kaposi’s sarcoma has been reported to occur in patients receiving corticosteroid therapy, most often for chronic conditions. Discontinuation of corticosteroids may result in clinical improvement of Kaposi’s sarcoma.</paragraph>
+                  <br/>
+                  <paragraph>Prolonged use of corticosteroids may produce posterior subcapsular cataracts, glaucoma with possible damage to the optic nerves, and may enhance the establishment of secondary ocular infections due to fungi or viruses.</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Usage in Pregnancy</content>
+                  </paragraph>
+                  <paragraph>Since adequate human reproduction studies have not been done with corticosteroids, the use of these drugs in pregnancy, nursing mothers or women of childbearing potential requires that the possible benefits of the drug be weighed against the potential hazards to the mother and embryo or fetus. Infants born of mothers who have received substantial doses of corticosteroids during pregnancy, should be carefully observed for signs of hypoadrenalism.</paragraph>
+                  <br/>
+                  <paragraph>Average and large doses of hydrocortisone or cortisone can cause elevation of blood pressure, salt and water retention, and increased excretion of potassium. These effects are less likely to occur with synthetic derivatives except when used in large doses. Dietary salt restriction and potassium supplementation may be necessary. All corticosteroids increase calcium excretion.</paragraph>
+                  <br/>
+                  <paragraph>
+                     <content styleCode="bold">While on corticosteroid therapy patients should not be vaccinated against smallpox. Other immunization procedures should not be undertaken in patients who are on corticosteroids, especially on high dose, because of possible hazards of neurological complications and a lack of antibody response.</content>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20240216"/>
+            </section>
+         </component>
+         <component>
+            <section ID="Section_6">
+               <id root="2578c0db-c6be-417f-b698-77c2961b7117"/>
+               <code code="42232-9" codeSystem="2.16.840.1.113883.6.1" displayName="PRECAUTIONS SECTION"/>
+               <title>PRECAUTIONS</title>
+               <effectiveTime value="20240216"/>
+               <component>
+                  <section ID="Section_6.2">
+                     <id root="ecc2fcac-cbf2-4eef-9dbd-708a10451b8a"/>
+                     <code code="34076-0" codeSystem="2.16.840.1.113883.6.1" displayName="INFORMATION FOR PATIENTS SECTION"/>
+                     <title>Information for Patients</title>
+                     <text>
+                        <paragraph>Persons who are on immunosuppressant doses of corticosteroids should be warned to avoid exposure to chickenpox or measles. Patients should also be advised that if they are exposed, medical advice should be sought without delay. </paragraph>
+                        <br/>
+                        <paragraph>Drug-induced secondary adrenocortical insufficiency may be minimized by gradual reduction of dosage. This type of relative insufficiency may persist for months after discontinuation of therapy; therefore, in any situation of stress occurring during that period, hormone therapy should be reinstituted. Since mineralocorticoid secretion may be impaired, salt and/or a mineralocorticoid should be administered concurrently.</paragraph>
+                        <br/>
+                        <paragraph>There is an enhanced effect of corticosteroids on patients with hypothyroidism and in those with cirrhosis.</paragraph>
+                        <br/>
+                        <paragraph>Corticosteroids should be used cautiously in patients with ocular herpes simplex because of possible corneal perforation.</paragraph>
+                        <br/>
+                        <paragraph>The lowest possible dose of corticosteroid should be used to control the condition under treatment, and when reduction in dosage is possible, the reduction should be gradual.</paragraph>
+                        <paragraph>Psychic derangements may appear when corticosteroids are used, ranging from euphoria, insomnia, mood swings, personality changes, and severe depression, to frank psychotic manifestations. Also, existing emotional instability or psychotic tendencies may be aggravated by corticosteroids.</paragraph>
+                        <br/>
+                        <paragraph>Aspirin should be used cautiously in conjunction with corticosteroids in hypoprothrombinemia.</paragraph>
+                        <br/>
+                        <paragraph>Steroids should be used with caution in nonspecific ulcerative colitis, if there is a probability of impending perforation, abscess or other pyogenic infection; diverticulitis; fresh intestinal anastomoses; active or latent peptic ulcer; renal insufficiency; hypertension; osteoporosis and myasthenia gravis.</paragraph>
+                        <br/>
+                        <paragraph>Growth and development of infants and children on prolonged corticosteroid therapy should be carefully observed.</paragraph>
+                        <br/>
+                        <paragraph>Although controlled clinical trials have shown corticosteroids to be effective in speeding the resolution of acute exacerbations of multiple sclerosis they do not show that they affect the ultimate outcome or natural history of the disease. The studies do show that relatively high doses of corticosteroids are necessary to demonstrate a significant effect. (See <linkHtml href="#Section_10">DOSAGE AND ADMINISTRATION</linkHtml> section.)</paragraph>
+                        <br/>
+                        <paragraph>Since complications of treatment with glucocorticoids are dependent on the size of the dose and the duration of treatment, a risk/benefit decision must be made in each individual case as to dose and duration of treatment and as to whether daily or intermittent therapy should be used.</paragraph>
+                     </text>
+                     <effectiveTime value="20240216"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="Section_7">
+               <id root="56806076-0050-45f4-ab84-9739e9dc4bc1"/>
+               <code code="34084-4" codeSystem="2.16.840.1.113883.6.1" displayName="ADVERSE REACTIONS SECTION"/>
+               <title>ADVERSE REACTIONS</title>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">Fluid and Electrolyte Disturbances</content>
+                  </paragraph>
+                  <paragraph>Sodium retention. Fluid retention. Congestive heart failure in susceptible patients. Potassium loss. Hypokalemic alkalosis.</paragraph>
+                  <paragraph>Hypertension.</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Musculoskeletal</content>
+                  </paragraph>
+                  <paragraph>Muscle weakness. Steroid myopathy. Loss of muscle mass. Osteoporosis. Vertebral compression fractures. Aseptic necrosis of femoral and humeral heads. Pathologic fracture of long bones.</paragraph>
+                  <br/>
+                  <paragraph>
+                     <content styleCode="bold">Gastrointestinal</content>
+                  </paragraph>
+                  <paragraph>Peptic ulcer with possible perforation and hemorrhage. Pancreatitis. Abdominal distention. Ulcerative esophagitis.</paragraph>
+                  <br/>
+                  <paragraph>
+                     <content styleCode="bold">Dermatologic</content>
+                  </paragraph>
+                  <paragraph>Impaired wound healing. Thin fragile skin. Petechiae and ecchymoses. Facial erythema. Increased sweating. May suppress reactions to skin tests.</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Neurological</content>
+                  </paragraph>
+                  <paragraph>Convulsions. Increased intracranial pressure with papilledema (pseudotumor cerebri) usually after treatment. Vertigo. Headache.</paragraph>
+                  <br/>
+                  <paragraph>
+                     <content styleCode="bold">Endocrine</content>
+                  </paragraph>
+                  <paragraph>Menstrual irregularities. Development of Cushingoid state. Suppression of growth in children. Secondary adrenocortical and pituitary unresponsiveness, particularly in times of stress, as in trauma, surgery, or illness. Decreased carbohydrate tolerance. Manifestations of latent diabetes mellitus. Increased requirements for insulin or oral hypoglycemic agents in diabetics.</paragraph>
+                  <br/>
+                  <paragraph>
+                     <content styleCode="bold">Ophthalmic</content>
+                  </paragraph>
+                  <paragraph>Posterior subcapsular cataracts. Increased intraocular pressure. Glaucoma. Exophthalmos.</paragraph>
+                  <br/>
+                  <paragraph>
+                     <content styleCode="bold">Metabolic</content>
+                  </paragraph>
+                  <paragraph>Negative nitrogen balance due to protein catabolism.<br/>
+                     <br/>
+                     <content styleCode="bold">To report SUSPECTED ADVERSE REACTIONS, contact Aurobindo Pharma USA, Inc. at 1-866-850-2876 or FDA at 1-800-FDA-1088 or www.fda.gov/medwatch.</content>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20240216"/>
+            </section>
+         </component>
+         <component>
+            <section ID="Section_10">
+               <id root="94f89aeb-bccd-49aa-b5d4-3e2477f761c5"/>
+               <code code="34068-7" codeSystem="2.16.840.1.113883.6.1" displayName="DOSAGE &amp; ADMINISTRATION SECTION"/>
+               <title>DOSAGE AND ADMINISTRATION</title>
+               <text>
+                  <paragraph>The initial dosage of prednisolone tablets may vary from 5 mg to 60 mg per day depending on the specific disease entity being treated. In situations of less severity, lower doses will generally suffice, while in selected patients higher initial doses may be required. The initial dosage should be maintained or adjusted until a satisfactory response is noted. If after a reasonable period of time there is a lack of satisfactory clinical response, prednisolone should be discontinued and the patient transferred to other appropriate therapy.</paragraph>
+                  <br/>
+                  <paragraph>
+                     <content styleCode="bold">IT SHOULD BE EMPHASIZED THAT DOSAGE REQUIREMENTS ARE VARIABLE AND MUST BE INDIVIDUALIZED ON THE BASIS OF THE DISEASE UNDER TREATMENT AND THE RESPONSE OF THE PATIENT.</content>
+                  </paragraph>
+                  <br/>
+                  <paragraph>After a favorable response is noted, the proper maintenance dosage should be determined by decreasing the initial drug dosage in small increments at appropriate time intervals until the lowest dosage which will maintain an adequate clinical response is reached. It should be kept in mind that constant monitoring is needed in regard to drug dosage. Included in the situations which may make dosage adjustments necessary are changes in clinical status secondary to remissions or exacerbations in the disease process, the patient’s individual drug responsiveness, and the effect of patient exposure to stressful situations not directly related to the disease entity under treatment; in this latter situation it may be necessary to increase the dosage of prednisolone for a period of time consistent with the patient’s condition. If after long-term therapy the drug is to be stopped, it is recommended that it be withdrawn gradually rather than abruptly.<br/>
+                  </paragraph>
+                  <br/>
+                  <paragraph>
+                     <content styleCode="bold">Alternate-Day Therapy<br/>
+                        <br/>
+                     </content>Alternate-Day Therapy is a corticosteroid dosing regimen in which twice the usual daily dose of corticoid is administered every other morning. The purpose of this mode of therapy is to provide the patient requiring long-term pharmacologic dose treatment with the beneficial effects of corticoids while minimizing certain undesirable effects, including pituitary-adrenal suppression, the Cushingoid state, corticoid withdrawal symptoms, and growth suppression in children.<br/>
+                     <br/>The rationale for this treatment schedule is based on two major premises: (a) the anti-inflammatory or therapeutic effect of corticoids persists longer than their physical presence and metabolic effects and (b) administration of the corticosteroid every other morning allows for re-establishment of more nearly normal hypothalamic-pituitary-adrenal (HPA) activity on the off-steroid day.<br/>
+                     <br/> A brief review of the HPA physiology may be helpful in understanding this rationale. Acting primarily through the hypothalamus a fall in free cortisol stimulates the pituitary gland to produce increasing amounts of corticotropin (ACTH) while a rise in free cortisol inhibits ACTH secretion. Normally the HPA system is characterized by diurnal (circadian) rhythm. Serum levels of ACTH rise from a low point about 10 p.m. to a peak level about 6 a.m. Increasing levels of ACTH stimulate adrenocortical activity resulting in a rise in plasma cortisol with maximal levels occurring between 2 a.m. and 8 a.m. This rise in cortisol dampens ACTH production and in turn adrenocortical activity. There is a gradual fall in plasma corticoids during the day, the lowest levels occurring about midnight.</paragraph>
+                  <br/>
+                  <paragraph>The diurnal rhythm of the HPA axis is lost in Cushing’s disease, a syndrome of adrenocortical hyperfunction characterized by obesity with centripetal fat distribution, thinning of the skin with easy bruisability, muscle wasting with weakness, hypertension, latent diabetes, osteoporosis, electrolyte imbalance, etc. The same clinical findings of hyperadrenocorticism may be noted during the longterm pharmacologic dose corticoid therapy administered in conventional daily divided doses. It would appear, then, that a disturbance in the diurnal cycle with maintenance of elevated corticoid values during the night may play a significant role in the development of undesirable corticoid effects. Escape from these constantly elevated plasma levels for even short periods of time may be instrumental in protecting against undesirable pharmacologic effects.</paragraph>
+                  <br/>
+                  <paragraph>During conventional pharmacologic dose corticosteroid therapy, ACTH production is inhibited with subsequent suppression of cortisol production by the adrenal cortex. Recovery time for normal HPA activity is variable depending upon the dose and duration of treatment. During this time the patient is vulnerable to any stressful situation. Although it has been shown that there is considerably less adrenal suppression following a single morning dose of prednisolone (10 mg) as opposed to a quarter of that dose administered every 6 hours, there is evidence that some suppressive effect on adrenal activity may be carried over into the following day when pharmacologic doses are used. Further, it has been shown that a single dose of certain corticosteroids will produce adrenocortical suppression for two or more days. Other corticoids, including methylprednisolone, hydrocortisone, prednisone, and prednisolone, are considered to be short acting (producing adrenocortical suppression for 1 1/4 days to 1 1/2 days following a single dose) and thus are recommended for alternate-day therapy.</paragraph>
+                  <br/>
+                  <paragraph>The following should be kept in mind when considering alternate-day therapy:</paragraph>
+                  <list listType="ordered" styleCode="Arabic">
+                     <item>Basic principles and indications for corticosteroid therapy should apply. The benefits of alternate-day therapy should not encourage the indiscriminate use of steroids.</item>
+                     <item>Alternate-day therapy is a therapeutic technique primarily designed for patients in whom long-term pharmacologic corticoid therapy is anticipated.</item>
+                     <item>In less severe disease processes in which corticoid therapy is indicated, it may be possible to initiate treatment with alternate-day therapy. More severe disease states usually will require daily divided high dose therapy for initial control of the disease process. The initial suppressive dose level should be continued until satisfactory clinical response is obtained, usually four to ten days in the case of many allergic and collagen diseases. It is important to keep the period of initial suppressive dose as brief as possible particularly when subsequent use of alternate-day therapy is intended. Once control has been established, two courses are available: (a) change to alternate-day therapy and then gradually reduce the amount of corticoid given every other day, or (b) following control of the disease process, reduce the daily dose of corticoid to the lowest effective level as rapidly as possible and then change over to an alternate-day schedule. Theoretically, course (a) may be preferable.</item>
+                     <item>Because of the advantages of alternate-day therapy, it may be desirable to try patients on this form of therapy who have been on daily corticoids for long periods of time (e.g., patients with rheumatoid arthritis). Since these patients may already have a suppressed HPA axis, establishing them on alternate-day therapy may be difficult and not always successful. However, it is recommended that regular attempts be made to change them over. It may be helpful to triple or even quadruple the daily maintenance dose and administer this every other day rather than just doubling the daily dose if difficulty is encountered. Once the patient is again controlled, an attempt should be made to reduce this dose to a minimum.</item>
+                     <item>As indicated above, certain corticosteroids, because of their prolonged suppressive effect on adrenal activity, are not recommended for alternate-day therapy (e.g., dexamethasone and betamethasone).</item>
+                     <item>The maximal activity of the adrenal cortex is between 2 a.m. and 8 a.m., and it is minimal between 4 p.m. and midnight. Exogenous corticosteroids suppress adrenocortical activity the least, when given at the time of maximal activity (a.m.).</item>
+                     <item>In using alternate-day therapy it is important, as in all therapeutic situations, to individualize and tailor the therapy to each patient. Complete control of symptoms will not be possible in all patients. An explanation of the benefits of alternate-day therapy will help the patient to understand and tolerate the possible flare-up in symptoms which may occur in the latter part of the off-steroid day. Other symptomatic therapy may be added or increased at this time if needed.</item>
+                     <item>In the event of an acute flare-up of the disease process, it may be necessary to return to a full suppressive daily divided corticoid dose for control. Once control is again established, alternate-day therapy may be reinstituted.</item>
+                     <item>Although many of the undesirable features of corticosteroid therapy can be minimized by alternate-day therapy, as in any therapeutic situation, the physician must carefully weigh the benefit-risk ratio for each patient with whom corticoid therapy is being considered.</item>
+                  </list>
+               </text>
+               <effectiveTime value="20240216"/>
+            </section>
+         </component>
+         <component>
+            <section ID="Section_11">
+               <id root="5abe34ce-bb9b-46f8-8d00-36c62b4cc0b3"/>
+               <code code="34069-5" codeSystem="2.16.840.1.113883.6.1" displayName="HOW SUPPLIED SECTION"/>
+               <title>HOW SUPPLIED</title>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">Prednisolone Tablets, USP 5 mg</content> are peach coloured, round shaped, approximately 6.35 mm, flat beveled edged scored tablets debossed with ‘P &amp; L’ separated with score line on one side and  ‘5’  on the other side. They are supplied as follows: </paragraph>
+                  <paragraph>  </paragraph>
+                  <paragraph>Bottles of 50                    NDC 59651-491-50</paragraph>
+                  <paragraph>Bottles of 100                  NDC 59651-491-01</paragraph>
+                  <br/>
+                  <paragraph>Dispense in a well-closed container with child-resistant closure.<br/>
+                     <br/> Store at 20º to 25ºC (68º to 77ºF); excursions permitted to 15° to 30°C (59° to 86°F) [See USP Controlled Room Temperature].<br/>
+                     <br/> Distributed by:<br/>
+                     <content styleCode="bold">Aurobindo Pharma USA, Inc.<br/>
+                     </content>279 Princeton-Hightstown Road<br/>East Windsor, NJ 08520<br/>
+                     <br/> Manufactured by:<br/>
+                     <content styleCode="bold">Aurobindo Pharma Limited<br/>
+                     </content>Hyderabad-500 032, India<br/>
+                     <br/> Revised: 02/2024</paragraph>
+               </text>
+               <effectiveTime value="20240216"/>
+            </section>
+         </component>
+         <component>
+            <section ID="Section_17">
+               <id root="1364439a-58b6-4688-ad9f-6b3f450a394c"/>
+               <code code="51945-4" codeSystem="2.16.840.1.113883.6.1" displayName="PACKAGE LABEL.PRINCIPAL DISPLAY PANEL"/>
+               <title>PACKAGE LABEL.PRINCIPAL DISPLAY PANEL - 5 mg (50 Tablets Bottle)</title>
+               <text>
+                  <paragraph>NDC 59651-491-50<br/>
+                     <content styleCode="bold">prednisoLONE</content>
+                     <br/>
+                     <content styleCode="bold">Tablets, USP</content>
+                     <content styleCode="bold">
+                        <br/>
+                        <content styleCode="bold">5 mg</content>
+                        <br/>
+                        <content styleCode="bold">Rx only     50 Tablets</content>
+                        <br/>
+                        <content styleCode="bold">AUROBINDO</content>
+                     </content> </paragraph>
+                  <br/>
+                  <renderMultiMedia referencedObject="MM2"/>
+               </text>
+               <effectiveTime value="20240216"/>
+               <component>
+                  <section ID="Section_17.1">
+                     <id root="221cc815-91c9-4095-98e0-f4f2fb546bc8"/>
+                     <code code="51945-4" codeSystem="2.16.840.1.113883.6.1" displayName="PACKAGE LABEL.PRINCIPAL DISPLAY PANEL"/>
+                     <title>PACKAGE LABEL.PRINCIPAL DISPLAY PANEL</title>
+                     <effectiveTime value="20240216"/>
+                  </section>
+               </component>
+               <component>
+                  <observationMedia ID="MM2">
+                     <text>PACKAGE LABEL.PRINCIPAL DISPLAY PANEL - 5 mg (50 Tablets Bottle)</text>
+                     <value xsi:type="ED" mediaType="image/jpeg">
+                        <reference value="prednisolone-fig1.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+      </structuredBody>
+   </component>
+</document>

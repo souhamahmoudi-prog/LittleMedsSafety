@@ -1,0 +1,2622 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="https://www.accessdata.fda.gov/spl/stylesheet/spl.xsl" type="text/xsl"?>
+<document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 https://www.accessdata.fda.gov/spl/schema/spl.xsd">
+   <id root="563138ab-2058-29b3-e063-6294a90ab803"/>
+   <code code="34390-5" codeSystem="2.16.840.1.113883.6.1" displayName="HUMAN OTC DRUG LABEL"/>
+   <title>Walgreens All-Purpose First Aid Kit 150 pieces</title>
+   <effectiveTime value="20260709"/>
+   <setId root="5630f48b-404c-b847-e063-6394a90a8d8e"/>
+   <versionNumber value="1"/>
+   <author>
+      <time/>
+      <assignedEntity>
+         <representedOrganization>
+            <id root="1.3.6.1.4.1.519.1" extension="008965063"/>
+            <name>Walgreen Co.</name>
+         </representedOrganization>
+      </assignedEntity>
+   </author>
+   <component>
+      <structuredBody>
+         <component>
+            <section>
+               <id root="5632dfb3-8b36-3bcb-e063-6294a90a2b78"/>
+               <code code="48780-1" codeSystem="2.16.840.1.113883.6.1" displayName="SPL product data elements section"/>
+               <effectiveTime value="20260709"/>
+               <subject>
+                  <manufacturedProduct>
+                     <manufacturedProduct>
+                        <code code="0363-1500" codeSystem="2.16.840.1.113883.6.69"/>
+                        <name>Walgreens</name>
+                        <formCode code="C47916" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="KIT"/>
+                        <asEntityWithGeneric>
+                           <genericMedicine>
+                              <name>diphenhydramine hydrochloride, ibuprofen, hydrocortisone, bacitracin zinc, neomycin sulfate, polymyxin-B sulfate, lidocaine HCL, benzalkonium chloride,  isopropyl alcohol, ethyl alcohol</name>
+                           </genericMedicine>
+                        </asEntityWithGeneric>
+                        <asContent>
+                           <quantity>
+                              <numerator value="1" unit="1"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code code="0363-1500-01" codeSystem="2.16.840.1.113883.6.69"/>
+                              <formCode code="C43184" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="CASE"/>
+                           </containerPackagedProduct>
+                           <subjectOf>
+                              <characteristic>
+                                 <code code="SPLCMBPRDTP" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                                 <value code="C112160" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="Type 0: Not a Combination Product" xsi:type="CV"/>
+                              </characteristic>
+                           </subjectOf>
+                           <subjectOf>
+                              <marketingAct>
+                                 <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                                 <statusCode code="active"/>
+                                 <effectiveTime>
+                                    <low value="20240717"/>
+                                 </effectiveTime>
+                              </marketingAct>
+                           </subjectOf>
+                        </asContent>
+                        <part>
+                           <quantity>
+                              <numerator value="0.9" unit="g"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <partProduct>
+                              <code code="61010-5701" codeSystem="2.16.840.1.113883.6.69"/>
+                              <name>FIRST AID AND BURN</name>
+                              <formCode code="C28944" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="CREAM"/>
+                              <asEntityWithGeneric>
+                                 <genericMedicine>
+                                    <name>BENZALKONIUM CHLORIDE, LIDOCAINE HYDROCHLORIDE</name>
+                                 </genericMedicine>
+                              </asEntityWithGeneric>
+                              <ingredient classCode="IACT">
+                                 <ingredientSubstance>
+                                    <code code="3K9958V90M" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>ALCOHOL</name>
+                                 </ingredientSubstance>
+                              </ingredient>
+                              <ingredient classCode="IACT">
+                                 <ingredientSubstance>
+                                    <code code="7G1J5DA97F" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>WHITE WAX</name>
+                                 </ingredientSubstance>
+                              </ingredient>
+                              <ingredient classCode="IACT">
+                                 <ingredientSubstance>
+                                    <code code="A2I8C7HI9T" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>METHYLPARABEN</name>
+                                 </ingredientSubstance>
+                              </ingredient>
+                              <ingredient classCode="IACT">
+                                 <ingredientSubstance>
+                                    <code code="T5L8T28FGP" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>MINERAL OIL</name>
+                                 </ingredientSubstance>
+                              </ingredient>
+                              <ingredient classCode="IACT">
+                                 <ingredientSubstance>
+                                    <code code="I9O0E3H2ZE" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>PARAFFIN</name>
+                                 </ingredientSubstance>
+                              </ingredient>
+                              <ingredient classCode="ACTIR">
+                                 <quantity>
+                                    <numerator unit="mg" value="5"/>
+                                    <denominator unit="g" value="1"/>
+                                 </quantity>
+                                 <ingredientSubstance>
+                                    <code code="V13007Z41A" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>LIDOCAINE HYDROCHLORIDE</name>
+                                    <activeMoiety>
+                                       <activeMoiety>
+                                          <code code="98PI200987" codeSystem="2.16.840.1.113883.4.9"/>
+                                          <name>LIDOCAINE</name>
+                                       </activeMoiety>
+                                    </activeMoiety>
+                                    <asEquivalentSubstance>
+                                       <definingSubstance>
+                                          <code code="EC2CNF7XFP" codeSystem="2.16.840.1.113883.4.9"/>
+                                          <name>LIDOCAINE HYDROCHLORIDE ANHYDROUS</name>
+                                       </definingSubstance>
+                                    </asEquivalentSubstance>
+                                 </ingredientSubstance>
+                              </ingredient>
+                              <ingredient classCode="IACT">
+                                 <ingredientSubstance>
+                                    <code code="4T6H12BN9U" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>PETROLATUM</name>
+                                 </ingredientSubstance>
+                              </ingredient>
+                              <ingredient classCode="ACTIB">
+                                 <quantity>
+                                    <numerator unit="mg" value="1.3"/>
+                                    <denominator unit="g" value="1"/>
+                                 </quantity>
+                                 <ingredientSubstance>
+                                    <code code="F5UM2KM3W7" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>BENZALKONIUM CHLORIDE</name>
+                                    <activeMoiety>
+                                       <activeMoiety>
+                                          <code code="7N6JUD5X6Y" codeSystem="2.16.840.1.113883.4.9"/>
+                                          <name>BENZALKONIUM</name>
+                                       </activeMoiety>
+                                    </activeMoiety>
+                                 </ingredientSubstance>
+                              </ingredient>
+                              <ingredient classCode="IACT">
+                                 <ingredientSubstance>
+                                    <code code="ZY81Z83H0X" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>ALOE VERA LEAF</name>
+                                 </ingredientSubstance>
+                              </ingredient>
+                              <ingredient classCode="IACT">
+                                 <ingredientSubstance>
+                                    <code code="059QF0KO0R" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>WATER</name>
+                                 </ingredientSubstance>
+                              </ingredient>
+                              <ingredient classCode="IACT">
+                                 <ingredientSubstance>
+                                    <code code="Z8IX2SC1OH" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>PROPYLPARABEN</name>
+                                 </ingredientSubstance>
+                              </ingredient>
+                              <asContent>
+                                 <quantity>
+                                    <numerator value="0.9" unit="g"/>
+                                    <denominator value="1"/>
+                                 </quantity>
+                                 <containerPackagedProduct>
+                                    <code code="61010-5701-3" codeSystem="2.16.840.1.113883.6.69"/>
+                                    <formCode code="C43199" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="PACKET"/>
+                                 </containerPackagedProduct>
+                                 <subjectOf>
+                                    <characteristic>
+                                       <code code="SPLCMBPRDTP" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                                       <value code="C112160" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="Type 0: Not a Combination Product" xsi:type="CV"/>
+                                    </characteristic>
+                                 </subjectOf>
+                              </asContent>
+                           </partProduct>
+                           <subjectOf>
+                              <approval>
+                                 <id extension="M003" root="2.16.840.1.113883.3.9421"/>
+                                 <code code="C200263" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="OTC Monograph Drug"/>
+                                 <author>
+                                    <territorialAuthority>
+                                       <territory>
+                                          <code code="USA" codeSystem="2.16.840.1.113883.5.28"/>
+                                       </territory>
+                                    </territorialAuthority>
+                                 </author>
+                              </approval>
+                           </subjectOf>
+                           <subjectOf>
+                              <marketingAct>
+                                 <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                                 <statusCode code="active"/>
+                                 <effectiveTime>
+                                    <low value="20120921"/>
+                                 </effectiveTime>
+                              </marketingAct>
+                           </subjectOf>
+                           <consumedIn>
+                              <substanceAdministration>
+                                 <routeCode code="C38304" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TOPICAL"/>
+                              </substanceAdministration>
+                           </consumedIn>
+                        </part>
+                        <part>
+                           <quantity>
+                              <numerator value="2" unit="1"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <partProduct>
+                              <code code="47682-167" codeSystem="2.16.840.1.113883.6.69"/>
+                              <name>Medique Diphen</name>
+                              <formCode code="C42931" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TABLET, FILM COATED"/>
+                              <asEntityWithGeneric>
+                                 <genericMedicine>
+                                    <name>diphenhydramine hydrochloride</name>
+                                 </genericMedicine>
+                              </asEntityWithGeneric>
+                              <ingredient classCode="IACT">
+                                 <ingredientSubstance>
+                                    <code code="M28OL1HH48" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>CROSCARMELLOSE SODIUM</name>
+                                 </ingredientSubstance>
+                              </ingredient>
+                              <ingredient classCode="IACT">
+                                 <ingredientSubstance>
+                                    <code code="OP1R32D61U" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>MICROCRYSTALLINE CELLULOSE</name>
+                                 </ingredientSubstance>
+                              </ingredient>
+                              <ingredient classCode="IACT">
+                                 <ingredientSubstance>
+                                    <code code="2LRS185U6K" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>D&amp;C RED NO. 27</name>
+                                 </ingredientSubstance>
+                              </ingredient>
+                              <ingredient classCode="IACT">
+                                 <ingredientSubstance>
+                                    <code code="3NXW29V3WO" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>HYPROMELLOSE, UNSPECIFIED</name>
+                                 </ingredientSubstance>
+                              </ingredient>
+                              <ingredient classCode="IACT">
+                                 <ingredientSubstance>
+                                    <code code="J2B2A4N98G" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>LACTOSE, UNSPECIFIED FORM</name>
+                                 </ingredientSubstance>
+                              </ingredient>
+                              <ingredient classCode="IACT">
+                                 <ingredientSubstance>
+                                    <code code="70097M6I30" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>MAGNESIUM STEARATE</name>
+                                 </ingredientSubstance>
+                              </ingredient>
+                              <ingredient classCode="IACT">
+                                 <ingredientSubstance>
+                                    <code code="3WJQ0SDW1A" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>POLYETHYLENE GLYCOL, UNSPECIFIED</name>
+                                 </ingredientSubstance>
+                              </ingredient>
+                              <ingredient classCode="IACT">
+                                 <ingredientSubstance>
+                                    <code code="ETJ7Z6XBU4" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>SILICON DIOXIDE</name>
+                                 </ingredientSubstance>
+                              </ingredient>
+                              <ingredient classCode="IACT">
+                                 <ingredientSubstance>
+                                    <code code="15FIX9V2JP" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>TITANIUM DIOXIDE</name>
+                                 </ingredientSubstance>
+                              </ingredient>
+                              <ingredient classCode="ACTIB">
+                                 <quantity>
+                                    <numerator unit="mg" value="25"/>
+                                    <denominator unit="1" value="1"/>
+                                 </quantity>
+                                 <ingredientSubstance>
+                                    <code code="TC2D6JAD40" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>DIPHENHYDRAMINE HYDROCHLORIDE</name>
+                                    <activeMoiety>
+                                       <activeMoiety>
+                                          <code code="8GTS82S83M" codeSystem="2.16.840.1.113883.4.9"/>
+                                          <name>DIPHENHYDRAMINE</name>
+                                       </activeMoiety>
+                                    </activeMoiety>
+                                 </ingredientSubstance>
+                              </ingredient>
+                              <asContent>
+                                 <quantity>
+                                    <numerator value="1" unit="1"/>
+                                    <denominator value="1"/>
+                                 </quantity>
+                                 <containerPackagedProduct>
+                                    <code code="47682-167-46" codeSystem="2.16.840.1.113883.6.69"/>
+                                    <formCode code="C43199" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="PACKET"/>
+                                 </containerPackagedProduct>
+                                 <subjectOf>
+                                    <characteristic>
+                                       <code code="SPLCMBPRDTP" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                                       <value code="C112160" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="Type 0: Not a Combination Product" xsi:type="CV"/>
+                                    </characteristic>
+                                 </subjectOf>
+                              </asContent>
+                           </partProduct>
+                           <subjectOf>
+                              <approval>
+                                 <id extension="M012" root="2.16.840.1.113883.3.9421"/>
+                                 <code code="C200263" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="OTC Monograph Drug"/>
+                                 <author>
+                                    <territorialAuthority>
+                                       <territory>
+                                          <code code="USA" codeSystem="2.16.840.1.113883.5.28"/>
+                                       </territory>
+                                    </territorialAuthority>
+                                 </author>
+                              </approval>
+                           </subjectOf>
+                           <subjectOf>
+                              <marketingAct>
+                                 <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                                 <statusCode code="active"/>
+                                 <effectiveTime>
+                                    <low value="20120101"/>
+                                 </effectiveTime>
+                              </marketingAct>
+                           </subjectOf>
+                           <subjectOf>
+                              <characteristic classCode="OBS">
+                                 <code code="SPLCOLOR" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                                 <value code="C48328" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="pink" xsi:type="CE">
+                                    <originalText>pink</originalText>
+                                 </value>
+                              </characteristic>
+                           </subjectOf>
+                           <subjectOf>
+                              <characteristic classCode="OBS">
+                                 <code code="SPLSIZE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                                 <value unit="mm" value="11" xsi:type="PQ"/>
+                              </characteristic>
+                           </subjectOf>
+                           <subjectOf>
+                              <characteristic classCode="OBS">
+                                 <code code="SPLSHAPE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                                 <value code="C48345" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="OVAL" xsi:type="CE">
+                                    <originalText>OVAL</originalText>
+                                 </value>
+                              </characteristic>
+                           </subjectOf>
+                           <subjectOf>
+                              <characteristic classCode="OBS">
+                                 <code code="SPLSCORE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                                 <value value="1" xsi:type="INT"/>
+                              </characteristic>
+                           </subjectOf>
+                           <subjectOf>
+                              <characteristic classCode="OBS">
+                                 <code code="SPLIMPRINT" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                                 <value xsi:type="ST">048;D</value>
+                              </characteristic>
+                           </subjectOf>
+                           <consumedIn>
+                              <substanceAdministration>
+                                 <routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ORAL"/>
+                              </substanceAdministration>
+                           </consumedIn>
+                        </part>
+                        <part>
+                           <quantity>
+                              <numerator value="0.0095" unit="L"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <partProduct>
+                              <code code="61010-2017" codeSystem="2.16.840.1.113883.6.69"/>
+                              <name>ANTISEPTIC</name>
+                              <formCode code="C60884" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="CLOTH"/>
+                              <asEntityWithGeneric>
+                                 <genericMedicine>
+                                    <name>alcohol</name>
+                                 </genericMedicine>
+                              </asEntityWithGeneric>
+                              <ingredient classCode="IACT">
+                                 <ingredientSubstance>
+                                    <code code="ZY81Z83H0X" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>ALOE VERA LEAF</name>
+                                 </ingredientSubstance>
+                              </ingredient>
+                              <ingredient classCode="IACT">
+                                 <ingredientSubstance>
+                                    <code code="059QF0KO0R" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>WATER</name>
+                                 </ingredientSubstance>
+                              </ingredient>
+                              <ingredient classCode="IACT">
+                                 <ingredientSubstance>
+                                    <code code="9O3K93S3TK" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>TROLAMINE</name>
+                                 </ingredientSubstance>
+                              </ingredient>
+                              <ingredient classCode="ACTIB">
+                                 <quantity>
+                                    <numerator unit="mL" value="665"/>
+                                    <denominator unit="L" value="1"/>
+                                 </quantity>
+                                 <ingredientSubstance>
+                                    <code code="3K9958V90M" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>ALCOHOL</name>
+                                    <activeMoiety>
+                                       <activeMoiety>
+                                          <code code="3K9958V90M" codeSystem="2.16.840.1.113883.4.9"/>
+                                          <name>ALCOHOL</name>
+                                       </activeMoiety>
+                                    </activeMoiety>
+                                 </ingredientSubstance>
+                              </ingredient>
+                              <asContent>
+                                 <quantity>
+                                    <numerator value="0.0019" unit="L"/>
+                                    <denominator value="1"/>
+                                 </quantity>
+                                 <containerPackagedProduct>
+                                    <code code="61010-2017-0" codeSystem="2.16.840.1.113883.6.69"/>
+                                    <formCode code="C43199" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="PACKET"/>
+                                 </containerPackagedProduct>
+                                 <subjectOf>
+                                    <characteristic>
+                                       <code code="SPLCMBPRDTP" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                                       <value code="C112160" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="Type 0: Not a Combination Product" xsi:type="CV"/>
+                                    </characteristic>
+                                 </subjectOf>
+                              </asContent>
+                           </partProduct>
+                           <subjectOf>
+                              <approval>
+                                 <id extension="505G(a)(3)" root="2.16.840.1.113883.3.9421"/>
+                                 <code code="C200263" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="OTC Monograph Drug"/>
+                                 <author>
+                                    <territorialAuthority>
+                                       <territory>
+                                          <code code="USA" codeSystem="2.16.840.1.113883.5.28"/>
+                                       </territory>
+                                    </territorialAuthority>
+                                 </author>
+                              </approval>
+                           </subjectOf>
+                           <subjectOf>
+                              <marketingAct>
+                                 <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                                 <statusCode code="active"/>
+                                 <effectiveTime>
+                                    <low value="20170501"/>
+                                 </effectiveTime>
+                              </marketingAct>
+                           </subjectOf>
+                           <consumedIn>
+                              <substanceAdministration>
+                                 <routeCode code="C38304" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TOPICAL"/>
+                              </substanceAdministration>
+                           </consumedIn>
+                        </part>
+                        <part>
+                           <quantity>
+                              <numerator value="2.7" unit="g"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <partProduct>
+                              <code code="61010-5600" codeSystem="2.16.840.1.113883.6.69"/>
+                              <name>TRIPLE ANTIBIOTIC</name>
+                              <formCode code="C42966" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="OINTMENT"/>
+                              <asEntityWithGeneric>
+                                 <genericMedicine>
+                                    <name>bacitracin zinc, neomycin sulfate, polymyxin b sulfate</name>
+                                 </genericMedicine>
+                              </asEntityWithGeneric>
+                              <ingredient classCode="ACTIM">
+                                 <quantity>
+                                    <numerator unit="[USP'U]" value="5000"/>
+                                    <denominator unit="g" value="1"/>
+                                 </quantity>
+                                 <ingredientSubstance>
+                                    <code code="19371312D4" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>POLYMYXIN B SULFATE</name>
+                                    <activeMoiety>
+                                       <activeMoiety>
+                                          <code code="J2VZ07J96K" codeSystem="2.16.840.1.113883.4.9"/>
+                                          <name>POLYMYXIN B</name>
+                                       </activeMoiety>
+                                    </activeMoiety>
+                                 </ingredientSubstance>
+                              </ingredient>
+                              <ingredient classCode="IACT">
+                                 <ingredientSubstance>
+                                    <code code="4T6H12BN9U" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>PETROLATUM</name>
+                                 </ingredientSubstance>
+                              </ingredient>
+                              <ingredient classCode="ACTIM">
+                                 <quantity>
+                                    <numerator unit="[USP'U]" value="400"/>
+                                    <denominator unit="g" value="1"/>
+                                 </quantity>
+                                 <ingredientSubstance>
+                                    <code code="89Y4M234ES" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>BACITRACIN ZINC</name>
+                                    <activeMoiety>
+                                       <activeMoiety>
+                                          <code code="58H6RWO52I" codeSystem="2.16.840.1.113883.4.9"/>
+                                          <name>BACITRACIN</name>
+                                       </activeMoiety>
+                                    </activeMoiety>
+                                 </ingredientSubstance>
+                              </ingredient>
+                              <ingredient classCode="ACTIM">
+                                 <quantity>
+                                    <numerator unit="mg" value="3.5"/>
+                                    <denominator unit="g" value="1"/>
+                                 </quantity>
+                                 <ingredientSubstance>
+                                    <code code="057Y626693" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>NEOMYCIN SULFATE</name>
+                                    <activeMoiety>
+                                       <activeMoiety>
+                                          <code code="I16QD7X297" codeSystem="2.16.840.1.113883.4.9"/>
+                                          <name>NEOMYCIN</name>
+                                       </activeMoiety>
+                                    </activeMoiety>
+                                 </ingredientSubstance>
+                              </ingredient>
+                              <asContent>
+                                 <quantity>
+                                    <numerator value="0.9" unit="g"/>
+                                    <denominator value="1"/>
+                                 </quantity>
+                                 <containerPackagedProduct>
+                                    <code code="61010-5600-1" codeSystem="2.16.840.1.113883.6.69"/>
+                                    <formCode code="C43200" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="POUCH"/>
+                                 </containerPackagedProduct>
+                                 <subjectOf>
+                                    <characteristic>
+                                       <code code="SPLCMBPRDTP" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                                       <value code="C112160" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="Type 0: Not a Combination Product" xsi:type="CV"/>
+                                    </characteristic>
+                                 </subjectOf>
+                              </asContent>
+                           </partProduct>
+                           <subjectOf>
+                              <approval>
+                                 <id extension="M004" root="2.16.840.1.113883.3.9421"/>
+                                 <code code="C200263" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="OTC Monograph Drug"/>
+                                 <author>
+                                    <territorialAuthority>
+                                       <territory>
+                                          <code code="USA" codeSystem="2.16.840.1.113883.5.28"/>
+                                       </territory>
+                                    </territorialAuthority>
+                                 </author>
+                              </approval>
+                           </subjectOf>
+                           <subjectOf>
+                              <marketingAct>
+                                 <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                                 <statusCode code="active"/>
+                                 <effectiveTime>
+                                    <low value="20110808"/>
+                                 </effectiveTime>
+                              </marketingAct>
+                           </subjectOf>
+                           <consumedIn>
+                              <substanceAdministration>
+                                 <routeCode code="C38304" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TOPICAL"/>
+                              </substanceAdministration>
+                           </consumedIn>
+                        </part>
+                        <part>
+                           <quantity>
+                              <numerator value="1.8" unit="g"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <partProduct>
+                              <code code="61010-5800" codeSystem="2.16.840.1.113883.6.69"/>
+                              <name>Hydrocortisone</name>
+                              <formCode code="C28944" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="CREAM"/>
+                              <asEntityWithGeneric>
+                                 <genericMedicine>
+                                    <name>hydrocortisone</name>
+                                 </genericMedicine>
+                              </asEntityWithGeneric>
+                              <ingredient classCode="IACT">
+                                 <ingredientSubstance>
+                                    <code code="3K9958V90M" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>ALCOHOL</name>
+                                 </ingredientSubstance>
+                              </ingredient>
+                              <ingredient classCode="IACT">
+                                 <ingredientSubstance>
+                                    <code code="A2I8C7HI9T" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>METHYLPARABEN</name>
+                                 </ingredientSubstance>
+                              </ingredient>
+                              <ingredient classCode="IACT">
+                                 <ingredientSubstance>
+                                    <code code="T5L8T28FGP" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>MINERAL OIL</name>
+                                 </ingredientSubstance>
+                              </ingredient>
+                              <ingredient classCode="IACT">
+                                 <ingredientSubstance>
+                                    <code code="I9O0E3H2ZE" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>PARAFFIN</name>
+                                 </ingredientSubstance>
+                              </ingredient>
+                              <ingredient classCode="IACT">
+                                 <ingredientSubstance>
+                                    <code code="4T6H12BN9U" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>PETROLATUM</name>
+                                 </ingredientSubstance>
+                              </ingredient>
+                              <ingredient classCode="IACT">
+                                 <ingredientSubstance>
+                                    <code code="Z8IX2SC1OH" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>PROPYLPARABEN</name>
+                                 </ingredientSubstance>
+                              </ingredient>
+                              <ingredient classCode="IACT">
+                                 <ingredientSubstance>
+                                    <code code="059QF0KO0R" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>WATER</name>
+                                 </ingredientSubstance>
+                              </ingredient>
+                              <ingredient classCode="IACT">
+                                 <ingredientSubstance>
+                                    <code code="2DMT128M1S" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>CETOSTEARYL ALCOHOL</name>
+                                 </ingredientSubstance>
+                              </ingredient>
+                              <ingredient classCode="IACT">
+                                 <ingredientSubstance>
+                                    <code code="CAL22UVI4M" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>POLYSORBATE 60</name>
+                                 </ingredientSubstance>
+                              </ingredient>
+                              <ingredient classCode="IACT">
+                                 <ingredientSubstance>
+                                    <code code="6F36Q0I0AC" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>PEG-150 DISTEARATE</name>
+                                 </ingredientSubstance>
+                              </ingredient>
+                              <ingredient classCode="IACT">
+                                 <ingredientSubstance>
+                                    <code code="L0Q8IK9E08" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>STEARETH-20</name>
+                                 </ingredientSubstance>
+                              </ingredient>
+                              <ingredient classCode="ACTIB">
+                                 <quantity>
+                                    <numerator unit="mg" value="10"/>
+                                    <denominator unit="g" value="1"/>
+                                 </quantity>
+                                 <ingredientSubstance>
+                                    <code code="WI4X0X7BPJ" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>HYDROCORTISONE</name>
+                                    <activeMoiety>
+                                       <activeMoiety>
+                                          <code code="WI4X0X7BPJ" codeSystem="2.16.840.1.113883.4.9"/>
+                                          <name>HYDROCORTISONE</name>
+                                       </activeMoiety>
+                                    </activeMoiety>
+                                 </ingredientSubstance>
+                              </ingredient>
+                              <asContent>
+                                 <quantity>
+                                    <numerator value="0.9" unit="g"/>
+                                    <denominator value="1"/>
+                                 </quantity>
+                                 <containerPackagedProduct>
+                                    <code code="61010-5800-1" codeSystem="2.16.840.1.113883.6.69"/>
+                                    <formCode code="C43200" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="POUCH"/>
+                                 </containerPackagedProduct>
+                                 <subjectOf>
+                                    <characteristic>
+                                       <code code="SPLCMBPRDTP" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                                       <value code="C112160" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="Type 0: Not a Combination Product" xsi:type="CV"/>
+                                    </characteristic>
+                                 </subjectOf>
+                              </asContent>
+                           </partProduct>
+                           <subjectOf>
+                              <approval>
+                                 <id extension="505G(a)(3)" root="2.16.840.1.113883.3.9421"/>
+                                 <code code="C200263" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="OTC Monograph Drug"/>
+                                 <author>
+                                    <territorialAuthority>
+                                       <territory>
+                                          <code code="USA" codeSystem="2.16.840.1.113883.5.28"/>
+                                       </territory>
+                                    </territorialAuthority>
+                                 </author>
+                              </approval>
+                           </subjectOf>
+                           <subjectOf>
+                              <marketingAct>
+                                 <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                                 <statusCode code="active"/>
+                                 <effectiveTime>
+                                    <low value="20101215"/>
+                                 </effectiveTime>
+                              </marketingAct>
+                           </subjectOf>
+                           <consumedIn>
+                              <substanceAdministration>
+                                 <routeCode code="C38304" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TOPICAL"/>
+                              </substanceAdministration>
+                           </consumedIn>
+                        </part>
+                        <part>
+                           <quantity>
+                              <numerator value="1.36" unit="g"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <partProduct>
+                              <code code="51142-445" codeSystem="2.16.840.1.113883.6.69"/>
+                              <name>Alcohol Prep Pad</name>
+                              <formCode code="C47898" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="SWAB"/>
+                              <asEntityWithGeneric>
+                                 <genericMedicine>
+                                    <name>alcohol prep pad</name>
+                                 </genericMedicine>
+                              </asEntityWithGeneric>
+                              <ingredient classCode="IACT">
+                                 <ingredientSubstance>
+                                    <code code="059QF0KO0R" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>WATER</name>
+                                 </ingredientSubstance>
+                              </ingredient>
+                              <ingredient classCode="ACTIB">
+                                 <quantity>
+                                    <numerator unit="g" value="70"/>
+                                    <denominator unit="g" value="100"/>
+                                 </quantity>
+                                 <ingredientSubstance>
+                                    <code code="ND2M416302" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>ISOPROPYL ALCOHOL</name>
+                                    <activeMoiety>
+                                       <activeMoiety>
+                                          <code code="ND2M416302" codeSystem="2.16.840.1.113883.4.9"/>
+                                          <name>ISOPROPYL ALCOHOL</name>
+                                       </activeMoiety>
+                                    </activeMoiety>
+                                 </ingredientSubstance>
+                              </ingredient>
+                              <asContent>
+                                 <quantity>
+                                    <numerator value="0.34" unit="g"/>
+                                    <denominator value="1"/>
+                                 </quantity>
+                                 <containerPackagedProduct>
+                                    <code code="51142-445-21" codeSystem="2.16.840.1.113883.6.69"/>
+                                    <formCode code="C43200" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="POUCH"/>
+                                 </containerPackagedProduct>
+                                 <subjectOf>
+                                    <characteristic>
+                                       <code code="SPLCMBPRDTP" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                                       <value code="C112160" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="Type 0: Not a Combination Product" xsi:type="CV"/>
+                                    </characteristic>
+                                 </subjectOf>
+                              </asContent>
+                           </partProduct>
+                           <subjectOf>
+                              <approval>
+                                 <id extension="505G(a)(3)" root="2.16.840.1.113883.3.9421"/>
+                                 <code code="C200263" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="OTC Monograph Drug"/>
+                                 <author>
+                                    <territorialAuthority>
+                                       <territory>
+                                          <code code="USA" codeSystem="2.16.840.1.113883.5.28"/>
+                                       </territory>
+                                    </territorialAuthority>
+                                 </author>
+                              </approval>
+                           </subjectOf>
+                           <subjectOf>
+                              <marketingAct>
+                                 <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                                 <statusCode code="active"/>
+                                 <effectiveTime>
+                                    <low value="20180924"/>
+                                 </effectiveTime>
+                              </marketingAct>
+                           </subjectOf>
+                           <subjectOf>
+                              <characteristic classCode="OBS">
+                                 <code code="SPLCOLOR" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                                 <value code="C48325" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="white" xsi:type="CE">
+                                    <originalText>white pad</originalText>
+                                 </value>
+                              </characteristic>
+                           </subjectOf>
+                           <consumedIn>
+                              <substanceAdministration>
+                                 <routeCode code="C38304" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TOPICAL"/>
+                              </substanceAdministration>
+                           </consumedIn>
+                        </part>
+                        <part>
+                           <quantity>
+                              <numerator value="4" unit="1"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <partProduct>
+                              <code code="47682-718" codeSystem="2.16.840.1.113883.6.69"/>
+                              <name>Medi-First Ibuprofen</name>
+                              <formCode code="C42897" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TABLET, COATED"/>
+                              <asEntityWithGeneric>
+                                 <genericMedicine>
+                                    <name>ibuprofen</name>
+                                 </genericMedicine>
+                              </asEntityWithGeneric>
+                              <ingredient classCode="IACT">
+                                 <ingredientSubstance>
+                                    <code code="O8232NY3SJ" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>STARCH, CORN</name>
+                                 </ingredientSubstance>
+                              </ingredient>
+                              <ingredient classCode="IACT">
+                                 <ingredientSubstance>
+                                    <code code="U725QWY32X" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>POVIDONE K30</name>
+                                 </ingredientSubstance>
+                              </ingredient>
+                              <ingredient classCode="IACT">
+                                 <ingredientSubstance>
+                                    <code code="4ELV7Z65AP" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>STEARIC ACID</name>
+                                 </ingredientSubstance>
+                              </ingredient>
+                              <ingredient classCode="IACT">
+                                 <ingredientSubstance>
+                                    <code code="15FIX9V2JP" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>TITANIUM DIOXIDE</name>
+                                 </ingredientSubstance>
+                              </ingredient>
+                              <ingredient classCode="IACT">
+                                 <ingredientSubstance>
+                                    <code code="5856J3G2A2" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>SODIUM STARCH GLYCOLATE TYPE A POTATO</name>
+                                 </ingredientSubstance>
+                              </ingredient>
+                              <ingredient classCode="IACT">
+                                 <ingredientSubstance>
+                                    <code code="ETJ7Z6XBU4" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>SILICON DIOXIDE</name>
+                                 </ingredientSubstance>
+                              </ingredient>
+                              <ingredient classCode="IACT">
+                                 <ingredientSubstance>
+                                    <code code="1K09F3G675" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>FERRIC OXIDE RED</name>
+                                 </ingredientSubstance>
+                              </ingredient>
+                              <ingredient classCode="IACT">
+                                 <ingredientSubstance>
+                                    <code code="7SEV7J4R1U" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>TALC</name>
+                                 </ingredientSubstance>
+                              </ingredient>
+                              <ingredient classCode="IACT">
+                                 <ingredientSubstance>
+                                    <code code="532B59J990" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>POLYVINYL ALCOHOL, UNSPECIFIED</name>
+                                 </ingredientSubstance>
+                              </ingredient>
+                              <ingredient classCode="IACT">
+                                 <ingredientSubstance>
+                                    <code code="3WJQ0SDW1A" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>POLYETHYLENE GLYCOL, UNSPECIFIED</name>
+                                 </ingredientSubstance>
+                              </ingredient>
+                              <ingredient classCode="ACTIB">
+                                 <quantity>
+                                    <numerator unit="mg" value="200"/>
+                                    <denominator unit="1" value="1"/>
+                                 </quantity>
+                                 <ingredientSubstance>
+                                    <code code="WK2XYI10QM" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>IBUPROFEN</name>
+                                    <activeMoiety>
+                                       <activeMoiety>
+                                          <code code="WK2XYI10QM" codeSystem="2.16.840.1.113883.4.9"/>
+                                          <name>IBUPROFEN</name>
+                                       </activeMoiety>
+                                    </activeMoiety>
+                                 </ingredientSubstance>
+                              </ingredient>
+                              <asContent>
+                                 <quantity>
+                                    <numerator value="2" unit="1"/>
+                                    <denominator value="1"/>
+                                 </quantity>
+                                 <containerPackagedProduct>
+                                    <code code="47682-718-99" codeSystem="2.16.840.1.113883.6.69"/>
+                                    <formCode code="C43199" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="PACKET"/>
+                                 </containerPackagedProduct>
+                                 <subjectOf>
+                                    <characteristic>
+                                       <code code="SPLCMBPRDTP" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                                       <value code="C112160" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="Type 0: Not a Combination Product" xsi:type="CV"/>
+                                    </characteristic>
+                                 </subjectOf>
+                              </asContent>
+                           </partProduct>
+                           <subjectOf>
+                              <approval>
+                                 <id extension="ANDA079174" root="2.16.840.1.113883.3.150"/>
+                                 <code code="C73584" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ANDA"/>
+                                 <author>
+                                    <territorialAuthority>
+                                       <territory>
+                                          <code code="USA" codeSystem="2.16.840.1.113883.5.28"/>
+                                       </territory>
+                                    </territorialAuthority>
+                                 </author>
+                              </approval>
+                           </subjectOf>
+                           <subjectOf>
+                              <marketingAct>
+                                 <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                                 <statusCode code="active"/>
+                                 <effectiveTime>
+                                    <low value="20170126"/>
+                                 </effectiveTime>
+                              </marketingAct>
+                           </subjectOf>
+                           <subjectOf>
+                              <characteristic classCode="OBS">
+                                 <code code="SPLCOLOR" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                                 <value code="C48326" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="red" xsi:type="CE">
+                                    <originalText>Reddish Brown</originalText>
+                                 </value>
+                              </characteristic>
+                           </subjectOf>
+                           <subjectOf>
+                              <characteristic classCode="OBS">
+                                 <code code="SPLSIZE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                                 <value unit="mm" value="10" xsi:type="PQ"/>
+                              </characteristic>
+                           </subjectOf>
+                           <subjectOf>
+                              <characteristic classCode="OBS">
+                                 <code code="SPLSHAPE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                                 <value code="C48348" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ROUND" xsi:type="CE">
+                                    <originalText/>
+                                 </value>
+                              </characteristic>
+                           </subjectOf>
+                           <subjectOf>
+                              <characteristic classCode="OBS">
+                                 <code code="SPLSCORE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                                 <value value="1" xsi:type="INT"/>
+                              </characteristic>
+                           </subjectOf>
+                           <subjectOf>
+                              <characteristic classCode="OBS">
+                                 <code code="SPLIMPRINT" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                                 <value xsi:type="ST">G;2</value>
+                              </characteristic>
+                           </subjectOf>
+                           <consumedIn>
+                              <substanceAdministration>
+                                 <routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ORAL"/>
+                              </substanceAdministration>
+                           </consumedIn>
+                        </part>
+                     </manufacturedProduct>
+                     <subjectOf>
+                        <approval>
+                           <id extension="505G(a)(3)" root="2.16.840.1.113883.3.9421"/>
+                           <code code="C200263" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="OTC Monograph Drug"/>
+                           <author>
+                              <territorialAuthority>
+                                 <territory>
+                                    <code code="USA" codeSystem="2.16.840.1.113883.5.28"/>
+                                 </territory>
+                              </territorialAuthority>
+                           </author>
+                        </approval>
+                     </subjectOf>
+                     <subjectOf>
+                        <marketingAct>
+                           <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <statusCode code="active"/>
+                           <effectiveTime>
+                              <low value="20240717"/>
+                           </effectiveTime>
+                        </marketingAct>
+                     </subjectOf>
+                     <consumedIn>
+                        <substanceAdministration>
+                           <routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ORAL"/>
+                        </substanceAdministration>
+                     </consumedIn>
+                  </manufacturedProduct>
+               </subject>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_120145a0-5ea0-4c7d-99bc-1df0ecc2576d">
+               <id root="5631d6a3-bcce-ecda-e063-6294a90ad7c5"/>
+               <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+               <title>CONTENTS – Walgreens All-Purpose First Aid Kit</title>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">BANDAGES</content>
+                  </paragraph>
+                  <paragraph>40 – Sheer Bandages 3/4 IN x 3 IN (19 mm x 76 mm) (MADE IN U.S.A. WITH GLOBALLY SOURCED MATERIALS)</paragraph>
+                  <paragraph>40 – Sheer Bandages 5/8 IN x 2 1/4 IN (15 mm x 57 mm) (MADE IN U.S.A. WITH GLOBALLY SOURCED MATERIALS)</paragraph>
+                  <paragraph>12 – Waterproof Bandages 3/4 IN x 2 IN (19 mm x 50 mm) (MADE IN U.S.A. WITH GLOBALLY SOURCED MATERIALS)</paragraph>
+                  <paragraph>8 – Butterfly Closures 1 3/4 IN x 3/8 IN (44 mm x 9 mm) (MADE IN U.S.A. WITH GLOBALLY SOURCED MATERIALS)</paragraph>
+                  <paragraph>10 – Fabric Bandages 5/8 IN x 2 1/4 IN (15 mm x 57 mm) (MADE IN U.S.A. WITH GLOBALLY SOURCED MATERIALS)</paragraph>
+                  <paragraph>3 – Fabric Knuckle Bandages 1 1/2 IN x 3 IN (38 mm x 76 mm) (MADE IN U.S.A. WITH GLOBALLY SOURCED MATERIALS)</paragraph>
+                  <paragraph/>
+                  <paragraph>
+                     <content styleCode="bold">INSTRUMENTS</content>
+                  </paragraph>
+                  <paragraph>2 – Wooden Finger Splints (MADE IN U.S.A. WITH GLOBALLY SOURCED MATERIALS)</paragraph>
+                  <paragraph>1 – Paper Tape 1/2 IN x 5 YD (12.7 mm x 4.5 m) (MADE IN CHINA)</paragraph>
+                  <paragraph>1 – Metal Tweezers (MADE IN CHINA)</paragraph>
+                  <paragraph>1 – Single-Use Instant Cold Pack (MADE IN CHINA)</paragraph>
+                  <paragraph>1 – First Aid Guide (MADE IN U.S.A.)</paragraph>
+                  <paragraph>1 – Carrying Case (MADE IN MEXICO)</paragraph>
+                  <paragraph/>
+                  <paragraph>
+                     <content styleCode="bold">TOPICALS and MEDICINES</content>
+                  </paragraph>
+                  <paragraph>4 – Alcohol Prep Pads 13/16 IN x 2 5/16 IN (30 mm x 58 mm) (MADE IN CHINA)</paragraph>
+                  <paragraph>5 – Antiseptic Wipes 4 3/4 IN x 7 3/4 IN (120 mm x 196 mm) (MADE IN U.S.A.)</paragraph>
+                  <paragraph>4 – Ibuprofen Tablets 2 PER PACKET (MADE IN CHINA)</paragraph>
+                  <paragraph>2 – Allergy Caplets 1 PER PACKET (MADE IN CHINA)</paragraph>
+                  <paragraph>3 – Triple Antibiotic Ointments 1/32 OZ (0.9 g) (MADE IN U.S.A. WITH GLOBALLY SOURCED MATERIALS)</paragraph>
+                  <paragraph>2 – Hydrocortisone Cream 1/32 OZ (0.9 g) (MADE IN U.S.A. WITH GLOBALLY SOURCED MATERIALS)</paragraph>
+                  <paragraph>1 – First Aid &amp; Burn Cream 1/32 OZ (0.9 g) (MADE IN U.S.A. WITH GLOBALLY SOURCED MATERIALS)</paragraph>
+                  <paragraph/>
+                  <paragraph>
+                     <content styleCode="bold">WOUND DRESSINGS</content>
+                  </paragraph>
+                  <paragraph>5 – Gauze Pads 2 IN x 2 IN (50 mm x 50 mm) (MADE IN CHINA)</paragraph>
+                  <paragraph>3 – Non-stick* Pads 2 IN x 3 IN (50 mm x 76 mm) (MADE IN CHINA)</paragraph>
+                  <paragraph>2 – Gauze Pads 4 IN x 4 IN (101 mm x 101 mm) (MADE IN CHINA)</paragraph>
+                  <paragraph/>
+                  <paragraph>
+                     <content styleCode="bold">Ibuprofen, Alcohol Prep Pads, Allergy Caplets, First Aid &amp; Burn Cream, Hydrocortisone Cream, Triple Antibiotic Ointment &amp; Antiseptic Wipes</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">CAUTION:</content> This product contains non-prescription drug products that have expiration dates. Please check before use. Keep these and all drug products out of the reach of children.
+ </paragraph>
+                  <paragraph/>
+                  <paragraph>
+                     <content styleCode="bold">Adhesive Bandages:</content> For use on minor cuts, scrapes and burns.Directions: For optimal results, apply bandage to clean, dry skin. Change the dressing daily, when wet or more often if needed. Single use.
+ </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">WARNING</content>: For medical emergencies, seek professional help.
+ </paragraph>
+                  <paragraph/>
+                  <paragraph>
+                     <content styleCode="bold">Waterproof Bandages</content>: For use on minor cuts, scrapes and burns.Directions: For optimal results, apply bandage to clean, dry skin. Change the dressing daily or more often if needed. Single use.
+ </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">WARNING: </content>For medical emergencies, seek professional help.
+ </paragraph>
+                  <paragraph/>
+                  <paragraph>
+                     <content styleCode="bold">Butterfly Closures</content>: For use on minor cuts and wounds.Directions: Remove backing tabs from Butterfly Closure. Apply adhesive sections on either side of the wound. Be sure to center the non-stick area over the wound. Change dressing as directed by your health care professional. Single use.
+ </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">WARNING</content>: For medical emergencies, seek professional help.
+ </paragraph>
+                  <paragraph/>
+                  <paragraph>
+                     <content styleCode="bold">Gauze Pads:</content> For cleaning wounds.Directions: Gently clean the wound with mild soap and water using the gauze pad and carefully dry the affected area. Discard the used pad. Single use.
+ </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">WARNING: </content>In case of deep puncture wounds or serious burns, consult a physician.
+ </paragraph>
+                  <paragraph/>
+                  <paragraph>
+                     <content styleCode="bold">Non-stick* Pads:</content> Ideal for cushioning and protecting minor cuts, scrapes and burns without sticking. Single use.Directions: Carefully cover the wound with a non-stick* pad to help absorb fluid.
+ </paragraph>
+                  <paragraph>*Will not adhere to sutures, staples or adhesive wound closures.</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">WARNING</content>: In case of deep puncture wounds or serious burns, consult a physician.
+ </paragraph>
+                  <paragraph/>
+                  <paragraph>
+                     <content styleCode="bold">Paper Tape: </content>For securing wound covers
+ </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Directions: </content>use gauze to gently clean in and around injured area with mild soap and water. Dry injured area and apply medication if necessary. Cover wound with non-stick pad* or dressing. Secure the dressing with paper tape to help keep out dirt and contaminants.
+ </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">WARNING:</content> In case of deep puncture wounds or serious burns, consult a physician.
+ </paragraph>
+                  <paragraph/>
+                  <paragraph>Adhesive Bandages, Butterfly Closures, Gauze Pads, Non-Stick Pads, and Waterproof Bandages are sterile unless wrapper is opened or damaged.</paragraph>
+                  <paragraph/>
+                  <paragraph>Gauze Pads are rayon-polyester blend.</paragraph>
+                  <paragraph/>
+                  <paragraph>Not nade with natural rubber latex.</paragraph>
+               </text>
+               <effectiveTime value="20240717"/>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_bc7eea54-c816-4207-af35-0133406a6d52">
+               <id root="56315e71-1243-6bdc-e063-6294a90a4a34"/>
+               <code code="55106-9" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - ACTIVE INGREDIENT SECTION"/>
+               <title>Active ingredient 
+ <content styleCode="italics">(in each caplet)</content>– Diphen Allergy Caplet
+</title>
+               <text>
+                  <paragraph>Diphenhydramine Hydrochloride 25 mg</paragraph>
+               </text>
+               <effectiveTime value="20240717"/>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_c5d4686c-99ec-44d7-b045-b396f3f12022">
+               <id root="56317731-6694-6418-e063-6294a90a290e"/>
+               <code code="55105-1" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - PURPOSE SECTION"/>
+               <title>Purpose – Diphen Allergy Caplet</title>
+               <text>
+                  <paragraph>Antihistamine</paragraph>
+               </text>
+               <effectiveTime value="20240717"/>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_c7edd5ac-422e-457a-83b8-86ad85b019d9">
+               <id root="563177c5-a986-7d04-e063-6294a90ae5e3"/>
+               <code code="34067-9" codeSystem="2.16.840.1.113883.6.1" displayName="INDICATIONS &amp; USAGE SECTION"/>
+               <title>Uses – Diphen Allergy Caplet</title>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">Temporarily relieves these symptoms due to hay fever or other respiratory allergies</content>
+                  </paragraph>
+                  <list listType="unordered">
+                     <item>runny nose</item>
+                     <item>sneezing</item>
+                     <item>itching of the nose or throat</item>
+                     <item>itchy, watery eyes</item>
+                  </list>
+                  <paragraph>
+                     <content styleCode="bold">Temporarily relieves these symptoms due to the common cold</content>
+                  </paragraph>
+                  <list listType="unordered">
+                     <item>runny nose</item>
+                     <item>sneezing</item>
+                  </list>
+               </text>
+               <effectiveTime value="20240717"/>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_f944940e-c228-44de-a7ea-3a4b9695ff50">
+               <id root="56317897-a0d4-6fee-e063-6294a90a9935"/>
+               <code code="34071-1" codeSystem="2.16.840.1.113883.6.1" displayName="WARNINGS SECTION"/>
+               <title>Warnings – Diphen Allergy Caplet</title>
+               <text>
+                  <paragraph>.</paragraph>
+               </text>
+               <effectiveTime value="20240717"/>
+               <component>
+                  <section ID="ID_3d4fb04b-e453-4980-a9d7-b4f4e0e99758">
+                     <id root="563177c5-a989-7d04-e063-6294a90ae5e3"/>
+                     <code code="50570-1" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - DO NOT USE SECTION"/>
+                     <title>Do not use – Diphen Allergy Caplet</title>
+                     <text>
+                        <list listType="unordered">
+                           <item>to make a child sleepy</item>
+                           <item>with any other product containing diphenhydramine, even one that is used on skin.</item>
+                        </list>
+                     </text>
+                     <effectiveTime value="20240717"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="ID_02cb1f9a-23d8-480e-8fc5-f29b9f811455">
+                     <id root="563175e8-5af9-6196-e063-6294a90af520"/>
+                     <code code="50569-3" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - ASK DOCTOR SECTION"/>
+                     <title>Ask a doctor before use if you have – Diphen Allergy Caplet</title>
+                     <text>
+                        <list listType="unordered">
+                           <item>a breathing problem such as emphysema or chronic bronchitis</item>
+                           <item>difficulty in urinating due to enlargement of the prostate gland</item>
+                           <item>glaucoma</item>
+                        </list>
+                     </text>
+                     <effectiveTime value="20240717"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="ID_c46e2526-f7dd-4b8e-8046-08912f905620">
+                     <id root="56317502-198d-8d69-e063-6294a90a7987"/>
+                     <code code="50568-5" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - ASK DOCTOR/PHARMACIST SECTION"/>
+                     <title>Ask a doctor or pharmacist before use if you are – Diphen Allergy Caplet</title>
+                     <text>
+                        <list listType="unordered">
+                           <item>taking sedatives or tranquilizers</item>
+                        </list>
+                     </text>
+                     <effectiveTime value="20240717"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="ID_98f17ff9-c6b6-4d87-b506-114be332be69">
+                     <id root="56317ab9-f832-3436-e063-6394a90acd1f"/>
+                     <code code="50567-7" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - WHEN USING SECTION"/>
+                     <title>When using this product – Diphen Allergy Caplet</title>
+                     <text>
+                        <list listType="unordered">
+                           <item>marked drowsiness may occur</item>
+                           <item>avoid alcoholic beverages</item>
+                           <item>alcohol, sedatives and tranquilizers may increase the drowsiness effect</item>
+                           <item>use caution when driving a motor vehicle or operating machinery</item>
+                           <item>excitability may occur, especially in children</item>
+                        </list>
+                     </text>
+                     <effectiveTime value="20240717"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="ID_8de14d96-2204-4fa2-8008-cf40bd4441a3">
+                     <id root="56317c66-1e06-794d-e063-6294a90a78b8"/>
+                     <code code="53414-9" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - PREGNANCY OR BREAST FEEDING SECTION"/>
+                     <title>If pregnant or breast-feeding, – Diphen Allergy Caplet</title>
+                     <text>
+                        <paragraph>ask a health care professional before use.</paragraph>
+                     </text>
+                     <effectiveTime value="20240717"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="ID_fcf44514-f9b3-4bc4-8ed8-dc2955a88ba6">
+                     <id root="56317da9-a181-7e4e-e063-6294a90a8b7d"/>
+                     <code code="50565-1" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - KEEP OUT OF REACH OF CHILDREN SECTION"/>
+                     <title>Keep out of reach of children. – Diphen Allergy Caplet</title>
+                     <text>
+                        <paragraph>In case of overdose, contact a physician or poison control center immediately</paragraph>
+                     </text>
+                     <effectiveTime value="20240717"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_da38128b-8688-4af8-87af-350686c1a8a9">
+               <id root="56317e56-37df-3b80-e063-6394a90a55da"/>
+               <code code="34068-7" codeSystem="2.16.840.1.113883.6.1" displayName="DOSAGE &amp; ADMINISTRATION SECTION"/>
+               <title>Directions – Diphen Allergy Caplet</title>
+               <text>
+                  <list listType="unordered">
+                     <item>take every 4-6 hours, or as directed by a doctor</item>
+                     <item>do not take more than 6 times in 24 hours</item>
+                  </list>
+                  <paragraph>
+                     <content styleCode="bold">Adults and children: (12 years and over)</content>1 to 2 caplets
+ </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Children under 12 years:</content>do not use
+ </paragraph>
+               </text>
+               <effectiveTime value="20240717"/>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_7c71d8fb-a8f3-4af0-8cbc-41b11067c092">
+               <id root="56317f01-bc79-8290-e063-6294a90a5c38"/>
+               <code code="60561-8" codeSystem="2.16.840.1.113883.6.1" displayName="OTHER SAFETY INFORMATION"/>
+               <title>Other information – Diphen Allergy Caplet</title>
+               <text>
+                  <list listType="unordered">
+                     <item>protect from light</item>
+                     <item>store at room temperature 68º-77ºF (20º-25ºC)</item>
+                     <item>tamper-evident sealed packets</item>
+                     <item>do not use any opened or torn packets</item>
+                  </list>
+               </text>
+               <effectiveTime value="20240717"/>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_4acd319d-432a-43f3-b5cd-01398971f336">
+               <id root="56317f7f-55d3-8c43-e063-6294a90aca28"/>
+               <code code="51727-6" codeSystem="2.16.840.1.113883.6.1" displayName="INACTIVE INGREDIENT SECTION"/>
+               <title>Inactive Ingredients – Diphen Allergy Caplet</title>
+               <text>
+                  <paragraph>croscarmellose sodium, D&amp;C red #27 aluminum lake, hypromellose, lactose, magnesium stearate, microcrystalline cellulose, polyethylene glycol, silicon dioxide, titanium dioxide</paragraph>
+               </text>
+               <effectiveTime value="20240717"/>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_7f6190c0-341f-4c8c-8295-30e743d77a55">
+               <id root="56317897-a0d5-6fee-e063-6294a90a9935"/>
+               <code code="55106-9" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - ACTIVE INGREDIENT SECTION"/>
+               <title>Active ingredients – Antiseptic Wipes</title>
+               <text>
+                  <paragraph>Ethyl Alcohol 66.5%</paragraph>
+               </text>
+               <effectiveTime value="20240717"/>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_1c2d5779-3e4b-4332-bf5b-4da37db2e5ea">
+               <id root="563181b6-4fc7-31d9-e063-6294a90ad92c"/>
+               <code code="55105-1" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - PURPOSE SECTION"/>
+               <title>Purpose – Antiseptic Wipes</title>
+               <text>
+                  <paragraph>Antiseptic</paragraph>
+               </text>
+               <effectiveTime value="20240717"/>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_59e3245f-3518-41bc-87eb-03cac6a176ad">
+               <id root="56317e56-37e4-3b80-e063-6394a90a55da"/>
+               <code code="34067-9" codeSystem="2.16.840.1.113883.6.1" displayName="INDICATIONS &amp; USAGE SECTION"/>
+               <title>Uses – Antiseptic Wipes</title>
+               <text>
+                  <paragraph>Antiseptic cleansing of face, hands and body to decrease bacteria on skin without soap and water</paragraph>
+               </text>
+               <effectiveTime value="20240717"/>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_c5b63fd6-9325-4a49-a4e4-a870c2ff34b9">
+               <id root="56317731-6697-6418-e063-6294a90a290e"/>
+               <code code="34071-1" codeSystem="2.16.840.1.113883.6.1" displayName="WARNINGS SECTION"/>
+               <title>Warnings – Antiseptic Wipes</title>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">For external use only
+   <br/>
+Flammable: keep away from fire or flame
+  </content>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20240717"/>
+               <component>
+                  <section ID="ID_f842a9f9-36b6-452b-b74c-a12e93078efd">
+                     <id root="56318409-db7d-43a6-e063-6394a90a3e60"/>
+                     <code code="50570-1" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - DO NOT USE SECTION"/>
+                     <title>Do not use – Antiseptic Wipes</title>
+                     <text>
+                        <paragraph>in the eyes. If this happens, rinse thoroughly with water.</paragraph>
+                     </text>
+                     <effectiveTime value="20240717"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="ID_66b8b2dc-1e1b-49f4-9867-be4474da1acd">
+                     <id root="56317f94-4116-411f-e063-6394a90aa8b6"/>
+                     <code code="50566-9" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - STOP USE SECTION"/>
+                     <title>Stop use and ask a doctor – Antiseptic Wipes</title>
+                     <text>
+                        <paragraph>if irritation or redness develop and persist for more than 72 hours</paragraph>
+                     </text>
+                     <effectiveTime value="20240717"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="ID_5ffebb73-f9df-4e8a-8b22-551b275620d0">
+                     <id root="56318520-8ce9-3640-e063-6394a90a92fb"/>
+                     <code code="50565-1" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - KEEP OUT OF REACH OF CHILDREN SECTION"/>
+                     <title>Keep out of reach of children – Antiseptic Wipes</title>
+                     <text>
+                        <paragraph>If swallowed get medical help or contact a Poison Control Center right away</paragraph>
+                     </text>
+                     <effectiveTime value="20240717"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_49a39d89-d718-4624-b07f-37d8b98249d1">
+               <id root="563185d2-805c-41a8-e063-6394a90ac359"/>
+               <code code="34068-7" codeSystem="2.16.840.1.113883.6.1" displayName="DOSAGE &amp; ADMINISTRATION SECTION"/>
+               <title>Directions – Antiseptic Wipes</title>
+               <text>
+                  <list listType="unordered">
+                     <item>tear open packet, remove towelette</item>
+                     <item>unfold and use as a washcloth</item>
+                     <item>supervise children under 6 years of age</item>
+                  </list>
+               </text>
+               <effectiveTime value="20240717"/>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_11f04e6b-dcd9-4d89-b05f-aa260118b286">
+               <id root="56317897-a0d6-6fee-e063-6294a90a9935"/>
+               <code code="51727-6" codeSystem="2.16.840.1.113883.6.1" displayName="INACTIVE INGREDIENT SECTION"/>
+               <title>Inactive ingredients – Antiseptic Wipes</title>
+               <text>
+                  <paragraph>aloe vera, fragrance, purified water, triethanolamine</paragraph>
+               </text>
+               <effectiveTime value="20240717"/>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_d3954017-3e7d-46af-800e-89201af36769">
+               <id root="56317f94-4119-411f-e063-6394a90aa8b6"/>
+               <code code="55106-9" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - ACTIVE INGREDIENT SECTION"/>
+               <title>Active Ingredient (in each gram) – Triple Antibiotic Ointment</title>
+               <text>
+                  <paragraph>Bacitracin Zinc (400 units Bacitracin)
+  <br/>
+Neomycin Sulfate (3.5 mg Neomycin)
+  <br/>
+Polymyxin B Sulfate (Polymyxin B 5000 units)
+ </paragraph>
+               </text>
+               <effectiveTime value="20240717"/>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_a23d7770-a027-4f80-904c-e6dc7f2423bc">
+               <id root="563181b6-4fc8-31d9-e063-6294a90ad92c"/>
+               <code code="55105-1" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - PURPOSE SECTION"/>
+               <title>Purpose – Triple Antibiotic Ointment</title>
+               <text>
+                  <paragraph>First Aid Antibiotic
+  <br/>
+First Aid Antibiotic
+  <br/>
+First Aid Antibiotic
+ </paragraph>
+               </text>
+               <effectiveTime value="20240717"/>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_677101e3-2605-4443-9224-79d67df51b64">
+               <id root="563177c5-a98c-7d04-e063-6294a90ae5e3"/>
+               <code code="34067-9" codeSystem="2.16.840.1.113883.6.1" displayName="INDICATIONS &amp; USAGE SECTION"/>
+               <title>Uses – Triple Antibiotic Ointment</title>
+               <text>
+                  <paragraph>first aid to help prevent infection in minor cuts, scrapes, and burns</paragraph>
+               </text>
+               <effectiveTime value="20240717"/>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_40ab5771-c773-441b-873e-5cbadd889013">
+               <id root="563183cc-f489-3529-e063-6394a90a76ed"/>
+               <code code="34071-1" codeSystem="2.16.840.1.113883.6.1" displayName="WARNINGS SECTION"/>
+               <title>Warnings – Triple Antibiotic Ointment</title>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">For external use only</content>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20240717"/>
+               <component>
+                  <section ID="ID_121f0419-621e-4704-a576-d9dfeb000d0d">
+                     <id root="563183cc-f48a-3529-e063-6394a90a76ed"/>
+                     <code code="50570-1" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - DO NOT USE SECTION"/>
+                     <title>Do not use – Triple Antibiotic Ointment</title>
+                     <text>
+                        <list listType="unordered">
+                           <item>internally</item>
+                           <item>in eyes</item>
+                           <item>over large areas of the body</item>
+                           <item>for more than 1 week unless directed by a doctor</item>
+                           <item>if you are allergic to any of the ingredients</item>
+                        </list>
+                     </text>
+                     <effectiveTime value="20240717"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="id_link_562d67e8-220b-876f-e063-6394a90a936e">
+                     <id root="563177c5-a98f-7d04-e063-6294a90ae5e3"/>
+                     <code code="50569-3" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - ASK DOCTOR SECTION"/>
+                     <title>
+                        <content styleCode="bold">Ask a doctor before use -</content> Triple Antibiotic Ointment
+</title>
+                     <text>
+                        <list listType="unordered">
+                           <item>in case of deep or puncture wounds, animal bites, or serious burns</item>
+                        </list>
+                     </text>
+                     <effectiveTime value="20240717"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="ID_b5c90c00-341e-4374-9ac5-0c7e031fe45a">
+                     <id root="56318b3e-721c-9118-e063-6294a90ab5e4"/>
+                     <code code="50566-9" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - STOP USE SECTION"/>
+                     <title>Stop use and ask a doctor if – Triple Antibiotic Ointment</title>
+                     <text>
+                        <list listType="unordered">
+                           <item>a rash or allergic reaction develops</item>
+                           <item>the condition persists or gets worse</item>
+                        </list>
+                     </text>
+                     <effectiveTime value="20240717"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="ID_24a64468-9c3c-43c8-9631-f865df9bfe01">
+                     <id root="56317da9-a186-7e4e-e063-6294a90a8b7d"/>
+                     <code code="50565-1" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - KEEP OUT OF REACH OF CHILDREN SECTION"/>
+                     <title>Keep out of reach of children – Triple Antibiotic Ointment</title>
+                     <text>
+                        <paragraph>In case of accidental ingestion, seek professional assistance or contact a poison control center immediately.</paragraph>
+                     </text>
+                     <effectiveTime value="20240717"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_34fcffa3-a115-4deb-be90-7a18fa32d8e1">
+               <id root="56317f01-bc7c-8290-e063-6294a90a5c38"/>
+               <code code="34068-7" codeSystem="2.16.840.1.113883.6.1" displayName="DOSAGE &amp; ADMINISTRATION SECTION"/>
+               <title>Directions – Triple Antibiotic Ointment</title>
+               <text>
+                  <list listType="unordered">
+                     <item>Clean the affected area</item>
+                     <item>Apply a small amount of this product (an amount equal to the surface area of the tip of a finger) on the area 1 to 3 times daily</item>
+                     <item>May be covered with a sterile bandage</item>
+                  </list>
+               </text>
+               <effectiveTime value="20240717"/>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_562d1270-3d0b-8bd3-e063-6394a90acdca">
+               <id root="56317f7f-55d6-8c43-e063-6294a90aca28"/>
+               <code code="60561-8" codeSystem="2.16.840.1.113883.6.1" displayName="OTHER SAFETY INFORMATION"/>
+               <title>Other Information - Triple Antibiotic Ointment</title>
+               <text>
+                  <list listType="unordered">
+                     <item>Store at room temperature (do not freeze)</item>
+                     <item>Do Not Use any Opened or Torn Packets</item>
+                  </list>
+               </text>
+               <effectiveTime value="20240717"/>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_c55a5305-2d3f-4c70-b78c-7d1c50271966">
+               <id root="563183cc-f48b-3529-e063-6394a90a76ed"/>
+               <code code="51727-6" codeSystem="2.16.840.1.113883.6.1" displayName="INACTIVE INGREDIENT SECTION"/>
+               <title>Inactive ingredients – Triple Antibiotic Ointment</title>
+               <text>
+                  <paragraph>petrolatum</paragraph>
+               </text>
+               <effectiveTime value="20240717"/>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_a4ff1bd7-82dd-4229-a378-52517868157e">
+               <id root="56317f94-411e-411f-e063-6394a90aa8b6"/>
+               <code code="55106-9" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - ACTIVE INGREDIENT SECTION"/>
+               <title>Active Ingredient – 
+ <content styleCode="bold">First Aid and Burn Cream</content>
+               </title>
+               <text>
+                  <paragraph>Benzalkonium Chloride 0.13%</paragraph>
+                  <paragraph>Lidocaine HCl 0.5%</paragraph>
+               </text>
+               <effectiveTime value="20240717"/>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_0ed71f1a-7959-4f10-bf6e-dbc9d07ffbc0">
+               <id root="56317f94-411f-411f-e063-6394a90aa8b6"/>
+               <code code="55105-1" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - PURPOSE SECTION"/>
+               <title>Purpose – 
+ <content styleCode="bold">First Aid and Burn Cream</content>
+               </title>
+               <text>
+                  <paragraph>First Aid Antiseptic</paragraph>
+                  <paragraph>Topical Analgesic</paragraph>
+               </text>
+               <effectiveTime value="20240717"/>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_25072b85-ce12-49a8-bd43-18e4a2ddb4bf">
+               <id root="56319004-73e5-4d51-e063-6394a90a9dd8"/>
+               <code code="34067-9" codeSystem="2.16.840.1.113883.6.1" displayName="INDICATIONS &amp; USAGE SECTION"/>
+               <title>Uses – 
+ <content styleCode="bold">First Aid and Burn Cream</content>
+               </title>
+               <text>
+                  <list listType="unordered">
+                     <item>temporary relief of pain associated with minor burns</item>
+                     <item>helps protect against harmful bacteria</item>
+                  </list>
+               </text>
+               <effectiveTime value="20240717"/>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_26649cf0-aff0-4599-96ea-6f63d9a7d696">
+               <id root="56319004-73e8-4d51-e063-6394a90a9dd8"/>
+               <code code="34071-1" codeSystem="2.16.840.1.113883.6.1" displayName="WARNINGS SECTION"/>
+               <title>Warnings – 
+ <content styleCode="bold">First Aid and Burn Crean</content>
+               </title>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">For external use only</content>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20240717"/>
+               <component>
+                  <section ID="ID_ab1f2172-1243-430c-b03a-c7f65d7b78aa">
+                     <id root="56319004-73e9-4d51-e063-6394a90a9dd8"/>
+                     <code code="50570-1" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - DO NOT USE SECTION"/>
+                     <title>Do not use – First Aid and Burn Crean</title>
+                     <text>
+                        <list listType="unordered">
+                           <item>in eyes</item>
+                           <item>in large quantities</item>
+                           <item>over raw or blistered areas, or on deep puncture wounds, animal bites, serious burns</item>
+                           <item>for more than one week unless directed by a doctor</item>
+                        </list>
+                     </text>
+                     <effectiveTime value="20240717"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="ID_9b283294-fc30-42f2-a698-5d8c38f174ac">
+                     <id root="56317da9-a187-7e4e-e063-6294a90a8b7d"/>
+                     <code code="50566-9" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - STOP USE SECTION"/>
+                     <title>Stop use, ask a doctor – 
+ <content styleCode="bold">First Aid and Burn Crean</content>
+                     </title>
+                     <text>
+                        <list listType="unordered">
+                           <item>condition worsens or if symptoms persist for more than 7 days or clear up and occurs again within a few days</item>
+                        </list>
+                     </text>
+                     <effectiveTime value="20240717"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="ID_39297bc3-45db-4fdf-87e0-9f604ff3c5a4">
+                     <id root="56318b3e-721f-9118-e063-6294a90ab5e4"/>
+                     <code code="50565-1" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - KEEP OUT OF REACH OF CHILDREN SECTION"/>
+                     <title>Keep out of reach of children. – 
+ <content styleCode="bold">First Aid and Burn Cream</content>
+                     </title>
+                     <text>
+                        <paragraph>If ingested, contact a Poison Control Center right away</paragraph>
+                     </text>
+                     <effectiveTime value="20240717"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_d83b0943-c1ab-4482-86bf-7d1892826eed">
+               <id root="56317e56-37e7-3b80-e063-6394a90a55da"/>
+               <code code="34068-7" codeSystem="2.16.840.1.113883.6.1" displayName="DOSAGE &amp; ADMINISTRATION SECTION"/>
+               <title>Directions – 
+ <content styleCode="bold">First Aid and Burn Cream</content>
+               </title>
+               <text>
+                  <list listType="unordered">
+                     <item>clean affected area</item>
+                     <item>apply small amount not more than 3 times daily</item>
+                     <item>children under 2: consult a doctor</item>
+                  </list>
+               </text>
+               <effectiveTime value="20240717"/>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_2f10cfe2-aa13-4e7d-8df2-a6ffb744a553">
+               <id root="563183cc-f48c-3529-e063-6394a90a76ed"/>
+               <code code="51727-6" codeSystem="2.16.840.1.113883.6.1" displayName="INACTIVE INGREDIENT SECTION"/>
+               <title>Inactive ingredients – 
+ <content styleCode="bold">First Aid and Burn Cream</content>
+               </title>
+               <text>
+                  <paragraph>aloe vera, emulsifying wax, ethyl alcohol, methylparaben, mineral oil, paraffin, propylparaben, purified water, white petrolatum, white wax</paragraph>
+               </text>
+               <effectiveTime value="20240717"/>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_a0ce113f-3e31-46f2-9b36-ac3c894d1bc5">
+               <id root="56319004-73ea-4d51-e063-6394a90a9dd8"/>
+               <code code="55106-9" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - ACTIVE INGREDIENT SECTION"/>
+               <title>Active ingredient – 
+ <content styleCode="bold">Alcohol Prep Pads</content>
+               </title>
+               <text>
+                  <paragraph>Isopropyl Alcohol 70%</paragraph>
+               </text>
+               <effectiveTime value="20240717"/>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_0bfe138c-04fd-4bf0-835c-5fd9c18dbea7">
+               <id root="56319606-2342-225e-e063-6394a90a754c"/>
+               <code code="55105-1" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - PURPOSE SECTION"/>
+               <title>Purpose – 
+ <content styleCode="bold">Alcohol Prep Pads</content>
+               </title>
+               <text>
+                  <paragraph>Antiseptic</paragraph>
+               </text>
+               <effectiveTime value="20240717"/>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_ace4ccfc-7655-4c51-8ef1-7112683f4de4">
+               <id root="56317b1f-0398-26e4-e063-6394a90a934f"/>
+               <code code="34067-9" codeSystem="2.16.840.1.113883.6.1" displayName="INDICATIONS &amp; USAGE SECTION"/>
+               <title>Uses – 
+ <content styleCode="bold">Alcohol Prep Pads</content>
+               </title>
+               <text>
+                  <list listType="unordered">
+                     <item>For preparation of the skin prior to an injection</item>
+                  </list>
+               </text>
+               <effectiveTime value="20240717"/>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_2a2a1d61-0934-409e-a172-1441afe8926a">
+               <id root="5631975b-7f93-53ca-e063-6394a90abf9a"/>
+               <code code="34071-1" codeSystem="2.16.840.1.113883.6.1" displayName="WARNINGS SECTION"/>
+               <title>Warnings – 
+ <content styleCode="bold">Alcohol Prep Pads</content>
+               </title>
+               <text>
+                  <paragraph>For external use only 
+  <content styleCode="bold"/>
+                     <br/>
+Flammable, keep away from fire or flame
+ </paragraph>
+               </text>
+               <effectiveTime value="20240717"/>
+               <component>
+                  <section ID="ID_73b03b4a-2eed-482d-bf21-c8076b0ff750">
+                     <id root="56319809-e925-48b1-e063-6394a90a15de"/>
+                     <code code="50570-1" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - DO NOT USE SECTION"/>
+                     <title>Do not use – 
+ <content styleCode="bold">Alcohol Prep Pads</content>
+                     </title>
+                     <text>
+                        <list listType="unordered">
+                           <item>with electrocautery procedures</item>
+                           <item>in the eyes. If contact occurs, flush eyes with water.</item>
+                        </list>
+                     </text>
+                     <effectiveTime value="20240717"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="ID_f674e95c-747e-4022-8fdc-67d9e73c4850">
+                     <id root="563198e5-a90b-a3b9-e063-6294a90a9fc2"/>
+                     <code code="50566-9" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - STOP USE SECTION"/>
+                     <title>Stop use if – 
+ <content styleCode="bold">Alcohol Prep Pads</content>
+                     </title>
+                     <text>
+                        <paragraph>irritation and redness develop. If condition continues, consult your health care practitioner</paragraph>
+                     </text>
+                     <effectiveTime value="20240717"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="ID_67b2b52e-e9b7-4394-82bb-e68caf45cb4b">
+                     <id root="563177c5-a992-7d04-e063-6294a90ae5e3"/>
+                     <code code="50565-1" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - KEEP OUT OF REACH OF CHILDREN SECTION"/>
+                     <title>Keep out of reach of children. – 
+ <content styleCode="bold">Alcohol Prep Pads</content>
+                     </title>
+                     <text>
+                        <paragraph>If swallowed get medical help or contact a Poison Control Center right away.</paragraph>
+                     </text>
+                     <effectiveTime value="20240717"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_2c6c46e5-0888-4d0d-9852-aff904ae5548">
+               <id root="56317897-a0d9-6fee-e063-6294a90a9935"/>
+               <code code="34068-7" codeSystem="2.16.840.1.113883.6.1" displayName="DOSAGE &amp; ADMINISTRATION SECTION"/>
+               <title>Directions – 
+ <content styleCode="bold">Alcohol Prep Pads</content>
+               </title>
+               <text>
+                  <list listType="unordered">
+                     <item>wipe injection area and discard</item>
+                  </list>
+               </text>
+               <effectiveTime value="20240717"/>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_de580c86-6e7d-4d27-a2ed-68c9152e7ff3">
+               <id root="56319c47-d3c8-3c4e-e063-6394a90afc7d"/>
+               <code code="60561-8" codeSystem="2.16.840.1.113883.6.1" displayName="OTHER SAFETY INFORMATION"/>
+               <title>Other information – 
+ <content styleCode="bold">Alcohol Prep Pads</content>
+               </title>
+               <text>
+                  <list listType="unordered">
+                     <item>Store at room temperature: 59ºF - 86ºF (15ºC - 30ºC)</item>
+                  </list>
+               </text>
+               <effectiveTime value="20240717"/>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_90bb61c0-0c47-42ed-a796-ae210f277d1d">
+               <id root="56319c47-d3c9-3c4e-e063-6394a90afc7d"/>
+               <code code="51727-6" codeSystem="2.16.840.1.113883.6.1" displayName="INACTIVE INGREDIENT SECTION"/>
+               <title>Inactive ingredient – 
+ <content styleCode="bold">Alcohol Prep Pads</content>
+               </title>
+               <text>
+                  <paragraph>purified water</paragraph>
+               </text>
+               <effectiveTime value="20240717"/>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_74464bcb-68d3-4294-909f-f5235fe02b48">
+               <id root="56317897-a0de-6fee-e063-6294a90a9935"/>
+               <code code="55106-9" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - ACTIVE INGREDIENT SECTION"/>
+               <title>Active ingredient – 
+ <content styleCode="bold">Hydrocortisone Cream</content>
+               </title>
+               <text>
+                  <paragraph>Hydrocortisone 1.0%</paragraph>
+               </text>
+               <effectiveTime value="20240717"/>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_da7a710f-35b7-45e6-8e02-3d7882be0972">
+               <id root="56319004-73ed-4d51-e063-6394a90a9dd8"/>
+               <code code="55105-1" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - PURPOSE SECTION"/>
+               <title>Purpose – 
+ <content styleCode="bold">Hydrocortisone Cream</content>
+               </title>
+               <text>
+                  <paragraph>Anti-itch</paragraph>
+               </text>
+               <effectiveTime value="20240717"/>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_c2a488af-a910-43a8-8016-409624e2cbd4">
+               <id root="56319809-e926-48b1-e063-6394a90a15de"/>
+               <code code="34067-9" codeSystem="2.16.840.1.113883.6.1" displayName="INDICATIONS &amp; USAGE SECTION"/>
+               <title>Uses – 
+ <content styleCode="bold">Hydrocortisone Cream</content>
+               </title>
+               <text>
+                  <list listType="unordered">
+                     <item>for the temporary relief of itching associated with minor skin irritations, inflammation and rashes due to eczema, insect bites, poison ivy, poison oak, poison sumac, soaps, detergents, cosmetics, jewelry, seborrheic dermatitis, psoriasis and scrapes</item>
+                     <item>other uses of this product should be only under the advice and supervision of a doctor</item>
+                  </list>
+               </text>
+               <effectiveTime value="20240717"/>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_0d6c0e5c-55e4-40e5-9bb8-cf07fcab703e">
+               <id root="56319fb1-9611-562d-e063-6394a90a94c9"/>
+               <code code="34071-1" codeSystem="2.16.840.1.113883.6.1" displayName="WARNINGS SECTION"/>
+               <title>Warnings – 
+ <content styleCode="bold">Hydrocortisone Cream</content>
+               </title>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">For external use only</content>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20240717"/>
+               <component>
+                  <section ID="ID_19a6e751-17c1-41b2-bc59-563e8e52de22">
+                     <id root="563177c5-a993-7d04-e063-6294a90ae5e3"/>
+                     <code code="50570-1" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - DO NOT USE SECTION"/>
+                     <title>Do not use – 
+ <content styleCode="bold">Hydrocortisone Cream</content>
+                     </title>
+                     <text>
+                        <list listType="unordered">
+                           <item>for the treatment of diaper rash</item>
+                           <item>in eyes</item>
+                           <item>for feminine itching</item>
+                           <item>if condition worsens or lasts more than 7 days, or clears up and occurs again within a few days</item>
+                           <item>with any other Hydrocortisone product unless you have consulted a doctor</item>
+                        </list>
+                     </text>
+                     <effectiveTime value="20240717"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="ID_063adef2-3910-4411-8946-be74bc7fd06d">
+                     <id root="56318409-db7e-43a6-e063-6394a90a3e60"/>
+                     <code code="50565-1" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - KEEP OUT OF REACH OF CHILDREN SECTION"/>
+                     <title>Keep out of reach of children. – 
+ <content styleCode="bold">Hydrocortisone Cream</content>
+                     </title>
+                     <text>
+                        <paragraph>If swallowed, get medical help or contact a Poison Control Center right away.</paragraph>
+                     </text>
+                     <effectiveTime value="20240717"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_2f17ce03-748b-4119-8895-8d5c1f6d9e2a">
+               <id root="56318fe0-34ce-3b75-e063-6394a90aa18b"/>
+               <code code="34068-7" codeSystem="2.16.840.1.113883.6.1" displayName="DOSAGE &amp; ADMINISTRATION SECTION"/>
+               <title>Directions – 
+ <content styleCode="bold">Hydrocortisone Cream</content>
+               </title>
+               <text>
+                  <list listType="unordered">
+                     <item>for adults and children 2 years of age and older: apply to affected area 3 to 4 times daily</item>
+                     <item>children under 2 years of age: do not use, consult a doctor</item>
+                     <item>adults for external anal itching when practical, cleanse the affected area with mild soap and warm water and rinse thoroughly or by patting or blotting with an appropriate cleansing pad</item>
+                     <item>gently dry by patting or blotting with toilet tissue or a soft cloth before application of this product</item>
+                     <item>children under 12 years of age: for external anal itching, consult a doctor</item>
+                  </list>
+               </text>
+               <effectiveTime value="20240717"/>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_562e150c-9c77-3cf5-e063-6394a90a28c7">
+               <id root="56319f55-54d3-ba49-e063-6294a90acde5"/>
+               <code code="60561-8" codeSystem="2.16.840.1.113883.6.1" displayName="OTHER SAFETY INFORMATION"/>
+               <title>Other Information - 
+ <content styleCode="bold">Hydrocortisone Cream</content>
+               </title>
+               <text>
+                  <list listType="unordered">
+                     <item>store at room temperature (do not freeze)</item>
+                     <item>do not use any opened or torn packets</item>
+                  </list>
+               </text>
+               <effectiveTime value="20240717"/>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_44bdccd9-efec-4995-9062-23f53ea87077">
+               <id root="56319de2-21fc-9e21-e063-6294a90aeeb4"/>
+               <code code="51727-6" codeSystem="2.16.840.1.113883.6.1" displayName="INACTIVE INGREDIENT SECTION"/>
+               <title>Inactive ingredients – 
+ <content styleCode="bold">Hydrocortisone Cream</content>
+               </title>
+               <text>
+                  <paragraph>emulsifying wax, ethanol, methylparaben, mineral oil, paraffin, petrolatum, propylparaben, purified water, white wax</paragraph>
+               </text>
+               <effectiveTime value="20240717"/>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_ab44cffd-78fe-43df-8119-d273b2fbc9f2">
+               <id root="5631a613-2ae0-a2e9-e063-6294a90a4c75"/>
+               <code code="55106-9" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - ACTIVE INGREDIENT SECTION"/>
+               <title>Active ingredient ( 
+ <content styleCode="italics">in each tablet</content>) – 
+ <content styleCode="bold">Ibuprofen</content>
+               </title>
+               <text>
+                  <paragraph>Ibuprofen 200 mg (NSAID*)
+  <br/>
+*nonsteroidal anti-inflammatory drug
+ </paragraph>
+               </text>
+               <effectiveTime value="20240717"/>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_7b8948ba-a0f0-4a05-b7e1-19fcd9fb6ec4">
+               <id root="56319fb1-9613-562d-e063-6394a90a94c9"/>
+               <code code="55105-1" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - PURPOSE SECTION"/>
+               <title>Purpose – 
+ <content styleCode="bold">Ibuprofen</content>
+               </title>
+               <text>
+                  <paragraph>Pain reliever/fever reducer</paragraph>
+               </text>
+               <effectiveTime value="20240717"/>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_a4e20620-5f47-4414-9801-a1fcb9c756e4">
+               <id root="562d2a84-4b6a-9157-e063-6394a90a5781"/>
+               <code code="34067-9" codeSystem="2.16.840.1.113883.6.1" displayName="INDICATIONS &amp; USAGE SECTION"/>
+               <title>Uses – 
+ <content styleCode="bold">Ibuprofen</content>
+               </title>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">Temporarily relieves minor aches and pains associated with</content>
+                  </paragraph>
+                  <paragraph>• headache • toothache • backache • menstrual cramps • common cold • muscular aches • minor arthritis pain</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Temporarily reduces fever.</content>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20250507"/>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_552106e8-0c4d-4c27-8c1c-2ff3c2792db1">
+               <id root="5631a7f1-12e9-632e-e063-6394a90a2cd2"/>
+               <code code="34071-1" codeSystem="2.16.840.1.113883.6.1" displayName="WARNINGS SECTION"/>
+               <title>Warnings – 
+ <content styleCode="bold">Ibuprofen</content>
+               </title>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">Allergy alert:</content>Ibuprofen may cause a severe allergic reaction, especially in people allergic to aspirin. Symptoms may include:
+  <br/>
+• hives • skin reddening • asthma (wheezing) • facial swelling • rash • shock • blisters
+  <br/>
+If an allergic reaction occurs, stop use and seek medical help right away.
+  <br/>
+                     <br/>
+                     <content styleCode="bold">Stomach bleeding warning:</content>This product contains an NSAID, which may cause severe stomach bleeding. The chance is higher if you:
+  <br/>
+• are age 60 or older
+  <br/>
+• have had stomach ulcers or bleeding problems
+  <br/>
+• take a blood thinning (anticoagulant) or steroid drug
+  <br/>
+• take other drugs containing prescription or nonprescription NSAIDs (aspirin, ibuprofen, naproxen, or others)
+  <br/>
+• have 3 or more alcoholic drinks every day while using this product
+  <br/>
+• take more or for a longer time than directed
+  <br/>
+                     <br/>
+                     <content styleCode="bold">Heart attack or stroke warning:</content>NSAIDS, except aspirin, increase the risk of heart attack, heart failure, and stroke. These can be fatal. The risk is higher if you use more than directed or for longer than directed.
+ </paragraph>
+               </text>
+               <effectiveTime value="20240717"/>
+               <component>
+                  <section ID="ID_32a49390-685e-4184-bebf-a4d697653e1b">
+                     <id root="5631a8b1-201f-644e-e063-6394a90a3d66"/>
+                     <code code="50570-1" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - DO NOT USE SECTION"/>
+                     <title>Do not use – 
+ <content styleCode="bold">Ibuprofen</content>
+                     </title>
+                     <text>
+                        <list listType="unordered">
+                           <item>if you have ever had an allergic reaction to any other pain reliever/fever reducer</item>
+                           <item>right before or after heart surgery</item>
+                        </list>
+                     </text>
+                     <effectiveTime value="20240717"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="ID_698c371a-49f7-4381-81e3-e4a5abeb05ae">
+                     <id root="5631a982-c837-c291-e063-6294a90a8345"/>
+                     <code code="50569-3" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - ASK DOCTOR SECTION"/>
+                     <title>Ask a doctor before use if – 
+ <content styleCode="bold">Ibuprofen</content>
+                     </title>
+                     <text>
+                        <list listType="unordered">
+                           <item>you have problems or serious side effects from taking pain relievers or fever reducers</item>
+                           <item>stomach bleeding warning applies to you</item>
+                           <item>you have a history of stomach problems such as heartburn</item>
+                           <item>you have high blood pressure, heart disease, liver cirrhosis, kidney disease, asthma or had a stroke</item>
+                           <item>you are taking a diuretic</item>
+                        </list>
+                     </text>
+                     <effectiveTime value="20240717"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="ID_537a363f-6b53-4da9-bf65-04ae1e27621c">
+                     <id root="56319de2-21ff-9e21-e063-6294a90aeeb4"/>
+                     <code code="50568-5" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - ASK DOCTOR/PHARMACIST SECTION"/>
+                     <title>Ask a doctor or pharmacist before use if you are – 
+ <content styleCode="bold">Ibuprofen</content>
+                     </title>
+                     <text>
+                        <list listType="unordered">
+                           <item>taking aspirin for heart attack or stroke, because ibuprofen may decrease this benefit of aspirin</item>
+                           <item>under a doctor’s care for any serious condition</item>
+                           <item>taking any other drug</item>
+                        </list>
+                     </text>
+                     <effectiveTime value="20240717"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="ID_b63466ff-17de-4b40-a16b-1ace0f743095">
+                     <id root="5631acb7-6fd3-5a1c-e063-6394a90accc7"/>
+                     <code code="50567-7" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - WHEN USING SECTION"/>
+                     <title>When using this product – 
+ <content styleCode="bold">Ibuprofen</content>
+                     </title>
+                     <text>
+                        <list listType="unordered">
+                           <item>take with food or milk if stomach upset occurs</item>
+                        </list>
+                     </text>
+                     <effectiveTime value="20240717"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="ID_9ac69aa8-4a10-4a33-9b2d-2dbbef67fcdf">
+                     <id root="5631ae1f-316c-c2ab-e063-6294a90a0787"/>
+                     <code code="50566-9" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - STOP USE SECTION"/>
+                     <title>Stop use and ask a doctor if – 
+ <content styleCode="bold">Ibuprofen</content>
+                     </title>
+                     <text>
+                        <paragraph>• you experience any of the following signs of stomach bleeding</paragraph>
+                        <list listType="unordered">
+                           <item>feel faint • vomit blood</item>
+                           <item>have bloody or black stools</item>
+                           <item>have stomach pain that does not get better</item>
+                        </list>
+                        <paragraph>• you have symptoms of heart problems or stroke</paragraph>
+                        <list listType="unordered">
+                           <item>chest pain • trouble breathing</item>
+                           <item>weakness in one part or side of body</item>
+                           <item>slurred speech • leg swelling</item>
+                        </list>
+                        <paragraph>• pain gets worse or lasts for more than 10 days
+  <br/>
+• fever gets worse or lasts for more than 3 days
+  <br/>
+• redness or swelling is present in the painful area
+  <br/>
+• any new or unexpected symptoms occur
+ </paragraph>
+                     </text>
+                     <effectiveTime value="20240717"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="ID_c9ddc2ee-7962-4d38-8de2-8464d438e333">
+                     <id root="56318409-db7f-43a6-e063-6394a90a3e60"/>
+                     <code code="53414-9" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - PREGNANCY OR BREAST FEEDING SECTION"/>
+                     <title>If pregnancy or breast-feeding, – 
+ <content styleCode="bold">Ibuprofen</content>
+                     </title>
+                     <text>
+                        <paragraph>ask a health professional before use. It is especially important not to use ibuprofen at 20 weeks or later in pregnancy unless specifically directed to do so by a doctor because it may cause problems in the unborn child or complications during delivery.</paragraph>
+                     </text>
+                     <effectiveTime value="20240717"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="ID_ed9feb40-d58c-4f77-b674-cc7bdfc2af26">
+                     <id root="5631a8b1-2022-644e-e063-6394a90a3d66"/>
+                     <code code="50565-1" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - KEEP OUT OF REACH OF CHILDREN SECTION"/>
+                     <title>Keep out of reach of children. – 
+ <content styleCode="bold">Ibuprofen</content>
+                     </title>
+                     <text>
+                        <paragraph>In case of overdose, get medical help or contact a Poison Control Center right away.</paragraph>
+                     </text>
+                     <effectiveTime value="20240717"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_eda88ba5-611e-42f4-8c07-ac45693c7945">
+               <id root="5631a982-c83a-c291-e063-6294a90a8345"/>
+               <code code="34068-7" codeSystem="2.16.840.1.113883.6.1" displayName="DOSAGE &amp; ADMINISTRATION SECTION"/>
+               <title>Directions – 
+ <content styleCode="bold">Ibuprofen</content>
+               </title>
+               <text>
+                  <paragraph>• 
+  <content styleCode="bold">do not use more than directed</content>
+                     <br/>
+• 
+  <content styleCode="bold">the smallest effective dose should be used</content>
+                     <br/>
+• do not take longer than 10 days, unless directed by a doctor (see Warnings)
+ </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Adults and children: (12 years and older)</content>
+                  </paragraph>
+                  <paragraph>Take 1 tablet every 4 to 6 hours while symptoms persist. If pain or fever does not respond to 1 tablet, 2 tablets may be used. Do not exceed 6 tablets in 24 hours, unless directed by a doctor.</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Children under 12 years:</content>
+                  </paragraph>
+                  <paragraph>Ask a doctor</paragraph>
+               </text>
+               <effectiveTime value="20240717"/>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_bad714cf-d73f-47c0-95ba-8f2b30d83e8e">
+               <id root="5631ae3e-e431-aded-e063-6294a90a44a7"/>
+               <code code="60561-8" codeSystem="2.16.840.1.113883.6.1" displayName="OTHER SAFETY INFORMATION"/>
+               <title>Other information – 
+ <content styleCode="bold">Ibuprofen</content>
+               </title>
+               <text>
+                  <list listType="unordered">
+                     <item>read all product information before using</item>
+                     <item>store at 68-77°F (20-25°C)</item>
+                     <item>avoid excessive heat 104°F (above 40°C )</item>
+                     <item>tamper evident sealed packets</item>
+                     <item>do not use any opened or torn packets</item>
+                  </list>
+               </text>
+               <effectiveTime value="20240717"/>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_e6e39cfe-155f-4732-8c15-d61084c73691">
+               <id root="56319f55-54d4-ba49-e063-6294a90acde5"/>
+               <code code="51727-6" codeSystem="2.16.840.1.113883.6.1" displayName="INACTIVE INGREDIENT SECTION"/>
+               <title>Inactive ingredients – 
+ <content styleCode="bold">Ibuprofen</content>
+               </title>
+               <text>
+                  <paragraph>colloidal silicon dioxide, corn starch, iron oxide red, polyethylene glycol, povidone (K30), sodium starch glycolate, stearic acid, talc, titanium dioxide</paragraph>
+               </text>
+               <effectiveTime value="20240717"/>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_5632b059-4f49-279b-e063-6394a90a183a">
+               <id root="5632b2a2-6c35-e528-e063-6294a90a630d"/>
+               <code code="51945-4" codeSystem="2.16.840.1.113883.6.1" displayName="PACKAGE LABEL.PRINCIPAL DISPLAY PANEL"/>
+               <title>Principal Display Panel - Walgreens All-Purpose First Aid Kit</title>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">Walgreens</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">ALL-PURPOSE</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">First Aid Kit</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">FOR TREATING MINOR INJURIES</content>
+                  </paragraph>
+                  <paragraph/>
+                  <paragraph>
+                     <content styleCode="bold">Bandages, Instruments, Topical and Medicines, Wound Dressings</content>
+                  </paragraph>
+                  <paragraph/>
+                  <list listType="unordered">
+                     <item>Ideal for home, auto, sports and outdoors</item>
+                     <item>Use on minor cuts, minor burns and minor sprains</item>
+                  </list>
+                  <paragraph/>
+                  <paragraph>150 pieces and 1 carrying case</paragraph>
+                  <paragraph>See back panel for complete list of products</paragraph>
+                  <paragraph/>
+                  <paragraph>
+                     <renderMultiMedia referencedObject="img_5632a837-3239-01cf-e063-6294a90a9708"/>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20240717"/>
+               <component>
+                  <observationMedia ID="img_5632a837-3239-01cf-e063-6294a90a9708">
+                     <text>Label front</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="2001042.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_1ba68c19-10e3-4aad-8693-feb8bf8985ff">
+               <id root="5631a8b1-2025-644e-e063-6394a90a3d66"/>
+               <code code="51945-4" codeSystem="2.16.840.1.113883.6.1" displayName="PACKAGE LABEL.PRINCIPAL DISPLAY PANEL"/>
+               <title>Principal Display Panel – Diphen Allergy Caplet</title>
+               <text>
+                  <paragraph>Collect MediBucks See inside flap for more details</paragraph>
+                  <paragraph>Medique®</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Diphen</content>
+                  </paragraph>
+                  <paragraph>Hay Fever / Allergies
+  <br/>
+                     <br/>
+THIS PACKAGE IS FOR HOUSEHOLDS WITHOUT YOUNG CHILDREN.
+  <br/>
+Pull to Open
+  <br/>
+                     <br/>
+                     <content styleCode="bold">Antihistamine</content>• Diphenhydramine HCl 25 mg
+  <br/>
+                     <br/>
+200 Caplets
+  <br/>
+(200 x 1)
+  <br/>
+                     <br/>
+Tamper Evident Unit Dose Packets
+ </paragraph>
+                  <paragraph>
+                     <renderMultiMedia referencedObject="ID_8aa713c9-3592-4a1f-966e-5d102d4302ff"/>
+                  </paragraph>
+                  <paragraph>Label</paragraph>
+               </text>
+               <effectiveTime value="20240717"/>
+               <component>
+                  <observationMedia ID="ID_8aa713c9-3592-4a1f-966e-5d102d4302ff">
+                     <text>Image-02-Dephen</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="image-02.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_402ca1dc-226d-4f44-9cd3-cab8e6b4128a">
+               <id root="5631ae1f-316d-c2ab-e063-6294a90a0787"/>
+               <code code="51945-4" codeSystem="2.16.840.1.113883.6.1" displayName="PACKAGE LABEL.PRINCIPAL DISPLAY PANEL"/>
+               <title>Principal Display Panel – Antiseptic Wipes</title>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">Safetec</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Antiseptic
+   <br/>
+Towelette
+  </content>
+                  </paragraph>
+                  <paragraph>For Professional and Hospital Use
+  <br/>
+Contents: 1 single-use, premoistened towelette
+  <br/>
+                     <br/>
+Manufactured by 
+  <content styleCode="bold">SAFETEC OF AMERICA, Inc.</content>
+                     <br/>
+Buffalo, NY 14215 800-456-7077 www.safetec.com
+ </paragraph>
+                  <paragraph>
+                     <renderMultiMedia referencedObject="DF492B7B-04B7-49F5-8E2A-64D7554D0189"/>
+                  </paragraph>
+                  <paragraph>Label</paragraph>
+               </text>
+               <effectiveTime value="20240717"/>
+               <component>
+                  <observationMedia ID="DF492B7B-04B7-49F5-8E2A-64D7554D0189">
+                     <text>image-03</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="image-03.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_062f11fb-c285-49aa-b890-17649344559c">
+               <id root="5631b65b-8455-724f-e063-6394a90a0fcc"/>
+               <code code="51945-4" codeSystem="2.16.840.1.113883.6.1" displayName="PACKAGE LABEL.PRINCIPAL DISPLAY PANEL"/>
+               <title>Principal Display Panel – Triple Antibiotic Ointment</title>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">Safetec</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Triple Antibiotic
+   <br/>
+Ointment
+  </content>
+                  </paragraph>
+                  <paragraph>0.9 g (1/32 oz.)</paragraph>
+                  <paragraph>Safetec of America, Inc.
+  <br/>
+Buffalo, NY 14215
+  <br/>
+800-456-7077
+ </paragraph>
+                  <paragraph>
+                     <renderMultiMedia referencedObject="B10F187E-1012-437D-AF49-7E59F73816FE"/>
+                  </paragraph>
+                  <paragraph>Label</paragraph>
+               </text>
+               <effectiveTime value="20240717"/>
+               <component>
+                  <observationMedia ID="B10F187E-1012-437D-AF49-7E59F73816FE">
+                     <text>image-04</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="image-04.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_70b089b8-f897-4e11-af65-62ad7c763458">
+               <id root="5631b65b-8452-724f-e063-6394a90a0fcc"/>
+               <code code="51945-4" codeSystem="2.16.840.1.113883.6.1" displayName="PACKAGE LABEL.PRINCIPAL DISPLAY PANEL"/>
+               <title>Principal Display Panel – 
+ <content styleCode="bold">Hydrocortisone Cream</content>
+               </title>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">Safetec</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">1% Hydrocortisone Cream™</content>
+                     <br/>
+0.9 g (1/32 oz.)
+ </paragraph>
+                  <paragraph>Safetec of America, Inc.
+  <br/>
+Buffalo, NY 14215
+  <br/>
+800-456-7077
+ </paragraph>
+                  <paragraph>
+                     <renderMultiMedia referencedObject="ID_33b93dd8-f760-4d14-b867-980dd76e9cc0"/>
+                  </paragraph>
+                  <paragraph>Label</paragraph>
+               </text>
+               <effectiveTime value="20240717"/>
+               <component>
+                  <observationMedia ID="ID_33b93dd8-f760-4d14-b867-980dd76e9cc0">
+                     <text>image-05-HC-Cream</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="image-05.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_3042ffb5-9540-4696-9e1c-58a6e6c4d793">
+               <id root="563181b6-4fcf-31d9-e063-6294a90ad92c"/>
+               <code code="51945-4" codeSystem="2.16.840.1.113883.6.1" displayName="PACKAGE LABEL.PRINCIPAL DISPLAY PANEL"/>
+               <title>Principal Display Panel – 
+ <content styleCode="bold">Alcohol Prep Pads</content>
+               </title>
+               <text>
+                  <paragraph>ALCOHOL 
+  <content styleCode="bold"/>
+                     <br/>
+PREP PAD
+  <br/>
+1 Pad/Pouch
+  <br/>
+Saturated with 70% Isopropyl Alcohol
+  <br/>
+For External Use Only
+  <br/>
+                     <br/>
+DO NOT REUSE
+  <br/>
+                     <br/>
+NOT MADE WITH
+  <br/>
+NATURAL RUBBER LATEX
+  <br/>
+                     <br/>
+Made in China
+  <br/>
+Manufactured for Aso LLC
+  <br/>
+Sarasota, Fl 34240 | www.asocorp.com
+  <br/>
+DIE 40015
+ </paragraph>
+                  <paragraph>
+                     <renderMultiMedia referencedObject="FFD780A5-0215-4BB1-99EE-DDBA9B0BD64D"/>
+                  </paragraph>
+                  <paragraph>Label</paragraph>
+               </text>
+               <effectiveTime value="20240717"/>
+               <component>
+                  <observationMedia ID="FFD780A5-0215-4BB1-99EE-DDBA9B0BD64D">
+                     <text>image-06-AlcoholPads</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="image-06.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_c2a354c0-5f0b-48e9-b6ed-50922ec1572f">
+               <id root="5631b526-80fd-6cdb-e063-6394a90a6d78"/>
+               <code code="51945-4" codeSystem="2.16.840.1.113883.6.1" displayName="PACKAGE LABEL.PRINCIPAL DISPLAY PANEL"/>
+               <title>Principal Display Panel – 
+ <content styleCode="bold">First Aid and Burn Cream</content>
+               </title>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">Safetec</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">First Aid and Burn Cream</content>
+                  </paragraph>
+                  <paragraph>
+                     <br/>
+0.9 g (1/32 oz.)
+ </paragraph>
+                  <paragraph/>
+                  <paragraph>Safetec of America, Inc.
+  <br/>
+Buffalo, NY 14215
+  <br/>
+800-456-7077
+ </paragraph>
+                  <paragraph>
+                     <renderMultiMedia referencedObject="img_562ec346-5511-d8f6-e063-6394a90aa91b"/>
+                  </paragraph>
+                  <paragraph/>
+               </text>
+               <effectiveTime value="20240717"/>
+               <component>
+                  <observationMedia ID="img_562ec346-5511-d8f6-e063-6394a90aa91b">
+                     <text>Label</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="First Aid and Burn Cream.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_fa44d877-b721-4a24-b979-30176457cae6">
+               <id root="5631b386-2227-ab66-e063-6294a90ac9e3"/>
+               <code code="51945-4" codeSystem="2.16.840.1.113883.6.1" displayName="PACKAGE LABEL.PRINCIPAL DISPLAY PANEL"/>
+               <title>Principal Display Panel – 
+ <content styleCode="bold">Ibuprofen</content>
+               </title>
+               <text>
+                  <paragraph>MEDI-FIRST 
+  <sup>®</sup>
+                     <br/>
+                     <br/>
+                     <content styleCode="bold">Ibuprofen 200 mg </content>
+                     <br/>
+100 tablets (50 x 2)
+  <br/>
+                     <br/>
+Pain Reliever/Fever Reducer
+  <br/>
+Aches, Fever • Ibuprofen (NSAID) 200 mg
+  <br/>
+Pull to Open
+  <br/>
+                     <br/>
+Compare active ingredient to:
+  <br/>
+Advil 
+  <sup>®</sup>
+                     <br/>
+Registered Trademark of Pfizer Consumer Healthcare
+  <br/>
+THIS PACKAGE IS FOR HOUSEHOLDS
+  <br/>
+WITHOUT YOUNG CHILDREN.
+  <br/>
+Tamper Evident Unit Dose Packets
+ </paragraph>
+                  <paragraph>MEDI-FIRST 
+  <sup>®</sup>
+                     <br/>
+Reorder #80833
+  <br/>
+Manufactured for
+  <br/>
+Medique Products
+  <br/>
+Fort Myers, FL 33967
+  <br/>
+1-800-634-7680
+  <br/>
+www.mediqueproducts.com
+  <br/>
+                     <renderMultiMedia referencedObject="C8935C2E-0EBD-41DB-A9B3-1C7A0342E990"/>
+                  </paragraph>
+                  <paragraph>Label</paragraph>
+               </text>
+               <effectiveTime value="20240717"/>
+               <component>
+                  <observationMedia ID="C8935C2E-0EBD-41DB-A9B3-1C7A0342E990">
+                     <text>image-08-IBU</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="image-08.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+      </structuredBody>
+   </component>
+</document>

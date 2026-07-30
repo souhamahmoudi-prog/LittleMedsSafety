@@ -1,0 +1,672 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="https://www.accessdata.fda.gov/spl/stylesheet/spl.xsl"?>
+<document xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 https://www.accessdata.fda.gov/spl/schema/spl.xsd">
+   <id root="bc2a1012-057f-4256-bdb1-fa1fd57bcf29"/>
+   <code code="34390-5" displayName="HUMAN OTC DRUG LABEL" codeSystem="2.16.840.1.113883.6.1"/>
+   <title>Drug Mart 44-449</title>
+   <effectiveTime value="20260226"/>
+   <setId root="f413a617-1166-4940-b6ec-fae32238a780"/>
+   <versionNumber value="11"/>
+   <author>
+      <time/>
+      <assignedEntity>
+         <representedOrganization>
+            <id extension="047741335" root="1.3.6.1.4.1.519.1"/>
+            <name>Discount Drug Mart</name>
+            <assignedEntity>
+               <assignedOrganization>
+                  <assignedEntity>
+                     <assignedOrganization>
+                        <id extension="038154464" root="1.3.6.1.4.1.519.1"/>
+                        <name>LNK International, Inc.</name>
+                     </assignedOrganization>
+                     <performance>
+                        <actDefinition>
+                           <code code="C84731" displayName="pack" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <product>
+                              <manufacturedProduct classCode="MANU">
+                                 <manufacturedMaterialKind>
+                                    <code code="53943-449" codeSystem="2.16.840.1.113883.6.69"/>
+                                 </manufacturedMaterialKind>
+                              </manufacturedProduct>
+                           </product>
+                        </actDefinition>
+                     </performance>
+                  </assignedEntity>
+                  <assignedEntity>
+                     <assignedOrganization>
+                        <id extension="832867837" root="1.3.6.1.4.1.519.1"/>
+                        <name>LNK International, Inc.</name>
+                     </assignedOrganization>
+                     <performance>
+                        <actDefinition>
+                           <code code="C43360" displayName="manufacture" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <product>
+                              <manufacturedProduct classCode="MANU">
+                                 <manufacturedMaterialKind>
+                                    <code code="53943-449" codeSystem="2.16.840.1.113883.6.69"/>
+                                 </manufacturedMaterialKind>
+                              </manufacturedProduct>
+                           </product>
+                        </actDefinition>
+                     </performance>
+                     <performance>
+                        <actDefinition>
+                           <code code="C84731" displayName="pack" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <product>
+                              <manufacturedProduct classCode="MANU">
+                                 <manufacturedMaterialKind>
+                                    <code code="53943-449" codeSystem="2.16.840.1.113883.6.69"/>
+                                 </manufacturedMaterialKind>
+                              </manufacturedProduct>
+                           </product>
+                        </actDefinition>
+                     </performance>
+                  </assignedEntity>
+                  <assignedEntity>
+                     <assignedOrganization>
+                        <id extension="117025878" root="1.3.6.1.4.1.519.1"/>
+                        <name>LNK International, Inc.</name>
+                     </assignedOrganization>
+                     <performance>
+                        <actDefinition>
+                           <code code="C43360" displayName="manufacture" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <product>
+                              <manufacturedProduct classCode="MANU">
+                                 <manufacturedMaterialKind>
+                                    <code code="53943-449" codeSystem="2.16.840.1.113883.6.69"/>
+                                 </manufacturedMaterialKind>
+                              </manufacturedProduct>
+                           </product>
+                        </actDefinition>
+                     </performance>
+                  </assignedEntity>
+               </assignedOrganization>
+            </assignedEntity>
+         </representedOrganization>
+      </assignedEntity>
+   </author>
+   <component>
+      <structuredBody>
+         <component>
+            <section>
+               <id root="a5c2f2f4-1049-4d5b-ac42-82ac4a4ee830"/>
+               <code code="48780-1" displayName="SPL listing data elements section" codeSystem="2.16.840.1.113883.6.1"/>
+               <effectiveTime value="20260226"/>
+               <subject>
+                  <manufacturedProduct>
+                     <manufacturedProduct>
+                        <code code="53943-449" codeSystem="2.16.840.1.113883.6.69"/>
+                        <name>Childrens Chewable Acetaminophen</name>
+                        <formCode code="C42893" displayName="TABLET, CHEWABLE" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                        <asEntityWithGeneric>
+                           <genericMedicine>
+                              <name>Acetaminophen</name>
+                           </genericMedicine>
+                        </asEntityWithGeneric>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator unit="mg" value="160"/>
+                              <denominator unit="1" value="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="362O9ITL9D" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>ACETAMINOPHEN</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="362O9ITL9D" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>ACETAMINOPHEN</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="2968PHW8QP" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>CITRIC ACID MONOHYDRATE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="2S7830E561" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>CROSPOVIDONE, UNSPECIFIED</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="ZK64F7XSTX" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>D&amp;C RED NO. 27 ALUMINUM LAKE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="GE75M6YV5W" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>D&amp;C RED NO. 30 ALUMINUM LAKE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="LX22YL083G" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>DEXTROSE MONOHYDRATE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="7Z8S9VYZ4B" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>ETHYLCELLULOSE, UNSPECIFIED</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="J9EQA3S2JM" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>FD&amp;C BLUE NO. 1 ALUMINUM LAKE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="70097M6I30" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>MAGNESIUM STEARATE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="3OWL53L36A" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>MANNITOL</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="UG00KM4WR7" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>HIGH DENSITY POLYETHYLENE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="4ELV7Z65AP" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>STEARIC ACID</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="96K6UQ3ZD4" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>SUCRALOSE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <asContent>
+                           <quantity>
+                              <numerator unit="1" value="24"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code/>
+                              <formCode code="C43173" displayName="BOTTLE, PLASTIC" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                              <asContent>
+                                 <quantity>
+                                    <numerator unit="1" value="1"/>
+                                    <denominator value="1"/>
+                                 </quantity>
+                                 <containerPackagedProduct>
+                                    <code code="53943-449-08" codeSystem="2.16.840.1.113883.6.69"/>
+                                    <formCode code="C43182" displayName="CARTON" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                                 </containerPackagedProduct>
+                                 <subjectOf>
+                                    <marketingAct>
+                                       <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                                       <statusCode code="active"/>
+                                       <effectiveTime>
+                                          <low value="20200113"/>
+                                       </effectiveTime>
+                                    </marketingAct>
+                                 </subjectOf>
+                              </asContent>
+                           </containerPackagedProduct>
+                           <subjectOf>
+                              <characteristic>
+                                 <code code="SPLCMBPRDTP" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                                 <value code="C112160" displayName="Type 0: Not a Combination Product" codeSystem="2.16.840.1.113883.3.26.1.1" xsi:type="CV"/>
+                              </characteristic>
+                           </subjectOf>
+                        </asContent>
+                     </manufacturedProduct>
+                     <subjectOf>
+                        <approval>
+                           <id extension="M013" root="2.16.840.1.113883.3.9421"/>
+                           <code code="C200263" displayName="OTC Monograph Drug" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <author>
+                              <territorialAuthority>
+                                 <territory>
+                                    <code code="USA" codeSystem="2.16.840.1.113883.5.28"/>
+                                 </territory>
+                              </territorialAuthority>
+                           </author>
+                        </approval>
+                     </subjectOf>
+                     <subjectOf>
+                        <marketingAct>
+                           <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <statusCode code="active"/>
+                           <effectiveTime>
+                              <low value="20200113"/>
+                           </effectiveTime>
+                        </marketingAct>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLCOLOR" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value code="C48327" displayName="purple" codeSystem="2.16.840.1.113883.3.26.1.1" xsi:type="CV"/>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLFLAVOR" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value code="C73391" displayName="GRAPE" codeSystem="2.16.840.1.113883.3.26.1.1" xsi:type="CV"/>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLIMPRINT" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value xsi:type="ST">44;449</value>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLSCORE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value value="2" xsi:type="INT"/>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLSHAPE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value code="C48348" displayName="ROUND" codeSystem="2.16.840.1.113883.3.26.1.1" xsi:type="CV"/>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLSIZE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value unit="mm" value="16" xsi:type="PQ"/>
+                        </characteristic>
+                     </subjectOf>
+                     <consumedIn>
+                        <substanceAdministration>
+                           <routeCode code="C38288" displayName="ORAL" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                        </substanceAdministration>
+                     </consumedIn>
+                  </manufacturedProduct>
+               </subject>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_8cdfadeb-7836-4933-9890-b7c2f6938090">
+               <id root="611330c9-094e-480e-ae28-2b308a00527e"/>
+               <code code="55106-9" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - ACTIVE INGREDIENT SECTION"/>
+               <title>
+                  <content styleCode="bold">
+                     <content styleCode="italics">Active ingredient (in each chewable tablet)</content>
+                  </content>
+               </title>
+               <text>
+                  <paragraph>Acetaminophen 160 mg<br/>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20260226"/>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_c6205f99-0278-43ce-887e-6ea1d3cd98d0">
+               <id root="b82f2947-428f-4ba1-b49b-4067272f1683"/>
+               <code code="55105-1" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - PURPOSE SECTION"/>
+               <title>
+                  <content styleCode="bold">
+                     <content styleCode="italics">Purpose</content>
+                  </content>
+               </title>
+               <text>
+                  <paragraph>Pain reliever/fever reducer<br/>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20260226"/>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_64f28c92-ac83-44bf-9a89-da74e5f5db2c">
+               <id root="8c697bb4-00bd-4211-a1aa-e2d582d57a35"/>
+               <code code="34067-9" codeSystem="2.16.840.1.113883.6.1" displayName="INDICATIONS &amp; USAGE SECTION"/>
+               <title>
+                  <content styleCode="bold">
+                     <content styleCode="italics">Uses</content>
+                  </content>
+               </title>
+               <text>
+                  <list listType="unordered" styleCode="Square">
+                     <item>temporarily relieves minor aches and pains due to:<br/>
+                        <list listType="unordered" styleCode="Square">
+                           <item>headache </item>
+                           <item>sore throat </item>
+                           <item>flu<br/>
+                           </item>
+                           <item>toothache </item>
+                           <item>the common cold<br/>
+                           </item>
+                        </list>
+                     </item>
+                     <item>temporarily reduces fever<br/>
+                     </item>
+                  </list>
+               </text>
+               <effectiveTime value="20260226"/>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_c52f7a9a-8f9b-4265-ae41-53b30db2354e">
+               <id root="b74935fa-f5ef-479a-bc3c-1d861d180468"/>
+               <code code="34071-1" codeSystem="2.16.840.1.113883.6.1" displayName="WARNINGS SECTION"/>
+               <title>
+                  <content styleCode="bold">
+                     <content styleCode="italics">Warnings</content>
+                  </content>
+               </title>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">Liver warning:</content> This product contains acetaminophen. Severe liver damage may occur if your child takes<br/>
+                  </paragraph>
+                  <list listType="unordered" styleCode="Square">
+                     <item>more than 5 doses in 24 hours, which is the maximum daily amount<br/>
+                     </item>
+                     <item>with other drugs containing acetaminophen<br/>
+                     </item>
+                  </list>
+                  <paragraph>
+                     <content styleCode="bold">Allergy alert: </content>Acetaminophen may cause severe skin reactions. Symptoms may include:<br/>
+                  </paragraph>
+                  <list listType="unordered" styleCode="Square">
+                     <item>skin reddening </item>
+                     <item>blisters </item>
+                     <item>rash</item>
+                  </list>
+                  <paragraph>If a skin reaction occurs, stop use and seek medical help right away.<br/>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Sore throat warning:</content> If sore throat is severe, persists for more than 2 days, is accompanied or followed by fever, headache, rash, nausea, or vomiting, consult a doctor promptly.<br/>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20260226"/>
+               <component>
+                  <section ID="LINK_a922a584-1f8a-4b3e-be8f-fcaed6e15bef">
+                     <id root="8466218a-7692-4414-bdad-bc58b9af6f55"/>
+                     <code code="50570-1" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - DO NOT USE SECTION"/>
+                     <title>
+                        <content styleCode="bold">Do not use</content>
+                     </title>
+                     <text>
+                        <paragraph>with any other drug containing acetaminophen (prescription or nonprescription). If you are not sure whether a drug contains acetaminophen, ask a doctor or pharmacist.</paragraph>
+                     </text>
+                     <effectiveTime value="20260226"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_58900fa1-d0f8-4363-8d04-0014608d27af">
+                     <id root="b18b1b64-83f9-4c19-a6de-3c440aef408a"/>
+                     <code code="50569-3" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - ASK DOCTOR SECTION"/>
+                     <title>
+                        <content styleCode="bold">Ask a doctor before use if your child has</content>
+                     </title>
+                     <text>
+                        <paragraph>liver disease.</paragraph>
+                     </text>
+                     <effectiveTime value="20260226"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_ecd567cd-1745-4bc6-ac98-f1ce24c8c6fa">
+                     <id root="184e5f57-bf47-4b2e-ba3f-5e87e7e27be6"/>
+                     <code code="50568-5" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - ASK DOCTOR/PHARMACIST SECTION"/>
+                     <title>
+                        <content styleCode="bold">Ask a doctor or pharmacist before use if your child is</content>
+                     </title>
+                     <text>
+                        <paragraph>taking the blood thinning drug warfarin.</paragraph>
+                     </text>
+                     <effectiveTime value="20260226"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_1b8a35b2-d7dd-4c1b-a292-83da5d0f8943">
+                     <id root="81dbd37d-60b7-4624-9cc3-2d1df2b2baca"/>
+                     <code code="50566-9" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - STOP USE SECTION"/>
+                     <title>
+                        <content styleCode="bold">Stop use and ask a doctor if</content>
+                     </title>
+                     <text>
+                        <list listType="unordered" styleCode="Square">
+                           <item>pain gets worse or lasts more than 5 days</item>
+                           <item> fever gets worse or lasts more than 3 days</item>
+                           <item>redness or swelling is present</item>
+                           <item>any new symptoms appear</item>
+                        </list>
+                     </text>
+                     <effectiveTime value="20260226"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_dd19df9d-a9f6-4b7a-ae26-24ee9522f4ec">
+                     <id root="5314d765-2630-4a17-877b-6a2dd555a8b8"/>
+                     <code code="50565-1" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - KEEP OUT OF REACH OF CHILDREN SECTION"/>
+                     <title>
+                        <content styleCode="bold">Keep out of reach of children.</content>
+                     </title>
+                     <text>
+                        <paragraph>In case of overdose, get medical help or contact a Poison Control Center right away. Prompt medical attention is critical for adults as well as for children even if you do not notice any signs or symptoms.<br/>
+                        </paragraph>
+                     </text>
+                     <effectiveTime value="20260226"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_f9e6b486-e6bc-410e-a544-15713934d7c9">
+               <id root="5d1253c3-6f40-49e5-bd8a-bd1fae97f4c0"/>
+               <code code="34068-7" codeSystem="2.16.840.1.113883.6.1" displayName="DOSAGE &amp; ADMINISTRATION SECTION"/>
+               <title>
+                  <content styleCode="bold">
+                     <content styleCode="italics">Directions</content>
+                  </content>
+               </title>
+               <text>
+                  <list listType="unordered" styleCode="Square">
+                     <item>
+                        <content styleCode="bold">this product does not contain directions or complete warnings for adult use</content>
+                     </item>
+                     <item>
+                        <content styleCode="bold">do not give more than directed</content>
+                     </item>
+                     <item>find the right dose on chart below. If possible, use weight to dose; otherwise, use age.</item>
+                     <item>chew or crush tablets completely before swallowing; do not swallow tablets whole</item>
+                     <item>repeat dose every 4 hours while symptoms last</item>
+                     <item>do not give more than 5 times in 24 hours</item>
+                  </list>
+                  <table width="400px">
+                     <col/>
+                     <col/>
+                     <col/>
+                     <tbody>
+                        <tr>
+                           <td align="center" styleCode=" Botrule Toprule Lrule Rrule">
+                              <content styleCode="bold">Weight (lb)</content>
+                           </td>
+                           <td align="center" styleCode=" Botrule Toprule Lrule Rrule">
+                              <content styleCode="bold">Age (yr)</content>
+                           </td>
+                           <td align="center" styleCode=" Botrule Toprule Lrule Rrule">
+                              <content styleCode="bold">Dose (chewable tablets)*</content>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td align="center" styleCode=" Botrule Toprule Lrule Rrule">Under 24</td>
+                           <td align="center" styleCode=" Botrule Toprule Lrule Rrule">Under 2</td>
+                           <td align="center" styleCode=" Botrule Toprule Lrule Rrule">Ask a doctor</td>
+                        </tr>
+                        <tr>
+                           <td align="center" styleCode=" Botrule Toprule Lrule Rrule">24-35</td>
+                           <td align="center" styleCode=" Botrule Toprule Lrule Rrule">2-3</td>
+                           <td align="center" styleCode=" Botrule Toprule Lrule Rrule">1 tablet</td>
+                        </tr>
+                        <tr>
+                           <td align="center" styleCode=" Botrule Toprule Lrule Rrule">36-47</td>
+                           <td align="center" styleCode=" Botrule Toprule Lrule Rrule">4-5</td>
+                           <td align="center" styleCode=" Botrule Toprule Lrule Rrule">1 1/2 tablets</td>
+                        </tr>
+                        <tr>
+                           <td align="center" styleCode=" Botrule Toprule Lrule Rrule">48-59</td>
+                           <td align="center" styleCode=" Botrule Toprule Lrule Rrule">6-8</td>
+                           <td align="center" styleCode=" Botrule Toprule Lrule Rrule">2 tablets</td>
+                        </tr>
+                        <tr>
+                           <td align="center" styleCode=" Botrule Toprule Lrule Rrule">60-71</td>
+                           <td align="center" styleCode=" Botrule Toprule Lrule Rrule">9-10</td>
+                           <td align="center" styleCode=" Botrule Toprule Lrule Rrule">2 1/2 tablets</td>
+                        </tr>
+                        <tr>
+                           <td align="center" styleCode=" Botrule Toprule Lrule Rrule">72-95</td>
+                           <td align="center" styleCode=" Botrule Toprule Lrule Rrule">11</td>
+                           <td align="center" styleCode=" Botrule Toprule Lrule Rrule">3 tablets</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <paragraph>*or as directed by a doctor</paragraph>
+               </text>
+               <effectiveTime value="20260226"/>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_41e4860b-ef4a-428a-884e-468decfb89f0">
+               <id root="1669024c-0d79-4fab-a57e-093b97310026"/>
+               <code code="44425-7" codeSystem="2.16.840.1.113883.6.1" displayName="STORAGE AND HANDLING SECTION"/>
+               <title>
+                  <content styleCode="bold">
+                     <content styleCode="italics">Other information</content>
+                  </content>
+               </title>
+               <text>
+                  <list listType="unordered" styleCode="Square">
+                     <item>store at 25°C (77°F); excursions permitted between 15°-30°C (59°-86°F)<br/>
+                     </item>
+                     <item>avoid high humidity<br/>
+                     </item>
+                     <item>see end flap for expiration date and lot number<br/>
+                     </item>
+                  </list>
+               </text>
+               <effectiveTime value="20260226"/>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_53a26999-5157-4cd7-b653-bd2b8311d956">
+               <id root="9f2c772a-8306-4558-8b65-d0cd1c129233"/>
+               <code code="51727-6" codeSystem="2.16.840.1.113883.6.1" displayName="INACTIVE INGREDIENT SECTION"/>
+               <title>
+                  <content styleCode="bold">
+                     <content styleCode="italics">Inactive ingredients</content>
+                  </content>
+               </title>
+               <text>
+                  <paragraph>citric acid, crospovidone, D&amp;C red #27 aluminum lake, D&amp;C red #30 aluminum lake, dextrates hydrated, ethylcellulose, FD&amp;C blue #1 aluminum lake, flavors, magnesium stearate, mannitol, polyethylene, stearic acid, sucralose<br/>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20260226"/>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_cbd8d756-2a67-4be6-b550-1a223417e9e3">
+               <id root="5786118a-9cf5-4037-9b6c-6cb3a3384d78"/>
+               <code code="53413-1" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - QUESTIONS SECTION"/>
+               <title>
+                  <content styleCode="italics">
+                     <content styleCode="bold">Questions or comments?</content>
+                  </content>
+               </title>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">1-800-426-9391</content>
+                     <br/>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20260226"/>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_efe54b5f-52b0-456f-a63b-0bd7e9133948">
+               <id root="03a2d901-fcd1-41e3-a972-b605e6680ff6"/>
+               <code code="51945-4" codeSystem="2.16.840.1.113883.6.1" displayName="PACKAGE LABEL.PRINCIPAL DISPLAY PANEL"/>
+               <title>
+                  <content styleCode="bold">
+                     <content styleCode="italics">Principal display panel</content>
+                  </content>
+               </title>
+               <text>
+                  <paragraph>NDC 53943-449-08</paragraph>
+                  <paragraph>MAY CONTAIN ANTI-THEFT DEVICE</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Discount<br/>
+Drug<br/>
+Mart<br/>
+FOOD MARKET</content>
+                     <br/>
+AN EMPLOYEE OWNERSHIP COMPANY</paragraph>
+                  <paragraph>Ages 2-11</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Children's<br/>
+Chewable Acetaminophen</content>
+                     <br/>
+160 mg Chewable Tablets | Pain Reliever/Fever Reducer</paragraph>
+                  <paragraph>Aspirin Free<br/>
+Ibuprofen Free</paragraph>
+                  <paragraph>
+                     <sup>†</sup>Compare to the active ingredient of CHILDREN'S TYLENOL®<content styleCode="bold"> </content>CHEWABLES</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">24</content> CHEWABLE TABLETS<br/>
+Chew or crush tablets completely before swallowing.</paragraph>
+                  <paragraph>
+                     <content styleCode="italics">Actual Size</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="italics">Grape Flavor</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">TAMPER EVIDENT: DO NOT USE IF<br/>
+IMPRINTED SAFETY SEAL UNDER<br/>
+CAP IS BROKEN OR MISSING</content>
+                  </paragraph>
+                  <paragraph>
+                     <sup>†</sup>This product is not manufactured or distributed by Kenvue<br/>
+Inc., owner of the registered trademark Children’s Tylenol®<br/>
+Chewables.     50844       REV0424B44908</paragraph>
+                  <paragraph>DISTRIBUTED BY: DRUG MART - FOOD FAIR<br/>
+211 COMMERCE DRIVE, MEDINA, OH 44256<br/>
+                     <content styleCode="bold">www.discount-drugmart.com</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">SATISFACTION GUARANTEED<br/>
+                     </content>IF DISSATISFIED, RETURN UNUSED PORTION AND PACKAGE<br/>
+TO STORE WHERE PURCHASED. IF UNABLE TO RETURN TO<br/>
+STORE, SEND REASON FOR DISSATISFACTION, NAME,<br/>
+ADDRESS AND EMPTY PACKAGE TO:<br/>
+DISCOUNT DRUG MART<br/>
+211 COMMERCE DRIVE, MEDINA, OHIO 44256</paragraph>
+                  <renderMultiMedia referencedObject="MM1">
+                     <caption>Drug Mart 44-449</caption>
+                  </renderMultiMedia>
+               </text>
+               <effectiveTime value="20260226"/>
+               <component>
+                  <observationMedia ID="MM1">
+                     <text>Drug Mart 44-449</text>
+                     <value xsi:type="ED" mediaType="image/jpeg">
+                        <reference value="drug-mart-44-449-1.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+      </structuredBody>
+   </component>
+</document>

@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="https://www.accessdata.fda.gov/spl/stylesheet/spl.xsl" type="text/xsl"?>
+<document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 https://www.accessdata.fda.gov/spl/schema/spl.xsd">
+   <id root="3fb6eaf7-8029-7a5c-e063-6294a90a6889"/>
+   <code code="34391-3" codeSystem="2.16.840.1.113883.6.1" displayName="HUMAN PRESCRIPTION DRUG LABEL"/>
+   <title>Lactulose Solution USP
+ <br/>
+      <br/>
+10 g/15 mL
+</title>
+   <effectiveTime value="20250926"/>
+   <setId root="3fb6e908-893c-5a57-e063-6294a90a1bfc"/>
+   <versionNumber value="1"/>
+   <author>
+      <time/>
+      <assignedEntity>
+         <representedOrganization>
+            <id root="1.3.6.1.4.1.519.1" extension="047437707"/>
+            <name>Atlantic Biologicals Corp.</name>
+            <assignedEntity>
+               <assignedOrganization/>
+            </assignedEntity>
+         </representedOrganization>
+      </assignedEntity>
+   </author>
+   <component>
+      <structuredBody>
+         <component>
+            <section>
+               <id root="3fb7cb42-aaf1-c99c-e063-6294a90ac29c"/>
+               <code code="48780-1" codeSystem="2.16.840.1.113883.6.1" displayName="SPL product data elements section"/>
+               <effectiveTime value="20250926"/>
+               <subject>
+                  <manufacturedProduct>
+                     <manufacturedProduct>
+                        <code code="17856-0874" codeSystem="2.16.840.1.113883.6.69"/>
+                        <name>LACTULOSE</name>
+                        <formCode code="C42986" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="SOLUTION"/>
+                        <asEntityWithGeneric>
+                           <genericMedicine>
+                              <name>Lactulose</name>
+                           </genericMedicine>
+                        </asEntityWithGeneric>
+                        <asEquivalentEntity classCode="EQUIV">
+                           <code code="C64637" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <definingMaterialKind>
+                              <code code="0121-0873" codeSystem="2.16.840.1.113883.6.69"/>
+                           </definingMaterialKind>
+                        </asEquivalentEntity>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator unit="g" value="10"/>
+                              <denominator unit="mL" value="15"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="9U7D5QH5AE" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>LACTULOSE</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="9U7D5QH5AE" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>LACTULOSE</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <asContent>
+                           <quantity>
+                              <numerator value="30" unit="mL"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code/>
+                              <formCode code="C43188" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="CUP, UNIT-DOSE"/>
+                              <asContent>
+                                 <quantity>
+                                    <numerator value="50" unit="1"/>
+                                    <denominator value="1"/>
+                                 </quantity>
+                                 <containerPackagedProduct>
+                                    <code code="17856-0874-3" codeSystem="2.16.840.1.113883.6.69"/>
+                                    <formCode code="C43184" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="CASE"/>
+                                 </containerPackagedProduct>
+                                 <subjectOf>
+                                    <marketingAct>
+                                       <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                                       <statusCode code="active"/>
+                                       <effectiveTime>
+                                          <low value="20250926"/>
+                                       </effectiveTime>
+                                    </marketingAct>
+                                 </subjectOf>
+                              </asContent>
+                           </containerPackagedProduct>
+                           <subjectOf>
+                              <characteristic>
+                                 <code code="SPLCMBPRDTP" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                                 <value code="C112160" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="Type 0: Not a Combination Product" xsi:type="CV"/>
+                              </characteristic>
+                           </subjectOf>
+                        </asContent>
+                     </manufacturedProduct>
+                     <subjectOf>
+                        <approval>
+                           <id extension="ANDA074623" root="2.16.840.1.113883.3.150"/>
+                           <code code="C73584" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ANDA"/>
+                           <author>
+                              <territorialAuthority>
+                                 <territory>
+                                    <code code="USA" codeSystem="2.16.840.1.113883.5.28"/>
+                                 </territory>
+                              </territorialAuthority>
+                           </author>
+                        </approval>
+                     </subjectOf>
+                     <subjectOf>
+                        <marketingAct>
+                           <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <statusCode code="active"/>
+                           <effectiveTime>
+                              <low value="20191203"/>
+                           </effectiveTime>
+                        </marketingAct>
+                     </subjectOf>
+                     <consumedIn>
+                        <substanceAdministration>
+                           <routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ORAL"/>
+                        </substanceAdministration>
+                     </consumedIn>
+                  </manufacturedProduct>
+               </subject>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_b920bfa5-64f7-457d-83f8-c9fbf417bde5">
+               <id root="3fb6cfff-861d-5c75-e063-6294a90a5006"/>
+               <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+               <title/>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">CI08730222 
+   <br/>
+                        <br/>  R02/22
+  </content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Rx ONLY</content>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20240916"/>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_bb920a79-8631-4640-8452-bfa2e4cf3e8f">
+               <id root="3fb6cfff-861e-5c75-e063-6294a90a5006"/>
+               <code code="34089-3" codeSystem="2.16.840.1.113883.6.1" displayName="DESCRIPTION SECTION"/>
+               <title>DESCRIPTION</title>
+               <text>
+                  <paragraph>Lactulose is a synthetic disaccharide in solution form for oral administration. Each 15 mL of Lactulose Solution contains: 10 g lactulose (and less than 1.6 g galactose, less than 1.2 g lactose, and 1.2 g or less of other sugars). </paragraph>
+                  <paragraph>Lactulose is a colonic acidifier which promotes laxation.</paragraph>
+                  <paragraph>The chemical name for lactulose is 4-0-ß-D-galactopyranosyl-D-fructofuranose. It has the following structural formula:</paragraph>
+                  <renderMultiMedia referencedObject="MM1"/>
+                  <paragraph>The molecular weight is 342.30. It is freely soluble in water.</paragraph>
+               </text>
+               <effectiveTime value="20240916"/>
+               <component>
+                  <observationMedia ID="MM1">
+                     <text>Chemical Structure</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="lactulose-1.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_d26804d9-0940-4237-bcfb-abe307f84c76">
+               <id root="3fb6cfff-861f-5c75-e063-6294a90a5006"/>
+               <code code="34090-1" codeSystem="2.16.840.1.113883.6.1" displayName="CLINICAL PHARMACOLOGY SECTION"/>
+               <title>CLINICAL PHARMACOLOGY</title>
+               <text>
+                  <paragraph>Lactulose is poorly absorbed from the gastrointestinal tract, and no enzyme capable of hydrolysis of this disaccharide is present in human gastrointestinal tissue. As a result, oral doses of lactulose solution reach the colon virtually unchanged. In the colon, lactulose is broken down primarily to lactic acid, and also to small amounts of formic and acetic acids, by the action of colonic bacteria, which results in an increase in osmotic pressure and slight acidification of the colonic contents. This in turn causes an increase in stool water content and softens the stool.</paragraph>
+                  <paragraph>Since lactulose does not exert its effect until it reaches the colon, and since transit time through the colon may be slow, 24 to 48 hours may be required to produce the desired bowel movement.</paragraph>
+                  <paragraph>Lactulose solution given orally to man and experimental animals resulted in only small amounts reaching the blood.</paragraph>
+                  <paragraph>Urinary excretion has been determined to be 3% or less and is essentially complete within 24 hours.</paragraph>
+               </text>
+               <effectiveTime value="20240916"/>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_7125d2c1-92c9-4653-b8a2-8b8aed54ea8e">
+               <id root="3fb6cfff-8620-5c75-e063-6294a90a5006"/>
+               <code code="34067-9" codeSystem="2.16.840.1.113883.6.1" displayName="INDICATIONS &amp; USAGE SECTION"/>
+               <title>INDICATIONS AND USAGE</title>
+               <text>
+                  <paragraph>For the treatment of constipation. In patients with a history of chronic constipation, lactulose solution therapy increases the number of bowel movements per day and the number of days on which bowel movements occur.</paragraph>
+               </text>
+               <effectiveTime value="20240916"/>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_7c11921d-3e8f-468d-8986-10687d60f341">
+               <id root="3fb6cfff-8621-5c75-e063-6294a90a5006"/>
+               <code code="34070-3" codeSystem="2.16.840.1.113883.6.1" displayName="CONTRAINDICATIONS SECTION"/>
+               <title>CONTRAINDICATIONS</title>
+               <text>
+                  <paragraph>Since lactulose solution contains galactose (less than 1.6 g/15 mL), it is contraindicated in patients who require a low galactose diet.</paragraph>
+               </text>
+               <effectiveTime value="20240916"/>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_837e2370-f7b4-4aa7-8757-60d7f09e9148">
+               <id root="3fb6cfff-8622-5c75-e063-6294a90a5006"/>
+               <code code="34071-1" codeSystem="2.16.840.1.113883.6.1" displayName="WARNINGS SECTION"/>
+               <title>WARNINGS</title>
+               <text>
+                  <paragraph>A theoretical hazard may exist for patients being treated with lactulose solution who may be required to undergo electrocautery procedures during proctoscopy or colonoscopy. Accumulation of H
+ 
+  <sub>2</sub>gas in significant concentration in the presence of an electrical spark may result in an explosive reaction. Although this complication has not been reported with lactulose, patients on lactulose therapy undergoing such procedures should have a thorough bowel cleansing with a non-fermentable solution. Insufflation of CO
+ 
+  <sub>2</sub>as an additional safeguard may be pursued but is considered to be a redundant measure.
+
+ </paragraph>
+               </text>
+               <effectiveTime value="20240916"/>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_50bd2b5e-54c2-4985-bfb5-742be35c814c">
+               <id root="3fb6cfff-8623-5c75-e063-6294a90a5006"/>
+               <code code="42232-9" codeSystem="2.16.840.1.113883.6.1" displayName="PRECAUTIONS SECTION"/>
+               <title>PRECAUTIONS</title>
+               <text/>
+               <effectiveTime value="20240916"/>
+               <component>
+                  <section ID="LINK_f84f2bec-356d-4e53-8419-ed1075816a60">
+                     <id root="3fb6cfff-8624-5c75-e063-6294a90a5006"/>
+                     <code code="34072-9" codeSystem="2.16.840.1.113883.6.1" displayName="GENERAL PRECAUTIONS SECTION"/>
+                     <title>General</title>
+                     <text>
+                        <paragraph>Since lactulose solution contains galactose (less than1.6 g/15 mL) and lactose (less than 1.2 g/15 mL), it should be used with caution in diabetics.</paragraph>
+                     </text>
+                     <effectiveTime value="20240916"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_f1525881-1b7b-495a-a9e7-2b7ab51b6a7e">
+                     <id root="3fb6cfff-8625-5c75-e063-6294a90a5006"/>
+                     <code code="34076-0" codeSystem="2.16.840.1.113883.6.1" displayName="INFORMATION FOR PATIENTS SECTION"/>
+                     <title>Information for Patients</title>
+                     <text>
+                        <paragraph>In the event that an unusual diarrheal condition occurs, contact your physician.</paragraph>
+                     </text>
+                     <effectiveTime value="20240916"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_e10e8446-5e60-4a64-9300-bcc63749cdaf">
+                     <id root="3fb6cfff-8626-5c75-e063-6294a90a5006"/>
+                     <code code="34075-2" codeSystem="2.16.840.1.113883.6.1" displayName="LABORATORY TESTS SECTION"/>
+                     <title>Laboratory Tests</title>
+                     <text>
+                        <paragraph>Elderly, debilitated patients who receive lactulose solution for more than six months should have serum electrolytes (potassium, chloride, carbon dioxide) measured periodically.</paragraph>
+                     </text>
+                     <effectiveTime value="20240916"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_0339bf71-3760-42a8-9b3c-3e99666c4dbe">
+                     <id root="3fb6cfff-8627-5c75-e063-6294a90a5006"/>
+                     <code code="34073-7" codeSystem="2.16.840.1.113883.6.1" displayName="DRUG INTERACTIONS SECTION"/>
+                     <title>Drug Interactions</title>
+                     <text>
+                        <paragraph>Results of preliminary studies in humans and rats suggest that nonabsorbable antacids given concurrently with lactulose may inhibit the desired lactulose-induced drop in colonic pH. Therefore, a possible lack of desired effect of treatment should be taken into consideration before such drugs are given concomitantly with lactulose solution.</paragraph>
+                     </text>
+                     <effectiveTime value="20240916"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_8582230e-386d-457d-a437-09d5a222580d">
+                     <id root="3fb6cfff-8628-5c75-e063-6294a90a5006"/>
+                     <code code="34083-6" codeSystem="2.16.840.1.113883.6.1" displayName="CARCINOGENESIS &amp; MUTAGENESIS &amp; IMPAIRMENT OF FERTILITY SECTION"/>
+                     <title>Carcinogenesis, Mutagenesis, Impairment of Fertility</title>
+                     <text>
+                        <paragraph>There are no known human data on long-term potential for carcinogenicity, mutagenicity, or impairment of fertility.</paragraph>
+                        <paragraph>There are no known animal data on long-term potential for mutagenicity.</paragraph>
+                        <paragraph>Administration of lactulose solution in the diet of mice for 18 months in concentrations of 3 and 10 percent (v/w) did not produce any evidence of carcinogenicity.</paragraph>
+                        <paragraph>In studies in mice, rats, and rabbits, doses of lactulose solution up to 6 or 12 mL/kg/day produced no deleterious effects in breeding, conception, or parturition.</paragraph>
+                     </text>
+                     <effectiveTime value="20240916"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_5dd91752-a4d3-4584-89f4-f1982e77d4ba">
+                     <id root="3fb6cfff-8629-5c75-e063-6294a90a5006"/>
+                     <code code="42228-7" codeSystem="2.16.840.1.113883.6.1" displayName="PREGNANCY SECTION"/>
+                     <title>Pregnancy - Teratogenic Effects</title>
+                     <text>
+                        <paragraph>Reproduction studies have been performed in mice, rats, and rabbits at doses up to 3 or 6 times the usual human oral dose and have revealed no evidence of impaired fertility or harm to the fetus due to lactulose. There are, however, no adequate and well-controlled studies in pregnant women. Because animal reproduction studies are not always predictive of human response, this drug should be used during pregnancy only if clearly needed.</paragraph>
+                     </text>
+                     <effectiveTime value="20240916"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_47e1eb74-1d99-4c97-9366-2d5c64ace1ff">
+                     <id root="3fb6cfff-862a-5c75-e063-6294a90a5006"/>
+                     <code code="34080-2" codeSystem="2.16.840.1.113883.6.1" displayName="NURSING MOTHERS SECTION"/>
+                     <title>Nursing Mothers</title>
+                     <text>
+                        <paragraph>It is not known whether this drug is excreted in human milk. Because many drugs are excreted in human milk, caution should be exercised when lactulose solution is administered to a nursing woman.</paragraph>
+                     </text>
+                     <effectiveTime value="20240916"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_a6ca2014-33e2-4f00-8bc7-ee14645ae8ff">
+                     <id root="3fb6cfff-862b-5c75-e063-6294a90a5006"/>
+                     <code code="34081-0" codeSystem="2.16.840.1.113883.6.1" displayName="PEDIATRIC USE SECTION"/>
+                     <title>Pediatric Use</title>
+                     <text>
+                        <paragraph>Safety and effectiveness in pediatric patients have not been established.</paragraph>
+                     </text>
+                     <effectiveTime value="20240916"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_6af6f4ac-d7da-4553-b3d0-27e0642ad26c">
+               <id root="3fb71227-3824-f7c8-e063-6394a90a9653"/>
+               <code code="34084-4" codeSystem="2.16.840.1.113883.6.1" displayName="ADVERSE REACTIONS SECTION"/>
+               <title>ADVERSE REACTIONS</title>
+               <text>
+                  <paragraph>Precise frequency data are not available.</paragraph>
+                  <paragraph>Initial dosing may produce flatulence and intestinal cramps, which are usually transient. Excessive dosage can lead to diarrhea with potential complications such as loss of fluids, hypokalemia, and hypernatremia.</paragraph>
+                  <paragraph>Nausea and vomiting have been reported.</paragraph>
+                  <paragraph>To report SUSPECTED ADVERSE REACTIONS, FDA at 1-800-FDA-1088 or www.fda.gov/medwatch.</paragraph>
+               </text>
+               <effectiveTime value="20240916"/>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_a6c7fe0f-482a-44a5-8b31-7ea41d12396e">
+               <id root="3fb6cfff-862d-5c75-e063-6294a90a5006"/>
+               <code code="34088-5" codeSystem="2.16.840.1.113883.6.1" displayName="OVERDOSAGE SECTION"/>
+               <title>OVERDOSAGE</title>
+               <text/>
+               <effectiveTime value="20240916"/>
+               <component>
+                  <section ID="LINK_f45ade33-e6f2-41ba-93a9-523ab5ac9036">
+                     <id root="3fb6cfff-862e-5c75-e063-6294a90a5006"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>Signs and Symptoms</title>
+                     <text>
+                        <paragraph>There have been no reports of accidental overdosage. In the event of overdosage, it is expected that diarrhea and abdominal cramps would be the major symptoms. Medication should be terminated.</paragraph>
+                     </text>
+                     <effectiveTime value="20240916"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_6c1af697-1544-40f2-9733-8730a2564db3">
+                     <id root="3fb6cfff-862f-5c75-e063-6294a90a5006"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>Oral LD
+
+ <sub>50</sub>
+                     </title>
+                     <text>
+                        <paragraph>The acute oral LD
+ 
+  <sub>50</sub>of the drug is 48.8 mL/kg in mice and greater than 30 mL/kg in rats.
+
+ </paragraph>
+                     </text>
+                     <effectiveTime value="20240916"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_cb73f7aa-bf63-4504-b369-20ec0ca0d2e1">
+                     <id root="3fb6cfff-8630-5c75-e063-6294a90a5006"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>Dialysis</title>
+                     <text>
+                        <paragraph>Dialysis data are not available for lactulose. Its molecular similarity to sucrose, however, would suggest that it should be dialyzable.</paragraph>
+                     </text>
+                     <effectiveTime value="20240916"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_d031d728-224b-4907-8bd9-f41ad2c75448">
+               <id root="3fb6cfff-8631-5c75-e063-6294a90a5006"/>
+               <code code="34068-7" codeSystem="2.16.840.1.113883.6.1" displayName="DOSAGE &amp; ADMINISTRATION SECTION"/>
+               <title>DOSAGE AND ADMINISTRATION</title>
+               <text>
+                  <paragraph>The usual dose is 1 to 2 tablespoonfuls (15 to 30 mL, containing 10 g to 20 g of lactulose) daily. The dose may be increased to 60 mL daily if necessary. Twenty-four to 48 hours may be required to produce a normal bowel movement.</paragraph>
+                  <paragraph>Note: Some patients have found that lactulose solution may be more acceptable when mixed with fruit juice, water or milk.</paragraph>
+               </text>
+               <effectiveTime value="20240916"/>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_a6b39b2c-65bd-428d-a8e1-c0b464854bcd">
+               <id root="3fb71640-1e8b-bab5-e063-6294a90ad664"/>
+               <code code="34069-5" codeSystem="2.16.840.1.113883.6.1" displayName="HOW SUPPLIED SECTION"/>
+               <title>HOW SUPPLIED</title>
+               <text>
+                  <paragraph>Lactulose Solution, USP 10 g/15 mL is supplied as:</paragraph>
+                  <paragraph>NDC 17856-0874-03: 30 mL Cup</paragraph>
+                  <paragraph/>
+               </text>
+               <effectiveTime value="20240916"/>
+               <component>
+                  <section ID="LINK_1d1b7508-4d77-4d62-b9c1-0fc5ff72b722">
+                     <id root="3fb6cfff-8633-5c75-e063-6294a90a5006"/>
+                     <code code="44425-7" codeSystem="2.16.840.1.113883.6.1" displayName="STORAGE AND HANDLING SECTION"/>
+                     <title/>
+                     <text>
+                        <paragraph>Store at controlled room temperature, 20°to 25°C (68° to 77°F). [See USP] Do not freeze.</paragraph>
+                        <paragraph>Under recommended storage conditions, a normal darkening of color may occur. Such darkening is characteristic of sugar solutions and does not affect therapeutic action. Prolonged exposure to temperatures above 30°C (86°F) or to direct light may cause extreme darkening and turbidity which may be pharmaceutically objectionable. If this condition develops, do not use.</paragraph>
+                        <paragraph>Prolonged exposure to freezing temperatures may cause change to a semisolid, too viscous to pour. Viscosity will return to normal upon warming to room temperature.</paragraph>
+                        <paragraph>Dispense in original container or in a tight, light-resistant container with a child-resistant closure.</paragraph>
+                        <paragraph>To the Pharmacist: When ordering this product, include the NDC number in the description.</paragraph>
+                     </text>
+                     <effectiveTime value="20240916"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_4fd7b6f0-2038-4fb1-b3bd-27350e79b67a">
+               <id root="3fb79b45-1428-7d55-e063-6294a90a7797"/>
+               <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+               <title>MANUFACTURED BY</title>
+               <text>
+                  <paragraph>Atlanic Biologicals Corp.</paragraph>
+                  <paragraph>Miami, Fl 33179</paragraph>
+               </text>
+               <effectiveTime value="20240916"/>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_3fb75a7a-740e-2211-e063-6294a90afa3b">
+               <id root="3fb75a7a-740d-2211-e063-6294a90afa3b"/>
+               <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+               <title>SPL UNCLASSIED SECTION</title>
+               <text>
+                  <paragraph>NDC 17856-0874-03</paragraph>
+                  <paragraph>Lactulose Solution USP</paragraph>
+                  <paragraph>10 g/15 mL</paragraph>
+                  <paragraph>Each 15 mL contains: 10 g lactulose (and less than
+  <br/>
+1.6 g galactose, less than 1.2 g lactose, and 1.2 g or
+  <br/>
+less of other sugars).
+ </paragraph>
+                  <paragraph>Dispense in original container or tight, light-resistant
+  <br/>
+container with a child-resistant closure.
+ </paragraph>
+                  <paragraph>To the Pharmacist: When ordering this product,
+  <br/>
+include the product number (or NDC) in the
+  <br/>
+description.
+ </paragraph>
+                  <paragraph>Rx ONLY</paragraph>
+               </text>
+               <effectiveTime value="20250926"/>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_892cb880-14e3-467e-9af1-de5af79cea48">
+               <id root="3fb75725-717f-11bb-e063-6294a90a3bea"/>
+               <code code="51945-4" codeSystem="2.16.840.1.113883.6.1" displayName="PACKAGE LABEL.PRINCIPAL DISPLAY PANEL"/>
+               <title>PRINCIPAL DISPLAY PANEL</title>
+               <text>
+                  <paragraph>
+                     <renderMultiMedia referencedObject="img_3fb72002-2151-f834-e063-6394a90ab6a1"/>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20240916"/>
+               <component>
+                  <observationMedia ID="img_3fb72002-2151-f834-e063-6394a90ab6a1">
+                     <text>1</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="17856-0874-03 Rev. 1 Case Label.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+      </structuredBody>
+   </component>
+</document>

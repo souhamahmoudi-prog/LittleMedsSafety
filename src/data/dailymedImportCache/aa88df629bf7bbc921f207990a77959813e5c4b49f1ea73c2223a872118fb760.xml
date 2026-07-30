@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="https://www.accessdata.fda.gov/spl/stylesheet/spl.xsl" type="text/xsl"?>
+<document xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 https://www.accessdata.fda.gov/spl/schema/spl.xsd">
+   <id root="36c631f4-2590-4c5e-b64a-39e3b1b9b268"/>
+   <code code="34390-5" codeSystem="2.16.840.1.113883.6.1" displayName="Human OTC Drug Label"/>
+   <title/>
+   <effectiveTime value="20260504"/>
+   <setId root="b45c95f2-91c9-55b5-e053-2995a90a75b7"/>
+   <versionNumber value="6"/>
+   <author>
+      <time/>
+      <assignedEntity>
+         <representedOrganization>
+            <id root="1.3.6.1.4.1.519.1" extension="062312574"/>
+            <name>CVS Pharmacy, Inc.</name>
+            <assignedEntity>
+               <assignedOrganization>
+                  <id extension="078728447" root="1.3.6.1.4.1.519.1"/>
+                  <name>Aurohealth LLC</name>
+                  <assignedEntity>
+                     <assignedOrganization>
+                        <id extension="650918514" root="1.3.6.1.4.1.519.1"/>
+                        <name>APL HEALTHCARE LIMITED</name>
+                     </assignedOrganization>
+                     <performance>
+                        <actDefinition>
+                           <code code="C25391" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ANALYSIS"/>
+                           <product>
+                              <manufacturedProduct classCode="MANU">
+                                 <manufacturedMaterialKind>
+                                    <code code="69842-234" codeSystem="2.16.840.1.113883.6.69"/>
+                                 </manufacturedMaterialKind>
+                              </manufacturedProduct>
+                           </product>
+                        </actDefinition>
+                     </performance>
+                     <performance>
+                        <actDefinition>
+                           <code code="C43360" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MANUFACTURE"/>
+                           <product>
+                              <manufacturedProduct classCode="MANU">
+                                 <manufacturedMaterialKind>
+                                    <code code="69842-234" codeSystem="2.16.840.1.113883.6.69"/>
+                                 </manufacturedMaterialKind>
+                              </manufacturedProduct>
+                           </product>
+                        </actDefinition>
+                     </performance>
+                  </assignedEntity>
+               </assignedOrganization>
+            </assignedEntity>
+         </representedOrganization>
+      </assignedEntity>
+   </author>
+   <component>
+      <structuredBody>
+         <component>
+            <section>
+               <id root="797677a5-d3ac-4661-8ad9-2452227aa49a"/>
+               <code code="48780-1" codeSystem="2.16.840.1.113883.6.1" displayName="SPL PRODUCT DATA ELEMENTS SECTION"/>
+               <effectiveTime value="20260504"/>
+               <subject>
+                  <manufacturedProduct>
+                     <manufacturedProduct>
+                        <code code="69842-234" codeSystem="2.16.840.1.113883.6.69"/>
+                        <name>Cetirizine Hydrochloride<suffix/>
+                        </name>
+                        <formCode code="C42999" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TABLET, ORALLY DISINTEGRATING"/>
+                        <asEntityWithGeneric>
+                           <genericMedicine>
+                              <name>Cetirizine Hydrochloride</name>
+                           </genericMedicine>
+                        </asEntityWithGeneric>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator value="10" unit="mg"/>
+                              <denominator value="1" unit="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="64O047KTOA" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>CETIRIZINE HYDROCHLORIDE</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="YO7261ME24" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>CETIRIZINE</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="JV039JZZ3A" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>BETADEX</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="XF417D3PSL" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>ANHYDROUS CITRIC ACID</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="ETJ7Z6XBU4" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>SILICON DIOXIDE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="40UAA97IT9" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>CROSPOVIDONE (35 .MU.M)</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="7QWA1RIO01" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>.ALPHA.-TOCOPHEROL, DL-</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="5Y0974F5PW" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>HYDROXYPROPYL CELLULOSE (110000 WAMW)</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="70097M6I30" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>MAGNESIUM STEARATE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="7CVR7L4A2D" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>MALTODEXTRIN</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="3OWL53L36A" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>MANNITOL</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="7T9FYH5QMK" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>MICROCRYSTALLINE CELLULOSE 101</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="PNR0YF693Y" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>MICROCRYSTALLINE CELLULOSE 102</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="8MDF5V39QO" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>SODIUM BICARBONATE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="5856J3G2A2" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>SODIUM STARCH GLYCOLATE TYPE A POTATO</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="96K6UQ3ZD4" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>SUCRALOSE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <asContent>
+                           <quantity>
+                              <numerator value="6" unit="1"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code/>
+                              <formCode code="C43168" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BLISTER PACK"/>
+                              <asContent>
+                                 <quantity>
+                                    <numerator value="4" unit="1"/>
+                                    <denominator value="1"/>
+                                 </quantity>
+                                 <containerPackagedProduct>
+                                    <code code="69842-234-76" codeSystem="2.16.840.1.113883.6.69"/>
+                                    <formCode code="C43182" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="CARTON"/>
+                                 </containerPackagedProduct>
+                                 <subjectOf>
+                                    <marketingAct>
+                                       <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                                       <statusCode code="active"/>
+                                       <effectiveTime>
+                                          <low value="20200911"/>
+                                       </effectiveTime>
+                                    </marketingAct>
+                                 </subjectOf>
+                              </asContent>
+                           </containerPackagedProduct>
+                           <subjectOf>
+                              <characteristic>
+                                 <code code="SPLCMBPRDTP" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                                 <value code="C112160" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="Type 0: Not a Combination Product" xsi:type="CV"/>
+                              </characteristic>
+                           </subjectOf>
+                        </asContent>
+                     </manufacturedProduct>
+                     <subjectOf>
+                        <approval>
+                           <id extension="ANDA213557" root="2.16.840.1.113883.3.150"/>
+                           <code code="C73584" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ANDA"/>
+                           <author>
+                              <territorialAuthority>
+                                 <territory>
+                                    <code code="USA" codeSystem="2.16.840.1.113883.5.28"/>
+                                 </territory>
+                              </territorialAuthority>
+                           </author>
+                        </approval>
+                     </subjectOf>
+                     <subjectOf>
+                        <marketingAct>
+                           <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <statusCode code="active"/>
+                           <effectiveTime>
+                              <low value="20200911"/>
+                           </effectiveTime>
+                        </marketingAct>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLCOLOR" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value xsi:type="CV" code="C48325" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="WHITE"/>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLSHAPE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value xsi:type="CV" code="C48348" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ROUND"/>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLSIZE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value xsi:type="PQ" unit="mm" value="10"/>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLSCORE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value xsi:type="INT" value="1"/>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLIMPRINT" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value xsi:type="ST">CE;10</value>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLFLAVOR" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value code="C73406" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ORANGE" xsi:type="CV"/>
+                        </characteristic>
+                     </subjectOf>
+                     <consumedIn>
+                        <substanceAdministration>
+                           <routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ORAL"/>
+                        </substanceAdministration>
+                     </consumedIn>
+                  </manufacturedProduct>
+               </subject>
+            </section>
+         </component>
+         <component>
+            <section ID="Section_0">
+               <id root="e214dd8b-7f50-4c5f-805d-57681c231343"/>
+               <code code="55106-9" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - ACTIVE INGREDIENT SECTION"/>
+               <title>
+                  <content styleCode="italics">Drug Facts</content>
+               </title>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">
+                        <content styleCode="italics">Active ingredient (in each tablet)</content>
+                     </content>
+                  </paragraph>
+                  <paragraph>Cetirizine hydrochloride USP 10 mg</paragraph>
+               </text>
+               <effectiveTime value="20260504"/>
+            </section>
+         </component>
+         <component>
+            <section ID="Section_1">
+               <id root="e8918c07-e8f8-467b-99d7-8bc7c0419c40"/>
+               <code code="55105-1" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - PURPOSE SECTION"/>
+               <title>
+                  <content styleCode="italics">Purpose</content>
+               </title>
+               <text>
+                  <paragraph>Antihistamine</paragraph>
+               </text>
+               <effectiveTime value="20260504"/>
+            </section>
+         </component>
+         <component>
+            <section ID="Section_2">
+               <id root="c3c77a61-77ab-40b0-9013-61a54cf7c301"/>
+               <code code="34067-9" codeSystem="2.16.840.1.113883.6.1" displayName="INDICATIONS &amp; USAGE SECTION"/>
+               <title>
+                  <content styleCode="italics">Uses</content>
+               </title>
+               <text>
+                  <paragraph>temporarily relieves these symptoms due to hay fever or other upper respiratory allergies:</paragraph>
+                  <list listType="unordered" styleCode="disc">
+                     <item>runny nose</item>
+                     <item>sneezing</item>
+                     <item>itchy, watery eyes</item>
+                     <item>itching of the nose or throat</item>
+                  </list>
+               </text>
+               <effectiveTime value="20260504"/>
+            </section>
+         </component>
+         <component>
+            <section ID="Section_3">
+               <id root="8b1a0262-c4d4-45f8-adeb-2ec42a6ece75"/>
+               <code code="34071-1" codeSystem="2.16.840.1.113883.6.1" displayName="WARNINGS SECTION"/>
+               <title>
+                  <content styleCode="italics">Warnings</content>
+               </title>
+               <effectiveTime value="20260504"/>
+            </section>
+         </component>
+         <component>
+            <section ID="Section_4">
+               <id root="33416997-6628-430d-a472-ec0e6c3f8a8b"/>
+               <code code="50570-1" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - DO NOT USE SECTION"/>
+               <title>Do not use</title>
+               <text>
+                  <paragraph>if you have ever had an allergic reaction to this product or any of its ingredients or to an antihistamine containing hydroxyzine.</paragraph>
+               </text>
+               <effectiveTime value="20260504"/>
+            </section>
+         </component>
+         <component>
+            <section ID="Section_5">
+               <id root="1d649203-dc0b-43c3-a148-d6370b2bf3c4"/>
+               <code code="50569-3" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - ASK DOCTOR SECTION"/>
+               <title>Ask a doctor before use if you have</title>
+               <text>
+                  <paragraph>liver or kidney disease. Your doctor should determine if you need a different dose.</paragraph>
+               </text>
+               <effectiveTime value="20260504"/>
+            </section>
+         </component>
+         <component>
+            <section ID="Section_6">
+               <id root="edb47e7a-d74c-474b-aff4-82c768d02bc0"/>
+               <code code="50568-5" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - ASK DOCTOR/PHARMACIST SECTION"/>
+               <title>Ask a doctor or pharmacist before use if you are</title>
+               <text>
+                  <paragraph>taking tranquilizers or sedatives.</paragraph>
+               </text>
+               <effectiveTime value="20260504"/>
+            </section>
+         </component>
+         <component>
+            <section ID="Section_7">
+               <id root="f8b2fcbe-142c-4895-8c31-106379e078ea"/>
+               <code code="50567-7" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - WHEN USING SECTION"/>
+               <title>When using this product</title>
+               <text>
+                  <list listType="unordered" styleCode="disc">
+                     <item>drowsiness may occur</item>
+                     <item>avoid alcoholic drinks</item>
+                     <item>alcohol, sedatives, and tranquilizers may increase drowsiness</item>
+                     <item>be careful when driving a motor vehicle or operating machinery</item>
+                  </list>
+               </text>
+               <effectiveTime value="20260504"/>
+            </section>
+         </component>
+         <component>
+            <section ID="Section_8">
+               <id root="4ed0f6d8-0b85-43c3-9a4b-433dd5735673"/>
+               <code code="50566-9" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - STOP USE SECTION"/>
+               <title>Stop use and ask a doctor if</title>
+               <text>
+                  <paragraph>an allergic reaction to this product occurs. Seek medical help right away.</paragraph>
+               </text>
+               <effectiveTime value="20260504"/>
+            </section>
+         </component>
+         <component>
+            <section ID="Section_10">
+               <id root="06da2785-7062-4c91-833f-14d9b74c9674"/>
+               <code code="53414-9" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - PREGNANCY OR BREAST FEEDING SECTION"/>
+               <title>If pregnant or breast-feeding:</title>
+               <text>
+                  <list listType="unordered" styleCode="disc">
+                     <item>if breast-feeding: not recommended</item>
+                     <item>if pregnant: ask a health professional before use.</item>
+                  </list>
+               </text>
+               <effectiveTime value="20260504"/>
+            </section>
+         </component>
+         <component>
+            <section ID="Section_11">
+               <id root="c918eab9-147e-4c5f-bd62-ba1608270c8b"/>
+               <code code="50565-1" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - KEEP OUT OF REACH OF CHILDREN SECTION"/>
+               <title>Keep out of reach of children.</title>
+               <text>
+                  <paragraph>In case of overdose, get medical help or contact a Poison Control Center right away. (1-800-222-1222)</paragraph>
+               </text>
+               <effectiveTime value="20260504"/>
+            </section>
+         </component>
+         <component>
+            <section ID="Section_12">
+               <id root="83271379-32d8-4a44-9810-1ce02bdb59a3"/>
+               <code code="34068-7" codeSystem="2.16.840.1.113883.6.1" displayName="DOSAGE &amp; ADMINISTRATION SECTION"/>
+               <title>
+                  <content styleCode="italics">Directions</content>
+               </title>
+               <text>
+                  <paragraph>Tablet melts in mouth. Can be taken with or without water.</paragraph>
+                  <table cellspacing="0" cellpadding="0" border="0" width="636.804">
+                     <colgroup>
+                        <col width="42.5751879699248%"/>
+                        <col width="57.4248120300752%"/>
+                     </colgroup>
+                     <tbody>
+                        <tr styleCode="Botrule">
+                           <td styleCode="Lrule Rrule" align="justify" valign="middle">adults and children 6 years and over<br/>
+                           </td>
+                           <td styleCode="Rrule" align="justify" valign="middle">one 10 mg tablet once daily; do not take more than one 10 mg tablet in 24 hours. A 5 mg product may be appropriate for less severe symptoms.<br/>
+                           </td>
+                        </tr>
+                        <tr styleCode="Botrule">
+                           <td styleCode="Lrule Rrule" align="justify" valign="middle">adults 65 years and over<br/>
+                           </td>
+                           <td styleCode="Rrule" align="justify" valign="middle">ask a doctor<br/>
+                           </td>
+                        </tr>
+                        <tr styleCode="Botrule">
+                           <td styleCode="Lrule Rrule" align="justify" valign="middle">children under 6 years of age<br/>
+                           </td>
+                           <td styleCode="Rrule" align="justify" valign="middle">ask a doctor<br/>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td styleCode="Lrule Rrule" align="justify" valign="middle">consumers with liver or kidney disease<br/>
+                           </td>
+                           <td styleCode="Rrule" align="justify" valign="middle">ask a doctor<br/>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </text>
+               <effectiveTime value="20260504"/>
+            </section>
+         </component>
+         <component>
+            <section ID="Section_13">
+               <id root="7f24edf6-ac1f-4623-a064-c0b6a38fd187"/>
+               <code code="44425-7" codeSystem="2.16.840.1.113883.6.1" displayName="STORAGE AND HANDLING SECTION"/>
+               <title>
+                  <content styleCode="italics">Other information</content>
+               </title>
+               <text>
+                  <list listType="unordered" styleCode="disc">
+                     <item>store between 20° to 25°C (68° to 77°F). Avoid high humidity.</item>
+                     <item>
+                        <content styleCode="bold">do not use if blister unit is torn or broken</content> </item>
+                  </list>
+               </text>
+               <effectiveTime value="20260504"/>
+            </section>
+         </component>
+         <component>
+            <section ID="Section_28">
+               <id root="bda8547e-6c20-4b11-9c05-8a76b470da0c"/>
+               <code code="51727-6" codeSystem="2.16.840.1.113883.6.1" displayName="INACTIVE INGREDIENT SECTION"/>
+               <title>
+                  <content styleCode="italics">Inactive ingredients</content>
+               </title>
+               <text>
+                  <paragraph>betadex, citric acid anhydrous, colloidal silicon dioxide, crospovidone, dl-alpha-tocopherol, hydroxypropyl cellulose, magnesium stearate, maize maltodextrin, mannitol, microcrystalline cellulose, natural flavourings, sodium bicarbonate, sodium starch glycolate and sucralose.<br/>
+                     <br/>
+                     <content styleCode="italics">
+                        <content styleCode="bold">Questions or comments? <br/>
+                        </content>
+                     </content>call<content styleCode="bold"> 1-855-274-4122 </content>(Monday - Friday 8:30 AM to 5:00 PM EST)</paragraph>
+                  <br/>
+                  <paragraph>
+                     <content styleCode="bold">Distributed by: </content>
+                     <content styleCode="bold">CVS Pharmacy, Inc.</content>
+                     <br/> One CVS Drive, Woonsocket, RI 02895<br/> © 2025 CVS/pharmacy<br/> CVS.com<sup>®</sup>            1-800-SHOP CVS<br/>Made in India</paragraph>
+                  <br/>
+               </text>
+               <effectiveTime value="20260504"/>
+            </section>
+         </component>
+         <component>
+            <section ID="Section_16">
+               <id root="43597da4-2462-41e3-9f32-39e49b4971dd"/>
+               <code code="51945-4" codeSystem="2.16.840.1.113883.6.1" displayName="PACKAGE LABEL.PRINCIPAL DISPLAY PANEL"/>
+               <title>PACKAGE LABEL-PRINCIPAL DISPLAY PANEL -10 mg (24 Orally Disintegrating Tablets) Blister Carton</title>
+               <text>
+                  <paragraph>NDC 69842-234-76<br/>
+                     <br/>
+                     <content styleCode="bold">♥CVS<sub>™</sub>
+                        <br/>
+                        <br/> 2</content>
+                     <content styleCode="bold">4<br/>
+                     </content>
+                     <content styleCode="bold">HR RELIEF<br/>
+                        <br/>
+                     </content>
+                     <content styleCode="bold">actual size<br/>
+                        <br/>
+                     </content>
+                     <content styleCode="bold">Orange<br/>
+                     </content>
+                     <content styleCode="bold">Flavor<br/>
+                        <br/>
+                     </content>
+                     <content styleCode="bold">Original Prescription Strength<br/>
+                     </content>
+                     <content styleCode="bold">ALLERGY RELIEF<br/> DISSOLVE TABS<br/>
+                     </content>
+                     <content styleCode="bold">Cetirizine Hydrochloride<br/>
+                     </content>Orally Disintegrating Tablets USP, <content styleCode="bold">10 mg<br/>
+                     </content>Dissolve Tabs, Antihistamine<br/>
+                     <br/>
+                     <content styleCode="bold">Compare to <content styleCode="bold">Zyrtec<sup>®</sup> Allergy<br/>
+                        </content>
+                     </content>
+                     <content styleCode="bold">active ingredient<sup>†</sup>
+                        <br/>
+                        <br/>
+                     </content>
+                     <content styleCode="bold">Relief of: </content>Itchy, watery eyes, Runny nose,<br/> Itchy throat or nose, Sneezing<br/>
+                     <br/>
+                     <content styleCode="bold">2</content>
+                     <content styleCode="bold">4<br/>
+                     </content>
+                     <content styleCode="bold">TABLETS<br/>
+                        <br/>
+                     </content>
+                     <content styleCode="bold">MELTS<br/>
+                     </content>
+                     <content styleCode="bold">IN YOUR<br/>
+                     </content>
+                     <content styleCode="bold">MOUTH<br/>
+                        <br/>
+                     </content>
+                     <content styleCode="bold">
+                        <content styleCode="bold">Indoor<br/>
+                        </content>
+                     </content>
+                     <content styleCode="bold">
+                        <content styleCode="bold">&amp; Outdoor<br/>
+                        </content>
+                     </content>
+                     <content styleCode="bold">
+                        <content styleCode="bold">Allergies<br/>
+                           <br/>
+                        </content>
+                     </content>
+                     <content styleCode="bold">
+                        <content styleCode="bold">DYE<br/>
+                        </content>
+                     </content>
+                     <content styleCode="bold">
+                        <content styleCode="bold">FREE</content>
+                     </content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">  <renderMultiMedia referencedObject="MM1"/>
+                     </content>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20260504"/>
+               <component>
+                  <observationMedia ID="MM1">
+                     <text>PACKAGE LABEL-PRINCIPAL DISPLAY PANEL -10 mg (24 Orally Disintegrating Tablets) Blister Carton</text>
+                     <value xsi:type="ED" mediaType="image/jpeg">
+                        <reference value="cetirizine-fig1.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+      </structuredBody>
+   </component>
+</document>

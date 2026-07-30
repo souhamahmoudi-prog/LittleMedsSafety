@@ -1,0 +1,707 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="https://www.accessdata.fda.gov/spl/stylesheet/spl.xsl" type="text/xsl"?>
+<document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 https://www.accessdata.fda.gov/spl/schema/spl.xsd">
+   <id root="56af991a-2d0d-870a-e063-6294a90addad"/>
+   <code code="34390-5" codeSystem="2.16.840.1.113883.6.1" displayName="HUMAN OTC DRUG LABEL"/>
+   <title>KORTRIBION Pain Reliever</title>
+   <effectiveTime value="20260715"/>
+   <setId root="2e1c7133-c4e8-47bc-e063-6294a90af626"/>
+   <versionNumber value="4"/>
+   <author>
+      <time/>
+      <assignedEntity>
+         <representedOrganization>
+            <id root="1.3.6.1.4.1.519.1" extension="029918743"/>
+            <name>OPMX LLC</name>
+            <assignedEntity>
+               <assignedOrganization>
+                  <assignedEntity>
+                     <assignedOrganization>
+                        <id root="1.3.6.1.4.1.519.1" extension="915664486"/>
+                        <name>ELYSIUM PHARMACEUTICALS LIMITED</name>
+                     </assignedOrganization>
+                     <performance>
+                        <actDefinition>
+                           <code code="C84732" displayName="label" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <product>
+                              <manufacturedProduct classCode="MANU">
+                                 <manufacturedMaterialKind>
+                                    <code code="69729-793" codeSystem="2.16.840.1.113883.6.69"/>
+                                 </manufacturedMaterialKind>
+                              </manufacturedProduct>
+                           </product>
+                        </actDefinition>
+                     </performance>
+                     <performance>
+                        <actDefinition>
+                           <code code="C43360" displayName="manufacture" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <product>
+                              <manufacturedProduct classCode="MANU">
+                                 <manufacturedMaterialKind>
+                                    <code code="69729-793" codeSystem="2.16.840.1.113883.6.69"/>
+                                 </manufacturedMaterialKind>
+                              </manufacturedProduct>
+                           </product>
+                        </actDefinition>
+                     </performance>
+                     <performance>
+                        <actDefinition>
+                           <code code="C84731" displayName="pack" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <product>
+                              <manufacturedProduct classCode="MANU">
+                                 <manufacturedMaterialKind>
+                                    <code code="69729-793" codeSystem="2.16.840.1.113883.6.69"/>
+                                 </manufacturedMaterialKind>
+                              </manufacturedProduct>
+                           </product>
+                        </actDefinition>
+                     </performance>
+                  </assignedEntity>
+               </assignedOrganization>
+            </assignedEntity>
+         </representedOrganization>
+      </assignedEntity>
+   </author>
+   <component>
+      <structuredBody>
+         <component>
+            <section>
+               <id root="56c2c669-4ce3-04ac-e063-6294a90ad4d8"/>
+               <code code="48780-1" codeSystem="2.16.840.1.113883.6.1" displayName="SPL product data elements section"/>
+               <effectiveTime value="20260715"/>
+               <subject>
+                  <manufacturedProduct>
+                     <manufacturedProduct>
+                        <code code="69729-793" codeSystem="2.16.840.1.113883.6.69"/>
+                        <name>KORTRIBION Pain Reliever</name>
+                        <formCode code="C42931" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TABLET, FILM COATED"/>
+                        <asEntityWithGeneric>
+                           <genericMedicine>
+                              <name>Acetaminophen, Caffeine</name>
+                           </genericMedicine>
+                        </asEntityWithGeneric>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="O8232NY3SJ" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>STARCH, CORN</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="2LRS185U6K" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>D&amp;C RED NO. 27</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="H77VEI93A8" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>FD&amp;C YELLOW NO. 6</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="FZ989GH94E" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>POVIDONE, UNSPECIFIED</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="M28OL1HH48" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>CROSCARMELLOSE SODIUM</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="H3R47K3TBD" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>FD&amp;C BLUE NO. 1</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="70097M6I30" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>MAGNESIUM STEARATE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="3WJQ0SDW1A" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>POLYETHYLENE GLYCOL, UNSPECIFIED</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="15FIX9V2JP" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>TITANIUM DIOXIDE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="7SEV7J4R1U" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>TALC</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="4ELV7Z65AP" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>STEARIC ACID</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="ETJ7Z6XBU4" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>SILICON DIOXIDE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="OP1R32D61U" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>MICROCRYSTALLINE CELLULOSE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator unit="mg" value="500"/>
+                              <denominator unit="1" value="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="362O9ITL9D" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>ACETAMINOPHEN</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="362O9ITL9D" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>ACETAMINOPHEN</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator unit="mg" value="65"/>
+                              <denominator unit="1" value="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="3G6A5W338E" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>CAFFEINE</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="3G6A5W338E" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>CAFFEINE</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <asContent>
+                           <quantity>
+                              <numerator value="12" unit="1"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code/>
+                              <formCode code="C43168" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BLISTER PACK"/>
+                              <asContent>
+                                 <quantity>
+                                    <numerator value="2" unit="1"/>
+                                    <denominator value="1"/>
+                                 </quantity>
+                                 <containerPackagedProduct>
+                                    <code code="69729-793-24" codeSystem="2.16.840.1.113883.6.69"/>
+                                    <formCode code="C43182" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="CARTON"/>
+                                 </containerPackagedProduct>
+                                 <subjectOf>
+                                    <marketingAct>
+                                       <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                                       <statusCode code="active"/>
+                                       <effectiveTime>
+                                          <low value="20250214"/>
+                                       </effectiveTime>
+                                    </marketingAct>
+                                 </subjectOf>
+                              </asContent>
+                           </containerPackagedProduct>
+                           <subjectOf>
+                              <characteristic>
+                                 <code code="SPLCMBPRDTP" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                                 <value code="C112160" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="Type 0: Not a Combination Product" xsi:type="CV"/>
+                              </characteristic>
+                           </subjectOf>
+                        </asContent>
+                        <asContent>
+                           <quantity>
+                              <numerator value="4" unit="1"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code/>
+                              <formCode code="C43200" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="POUCH"/>
+                              <asContent>
+                                 <quantity>
+                                    <numerator value="20" unit="1"/>
+                                    <denominator value="1"/>
+                                 </quantity>
+                                 <containerPackagedProduct>
+                                    <code code="69729-793-80" codeSystem="2.16.840.1.113883.6.69"/>
+                                    <formCode code="C43182" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="CARTON"/>
+                                 </containerPackagedProduct>
+                                 <subjectOf>
+                                    <marketingAct>
+                                       <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                                       <statusCode code="active"/>
+                                       <effectiveTime>
+                                          <low value="20250214"/>
+                                       </effectiveTime>
+                                    </marketingAct>
+                                 </subjectOf>
+                              </asContent>
+                           </containerPackagedProduct>
+                           <subjectOf>
+                              <characteristic>
+                                 <code code="SPLCMBPRDTP" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                                 <value code="C112160" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="Type 0: Not a Combination Product" xsi:type="CV"/>
+                              </characteristic>
+                           </subjectOf>
+                        </asContent>
+                     </manufacturedProduct>
+                     <subjectOf>
+                        <approval>
+                           <id extension="M013" root="2.16.840.1.113883.3.9421"/>
+                           <code code="C200263" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="OTC Monograph Drug"/>
+                           <author>
+                              <territorialAuthority>
+                                 <territory>
+                                    <code code="USA" codeSystem="2.16.840.1.113883.5.28"/>
+                                 </territory>
+                              </territorialAuthority>
+                           </author>
+                        </approval>
+                     </subjectOf>
+                     <subjectOf>
+                        <marketingAct>
+                           <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <statusCode code="active"/>
+                           <effectiveTime>
+                              <low value="20250214"/>
+                           </effectiveTime>
+                        </marketingAct>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLCOLOR" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value code="C48326" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="red" xsi:type="CE">
+                              <originalText/>
+                           </value>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLSIZE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value unit="mm" value="17" xsi:type="PQ"/>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLSHAPE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value code="C48345" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="OVAL" xsi:type="CE">
+                              <originalText>(Caplet)</originalText>
+                           </value>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLSCORE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value value="1" xsi:type="INT"/>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLIMPRINT" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value xsi:type="ST">5431</value>
+                        </characteristic>
+                     </subjectOf>
+                     <consumedIn>
+                        <substanceAdministration>
+                           <routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ORAL"/>
+                        </substanceAdministration>
+                     </consumedIn>
+                  </manufacturedProduct>
+               </subject>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_93deeb00-094a-4424-b48d-9b513bc741e1">
+               <id root="2e1da8cc-5944-2ba5-e063-6294a90a00d2"/>
+               <code code="55106-9" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - ACTIVE INGREDIENT SECTION"/>
+               <title>
+                  <content styleCode="bold">
+                     <content styleCode="italics">Active ingredients (in each tablet)</content>
+                  </content>
+               </title>
+               <text>
+                  <paragraph>Acetaminophen 500 mg</paragraph>
+                  <paragraph>Caffeine 65 mg</paragraph>
+               </text>
+               <effectiveTime value="20250214"/>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_2fc4f2e6-4375-4130-9e14-6df388e64619">
+               <id root="2e1db0fd-6c97-954d-e063-6394a90ad07a"/>
+               <code code="55105-1" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - PURPOSE SECTION"/>
+               <title>
+                  <content styleCode="bold">
+                     <content styleCode="italics">Purposes</content>
+                  </content>
+               </title>
+               <text>
+                  <paragraph>Pain reliever</paragraph>
+                  <paragraph>Pain reliever aid</paragraph>
+               </text>
+               <effectiveTime value="20250214"/>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_ac784f2d-266b-4df9-a7d2-31c70234c737">
+               <id root="2e1da8cc-5946-2ba5-e063-6294a90a00d2"/>
+               <code code="34067-9" codeSystem="2.16.840.1.113883.6.1" displayName="INDICATIONS &amp; USAGE SECTION"/>
+               <title>
+                  <content styleCode="bold">
+                     <content styleCode="italics">Uses</content>
+                  </content>
+               </title>
+               <text>
+                  <list listType="unordered">
+                     <item>temporarily relieves minor aches and pain due to:</item>
+                     <item>headache</item>
+                     <item>muscular aches</item>
+                  </list>
+               </text>
+               <effectiveTime value="20250214"/>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_b490813c-8f5a-47d3-9547-160bbdc33e59">
+               <id root="2e1dacfc-9476-33ee-e063-6294a90af69b"/>
+               <code code="34071-1" codeSystem="2.16.840.1.113883.6.1" displayName="WARNINGS SECTION"/>
+               <title>
+                  <content styleCode="bold">
+                     <content styleCode="italics">Warnings</content>
+                  </content>
+               </title>
+               <effectiveTime value="20230809"/>
+               <component>
+                  <section ID="ID_b2ef0611-9138-478d-aec2-4c8885e3ede3">
+                     <id root="2e1dbceb-817a-4c2d-e063-6294a90a4a3e"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>
+                        <content styleCode="bold">Liver warning</content>
+                     </title>
+                     <text>
+                        <paragraph>This product contains acetaminophen. Severe liver damage may occur if you take</paragraph>
+                        <list listType="unordered">
+                           <item>more than 6 caplets in 24 hours, which is the maximum daily amount</item>
+                           <item>with other drugs containing acetaminophen</item>
+                           <item>3 or more alcoholic drinks every day while using this product</item>
+                        </list>
+                     </text>
+                     <effectiveTime value="20250214"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="ID_6b34a63e-d306-427e-8ee9-ab2e0f799f82">
+                     <id root="2e1dbb17-1b05-96f3-e063-6394a90a7ce8"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>
+                        <content styleCode="bold">Caffeine warning</content>
+                     </title>
+                     <text>
+                        <paragraph>The recommended dose of this product contains about as much caffeine as a cup of coffee. Limit the use of caffeine-containing medications, foods, or beverages while taking this product because too much caffeine may cause nervousness, irritability, sleeplessness, and occasionally, rapid heartbeat.</paragraph>
+                     </text>
+                     <effectiveTime value="20250214"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="ID_629fb077-8a88-4193-b897-2c0b143ef3bf">
+                     <id root="2e1dc051-8f33-98c6-e063-6394a90a62a2"/>
+                     <code code="50570-1" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - DO NOT USE SECTION"/>
+                     <title>
+                        <content styleCode="bold">Do not use</content>
+                     </title>
+                     <text>
+                        <list listType="unordered">
+                           <item>with any other drug containing acetaminophen (prescription or nonprescription). Ask a doctor or pharmacist before using with other drugs if you are not sure.</item>
+                        </list>
+                     </text>
+                     <effectiveTime value="20250214"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="ID_32aeae05-148e-4394-8d7c-3f54fd3784c9">
+                     <id root="2e1dafa1-d568-4747-e063-6294a90a60fc"/>
+                     <code code="50569-3" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - ASK DOCTOR SECTION"/>
+                     <title>
+                        <content styleCode="bold">Ask a doctor before use if</content>
+                     </title>
+                     <text>
+                        <paragraph>you have liver disease</paragraph>
+                     </text>
+                     <effectiveTime value="20250214"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="ID_889d5842-88c2-4721-85cf-a714dd82cc48">
+                     <id root="2e1dbc19-c242-4a32-e063-6294a90aeefe"/>
+                     <code code="50568-5" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - ASK DOCTOR/PHARMACIST SECTION"/>
+                     <title>
+                        <content styleCode="bold">Ask a doctor or pharmacist</content>
+                     </title>
+                     <text>
+                        <paragraph>if you are taking the blood thinning drug warfarin</paragraph>
+                     </text>
+                     <effectiveTime value="20250214"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="ID_62845e1d-5485-4f7a-839e-af08fb2e9def">
+                     <id root="2e1dda40-97f3-5c8e-e063-6294a90a1cd4"/>
+                     <code code="50566-9" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - STOP USE SECTION"/>
+                     <title>
+                        <content styleCode="bold">Stop use and ask a doctor if</content>
+                     </title>
+                     <text>
+                        <list listType="unordered">
+                           <item>any new symptoms occur</item>
+                           <item>symptoms do not get better or worsen</item>
+                           <item>painful area is red or swollen</item>
+                           <item>pain gets worse or lasts for more than 10 days</item>
+                           <item>fever gets worse or lasts for more than 3 days</item>
+                        </list>
+                     </text>
+                     <effectiveTime value="20250214"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="ID_a3ea0ac4-67e6-468e-89e8-781e4b323866">
+                     <id root="2e1dd7c1-aac1-98f1-e063-6394a90a0ae3"/>
+                     <code code="53414-9" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - PREGNANCY OR BREAST FEEDING SECTION"/>
+                     <title>
+                        <content styleCode="bold">If pregnant or breast-feeding,</content>
+                     </title>
+                     <text>
+                        <paragraph>ask a health professional before use.</paragraph>
+                     </text>
+                     <effectiveTime value="20250214"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="ID_a6772fbb-2acb-4a6a-85f6-236ce1aacd9c">
+                     <id root="2e1dd094-d20d-57bf-e063-6294a90a4e93"/>
+                     <code code="50565-1" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - KEEP OUT OF REACH OF CHILDREN SECTION"/>
+                     <title>
+                        <content styleCode="bold">Keep out of reach of children.</content>
+                     </title>
+                     <text>
+                        <paragraph>In case of overdose, get medical help or contact a Poison Control Center (1-800-222-1222) right away. Quick medical attention is critical for adults as well as for children even if you do not notice any signs or symptoms.</paragraph>
+                     </text>
+                     <effectiveTime value="20250214"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_aff8791c-8659-4877-89d2-c4bd4c5509bf">
+               <id root="2e1de50f-3374-5f26-e063-6294a90aa015"/>
+               <code code="34068-7" codeSystem="2.16.840.1.113883.6.1" displayName="DOSAGE &amp; ADMINISTRATION SECTION"/>
+               <title>
+                  <content styleCode="bold">
+                     <content styleCode="italics">Directions</content>
+                  </content>
+               </title>
+               <text>
+                  <list listType="unordered">
+                     <item>
+                        <content styleCode="bold">do not exceed recommended dosage</content>
+                     </item>
+                     <item>
+                        <content styleCode="bold">adults and children 12 years and over:</content> take 2 tablets every 6 hours; do not take more than 6 tabletsin 24 hours
+  </item>
+                     <item>children under 12 years: ask a doctor</item>
+                  </list>
+               </text>
+               <effectiveTime value="20250214"/>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_206fd650-8c0f-4bd4-86cb-c1c77c718533">
+               <id root="2e1df273-2956-6964-e063-6294a90a98b9"/>
+               <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+               <title>
+                  <content styleCode="bold">
+                     <content styleCode="italics">Other information</content>
+                  </content>
+               </title>
+               <text>
+                  <list listType="unordered">
+                     <item>store at controlled room temperature 20°-25°C (68°-77°F)</item>
+                     <item>
+                        <content styleCode="bold">TAMPER EVIDENT: DO NOT USE IF IMPRINTED SAFETY SEAL UNDER CAP IS BROKEN OR MISSING</content>
+                     </item>
+                  </list>
+               </text>
+               <effectiveTime value="20250214"/>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_672609cc-b959-4370-8bd3-fc2ed57e319f">
+               <id root="2e1e1eaf-2af5-75d4-e063-6294a90a3040"/>
+               <code code="51727-6" codeSystem="2.16.840.1.113883.6.1" displayName="INACTIVE INGREDIENT SECTION"/>
+               <title>
+                  <content styleCode="bold">
+                     <content styleCode="italics">Inactive ingredients</content>
+                  </content>
+               </title>
+               <text>
+                  <paragraph>colloidal silicon dioxide, croscarmellose sodium, D&amp;C red #27, FD&amp;C blue #1, FD&amp;C yellow #6, magnesium stearate, microcrystalline cellulose, polyethylene glycol, pregelatinized starch, polyvinylpyrrolidone, stearic acid, talc, titanium dioxide.</paragraph>
+               </text>
+               <effectiveTime value="20250214"/>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_972e987d-1e4c-4966-9ab5-076860c7853e">
+               <id root="2e1e1d3e-f4af-8c88-e063-6294a90a4fe9"/>
+               <code code="53413-1" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - QUESTIONS SECTION"/>
+               <title>
+                  <content styleCode="bold">
+                     <content styleCode="italics">Questions or comments?</content>
+                  </content>
+               </title>
+               <text>
+                  <paragraph>Call Medimex Inc. 302-318-1359 Monday through Friday 9AM-5PM EST</paragraph>
+               </text>
+               <effectiveTime value="20250214"/>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_56c276b3-d495-7e36-e063-6294a90a2374">
+               <id root="56c276b3-d494-7e36-e063-6294a90a2374"/>
+               <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+               <title>Distributed by</title>
+               <text>
+                  <paragraph>Exclusively distributed by:</paragraph>
+                  <paragraph>OPMX</paragraph>
+                  <paragraph>Chula Vista, CA 91910</paragraph>
+                  <paragraph>Phone: 619-600-5632</paragraph>
+               </text>
+               <effectiveTime value="20260716"/>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_2d9e91fe-e373-47ab-84c0-32c3b3100f03">
+               <id root="56c1cacf-d6bb-f2c5-e063-6394a90a1c17"/>
+               <code code="51945-4" codeSystem="2.16.840.1.113883.6.1" displayName="PACKAGE LABEL.PRINCIPAL DISPLAY PANEL"/>
+               <title>Principal Display Panel</title>
+               <text>
+                  <paragraph>NDC 69729-793-24</paragraph>
+                  <paragraph>KORTRIBION</paragraph>
+                  <paragraph/>
+                  <paragraph>Treat Pain or Inflammation caused by conditions such as:</paragraph>
+                  <paragraph>Alivio temporal de dolores leves y malestares debidos a:</paragraph>
+                  <paragraph/>
+                  <paragraph>Joint Pain</paragraph>
+                  <paragraph>Articulaciones</paragraph>
+                  <paragraph/>
+                  <paragraph>Headache</paragraph>
+                  <paragraph>Dolor de cabeza</paragraph>
+                  <paragraph/>
+                  <paragraph>Muscle Aches</paragraph>
+                  <paragraph>Dolores musculares</paragraph>
+                  <paragraph/>
+                  <paragraph>Back Ache</paragraph>
+                  <paragraph>Dolores de espalda</paragraph>
+                  <paragraph/>
+                  <paragraph>Inflamation</paragraph>
+                  <paragraph>Inflamación</paragraph>
+                  <paragraph/>
+                  <paragraph>Arthritis</paragraph>
+                  <paragraph>Artitris</paragraph>
+                  <paragraph/>
+                  <paragraph>Box with 24 caplets</paragraph>
+                  <paragraph>Analgésico/Pain Reliever</paragraph>
+                  <paragraph/>
+                  <paragraph>Exclusively distributed by:</paragraph>
+                  <paragraph>OPMX Chula Vista, CA 91910</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Phone: 619-600-5632</content>
+                  </paragraph>
+                  <paragraph>
+                     <renderMultiMedia referencedObject="img_2e1e35e5-7748-9898-e063-6294a90ac2c6"/>
+                  </paragraph>
+                  <paragraph/>
+                  <paragraph/>
+                  <paragraph/>
+                  <paragraph/>
+                  <paragraph/>
+                  <paragraph/>
+               </text>
+               <effectiveTime value="20230809"/>
+               <component>
+                  <observationMedia ID="img_2e1e35e5-7748-9898-e063-6294a90ac2c6">
+                     <text>KCAPS24</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="-Kortribion w24 caps_001.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_56c1cd63-8a88-f79e-e063-6394a90a8c94">
+               <id root="56c26a78-53a5-8739-e063-6394a90a4c95"/>
+               <code code="51945-4" codeSystem="2.16.840.1.113883.6.1" displayName="PACKAGE LABEL.PRINCIPAL DISPLAY PANEL"/>
+               <title>PRINCIPAL DISPLAY PANEL 80</title>
+               <text>
+                  <paragraph>NDC 69729-793-80</paragraph>
+                  <paragraph>KORTRIBION</paragraph>
+                  <paragraph>Treat Pain or Inflammation caused by conditions such as:</paragraph>
+                  <paragraph>Alivio temporal de dolores leves y malestares debidos a:</paragraph>
+                  <paragraph>Joint Pain</paragraph>
+                  <paragraph>Articulaciones</paragraph>
+                  <paragraph>Headache</paragraph>
+                  <paragraph>Dolor de cabeza</paragraph>
+                  <paragraph>Muscle Aches</paragraph>
+                  <paragraph>Dolores musculares</paragraph>
+                  <paragraph>Back Ache</paragraph>
+                  <paragraph>Dolores de espalda</paragraph>
+                  <paragraph>Inflamation</paragraph>
+                  <paragraph>Inflamación</paragraph>
+                  <paragraph>Arthritis</paragraph>
+                  <paragraph>Artitris</paragraph>
+                  <paragraph>Box with 24 caplets</paragraph>
+                  <paragraph>Analgésico/Pain Reliever</paragraph>
+                  <paragraph/>
+                  <paragraph>
+                     <renderMultiMedia referencedObject="img_56c21553-3a80-244d-e063-6294a90a3955"/>
+                  </paragraph>
+                  <paragraph>
+                     <renderMultiMedia referencedObject="img_56c2171c-88d7-4c2b-e063-6394a90adbe8"/>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20260716"/>
+               <component>
+                  <observationMedia ID="img_56c21553-3a80-244d-e063-6294a90a3955">
+                     <text>PDP1</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="Kortribion BOX LABEL 80.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+               <component>
+                  <observationMedia ID="img_56c2171c-88d7-4c2b-e063-6394a90adbe8">
+                     <text>PDP2</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="-Kortribion EXH 20-4 w80 caplets (EN-ES) RTE Rev 06.2026_001 - copia.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+      </structuredBody>
+   </component>
+</document>

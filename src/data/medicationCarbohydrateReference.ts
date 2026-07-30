@@ -10,7 +10,6 @@ export const sourceTypes = [
   'Manufacturer package insert or prescribing information',
   'DailyMed product label',
   'Manufacturer medical-information response',
-  'Licensed Lexidrug data',
   'Institution-approved ketogenic medication reference',
   'Other documented source with permitted reuse',
 ] as const;
@@ -24,6 +23,23 @@ export const carbohydrateBases = [
   'other',
 ] as const;
 
+export const dosageFormFilterOptions = [
+  'Oral solution',
+  'Oral suspension',
+  'Syrup',
+  'Chewable tablet',
+  'Orally disintegrating tablet',
+  'Powder',
+  'Granules',
+  'Other',
+] as const;
+
+export const recognizedDosageForms = [
+  'Suspension',
+  'Oral suspension',
+  ...dosageFormFilterOptions,
+] as const;
+
 export const approvalStatuses = [
   'draft',
   'pending_review',
@@ -34,6 +50,7 @@ export const approvalStatuses = [
 export type VerificationStatus = (typeof verificationStatuses)[number];
 export type SourceType = (typeof sourceTypes)[number];
 export type CarbohydrateBasis = (typeof carbohydrateBases)[number];
+export type DosageFormFilterOption = (typeof dosageFormFilterOptions)[number];
 export type ApprovalStatus = (typeof approvalStatuses)[number];
 
 export type MedicationCarbohydrateReferenceRecord = {
@@ -41,10 +58,32 @@ export type MedicationCarbohydrateReferenceRecord = {
   genericName: string;
   brandName: string;
   manufacturer: string;
+  labelerName?: string;
+  packagerName?: string;
+  manufacturerName?: string;
+  distributorName?: string;
+  brandOwnerName?: string;
+  organizationText?: string;
   strength: string;
   dosageForm: string;
   ndc: string;
   packageDescription: string;
+  carbohydrateIngredients: {
+    normalizedName: string;
+    sourceTerm: string;
+    sourceExcerpt: string;
+    amount: number | null;
+    amountUnit: string;
+    amountBasis: string;
+    normalizedAmountMg: number | null;
+    normalizedBasis: string;
+    quantityStatus: 'quantity-published' | 'quantity-unknown';
+  }[];
+  nonNutritiveSweeteners?: {
+    normalizedName: string;
+    sourceTerm: string;
+    sourceExcerpt: string;
+  }[];
   carbohydrateAmount: number | null;
   carbohydrateUnit: 'mg' | 'g' | 'other' | '';
   carbohydrateBasis: CarbohydrateBasis;
@@ -76,15 +115,24 @@ export type MedicationCarbohydrateEditorRecord = MedicationCarbohydrateReference
 };
 
 export const unknownQuantityMessage =
-  'Carbohydrate-related ingredient listed, but no quantitative amount was published in the reviewed source.';
-
-export const licensedClinicalDataIntegrationStatus =
-  'Licensed clinical-data integration not configured.';
+  'Carbohydrate ingredient identified, but the exact amount is not available in the reviewed source.';
 
 export const medicationCarbohydrateReferenceRecords: MedicationCarbohydrateReferenceRecord[] = [];
 
 export const approvedMedicationCarbohydrateReferenceRecords =
   medicationCarbohydrateReferenceRecords.filter((record) => record.approvalStatus === 'approved');
+
+export {
+  approvedMedicationCarbohydrateRecords,
+  medicationCarbohydrateRecords,
+  pendingMedicationCarbohydrateRecords,
+} from './medicationCarbohydrateRecords';
+
+export type {
+  ExtractionStatus,
+  MedicationCarbohydrateRecord,
+  RecordApprovalStatus,
+} from './medicationCarbohydrateRecords';
 
 export function validateMedicationCarbohydrateEditorRecord(
   record: MedicationCarbohydrateEditorRecord,

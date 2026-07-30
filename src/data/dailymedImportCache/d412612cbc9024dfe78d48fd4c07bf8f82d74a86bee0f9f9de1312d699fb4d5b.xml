@@ -1,0 +1,766 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="https://www.accessdata.fda.gov/spl/stylesheet/spl.xsl" type="text/xsl"?>
+<document xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 https://www.accessdata.fda.gov/spl/schema/spl.xsd">
+   <id root="bc7bd8b3-2edc-4477-82ae-096e6e5bfde0"/>
+   <code code="34391-3" codeSystem="2.16.840.1.113883.6.1" displayName="HUMAN PRESCRIPTION DRUG LABEL"/>
+   <title>
+      <content styleCode="bold">Clindamycin Phosphate Gel USP, 1% For External Use </content>
+   </title>
+   <effectiveTime value="20260609"/>
+   <setId root="62e1661f-1eab-4693-8cce-c22f572baa7f"/>
+   <versionNumber value="3"/>
+   <author>
+      <time/>
+      <assignedEntity>
+         <representedOrganization>
+            <id extension="830546433" root="1.3.6.1.4.1.519.1"/>
+            <name>NORTHSTAR RX LLC</name>
+            <assignedEntity>
+               <assignedOrganization>
+                  <assignedEntity>
+                     <assignedOrganization>
+                        <id extension="677318665" root="1.3.6.1.4.1.519.1"/>
+                        <name>Glenmark Pharmaceuticals Limited</name>
+                     </assignedOrganization>
+                     <performance>
+                        <actDefinition>
+                           <code code="C43360" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MANUFACTURE"/>
+                           <product>
+                              <manufacturedProduct classCode="MANU">
+                                 <manufacturedMaterialKind>
+                                    <code code="16714-161" codeSystem="2.16.840.1.113883.6.69"/>
+                                 </manufacturedMaterialKind>
+                              </manufacturedProduct>
+                           </product>
+                        </actDefinition>
+                     </performance>
+                     <performance>
+                        <actDefinition>
+                           <code code="C25391" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ANALYSIS"/>
+                           <product>
+                              <manufacturedProduct classCode="MANU">
+                                 <manufacturedMaterialKind>
+                                    <code code="16714-161" codeSystem="2.16.840.1.113883.6.69"/>
+                                 </manufacturedMaterialKind>
+                              </manufacturedProduct>
+                           </product>
+                        </actDefinition>
+                     </performance>
+                  </assignedEntity>
+               </assignedOrganization>
+            </assignedEntity>
+         </representedOrganization>
+      </assignedEntity>
+   </author>
+   <component>
+      <structuredBody>
+         <component>
+            <section>
+               <id root="e2f29545-c648-43f9-8e3a-5a99df4da2bf"/>
+               <code code="48780-1" codeSystem="2.16.840.1.113883.6.1" displayName="SPL product data elements section"/>
+               <effectiveTime value="20260609"/>
+               <subject>
+                  <manufacturedProduct>
+                     <manufacturedProduct>
+                        <code code="16714-161" codeSystem="2.16.840.1.113883.6.69"/>
+                        <name>Clindamycin Phosphate</name>
+                        <formCode code="C42934" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="GEL"/>
+                        <asEntityWithGeneric>
+                           <genericMedicine>
+                              <name>Clindamycin Phosphate</name>
+                           </genericMedicine>
+                        </asEntityWithGeneric>
+                        <ingredient classCode="ACTIM">
+                           <quantity>
+                              <numerator unit="mg" value="10"/>
+                              <denominator unit="g" value="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="EH6D7113I8" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>CLINDAMYCIN PHOSPHATE</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="3U02EL437C" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>CLINDAMYCIN</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="344S277G0Z" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>ALLANTOIN</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="HHT01ZNK31" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>CARBOMER HOMOPOLYMER TYPE B (ALLYL PENTAERYTHRITOL CROSSLINKED)</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="A2I8C7HI9T" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>METHYLPARABEN</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="B697894SGQ" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>POLYETHYLENE GLYCOL 400</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="6DC9Q167V3" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>PROPYLENE GLYCOL</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="55X04QC32I" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>SODIUM HYDROXIDE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="059QF0KO0R" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>WATER</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <asContent>
+                           <quantity>
+                              <numerator unit="g" value="30"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code/>
+                              <formCode code="C42794" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TUBE"/>
+                              <asContent>
+                                 <quantity>
+                                    <numerator unit="1" value="1"/>
+                                    <denominator value="1"/>
+                                 </quantity>
+                                 <containerPackagedProduct>
+                                    <code code="16714-161-01" codeSystem="2.16.840.1.113883.6.69"/>
+                                    <formCode code="C43182" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="CARTON"/>
+                                 </containerPackagedProduct>
+                                 <subjectOf>
+                                    <marketingAct>
+                                       <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                                       <statusCode code="active"/>
+                                       <effectiveTime>
+                                          <low value="20210310"/>
+                                       </effectiveTime>
+                                    </marketingAct>
+                                 </subjectOf>
+                              </asContent>
+                           </containerPackagedProduct>
+                           <subjectOf>
+                              <characteristic classCode="OBS">
+                                 <code code="SPLCMBPRDTP" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                                 <value code="C112160" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="Type 0: Not a Combination Product" xsi:type="CE"/>
+                              </characteristic>
+                           </subjectOf>
+                        </asContent>
+                        <asContent>
+                           <quantity>
+                              <numerator unit="g" value="60"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code/>
+                              <formCode code="C42794" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TUBE"/>
+                              <asContent>
+                                 <quantity>
+                                    <numerator unit="1" value="1"/>
+                                    <denominator value="1"/>
+                                 </quantity>
+                                 <containerPackagedProduct>
+                                    <code code="16714-161-02" codeSystem="2.16.840.1.113883.6.69"/>
+                                    <formCode code="C43182" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="CARTON"/>
+                                 </containerPackagedProduct>
+                                 <subjectOf>
+                                    <marketingAct>
+                                       <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                                       <statusCode code="active"/>
+                                       <effectiveTime>
+                                          <low value="20210310"/>
+                                       </effectiveTime>
+                                    </marketingAct>
+                                 </subjectOf>
+                              </asContent>
+                           </containerPackagedProduct>
+                           <subjectOf>
+                              <characteristic classCode="OBS">
+                                 <code code="SPLCMBPRDTP" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                                 <value code="C112160" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="Type 0: Not a Combination Product" xsi:type="CE"/>
+                              </characteristic>
+                           </subjectOf>
+                        </asContent>
+                     </manufacturedProduct>
+                     <subjectOf>
+                        <approval>
+                           <id extension="ANDA214251" root="2.16.840.1.113883.3.150"/>
+                           <code code="C73584" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ANDA"/>
+                           <author>
+                              <territorialAuthority>
+                                 <territory>
+                                    <code code="USA" codeSystem="2.16.840.1.113883.5.28"/>
+                                 </territory>
+                              </territorialAuthority>
+                           </author>
+                        </approval>
+                     </subjectOf>
+                     <subjectOf>
+                        <marketingAct>
+                           <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <statusCode code="active"/>
+                           <effectiveTime>
+                              <low value="20210310"/>
+                           </effectiveTime>
+                        </marketingAct>
+                     </subjectOf>
+                     <consumedIn>
+                        <substanceAdministration>
+                           <routeCode code="C38304" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TOPICAL"/>
+                        </substanceAdministration>
+                     </consumedIn>
+                  </manufacturedProduct>
+               </subject>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_3261f310-c691-4614-a727-26b6e628c195">
+               <id root="61710c21-1026-4bdd-9b2d-2587638984ce"/>
+               <code code="34089-3" codeSystem="2.16.840.1.113883.6.1" displayName="DESCRIPTION SECTION"/>
+               <title>DESCRIPTION</title>
+               <text>
+                  <paragraph>Clindamycin phosphate gel USP, 1% contains clindamycin phosphate, USP at a concentration equivalent to 10 mg clindamycin per gram.</paragraph>
+                  <paragraph>Clindamycin phosphate is a water soluble ester of the semi-synthetic antibiotic produced by a 7(S)-chloro-substitution of the 7(R)-hydroxyl group of the parent antibiotic lincomycin.</paragraph>
+                  <paragraph>The gel contains allantoin, carbomer homopolymer type B, methylparaben, polyethylene glycol 400, propylene glycol, sodium hydroxide, and purified water.</paragraph>
+                  <paragraph>The structural formula is represented below:</paragraph>
+                  <renderMultiMedia ID="id-584075068" referencedObject="ID_61f2390b-9390-45d9-858e-f20e0036aa44"/>
+                  <list listType="unordered">
+                     <item>
+                        <caption> </caption>Molecular formula: C<sub>18</sub>H<sub>34</sub>ClN<sub>2</sub>O<sub>8</sub>PS 	Molecular weight: 504.96 g/mol</item>
+                  </list>
+                  <paragraph>The chemical name for clindamycin phosphate, USP is Methyl 7-chloro-6,7,8-trideoxy-6-(1‑ methyl-<content styleCode="italics">trans</content>-4-propyl-L-2-pyrrolidinecarboxamido)-1-thio-L-<content styleCode="italics">threo</content>-α-D-<content styleCode="italics">galacto</content>‑ octopyranoside 2-(dihydrogen phosphate).</paragraph>
+                  <paragraph>Clindamycin phosphate, USP is white to off-white, hygroscopic, crystalline powder. Clindamycin phosphate is freely soluble in water, slightly soluble in dehydrated ethanol, very slightly soluble in acetone, insoluble in chloroform, ether and benzene.</paragraph>
+               </text>
+               <effectiveTime value="20260609"/>
+               <component>
+                  <observationMedia ID="ID_61f2390b-9390-45d9-858e-f20e0036aa44">
+                     <text>Structure.jpg</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="Structure.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_918649ac-dbcf-4844-9a84-9cd5a39bb9b8">
+               <id root="657b5123-bdf8-4cec-8704-1acb6423e5ca"/>
+               <code code="34090-1" codeSystem="2.16.840.1.113883.6.1" displayName="CLINICAL PHARMACOLOGY SECTION"/>
+               <title>CLINICAL PHARMACOLOGY </title>
+               <effectiveTime value="20260609"/>
+               <component>
+                  <section ID="ID_5935d86d-8d56-464a-927f-701e90b29549">
+                     <id root="182533f4-bfa3-4e02-927c-218c579458ee"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>Mechanism of Action  </title>
+                     <text>
+                        <paragraph>The mechanism of action of clindamycin in treating acne vulgaris is unknown.</paragraph>
+                     </text>
+                     <effectiveTime value="20260609"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="ID_5d25f67f-03de-40b9-8aa7-79b31ead6a64">
+                     <id root="71625646-a1fa-4df5-b895-3a74d4fde98d"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>Pharmacokinetics  </title>
+                     <text>
+                        <paragraph>Following multiple topical applications of clindamycin phosphate at a concentration equivalent to 10 mg clindamycin per mL in an isopropyl alcohol and water solution, very low levels of clindamycin are present in the serum (0 to 3 ng/mL) and less than 0.2% of the dose is recovered in urine as clindamycin.</paragraph>
+                        <paragraph>Although clindamycin phosphate is inactive <content styleCode="italics">in vitro</content>, rapid <content styleCode="italics">in vivo </content>hydrolysis converts this compound to the antibacterially active clindamycin.</paragraph>
+                     </text>
+                     <effectiveTime value="20260609"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="ID_741670b4-3a53-403a-bc74-3f7b56aa83f8">
+                     <id root="5a3d4385-0791-440f-a15b-87e7d7e31322"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>Microbiology  </title>
+                     <text>
+                        <paragraph>Clindamycin inhibits bacterial protein synthesis by binding to the 23S RNA of the 50S subunit of the ribosome. Clindamycin is bacteriostatic.</paragraph>
+                        <paragraph>
+                           <content styleCode="underline">Antimicrobial Activity</content>
+                        </paragraph>
+                        <paragraph>Clindamycin is active in vitro against most isolates of <content styleCode="italics">Propionibacterium acnes; </content>however, the clinical significance is unknown.</paragraph>
+                        <paragraph>
+                           <content styleCode="underline">Resistance</content>
+                        </paragraph>
+                        <paragraph>Resistance to clindamycin is most often caused by modification of specific bases of the 23S ribosomal RNA. Cross-resistance between clindamycin and lincomycin is complete. Because the binding sites for these antibacterial drugs overlap, cross resistance is sometimes observed among lincosamides, macrolides and streptogramin B. Macrolide‑ inducible resistance to clindamycin occurs in some isolates of macrolide-resistant bacteria.</paragraph>
+                     </text>
+                     <effectiveTime value="20260609"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_370d5b5a-8fb6-4e3a-b89f-d780c3ea9731">
+               <id root="6e5f25e6-ce6b-4c38-bbc8-c3eb35db9f51"/>
+               <code code="34067-9" codeSystem="2.16.840.1.113883.6.1" displayName="INDICATIONS &amp; USAGE SECTION"/>
+               <title>INDICATIONS AND USAGE </title>
+               <text>
+                  <paragraph>Clindamycin phosphate gel is indicated in the treatment of acne vulgaris. In view of the potential for diarrhea, bloody diarrhea and pseudomembranous colitis, the physician should consider whether other agents are more appropriate (see <linkHtml href="#ID_5707444c-5743-4351-8b61-d2eea09a75fe">CONTRAINDICATIONS</linkHtml>, <linkHtml href="#ID_772248e1-a3d7-4217-8d4c-822c982e65ce">WARNINGS</linkHtml> and <linkHtml href="#ID_87f7ef2b-8b7a-4efb-9dbd-96581547f16f">ADVERSE REACTIONS</linkHtml>).</paragraph>
+               </text>
+               <effectiveTime value="20260609"/>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_5707444c-5743-4351-8b61-d2eea09a75fe">
+               <id root="4f26f23b-3ca5-45e9-bd73-dabf52349ae3"/>
+               <code code="34070-3" codeSystem="2.16.840.1.113883.6.1" displayName="CONTRAINDICATIONS SECTION"/>
+               <title>CONTRAINDICATIONS </title>
+               <text>
+                  <paragraph>Clindamycin phosphate gel is contraindicated in individuals with a history of hypersensitivity to preparations containing clindamycin or lincomycin, a history of regional enteritis or ulcerative colitis, or a history of antibiotic-associated colitis.</paragraph>
+               </text>
+               <effectiveTime value="20260609"/>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_772248e1-a3d7-4217-8d4c-822c982e65ce">
+               <id root="c655eda1-d0e3-4cd2-bc2e-804f9d3fc5d2"/>
+               <code code="34071-1" codeSystem="2.16.840.1.113883.6.1" displayName="WARNINGS SECTION"/>
+               <title>WARNINGS </title>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">Orally and parenterally administered clindamycin has been associated with severe colitis which may result in patient death. Use of the topical formulation of clindamycin results in absorption of the antibiotic from the skin surface. Diarrhea, bloody diarrhea, and colitis (including pseudomembranous colitis) have been reported with the use of topical and systemic clindamycin.</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Studies indicate a toxin(s) produced by clostridia is one primary cause of antibiotic- associated colitis. The colitis is usually characterized by severe persistent diarrhea and severe abdominal cramps and may be associated with the passage of blood and mucus. Endoscopic examination may reveal pseudomembranous colitis. <content styleCode="underline">Stool culture for <content styleCode="italics">Clostridium difficile </content>and stool assay for <content styleCode="italics">C. difficile </content>toxin may be helpful diagnostically.</content>
+                     </content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">When significant diarrhea occurs, the drug should be discontinued. Large bowel endoscopy should be considered to establish a definitive diagnosis in cases of severe diarrhea.</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Antiperistaltic agents such as opiates and diphenoxylate with atropine may prolong and/or worsen the condition. Vancomycin has been found to be effective in the treatment of antibiotic-associated pseudomembranous colitis produced by <content styleCode="italics">Clostridium difficile</content>. The usual adult dosage is 500 milligrams to 2 grams of vancomycin orally per day in three to four divided doses administered for 7 to 10 days. <content styleCode="underline">Cholestyramine or colestipol resins bind vancomycin <content styleCode="italics">in vitro</content>
+                        </content>. If both a resin and vancomycin are to be administered concurrently, it may be advisable to separate the time of administration of each drug.</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Diarrhea, colitis, and pseudomembranous colitis have been observed to begin up to several weeks following cessation of oral and parenteral therapy with clindamycin.</content>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20260609"/>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_defe0800-c7c6-445b-b443-c443a452d5ac">
+               <id root="cb482fd8-e49f-4b10-80b1-5017f0166d5d"/>
+               <code code="42232-9" codeSystem="2.16.840.1.113883.6.1" displayName="PRECAUTIONS SECTION"/>
+               <title>PRECAUTIONS </title>
+               <effectiveTime value="20260609"/>
+               <component>
+                  <section ID="ID_895aa3fc-4249-4c54-8723-feb61ba75311">
+                     <id root="c8c0d4e8-5e15-4ded-a429-3ab400b0affc"/>
+                     <code code="34072-9" codeSystem="2.16.840.1.113883.6.1" displayName="GENERAL PRECAUTIONS SECTION"/>
+                     <title>General </title>
+                     <text>
+                        <paragraph>Clindamycin phosphate should be prescribed with caution in atopic individuals.</paragraph>
+                     </text>
+                     <effectiveTime value="20260609"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="ID_a0dfd908-ce42-429f-8f49-652e8086fdb7">
+                     <id root="185bf7d8-cb2e-408c-b46f-102cb17df787"/>
+                     <code code="34073-7" codeSystem="2.16.840.1.113883.6.1" displayName="DRUG INTERACTIONS SECTION"/>
+                     <title>Drug Interactions </title>
+                     <text>
+                        <paragraph>Clindamycin has been shown to have neuromuscular blocking properties that may enhance the action of other neuromuscular blocking agents. Therefore, it should be used with caution in patients receiving such agents.</paragraph>
+                     </text>
+                     <effectiveTime value="20260609"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="ID_16aa94e1-9ee0-4cb9-8202-66811b067789">
+                     <id root="35dca829-70cd-4602-9e95-281c3de46d7e"/>
+                     <code code="42228-7" codeSystem="2.16.840.1.113883.6.1" displayName="PREGNANCY SECTION"/>
+                     <title>Pregnancy: Teratogenic effects</title>
+                     <text>
+                        <paragraph>In clinical trials with pregnant women, the systemic administration of clindamycin during the second and third trimesters has not been associated with an increased frequency of congenital abnormalities. There are no adequate studies in pregnant women during the first trimester of pregnancy. Clindamycin should be used during the first trimester of pregnancy only if clearly needed.</paragraph>
+                     </text>
+                     <effectiveTime value="20260609"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="ID_71aed040-4eca-424e-9a7c-64c7b1edd76e">
+                     <id root="25bd2441-8dc2-48dc-86c4-d1b9d7824f5b"/>
+                     <code code="34080-2" codeSystem="2.16.840.1.113883.6.1" displayName="NURSING MOTHERS SECTION"/>
+                     <title>Nursing Mothers</title>
+                     <text>
+                        <paragraph>It is not known whether clindamycin is excreted in breast milk following use of clindamycin phosphate gel. However, orally and parenterally administered clindamycin has been reported to appear in breast milk. Clindamycin has the potential to cause adverse effects on the breast-fed infant's gastrointestinal flora. Monitor the breast-fed infant for possible adverse effects on the gastrointestinal flora, such as diarrhea, candidiasis (thrush, diaper rash) or rarely, blood in the stool indicating possible antibiotic-associated colitis.</paragraph>
+                        <paragraph>The developmental and health benefits of breastfeeding should be considered along with the mother's clinical need for clindamycin and any potential adverse effects on the breast-fed child from clindamycin or from the underlying maternal condition.</paragraph>
+                        <paragraph>
+                           <content styleCode="underline">Clinical Considerations</content>
+                        </paragraph>
+                        <paragraph>If used during lactation and clindamycin phosphate is applied to the chest, care should be taken to avoid accidental ingestion by the infant.</paragraph>
+                     </text>
+                     <effectiveTime value="20260609"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="ID_84b6aac9-4e69-498c-ab95-47317c931b33">
+                     <id root="abc38f3b-2add-4b3f-a9bb-4c1913a44221"/>
+                     <code code="34081-0" codeSystem="2.16.840.1.113883.6.1" displayName="PEDIATRIC USE SECTION"/>
+                     <title>Pediatric Use </title>
+                     <text>
+                        <paragraph>Safety and effectiveness in pediatric patients under the age of 12 have not been established.</paragraph>
+                     </text>
+                     <effectiveTime value="20260609"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="ID_43276ff8-a2ce-45fc-81bb-b1633050d363">
+                     <id root="03669a60-eb5c-46dc-b586-b315101fa264"/>
+                     <code code="34082-8" codeSystem="2.16.840.1.113883.6.1" displayName="GERIATRIC USE SECTION"/>
+                     <title>Geriatric Use </title>
+                     <text>
+                        <paragraph>Clinical studies for clindamycin phosphate did not include sufficient numbers of subjects aged 65 and over to determine whether they respond differently from younger subjects. Other reported clinical experience has not identified differences in responses between the elderly and younger patients.</paragraph>
+                     </text>
+                     <effectiveTime value="20260609"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_87f7ef2b-8b7a-4efb-9dbd-96581547f16f">
+               <id root="2859c8f3-e212-4ad8-9700-0f8b3ed95d9b"/>
+               <code code="34084-4" codeSystem="2.16.840.1.113883.6.1" displayName="ADVERSE REACTIONS SECTION"/>
+               <title>ADVERSE REACTIONS </title>
+               <text>
+                  <paragraph>In 18 clinical studies of various formulations of clindamycin phosphate using placebo vehicle and/or active comparator drugs as controls, patients experienced a number of treatment emergent adverse dermatologic events [see table below].</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Number of Patients Reporting Events</content>
+                  </paragraph>
+                  <table cellpadding="0pt" width="100%">
+                     <col width="28%"/>
+                     <col width="24%"/>
+                     <col width="25%"/>
+                     <col width="21%"/>
+                     <tbody>
+                        <tr>
+                           <td styleCode="Rrule Botrule Lrule Toprule " valign="top">
+                              <list listType="unordered">
+                                 <item>
+                                    <caption> </caption>
+                                    <content styleCode="bold">Treatment Emergent Adverse Event</content>
+                                 </item>
+                              </list>
+                           </td>
+                           <td styleCode="Rrule Botrule Lrule Toprule " valign="top">
+                              <list listType="unordered">
+                                 <item>
+                                    <caption> </caption>
+                                    <content styleCode="bold">Solution </content>
+                                 </item>
+                                 <item>
+                                    <caption> </caption>
+                                    <content styleCode="bold">n=553(%)</content>
+                                 </item>
+                              </list>
+                           </td>
+                           <td styleCode="Rrule Botrule Lrule Toprule " valign="top">
+                              <list listType="unordered">
+                                 <item>
+                                    <caption> </caption>
+                                    <content styleCode="bold">Gel </content>
+                                 </item>
+                                 <item>
+                                    <caption> </caption>
+                                    <content styleCode="bold">n=148(%)</content>
+                                 </item>
+                              </list>
+                           </td>
+                           <td styleCode="Rrule Botrule Lrule Toprule " valign="top">
+                              <list listType="unordered">
+                                 <item>
+                                    <caption> </caption>
+                                    <content styleCode="bold">Lotion n=160(%)</content>
+                                 </item>
+                              </list>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td styleCode="Rrule Lrule Botrule " valign="top">
+                              <list listType="unordered">
+                                 <item>
+                                    <caption> </caption>Burning</item>
+                              </list>
+                           </td>
+                           <td styleCode="Rrule Lrule Botrule " valign="top">
+                              <list listType="unordered">
+                                 <item>
+                                    <caption> </caption>62 (11)</item>
+                              </list>
+                           </td>
+                           <td styleCode="Rrule Lrule Botrule " valign="top">
+                              <list listType="unordered">
+                                 <item>
+                                    <caption> </caption>15 (10)</item>
+                              </list>
+                           </td>
+                           <td styleCode="Rrule Lrule Botrule " valign="top">
+                              <list listType="unordered">
+                                 <item>
+                                    <caption> </caption>17 (11)</item>
+                              </list>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td styleCode="Rrule Lrule Botrule " valign="top">
+                              <list listType="unordered">
+                                 <item>
+                                    <caption> </caption>Itching</item>
+                              </list>
+                           </td>
+                           <td styleCode="Rrule Lrule Botrule " valign="top">
+                              <list listType="unordered">
+                                 <item>
+                                    <caption> </caption>36 ( 7)</item>
+                              </list>
+                           </td>
+                           <td styleCode="Rrule Lrule Botrule " valign="top">
+                              <list listType="unordered">
+                                 <item>
+                                    <caption> </caption>15 (10)</item>
+                              </list>
+                           </td>
+                           <td styleCode="Rrule Lrule Botrule " valign="top">
+                              <list listType="unordered">
+                                 <item>
+                                    <caption> </caption>17 (11)</item>
+                              </list>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td styleCode="Rrule Lrule Botrule " valign="top">
+                              <list listType="unordered">
+                                 <item>
+                                    <caption> </caption>Burning/Itching</item>
+                              </list>
+                           </td>
+                           <td styleCode="Rrule Lrule Botrule " valign="top">
+                              <list listType="unordered">
+                                 <item>
+                                    <caption> </caption>60 (11)</item>
+                              </list>
+                           </td>
+                           <td styleCode="Rrule Lrule Botrule " valign="top">
+                              <list listType="unordered">
+                                 <item>
+                                    <caption> </caption># ( – )</item>
+                              </list>
+                           </td>
+                           <td styleCode="Rrule Lrule Botrule " valign="top">
+                              <list listType="unordered">
+                                 <item>
+                                    <caption> </caption># ( – )</item>
+                              </list>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td styleCode="Rrule Lrule Botrule " valign="top">
+                              <list listType="unordered">
+                                 <item>
+                                    <caption> </caption>Dryness</item>
+                              </list>
+                           </td>
+                           <td styleCode="Rrule Lrule Botrule " valign="top">
+                              <list listType="unordered">
+                                 <item>
+                                    <caption> </caption>105 (19)</item>
+                              </list>
+                           </td>
+                           <td styleCode="Rrule Lrule Botrule " valign="top">
+                              <list listType="unordered">
+                                 <item>
+                                    <caption> </caption>34 (23)</item>
+                              </list>
+                           </td>
+                           <td styleCode="Rrule Lrule Botrule " valign="top">
+                              <list listType="unordered">
+                                 <item>
+                                    <caption> </caption>29 (18)</item>
+                              </list>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td styleCode="Rrule Lrule Botrule " valign="top">
+                              <list listType="unordered">
+                                 <item>
+                                    <caption> </caption>Erythema</item>
+                              </list>
+                           </td>
+                           <td styleCode="Rrule Lrule Botrule " valign="top">
+                              <list listType="unordered">
+                                 <item>
+                                    <caption> </caption>86 (16)</item>
+                              </list>
+                           </td>
+                           <td styleCode="Rrule Lrule Botrule " valign="top">
+                              <list listType="unordered">
+                                 <item>
+                                    <caption> </caption>10 ( 7)</item>
+                              </list>
+                           </td>
+                           <td styleCode="Rrule Lrule Botrule " valign="top">
+                              <list listType="unordered">
+                                 <item>
+                                    <caption> </caption>22 (14)</item>
+                              </list>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td styleCode="Rrule Lrule Botrule " valign="top">
+                              <list listType="unordered">
+                                 <item>
+                                    <caption> </caption>Oiliness/Oily Skin</item>
+                              </list>
+                           </td>
+                           <td styleCode="Rrule Lrule Botrule " valign="top">
+                              <list listType="unordered">
+                                 <item>
+                                    <caption> </caption>8 ( 1)</item>
+                              </list>
+                           </td>
+                           <td styleCode="Rrule Lrule Botrule " valign="top">
+                              <list listType="unordered">
+                                 <item>
+                                    <caption> </caption>26 (18)</item>
+                              </list>
+                           </td>
+                           <td styleCode="Rrule Lrule Botrule " valign="top">
+                              <list listType="unordered">
+                                 <item>
+                                    <caption> </caption>12* (10)</item>
+                              </list>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td styleCode="Rrule Lrule Botrule " valign="top">
+                              <list listType="unordered">
+                                 <item>
+                                    <caption> </caption>Peeling</item>
+                              </list>
+                           </td>
+                           <td styleCode="Rrule Lrule Botrule " valign="top">
+                              <list listType="unordered">
+                                 <item>
+                                    <caption> </caption>61 (11)</item>
+                              </list>
+                           </td>
+                           <td styleCode="Rrule Lrule Botrule " valign="top">
+                              <list listType="unordered">
+                                 <item>
+                                    <caption> </caption># ( – )</item>
+                              </list>
+                           </td>
+                           <td styleCode="Rrule Lrule Botrule " valign="top">
+                              <list listType="unordered">
+                                 <item>
+                                    <caption> </caption>11 ( 7)</item>
+                              </list>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td colspan="4" styleCode="Rrule Botrule Lrule " valign="top">
+                              <list listType="unordered">
+                                 <item>
+                                    <caption> </caption># not recorded</item>
+                                 <item>
+                                    <caption> </caption>* of 126 subjects</item>
+                              </list>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <paragraph>Orally and parenterally administered clindamycin has been associated with severe colitis which may end fatally.</paragraph>
+                  <paragraph>Cases of diarrhea, bloody diarrhea and colitis (including pseudomembranous colitis) have been reported as adverse reactions in patients treated with oral and parenteral formulations of clindamycin and rarely with topical clindamycin (see <linkHtml href="#ID_772248e1-a3d7-4217-8d4c-822c982e65ce">WARNINGS</linkHtml>).</paragraph>
+                  <paragraph>Abdominal pain, gastrointestinal disturbances, gram-negative folliculitis, eye pain and contact dermatitis have also been reported in association with the use of topical formulations of clindamycin.</paragraph>
+                  <paragraph>To report SUSPECT ADVERSE REACTIONS, contact NorthStar Rx LLC 1-800-206-7821 or FDA at 1-800-FDA-1088 or www.fda.gov/medwatch</paragraph>
+               </text>
+               <effectiveTime value="20260609"/>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_935640bd-1bbb-45d2-8d7c-6d9db00f8141">
+               <id root="2750c21b-47d1-4195-88ed-3bee4dc60367"/>
+               <code code="34088-5" codeSystem="2.16.840.1.113883.6.1" displayName="OVERDOSAGE SECTION"/>
+               <title>OVERDOSAGE </title>
+               <text>
+                  <paragraph>Topically applied clindamycin phosphate can be absorbed in sufficient amounts to produce systemic effects (see <linkHtml href="#ID_772248e1-a3d7-4217-8d4c-822c982e65ce">WARNINGS</linkHtml>).</paragraph>
+               </text>
+               <effectiveTime value="20260609"/>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_8b6fdb94-cbeb-4321-9ac4-15e2e34a771d">
+               <id root="3a1305d9-5c03-43f4-9344-1d94b47e4b49"/>
+               <code code="34068-7" codeSystem="2.16.840.1.113883.6.1" displayName="DOSAGE &amp; ADMINISTRATION SECTION"/>
+               <title>DOSAGE AND ADMINISTRATION </title>
+               <text>
+                  <paragraph>Apply a thin film of clindamycin phosphate gel USP 1% twice daily to affected area.</paragraph>
+                  <paragraph>Preserve in tightly closed containers.</paragraph>
+               </text>
+               <effectiveTime value="20260609"/>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_52f57228-c7fb-4bb8-b806-f30d033f2fb5">
+               <id root="cd6f6b6f-a85c-4cd5-8209-a64295d652e9"/>
+               <code code="34069-5" codeSystem="2.16.840.1.113883.6.1" displayName="HOW SUPPLIED SECTION"/>
+               <title>HOW SUPPLIED </title>
+               <text>
+                  <paragraph>Clindamycin phosphate gel USP, 1% containing clindamycin phosphate, USP equivalent to 10 mg clindamycin per gram is available in the following sizes:</paragraph>
+                  <paragraph>30 gram tube—NDC 16714-161-01</paragraph>
+                  <paragraph>60 gram tube—NDC 16714-161-02</paragraph>
+                  <paragraph>Store at 20°C to 25°C (68°F to 77°F) [see USP Controlled Room Temperature]. Protect from freezing.</paragraph>
+                  <paragraph>Rx only</paragraph>
+                  <paragraph>Manufactured for:</paragraph>
+                  <paragraph>Northstar Rx LLC</paragraph>
+                  <paragraph>Memphis, TN 38141.</paragraph>
+                  <paragraph>Manufactured by:</paragraph>
+                  <paragraph>Glenmark Pharmaceuticals Limited</paragraph>
+                  <paragraph>Colvale-Bardez, Goa 403513, India</paragraph>
+                  <paragraph>Revision No.: 1</paragraph>
+                  <paragraph>Issued: February 2021</paragraph>
+               </text>
+               <effectiveTime value="20260609"/>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_60c135f8-9b6f-4fd7-984d-841f24d0d4a1">
+               <id root="8d2f7d3c-9eed-4546-8fa7-5f0d6721915d"/>
+               <code code="51945-4" codeSystem="2.16.840.1.113883.6.1" displayName="PACKAGE LABEL.PRINCIPAL DISPLAY PANEL"/>
+               <title>PRINCIPAL DISPLAY PANEL </title>
+               <text>
+                  <renderMultiMedia ID="id-701084572" referencedObject="ID_1079f356-db5b-4a31-ba7a-f9679beac0d7"/>
+               </text>
+               <effectiveTime value="20260609"/>
+               <component>
+                  <observationMedia ID="ID_1079f356-db5b-4a31-ba7a-f9679beac0d7">
+                     <text>carton30g.jpg</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="CTN30.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+      </structuredBody>
+   </component>
+</document>

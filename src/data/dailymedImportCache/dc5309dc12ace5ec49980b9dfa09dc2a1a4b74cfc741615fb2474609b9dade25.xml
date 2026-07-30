@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="https://www.accessdata.fda.gov/spl/stylesheet/spl.xsl" type="text/xsl"?>
+<document xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 https://www.accessdata.fda.gov/spl/schema/spl.xsd">
+   <id root="72e88b77-2686-4713-b2a9-1dab1e3f1215"/>
+   <code code="53409-9" codeSystem="2.16.840.1.113883.6.1" displayName="BULK INGREDIENT"/>
+   <title>Prednisolone Sodium Phosphate</title>
+   <effectiveTime value="20191127"/>
+   <setId root="ae18a1a5-b711-458f-a84b-fe8079776341"/>
+   <versionNumber value="2"/>
+   <author>
+      <time/>
+      <assignedEntity>
+         <representedOrganization>
+            <id root="1.3.6.1.4.1.519.1" extension="554492641"/>
+            <name>BLUEBAY SHANDONG CO.,LTD</name>
+            <assignedEntity>
+               <assignedOrganization>
+                  <assignedEntity>
+                     <assignedOrganization>
+                        <id root="1.3.6.1.4.1.519.1" extension="554492641"/>
+                        <name>BLUEBAY SHANDONG CO.,LTD</name>
+                     </assignedOrganization>
+                     <performance>
+                        <actDefinition>
+                           <code code="C73607" displayName="relabel" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <product>
+                              <manufacturedProduct classCode="MANU">
+                                 <manufacturedMaterialKind>
+                                    <code code="73309-057" codeSystem="2.16.840.1.113883.6.69"/>
+                                 </manufacturedMaterialKind>
+                              </manufacturedProduct>
+                           </product>
+                        </actDefinition>
+                     </performance>
+                  </assignedEntity>
+               </assignedOrganization>
+            </assignedEntity>
+         </representedOrganization>
+      </assignedEntity>
+   </author>
+   <relatedDocument typeCode="RPLC">
+      <relatedDocument>
+         <id root="4cabd379-f7c9-434b-80f1-e431d9d438b1"/>
+         <setId root="8499b030-f03c-4a88-9a99-5212393f9a61"/>
+         <versionNumber value="1"/>
+      </relatedDocument>
+   </relatedDocument>
+   <component>
+      <structuredBody>
+         <component>
+            <section>
+               <id root="6d6ed65a-ec3b-4b54-ac43-68ed65086857"/>
+               <code code="48780-1" codeSystem="2.16.840.1.113883.6.1" displayName="SPL product data elements section"/>
+               <title/>
+               <text/>
+               <effectiveTime value="20191127"/>
+               <subject>
+                  <manufacturedProduct>
+                     <manufacturedProduct>
+                        <code code="73309-057" codeSystem="2.16.840.1.113883.6.69"/>
+                        <name>Prednisolone Sodium Phosphate</name>
+                        <formCode code="C42972" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="POWDER"/>
+                        <asEntityWithGeneric>
+                           <genericMedicine>
+                              <name>Prednisolone Sodium Phosphate</name>
+                           </genericMedicine>
+                        </asEntityWithGeneric>
+                        <ingredient classCode="ACTIM">
+                           <quantity>
+                              <numerator value="1" unit="kg"/>
+                              <denominator value="1" unit="kg"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="IV021NXA9J" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>PREDNISOLONE SODIUM PHOSPHATE</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="IV021NXA9J" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>PREDNISOLONE SODIUM PHOSPHATE</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <asContent>
+                           <quantity>
+                              <numerator value="5" unit="kg"/>
+                              <denominator value="1" unit="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code code="73309-057-01" codeSystem="2.16.840.1.113883.6.69"/>
+                              <formCode code="C43193" displayName="DRUM" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           </containerPackagedProduct>
+                           <subjectOf>
+                              <marketingAct>
+                                 <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                                 <statusCode code="active"/>
+                                 <effectiveTime>
+                                    <low value="20191115"/>
+                                 </effectiveTime>
+                              </marketingAct>
+                           </subjectOf>
+                        </asContent>
+                        <asContent>
+                           <quantity>
+                              <numerator value="2.5" unit="kg"/>
+                              <denominator value="1" unit="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code code="73309-057-02" codeSystem="2.16.840.1.113883.6.69"/>
+                              <formCode code="C43181" displayName="CANISTER" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           </containerPackagedProduct>
+                           <subjectOf>
+                              <marketingAct>
+                                 <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                                 <statusCode code="active"/>
+                                 <effectiveTime>
+                                    <low value="20191124"/>
+                                 </effectiveTime>
+                              </marketingAct>
+                           </subjectOf>
+                        </asContent>
+                     </manufacturedProduct>
+                     <subjectOf>
+                        <marketingAct>
+                           <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <statusCode code="active"/>
+                           <effectiveTime>
+                              <low value="20191115"/>
+                           </effectiveTime>
+                        </marketingAct>
+                     </subjectOf>
+                     <subjectOf>
+                        <approval>
+                           <code code="C98252" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="bulk ingredient for animal drug compounding"/>
+                           <author>
+                              <territorialAuthority>
+                                 <territory>
+                                    <code code="USA" codeSystem="2.16.840.1.113883.5.28"/>
+                                 </territory>
+                              </territorialAuthority>
+                           </author>
+                        </approval>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic>
+                           <code code="SPLCOLOR" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value code="C48325" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="white" xsi:type="CE"/>
+                        </characteristic>
+                     </subjectOf>
+                     <consumedIn>
+                        <substanceAdministration>
+                           <routeCode code="C48623" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="NOT APPLICABLE"/>
+                        </substanceAdministration>
+                     </consumedIn>
+                  </manufacturedProduct>
+               </subject>
+            </section>
+         </component>
+         <component>
+            <section ID="L218fa82b-29ab-43e5-8a64-a621674dd95d">
+               <id root="fd4a04b2-496a-4205-8740-b3a5b7b27931"/>
+               <code code="51945-4" codeSystem="2.16.840.1.113883.6.1" displayName="PACKAGE LABEL.PRINCIPAL DISPLAY PANEL"/>
+               <title>Prednisolone Sodium Phosphate</title>
+               <text>
+                  <paragraph>
+                     <renderMultiMedia referencedObject="L928c4cf1-76ab-405a-a494-71ac37c23c6e"/>
+                     <renderMultiMedia referencedObject="Lb1dd98c8-7dad-49fc-b77f-faf2ab9be7db"/>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20191127"/>
+               <component>
+                  <observationMedia ID="L928c4cf1-76ab-405a-a494-71ac37c23c6e">
+                     <text>image description</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="Prednisolone Sodium Phosphate 5kg Vet Zhejiang Xianju.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+               <component>
+                  <observationMedia ID="Lb1dd98c8-7dad-49fc-b77f-faf2ab9be7db">
+                     <text>image description</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="Prednisolone Sodium Phosphate 2-5kg Vet Zhejiang Xianju.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+      </structuredBody>
+   </component>
+</document>

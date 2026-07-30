@@ -1,0 +1,666 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="https://www.accessdata.fda.gov/spl/stylesheet/spl.xsl" type="text/xsl"?>
+<document xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 https://www.accessdata.fda.gov/spl/schema/spl.xsd">
+   <id root="570f19e9-1f59-4153-92b3-c2afad4aaadc"/>
+   <code code="58476-3" codeSystem="2.16.840.1.113883.6.1" displayName="DIETARY SUPPLEMENT"/>
+   <title>MultiVitamin with Fluoride</title>
+   <effectiveTime value="20250915"/>
+   <setId root="cbcc97c9-c526-4710-95ed-c72d54ab6250"/>
+   <versionNumber value="4"/>
+   <author>
+      <time/>
+      <assignedEntity>
+         <representedOrganization>
+            <id extension="028473634" root="1.3.6.1.4.1.519.1"/>
+            <name>H2-Pharma, LLC</name>
+            <assignedEntity>
+               <assignedOrganization/>
+            </assignedEntity>
+         </representedOrganization>
+      </assignedEntity>
+   </author>
+   <component>
+      <structuredBody>
+         <component>
+            <section ID="DLDE">
+               <id root="a715def6-2b2b-427b-826b-758fe2e4edf4"/>
+               <code code="48780-1" codeSystem="2.16.840.1.113883.6.1" displayName="SPL PRODUCT DATA ELEMENTS SECTION"/>
+               <effectiveTime value="20250915"/>
+               <subject>
+                  <manufacturedProduct>
+                     <manufacturedProduct>
+                        <code code="61269-161" codeSystem="2.16.840.1.113883.6.69"/>
+                        <name>MultiVitamin with Fluoride Drops</name>
+                        <formCode code="C60992" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="SOLUTION/ DROPS"/>
+                        <asEntityWithGeneric>
+                           <genericMedicine>
+                              <name>VITAMIN A PALMITATE, ASCORBIC ACID, CHOLECALCIFEROL, .ALPHA.-TOCOPHEROL, THIAMINE HYDROCHLORIDE, RIBOFLAVIN 5-PHOSPHATE SODIUM, NIACINAMIDE, PYRIDOXINE HYDROCHLORIDE, CYANOCOBALAMIN, and SODIUM FLUORIDE</name>
+                           </genericMedicine>
+                        </asEntityWithGeneric>
+                        <ingredient classCode="ACTIM">
+                           <quantity>
+                              <numerator value="450" unit="ug"/>
+                              <denominator value="1" unit="mL"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="1D1K0N0VVC" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>VITAMIN A PALMITATE</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="81G40H8B0T" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>VITAMIN A</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="G2SH0XKK91" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>RETINOL</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator value="35" unit="mg"/>
+                              <denominator value="1" unit="mL"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="PQ6CK8PD0R" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>ASCORBIC ACID</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="PQ6CK8PD0R" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>ASCORBIC ACID</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator value="10" unit="ug"/>
+                              <denominator value="1" unit="mL"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="1C6V77QF41" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>CHOLECALCIFEROL</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="1C6V77QF41" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>CHOLECALCIFEROL</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator value="3.35" unit="mg"/>
+                              <denominator value="1" unit="mL"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="H4N855PNZ1" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>.ALPHA.-TOCOPHEROL</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="H4N855PNZ1" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>.ALPHA.-TOCOPHEROL</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator value="0.5" unit="mg"/>
+                              <denominator value="1" unit="mL"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="M572600E5P" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>THIAMINE HYDROCHLORIDE</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="4ABT0J945J" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>THIAMINE ION</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIM">
+                           <quantity>
+                              <numerator value="0.6" unit="mg"/>
+                              <denominator value="1" unit="mL"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="20RD1DZH99" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>RIBOFLAVIN 5'-PHOSPHATE SODIUM DIHYDRATE</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="7N464URE7E" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>RIBOFLAVIN 5'-PHOSPHATE</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator value="8" unit="mg"/>
+                              <denominator value="1" unit="mL"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="25X51I8RD4" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>NIACINAMIDE</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="25X51I8RD4" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>NIACINAMIDE</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator value="0.4" unit="mg"/>
+                              <denominator value="1" unit="mL"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="68Y4CF58BV" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>PYRIDOXINE HYDROCHLORIDE</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="KV2JZ1BI6Z" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>PYRIDOXINE</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator value="2" unit="ug"/>
+                              <denominator value="1" unit="mL"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="P6YC3EG204" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>CYANOCOBALAMIN</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="P6YC3EG204" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>CYANOCOBALAMIN</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIM">
+                           <quantity>
+                              <numerator value="0.25" unit="mg"/>
+                              <denominator value="1" unit="mL"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="8ZYQ1474W7" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>SODIUM FLUORIDE</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="Q80VPU408O" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>FLUORIDE ION</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="T9D99G2B1R" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>CARAMEL</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="2968PHW8QP" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>CITRIC ACID MONOHYDRATE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="39R4TAN1VT" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>FERROUS SULFATE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="BUC5I9595W" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>CHERRY</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="PDC6A3C0OX" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>GLYCERIN</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="A2I8C7HI9T" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>METHYLPARABEN</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="6OZP39ZG8H" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>POLYSORBATE 80</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="059QF0KO0R" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>WATER</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="OJ245FE5EU" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>SODIUM BENZOATE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="55X04QC32I" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>SODIUM HYDROXIDE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="96K6UQ3ZD4" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>SUCRALOSE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <asContent>
+                           <quantity>
+                              <numerator value="50" unit="mL"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code/>
+                              <formCode code="C43169" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOTTLE"/>
+                              <asContent>
+                                 <quantity>
+                                    <numerator value="1" unit="1"/>
+                                    <denominator value="1"/>
+                                 </quantity>
+                                 <containerPackagedProduct>
+                                    <code code="61269-161-50" codeSystem="2.16.840.1.113883.6.69"/>
+                                    <formCode code="C43182" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="CARTON"/>
+                                 </containerPackagedProduct>
+                              </asContent>
+                           </containerPackagedProduct>
+                        </asContent>
+                     </manufacturedProduct>
+                     <subjectOf>
+                        <approval>
+                           <code code="C86952" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="DIETARY SUPPLEMENT"/>
+                           <author>
+                              <territorialAuthority>
+                                 <territory>
+                                    <code code="USA" codeSystem="2.16.840.1.113883.5.28"/>
+                                 </territory>
+                              </territorialAuthority>
+                           </author>
+                        </approval>
+                     </subjectOf>
+                     <subjectOf>
+                        <marketingAct>
+                           <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <statusCode code="completed"/>
+                           <effectiveTime>
+                              <low value="20170104"/>
+                              <high value="20261130"/>
+                           </effectiveTime>
+                        </marketingAct>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLCOLOR" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value code="C48332" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BROWN" xsi:type="CE">
+                              <originalText/>
+                           </value>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLFLAVOR" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value code="C73375" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="CHERRY" xsi:type="CE">
+                              <originalText/>
+                           </value>
+                        </characteristic>
+                     </subjectOf>
+                     <consumedIn>
+                        <substanceAdministration>
+                           <routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ORAL"/>
+                        </substanceAdministration>
+                     </consumedIn>
+                  </manufacturedProduct>
+               </subject>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="476a6446-a611-4dce-8063-85c71d5602f8"/>
+               <code code="69719-3" codeSystem="2.16.840.1.113883.6.1" displayName="HEALTH CLAIM SECTION"/>
+               <title>CLINICAL PHARMACOLOGY</title>
+               <text>
+                  <paragraph>It is well established that fluoridation of the water supply (0.7 mg/L fluoride) during the period of tooth development leads to a significant decrease in the incidence of dental caries.  Hydroxyapatite is the principal crystal for all calcified tissue in the human body. The fluoride ion reacts with the hydroxyapatite in the tooth as it is formed to produce the more caries-resistant crystal, fluorapatite. The reaction may be expressed by the equation:</paragraph>
+                  <table width="75%" styleCode="Noautorules">
+                     <col width="25%" align="center" valign="top"/>
+                     <col width="23%" align="center" valign="top"/>
+                     <col width="3%" align="left" valign="top"/>
+                     <col width="21%" align="center" valign="top"/>
+                     <col width="28%" align="center" valign="top"/>
+                     <tbody>
+                        <tr>
+                           <td/>
+                           <td>Ca<sub>10</sub>(PO<sub>4</sub>)<sub>6</sub>(OH)<sub>2</sub> + 2F–</td>
+                           <td/>
+                           <td>Ca<sub>10</sub>(PO<sub>4</sub>)<sub>6</sub>F<sub>2</sub> + 2OH–</td>
+                           <td/>
+                        </tr>
+                        <tr>
+                           <td/>
+                           <td>(Hydroxyapatite)</td>
+                           <td/>
+                           <td>(Fluorapatite)</td>
+                           <td/>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <paragraph>Three stages of fluoride deposition in tooth enamel can be distinguished:</paragraph>
+                  <paragraph>1. Small amounts (reflecting the low levels of fluoride in tissue fluids) are incorporated into the enamel crystals while they are being formed.</paragraph>
+                  <paragraph>2. After enamel has been laid down, fluoride deposition continues in the surface enamel. Diffusion of fluoride from the surface inward is apparently restricted.</paragraph>
+                  <paragraph>3. After eruption, the surface enamel acquires fluoride from water, food, supplementary fluoride and small amounts from saliva.</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">MultiVitamin with Fluoride Supplement Drops </content>provide supplementation of the diet with nine essential vitamins, and with fluoride for caries prophylaxis. The American Academy of Pediatrics recommends that children up to the age 16, in areas where drinking water contains less than optimal levels of fluoride, receive daily fluoride supplementation. MultiVitamin with Fluoride Supplement Drops provide fluoride in drop form for infants and young children 6 months to 3 years of age in areas where the drinking water contains less than 0.3 ppm of fluoride and for children ages 3 to 6 years in areas where the drinking water contains 0.3 through 0.6 ppm of fluoride.</paragraph>
+                  <paragraph>Each 1.0 mL dose of MultiVitamin with Fluoride Supplement Drops 0.25 mg supplies sodium fluoride (0.25 mg fluoride) plus nine essential vitamins. MultiVitamin with Fluoride Supplement Drops 0.25 mg supply significant amounts of vitamins A, C, D, E, thiamine, riboflavin, niacinamide, pyridoxine and cyanocobalamin to supplement the diet, and to help ensure that nutritional deficiencies of these vitamins will not develop. Thus, in a single easy-to-use preparation, infants and children obtain nine essential vitamins and fluoride.</paragraph>
+               </text>
+               <effectiveTime value="20250915"/>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="ea945f08-e4f0-42a4-99e6-4611efa14caa"/>
+               <code code="34071-1" codeSystem="2.16.840.1.113883.6.1" displayName="WARNINGS SECTION"/>
+               <title>WARNINGS</title>
+               <text>
+                  <paragraph> As in the case of all medications, keep out of the reach of children.</paragraph>
+               </text>
+               <effectiveTime value="20250915"/>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="49dd2d85-7307-4c95-a757-e39928ffafff"/>
+               <code code="42232-9" codeSystem="2.16.840.1.113883.6.1" displayName="PRECAUTIONS SECTION"/>
+               <title>PRECAUTIONS</title>
+               <text>
+                  <paragraph> The suggested dose should not be exceeded since dental fluorosis may result from continued ingestion of large amounts of fluoride. When prescribing vitamin fluoride products: </paragraph>
+                  <paragraph>1. Determine the fluoride content of the drinking water.</paragraph>
+                  <paragraph>2. Make sure the child is not receiving significant amounts of fluoride from other medications and swallowed toothpaste.</paragraph>
+                  <paragraph>3. Periodically check to make sure that the child does not develop significant dental fluorosis.</paragraph>
+               </text>
+               <effectiveTime value="20250915"/>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="72a6774f-e218-448a-83b0-011f8c0b55f8"/>
+               <code code="69719-3" codeSystem="2.16.840.1.113883.6.1" displayName="HEALTH CLAIM SECTION"/>
+               <title>ADVERSE REACTIONS</title>
+               <text>
+                  <paragraph>Allergic rash or other idiosyncrasies have been rarely reported. To report SUSPECTED ADVERSE REACTIONS, contact H2-Pharma at 1-866-592-6438 or FDA at 1-800-FDA-1088 or via the web at www.fda.gov/medwatch for voluntary reporting of adverse reactions.</paragraph>
+               </text>
+               <effectiveTime value="20250915"/>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="08682e39-7a22-4079-ab6b-9a9a8d3b27d3"/>
+               <code code="34068-7" codeSystem="2.16.840.1.113883.6.1" displayName="DOSAGE &amp; ADMINISTRATION SECTION"/>
+               <title>DOSAGE AND ADMINISTRATION</title>
+               <text>
+                  <paragraph>As directed by a physician. See American Dental Association (ADA) recommended supplement schedule below. May be dropped directly into the mouth with the enclosed dropper or mixed with cereal, fruit juice, or other food.</paragraph>
+               </text>
+               <effectiveTime value="20250915"/>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="3b155552-7890-4d24-b860-b16ed9f62618"/>
+               <code code="69718-5" codeSystem="2.16.840.1.113883.6.1" displayName="STATEMENT OF IDENTITY SECTION"/>
+               <text>
+                  <table width="60%">
+                     <caption>ADA Dietary Fluoride Supplement Schedule for Children at High Caries Risk</caption>
+                     <col width="25%" align="left" valign="top"/>
+                     <col width="25%" align="left" valign="top"/>
+                     <col width="25%" align="left" valign="top"/>
+                     <col width="25%" align="left" valign="top"/>
+                     <thead>
+                        <tr styleCode="Botrule">
+                           <th styleCode="Lrule">Age</th>
+                           <th styleCode="Rrule" colspan="3" align="center">Fluoride ion level in drinking water (ppm)<footnote>1.0 part per million (ppm) = 1 milligram/liter (mgL)</footnote>
+                           </th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr styleCode="Botrule">
+                           <td styleCode="Lrule Rrule"/>
+                           <td styleCode="Rrule">
+                              <content styleCode="bold">&lt;0.3 ppm</content>
+                           </td>
+                           <td styleCode="Rrule">
+                              <content styleCode="bold">0.3-0.6 ppm</content>
+                           </td>
+                           <td styleCode="Rrule">
+                              <content styleCode="bold">&gt;0.6 ppm</content>
+                           </td>
+                        </tr>
+                        <tr styleCode="Botrule">
+                           <td styleCode="Lrule Rrule">Birth - 6 months</td>
+                           <td styleCode="Rrule">None</td>
+                           <td styleCode="Rrule">None</td>
+                           <td styleCode="Rrule">None</td>
+                        </tr>
+                        <tr styleCode="Botrule">
+                           <td styleCode="Lrule Rrule">6 months - 3 years</td>
+                           <td styleCode="Rrule">0.25 mg/day<footnote>2.2 mg sodium fluoride contains 1 mg fluoride ion.</footnote>
+                           </td>
+                           <td styleCode="Rrule">None</td>
+                           <td styleCode="Rrule">None</td>
+                        </tr>
+                        <tr styleCode="Botrule">
+                           <td styleCode="Lrule Rrule">3-6 years</td>
+                           <td styleCode="Rrule">0.50 mg/day</td>
+                           <td styleCode="Rrule">0.25 mg/day</td>
+                           <td styleCode="Rrule">None</td>
+                        </tr>
+                        <tr styleCode="Botrule">
+                           <td styleCode="Lrule Rrule">6-16 years</td>
+                           <td styleCode="Rrule">1.0 mg/day</td>
+                           <td styleCode="Rrule">0.50 mg/day</td>
+                           <td styleCode="Rrule">None</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <paragraph>
+                     <content styleCode="bold">SHAKE WELL BEFORE USE.</content>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20250915"/>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="47bde521-e2d0-4fad-bcf3-53b083315750"/>
+               <code code="69719-3" codeSystem="2.16.840.1.113883.6.1" displayName="HEALTH CLAIM SECTION"/>
+               <title>HOW SUPPLIED</title>
+               <text>
+                  <paragraph>MultiVitamin with Fluoride Supplement Drops 0.25 mg are available in 50 mL bottles with accompanying calibrated dropper.</paragraph>
+                  <paragraph>Dispense in original container.</paragraph>
+               </text>
+               <effectiveTime value="20250915"/>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="fa781ded-fd18-4a2f-ae26-fe9ed881b8b8"/>
+               <code code="69719-3" codeSystem="2.16.840.1.113883.6.1" displayName="HEALTH CLAIM SECTION"/>
+               <title>RECOMMENDED STORAGE</title>
+               <text>
+                  <paragraph>Store at controlled room temperature, 20°-25°C (68°-77°F) [See USP Controlled Room Temperature]. After opening, store away from direct light. Close tightly after each use. REFRIGERATION IS NOT REQUIRED.</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">TAMPER EVIDENT:</content> Do not use if seal under cap is torn, broken or missing.</paragraph>
+               </text>
+               <effectiveTime value="20250915"/>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="96bd0cdb-6cf7-451a-8b56-8acd831e0cd7"/>
+               <code code="69718-5" codeSystem="2.16.840.1.113883.6.1" displayName="STATEMENT OF IDENTITY SECTION"/>
+               <text>
+                  <table width="60%">
+                     <col width="35%" align="left" valign="top"/>
+                     <col width="25%" align="left" valign="top"/>
+                     <col width="15%" align="left" valign="top"/>
+                     <col width="25%" align="left" valign="top"/>
+                     <thead>
+                        <tr>
+                           <th styleCode="Lrule Rrule" colspan="4">Supplement Facts</th>
+                        </tr>
+                        <tr>
+                           <th styleCode="Rrule Lrule" colspan="4">Serving Size 1.0 mL</th>
+                        </tr>
+                        <tr styleCode="Botrule">
+                           <th styleCode="Lrule Rrule" colspan="4">Servings Per Container 50</th>
+                           <th/>
+                        </tr>
+                        <tr>
+                           <th styleCode="Lrule"/>
+                           <th>Amount Per Serving</th>
+                           <th/>
+                           <th styleCode="Rrule">% Daily Value</th>
+                        </tr>
+                        <tr>
+                           <th styleCode="Lrule"/>
+                           <th/>
+                           <th styleCode="Rrule" colspan="2" align="right">Children over 4 &amp; Adults</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr styleCode="Botrule">
+                           <td styleCode="Lrule">Vitamin A</td>
+                           <td>450 mcg</td>
+                           <td/>
+                           <td styleCode="Rrule">50%</td>
+                        </tr>
+                        <tr styleCode="Botrule">
+                           <td styleCode="Lrule">Vitamin C</td>
+                           <td>35 mg</td>
+                           <td/>
+                           <td styleCode="Rrule">39%</td>
+                        </tr>
+                        <tr styleCode="Botrule">
+                           <td styleCode="Lrule">Vitamin D</td>
+                           <td>10 mcg (400 IU)</td>
+                           <td/>
+                           <td styleCode="Rrule">50%</td>
+                        </tr>
+                        <tr styleCode="Botrule">
+                           <td styleCode="Lrule">Vitamin E</td>
+                           <td>3.35 mg</td>
+                           <td/>
+                           <td styleCode="Rrule">22%</td>
+                        </tr>
+                        <tr styleCode="Botrule">
+                           <td styleCode="Lrule">Thiamine</td>
+                           <td>0.5 mg</td>
+                           <td/>
+                           <td styleCode="Rrule">42%</td>
+                        </tr>
+                        <tr styleCode="Botrule">
+                           <td styleCode="Lrule">Riboflavin</td>
+                           <td>0.6 mg</td>
+                           <td/>
+                           <td styleCode="Rrule">46%</td>
+                        </tr>
+                        <tr styleCode="Botrule">
+                           <td styleCode="Lrule">Niacin</td>
+                           <td>8 mg</td>
+                           <td/>
+                           <td styleCode="Rrule">50%</td>
+                        </tr>
+                        <tr styleCode="Botrule">
+                           <td styleCode="Lrule">Vitamin B<sub>6</sub>
+                           </td>
+                           <td>0.4 mg</td>
+                           <td/>
+                           <td styleCode="Rrule">24%</td>
+                        </tr>
+                        <tr styleCode="Botrule">
+                           <td styleCode="Lrule">Vitamin B<sub>12</sub>
+                           </td>
+                           <td>2 mcg</td>
+                           <td/>
+                           <td styleCode="Rrule">83%</td>
+                        </tr>
+                        <tr>
+                           <td styleCode="Lrule">Fluoride</td>
+                           <td>0.25 mg</td>
+                           <td/>
+                           <td styleCode="Rrule">
+                              <footnote>Daily Value not established</footnote>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <paragraph>*U.S. Recommended Daily Allowance not established.</paragraph>
+                  <paragraph>Consult your physician for use by infants and young children 6 months to 3 years of age.</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Active ingredient for caries prophylaxis:</content> Fluoride as sodium fluoride.</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Other ingredients:</content> Ascorbic acid, caramel color, cherry flavor, cholecalciferol, citric acid, cyanocobalamin, d-alpha-tocopheryl acetate, ferrous sulfate, glycerin, methyl paraben, niacinamide, polysorbate 80, purified water, pyridoxine HCL, riboflavin-5-phosphate sodium, sodium benzoate, sodium fluoride, sodium hydroxide, sucralose, thiamine HCL, vitamin A palmitate.</paragraph>
+               </text>
+               <effectiveTime value="20250915"/>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="d2023676-7e35-4164-984f-f14adcbfbca6"/>
+               <code code="69719-3" codeSystem="2.16.840.1.113883.6.1" displayName="HEALTH CLAIM SECTION"/>
+               <text>
+                  <paragraph>Distributed by: <content styleCode="bold">H2-Pharma, LLC</content>
+                     <br/>Montgomery, AL 36117<br/>www.h2-pharma.com</paragraph>
+               </text>
+               <effectiveTime value="20250915"/>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="99a46070-7a5d-4004-9b1e-2e2ea2ef1189"/>
+               <code code="51945-4" codeSystem="2.16.840.1.113883.6.1" displayName="PACKAGE LABEL.PRINCIPAL DISPLAY PANEL"/>
+               <title>PRINCIPAL DISPLAY PANEL - 50 mL Bottle Carton</title>
+               <text>
+                  <paragraph>61269-161-50</paragraph>
+                  <paragraph>Drops</paragraph>
+                  <paragraph>MultiVitamin<br/>with Fluoride</paragraph>
+                  <paragraph>Supplement Drops</paragraph>
+                  <paragraph>1⅔ fl. oz. (50 mL)</paragraph>
+                  <paragraph>0.25 mg</paragraph>
+                  <paragraph>H<sup>2</sup> pharma</paragraph>
+                  <renderMultiMedia referencedObject="MM1"/>
+               </text>
+               <effectiveTime value="20250915"/>
+               <component>
+                  <observationMedia ID="MM1">
+                     <text>PRINCIPAL DISPLAY PANEL - 50 mL Bottle Carton</text>
+                     <value xsi:type="ED" mediaType="image/jpeg">
+                        <reference value="multivitamin-01.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+      </structuredBody>
+   </component>
+</document>

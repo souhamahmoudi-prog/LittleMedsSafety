@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="https://www.accessdata.fda.gov/spl/stylesheet/spl.xsl" type="text/xsl"?>
+<document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 https://www.accessdata.fda.gov/spl/schema/spl.xsd">
+   <id root="55f3fd6f-a738-449d-e063-6394a90a0ea4"/>
+   <code code="34390-5" codeSystem="2.16.840.1.113883.6.1" displayName="HUMAN OTC DRUG LABEL"/>
+   <title>Dr Kids Pain+ Fever (LA)</title>
+   <effectiveTime value="20260706"/>
+   <setId root="2ee6df99-727a-34c6-e063-6294a90a6bbc"/>
+   <versionNumber value="3"/>
+   <author>
+      <time/>
+      <assignedEntity>
+         <representedOrganization>
+            <id root="1.3.6.1.4.1.519.1" extension="079308308"/>
+            <name>CalmCo LLC</name>
+         </representedOrganization>
+      </assignedEntity>
+   </author>
+   <component>
+      <structuredBody>
+         <component>
+            <section>
+               <id root="55f3f64e-1412-83cd-e063-6294a90ab132"/>
+               <code code="48780-1" codeSystem="2.16.840.1.113883.6.1" displayName="SPL product data elements section"/>
+               <effectiveTime value="20260706"/>
+               <subject>
+                  <manufacturedProduct>
+                     <manufacturedProduct>
+                        <code code="73282-2522" codeSystem="2.16.840.1.113883.6.69"/>
+                        <name>Dr Kids<suffix>Pain and Fever</suffix>
+                        </name>
+                        <formCode code="C42986" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="SOLUTION"/>
+                        <asEntityWithGeneric>
+                           <genericMedicine>
+                              <name>Acetaminophen</name>
+                           </genericMedicine>
+                        </asEntityWithGeneric>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="96K6UQ3ZD4" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>SUCRALOSE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="506T60A25R" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>SORBITOL</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="OJ245FE5EU" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>SODIUM BENZOATE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="PDC6A3C0OX" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>GLYCERIN</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="059QF0KO0R" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>WATER</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="6DC9Q167V3" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>PROPYLENE GLYCOL</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="VCQ006KQ1E" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>XYLITOL</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator unit="mg" value="160"/>
+                              <denominator unit="mL" value="5"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="362O9ITL9D" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>ACETAMINOPHEN</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="362O9ITL9D" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>ACETAMINOPHEN</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="05JZI7B19X" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>CARBOXYMETHYLCELLULOSE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="WZB9127XOA" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>FD&amp;C RED NO. 40</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="XF417D3PSL" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>ANHYDROUS CITRIC ACID</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <asContent>
+                           <quantity>
+                              <numerator value="5" unit="mL"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code/>
+                              <formCode code="C43215" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="VIAL, SINGLE-DOSE"/>
+                              <asContent>
+                                 <quantity>
+                                    <numerator value="30" unit="1"/>
+                                    <denominator value="1"/>
+                                 </quantity>
+                                 <containerPackagedProduct>
+                                    <code code="73282-2522-1" codeSystem="2.16.840.1.113883.6.69"/>
+                                    <formCode code="C43200" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="POUCH"/>
+                                 </containerPackagedProduct>
+                                 <subjectOf>
+                                    <marketingAct>
+                                       <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                                       <statusCode code="active"/>
+                                       <effectiveTime>
+                                          <low value="20250312"/>
+                                       </effectiveTime>
+                                    </marketingAct>
+                                 </subjectOf>
+                              </asContent>
+                           </containerPackagedProduct>
+                           <subjectOf>
+                              <characteristic>
+                                 <code code="SPLCMBPRDTP" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                                 <value code="C112160" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="Type 0: Not a Combination Product" xsi:type="CV"/>
+                              </characteristic>
+                           </subjectOf>
+                        </asContent>
+                     </manufacturedProduct>
+                     <subjectOf>
+                        <approval>
+                           <id extension="M012" root="2.16.840.1.113883.3.9421"/>
+                           <code code="C200263" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="OTC Monograph Drug"/>
+                           <author>
+                              <territorialAuthority>
+                                 <territory>
+                                    <code code="USA" codeSystem="2.16.840.1.113883.5.28"/>
+                                 </territory>
+                              </territorialAuthority>
+                           </author>
+                        </approval>
+                     </subjectOf>
+                     <subjectOf>
+                        <marketingAct>
+                           <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <statusCode code="active"/>
+                           <effectiveTime>
+                              <low value="20250312"/>
+                           </effectiveTime>
+                        </marketingAct>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLFLAVOR" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value code="C73375" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="CHERRY" xsi:type="CE">
+                              <originalText/>
+                           </value>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLCOLOR" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value code="C48326" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="red" xsi:type="CE">
+                              <originalText/>
+                           </value>
+                        </characteristic>
+                     </subjectOf>
+                     <consumedIn>
+                        <substanceAdministration>
+                           <routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ORAL"/>
+                        </substanceAdministration>
+                     </consumedIn>
+                  </manufacturedProduct>
+               </subject>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_28ecde90-e59f-dcde-e063-6394a90a8a5d">
+               <id root="28ecde90-e59e-dcde-e063-6394a90a8a5d"/>
+               <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+               <title>
+                  <content styleCode="italics">
+                     <content styleCode="bold">Drug Facts</content>
+                  </content>
+               </title>
+               <effectiveTime value="20250120"/>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_28ecde90-e5a1-dcde-e063-6394a90a8a5d">
+               <id root="3028965f-c6a3-5edb-e063-6394a90abf8c"/>
+               <code code="55106-9" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - ACTIVE INGREDIENT SECTION"/>
+               <title>
+                  <content styleCode="bold">Active Ingredient and Purpose</content>
+               </title>
+               <effectiveTime value="20250120"/>
+               <component>
+                  <section ID="id_link_291c64e0-cc1c-6d79-e063-6294a90a7727">
+                     <id root="2ee723d1-68b5-5c59-e063-6294a90a06c7"/>
+                     <code code="55105-1" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - PURPOSE SECTION"/>
+                     <text>
+                        <table border="0" width="100%">
+                           <tbody>
+                              <tr>
+                                 <td>
+                                    <content styleCode="italics">
+                                       <content styleCode="bold">Active ingredient (in each 5 mL vial)</content>
+                                    </content>
+                                 </td>
+                                 <td>
+                                    <content styleCode="italics">
+                                       <content styleCode="bold">Purpose</content>
+                                    </content>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td>Acetaminophen 160 mg...............</td>
+                                 <td>Pain reliever/fever reducer</td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <paragraph/>
+                     </text>
+                     <effectiveTime value="20241212"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_291a7046-56ed-1fdc-e063-6294a90a3b4e">
+               <id root="2ee736da-8d3b-eaf5-e063-6394a90a0fb9"/>
+               <code code="55105-1" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - PURPOSE SECTION"/>
+               <text>
+                  <table border="0" width="100%">
+                     <tbody>
+                        <tr>
+                           <td>
+                              <content styleCode="italics">
+                                 <content styleCode="bold">Active ingredient (in each 5mL vial)</content>
+                              </content>
+                           </td>
+                           <td>
+                              <content styleCode="italics">
+                                 <content styleCode="bold">Purpose</content>
+                              </content>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td>Acetaminophen 160 mg.....................</td>
+                           <td>Pain reliever/ fever reducer</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <paragraph/>
+               </text>
+               <effectiveTime value="20241212"/>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_29191a1e-7863-4fb4-e063-6294a90ac3f7">
+               <id root="2ee72ef1-34c0-6027-e063-6294a90ad525"/>
+               <code code="34067-9" codeSystem="2.16.840.1.113883.6.1" displayName="INDICATIONS &amp; USAGE SECTION"/>
+               <title>
+                  <content styleCode="italics">
+                     <content styleCode="bold">Uses</content>
+                  </content>
+               </title>
+               <text>
+                  <paragraph>For the temporary relief of minor aches and pains due to</paragraph>
+                  <list listType="unordered">
+                     <item>sore throat</item>
+                     <item>headache</item>
+                     <item>and to reduce fever</item>
+                  </list>
+               </text>
+               <effectiveTime value="20241212"/>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_28ec9818-e611-e57e-e063-6394a90ae324">
+               <id root="2ee73915-8110-f2f3-e063-6394a90af06a"/>
+               <code code="34071-1" codeSystem="2.16.840.1.113883.6.1" displayName="WARNINGS SECTION"/>
+               <title>
+                  <content styleCode="italics">
+                     <content styleCode="bold">Warnings</content>
+                  </content>
+               </title>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">Liver warning:</content> This product contains acetaminophen. Severe liver damage may occur if your child takes more than 5 doses in 24 hours, which is the maximum daily amount for this product acetaminophen
+ </paragraph>
+                  <paragraph/>
+                  <paragraph>
+                     <content styleCode="bold">Allergy alert: </content>Acetaminophen may cause severe skin reactions. Symptoms may include: skin redness blisters rash
+ </paragraph>
+                  <paragraph/>
+                  <paragraph>
+                     <content styleCode="bold">Sore throat warning: </content>If sore throat is severe, persists for more than 2 days, is accompanied or followed by fever, headache, rash, nausea, or vomiting,  consult a doctor promptly
+ </paragraph>
+               </text>
+               <effectiveTime value="20250120"/>
+               <component>
+                  <section ID="id_link_28ecd989-f7f2-e5b3-e063-6294a90af9a4">
+                     <id root="2ee75089-7b3d-69e1-e063-6294a90a3376"/>
+                     <code code="50570-1" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - DO NOT USE SECTION"/>
+                     <title>
+                        <content styleCode="bold">Do not use</content>
+                     </title>
+                     <text>
+                        <paragraph>with any other drug containing acetaminophen (prescription or nonprescription). If you are not sure whether a drug contains acetaminophen, ask a doctor or pharmacist</paragraph>
+                     </text>
+                     <effectiveTime value="20241212"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="id_link_28ed225c-22e2-d083-e063-6394a90af417">
+                     <id root="2ee7589a-d801-00ea-e063-6394a90a70e4"/>
+                     <code code="50569-3" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - ASK DOCTOR SECTION"/>
+                     <title>
+                        <content styleCode="bold">Ask a doctor before use if your child has</content>
+                     </title>
+                     <text>
+                        <list listType="unordered">
+                           <item>liver disease</item>
+                        </list>
+                     </text>
+                     <effectiveTime value="20250120"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="id_link_28ed39cc-78c3-c4da-e063-6294a90a4f67">
+                     <id root="2ee76376-1109-924f-e063-6294a90a02ca"/>
+                     <code code="50568-5" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - ASK DOCTOR/PHARMACIST SECTION"/>
+                     <title>
+                        <content styleCode="bold">Ask a doctor or pharmacist before use if your child is </content>
+                     </title>
+                     <text>
+                        <paragraph>taking the blood thinning drug warfarin</paragraph>
+                     </text>
+                     <effectiveTime value="20250120"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="id_link_291aa586-5ffa-96b1-e063-6394a90ae91e">
+                     <id root="2ee76b5e-5649-813d-e063-6294a90a32b8"/>
+                     <code code="50566-9" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - STOP USE SECTION"/>
+                     <title>
+                        <content styleCode="bold">Stop use and ask a doctor if </content>
+                     </title>
+                     <text>
+                        <list listType="unordered">
+                           <item>pain gets worse or lasts more than 5 days</item>
+                           <item>fever gets worse or lasts more than 3 days</item>
+                           <item>edness or swelling is present</item>
+                           <item>any new symptoms appear</item>
+                        </list>
+                     </text>
+                     <effectiveTime value="20241212"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="id_link_28ed3fab-0a47-b8ed-e063-6394a90ad8f7">
+                     <id root="2ee75089-7b41-69e1-e063-6294a90a3376"/>
+                     <code code="50565-1" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - KEEP OUT OF REACH OF CHILDREN SECTION"/>
+                     <title>
+                        <content styleCode="bold">Keep out of reach of children.</content>
+                     </title>
+                     <text>
+                        <paragraph>In case of accidental overdose, get medical help or contact a Poison Control Center right away (1-800-222-1222). Prompt medical attention is critical even if you do not notice any signs or symptoms.</paragraph>
+                     </text>
+                     <effectiveTime value="20250120"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_28ed332e-2d27-caa9-e063-6294a90adfa0">
+               <id root="3028988b-9f16-6446-e063-6394a90a4078"/>
+               <code code="34068-7" codeSystem="2.16.840.1.113883.6.1" displayName="DOSAGE &amp; ADMINISTRATION SECTION"/>
+               <title>
+                  <content styleCode="bold">
+                     <content styleCode="italics">Directions</content>
+                  </content>
+               </title>
+               <text>
+                  <list listType="unordered">
+                     <item>
+                        <content styleCode="bold">this product does not contain directions or complete warnings for adult use</content>
+                     </item>
+                     <item>do not exceed 5 doses in a 24-hour period 
+   <content styleCode="bold">(see liver warning)</content>
+                     </item>
+                     <item>follow the “Easy to Use” instructions on the pouch</item>
+                  </list>
+                  <paragraph>corresponds to your child’s age use the dose that</paragraph>
+                  <paragraph/>
+                  <paragraph/>
+                  <paragraph/>
+                  <table border="0" width="100%">
+                     <tbody>
+                        <tr>
+                           <td>
+                              <content styleCode="bold">Age (Years)</content>
+                           </td>
+                           <td>
+                              <content styleCode="bold">Dose* </content>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td>under 2</td>
+                           <td>consult a doctor</td>
+                        </tr>
+                        <tr>
+                           <td>2 to under 6</td>
+                           <td>1 vial (5 mL)</td>
+                        </tr>
+                        <tr>
+                           <td>6 to 11</td>
+                           <td>2 vials (10 mL)</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <paragraph>*dose may be repeated every 4 hours while symptoms persist, up to five times a day or as directed by a doctor.</paragraph>
+                  <paragraph/>
+                  <paragraph/>
+               </text>
+               <effectiveTime value="20250120"/>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_28ed332e-2d2d-caa9-e063-6294a90adfa0">
+               <id root="2ee7b56e-e123-c019-e063-6294a90a5565"/>
+               <code code="60561-8" codeSystem="2.16.840.1.113883.6.1" displayName="OTHER SAFETY INFORMATION"/>
+               <title>
+                  <content styleCode="italics">
+                     <content styleCode="bold">Other information</content>
+                  </content>
+               </title>
+               <text>
+                  <list listType="unordered">
+                     <item>
+                        <content styleCode="bold">each 5 mL vial contains: </content>sodium 2 mg
+  </item>
+                     <item>store between 68-77°F (20-25°C)</item>
+                     <item>do not use if pouch or vial is punctured, torn or open</item>
+                  </list>
+               </text>
+               <effectiveTime value="20250120"/>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_28ed3928-3011-efe0-e063-6294a90a145d">
+               <id root="2ee7c2dd-c19e-c75f-e063-6294a90afaab"/>
+               <code code="51727-6" codeSystem="2.16.840.1.113883.6.1" displayName="INACTIVE INGREDIENT SECTION"/>
+               <title>
+                  <content styleCode="bold">
+                     <content styleCode="italics">Inactive ingredients</content>
+                  </content>
+               </title>
+               <text>
+                  <paragraph>anhydrous citric acid, carboxymethylcellulose, FD&amp;C red #40, flavors, glycerin, propylene glycol, sodium benzoate, sorbitol, sucralose, xylitol, water</paragraph>
+               </text>
+               <effectiveTime value="20250120"/>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_28ed3e50-5068-9ef7-e063-6294a90a590d">
+               <id root="2ee7c401-d6c4-3016-e063-6394a90a1320"/>
+               <code code="53413-1" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - QUESTIONS SECTION"/>
+               <title>
+                  <content styleCode="italics">
+                     <content styleCode="bold">Questions or comments?</content>
+                  </content>
+               </title>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">+1 941-202-3270</content> (M-F) 9AM-5PM EST or visit www.DrKids.com
+ </paragraph>
+                  <paragraph/>
+                  <paragraph/>
+                  <paragraph/>
+                  <paragraph>Distributed by: CalmCo LLC, Sarasota, FL 34240</paragraph>
+               </text>
+               <effectiveTime value="20250120"/>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_28ed3e50-506b-9ef7-e063-6294a90a590d">
+               <id root="30286ec7-ccca-4fc7-e063-6394a90aeaa7"/>
+               <code code="51945-4" codeSystem="2.16.840.1.113883.6.1" displayName="PACKAGE LABEL.PRINCIPAL DISPLAY PANEL"/>
+               <title>
+                  <content styleCode="bold">Principal Display Panel </content>
+               </title>
+               <text>
+                  <paragraph>
+                     <renderMultiMedia referencedObject="img_302861dc-a320-4cab-e063-6394a90a8234"/>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20250120"/>
+               <component>
+                  <observationMedia ID="img_302861dc-a320-4cab-e063-6394a90a8234">
+                     <text>Dr Kids Pain and Fever acetaminophen</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="Dr Kids Pain and Fever acetaminophen.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+      </structuredBody>
+   </component>
+</document>

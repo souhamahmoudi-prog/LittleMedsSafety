@@ -1,0 +1,1437 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="https://www.accessdata.fda.gov/spl/stylesheet/spl.xsl" type="text/xsl"?>
+<document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 https://www.accessdata.fda.gov/spl/schema/spl.xsd">
+   <id root="54d9e1fc-507e-1859-e063-6394a90a8c6b"/>
+   <code code="34391-3" codeSystem="2.16.840.1.113883.6.1" displayName="HUMAN PRESCRIPTION DRUG LABEL"/>
+   <title>Ibuprofen Famotidine</title>
+   <effectiveTime value="20260622"/>
+   <setId root="54d9e1fc-507d-1859-e063-6394a90a8c6b"/>
+   <versionNumber value="1"/>
+   <author>
+      <time/>
+      <assignedEntity>
+         <representedOrganization>
+            <id root="1.3.6.1.4.1.519.1" extension="079254320"/>
+            <name>Direct_Rx</name>
+            <assignedEntity>
+               <assignedOrganization>
+                  <id root="1.3.6.1.4.1.519.1" extension="079254320"/>
+                  <name>Direct_Rx</name>
+                  <assignedEntity>
+                     <assignedOrganization>
+                        <id root="1.3.6.1.4.1.519.1" extension="079254320"/>
+                        <name>Direct_Rx</name>
+                     </assignedOrganization>
+                     <performance>
+                        <actDefinition>
+                           <code code="C73607" displayName="relabel" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <product>
+                              <manufacturedProduct classCode="MANU">
+                                 <manufacturedMaterialKind>
+                                    <code code="72189-667" codeSystem="2.16.840.1.113883.6.69"/>
+                                 </manufacturedMaterialKind>
+                              </manufacturedProduct>
+                           </product>
+                        </actDefinition>
+                     </performance>
+                  </assignedEntity>
+               </assignedOrganization>
+            </assignedEntity>
+         </representedOrganization>
+      </assignedEntity>
+   </author>
+   <component>
+      <structuredBody>
+         <component>
+            <section>
+               <id root="54da40e4-ef80-f45a-e063-6294a90adce2"/>
+               <code code="48780-1" codeSystem="2.16.840.1.113883.6.1" displayName="SPL product data elements section"/>
+               <effectiveTime value="20260622"/>
+               <subject>
+                  <manufacturedProduct>
+                     <manufacturedProduct>
+                        <code code="72189-667" codeSystem="2.16.840.1.113883.6.69"/>
+                        <name>Ibuprofen Famotidine</name>
+                        <formCode code="C42998" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TABLET"/>
+                        <asEntityWithGeneric>
+                           <genericMedicine>
+                              <name>Ibuprofen Famotidine</name>
+                           </genericMedicine>
+                        </asEntityWithGeneric>
+                        <asEquivalentEntity classCode="EQUIV">
+                           <code code="C64637" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <definingMaterialKind>
+                              <code code="72578-214" codeSystem="2.16.840.1.113883.6.69"/>
+                           </definingMaterialKind>
+                        </asEquivalentEntity>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="15FIX9V2JP" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>TITANIUM DIOXIDE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator unit="mg" value="800"/>
+                              <denominator unit="1" value="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="WK2XYI10QM" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>IBUPROFEN</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="WK2XYI10QM" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>IBUPROFEN</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="7SEV7J4R1U" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>TALC</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="532B59J990" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>POLYVINYL ALCOHOL, UNSPECIFIED</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="OP1R32D61U" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>MICROCRYSTALLINE CELLULOSE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="368GB5141J" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>SODIUM LAURYL SULFATE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="M28OL1HH48" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>CROSCARMELLOSE SODIUM</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="36SFW2JZ0W" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>HYPROMELLOSE 2910 (15 MPA.S)</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="70097M6I30" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>MAGNESIUM STEARATE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="46N107B71O" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>SHELLAC</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator unit="mg" value="26.6"/>
+                              <denominator unit="1" value="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="5QZO15J2Z8" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>FAMOTIDINE</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="5QZO15J2Z8" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>FAMOTIDINE</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="XM0M87F357" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>FERROSOFERRIC OXIDE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="ETJ7Z6XBU4" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>SILICON DIOXIDE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="U72Q2I8C85" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>GLYCERYL MONO- AND DICAPRYLOCAPRATE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="6DC9Q167V3" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>PROPYLENE GLYCOL</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <asContent>
+                           <quantity>
+                              <numerator value="90" unit="1"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code code="72189-667-90" codeSystem="2.16.840.1.113883.6.69"/>
+                              <formCode code="C43169" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOTTLE"/>
+                           </containerPackagedProduct>
+                           <subjectOf>
+                              <characteristic>
+                                 <code code="SPLCMBPRDTP" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                                 <value code="C112160" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="Type 0: Not a Combination Product" xsi:type="CV"/>
+                              </characteristic>
+                           </subjectOf>
+                           <subjectOf>
+                              <marketingAct>
+                                 <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                                 <statusCode code="active"/>
+                                 <effectiveTime>
+                                    <low value="20260622"/>
+                                 </effectiveTime>
+                              </marketingAct>
+                           </subjectOf>
+                        </asContent>
+                     </manufacturedProduct>
+                     <subjectOf>
+                        <approval>
+                           <id extension="ANDA218684" root="2.16.840.1.113883.3.150"/>
+                           <code code="C73584" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ANDA"/>
+                           <author>
+                              <territorialAuthority>
+                                 <territory>
+                                    <code code="USA" codeSystem="2.16.840.1.113883.5.28"/>
+                                 </territory>
+                              </territorialAuthority>
+                           </author>
+                        </approval>
+                     </subjectOf>
+                     <subjectOf>
+                        <marketingAct>
+                           <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <statusCode code="active"/>
+                           <effectiveTime>
+                              <low value="20260622"/>
+                           </effectiveTime>
+                        </marketingAct>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLSIZE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value unit="mm" value="18" xsi:type="PQ"/>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLSCORE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value value="1" xsi:type="INT"/>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLSHAPE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value code="C48336" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="CAPSULE" xsi:type="CE">
+                              <originalText/>
+                           </value>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLCOLOR" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value code="C48325" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="white" xsi:type="CE">
+                              <originalText>(White to off-white)</originalText>
+                           </value>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLIMPRINT" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value xsi:type="ST">777</value>
+                        </characteristic>
+                     </subjectOf>
+                     <consumedIn>
+                        <substanceAdministration>
+                           <routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ORAL"/>
+                        </substanceAdministration>
+                     </consumedIn>
+                  </manufacturedProduct>
+               </subject>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_54da0cf6-b6aa-a929-e063-6294a90a51fb">
+               <id root="54da0cf6-b6a9-a929-e063-6294a90a51fb"/>
+               <code code="34066-1" codeSystem="2.16.840.1.113883.6.1" displayName="BOXED WARNING SECTION"/>
+               <text>
+                  <paragraph>BOXED WARNING</paragraph>
+                  <paragraph>WARNING: RISK OF SERIOUS CARDIOVASCULAR AND GASTROINTESTINAL EVENTS</paragraph>
+                  <paragraph>Cardiovascular Thrombotic Events</paragraph>
+                  <paragraph>Nonsteroidal anti-inflammatory drugs (NSAIDs) cause an increased risk of serious cardiovascular thrombotic events, including myocardial infarction and stroke, which can be fatal. This risk may occur early in treatment and may increase with duration of use [see Warnings and Precautions (5.1)].
+  <br/>
+Ibuprofen and famotidine tablets are contraindicated in the setting of coronary artery bypass graft (CABG) surgery [see Contraindications (4) and Warnings and Precautions (5.1)].
+ </paragraph>
+                  <paragraph>Gastrointestinal Bleeding, Ulceration and Perforation</paragraph>
+                  <paragraph>NSAIDs cause an increased risk of serious gastrointestinal (GI) adverse events including bleeding, ulceration and perforation of the stomach or intestines, which can be fatal. These events can occur at any time during use and without warning symptoms. Elderly patients and patients with a prior history of peptic ulcer disease and/or GI bleeding are at greater risk for serious GI events [see Warnings and Precautions (5.2)].</paragraph>
+               </text>
+               <effectiveTime value="20260622"/>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_54d9f9d8-28bd-2d53-e063-6394a90a4f4d">
+               <id root="54d9f9d8-28bc-2d53-e063-6394a90a4f4d"/>
+               <code code="34067-9" codeSystem="2.16.840.1.113883.6.1" displayName="INDICATIONS &amp; USAGE SECTION"/>
+               <text>
+                  <paragraph>Ibuprofen and famotidine tablets, a combination of the NSAID ibuprofen and the histamine H2-receptor antagonist famotidine, is indicated for the relief of signs and symptoms of rheumatoid arthritis and osteoarthritis and to decrease the risk of developing upper gastrointestinal ulcers, which in the clinical trials was defined as a gastric and/or duodenal ulcer, in patients who are taking ibuprofen for those indications. The clinical trials primarily enrolled patients less than 65 years of age without a prior history of gastrointestinal ulcer. Controlled trials do not extend beyond 6 months [see Clinical Studies (14), Use in Specific Populations (8.5)].</paragraph>
+               </text>
+               <effectiveTime value="20260622"/>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_54da0f80-1a18-6b03-e063-6294a90a1492">
+               <id root="54da0f80-1a17-6b03-e063-6294a90a1492"/>
+               <code code="34068-7" codeSystem="2.16.840.1.113883.6.1" displayName="DOSAGE &amp; ADMINISTRATION SECTION"/>
+               <text>
+                  <paragraph>Carefully consider the potential benefits and risks of ibuprofen and famotidine tablets and other treatment options before deciding to use ibuprofen and famotidine tablets. Use ibuprofen at the lowest effective dosage for the shortest duration consistent with individual patient treatment goals [see Warnings and Precautions (5)].</paragraph>
+                  <paragraph>The recommended daily dose of ibuprofen and famotidine 800 mg/26.6 mg is a single tablet administered orally three times per day.</paragraph>
+                  <paragraph>Ibuprofen and famotidine tablets should be swallowed whole and should not be cut to supply a lower dose. Do not chew, divide or crush tablets.</paragraph>
+                  <paragraph>Patients should be instructed that if a dose is missed, it should be taken as soon possible. However, if the next scheduled dose is due, the patient should not take the missed dose and should be instructed to take the next dose on time. Patients should be instructed not to take 2 doses at one time to make up for a missed dose.</paragraph>
+                  <paragraph>Do not substitute ibuprofen and famotidine tablets with the single-ingredient products of ibuprofen and famotidine.</paragraph>
+               </text>
+               <effectiveTime value="20260622"/>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_54da0902-3533-4195-e063-6394a90a2df4">
+               <id root="54da0902-3532-4195-e063-6394a90a2df4"/>
+               <code code="43678-2" codeSystem="2.16.840.1.113883.6.1" displayName="DOSAGE FORMS &amp; STRENGTHS SECTION"/>
+               <text>
+                  <paragraph>Ibuprofen and famotidine tablets, 800 mg/26.6 mg are white to off-white colored, modified capsule shaped, film coated beveled edge tablets imprinted with "777" on one side and plain on other side.</paragraph>
+               </text>
+               <effectiveTime value="20260622"/>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_54da0ca4-e668-4177-e063-6394a90a35d1">
+               <id root="54da0ca4-e667-4177-e063-6394a90a35d1"/>
+               <code code="34070-3" codeSystem="2.16.840.1.113883.6.1" displayName="CONTRAINDICATIONS SECTION"/>
+               <text>
+                  <paragraph>Ibuprofen and famotidine tablets are contraindicated in the following patients:</paragraph>
+                  <paragraph>Known hypersensitivity (e.g., anaphylactic reactions and serious skin reactions) to ibuprofen or famotidine or any components of the drug product [see Warnings and Precautions (5.8, 5.11)].
+  <br/>
+History of asthma, urticaria or other allergic-type reactions after taking aspirin or other NSAIDs. Severe, sometimes fatal, anaphylactic reactions to NSAIDs have been reported in such patients [see Warnings and Precautions (5.8, 5.10)].
+  <br/>
+In the setting of coronary artery bypass graft (CABG) surgery [see Warnings and Precautions (5.1)].
+  <br/>
+Ibuprofen and famotidine tablets should not be administered to patients with a history of hypersensitivity to other H2-receptor antagonists. Cross sensitivity with other H2-receptor antagonists has been observed.
+ </paragraph>
+               </text>
+               <effectiveTime value="20260622"/>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_54da0cf6-b6ac-a929-e063-6294a90a51fb">
+               <id root="54da0cf6-b6ab-a929-e063-6294a90a51fb"/>
+               <code code="43685-7" codeSystem="2.16.840.1.113883.6.1" displayName="WARNINGS AND PRECAUTIONS SECTION"/>
+               <text>
+                  <paragraph>5.1 Cardiovascular Thrombotic Events</paragraph>
+                  <paragraph>Clinical trials of several COX-2 selective and nonselective NSAIDs of up to three years duration have shown an increased risk of serious cardiovascular (CV) thrombotic events, including myocardial infarction (MI) and stroke, which can be fatal. Based on available data, it is unclear that the risk for CV thrombotic events is similar for all NSAIDS. The relative increase in serious CV thrombotic events over baseline conferred by NSAID use appears to be similar in those with and without known CV disease or risk factors for CV disease. However, patients with known CV disease or risk factors had a higher absolute incidence of excess serious CV thrombotic events, due to their increased baseline rate. Some observational studies found that this increased risk of serious CV thrombotic events began as early as the first weeks of treatment. The increase in CV thrombotic risk has been observed most consistently at higher doses.</paragraph>
+                  <paragraph>To minimize the potential risk for an adverse CV event in NSAID-treated patients, use the lowest effective dose for the shortest duration possible. Physicians and patients should remain alert for the development of such events, throughout the entire treatment course, even in the absence of previous CV symptoms. Patients should be informed about the symptoms of serious CV events and the steps to take if they occur.</paragraph>
+                  <paragraph>There is no consistent evidence that concurrent use of aspirin mitigates the increased risk of serious CV thrombotic events associated with NSAID use. The concurrent use of aspirin and an NSAID, such as ibuprofen, increases the risk of serious gastrointestinal GI events [see Warnings and Precautions (5.2)].</paragraph>
+                  <paragraph>Status Post Coronary Artery Bypass Graft (CABG) Surgery</paragraph>
+                  <paragraph>Two large, controlled, clinical trials of a COX-2 selective NSAID for the treatment of pain in the first 10 days to 14 days following CABG surgery found an increased incidence of myocardial infarction and stroke. NSAIDs are contraindicated in the setting of CABG [see Contraindications (4)].</paragraph>
+                  <paragraph>Post-MI Patients</paragraph>
+                  <paragraph>Observational studies conducted in the Danish National Registry have demonstrated that patients treated with NSAIDs in the post-MI period were at increased risk of reinfarction, CV-related death and all-cause mortality beginning in the first week of treatment. In this same cohort, the incidence of death in the first year post-MI was 20 per 100 person years in NSAID-treated patients compared to 12 per 100 person years in non-NSAID exposed patients. Although the absolute rate of death declined somewhat after the first year post-MI, the increased relative risk of death in NSAID users persisted over at least the next four years of follow-up.</paragraph>
+                  <paragraph>Avoid the use of ibuprofen and famotidine tablets in patients with a recent MI unless the benefits are expected to outweigh the risk of recurrent CV thrombotic events. If ibuprofen and famotidine tablets are used in patients with a recent MI, monitor patients for signs of cardiac ischemia.</paragraph>
+                  <paragraph>5.2 Gastrointestinal Bleeding, Ulceration and Perforation</paragraph>
+                  <paragraph>NSAIDs, including ibuprofen, cause serious gastrointestinal (GI) adverse events including inflammation, bleeding, ulceration and perforation of the esophagus, stomach, small intestine or large intestine, which can be fatal. These serious adverse events can occur at any time, with or without warning symptoms, in patients treated with NSAIDS. Only one in five patients who develop a serious upper GI adverse event on NSAID therapy is symptomatic. Upper GI ulcers, gross bleeding or perforation caused by NSAIDs occurred in approximately 1% of patients treated for 3 months to 6 months and in about 2% to 4% of patients treated for one year. However, even short-term NSAID therapy is not without risk.</paragraph>
+                  <paragraph>Risk Factors for GI Bleeding, Ulceration and Perforation</paragraph>
+                  <paragraph>Patients with a prior history of peptic ulcer disease and/or GI bleeding who used NSAIDs had a greater than 10-fold increased risk for developing a GI bleed compared to patients without these risk factors. Other factors that increase the risk of GI bleeding in patients treated with NSAIDs include longer duration of NSAID therapy; concomitant use of oral corticosteroids, aspirin, anticoagulants or selective serotonin reuptake inhibitors (SSRIs); smoking; use of alcohol; older age and poor general health status. Most postmarketing reports of fatal GI events occurred in elderly or debilitated patients. Additionally, patients with advanced liver disease and/or coagulopathy are at increased risk for GI bleeding. NSAIDs should be given with care to patients with a history of inflammatory bowel disease (ulcerative colitis, Crohn's disease) as their condition may be exacerbated.</paragraph>
+                  <paragraph>Strategies to Minimize the GI Risks in NSAID-treated patients:</paragraph>
+                  <paragraph>Use the lowest effective dosage for the shortest possible duration.
+  <br/>
+Avoid administration of more than one NSAID at a time.
+  <br/>
+Avoid use in patients at higher risk unless benefits are expected to outweigh the increased risk of bleeding. For such patients, as well as those with active GI bleeding, consider alternate therapies other than NSAIDs.
+  <br/>
+Remain alert for signs and symptoms of GI ulceration and bleeding during NSAID therapy.
+  <br/>
+If a serious GI adverse event is suspected, promptly initiate evaluation and treatment and discontinue ibuprofen and famotidine tablets until a serious GI adverse event is ruled out.
+  <br/>
+In the setting of concomitant use of low-dose aspirin for cardiac prophylaxis, monitor patients more closely for evidence of GI bleeding [see Drug Interactions (7)].
+ </paragraph>
+                  <paragraph>5.3 Active Bleeding</paragraph>
+                  <paragraph>When active and clinically significant bleeding from any source occurs in patients receiving ibuprofen and famotidine tablets, the treatment should be withdrawn. Patients with initial hemoglobin values of 10 g or less who are to receive long-term therapy should have hemoglobin values determined periodically.</paragraph>
+                  <paragraph>5.4 Hepatotoxicity</paragraph>
+                  <paragraph>Elevations of ALT or AST (three or more times the upper limit of normal [ULN]) have been reported in approximately 1% of NSAID-treated patients in clinical trials. In addition, rare, sometimes fatal, cases of severe hepatic injury, including fulminant hepatitis, liver necrosis and hepatic failure have been reported.</paragraph>
+                  <paragraph>Elevations of ALT or AST (less than three times ULN) may occur in up to 15% of patients treated with NSAIDs including ibuprofen.</paragraph>
+                  <paragraph>Inform patients of the warning signs and symptoms of hepatotoxicity (e.g., nausea, fatigue, lethargy, diarrhea, pruritus, jaundice, right upper quadrant tenderness and "flu-like" symptoms). If clinical signs and symptoms consistent with liver disease develop, or if systemic manifestations occur (e.g., eosinophilia, rash, etc.), discontinue ibuprofen and famotidine tablets immediately and perform a clinical evaluation of the patient.</paragraph>
+                  <paragraph>5.5 Hypertension</paragraph>
+                  <paragraph>NSAIDs, including ibuprofen and famotidine tablets, can lead to new onset of hypertension or worsening of pre-existing hypertension, either of which may contribute to the increased incidence of CV events. Patients taking angiotensin converting enzyme (ACE) inhibitors, thiazide diuretics or loop diuretics may have impaired response to these therapies when taking NSAIDs [see Drug Interactions (7)].</paragraph>
+                  <paragraph>Monitor blood pressure (BP) during the initiation of NSAID treatment and throughout the course of therapy.</paragraph>
+                  <paragraph>5.6 Heart Failure and Edema</paragraph>
+                  <paragraph>The Coxib and traditional NSAID Trialists' Collaboration meta-analysis of randomized controlled trials demonstrated an approximately two-fold increase in hospitalizations for heart failure in COX-2 selective treated patients and nonselective NSAID-treated patients compared to placebo-treated patients. In a Danish National Registry study of patients with heart failure, NSAID use increased the risk of MI, hospitalization for heart failure and death.</paragraph>
+                  <paragraph>Additionally, fluid retention and edema have been observed in some patients treated with NSAIDs. Use of ibuprofen may blunt the CV effects of several therapeutic agents used to treat these medical conditions (e.g., diuretics, ACE inhibitors or angiotensin receptor blockers [ARBs]) [see Drug Interactions (7)].</paragraph>
+                  <paragraph>Avoid the use of ibuprofen and famotidine tablets in patients with severe heart failure unless the benefits are expected to outweigh the risk of worsening heart failure. If ibuprofen and famotidine tablets are used in patients with severe heart failure, monitor patients for signs and symptoms of worsening heart failure.</paragraph>
+                  <paragraph>5.7 Renal Toxicity and Hyperkalemia</paragraph>
+                  <paragraph>Renal Toxicity</paragraph>
+                  <paragraph>Long-term administration of NSAIDs has resulted in renal papillary necrosis and other renal injury. Renal toxicity has also been seen in patients in whom renal prostaglandins have a compensatory role in the maintenance of renal perfusion. In these patients, administration of an NSAID may cause a dose-dependent reduction in prostaglandin formation and, secondarily, in renal blood flow, which may precipitate overt renal decompensation. Patients at greatest risk of this reaction are those with impaired renal function, dehydration, hypovolemia, heart failure, liver dysfunction, those taking diuretics and ACE-inhibitors or ARBs and the elderly. Discontinuation of NSAID therapy was usually followed by recovery to the pretreatment state.</paragraph>
+                  <paragraph>No information is available from controlled clinical studies regarding the use of ibuprofen and famotidine tablets in patients with advanced renal disease. The renal effects of ibuprofen and famotidine tablets may hasten the progression of renal dysfunction in patients with pre-existing renal disease.</paragraph>
+                  <paragraph>Correct volume status in dehydrated or hypovolemic patients prior to initiating ibuprofen and famotidine tablets. Monitor renal function in patients with renal or hepatic impairment, heart failure, dehydration or hypovolemia during use of ibuprofen and famotidine tablets [see Drug Interactions (7)]. Avoid the use of ibuprofen and famotidine tablets in patients with advanced renal disease unless the benefits are expected to outweigh the risk of worsening renal failure. If ibuprofen and famotidine tablets are used in patients with advanced renal disease, monitor patients for signs of worsening renal function.</paragraph>
+                  <paragraph>Hyperkalemia</paragraph>
+                  <paragraph>Increases in serum potassium concentration, including hyperkalemia, have been reported with use of NSAIDs, even in some patients without renal impairment. In patients with normal renal function, these effects have been attributed to a hyporeninemic-hypoaldosteronism state.</paragraph>
+                  <paragraph>5.8 Anaphylactic Reactions</paragraph>
+                  <paragraph>Ibuprofen has been associated with anaphylactic reactions in patients with and without known hypersensitivity to ibuprofen and in patients with aspirin-sensitive asthma [see Contraindications (4), Warnings and Precautions (5.8)].</paragraph>
+                  <paragraph>Seek emergency help if an anaphylactic reaction occurs.</paragraph>
+                  <paragraph>5.9 Seizures</paragraph>
+                  <paragraph>Central nervous system (CNS) adverse effects including seizures, delirium and coma have been reported with famotidine in patients with moderate (creatinine clearance &lt; 50 mL/min) and severe renal insufficiency (creatinine clearance &lt; 10 mL/min) and the dosage of the famotidine component in ibuprofen and famotidine tablets is fixed. Therefore, ibuprofen and famotidine tablets are not recommended in patients with creatinine clearance &lt; 50 mL/min.</paragraph>
+                  <paragraph>5.10 Exacerbation of Asthma Related to Aspirin Sensitivity</paragraph>
+                  <paragraph>A subpopulation of patients with asthma may have aspirin-sensitive asthma which may include chronic rhinosinusitis complicated by nasal polyps; severe, potentially fatal bronchospasm and/or intolerance to aspirin and other NSAIDs. Because cross-reactivity between aspirin and other NSAIDs has been reported in such aspirin-sensitive patients, ibuprofen and famotidine tablets are contraindicated in patients with this form of aspirin sensitivity [see Contraindications (4)]. When ibuprofen and famotidine tablets are used in patients with preexisting asthma (without known aspirin sensitivity), monitor patients for changes in the signs and symptoms of asthma.</paragraph>
+                  <paragraph>5.11 Serious Skin Reactions</paragraph>
+                  <paragraph>NSAIDs, including ibuprofen, which is a component of ibuprofen and famotidine tablets, can cause serious skin adverse reactions such as exfoliative dermatitis, Stevens-Johnson Syndrome (SJS) and toxic epidermal necrolysis (TEN), which can be fatal. NSAIDs can also cause fixed drug eruption (FDE). FDE may present as a more severe variant known as generalized bullous fixed drug eruption (GBFDE), which can be life-threatening. These serious events may occur without warning. Inform patients about the signs and symptoms of serious skin reactions and to discontinue the use of ibuprofen and famotidine tablets at the first appearance of skin rash or any other sign of hypersensitivity. Ibuprofen and famotidine tablets are contraindicated in patients with previous serious skin reactions to NSAIDs [see Contraindications (4)].</paragraph>
+                  <paragraph>5.12 Drug Reaction with Eosinophilia and Systemic Symptoms (DRESS)</paragraph>
+                  <paragraph>Drug Reaction with Eosinophilia and Systemic Symptoms (DRESS) has been reported in patients taking NSAIDs such as ibuprofen and famotidine tablets. Some of these events have been fatal or life-threatening. DRESS typically, although not exclusively, presents with fever, rash, lymphadenopathy and/or facial swelling. Other clinical manifestations may include hepatitis, nephritis, hematological abnormalities, myocarditis or myositis. Sometimes symptoms of DRESS may resemble an acute viral infection. Eosinophilia is often present. Because this disorder is variable in its presentation, other organ systems not noted here may be involved. It is important to note that early manifestations of hypersensitivity, such as fever or lymphadenopathy, may be present even though rash is not evident. If such signs or symptoms are present, discontinue ibuprofen and famotidine tablets and evaluate the patient immediately.</paragraph>
+                  <paragraph>5.13 Fetal Toxicity</paragraph>
+                  <paragraph>Premature Closure of Fetal Ductus Arteriosus</paragraph>
+                  <paragraph>Avoid use of NSAIDs, including ibuprofen and famotidine tablets, in pregnant women at about 30 weeks gestation and later. NSAIDs, including ibuprofen and famotidine tablets, increase the risk of premature closure of the fetal ductus arteriosus at approximately this gestational age.</paragraph>
+                  <paragraph>Oligohydramnios/Neonatal Renal Impairment</paragraph>
+                  <paragraph>Use of NSAIDs, including ibuprofen and famotidine tablets, at about 20 weeks gestation or later in pregnancy may cause fetal renal dysfunction leading to oligohydramnios and, in some cases, neonatal renal impairment. These adverse outcomes are seen, on average, after days to weeks of treatment, although oligohydramnios has been infrequently reported as soon as 48 hours after NSAID initiation. Oligohydramnios is often, but not always, reversible with treatment discontinuation. Complications of prolonged oligohydramnios may, for example, include limb contractures and delayed lung maturation. In some postmarketing cases of impaired neonatal renal function, invasive procedures such as exchange transfusion or dialysis were required.</paragraph>
+                  <paragraph>If NSAID treatment is necessary between about 20 weeks and 30 weeks gestation, limit ibuprofen and famotidine tablets use to the lowest effective dose and shortest duration possible. Consider ultrasound monitoring of amniotic fluid if ibuprofen and famotidine tablets treatment is needed for a pregnant woman. Discontinue ibuprofen and famotidine tablets if oligohydramnios occurs and follow up according to clinical practice [see Use in Specific Populations (8.1)].</paragraph>
+                  <paragraph>5.14 Hematologic Toxicity</paragraph>
+                  <paragraph>Anemia has occurred in NSAID-treated patients. This may be due to occult or gross blood loss, fluid retention or an incompletely described effect on erythropoiesis. If a patient treated with ibuprofen and famotidine tablets has any signs or symptoms of anemia, monitor hemoglobin or hematocrit.</paragraph>
+                  <paragraph>NSAIDs, including ibuprofen and famotidine tablets, may increase the risk of bleeding events. Co-morbid conditions such as coagulation disorders or concomitant use of warfarin, and other anticoagulants, antiplatelet agents (e.g., aspirin), serotonin reuptake inhibitors (SSRIs) and serotonin norepinephrine reuptake inhibitors (SNRIs) may increase the risk. Monitor these patients for signs of bleeding [see Drug Interactions (7)].</paragraph>
+                  <paragraph>5.15 Masking of Inflammation and Fever</paragraph>
+                  <paragraph>The pharmacological activity of ibuprofen and famotidine tablets in reducing inflammation and possibly fever, may diminish the utility of diagnostic signs in detecting infections.</paragraph>
+                  <paragraph>5.16 Laboratory Monitoring</paragraph>
+                  <paragraph>Because serious GI bleeding, hepatotoxicity and renal injury can occur without warning symptoms or signs, consider monitoring patients on long-term NSAID treatment with a CBC and chemistry profile periodically [see Warnings and Precautions (5.2, 5.4, 5.7)].</paragraph>
+                  <paragraph>5.17 Concomitant NSAID Use</paragraph>
+                  <paragraph>Ibuprofen and famotidine tablets contain ibuprofen as one of its active ingredients. It should not be used with other ibuprofen-containing products.</paragraph>
+                  <paragraph>The concomitant use of NSAIDs, including aspirin, with Ibuprofen and famotidine tablets may increase the risk of adverse reactions [see Adverse Reactions (6), Drug Interactions (7), Clinical Studies (14)].</paragraph>
+                  <paragraph>5.18 Aseptic Meningitis</paragraph>
+                  <paragraph>Aseptic meningitis with fever and coma has been observed on rare occasions in patients on ibuprofen, which is a component of ibuprofen and famotidine tablets. Although it is probably more likely to occur in patients with systemic lupus erythematosus (SLE) and related connective tissue diseases, it has been reported in patients who do not have an underlying chronic disease. If signs or symptoms of meningitis develop in a patient on ibuprofen and famotidine tablets, the possibility of its being related to ibuprofen should be considered.</paragraph>
+                  <paragraph>5.19 Ophthalmological Effects</paragraph>
+                  <paragraph>Blurred and/or diminished vision, scotomata and/or changes in color vision have been reported. If a patient develops such complaints while receiving ibuprofen and famotidine tablets, the drug should be discontinued and the patient should have an ophthalmologic examination which includes central visual fields and color vision testing.</paragraph>
+               </text>
+               <effectiveTime value="20260622"/>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_54da14b4-f876-c057-e063-6294a90a97c6">
+               <id root="54da14b4-f875-c057-e063-6294a90a97c6"/>
+               <code code="34084-4" codeSystem="2.16.840.1.113883.6.1" displayName="ADVERSE REACTIONS SECTION"/>
+               <text>
+                  <paragraph>The following serious adverse reactions are discussed in greater detail in other sections of the labeling:</paragraph>
+                  <paragraph>Cardiovascular Thrombotic Events [see Warnings and Precautions (5.1)]
+  <br/>
+GI Bleeding, Ulceration and Perforation [see Warnings and Precautions (5.2)]
+  <br/>
+Hepatotoxicity [see Warnings and Precautions (5.4)]
+  <br/>
+Hypertension [see Warnings and Precautions (5.5)]
+  <br/>
+Heart Failure and Edema [see Warnings and Precautions (5.6)]
+  <br/>
+Renal Toxicity and Hyperkalemia [see Warnings and Precautions (5.7)]
+  <br/>
+Anaphylactic Reactions [see Warnings and Precautions (5.8)]
+  <br/>
+Seizures [see Warnings and Precautions (5.9)]
+  <br/>
+Serious Skin Reactions [see Warnings and Precautions (5.11)]
+  <br/>
+Drug Reaction with Eosinophilia and Systemic Symptoms (DRESS) [see Warnings and Precautions (5.12)]
+  <br/>
+Fetal Toxicity [see Warnings and Precautions (5.13)]
+  <br/>
+Hematologic Toxicity [see Warnings and Precautions (5.14)]
+  <br/>
+Aseptic Meningitis [see Warnings and Precautions (5.18)]
+  <br/>
+Ophthalmological Effects [see Warnings and Precautions (5.19)]
+ </paragraph>
+                  <paragraph>6.1 Clinical Trials Experience</paragraph>
+                  <paragraph>Because clinical trials are conducted under widely varying conditions, adverse reaction rates observed in the clinical trials of a drug cannot be directly compared to rates in the clinical trials of another drug and may not reflect the rates observed in practice.</paragraph>
+                  <paragraph>The safety of ibuprofen and famotidine tablets was evaluated in 1,022 patients in controlled clinical studies, including 508 patients treated for at least 6 months and 107 patients treated for approximately 1 year. Patients treated with ibuprofen and famotidine tablets ranged in age from 39 years to 80 years (median age 55 years), with 67% female, 79% Caucasian, 18% African-American and 3% other races. Two randomized, active-controlled clinical studies (Study 301 and Study 303) were conducted for the reduction of the risk of development of ibuprofen-associated, upper gastrointestinal ulcers in patients who required use of ibuprofen, which included 1,022 patients on ibuprofen and famotidine tablets and 511 patients on ibuprofen alone. Approximately 15% of patients were on low-dose aspirin. Patients were assigned randomly, in a 2:1 ratio, to treatment with either ibuprofen and famotidine tablets or ibuprofen 800 mg three times a day for 24 consecutive weeks.</paragraph>
+                  <paragraph>Three serious cases of acute renal failure were observed in patients treated with ibuprofen and famotidine tablets in the two controlled clinical trials. All three patients recovered to baseline levels after discontinuation of ibuprofen and famotidine tablets. Additionally, increases in serum creatinine were observed in both treatment arms in the two clinical studies. Many of these patients were taking concomitant diuretics and/or angiotensin-converting enzyme inhibitors or angiotensin receptor blockers. There were patients with a normal baseline serum creatinine level who developed abnormal values in the controlled trials as presented in Table 1.</paragraph>
+                  <paragraph>Table 1 Shift Table of Serum Creatinine, Normal** to Abnormal*** in Controlled Studies</paragraph>
+                  <paragraph>* At any point after baseline level</paragraph>
+                  <paragraph>** serum creatinine normal range is 0.5 mg/dL to 1.4 mg/dL or 44 micromol/L to 124 micromol/L</paragraph>
+                  <paragraph>*** serum creatinine &gt; 1.4 mg/dL</paragraph>
+                  <paragraph>
+                     <br/>
+                     <br/>
+Study 301
+  <br/>
+Study 303
+  <br/>
+Baseline
+  <br/>
+Post-Baseline*
+  <br/>
+Ibuprofen and Famotidine Tablets N=414
+  <br/>
+ % (n)
+  <br/>
+Ibuprofen N=207
+  <br/>
+% (n)
+  <br/>
+Ibuprofen and Famotidine Tablets N=598
+  <br/>
+% (n)
+  <br/>
+Ibuprofen N=296
+  <br/>
+% (n)
+  <br/>
+Normal**
+  <br/>
+Abnormal***
+  <br/>
+4% (17)
+  <br/>
+2% (4)
+  <br/>
+2% (15)
+  <br/>
+4% (12)
+ </paragraph>
+                  <paragraph>Most Commonly Reported Adverse Reactions</paragraph>
+                  <paragraph>The most common adverse reactions (≥ 2%), from pooled data from the two controlled studies are presented in Table 2.</paragraph>
+                  <paragraph>Table 2 Incidence of Adverse Reactions in Controlled Studies
+  <br/>
+Ibuprofen and Famotidine Tablets
+  <br/>
+N=1,022
+  <br/>
+Ibuprofen
+  <br/>
+N=511
+  <br/>
+%
+  <br/>
+%
+  <br/>
+Blood and lymphatic system disorders
+  <br/>
+                     <br/>
+                     <br/>
+Anemia
+  <br/>
+2
+  <br/>
+1
+  <br/>
+Gastrointestinal disorders
+  <br/>
+Nausea
+  <br/>
+6
+  <br/>
+5
+  <br/>
+Dyspepsia
+  <br/>
+5
+  <br/>
+8
+  <br/>
+Diarrhea
+  <br/>
+5
+  <br/>
+4
+  <br/>
+Constipation
+  <br/>
+4
+  <br/>
+4
+  <br/>
+Abdominal pain upper
+  <br/>
+3
+  <br/>
+3
+  <br/>
+Gastroesophageal reflux disease
+  <br/>
+2
+  <br/>
+3
+  <br/>
+Vomiting
+  <br/>
+2
+  <br/>
+2
+  <br/>
+Stomach discomfort
+  <br/>
+2
+  <br/>
+2
+  <br/>
+Abdominal pain
+  <br/>
+2
+  <br/>
+2
+  <br/>
+General disorders and administration site conditions
+  <br/>
+Edema peripheral
+  <br/>
+2
+  <br/>
+2
+  <br/>
+Infections and infestations
+  <br/>
+Upper respiratory tract infection
+  <br/>
+4
+  <br/>
+4
+  <br/>
+Nasopharyngitis
+  <br/>
+2
+  <br/>
+3
+  <br/>
+Sinusitis
+  <br/>
+2
+  <br/>
+3
+  <br/>
+Bronchitis
+  <br/>
+2
+  <br/>
+1
+  <br/>
+Urinary tract infection
+  <br/>
+2
+  <br/>
+2
+  <br/>
+Influenza
+  <br/>
+2
+  <br/>
+2
+  <br/>
+Musculoskeletal and connective tissue disorders
+  <br/>
+Arthralgia
+  <br/>
+1
+  <br/>
+2
+  <br/>
+Back pain
+  <br/>
+2
+  <br/>
+1
+  <br/>
+Nervous system disorders
+  <br/>
+Headache
+  <br/>
+3
+  <br/>
+3
+  <br/>
+Respiratory, thoracic and mediastinal disorders
+  <br/>
+Cough
+  <br/>
+2
+  <br/>
+2
+  <br/>
+Pharyngolaryngeal pain
+  <br/>
+2
+  <br/>
+1
+  <br/>
+Vascular disorders
+  <br/>
+Hypertension
+  <br/>
+3
+  <br/>
+2
+ </paragraph>
+                  <paragraph>In controlled clinical studies, the discontinuation rate due to adverse events for patients receiving ibuprofen and famotidine tablets and ibuprofen alone were similar. The most common adverse reactions leading to discontinuation from ibuprofen and famotidine tablet therapy were nausea (0.9%) and upper abdominal pain (0.9%).</paragraph>
+                  <paragraph>There were no differences in types of related adverse reactions seen during maintenance treatment up to 12 months compared to short-term treatment.</paragraph>
+                  <paragraph>6.2 Postmarketing Experience</paragraph>
+                  <paragraph>Ibuprofen</paragraph>
+                  <paragraph>The following adverse reactions have been identified during post-approval use of ibuprofen. Because these reactions are reported voluntarily from a population of uncertain size, it is not always possible to reliably estimate their frequency or establish a causal relationship to drug exposure. These reports are listed below by body system:</paragraph>
+                  <paragraph>Cardiac disorders: myocardial infarction</paragraph>
+                  <paragraph>Gastrointestinal disorders: nausea, vomiting, diarrhea, abdominal pain</paragraph>
+                  <paragraph>General disorders and administration site conditions: pyrexia, pain, fatigue, asthenia, chest pain, drug ineffective, edema peripheral</paragraph>
+                  <paragraph>Skin and Appendages: exfoliative dermatitis, Stevens-Johnson Syndrome (SJS), toxic epidermal necrolysis (TEN), and fixed drug eruption (FDE)</paragraph>
+                  <paragraph>Musculoskeletal and connective tissue disorders: arthralgia</paragraph>
+                  <paragraph>Nervous system disorders: headache, dizziness</paragraph>
+                  <paragraph>Psychiatric disorders: depression, anxiety</paragraph>
+                  <paragraph>Renal and urinary disorders: renal failure acute</paragraph>
+                  <paragraph>Respiratory, thoracic, and mediastinal disorders: dyspnea</paragraph>
+                  <paragraph>Vascular disorders: hypertension</paragraph>
+                  <paragraph>Famotidine</paragraph>
+                  <paragraph>The following adverse reactions have been identified during post-approval use of famotidine. Because these reactions are reported voluntarily from a population of uncertain size, it is not always possible to reliably estimate their frequency or establish a causal relationship to drug exposure. These reports are listed below by body system:</paragraph>
+                  <paragraph>Blood and lymphatic system disorders: anemia, thrombocytopenia</paragraph>
+                  <paragraph>Gastrointestinal disorders: nausea, diarrhea, vomiting, abdominal pain</paragraph>
+                  <paragraph>General disorders and administration site conditions: pyrexia, condition aggravated, asthenia, drug ineffective, chest pain, fatigue, pain, edema peripheral</paragraph>
+                  <paragraph>Hepatobiliary disorders: hepatic function abnormal</paragraph>
+                  <paragraph>Infections and infestations: pneumonia, sepsis</paragraph>
+                  <paragraph>Investigations: platelet count decreased, aspartate aminotransferase increased, alanine aminotransferase increased, hemoglobin decreased</paragraph>
+                  <paragraph>Metabolism and nutrition disorders: decreased appetite</paragraph>
+                  <paragraph>Nervous system disorders: dizziness, headache</paragraph>
+                  <paragraph>Respiratory, thoracic and mediastinal disorders: dyspnea</paragraph>
+                  <paragraph>Vascular disorders: hypotension</paragraph>
+               </text>
+               <effectiveTime value="20260622"/>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_54da1249-fabc-3fb4-e063-6394a90a8a5f">
+               <id root="54da1249-fabb-3fb4-e063-6394a90a8a5f"/>
+               <code code="34073-7" codeSystem="2.16.840.1.113883.6.1" displayName="DRUG INTERACTIONS SECTION"/>
+               <text>
+                  <paragraph>See Table 3 for clinically significant drug interactions with ibuprofen.</paragraph>
+                  <paragraph>Table 3 Clinically Significant Drug Interactions with Ibuprofen and Famotidine
+  <br/>
+Drugs That Interfere with Hemostasis
+  <br/>
+Clinical Impact:
+ </paragraph>
+                  <paragraph>Ibuprofen and anticoagulants such as warfarin have a synergistic effect on bleeding. The concomitant use of ibuprofen and anticoagulants have an increased risk of serious bleeding compared to the use of either drug alone.
+  <br/>
+Serotonin release by platelets plays an important role in hemostasis. Case-control and cohort epidemiological studies showed that concomitant use of drugs that interfere with serotonin reuptake and an NSAID may potentiate the risk of bleeding more than an NSAID alone.
+ </paragraph>
+                  <paragraph>Intervention:
+  <br/>
+Monitor patients with concomitant use of ibuprofen and famotidine tablets with anticoagulants (e.g., warfarin), antiplatelet agents (e.g., aspirin), selective serotonin reuptake inhibitors (SSRIs) and serotonin norepinephrine reuptake inhibitors (SNRIs) for signs of bleeding [see Warnings and Precautions (5.16)].
+  <br/>
+Aspirin
+  <br/>
+Clinical Impact:
+  <br/>
+Pharmacodynamic (PD) studies have demonstrated interference with the antiplatelet activity of aspirin when ibuprofen 400 mg, given three times daily, is administered with enteric-coated low-dose aspirin. The interaction exists even following a once-daily regimen of ibuprofen 400 mg, particularly when ibuprofen is dosed prior to aspirin. The interaction is alleviated if immediate-release low-dose aspirin is dosed at least 2 hours prior to a once-daily regimen of ibuprofen; however, this finding cannot be extended to enteric-coated low-dose aspirin [see Clinical Pharmacology (12.2)].
+  <br/>
+Controlled clinical studies showed that the concomitant use of NSAIDs and analgesic doses of aspirin does not produce any greater therapeutic effect than the use of NSAIDs alone. In a clinical study, the concomitant use of an NSAID and aspirin was associated with a significantly increased incidence of GI adverse reactions as compared to use of the NSAID alone [see Warnings and Precautions (5.2)].
+  <br/>
+Intervention:
+  <br/>
+Because there may be an increased risk of cardiovascular events due to the interference of ibuprofen with the antiplatelet effect of aspirin, for patients taking low-dose aspirin for cardioprotection who require analgesics, consider use of an NSAID that does not interfere with the antiplatelet effect of aspirin or non-NSAID analgesics, where appropriate.
+  <br/>
+Concomitant use of ibuprofen and famotidine tablets and analgesic doses of aspirin is not generally recommended because of the increased risk of bleeding [see Warnings and Precautions (5.3)].
+  <br/>
+Ibuprofen and famotidine tablets are not a substitute for low dose aspirin for cardiovascular protection.
+  <br/>
+ACE Inhibitors, Angiotensin Receptor Blockers and Beta-blockers
+  <br/>
+Clinical Impact:
+ </paragraph>
+                  <paragraph>NSAIDs may diminish the antihypertensive effect of angiotensin converting enzyme (ACE) inhibitors, angiotensin receptor blockers (ARBs) or beta-blockers (including propranolol).
+  <br/>
+In patients who are elderly, volume-depleted (including those on diuretic therapy) or have renal impairment, co-administration of an NSAID with ACE inhibitors or ARBs may result in deterioration of renal function, including possible acute renal failure. These effects are usually reversible.
+ </paragraph>
+                  <paragraph>Intervention:</paragraph>
+                  <paragraph>During concomitant use of ibuprofen and famotidine tablets and ACE-inhibitors, ARBs or beta-blockers, monitor blood pressure to ensure that the desired blood pressure is obtained.
+  <br/>
+During concomitant use of ibuprofen and famotidine tablets and ACE-inhibitors or ARBs in patients who are elderly, volume-depleted or have impaired renal function, monitor for signs of worsening renal function [see Warnings and Precautions (5.7)] .
+ </paragraph>
+                  <paragraph>Diuretics
+  <br/>
+Clinical Impact:
+  <br/>
+Clinical studies, as well as post-marketing observations, showed that NSAIDs reduced the natriuretic effect of loop diuretics (e.g., furosemide) and thiazide diuretics in some patients. This effect has been attributed to the NSAID inhibition of renal prostaglandin synthesis.
+  <br/>
+Intervention:
+  <br/>
+During concomitant use of ibuprofen and famotidine tablets with diuretics, observe patients for signs of worsening renal function, in addition to assuring diuretic efficacy including antihypertensive effects [see Warnings and Precautions (5.7)].
+  <br/>
+Digoxin
+  <br/>
+Clinical Impact:
+  <br/>
+The concomitant use of ibuprofen with digoxin has been reported to increase the serum concentration and prolong the half-life of digoxin.
+  <br/>
+Intervention:
+  <br/>
+During concomitant use of ibuprofen and famotidine tablets and digoxin, monitor serum digoxin levels.
+  <br/>
+Lithium
+  <br/>
+Clinical Impact:
+  <br/>
+NSAIDs have produced elevations of plasma lithium levels and reductions in renal lithium clearance. The mean minimum lithium concentration increased 15% and the renal clearance decreased by approximately 20%. This effect has been attributed to NSAID inhibition of renal prostaglandin synthesis.
+  <br/>
+Intervention:
+  <br/>
+During concomitant use of ibuprofen and famotidine tablets and lithium, monitor patients for signs of lithium toxicity.
+  <br/>
+Methotrexate
+  <br/>
+Clinical Impact:
+  <br/>
+Concomitant use of NSAIDs and methotrexate may increase the risk for methotrexate toxicity (e.g., neutropenia, thrombocytopenia, renal dysfunction).
+  <br/>
+Intervention:
+  <br/>
+During concomitant use of ibuprofen and famotidine tablets and methotrexate, monitor patients for methotrexate toxicity.
+  <br/>
+Cyclosporine
+  <br/>
+Clinical Impact:
+  <br/>
+Concomitant use of ibuprofen and cyclosporine may increase cyclosporine's nephrotoxicity.
+  <br/>
+Intervention:
+  <br/>
+During concomitant use of ibuprofen and famotidine tablets and cyclosporine, monitor patients for signs of worsening renal function.
+  <br/>
+NSAIDs and Salicylates
+  <br/>
+Clinical Impact:
+  <br/>
+Concomitant use of ibuprofen with other NSAIDs or salicylates (e.g., diflunisal, salsalate) increases the risk of GI toxicity, with little or no increase in efficacy [see Warnings and Precautions (5.2)].
+  <br/>
+Intervention:
+  <br/>
+The concomitant use of ibuprofen and famotidine tablets with other NSAIDs or salicylates is not recommended.
+  <br/>
+Pemetrexed
+  <br/>
+Clinical Impact:
+  <br/>
+Concomitant use of ibuprofen and pemetrexed may increase the risk of pemetrexed-associated myelosuppression, renal and GI toxicity (see the pemetrexed prescribing information).
+  <br/>
+Intervention:
+  <br/>
+During concomitant use of ibuprofen and famotidine tablets and pemetrexed, in patients with renal impairment whose creatinine clearance ranges from 45 mL/min to 79 mL/min, monitor for myelosuppression, renal and GI toxicity.
+  <br/>
+NSAIDs with short elimination half-lives (e.g., diclofenac, indomethacin) should be avoided for a period of two days before, the day of and two days following administration of pemetrexed.
+  <br/>
+In the absence of data regarding potential interaction between pemetrexed and NSAIDs with longer half-lives (e.g., meloxicam, nabumetone), patients taking these NSAIDs should interrupt dosing for at least five days before, the day of and two days following pemetrexed administration.
+  <br/>
+Drugs Dependent on Gastric pH for Absorption
+  <br/>
+Clinical Impact
+  <br/>
+Because famotidine lowers intra-gastric acidity, this may result in reduced absorption and loss of efficacy of concomitant drugs.
+  <br/>
+Intervention
+  <br/>
+Concomitant administration of ibuprofen and famotidine tablets is not recommended with dasatinib, delavirdine mesylate, cefditoren and fosamprenavir.
+  <br/>
+For administration instructions of other drugs whose absorption is dependent on gastric pH, refer to their prescribing information (e.g., atazanavir, erlotinib, ketoconazole, itraconazole, nilotinib, ledipasvir/sofosbuvir and rilpivirine).
+  <br/>
+Tizanidine (CYP1A2 Substrate)
+  <br/>
+Clinical Impact
+  <br/>
+Famotidine is considered a weak CYP1A2 inhibitor and may lead to substantial increases in blood concentrations of tizanidine, a CYP1A2 substrate.
+  <br/>
+Intervention
+  <br/>
+Avoid concomitant use with ibuprofen and famotidine tablets.
+  <br/>
+If concomitant use is necessary, monitor for hypotension, bradycardia or excessive drowsiness.
+  <br/>
+Refer to the full prescribing information for tizanidine.
+ </paragraph>
+               </text>
+               <effectiveTime value="20260622"/>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_54da177d-2436-76cc-e063-6294a90a6d30">
+               <id root="54da177d-2435-76cc-e063-6294a90a6d30"/>
+               <code code="43684-0" codeSystem="2.16.840.1.113883.6.1" displayName="USE IN SPECIFIC POPULATIONS SECTION"/>
+               <text>
+                  <paragraph>8.1 Pregnancy</paragraph>
+                  <paragraph>Risk Summary</paragraph>
+                  <paragraph>Use of NSAIDs, including ibuprofen and famotidine tablets, can cause premature closure of the fetal ductus arteriosus and fetal renal dysfunction leading to oligohydramnios and, in some cases, neonatal renal impairment. Because of these risks, limit dose and duration of ibuprofen and famotidine tablets use between about 20 weeks and 30 weeks of gestation and avoid ibuprofen and famotidine tablets use at about 30 weeks of gestation and later in pregnancy (see Clinical Considerations, Data).</paragraph>
+                  <paragraph>Premature Closure of Fetal Ductus Arteriosus</paragraph>
+                  <paragraph>Use of NSAIDs, including ibuprofen and famotidine tablets, at about 30 weeks gestation or later in pregnancy increases the risk of premature closure of the fetal ductus arteriosus.</paragraph>
+                  <paragraph>Oligohydramnios/Neonatal Renal Impairment</paragraph>
+                  <paragraph>Use of NSAIDs at about 20 weeks gestation or later in pregnancy has been associated with cases of fetal renal dysfunction leading to oligohydramnios and in some cases, neonatal renal impairment.</paragraph>
+                  <paragraph>There are no available data with ibuprofen and famotidine tablets use in pregnant women to inform a drug-associated risk for major birth defects and miscarriage; however, there are published studies with each individual component of ibuprofen and famotidine tablets.</paragraph>
+                  <paragraph>Ibuprofen</paragraph>
+                  <paragraph>Data from observational studies regarding potential embryofetal risks of NSAID use in women in the first or second trimesters of pregnancy are inconclusive. In animal reproduction studies, there were no clear developmental effects at doses up to 0.4-times the maximum recommended human dose (MRHD) in the rabbit and 0.5-times in the MRHD rat when dosed throughout gestation. In contrast, an increase in membranous ventricular septal defects was reported in rats treated on Gestation Days 9 &amp; 10 with 0.8-times the MRHD. Based on animal data, prostaglandins have been shown to have an important role in endometrial vascular permeability, blastocyst implantation and decidualization. In animal studies, administration of prostaglandin synthesis inhibitors such as ibuprofen, resulted in increased pre-and post-implantation loss. Prostaglandins also have been shown to have an important role in fetal kidney development. In published animal studies, prostaglandin synthesis inhibitors have been reported to impair kidney development when administered at clinically relevant doses.</paragraph>
+                  <paragraph>Famotidine</paragraph>
+                  <paragraph>Limited published data do not report an increased risk of congenital malformations or other adverse pregnancy effects with use of H2-receptor antagonists, including ibuprofen and famotidine tablets, during pregnancy; however, these data are insufficient to adequately determine a drug-associated risk. Reproductive studies with famotidine have been performed in rats and rabbits at oral doses of up to 2,000 mg/kg/day and 500 mg/kg/day (approximately 243 times and 122 times the recommended human dose, respectively, based on body surface area) and in both species at intravenous (I.V.) doses of up to 200 mg/kg/day and have revealed no significant evidence of impaired fertility or harm to the fetus due to famotidine.</paragraph>
+                  <paragraph>The estimated background risk of major birth defects and miscarriage for the indicated population is unknown. All pregnancies have a background risk of birth defect, loss or other adverse outcomes. In the general U.S. population, the estimated background risk of major birth defects and miscarriage in clinically recognized pregnancies is 2% to 4% and 15% to 20%, respectively.</paragraph>
+                  <paragraph>Clinical Considerations</paragraph>
+                  <paragraph>Fetal/Neonatal Adverse Reactions</paragraph>
+                  <paragraph>Premature Closure of Fetal Ductus Arteriosus:</paragraph>
+                  <paragraph>Avoid use of NSAIDs in women at about 30 weeks gestation and later in pregnancy, because NSAIDs, including ibuprofen and famotidine tablets, can cause premature closure of the fetal ductus arteriosus (see Data).</paragraph>
+                  <paragraph>Oligohydramnios/Neonatal Renal Impairment</paragraph>
+                  <paragraph>If an NSAID is necessary at about 20 weeks gestation or later in pregnancy, limit the use to the lowest effective dose and shortest duration possible. If ibuprofen and famotidine tablets treatment is needed for a pregnant woman, consider monitoring with ultrasound for oligohydramnios. If oligohydramnios occurs, discontinue ibuprofen and famotidine tablets and follow up according to clinical practice (see Data).</paragraph>
+                  <paragraph>Labor or Delivery</paragraph>
+                  <paragraph>There are no studies on the effects of ibuprofen and famotidine tablets during labor or delivery. In animal studies, NSAIDs, including ibuprofen, inhibit prostaglandin synthesis, cause delayed parturition and increase the incidence of stillbirth.</paragraph>
+                  <paragraph>Data</paragraph>
+                  <paragraph>Human Data</paragraph>
+                  <paragraph>When used to delay preterm labor, inhibitors of prostaglandin synthesis, including NSAIDs such ibuprofen, may increase the risk of neonatal complications such as necrotizing enterocolitis, patent ductus arteriosus and intracranial hemorrhage. Ibuprofen treatment given in late pregnancy to delay parturition has been associated with persistent pulmonary hypertension, renal dysfunction and abnormal prostaglandin E levels in preterm infants.</paragraph>
+                  <paragraph>Ibuprofen</paragraph>
+                  <paragraph>Premature Closure of Fetal Ductus Arteriosus:</paragraph>
+                  <paragraph>Published literature reports that the use of NSAIDs at about 30 weeks of gestation and later in pregnancy may cause premature closure of the fetal ductus arteriosus.</paragraph>
+                  <paragraph>Oligohydramnios/Neonatal Renal Impairment:</paragraph>
+                  <paragraph>Published studies and postmarketing reports describe maternal NSAID use at about 20 weeks gestation or later in pregnancy associated with fetal renal dysfunction leading to oligohydramnios and in some cases, neonatal renal impairment. These adverse outcomes are seen, on average, after days to weeks of treatment, although oligohydramnios has been infrequently reported as soon as 48 hours after NSAID initiation. In many cases, but not all, the decrease in amniotic fluid was transient and reversible with cessation of the drug. There have been a limited number of case reports of maternal NSAID use and neonatal renal dysfunction without oligohydramnios, some of which were irreversible. Some cases of neonatal renal dysfunction required treatment with invasive procedures, such as exchange transfusion or dialysis.</paragraph>
+                  <paragraph>Methodological limitations of these postmarketing studies and reports include lack of a control group; limited information regarding dose, duration and timing of drug exposure; and concomitant use of other medications. These limitations preclude establishing a reliable estimate of the risk of adverse fetal and neonatal outcomes with maternal NSAID use. Because the published safety data on neonatal outcomes involved mostly preterm infants, the generalizability of certain reported risks to the full-term infant exposed to NSAIDs through maternal use is uncertain.</paragraph>
+                  <paragraph>When used to delay preterm labor, inhibitors of prostaglandin synthesis, including NSAIDs such as ibuprofen, may increase the risk of other neonatal complications such as necrotizing enterocolitis and intracranial hemorrhage. Ibuprofen treatment given in late pregnancy to delay parturition has been associated with persistent pulmonary hypertension, renal dysfunction and abnormal prostaglandin E levels in preterm infants.</paragraph>
+                  <paragraph>Animal Data</paragraph>
+                  <paragraph>Animal reproduction studies have not been conducted with ibuprofen and famotidine tablets.</paragraph>
+                  <paragraph>Ibuprofen</paragraph>
+                  <paragraph>In a published study, female rabbits given 7.5 mg/kg, 20 mg/kg or 60 mg/kg ibuprofen (0.04, 0.12 or 0.36-times the maximum recommended human daily dose of 3,200 mg of ibuprofen based on body surface area) from Gestation Days 1 to Days 29, no clear treatment-related adverse developmental effects were noted. Doses of 20 mg/kg and 60 mg/kg were associated with significant maternal toxicity (stomach ulcers, gastric lesions). In the same publication, female rats were administered 7.5 mg/kg, 20 mg/kg, 60 mg/kg, 180 mg/kg ibuprofen (0.02, 0.06, 0.18, 0.54-times the maximum daily dose) did not result in clear adverse developmental effects. Maternal toxicity (gastrointestinal lesions) was noted at 20 mg/kg and above.</paragraph>
+                  <paragraph>In a published study, rats were orally dosed with 300 mg/kg ibuprofen (0.912-times the maximum human daily dose of 3,200 mg based on body surface area) during Gestation Days 9 and Days 10 (critical time points for heart development in rats). Ibuprofen treatment resulted in an increase in the incidence of membranous ventricular septal defects. This dose was associated with significant maternal toxicity including gastrointestinal toxicity. One incidence each of a membranous ventricular septal defect and gastroschisis was noted in fetuses from rabbits treated with 500 mg/kg (3-times the maximum human daily dose) from Gestation Day 9 to Day 11.</paragraph>
+                  <paragraph>Famotidine</paragraph>
+                  <paragraph>Reproductive studies with famotidine have been performed in rats and rabbits at oral doses of up to 2,000 mg/kg/day and 500 mg/kg/day (approximately 243 times and 122 times the recommended human dose of 80 mg per day, respectively, based on body surface area) and in both species at intravenous doses of up to 200 mg/kg/day (about 24 times and 49 times the recommended human dose of 80 mg per day, respectively, based on body surface area) and have revealed no significant evidence of harm to the fetus due to famotidine. While no direct fetotoxic effects have been observed, sporadic abortions occurring only in mothers displaying marked decreased food intake were seen in some rabbits at oral doses of 200 mg/kg/day (approximately 49 times the recommended human dose of 80 mg per day, respectively, based on body surface area) or higher. Animal reproduction studies are not always predictive of human response.</paragraph>
+                  <paragraph>8.2 Lactation</paragraph>
+                  <paragraph>Risk Summary</paragraph>
+                  <paragraph>No studies have been conducted with the use of ibuprofen and famotidine tablets in lactating women. Limited data from published literature report famotidine is present in human milk in low amounts. Published literature also reports the presence of ibuprofen in human milk in low amounts. No information is available on the effects of famotidine or ibuprofen on milk production or on a breastfed infant. Famotidine is present in the milk of lactating rats (see Data). The developmental and health benefits of breastfeeding should be considered along with the mother's clinical need for ibuprofen and famotidine tablets and any potential adverse effects on the breastfed infant from ibuprofen and famotidine tablets or from the underlying maternal condition.</paragraph>
+                  <paragraph>Data</paragraph>
+                  <paragraph>Transient growth depression was observed in young rats suckling from mothers treated with maternotoxic doses of at least 300 times the usual human dose of famotidine.</paragraph>
+                  <paragraph>8.3 Females and Males of Reproductive Potential</paragraph>
+                  <paragraph>Infertility</paragraph>
+                  <paragraph>Females</paragraph>
+                  <paragraph>Based on the mechanism of action, the use of prostaglandin-mediated NSAIDs, including ibuprofen and famotidine tablets, may delay or prevent rupture of ovarian follicles, which has been associated with reversible infertility in some women. Published animal studies have shown that administration of prostaglandin synthesis inhibitors has the potential to disrupt prostaglandin-mediated follicular rupture required for ovulation. Small studies in women treated with NSAIDs have also shown a reversible delay in ovulation. Consider withdrawal of NSAIDs, including ibuprofen and famotidine tablets, in women who have difficulties conceiving or who are undergoing investigation of infertility.</paragraph>
+                  <paragraph>8.4 Pediatric Use</paragraph>
+                  <paragraph>Safety and effectiveness of ibuprofen and famotidine tablets in pediatric patients have not been established.</paragraph>
+                  <paragraph>8.5 Geriatric Use</paragraph>
+                  <paragraph>Elderly patients, compared to younger patients, are at greater risk for NSAID-associated serious cardiovascular, gastrointestinal and/or renal adverse reactions. If the anticipated benefit for the elderly patient outweighs these potential risks, start dosing at the low end of the dosing range and monitor patients for adverse effects [see Warnings and Precautions (5.1, 5.2, 5.4, 5.7, 5.16)].</paragraph>
+                  <paragraph>The clinical trials primarily enrolled patients less than 65 years of age. Of the 1,022 patients in clinical studies of ibuprofen and famotidine tablets, 18% (249 patients) were 65 years of age or older. Efficacy results in patients who are greater than or equal to 65 years of age are summarized in the CLINICAL STUDIES section [see Clinical Studies (14)].</paragraph>
+                  <paragraph>Famotidine is known to be substantially excreted by the kidney and the risk of toxic reactions to this drug may be greater in patients with impaired renal function. Because elderly patients are more likely to have decreased renal function, care should be taken in dose selection and adjusting dose interval and it may be useful to monitor renal function [see Warnings and Precautions (5.7)].</paragraph>
+                  <paragraph>8.6 Renal Insufficiency</paragraph>
+                  <paragraph>In adult patients with renal insufficiency (creatinine clearance &lt; 50 mL/min), the elimination half-life of famotidine is increased. Since CNS adverse effects have been reported in patients with creatinine clearance &lt; 50 mL/min and the dosage of the famotidine component in ibuprofen and famotidine tablets is fixed, ibuprofen and famotidine tablets are not recommended in these patients [see Warnings and Precautions (5.7)].</paragraph>
+               </text>
+               <effectiveTime value="20260622"/>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_54da18af-2ee2-be1a-e063-6294a90ac809">
+               <id root="54da18af-2ee1-be1a-e063-6294a90ac809"/>
+               <code code="34088-5" codeSystem="2.16.840.1.113883.6.1" displayName="OVERDOSAGE SECTION"/>
+               <text>
+                  <paragraph>Symptoms following acute NSAID overdosages have been typically limited to lethargy, drowsiness, nausea, vomiting and epigastric pain, which have been generally reversible with supportive care. Gastrointestinal bleeding has occurred. Hypertension, acute renal failure, respiratory depression and coma have occurred, but were rare [see Warnings and Precautions (5.1, 5.2, 5.5, 5.7, 5.9)].</paragraph>
+                  <paragraph>No data are available with regard to overdose of ibuprofen and famotidine tablets. Findings related to the individual active substances are listed below.</paragraph>
+                  <paragraph>Ibuprofen</paragraph>
+                  <paragraph>Approximately 1 1/2 hours after the reported ingestion of from 7 to 10 ibuprofen tablets (400 mg), a 19-month-old child weighing 12 kg was seen in the hospital emergency room, apneic and cyanotic, responding only to painful stimuli. This type of stimulus, however, was sufficient to induce respiration. Oxygen and parenteral fluids were given; a greenish-yellow fluid was aspirated from the stomach with no evidence to indicate the presence of ibuprofen. Two hours after ingestion the child's condition seemed stable; she still responded only to painful stimuli and continued to have periods of apnea lasting from 5 seconds to 10 seconds. She was admitted to intensive care and sodium bicarbonate was administered as well as infusions of dextrose and normal saline. By 4 hours post-ingestion she could be aroused easily, sit by herself and respond to spoken commands. Blood level of ibuprofen was 102.9 mcg/mL approximately 8.5 hours after accidental ingestion. At 12 hours she appeared to be completely recovered.</paragraph>
+                  <paragraph>In two other reported cases where children (each weighing approximately 10 kg) accidentally, acutely ingested approximately 120 mg/kg, there were no signs of acute intoxication or late sequelae. Blood level in one child 90 minutes after ingestion was 700 mcg/mL — about 10 times the peak levels seen in absorption-excretion studies.</paragraph>
+                  <paragraph>A 19-year-old male who had taken 8,000 mg of ibuprofen over a period of a few hours complained of dizziness and nystagmus was noted. After hospitalization, parenteral hydration and 3 days bed rest, he recovered with no reported sequelae.</paragraph>
+                  <paragraph>Famotidine</paragraph>
+                  <paragraph>The adverse reactions in overdose cases are similar to the adverse reactions encountered in normal clinical experience. Oral doses of up to 640 mg/day have been given to adult patients with pathological hypersecretory conditions with no serious adverse effects.</paragraph>
+                  <paragraph>Manage patients with symptomatic and supportive care following an NSAID overdosage, including ibuprofen and famotidine tablet overdose. There are no specific antidotes. Consider emesis and/or activated charcoal (60 to 100 grams in adults, 1 grams per kg to 2 grams per kg of body weight in pediatric patients) and/or osmotic cathartic in symptomatic patients seen within four hours of ingestion or in patients with a large overdosage (5 times to 10 times the recommended dose). Forced diuresis, alkalinization of urine, hemodialysis or hemoperfusion may not be useful due to high protein binding.</paragraph>
+                  <paragraph>If over-exposure occurs, call your poison control center at 1-800-222-1222 for current information on the management of poisoning or over-exposure.</paragraph>
+               </text>
+               <effectiveTime value="20260622"/>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_54da19e2-d4b1-4dae-e063-6394a90a3683">
+               <id root="54da19e2-d4b0-4dae-e063-6394a90a3683"/>
+               <code code="34089-3" codeSystem="2.16.840.1.113883.6.1" displayName="DESCRIPTION SECTION"/>
+               <text>
+                  <paragraph>Ibuprofen and famotidine is supplied as a tablet for oral administration which combines the nonsteroidal anti-inflammatory drug, ibuprofen and the histamine H2-receptor antagonist, famotidine.</paragraph>
+                  <paragraph>Ibuprofen, USP is (±)-2-(p-isobutylphenyl) propionic acid. Its molecular formula is C13H18O2 and molecular weight is 206.28. Ibuprofen, USP is a white to off-white crystalline powder that is practically insoluble in water and very soluble in alcohol, in methanol, in acetone and in chloroform; slightly soluble in ethyl acetate. Its structural formula is:</paragraph>
+                  <paragraph>[Image]</paragraph>
+                  <paragraph>Famotidine, USP is N'-(aminosulfonyl)-3-[[[2-[(diaminomethylene)amino]-4-thiazolyl]methyl]thio]propanimidamide. Its molecular formula is C8H15N7O2S3 and molecular weight is 337.45. Famotidine, USP is a white to pale yellowish white crystalline powder that is freely soluble in glacial acetic acid, slightly soluble in methanol, very slightly soluble in water, and practically insoluble in ethanol. Its structural formula is:</paragraph>
+                  <paragraph>[Image]</paragraph>
+                  <paragraph>Each ibuprofen and famotidine tablets contain 800 mg of ibuprofen, USP and 26.6 mg of famotidine, USP which contains the following inactive ingredients: colloidal silicon dioxide, croscarmellose sodium, glyceryl monocaprylocaprate type 1, hypromellose, magnesium stearate, microcrystalline cellulose, polyvinyl alcohol-partially hydrolyzed, sodium lauryl sulfate, talc and titanium dioxide.</paragraph>
+                  <paragraph>The tablet is imprinted with black ink and contains the following inactive ingredients: black iron oxide, propylene glycol and shellac.</paragraph>
+               </text>
+               <effectiveTime value="20260622"/>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_54da177d-2438-76cc-e063-6294a90a6d30">
+               <id root="54da177d-2437-76cc-e063-6294a90a6d30"/>
+               <code code="34090-1" codeSystem="2.16.840.1.113883.6.1" displayName="CLINICAL PHARMACOLOGY SECTION"/>
+               <text>
+                  <paragraph>12.1 Mechanism of Action</paragraph>
+                  <paragraph>Ibuprofen and famotidine tablet are a fixed-combination tablet of ibuprofen and famotidine. The ibuprofen component has analgesic, anti-inflammatory and antipyretic properties. The mechanism of action of the ibuprofen component of ibuprofen and famotidine tablets, like that of other NSAIDs, is not completely understood but involves inhibition of cyclooxygenase (COX-1 and COX-2).</paragraph>
+                  <paragraph>Ibuprofen is a potent inhibitor of prostaglandin synthesis in vitro. Ibuprofen concentrations reached during therapy have produced in vivo effects. Prostaglandins sensitize afferent nerves and potentiate the action of bradykinin in inducing pain in animal models. Prostaglandins are mediators of inflammation. Because ibuprofen is an inhibitor of prostaglandin synthesis, its mode of action may be due to an increase of prostaglandins in peripheral tissues.</paragraph>
+                  <paragraph>Famotidine is a competitive inhibitor of histamine H2-receptors. The primary clinically important pharmacologic activity of famotidine is inhibition of gastric secretion. Both the acid concentration and volume of gastric secretion are suppressed by famotidine, while changes in pepsin secretion are proportional to volume output.</paragraph>
+                  <paragraph>Systemic effects of famotidine in the CNS, cardiovascular, respiratory or endocrine systems were not noted in clinical pharmacology studies. Also, no antiandrogenic effects were noted. Serum hormone levels, including prolactin, cortisol, thyroxine (T4) and testosterone, were not altered after treatment with famotidine.</paragraph>
+                  <paragraph>12.2 Pharmacodynamics</paragraph>
+                  <paragraph>In a healthy volunteer study, ibuprofen 400 mg given once daily, administered 2 hours prior to immediate-release aspirin (81 mg) for 6 days, showed an interaction with the antiplatelet activity of aspirin as measured by % serum thromboxane B2 (TxB2) inhibition at 24 hours following the day-6 aspirin dose [53%]. An interaction was still observed, but minimized, when ibuprofen 400 mg given once-daily was administered as early as 8 hours prior to the immediate-release aspirin dose [90.7%]. However, there was no interaction with the antiplatelet activity of aspirin when ibuprofen 400 mg, given once daily, was administered 2 hours after (but not concomitantly, 15 min or 30 min after) the immediate-release aspirin dose [99.2%].</paragraph>
+                  <paragraph>In another study, where immediate-release aspirin 81 mg was administered once daily with ibuprofen 400 mg given three times daily (1, 7 and 13 hours post-aspirin dose) for 10 consecutive days, the mean % serum thromboxane B2 (TxB2) inhibition suggested no interaction with the antiplatelet activity of aspirin [98.3%]. However, there were individual subjects with serum TxB2 inhibition below 95%, with the lowest being 90.2%.</paragraph>
+                  <paragraph>When a similarly designed study was conducted with enteric-coated aspirin, where healthy subjects were administered enteric-coated aspirin 81 mg once daily for 6 days and ibuprofen 400 mg three times daily (2, 7 and 12 h post-aspirin dose) for 6 days, there was an interaction with the antiplatelet activity at 24 hours following the day-6 aspirin dose [67%] [see Drug Interactions (7)].</paragraph>
+                  <paragraph>12.3 Pharmacokinetics</paragraph>
+                  <paragraph>Absorption</paragraph>
+                  <paragraph>Ibuprofen and famotidine are rapidly absorbed after a single dose administration of ibuprofen and famotidine tablets. Mean Cmax values for ibuprofen are 45 mcg/mL and are reached approximately 1.9 hours after oral administration of ibuprofen and famotidine tablets. The Cmax and AUC0-24hours values for the 800 mg of ibuprofen contained in a ibuprofen and famotidine tablet are bioequivalent to the values for 800 mg of ibuprofen administered alone. Cmax values for famotidine were 61 ng/mL and are reached at approximately 2 hours after oral administration of ibuprofen and famotidine tablets.</paragraph>
+                  <paragraph>A high-fat meal reduced famotidine Cmax and AUC by approximately by 15% and 11%, respectively and reduced ibuprofen AUC by approximately 14% but did not change Cmax. Food delayed famotidine Tmax and ibuprofen Tmax by approximately 1 hour and 0.2 hour, respectively.</paragraph>
+                  <paragraph>Distribution</paragraph>
+                  <paragraph>Ibuprofen is extensively bound to plasma proteins.</paragraph>
+                  <paragraph>Fifteen to 20% of famotidine in plasma is protein bound.</paragraph>
+                  <paragraph>Elimination</paragraph>
+                  <paragraph>Metabolism</paragraph>
+                  <paragraph>The only metabolite of famotidine identified in man is the S-oxide.</paragraph>
+                  <paragraph>Excretion</paragraph>
+                  <paragraph>Ibuprofen is eliminated from the systemic circulation with a mean half-life (t1/2) value of 2 hours following administration of a single dose of ibuprofen and famotidine tablets.</paragraph>
+                  <paragraph>Ibuprofen is rapidly metabolized and eliminated in the urine. The excretion of ibuprofen is virtually complete 24 hours after the last dose.</paragraph>
+                  <paragraph>Studies have shown that following ingestion of the drug, 45% to 79% of the dose was recovered in the urine within 24 hours as metabolite A (25%), (+)-2-[p-(2-hydroxymethyl-propyl) phenyl] propionic acid and metabolite B (37%), (+)-2-[p-(2-carboxypropyl) phenyl] propionic acid; the percentages of free and conjugated ibuprofen were approximately 1% and 14%, respectively.</paragraph>
+                  <paragraph>Famotidine is eliminated from the systemic circulation with a mean t1/2 value of 4 hours following administration of a single dose of ibuprofen and famotidine tablets.</paragraph>
+                  <paragraph>Famotidine is eliminated by renal (65% to 70%) and metabolic (30% to 35%) routes. Renal clearance is 250 mL/min to 450 mL/min, indicating some tubular excretion. Twenty-five to 30% of an oral dose and 65% to 70% of an intravenous dose are recovered in the urine as unchanged compound.</paragraph>
+                  <paragraph>Specific Populations</paragraph>
+                  <paragraph>Pediatrics: The pharmacokinetics of ibuprofen or famotidine after administration of ibuprofen and famotidine tablets have not been evaluated in a pediatric population considering the doses of ibuprofen and famotidine in ibuprofen and famotidine tablets are targeted for use in an adult population.</paragraph>
+                  <paragraph>Hepatic impairment: The effects of hepatic impairment on the pharmacokinetics of ibuprofen or famotidine after administration of ibuprofen and famotidine tablets have not been evaluated [see Warnings and Precautions (5.4)].</paragraph>
+                  <paragraph>Renal impairment: There is a close relationship between creatinine clearance values and the elimination t1/2 of famotidine, which is a component of ibuprofen and famotidine tablets. In patients with creatinine clearance &lt; 50 mL/min, the elimination t1/2 of famotidine is increased and may exceed 20 hours. Therefore, ibuprofen and famotidine tablets are not recommended in patients with creatinine clearance &lt; 50 mL/min [see Warnings and Precautions (5.7)].</paragraph>
+                  <paragraph>Drug Interaction Studies</paragraph>
+                  <paragraph>Co-administration of ibuprofen (800 mg) and famotidine (40 mg) increased ibuprofen Cmax by 15.6% but did not affect its AUC, and increased famotidine AUC and Cmax by 16% and 22%, respectively.</paragraph>
+                  <paragraph>Aspirin: When NSAIDs were administered with aspirin, the protein binding of NSAIDs were reduced, although the clearance of free NSAID was not altered. The clinical significance of this interaction is not known. See Table 3 for clinically significant drug interactions of NSAIDs with aspirin [see Drug Interaction (7)].</paragraph>
+                  <paragraph>Probenecid, an inhibitor of Organic Aniton Transporter 1 (OAT1) and OAT3</paragraph>
+                  <paragraph>In vitro studies indicate that famotidine is a substrate for OAT1 and OAT3. Following coadministration of probenecid (1,500 mg) with a single oral 20 mg dose of famotidine in 8 healthy subjects, the serum AUC0-10h of famotidine increased from 424 ng×hr/mL to 768 ng×hr/mL and the maximum serum concentration (Cmax) increased from 73 ng/mL to 113 ng/mL. Renal clearance, urinary excretion rate and amount of famotidine excreted unchanged in urine were decreased. The clinical relevance of this interaction is unknown.</paragraph>
+                  <paragraph>Metformin: Famotidine is a selective inhibitor of multidrug and toxin extrusion transporter 1 (MATE-1) but no clinical significant interaction with metformin, a substrate for MATE-1, was observed.</paragraph>
+               </text>
+               <effectiveTime value="20260622"/>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_54da110a-894f-4175-e063-6394a90af25d">
+               <id root="54da110a-894e-4175-e063-6394a90af25d"/>
+               <code code="43680-8" codeSystem="2.16.840.1.113883.6.1" displayName="NONCLINICAL TOXICOLOGY SECTION"/>
+               <text>
+                  <paragraph>13.1 Carcinogenesis, Mutagenesis and Impairment of Fertility</paragraph>
+                  <paragraph>Carcinogenesis</paragraph>
+                  <paragraph>Studies to evaluate the potential effects of ibuprofen and famotidine on carcinogenicity, mutagenicity or impairment of fertility have not been conducted.</paragraph>
+                  <paragraph>In a 106-week study in rats and a 92-week study in mice, famotidine was given at oral doses of up to 2,000 mg/kg/day (approximately 122 times and 243 times the recommended human dose, respectively, based on body surface area). There was no evidence of carcinogenic potential for famotidine.</paragraph>
+                  <paragraph>Mutagenesis</paragraph>
+                  <paragraph>Famotidine was negative in the microbial mutagen test (Ames test) using Salmonella typhimurium and Escherichia coli with or without rat liver enzyme activation at concentrations up to 10,000 mcg/plate. In in vivo mouse micronucleus test and a chromosomal aberration test with famotidine, no evidence of a mutagenic effect was observed.</paragraph>
+                  <paragraph>In published studies, ibuprofen was not mutagenic in the in vitro bacterial reverse mutation assay (Ames assay).</paragraph>
+                  <paragraph>Impairment of Fertility</paragraph>
+                  <paragraph>In studies of famotidine in rats at oral doses of up to 2,000 mg/kg/day (approximately 243 times the recommended human dose, based on body surface area), fertility and reproductive performance were not affected.</paragraph>
+                  <paragraph>In a published study, dietary administration of ibuprofen to male and female rats 8-weeks prior to and during mating at dose levels of 20 mg/kg (0.06-times the MRHD based on body surface area comparison) did not impact male or female fertility or litter size.</paragraph>
+                  <paragraph>In other studies, adult mice were administered ibuprofen intraperitoneally at a dose of 5.6 mg/kg/day (0.0085-times the MRHD based on body surface area comparison) for 35 days or 60 days in males and 35 days in females. There was no effect on sperm motility or viability in males but decreased ovulation was reported in females.</paragraph>
+               </text>
+               <effectiveTime value="20260622"/>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_54da18af-2ee6-be1a-e063-6294a90ac809">
+               <id root="54da18af-2ee5-be1a-e063-6294a90ac809"/>
+               <code code="34092-7" codeSystem="2.16.840.1.113883.6.1" displayName="CLINICAL STUDIES SECTION"/>
+               <text>
+                  <paragraph>Two multicenter, double-blind, active-controlled, randomized, 24-week studies of ibuprofen and famotidine tablets were conducted in patients who were expected to require daily administration of an NSAID for at least the coming 6 months for conditions such as the following: osteoarthritis, rheumatoid arthritis, chronic low back pain, chronic regional pain syndrome and chronic soft tissue pain. Patients were assigned randomly, in approximately a 2:1 ratio, to treatment with either ibuprofen and famotidine tablets or ibuprofen (800 mg) three times a day for 24 consecutive weeks. A total of 1,533 patients were enrolled and ranged in age from 39 years to 80 years (median age 55 years) with 68% females. Race was distributed as follows: 79% Caucasian, 18% African-American and 3% Other. Approximately 15% of the patients in Studies 301 and 303 were taking concurrent low-dose aspirin (less than or equal to 325 mg daily), 18% were 65 years of age or older and 6% had a history of previous upper gastrointestinal ulcer. Although H. pylori status was negative at baseline, H. pylori status was not reassessed during the trials.</paragraph>
+                  <paragraph>Studies 301 and 303 compared the incidence of upper gastrointestinal (gastric and/or duodenal) ulcer formation in a total 930 patients taking ibuprofen and famotidine tablets and 452 patients taking ibuprofen only, either as a primary or secondary endpoint. In both trials, ibuprofen and famotidine tablets were associated with a statistically significantly reduction in the risk of developing upper gastrointestinal ulcers compared to taking ibuprofen only during the 6 month study period. The data are presented below in Tables 4 and 5. Two analyses for each endpoint were conducted. In one analysis patients who terminated early, without an endoscopic evaluation within 14 days of their last dose of study drug, were classified as not having an ulcer. In the second analysis, those patients were classified as having an ulcer. Both analyses exclude patients who terminated study prior to the first scheduled endoscopy at 8 weeks.</paragraph>
+                  <paragraph>Table 4 Overall Incidence Rates of Patients Who Developed at Least One Upper Gastrointestinal or Gastric Ulcer-Study 301</paragraph>
+                  <paragraph>a Cochran-Mantel-Haenszel test</paragraph>
+                  <paragraph>* Classifying early terminated patients as NOT having an ulcer</paragraph>
+                  <paragraph>** Classifying patients who early terminated due to an adverse event, were lost to follow-up, discontinued due to the discretion of the sponsor or the investigator or did not have an endoscopy performed within 14 days of their last dose of study drug, as having an ulcer</paragraph>
+                  <paragraph>
+                     <br/>
+Ibuprofen and Famotidine Tablets
+  <br/>
+% (n/N)
+  <br/>
+Ibuprofen
+  <br/>
+% (n/N)
+  <br/>
+P -valuea
+  <br/>
+Primary endpoint
+  <br/>
+                     <br/>
+                     <br/>
+                     <br/>
+Upper gastrointestinal ulcer*
+  <br/>
+10.5% (40/380)
+  <br/>
+20.0% (38/190)
+  <br/>
+0.002
+  <br/>
+Upper gastrointestinal ulcer**
+  <br/>
+22.9% (87/380)
+  <br/>
+32.1% (61/190)
+  <br/>
+0.020
+  <br/>
+Secondary endpoint
+  <br/>
+                     <br/>
+                     <br/>
+                     <br/>
+Gastric ulcer*
+  <br/>
+9.7% (37/380)
+  <br/>
+17.9% (34/190)
+  <br/>
+0.005
+  <br/>
+Gastric ulcer**
+  <br/>
+22.4% (85/380)
+  <br/>
+30.0% (57/190)
+  <br/>
+0.052
+ </paragraph>
+                  <paragraph>Table 5 Overall Incidence Rate of Patients Who Developed at Least One Gastric or Upper Gastrointestinal Ulcer-Study 303</paragraph>
+                  <paragraph>a Cochran-Mantel-Haenszel test</paragraph>
+                  <paragraph>* Classifying early terminated patients as NOT having an ulcer</paragraph>
+                  <paragraph>** Classifying patients who early terminated due to an adverse event, were lost to follow-up, discontinued due to the discretion of the sponsor or the investigator or did not have an endoscopy performed within 14 days of their last dose of study drug, as having an ulcer</paragraph>
+                  <paragraph>
+                     <br/>
+Ibuprofen and Famotidine Tablets
+  <br/>
+% (n/N)
+  <br/>
+Ibuprofen
+  <br/>
+% (n/N)
+  <br/>
+P -valuea
+  <br/>
+Primary endpoint
+  <br/>
+                     <br/>
+                     <br/>
+                     <br/>
+Gastric ulcer*
+  <br/>
+Gastric ulcer**
+  <br/>
+8.7% (39/447)
+  <br/>
+17.4% (78/447)
+  <br/>
+17.6% (38/216)
+  <br/>
+31% (67/216)
+  <br/>
+0.0004
+  <br/>
+&lt;0.0001
+  <br/>
+Secondary endpoint
+  <br/>
+Upper gastrointestinal ulcer*
+  <br/>
+10.1% (45/447)
+  <br/>
+21.3% (46/216)
+  <br/>
+&lt;0.0001
+  <br/>
+Upper gastrointestinal ulcer**
+  <br/>
+18.6% (83/447)
+  <br/>
+34.3% (74/216)
+  <br/>
+&lt;0.0001
+ </paragraph>
+                  <paragraph>Subgroup analyses of patients who used low-dose aspirin (less than or equal to 325 mg daily), were 65 years and older or had a prior history of gastrointestinal ulcer are summarized as follows:</paragraph>
+                  <paragraph>Of the 1,022 patients in clinical studies of ibuprofen and famotidine tablets, 15% (213 patients) used low-dose aspirin and the results were consistent with the overall findings of the study. In these clinical studies 16% of patients who used low-dose aspirin who were treated with ibuprofen and famotidine tablets developed an upper gastrointestinal ulcer compared to 35% of those patients who received only ibuprofen.</paragraph>
+                  <paragraph>The clinical trials primarily enrolled patients less than 65 years without a prior history of gastrointestinal ulcer. Of the 1,022 patients in clinical studies of ibuprofen and famotidine tablets, 18% (249 patients) were 65 years of age or older. In these clinical studies, 23% of patients 65 years of age and older who were treated with ibuprofen and famotidine tablets developed an upper gastrointestinal ulcer compared to 27% of those patients who received only ibuprofen [see Use in Specific Populations (8.5)].</paragraph>
+                  <paragraph>Of the 1,022 patients in clinical studies of ibuprofen and famotidine tablets, 6% had a prior history of gastrointestinal ulcer. In these clinical studies, 25% of patients with a prior history of gastrointestinal ulcer who were treated with ibuprofen and famotidine tablets developed an upper gastrointestinal ulcer compared to 24% of those patients who received only ibuprofen.</paragraph>
+               </text>
+               <effectiveTime value="20260622"/>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_54da19e2-d4b3-4dae-e063-6394a90a3683">
+               <id root="54da19e2-d4b2-4dae-e063-6394a90a3683"/>
+               <code code="34069-5" codeSystem="2.16.840.1.113883.6.1" displayName="HOW SUPPLIED SECTION"/>
+               <text>
+                  <paragraph>Ibuprofen and famotidine tablets,800 mg and 26.6 mg are white to off-white colored, modified capsule shaped, film-coated beveled edge tablets imprinted with "777" on one side and plain on other side and are supplied as follows:</paragraph>
+                  <paragraph>NDC 72189-0667-90 in bottle of 90 tablets with child-resistant closure</paragraph>
+               </text>
+               <effectiveTime value="20260622"/>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_54da177d-243a-76cc-e063-6294a90a6d30">
+               <id root="54da177d-2439-76cc-e063-6294a90a6d30"/>
+               <code code="44425-7" codeSystem="2.16.840.1.113883.6.1" displayName="STORAGE AND HANDLING SECTION"/>
+               <text>
+                  <paragraph>Storage </paragraph>
+                  <paragraph>Store at 20°C to 25°C (68ºF to 77°F); excursions permitted between 15°C to 30°C (59°F</paragraph>
+                  <paragraph>to 86°F) [See USP Controlled Room Temperature].</paragraph>
+               </text>
+               <effectiveTime value="20260622"/>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_54da230c-1a73-04b4-e063-6394a90a58ce">
+               <id root="54da230c-1a72-04b4-e063-6394a90a58ce"/>
+               <code code="88436-1" codeSystem="2.16.840.1.113883.6.1" displayName="PATIENT COUNSELING INFORMATION"/>
+               <text>
+                  <paragraph>Advise the patient to read the FDA-approved patient labeling (Medication Guide).</paragraph>
+                  <paragraph>Inform patients, families or caregivers of the following before initiating therapy with ibuprofen and famotidine tablets and periodically during the course of ongoing therapy.</paragraph>
+                  <paragraph>Cardiovascular Thrombotic Events</paragraph>
+                  <paragraph>Advise patients to be alert for the symptoms of cardiovascular thrombotic events, including chest pain, shortness of breath, weakness or slurring of speech and to report any of these symptoms to their health care provider immediately [see Warnings and Precautions (5.1)].</paragraph>
+                  <paragraph>Gastrointestinal Bleeding, Ulceration and Perforation</paragraph>
+                  <paragraph>Advise patients to report symptoms of ulcerations and bleeding, including epigastric pain, dyspepsia, melena and hematemesis to their health care provider. In the setting of concomitant use of low-dose aspirin for cardiac prophylaxis, inform patients of the increased risk for and the signs and symptoms of GI bleeding [see Warnings and Precautions (5.2)].</paragraph>
+                  <paragraph>Hepatotoxicity</paragraph>
+                  <paragraph>Inform patients of the warning signs and symptoms of hepatotoxicity (e.g., nausea, fatigue, lethargy, pruritus, jaundice, right upper quadrant tenderness and "flu-like" symptoms). If these occur, instruct patients to stop ibuprofen and famotidine tablets and seek immediate medical therapy [see Warnings and Precautions (5.4)].</paragraph>
+                  <paragraph>Heart Failure and Edema</paragraph>
+                  <paragraph>Advise patients to be alert for the symptoms of congestive heart failure including shortness of breath, unexplained weight gain or edema and to contact their health care provider if such symptoms occur [see Warnings and Precautions (5.6)].</paragraph>
+                  <paragraph>Anaphylactic Reactions</paragraph>
+                  <paragraph>Inform patients of the signs of an anaphylactic reaction (e.g., difficulty breathing, swelling of the face or throat). Instruct patients to seek immediate emergency help if these occur [see Contraindications (4), Warnings and Precautions (5.8)].</paragraph>
+                  <paragraph>Serious Skin Reactions, including DRESS</paragraph>
+                  <paragraph>Advise patients to stop taking ibuprofen and famotidine tablets immediately if they develop any type of rash or fever and contact their health care provider as soon as possible [see Warnings and Precautions (5.11, 5.12)].</paragraph>
+                  <paragraph>Infertility</paragraph>
+                  <paragraph>Advise females of reproductive potential who desire pregnancy that NSAIDs, including ibuprofen and famotidine tablets, may be associated with a reversible delay in ovulation [see Use in Specific Populations (8.3)].</paragraph>
+                  <paragraph>Fetal Toxicity</paragraph>
+                  <paragraph>Inform pregnant women to avoid use of ibuprofen and famotidine tablets and other NSAIDs starting at 30 weeks gestation because of the risk of the premature closure of the fetal ductus arteriosus. If treatment with ibuprofen and famotidine tablets is needed for a pregnant woman between about 20 weeks to 30 weeks gestation, advise her that she may need to be monitored for oligohydramnios [see Warnings and Precautions (5.13) and Use in Specific Populations (8.1)].</paragraph>
+                  <paragraph>Avoid Concomitant Use of NSAIDs</paragraph>
+                  <paragraph>Inform patients that the concomitant use of ibuprofen and famotidine tablets with other NSAIDs or salicylates (e.g., diflunisal, salsalate) is not recommended due to the increased risk of gastrointestinal toxicity and little or no increase in efficacy [see Warnings and Precautions (5.2, 5.17), Drug Interactions (7)]. Alert patients that NSAIDs may be present in the "over the counter" medications for treatment of colds, fever or insomnia.</paragraph>
+                  <paragraph>Use of NSAIDs and Low-Dose Aspirin</paragraph>
+                  <paragraph>Inform patients not to use low-dose aspirin concomitantly with ibuprofen and famotidine tablets until they talk to their health care provider [see Drug Interactions (7)].</paragraph>
+                  <paragraph>Nephrotoxicity</paragraph>
+                  <paragraph>Patients should be monitored for development of nephrotoxicity (e.g., azotemia, hypertension and/or proteinuria). If these patients should be instructed to stop therapy and seek immediate medical therapy.</paragraph>
+                  <paragraph>Creatinine Clearance</paragraph>
+                  <paragraph>Ibuprofen and famotidine tablets are not recommended in patients with creatinine clearance &lt; 50 mL/min because of seizures, delirium, coma and other CNS effect.</paragraph>
+                  <paragraph>Taking Ibuprofen and Famotidine Tablets</paragraph>
+                  <paragraph>Inform patients that ibuprofen and famotidine tablets should be swallowed whole and should not be cut to supply a lower dose. Advise patient not to chew, divide or crush tablets [see Dosage and Administration (2)].</paragraph>
+                  <paragraph>Patients should be instructed that if a dose is missed, it should be taken as soon as possible. However, if the next scheduled dose is due, the patient should not take the missed dose and should be instructed to take the next dose on time. Patients should be instructed not to take 2 doses at one time to make up for a missed dose.</paragraph>
+                  <paragraph>Dispense with Medication Guide available at www.vionausa.com/medguides or call 1-888-304-5011.</paragraph>
+               </text>
+               <effectiveTime value="20260622"/>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_54da0902-3537-4195-e063-6394a90a2df4">
+               <id root="54da0902-3536-4195-e063-6394a90a2df4"/>
+               <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+               <text>
+                  <paragraph>Manufactured by:</paragraph>
+                  <paragraph>Zydus Lifesciences Ltd.</paragraph>
+                  <paragraph>Ahmedabad-382213, India</paragraph>
+                  <paragraph>Distributed by:</paragraph>
+                  <paragraph>Viona Pharmaceuticals Inc.</paragraph>
+                  <paragraph>Cranford, NJ 07016</paragraph>
+                  <paragraph>Rev: 04/25</paragraph>
+               </text>
+               <effectiveTime value="20260622"/>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_54da16ad-bf67-bfbf-e063-6294a90aacbb">
+               <id root="54da16ad-bf66-bfbf-e063-6294a90aacbb"/>
+               <code code="42231-1" codeSystem="2.16.840.1.113883.6.1" displayName="SPL MEDGUIDE SECTION"/>
+               <text>
+                  <paragraph>Medication Guide
+  <br/>
+Ibuprofen (eye″ bue proe′ fen) and Famotidine (fa moe′ ti deen)
+  <br/>
+Tablets, for oral use
+  <br/>
+What is the most important information I should know about Ibuprofen and famotidine tablets?
+  <br/>
+Ibuprofen and famotidine tablets can cause serious side effects including:
+ </paragraph>
+                  <paragraph>Increased risk of a heart attack or stroke that can lead to death. This risk may happen early in treatment and may increase:</paragraph>
+                  <paragraph>o   with increasing doses of medicine containing NSAIDs
+  <br/>
+o   with longer use of medicine containing NSAIDs
+  <br/>
+Do not take Ibuprofen and famotidine tablets right before or after a heart surgery called a "coronary artery bypass graft (CABG)." Avoid taking Ibuprofen and famotidine tablets after a recent heart attack, unless your healthcare provider tells you to. You may have an increased risk of another heart attack if you take Ibuprofen and famotidine tablets after a recent heart attack.
+  <br/>
+                  </paragraph>
+                  <paragraph>Increased risk of bleeding, ulcers and tears (perforation) of the esophagus (tube leading from the mouth to the stomach), stomach and intestines:</paragraph>
+                  <paragraph/>
+                  <paragraph>anytime during use</paragraph>
+                  <paragraph>without warning symptoms</paragraph>
+                  <paragraph>that may cause death</paragraph>
+                  <paragraph>The risk of getting an ulcer or bleeding increases with:</paragraph>
+                  <paragraph>past history of stomach ulcers or stomach or intestinal bleeding with the use of NSAIDs</paragraph>
+                  <paragraph>smoking</paragraph>
+                  <paragraph>taking medicines called "corticosteroids", "anticoagulants", "SSRIs", or "SNRIs"</paragraph>
+                  <paragraph>drinking alcohol</paragraph>
+                  <paragraph>increasing doses of NSAIDs</paragraph>
+                  <paragraph>older age</paragraph>
+                  <paragraph>longer use of NSAIDs</paragraph>
+                  <paragraph>poor health</paragraph>
+                  <paragraph/>
+                  <paragraph>advanced liver disease</paragraph>
+                  <paragraph/>
+                  <paragraph>bleeding problems</paragraph>
+                  <paragraph>You should take Ibuprofen and famotidine tablets exactly as prescribed, at the lowest dose possible and for the shortest time needed.
+  <br/>
+Ibuprofen and famotidine tablets contain a non-steroidal anti-inflammatory drug NSAID (ibuprofen). Do not use ibuprofen and famotidine tablets with other medicines to lessen pain or fever or with other medicines for colds or sleeping problems without talking to your healthcare provider first, because they may contain an NSAID also.
+  <br/>
+Ibuprofen and famotidine tablets may help your acid-related symptoms, but you could still have serious stomach problems. Talk with your healthcare provider.
+  <br/>
+Ibuprofen and famotidine tablets contain ibuprofen, an NSAID and famotidine, a histamine H2-receptor blocker medicine.
+  <br/>
+What are ibuprofen and famotidine tablets?
+  <br/>
+Ibuprofen and famotidine tablets are a prescription medicine used to:
+ </paragraph>
+                  <paragraph>relieve the signs and symptoms of rheumatoid arthritis and osteoarthritis.
+  <br/>
+decrease the risk of developing ulcers of the stomach and upper intestines (upper gastrointestinal ulcers) in people taking ibuprofen for rheumatoid arthritis and osteoarthritis.
+ </paragraph>
+                  <paragraph>It is not known if ibuprofen and famotidine tablets are safe and effective in children.
+  <br/>
+Do not take ibuprofen and famotidine tablets:
+ </paragraph>
+                  <paragraph>if you are allergic to ibuprofen, famotidine, any other histamine H2-receptor blocker or any of the ingredients in ibuprofen and famotidine tablets. See the end of this Medication Guide for a complete list of ingredients.
+  <br/>
+if you have had an asthma attack, hives or other allergic reaction with aspirin or any other NSAIDs.
+  <br/>
+right before or after heart bypass surgery.
+ </paragraph>
+                  <paragraph>Before taking ibuprofen and famotidine tablets, tell your healthcare provider about all of your medical conditions, including if you:</paragraph>
+                  <paragraph>have liver or kidney problems.
+  <br/>
+have high blood pressure.
+  <br/>
+have heart problems.
+  <br/>
+have asthma.
+  <br/>
+have bleeding problems.
+  <br/>
+are pregnant or plan to become pregnant. Taking ibuprofen and famotidine tablets at about 20 weeks of pregnancy or later may harm your unborn baby. If you need to take ibuprofen and famotidine tablets when you are between 20 weeks and 30 weeks of pregnancy, your healthcare provider may need to monitor the amount of fluid in your womb around your baby. You should not take ibuprofen and famotidine tablets after about 30 weeks of pregnancy.
+  <br/>
+are breastfeeding or plan to breast feed. Ibuprofen and famotidine can pass into your breast milk. Talk to your healthcare provider about the best way to feed your baby if you take ibuprofen and famotidine tablets.
+ </paragraph>
+                  <paragraph>Tell your healthcare provider about all of the medicines you take, including prescription and over-the-counter medicines, vitamins and herbal supplements. Ibuprofen and famotidine tablets and some other medicines can interact with each other and cause serious side effects. Do not start taking any new medicine without talking to your healthcare provider first.
+  <br/>
+How should I take ibuprofen and famotidine tablets?
+ </paragraph>
+                  <paragraph>Take ibuprofen and famotidine tablets exactly as your healthcare provider tells you to take it.
+  <br/>
+Your healthcare provider will tell you how many ibuprofen and famotidine tablets to take and when to take it.
+  <br/>
+Do not change your dose or stop ibuprofen and famotidine tablets without first talking to your healthcare provider.
+  <br/>
+Swallow ibuprofen and famotidine tablets whole with liquid. Do not split, chew, crush or dissolve the ibuprofen and famotidine tablet. Tell your healthcare provider if you cannot swallow the tablet whole. You may need a different medicine.
+ </paragraph>
+                  <paragraph>If you forget to take your dose of ibuprofen and famotidine tablets, take it as soon as you remember. If it is almost time for your next dose, do not take the missed dose. Take the next dose on time. Do not take 2 doses at one time to make up for a missed dose.
+  <br/>
+You should not take an ibuprofen tablet and famotidine tablet together instead of taking ibuprofen and famotidine tablets, because they will not work in the same way.
+ </paragraph>
+                  <paragraph>What are the possible side effects of ibuprofen and famotidine tablets?
+  <br/>
+Ibuprofen and famotidine tablets can cause serious side effects, including:
+  <br/>
+See "What is the most important information I should know about ibuprofen and famotidine tablets?
+ </paragraph>
+                  <paragraph>heart attack</paragraph>
+                  <paragraph>kidney problems including kidney failure</paragraph>
+                  <paragraph>stroke</paragraph>
+                  <paragraph>life-threatening allergic reactions</paragraph>
+                  <paragraph>liver problems including liver failure</paragraph>
+                  <paragraph>asthma attacks in people who have asthma</paragraph>
+                  <paragraph>new or worse high blood pressure</paragraph>
+                  <paragraph>life-threatening skin reactions</paragraph>
+                  <paragraph>heart failure</paragraph>
+                  <paragraph>low red blood cells (anemia)</paragraph>
+                  <paragraph>Other side effects of ibuprofen and famotidine tablets include: stomach pain, constipation, diarrhea, gas, heartburn, nausea, vomiting and dizziness.
+  <br/>
+Get emergency help right away if you get any of the following symptoms:
+ </paragraph>
+                  <paragraph>shortness of breath</paragraph>
+                  <paragraph>slurred speech</paragraph>
+                  <paragraph>chest pain</paragraph>
+                  <paragraph>swelling of the face or throat</paragraph>
+                  <paragraph>weakness in one part or side of your body</paragraph>
+                  <paragraph>
+                     <br/>
+Stop taking ibuprofen and famotidine tablets and call your healthcare provider right away if you get any of the following symptoms:
+ </paragraph>
+                  <paragraph>nausea</paragraph>
+                  <paragraph>vomit blood</paragraph>
+                  <paragraph>more tired or weaker than usual</paragraph>
+                  <paragraph>there is blood in your bowel movement or it is black and sticky like tar</paragraph>
+                  <paragraph>diarrhea</paragraph>
+                  <paragraph>unusual weight gain</paragraph>
+                  <paragraph>itching</paragraph>
+                  <paragraph>skin rash or blisters with fever</paragraph>
+                  <paragraph>your skin or eyes look yellow</paragraph>
+                  <paragraph>swelling of the arms, legs, hands and feet</paragraph>
+                  <paragraph>indigestion or stomach pain</paragraph>
+                  <paragraph/>
+                  <paragraph>flu-like symptoms</paragraph>
+                  <paragraph>
+                     <br/>
+If you take too much ibuprofen and famotidine tablets, call your poison control center at 1-800-222-1222.
+  <br/>
+These are not all the possible side effects of ibuprofen and famotidine tablets. Call your doctor for medical advice about side effects. You may report side effects to FDA at 1-800-FDA-1088.
+  <br/>
+Other information about NSAIDs
+ </paragraph>
+                  <paragraph>Aspirin is an NSAID but it does not increase the chance of a heart attack. Aspirin can cause bleeding in the brain, stomach and intestines. Aspirin can also cause ulcers in the stomach and intestines.
+  <br/>
+Some NSAIDs are sold in lower doses without a prescription (over-the-counter). Talk to your healthcare provider before using over-the-counter NSAIDs for more than 10 days.
+ </paragraph>
+                  <paragraph>General information about the safe and effective use of ibuprofen and famotidine tablets
+  <br/>
+Medicines are sometimes prescribed for purposes other than those listed in a Medication Guide. Do not use ibuprofen and famotidine tablets for a condition for which it was not prescribed. Do not give ibuprofen and famotidine tablets to other people, even if they have the same symptoms that you have. It may harm them.
+  <br/>
+You can ask your pharmacist or healthcare provider for information about NSAIDs that is written for health professionals.
+  <br/>
+What are the ingredients in ibuprofen and famotidine tablets?
+  <br/>
+Active ingredients: Ibuprofen, USP and famotidine, USP
+  <br/>
+Inactive ingredients: Colloidal silicon dioxide, croscarmellose sodium, glyceryl monocaprylocaprate type 1, hypromellose, magnesium stearate, microcrystalline cellulose, polyvinyl alcohol-partially hydrolyzed, sodium lauryl sulfate, talc and titanium dioxide.
+  <br/>
+The tablet is imprinted with black ink and contains the following inactive ingredients: black iron oxide, propylene glycol and shellac.
+  <br/>
+Manufactured by:
+  <br/>
+Zydus Lifesciences Ltd.
+  <br/>
+Ahmedabad-382213, India
+  <br/>
+Distributed by:
+  <br/>
+Viona Pharmaceuticals Inc.
+  <br/>
+Cranford, NJ 07016
+  <br/>
+This Medication Guide has been approved by the U.S. Food and Drug Administration.
+  <br/>
+Revised: 04/25
+ </paragraph>
+               </text>
+               <effectiveTime value="20260622"/>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_54da2187-ab6e-4e52-e063-6394a90a0943">
+               <id root="54da2187-ab6d-4e52-e063-6394a90a0943"/>
+               <code code="51945-4" codeSystem="2.16.840.1.113883.6.1" displayName="PACKAGE LABEL.PRINCIPAL DISPLAY PANEL"/>
+               <text>
+                  <paragraph>
+                     <renderMultiMedia referencedObject="img_54da14b4-f878-c057-e063-6294a90a97c6"/>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20260622"/>
+               <component>
+                  <observationMedia ID="img_54da14b4-f878-c057-e063-6294a90a97c6">
+                     <text>72189-667-90</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="72189-0667-90.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+      </structuredBody>
+   </component>
+</document>

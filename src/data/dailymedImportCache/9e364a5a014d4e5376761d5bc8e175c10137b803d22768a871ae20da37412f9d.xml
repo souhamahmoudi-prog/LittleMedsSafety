@@ -1,0 +1,1949 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="https://www.accessdata.fda.gov/spl/stylesheet/spl.xsl" type="text/xsl"?>
+<document xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 https://www.accessdata.fda.gov/spl/schema/spl.xsd">
+   <id root="747c9c87-122c-4983-a6ff-0c49c550e5b3"/>
+   <code code="34391-3" codeSystem="2.16.840.1.113883.6.1" displayName="HUMAN PRESCRIPTION DRUG LABEL"/>
+   <title>These highlights do not include all the information needed to use ONDANSETRON TABLETS safely and effectively. See full prescribing information for ONDANSETRON TABLETS.<br/>
+      <br/> ONDANSETRON tablets, for oral use<br/> Initial U.S. Approval: 1991<br/>
+   </title>
+   <effectiveTime value="20260701"/>
+   <setId root="0a14eb9a-0385-40e9-a7ec-71435450ac91"/>
+   <versionNumber value="2"/>
+   <author>
+      <time/>
+      <assignedEntity>
+         <representedOrganization>
+            <id extension="079196022" root="1.3.6.1.4.1.519.1"/>
+            <name>Proficient Rx LP</name>
+            <assignedEntity>
+               <assignedOrganization>
+                  <assignedEntity>
+                     <assignedOrganization>
+                        <id extension="079196022" root="1.3.6.1.4.1.519.1"/>
+                        <name>Proficient Rx LP</name>
+                     </assignedOrganization>
+                     <performance>
+                        <actDefinition>
+                           <code code="C73606" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="REPACK"/>
+                           <product>
+                              <manufacturedProduct classCode="MANU">
+                                 <manufacturedMaterialKind>
+                                    <code code="82804-257" codeSystem="2.16.840.1.113883.6.69"/>
+                                 </manufacturedMaterialKind>
+                              </manufacturedProduct>
+                           </product>
+                        </actDefinition>
+                     </performance>
+                     <performance>
+                        <actDefinition>
+                           <code code="C73607" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="RELABEL"/>
+                           <product>
+                              <manufacturedProduct classCode="MANU">
+                                 <manufacturedMaterialKind>
+                                    <code code="82804-257" codeSystem="2.16.840.1.113883.6.69"/>
+                                 </manufacturedMaterialKind>
+                              </manufacturedProduct>
+                           </product>
+                        </actDefinition>
+                     </performance>
+                  </assignedEntity>
+               </assignedOrganization>
+            </assignedEntity>
+         </representedOrganization>
+      </assignedEntity>
+   </author>
+   <component>
+      <structuredBody>
+         <component>
+            <section>
+               <id root="613e01a8-e803-40f2-8b78-8d1f54f785c0"/>
+               <code code="48780-1" codeSystem="2.16.840.1.113883.6.1" displayName="SPL product data elements section"/>
+               <effectiveTime value="20260601"/>
+               <subject>
+                  <manufacturedProduct>
+                     <manufacturedProduct>
+                        <code code="82804-257" codeSystem="2.16.840.1.113883.6.69"/>
+                        <name>Ondansetron Hydrochloride</name>
+                        <formCode code="C42931" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TABLET, FILM COATED"/>
+                        <asEntityWithGeneric>
+                           <genericMedicine>
+                              <name>Ondansetron Hydrochloride</name>
+                           </genericMedicine>
+                        </asEntityWithGeneric>
+                        <asEquivalentEntity classCode="EQUIV">
+                           <code code="C64637" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <definingMaterialKind>
+                              <code code="57237-075" codeSystem="2.16.840.1.113883.6.69"/>
+                           </definingMaterialKind>
+                        </asEquivalentEntity>
+                        <ingredient classCode="ACTIM">
+                           <quantity>
+                              <numerator unit="mg" value="4"/>
+                              <denominator unit="1" value="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="NMH84OZK2B" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>ONDANSETRON HYDROCHLORIDE</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="4AF302ESOS" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>ONDANSETRON</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="3SY5LH9PMK" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>ANHYDROUS LACTOSE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="OP1R32D61U" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>MICROCRYSTALLINE CELLULOSE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="O8232NY3SJ" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>STARCH, CORN</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="70097M6I30" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>MAGNESIUM STEARATE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="XHX3C3X673" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>TRIACETIN</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="15FIX9V2JP" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>TITANIUM DIOXIDE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="0WZ8WG20P6" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>HYPROMELLOSE 2910 (6 MPA.S)</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <asContent>
+                           <quantity>
+                              <numerator unit="1" value="10"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code code="82804-257-10" codeSystem="2.16.840.1.113883.6.69"/>
+                              <formCode code="C43169" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOTTLE"/>
+                           </containerPackagedProduct>
+                           <subjectOf>
+                              <marketingAct>
+                                 <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                                 <statusCode code="active"/>
+                                 <effectiveTime>
+                                    <low value="20260623"/>
+                                 </effectiveTime>
+                              </marketingAct>
+                           </subjectOf>
+                           <subjectOf>
+                              <characteristic>
+                                 <code code="SPLCMBPRDTP" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                                 <value code="C112160" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="Type 0: Not a Combination Product" xsi:type="CV"/>
+                              </characteristic>
+                           </subjectOf>
+                        </asContent>
+                        <asContent>
+                           <quantity>
+                              <numerator unit="1" value="30"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code code="82804-257-30" codeSystem="2.16.840.1.113883.6.69"/>
+                              <formCode code="C43169" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOTTLE"/>
+                           </containerPackagedProduct>
+                           <subjectOf>
+                              <marketingAct>
+                                 <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                                 <statusCode code="active"/>
+                                 <effectiveTime>
+                                    <low value="20260715"/>
+                                 </effectiveTime>
+                              </marketingAct>
+                           </subjectOf>
+                           <subjectOf>
+                              <characteristic>
+                                 <code code="SPLCMBPRDTP" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                                 <value code="C112160" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="Type 0: Not a Combination Product" xsi:type="CV"/>
+                              </characteristic>
+                           </subjectOf>
+                        </asContent>
+                     </manufacturedProduct>
+                     <subjectOf>
+                        <approval>
+                           <id extension="ANDA078539" root="2.16.840.1.113883.3.150"/>
+                           <code code="C73584" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ANDA"/>
+                           <author>
+                              <territorialAuthority>
+                                 <territory>
+                                    <code code="USA" codeSystem="2.16.840.1.113883.5.28"/>
+                                 </territory>
+                              </territorialAuthority>
+                           </author>
+                        </approval>
+                     </subjectOf>
+                     <subjectOf>
+                        <marketingAct>
+                           <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <statusCode code="active"/>
+                           <effectiveTime>
+                              <low value="20070731"/>
+                           </effectiveTime>
+                        </marketingAct>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLCOLOR" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value code="C48325" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="WHITE" xsi:type="CE">
+                              <originalText>White to Off-white</originalText>
+                           </value>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLSIZE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value unit="mm" value="6" xsi:type="PQ"/>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLSHAPE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value code="C48345" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="OVAL" xsi:type="CE"/>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLSCORE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value value="1" xsi:type="INT"/>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLIMPRINT" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value xsi:type="ST">F;91</value>
+                        </characteristic>
+                     </subjectOf>
+                     <consumedIn>
+                        <substanceAdministration>
+                           <routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ORAL"/>
+                        </substanceAdministration>
+                     </consumedIn>
+                  </manufacturedProduct>
+               </subject>
+            </section>
+         </component>
+         <component>
+            <section ID="Section_1">
+               <id root="14fa9096-90a2-4b58-a058-112801ee2ebd"/>
+               <code code="34067-9" codeSystem="2.16.840.1.113883.6.1" displayName="INDICATIONS &amp; USAGE SECTION"/>
+               <title>1 INDICATIONS AND USAGE</title>
+               <text>
+                  <paragraph>Ondansetron tablets are indicated for the prevention of nausea and vomiting associated with:</paragraph>
+                  <list listType="unordered">
+                     <item>
+                        <caption>•</caption>highly emetogenic cancer chemotherapy, including cisplatin greater than or equal to 50 mg/m<sup>2</sup>
+                     </item>
+                     <item>
+                        <caption>•</caption>initial and repeat courses of moderately emetogenic cancer chemotherapy</item>
+                     <item>
+                        <caption>•</caption>radiotherapy in patients receiving either total body irradiation, single high-dose fraction to the abdomen, or daily fractions to the abdomen</item>
+                  </list>
+                  <paragraph>Ondansetron tablets are also indicated for the prevention of postoperative nausea and/or vomiting.</paragraph>
+               </text>
+               <effectiveTime value="20260601"/>
+               <excerpt>
+                  <highlight>
+                     <text>
+                        <paragraph>Ondansetron tablets are a 5-HT<sub>3</sub> receptor antagonist indicated for the prevention of:</paragraph>
+                        <list listType="unordered">
+                           <item>
+                              <caption>•</caption>nausea and vomiting associated with highly emetogenic cancer chemotherapy, including cisplatin greater than or equal to 50 mg/m<sup>2</sup>. <linkHtml href="#Section_1">(1)</linkHtml>
+                           </item>
+                           <item>
+                              <caption>•</caption>nausea and vomiting associated with initial and repeat courses of moderately emetogenic cancer chemotherapy. <linkHtml href="#Section_1">(1)</linkHtml>
+                           </item>
+                           <item>
+                              <caption>•</caption>nausea and vomiting associated with radiotherapy in patients receiving either total body irradiation, single high-dose fraction to the abdomen, or daily fractions to the abdomen. <linkHtml href="#Section_1">(1)</linkHtml>
+                           </item>
+                           <item>
+                              <caption>•</caption>postoperative nausea and/or vomiting. <linkHtml href="#Section_1">(1)</linkHtml>
+                           </item>
+                        </list>
+                     </text>
+                  </highlight>
+               </excerpt>
+            </section>
+         </component>
+         <component>
+            <section ID="Section_2">
+               <id root="62aeea82-8aed-4f31-921c-a6bd0bb8f841"/>
+               <code code="34068-7" codeSystem="2.16.840.1.113883.6.1" displayName="DOSAGE &amp; ADMINISTRATION SECTION"/>
+               <title>2 DOSAGE AND ADMINISTRATION</title>
+               <effectiveTime value="20260601"/>
+               <excerpt>
+                  <highlight>
+                     <text>
+                        <list listType="unordered">
+                           <item>
+                              <caption>•</caption>See full prescribing information for the recommended dosage in adults and pediatrics. <linkHtml href="#Section_2">(2)</linkHtml>
+                           </item>
+                           <item>
+                              <caption>•</caption>Patients with severe hepatic impairment: do not exceed a total daily dose of 8 mg. <linkHtml href="#Section_2.2">(2.2</linkHtml>, <linkHtml href="#Section_8.6">8.6</linkHtml>)</item>
+                        </list>
+                     </text>
+                  </highlight>
+               </excerpt>
+               <component>
+                  <section ID="Section_2.1">
+                     <id root="66a4d7be-32be-47b6-8521-841626764c5d"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>2.1 Recommended Dosage</title>
+                     <text>
+                        <paragraph>The recommended dosage regimens for adult and pediatric patients are described in Table 1 and Table 2, respectively.<br/>
+                           <br/>Corresponding doses of ondansetron tablets, ondansetron orally disintegrating tablets and ondansetron oral solution may be used interchangeably.</paragraph>
+                        <table ID="_RefID0ETNAC" cellpadding="0pt" cellspacing="0pt" width="100%">
+                           <caption>Table 1: Adult Recommended Dosage Regimen for Prevention of Nausea and Vomiting  </caption>
+                           <col width="24%"/>
+                           <col width="76%"/>
+                           <tbody>
+                              <tr>
+                                 <td styleCode="Rrule Botrule Lrule Toprule " valign="top">
+                                    <paragraph>
+                                       <content styleCode="bold">Indication</content>
+                                       <br/>
+                                    </paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule Toprule " valign="top">
+                                    <paragraph>
+                                       <content styleCode="bold">Dosage Regimen</content>
+                                       <br/>
+                                    </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td styleCode="Rrule Lrule Botrule " valign="top">
+                                    <paragraph>
+                                       <content styleCode="bold">Highly Emetogenic Cancer Chemotherapy</content>
+                                       <br/>
+                                    </paragraph>
+                                 </td>
+                                 <td styleCode="Rrule Botrule " valign="top">
+                                    <paragraph>A single 24 mg dose administered 30 minutes before the start of single-day highly emetogenic chemotherapy, including cisplatin greater than or equal to 50 mg/m<sup>2</sup>.<br/>
+                                    </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td styleCode="Rrule Lrule Botrule " valign="top">
+                                    <paragraph>
+                                       <content styleCode="bold">Moderately Emetogenic Cancer Chemotherapy</content>
+                                       <br/>
+                                    </paragraph>
+                                 </td>
+                                 <td styleCode="Rrule Botrule " valign="top">
+                                    <paragraph>8 mg administered 30 minutes before the start of chemotherapy, with a subsequent 8 mg dose 8 hours after the first dose.<br/>
+                                       <br/>Then administer 8 mg twice a day (every 12 hours) for 1 to 2 days after completion of chemotherapy.<br/>
+                                    </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td styleCode="Rrule Lrule Botrule " valign="top">
+                                    <paragraph>
+                                       <content styleCode="bold">Radiotherapy</content>
+                                       <br/>
+                                    </paragraph>
+                                 </td>
+                                 <td styleCode="Rrule Botrule " valign="top">
+                                    <paragraph>For total body irradiation: 8 mg administered 1 to 2 hours before each fraction of radiotherapy each day.<br/> <br/>For single high-dose fraction radiotherapy to the abdomen: 8 mg administered 1 to 2 hours before radiotherapy, with subsequent 8 mg doses every 8 hours after the first dose for 1 to 2 days after completion of radiotherapy.<br/> <br/>For daily fractionated radiotherapy to the abdomen: 8 mg administered 1 to 2 hours before radiotherapy, with subsequent 8 mg doses every 8 hours after the first dose for each day radiotherapy is given.<br/>
+                                    </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td styleCode="Rrule Botrule Lrule " valign="top">
+                                    <paragraph>
+                                       <content styleCode="bold">Postoperative</content>
+                                       <br/>
+                                    </paragraph>
+                                 </td>
+                                 <td styleCode="Rrule Botrule " valign="top">
+                                    <paragraph>16 mg administered 1 hour before induction of anesthesia.<br/>
+                                    </paragraph>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table ID="_RefID0ETAAE" cellpadding="0pt" cellspacing="0pt" width="100%">
+                           <caption>Table 2: Pediatric Recommended Dosage Regimen for Prevention of Nausea and Vomiting  </caption>
+                           <col width="17%"/>
+                           <col width="83%"/>
+                           <tbody>
+                              <tr>
+                                 <td styleCode="Rrule Botrule Lrule Toprule " valign="top">
+                                    <paragraph>
+                                       <content styleCode="bold">Indication</content>
+                                       <br/>
+                                    </paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule Toprule " valign="top">
+                                    <paragraph>
+                                       <content styleCode="bold">Dosage Regimen</content>
+                                       <br/>
+                                    </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td styleCode="Rrule Botrule Lrule " valign="top">
+                                    <paragraph>
+                                       <content styleCode="bold">Moderately Emetogenic Cancer Chemotherapy</content>
+                                       <br/>
+                                    </paragraph>
+                                 </td>
+                                 <td styleCode="Rrule Botrule " valign="top">
+                                    <paragraph>12 to 17 years of age: 8 mg administered 30 minutes before the start of chemotherapy, with a subsequent 8 mg dose 8 hours after the first dose. <br/>
+                                       <br/>             Then administer 8 mg twice a day (every 12 hours) for 1 to 2 days after completion of chemotherapy.<br/>
+                                       <content styleCode="underline"> </content>
+                                       <br/>4 to 11 years of age: 4 mg administered 30 minutes before the start of chemotherapy, with a subsequent 4 mg dose 4 and 8 hours after the first dose. <br/> <br/>Then administer 4 mg three times a day for 1 to 2 days after completion of chemotherapy.<br/>
+                                    </paragraph>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </text>
+                     <effectiveTime value="20260601"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="Section_2.2">
+                     <id root="de484d6d-a308-4153-bf92-938969b0aaf9"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>2.2 Dosage in Hepatic Impairment</title>
+                     <text>
+                        <paragraph>In patients with severe hepatic impairment (Child-Pugh score of 10 or greater), do not exceed a total daily dose of 8 mg <content styleCode="italics">[see <linkHtml href="#Section_8.6">Use in Specific Populations (8.6)</linkHtml>, <linkHtml href="#Section_12.3">Clinical Pharmacology (12.3)</linkHtml>]</content>.</paragraph>
+                     </text>
+                     <effectiveTime value="20260601"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="Section_3">
+               <id root="f675b918-4ae8-4030-8833-82feb0d56aac"/>
+               <code code="43678-2" codeSystem="2.16.840.1.113883.6.1" displayName="DOSAGE FORMS &amp; STRENGTHS SECTION"/>
+               <title>3 DOSAGE FORMS AND STRENGTHS</title>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">Ondansetron tablets USP, 4 mg</content> are white to off-white, oval shaped, film-coated tablets debossed with ‘F’ on one side and ‘91’ on the other side.<br/>
+                     <br/>
+                     <br/>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20260601"/>
+               <excerpt>
+                  <highlight>
+                     <text>
+                        <list listType="unordered">
+                           <item>
+                              <caption>•</caption>Tablets: 4 mg. (<linkHtml href="#Section_3">3</linkHtml>)</item>
+                        </list>
+                     </text>
+                  </highlight>
+               </excerpt>
+            </section>
+         </component>
+         <component>
+            <section ID="Section_4">
+               <id root="3e71a7e5-0100-4379-b9ad-edc54b1c551f"/>
+               <code code="34070-3" codeSystem="2.16.840.1.113883.6.1" displayName="CONTRAINDICATIONS SECTION"/>
+               <title>4 CONTRAINDICATIONS</title>
+               <text>
+                  <paragraph>Ondansetron tablets are contraindicated in patients:</paragraph>
+                  <list listType="unordered">
+                     <item>
+                        <caption>•</caption>known to have hypersensitivity (e.g., anaphylaxis) to ondansetron or any of the components of the formulation <content styleCode="italics">[see <linkHtml href="#Section_6.2">Adverse Reactions (6.2)</linkHtml>]</content>
+                     </item>
+                     <item>
+                        <caption>•</caption>receiving concomitant apomorphine due to the risk of profound hypotension and loss of consciousness</item>
+                  </list>
+               </text>
+               <effectiveTime value="20260601"/>
+               <excerpt>
+                  <highlight>
+                     <text>
+                        <paragraph>Patients known to have hypersensitivity (e.g., anaphylaxis) to ondansetron or any components of the formulation. <linkHtml href="#Section_4">(4)</linkHtml>
+                        </paragraph>
+                        <list listType="unordered">
+                           <item>
+                              <caption>•</caption>Concomitant use of apomorphine. <linkHtml href="#Section_4">(4)</linkHtml>
+                           </item>
+                        </list>
+                     </text>
+                  </highlight>
+               </excerpt>
+            </section>
+         </component>
+         <component>
+            <section ID="Section_5">
+               <id root="ed03bc58-acbf-4b1b-a79c-1e2c2867e223"/>
+               <code code="43685-7" codeSystem="2.16.840.1.113883.6.1" displayName="WARNINGS AND PRECAUTIONS SECTION"/>
+               <title>5 WARNINGS AND PRECAUTIONS</title>
+               <effectiveTime value="20260601"/>
+               <excerpt>
+                  <highlight>
+                     <text>
+                        <list listType="unordered">
+                           <item>
+                              <caption>•</caption>
+                              <content styleCode="underline">Hypersensitivity Reactions, Including Anaphylaxis and Bronchospasm</content>: Discontinue ondansetron if suspected. Monitor and treat promptly per standard of care until signs and symptoms resolve. <linkHtml href="#Section_5.1">(5.1)</linkHtml>
+                           </item>
+                           <item>
+                              <caption>•</caption>
+                              <content styleCode="underline">QT Interval Prolongation and Torsade de Pointes</content>: Avoid ondansetron in patients with congenital long QT syndrome; monitor with electrocardiograms (ECGs) if concomitant electrolyte abnormalities, cardiac failure or arrhythmias, or use of other QT prolonging drugs. <linkHtml href="#Section_5.2">(5.2)</linkHtml>
+                           </item>
+                           <item>
+                              <caption>•</caption>
+                              <content styleCode="underline">Serotonin Syndrome</content>: Reported with 5-HT<sub>3</sub> receptor antagonists alone but particularly with concomitant use of serotonergic drugs. If such symptoms occur, discontinue ondansetron and initiate supportive treatment. If concomitant use of ondansetron with other serotonergic drugs is clinically warranted, patients should be made aware of a potential increased risk for serotonin syndrome. <linkHtml href="#Section_5.3">(5.3)</linkHtml> </item>
+                           <item>
+                              <caption>•</caption>
+                              <content styleCode="underline">Myocardial Ischemia</content>: Monitor or advise patients for signs and symptoms of myocardial ischemia after oral administration. (<linkHtml href="#Section_5.5">5.4</linkHtml>) </item>
+                           <item>
+                              <caption>•</caption>
+                              <content styleCode="underline">Masking of Progressive Ileus and/or Gastric Distension Following Abdominal Surgery or Chemotherapy-Induced Nausea and Vomiting</content>: Monitor for decreased bowel activity, particularly in patients with risk factors for gastrointestinal obstruction. (<linkHtml href="#Section_5.4">5.5</linkHtml>)</item>
+                        </list>
+                     </text>
+                  </highlight>
+               </excerpt>
+               <component>
+                  <section ID="Section_5.1">
+                     <id root="2e00aba0-6c03-467e-9df4-2207a38bee44"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>5.1 Hypersensitivity Reactions</title>
+                     <text>
+                        <paragraph>Hypersensitivity reactions, including anaphylaxis and bronchospasm, have been reported in patients who have exhibited hypersensitivity to other selective 5-HT<sub>3</sub> receptor antagonists. If hypersensitivity reactions occur, discontinue use of ondansetron; treat promptly per standard of care and monitor until signs and symptoms resolve <content styleCode="italics">[see Contraindications (4)]</content>.</paragraph>
+                     </text>
+                     <effectiveTime value="20260601"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="Section_5.2">
+                     <id root="d7164299-4bf2-4417-ae67-ca2812de37b8"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>5.2 QT Prolongation</title>
+                     <text>
+                        <paragraph>Electrocardiogram (ECG) changes, including QT interval prolongation have been seen in patients receiving ondansetron. In addition, postmarketing cases of Torsade de Pointes have been reported in patients using ondansetron. Avoid ondansetron in patients with congenital long QT syndrome. ECG monitoring is recommended in patients with electrolyte abnormalities (e.g., hypokalemia or hypomagnesemia), congestive heart failure, bradyarrhythmias, or patients taking other medicinal products that lead to QT prolongation <content styleCode="italics">[see <linkHtml href="#Section_12.2">Clinical Pharmacology (12.2)</linkHtml>]</content>.</paragraph>
+                     </text>
+                     <effectiveTime value="20260601"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="Section_5.3">
+                     <id root="64b92c4f-19cb-4db0-b301-2bb842d8ab32"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>5.3 Serotonin Syndrome</title>
+                     <text>
+                        <paragraph>The development of serotonin syndrome has been reported with 5-HT<sub>3</sub> receptor antagonists alone. Most reports have been associated with concomitant use of serotonergic drugs (e.g., selective serotonin reuptake inhibitors (SSRIs), serotonin and norepinephrine reuptake inhibitors (SNRIs), monoamine oxidase inhibitors, mirtazapine, fentanyl, lithium, tramadol, and intravenous methylene blue). Some of the reported cases were fatal. Serotonin syndrome occurring with overdose of ondansetron alone has also been reported. The majority of reports of serotonin syndrome related to 5-HT<sub>3</sub> receptor antagonist use occurred in a post-anesthesia care unit or an infusion center.<br/>
+                           <br/> Symptoms associated with serotonin syndrome may include the following combination of signs and symptoms: mental status changes (e.g., agitation, hallucinations, delirium, and coma), autonomic instability (e.g., tachycardia, labile blood pressure, dizziness, diaphoresis, flushing, hyperthermia), neuromuscular symptoms (e.g., tremor, rigidity, myoclonus, hyperreflexia, incoordination), seizures, with or without gastrointestinal symptoms (e.g., nausea, vomiting, diarrhea). Patients should be monitored for the emergence of serotonin syndrome, especially with concomitant use of ondansetron and other serotonergic drugs. If symptoms of serotonin syndrome occur, discontinue ondansetron and initiate supportive treatment. Patients should be informed of the increased risk of serotonin syndrome, especially if ondansetron is used concomitantly with other serotonergic drugs <content styleCode="italics">[see <linkHtml href="#Section_7.1">Drug Interactions (7.1)</linkHtml>, <linkHtml href="#Section_10">Overdosage (10)</linkHtml>]</content>.</paragraph>
+                     </text>
+                     <effectiveTime value="20260601"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="Section_5.5">
+                     <id root="127c89e6-32a3-47f0-8938-eefa5c98a271"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>5.4 Myocardial Ischemia</title>
+                     <text>
+                        <paragraph>Myocardial ischemia has been reported in patients treated with ondansetron. In some cases, predominantly during intravenous administration, the symptoms appeared immediately after administration but resolved with prompt treatment. Coronary artery spasm appears to be the most common underlying cause. Therefore, monitor or advise patients for signs or symptoms of myocardial ischemia after oral administration of ondansetron<content styleCode="italics"> [see <linkHtml href="#Section_6.2">Adverse Reactions (6.2)</linkHtml>].</content>
+                        </paragraph>
+                     </text>
+                     <effectiveTime value="20260601"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="Section_5.4">
+                     <id root="6b57f56a-7616-4326-a920-b292aa202459"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>5.5 Masking of Progressive Ileus and Gastric Distension</title>
+                     <text>
+                        <paragraph>The use of ondansetron in patients following abdominal surgery or in patients with chemotherapy-induced nausea and vomiting may mask a progressive ileus and/or gastric distension. Monitor for decreased bowel activity, particularly in patients with risk factors for gastrointestinal obstruction.<br/>
+                           <br/> Ondansetron is not a drug that stimulates gastric or intestinal peristalsis. It should not be used instead of nasogastric suction.</paragraph>
+                     </text>
+                     <effectiveTime value="20260601"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="Section_6">
+               <id root="0b422d7b-5e64-499f-9e91-1b4a91097c8b"/>
+               <code code="34084-4" codeSystem="2.16.840.1.113883.6.1" displayName="ADVERSE REACTIONS SECTION"/>
+               <title>6 ADVERSE REACTIONS</title>
+               <text>
+                  <paragraph>The following clinically significant adverse reactions are described elsewhere in the labeling:</paragraph>
+                  <list listType="unordered">
+                     <item>
+                        <caption>•</caption>Hypersensitivity Reactions <content styleCode="italics">[see <linkHtml href="#Section_5.1">Warnings and Precautions (5.1)</linkHtml>] </content>
+                     </item>
+                     <item>
+                        <caption>•</caption>QT Prolongation <content styleCode="italics">[see <linkHtml href="#Section_5.2">Warnings and Precautions (5.2)</linkHtml>] </content>
+                     </item>
+                     <item>
+                        <caption>•</caption>Serotonin Syndrome <content styleCode="italics">[see <linkHtml href="#Section_5.3">Warnings and Precautions (5.3)</linkHtml>] </content>
+                     </item>
+                     <item>
+                        <caption>•</caption>Myocardial Ischemia <content styleCode="italics">[see <linkHtml href="#Section_5.5">Warnings and Precautions (5.4)</linkHtml>]</content>
+                     </item>
+                     <item>
+                        <caption>•</caption>Masking of Progressive Ileus and Gastric Distension <content styleCode="italics">[see <linkHtml href="#Section_5.4">Warnings and Precautions (5.5)</linkHtml>] </content>
+                     </item>
+                  </list>
+               </text>
+               <effectiveTime value="20260601"/>
+               <excerpt>
+                  <highlight>
+                     <text>
+                        <paragraph>The most common adverse reactions in adults for the:</paragraph>
+                        <list listType="unordered">
+                           <item>
+                              <caption>•</caption>prevention of chemotherapy-induced (≥ 5%) are: headache, malaise/fatigue, constipation, diarrhea. (<linkHtml href="#Section_6.1">6.1</linkHtml>)</item>
+                           <item>
+                              <caption>•</caption>prevention of radiation-induced nausea and vomiting (≥ 2%) are: headache, constipation, and diarrhea. (<linkHtml href="#Section_6.1">6.1</linkHtml>)</item>
+                           <item>
+                              <caption>•</caption>prevention of postoperative nausea and vomiting (≥ 9%) are: headache and hypoxia. (<linkHtml href="#Section_6.1">6.1</linkHtml>)</item>
+                        </list>
+                        <paragraph>
+                           <content styleCode="bold"> To report SUSPECTED ADVERSE REACTIONS, contact Rising Pharma Holdings, Inc. at 1-844-874-7464 or FDA at 1-800-FDA-1088 or www.fda.gov/medwatch.</content>
+                        </paragraph>
+                     </text>
+                  </highlight>
+               </excerpt>
+               <component>
+                  <section ID="Section_6.1">
+                     <id root="de2f8bea-931b-4869-9a79-dea3842f722b"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>6.1 Clinical Trials Experience</title>
+                     <text>
+                        <paragraph>Because clinical trials are conducted under widely varying conditions, adverse reaction rates observed in the clinical trials of a drug cannot be directly compared with rates in the clinical trials of another drug and may not reflect the rates observed in practice.</paragraph>
+                        <paragraph>The following adverse reactions have been reported in clinical trials of patients treated with ondansetron, the active ingredient of ondansetron tablets. A causal relationship to therapy with ondansetron was unclear in many cases.</paragraph>
+                        <paragraph>
+                           <content styleCode="underline">Prevention of Chemotherapy-Induced Nausea and Vomiting</content>
+                        </paragraph>
+                        <paragraph>The most common adverse reactions reported in greater than or equal to 4% of 300 adults receiving a single 24 mg dose of ondansetron orally in 2 trials for the prevention of nausea and vomiting associated with highly emetogenic chemotherapy (cisplatin greater than or equal to 50 mg/m<sup>2</sup>) were: headache (11%) and diarrhea (4%).</paragraph>
+                        <paragraph>The most common adverse reactions reported in 4 trials in adults for the prevention of nausea and vomiting associated with moderately emetogenic chemotherapy (primarily cyclophosphamide-based regimens) are shown in Table 3.</paragraph>
+                        <table ID="_RefID0EJPAE" cellpadding="0pt" cellspacing="0pt" width="100%">
+                           <caption>Table 3: Most Common Adverse Reactions in Adults<sup>1</sup> for the Prevention of Nausea and Vomiting Associated With Moderately Emetogenic Chemotherapy [Primarily Cyclophosphamide-based Regimens]  </caption>
+                           <col width="27%"/>
+                           <col width="36%"/>
+                           <col width="36%"/>
+                           <tfoot>
+                              <tr>
+                                 <td align="left" colspan="3" valign="top">1. Reported in greater than or equal to 5% of patients treated with ondansetron and at a rate that exceeded placebo.</td>
+                              </tr>
+                           </tfoot>
+                           <tbody>
+                              <tr>
+                                 <td align="center" styleCode="Rrule Botrule Lrule Toprule " valign="middle">
+                                    <paragraph>
+                                       <content styleCode="bold">Adverse Reaction</content>
+                                       <br/>
+                                    </paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule Toprule " valign="middle">
+                                    <paragraph>
+                                       <content styleCode="bold">Ondansetron 8 mg Twice Daily</content>
+                                       <br/>
+                                       <content styleCode="bold">(n = 242)</content>
+                                       <br/>
+                                    </paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule Toprule " valign="middle">
+                                    <paragraph>
+                                       <content styleCode="bold">Placebo</content>
+                                       <br/>
+                                       <content styleCode="bold"> (n = 262)</content>
+                                       <br/>
+                                    </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td align="center" styleCode="Rrule Lrule Botrule " valign="middle">
+                                    <paragraph>Headache<br/>
+                                    </paragraph>
+                                 </td>
+                                 <td styleCode="Rrule Botrule " valign="middle">
+                                    <paragraph>58 (24%)<br/>
+                                    </paragraph>
+                                 </td>
+                                 <td styleCode="Rrule Botrule " valign="middle">
+                                    <paragraph>34 (13%)<br/>
+                                    </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td align="center" styleCode="Rrule Lrule Botrule " valign="middle">
+                                    <paragraph>Malaise/Fatigue<br/>
+                                    </paragraph>
+                                 </td>
+                                 <td styleCode="Rrule Botrule " valign="middle">
+                                    <paragraph>32 (13%)<br/>
+                                    </paragraph>
+                                 </td>
+                                 <td styleCode="Rrule Botrule " valign="middle">
+                                    <paragraph>6 (2%)<br/>
+                                    </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td align="center" styleCode="Rrule Lrule Botrule " valign="middle">
+                                    <paragraph>Constipation<br/>
+                                    </paragraph>
+                                 </td>
+                                 <td styleCode="Rrule Botrule " valign="middle">
+                                    <paragraph>22 (9%)<br/>
+                                    </paragraph>
+                                 </td>
+                                 <td styleCode="Rrule Botrule " valign="middle">
+                                    <paragraph>1 (&lt; 1%)<br/>
+                                    </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td align="center" styleCode="Rrule Botrule Lrule " valign="middle">
+                                    <paragraph>Diarrhea<br/>
+                                    </paragraph>
+                                 </td>
+                                 <td styleCode="Rrule Botrule " valign="middle">
+                                    <paragraph>15 (6%)<br/>
+                                    </paragraph>
+                                 </td>
+                                 <td styleCode="Rrule Botrule " valign="middle">
+                                    <paragraph>10 (4%)<br/>
+                                    </paragraph>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <paragraph>
+                           <content styleCode="underline">Less Common Adverse Reactions</content>
+                           <br/>
+                           <br/>
+                           <content styleCode="italics">Central Nervous System:</content> Extrapyramidal reactions (less than 1% of patients).<br/>
+                           <br/>
+                           <content styleCode="italics"> Hepatic:</content> Aspartate transaminase (AST) and/or alanine transaminase (ALT) values exceeded twice the upper limit of normal in approximately 1% to 2% of 723 patients receiving ondansetron and cyclophosphamide-based chemotherapy in U.S. clinical trials. The increases were transient and did not appear to be related to dose or duration of therapy. On repeat exposure, similar transient elevations in transaminase values occurred in some courses, but symptomatic hepatic disease did not occur. The role of cancer chemotherapy in these biochemical changes is unclear.<br/>
+                           <br/> Liver failure and death has been reported in cancer patients receiving concurrent medications, including potentially hepatotoxic cytotoxic chemotherapy and antibiotics. The etiology of the liver failure is unclear.<br/>
+                           <br/>
+                           <content styleCode="italics"> Integumentary:</content> Rash (approximately 1% of patients).<br/>
+                           <br/>
+                           <content styleCode="italics"> Other (less than 2%):</content> Anaphylaxis, bronchospasm, tachycardia, angina, hypokalemia, electrocardiographic alterations, vascular occlusive events, and grand mal seizures. Except for bronchospasm and anaphylaxis, the relationship to ondansetron is unclear.<br/>
+                           <br/>
+                           <content styleCode="underline"> Prevention of Radiation-Induced Nausea and Vomiting</content>
+                           <br/>
+                           <br/> The most common adverse reactions (greater than or equal to 2%) reported in patients receiving ondansetron and concurrent radiotherapy were similar to those reported in patients receiving ondansetron and concurrent chemotherapy and were headache, constipation, and diarrhea.<br/>
+                           <br/>
+                           <content styleCode="underline"> Prevention of Postoperative Nausea and/or Vomiting</content>
+                           <br/>
+                           <br/> The most common adverse reactions reported in adults in trial(s) of prevention of postoperative nausea and vomiting are shown in Table 4. In these trial(s), patients were receiving multiple concomitant perioperative and postoperative medications in both treatment groups.</paragraph>
+                        <table ID="_RefID0E4UAE" cellpadding="0pt" cellspacing="0pt" width="100%">
+                           <caption>Table 4: Most Common Adverse Reactions in Adults<sup>1</sup> for the Prevention of Postoperative Nausea and Vomiting  </caption>
+                           <col width="33%"/>
+                           <col width="33%"/>
+                           <col width="33%"/>
+                           <tfoot>
+                              <tr>
+                                 <td align="left" colspan="3" valign="top">1. Reported in greater than or equal to 5% of patients treated with ondansetron and at a rate that exceeded placebo.</td>
+                              </tr>
+                           </tfoot>
+                           <tbody>
+                              <tr>
+                                 <td align="center" styleCode="Rrule Botrule Lrule Toprule " valign="middle">
+                                    <paragraph>
+                                       <content styleCode="bold">Adverse Reaction</content>
+                                       <br/>
+                                    </paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule Toprule " valign="middle">
+                                    <paragraph>
+                                       <content styleCode="bold">Ondansetron 16 mg</content>
+                                       <br/>
+                                       <content styleCode="bold">as a Single Dose</content>
+                                       <br/>
+                                       <content styleCode="bold">(n = 550)</content>
+                                       <br/>
+                                    </paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule Toprule " valign="middle">
+                                    <paragraph>
+                                       <content styleCode="bold">Placebo</content>
+                                       <br/>
+                                       <content styleCode="bold"> (n = 531)</content>
+                                       <br/>
+                                    </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td styleCode="Rrule Lrule Botrule " valign="top">
+                                    <paragraph> Headache<br/>
+                                    </paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule " valign="top">
+                                    <paragraph>49 (9%)<br/>
+                                    </paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule " valign="top">
+                                    <paragraph>27 (5%)<br/>
+                                    </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td styleCode="Rrule Lrule Botrule " valign="top">
+                                    <paragraph> Hypoxia<br/>
+                                    </paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule " valign="top">
+                                    <paragraph>49 (9%)<br/>
+                                    </paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule " valign="top">
+                                    <paragraph>35 (7%)<br/>
+                                    </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td styleCode="Rrule Lrule Botrule " valign="top">
+                                    <paragraph> Pyrexia<br/>
+                                    </paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule " valign="top">
+                                    <paragraph>45 (8%)<br/>
+                                    </paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule " valign="top">
+                                    <paragraph>34 (6%)<br/>
+                                    </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td styleCode="Rrule Lrule Botrule " valign="top">
+                                    <paragraph> Dizziness<br/>
+                                    </paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule " valign="top">
+                                    <paragraph>36 (7%)<br/>
+                                    </paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule " valign="top">
+                                    <paragraph>34 (6%)<br/>
+                                    </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td styleCode="Rrule Lrule Botrule " valign="top">
+                                    <paragraph> Gynecological disorder<br/>
+                                    </paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule " valign="top">
+                                    <paragraph>36 (7%)<br/>
+                                    </paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule " valign="top">
+                                    <paragraph>33 (6%)<br/>
+                                    </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td styleCode="Rrule Lrule Botrule " valign="top">
+                                    <paragraph> Anxiety/Agitation<br/>
+                                    </paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule " valign="top">
+                                    <paragraph>33 (6%)<br/>
+                                    </paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule " valign="top">
+                                    <paragraph>29 (5%)<br/>
+                                    </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td styleCode="Rrule Lrule Botrule " valign="top">
+                                    <paragraph> Urinary retention<br/>
+                                    </paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule " valign="top">
+                                    <paragraph>28 (5%)<br/>
+                                    </paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule " valign="top">
+                                    <paragraph>18 (3%)<br/>
+                                    </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td styleCode="Rrule Botrule Lrule " valign="top">
+                                    <paragraph> Pruritus<br/>
+                                    </paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule " valign="top">
+                                    <paragraph>27 (5%)<br/>
+                                    </paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule " valign="top">
+                                    <paragraph>20 (4%)<br/>
+                                    </paragraph>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </text>
+                     <effectiveTime value="20260601"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="Section_6.2">
+                     <id root="da6a42e5-2e9c-47d7-b1be-89cf7a4d9eac"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>6.2 Postmarketing Experience</title>
+                     <text>
+                        <paragraph>The following adverse reactions have been identified during postapproval use of ondansetron. Because these reactions are reported voluntarily from a population of uncertain size, it is not always possible to reliably estimate their frequency or establish a causal relationship to drug exposure.<br/>
+                           <br/>
+                           <content styleCode="underline"> Cardiovascular</content>
+                           <br/>
+                           <br/> Arrhythmias (including ventricular and supraventricular tachycardia, premature ventricular contractions, and atrial fibrillation), bradycardia, electrocardiographic alterations (including second-degree heart block, QT/QTc interval prolongation, and ST segment depression), palpitations, and syncope. Rarely and predominantly with intravenous ondansetron, transient ECG changes, including QT interval prolongation have been reported.<br/>
+                           <br/> Myocardial ischemia was reported predominately with intravenous administration <content styleCode="italics">[see <linkHtml href="#Section_5.5">Warnings and Precautions (5.4)</linkHtml>]</content>.<br/>
+                           <br/>
+                           <content styleCode="underline"> General</content>
+                           <br/>
+                           <br/>
+                           <content styleCode="italics">Flushing</content>: Rare cases of hypersensitivity reactions, sometimes severe (e.g., anaphylactic reactions, angioedema, bronchospasm, shortness of breath, hypotension, laryngeal edema, stridor) have also been reported. Laryngospasm, shock, and cardiopulmonary arrest have occurred during allergic reactions in patients receiving injectable ondansetron.<br/>
+                           <br/>
+                           <content styleCode="underline"> Hepatobiliary</content>
+                           <br/>
+                           <br/> Liver enzyme abnormalities.<br/>
+                           <br/>
+                           <content styleCode="underline"> Lower Respiratory</content>
+                           <br/>
+                           <br/> Hiccups.<br/>
+                           <br/>
+                           <content styleCode="underline"> Neurology</content>
+                           <br/>
+                           <br/>Oculogyric crisis, appearing alone, as well as with other dystonic reactions.<br/>
+                           <br/>
+                           <content styleCode="underline"> Skin</content>
+                           <br/>
+                           <br/> Urticaria, Stevens-Johnson syndrome, and toxic epidermal necrolysis.<br/>
+                           <br/>
+                           <content styleCode="underline"> Eye Disorders</content>
+                           <br/>
+                           <br/> Cases of transient blindness, predominantly during intravenous administration, have been reported. These cases of transient blindness were reported to resolve within a few minutes up to 48 hours.</paragraph>
+                     </text>
+                     <effectiveTime value="20260601"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="Section_7">
+               <id root="d348f5e9-03ac-48eb-b93a-b59a34f179c7"/>
+               <code code="34073-7" codeSystem="2.16.840.1.113883.6.1" displayName="DRUG INTERACTIONS SECTION"/>
+               <title>7 DRUG INTERACTIONS</title>
+               <effectiveTime value="20260601"/>
+               <component>
+                  <section ID="Section_7.1">
+                     <id root="19913d99-2424-46b7-9389-2e3bb46bf982"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>7.1 Serotonergic Drugs</title>
+                     <text>
+                        <paragraph>Serotonin syndrome (including altered mental status, autonomic instability, and neuromuscular symptoms) has been described following the concomitant use of 5-HT<sub>3</sub> receptor antagonists and other serotonergic drugs, including SSRIs and SNRIs. Monitor for the emergence of serotonin syndrome. If symptoms occur, discontinue ondansetron and initiate supportive treatment <content styleCode="italics">[see <linkHtml href="#Section_5.3">Warnings and Precautions (5.3)</linkHtml>]</content>.</paragraph>
+                     </text>
+                     <effectiveTime value="20260601"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="Section_7.2">
+                     <id root="375e05dc-43ef-4b29-b93a-808dedcc63be"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>7.2 Drugs Affecting Cytochrome P-450 Enzymes</title>
+                     <text>
+                        <paragraph>Ondansetron does not itself appear to induce or inhibit the cytochrome P-450 drug-metabolizing enzyme system of the liver <content styleCode="italics">[see <linkHtml href="#Section_12.3">Clinical Pharmacology (12.3)</linkHtml>]</content>. Because ondansetron is metabolized by hepatic cytochrome P-450 drug-metabolizing enzymes (CYP3A4, CYP2D6, CYP1A2), inducers or inhibitors of these enzymes may change the clearance and, hence, the half-life of ondansetron. In patients treated with potent inducers of CYP3A4 (i.e., phenytoin, carbamazepine, and rifampin), the clearance of ondansetron was significantly increased and ondansetron blood concentrations were decreased. However, on the basis of available data, no dosage adjustment for ondansetron is recommended for patients on these drugs <content styleCode="italics">[see <linkHtml href="#Section_12.3">Clinical Pharmacology (12.3)</linkHtml>]</content>.</paragraph>
+                     </text>
+                     <effectiveTime value="20260601"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="Section_7.3">
+                     <id root="85556734-a712-44aa-a272-c1e825275c28"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>7.3 Tramadol</title>
+                     <text>
+                        <paragraph>Although no pharmacokinetic drug interaction between ondansetron and tramadol has been observed, data from 2 small trials indicate that when used together, ondansetron may increase patient-controlled administration of tramadol. Monitor patients to ensure adequate pain control when ondansetron is administered with tramadol.</paragraph>
+                     </text>
+                     <effectiveTime value="20260601"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="Section_7.4">
+                     <id root="619ba140-aa65-49b3-a0ca-e2462e5ccab1"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>7.4 Chemotherapy</title>
+                     <text>
+                        <paragraph>Carmustine, etoposide, and cisplatin do not affect the pharmacokinetics of ondansetron.<br/>
+                           <br/> In a crossover trial in 76 pediatric patients, intravenous ondansetron did not increase systemic concentrations of high-dose methotrexate.</paragraph>
+                     </text>
+                     <effectiveTime value="20260601"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="Section_7.5">
+                     <id root="2e4eaa72-bd12-4cc9-971a-2571c3d45e5c"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>7.5 Alfentanil and Atracurium</title>
+                     <text>
+                        <paragraph>Ondansetron does not alter the respiratory depressant effects produced by alfentanil or the degree of neuromuscular blockade produced by atracurium. Interactions with general or local anesthetics have not been studied.</paragraph>
+                     </text>
+                     <effectiveTime value="20260601"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="Section_8">
+               <id root="39293816-f178-4bb6-a821-6e942af75ceb"/>
+               <code code="43684-0" codeSystem="2.16.840.1.113883.6.1" displayName="USE IN SPECIFIC POPULATIONS SECTION"/>
+               <title>8 USE IN SPECIFIC POPULATIONS</title>
+               <effectiveTime value="20260601"/>
+               <component>
+                  <section ID="Section_8.1">
+                     <id root="2d0d00ae-d339-4973-bd10-5760ac7e2713"/>
+                     <code code="42228-7" codeSystem="2.16.840.1.113883.6.1" displayName="PREGNANCY SECTION"/>
+                     <title>8.1 Pregnancy</title>
+                     <text>
+                        <paragraph>
+                           <content styleCode="underline">Risk Summary</content>
+                        </paragraph>
+                        <paragraph>Published epidemiological studies on the association between ondansetron use and major birth defects have reported inconsistent findings and have important methodological limitations that preclude conclusions about the safety of ondansetron use in pregnancy <content styleCode="italics">(see Data)</content>. Available postmarketing data have not identified a drug-associated risk of miscarriage or adverse maternal outcomes.  Reproductive studies in rats and rabbits did not show evidence of harm to the fetus when ondansetron was administered during organogenesis at approximately 6 and 24 times the maximum recommended human oral dose of 24 mg/day, based on body surface area (BSA), respectively <content styleCode="italics">(see Data)</content>.</paragraph>
+                        <paragraph>The background risk of major birth defects and miscarriage for the indicated population is unknown.  All pregnancies have a background risk of birth defect, miscarriages, or other adverse outcomes. In the U.S. general population, the estimated background risk of major birth defects and miscarriages in clinically recognized pregnancies is 2% to 4% and 15% to 20%, respectively.</paragraph>
+                        <paragraph>
+                           <content styleCode="underline">Data</content>
+                        </paragraph>
+                        <paragraph>
+                           <content styleCode="italics">Human Data</content>
+                        </paragraph>
+                        <paragraph>Available data on ondansetron use in pregnant women from several published epidemiological studies preclude an assessment of a drug-associated risk of adverse fetal outcomes due to important methodological limitations, including the uncertainty of whether women who filled a prescription actually took the medication, the concomitant use of other medications or treatments, recall bias, and other unadjusted confounders.</paragraph>
+                        <paragraph>Ondansetron exposure <content styleCode="italics">in utero</content> has not been associated with overall major congenital malformations in aggregate analyses. One large retrospective cohort study examined 1970 women who received a prescription for ondansetron during pregnancy and reported no association between ondansetron exposure and major congenital malformations, miscarriage, stillbirth, preterm delivery, infants of low birth weight, or infants small for gestational age.</paragraph>
+                        <paragraph>Two large retrospective cohort studies and one case-control study have assessed ondansetron exposure in the first trimester and risk of cardiovascular defects with inconsistent findings. Relative risks (RR) ranged from 0.97 (95% CI 0.86 to 1.10) to 1.62 (95% CI 1.04, 2.54). A subset analysis in one of the cohort studies observed that ondansetron was specifically associated with cardiac septal defects (RR 2.05, 95% CI 1.19, 3.28); however, this association was not confirmed in other studies.</paragraph>
+                        <paragraph>Several studies have assessed ondansetron and the risk of oral clefts with inconsistent findings. A retrospective cohort study of 1.8 million pregnancies in the U.S. Medicaid Database showed an increased risk of oral clefts among 88,467 pregnancies in which oral ondansetron was prescribed in the first trimester (RR 1.24, 95% CI 1.03, 1.48), but no such association was reported with intravenous ondansetron in 23,866 pregnancies (RR 0.95, 95% CI 0.63, 1.43). In the subgroup of women who received both forms of administration, the RR was 1.07 (95% CI 0.59, 1.93). Two case-control studies, using data from birth defects surveillance programs, reported conflicting associations between maternal use of ondansetron and isolated cleft palate (OR 1.6 [95% CI 1.1, 2.3] and 0.5 [95% CI 0.3, 1.0]). It is unknown whether ondansetron exposure <content styleCode="italics">in utero</content> in the cases of cleft palate occurred during the time of palate formation (the palate is formed between the 6th and 9th weeks of pregnancy).</paragraph>
+                        <paragraph>
+                           <content styleCode="italics">Animal Data</content>
+                        </paragraph>
+                        <paragraph>In embryo-fetal development studies in rats and rabbits, pregnant animals received oral doses of ondansetron up to 15 mg/kg/day and 30 mg/kg/day, respectively, during the period of organogenesis. With the exception of a slight decrease in maternal body weight gain in the rabbits, there were no significant effects of ondansetron on the maternal animals or the development of the offspring.  At doses of 15 mg/kg/day in rats and 30 mg/kg/day in rabbits, the maternal exposure margin was approximately 6 and 24 times the maximum recommended human oral dose of 24 mg/day, respectively, based on BSA.</paragraph>
+                        <paragraph>In a pre- and postnatal developmental toxicity study, pregnant rats received oral doses of ondansetron up to 15 mg/kg/day from Day 17 of pregnancy to litter Day 21. With the exception of a slight reduction in maternal body weight gain, there were no effects upon the pregnant rats and the pre- and postnatal development of their offspring, including reproductive performance of the mated F1 generation.  At a dose of 15 mg/kg/day in rats, the maternal exposure margin was approximately 6 times the maximum recommended human oral dose of 24 mg/day, based on BSA.</paragraph>
+                     </text>
+                     <effectiveTime value="20260601"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="Section_8.2">
+                     <id root="1d3fb3c1-17a4-4549-867c-24d27329ac5b"/>
+                     <code code="34079-4" codeSystem="2.16.840.1.113883.6.1" displayName="LABOR &amp; DELIVERY SECTION"/>
+                     <title>8.2 Lactation</title>
+                     <text>
+                        <paragraph>
+                           <content styleCode="underline">Risk Summary</content>
+                        </paragraph>
+                        <paragraph>Ondansetron is unlikely to result in clinically relevant exposures in breastfed infants when administered intravenously at doses up to 4 mg/day to women who are breastfeeding. Available data from a lactation study involving pharmacokinetic samples from 80 lactating women and 20 infants indicate that ondansetron is present at low levels in human milk and in the plasma of breastfed infants. Both the estimated daily infant dose (DID) of ondansetron (0.002 mg/kg/day), and the relative infant dose (RID) (3.7%) were low <content styleCode="italics">(see Data)</content>.</paragraph>
+                        <paragraph>In the same study, no adverse effects attributed to ondansetron were reported in infants exposed to ondansetron through breast milk. There are no data on the effects of ondansetron on milk production. </paragraph>
+                        <paragraph>
+                           <content styleCode="underline">Data </content>
+                        </paragraph>
+                        <paragraph>A pharmacokinetic study utilizing opportunistic sampling of a convenience sample of 80 lactating women receiving intravenous ondansetron for the treatment of post-operative nausea and vomiting and 20 breastfed infants showed that ondansetron was present in breast milk with an average milk to plasma ratio of 0.91 following a median (range) dose of ondansetron of 4 (4 to 8) mg/dose. Using the average milk concentration over 24 hours to estimate the DID and the RID, the DID was 0.002 mg/kg/day and the RID was 3.7% of a weight-adjusted single maternal dose of 4 mg. Among the 20 infant plasma samples, seven concentrations (35%) were below the limit of quantification. Among the 13 infants with a quantifiable plasma concentration, the median (range) concentration was 0.78 (0 to 7.2) ng/mL. The highest observed concentration among these 13 infants was approximately 10 times lower than the median maximum concentration (76.6 ng/mL) observed in an open-label, single-dose pharmacokinetic study conducted in pediatric surgical patients aged 1 to 24 months who received a single 0.1 mg/kg dose of intravenous ondansetron.<br/>
+                        </paragraph>
+                     </text>
+                     <effectiveTime value="20260601"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="Section_8.4">
+                     <id root="6efe818f-2db4-4c5b-9d15-dbeb9258c235"/>
+                     <code code="34081-0" codeSystem="2.16.840.1.113883.6.1" displayName="PEDIATRIC USE SECTION"/>
+                     <title>8.4 Pediatric Use</title>
+                     <text>
+                        <paragraph>The safety and effectiveness of orally administered ondansetron have been established in pediatric patients 4 years and older for the prevention of nausea and vomiting associated with moderately emetogenic cancer chemotherapy. Use of ondansetron in these age-groups is supported by evidence from adequate and well-controlled studies of ondansetron in adults with additional data from 3 open-label, uncontrolled, non-US trials in 182 pediatric patients aged 4 to 18 years with cancer who were given a variety of cisplatin or noncisplatin regimens <content styleCode="italics">[see <linkHtml href="#Section_2.2">Dosage and Administration (2.2)</linkHtml>, <linkHtml href="#Section_14.1">Clinical Studies (14.1)</linkHtml>]</content>.<br/>
+                           <br/> Additional information on the use of ondansetron in pediatric patients may be found in Ondansetron Injection prescribing information.<br/>
+                           <br/> The safety and effectiveness of orally administered ondansetron have not been established in pediatric patients for:</paragraph>
+                        <list listType="unordered">
+                           <item>
+                              <caption>•</caption>prevention of nausea and vomiting associated with highly emetogenic cancer chemotherapy</item>
+                           <item>
+                              <caption>•</caption>prevention of nausea and vomiting associated with radiotherapy</item>
+                           <item>
+                              <caption>•</caption>prevention of postoperative nausea and/or vomiting</item>
+                        </list>
+                     </text>
+                     <effectiveTime value="20260601"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="Section_8.5">
+                     <id root="9375aad2-0e32-4263-ba81-6853f0520b48"/>
+                     <code code="34082-8" codeSystem="2.16.840.1.113883.6.1" displayName="GERIATRIC USE SECTION"/>
+                     <title>8.5 Geriatric Use</title>
+                     <text>
+                        <paragraph>Of the total number of subjects enrolled in cancer chemotherapy-induced and postoperative nausea and vomiting in U.S.- and foreign-controlled clinical trials, for which there were subgroup analyses, 938 (19%) were aged 65 years and older.<br/>
+                           <br/> No overall differences in safety or effectiveness were observed between subjects 65 years of age and older and younger subjects. A reduction in clearance and increase in elimination half-life were seen in patients older than 75 years compared with younger subjects <content styleCode="italics">[see <linkHtml href="#Section_12.3">Clinical Pharmacology (12.3)</linkHtml>]</content>. There were an insufficient number of patients older than 75 years of age and older in the clinical trials to permit safety or efficacy conclusions in this age group. Other reported clinical experience has not identified differences in responses between the elderly and younger patients, but greater sensitivity of some older individuals cannot be ruled out. No dosage adjustment is needed in elderly patients.</paragraph>
+                     </text>
+                     <effectiveTime value="20260601"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="Section_8.6">
+                     <id root="435ed64d-afac-4b54-9008-d6353d1fccce"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>8.6 Hepatic Impairment</title>
+                     <text>
+                        <paragraph>No dosage adjustment is needed in patients with mild or moderate hepatic impairment.<br/>
+                           <br/> In patients with severe hepatic impairment, clearance is reduced and the apparent volume of distribution is increased, resulting in a significant increase in the half-life of ondansetron. Therefore, do not exceed a total daily dose of 8 mg in patients with severe hepatic impairment (Child-Pugh score of 10 or greater) <content styleCode="italics">[see <linkHtml href="#Section_2.2">Dosage and Administration (2.2)</linkHtml>, <linkHtml href="#Section_12.3">Clinical Pharmacology (12.3)</linkHtml>]</content>.</paragraph>
+                     </text>
+                     <effectiveTime value="20260601"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="Section_8.7">
+                     <id root="3e1f2770-89f4-45a7-9ee3-9dd10ba44302"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>8.7 Renal Impairment</title>
+                     <text>
+                        <paragraph>No dosage adjustment is recommended for patients with any degree of renal impairment (mild, moderate, or severe). There is no experience beyond first-day administration of ondansetron <content styleCode="italics">[see <linkHtml href="#Section_12.3">Clinical Pharmacology (12.3)</linkHtml>]</content>.</paragraph>
+                     </text>
+                     <effectiveTime value="20260601"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="Section_9">
+               <id root="e8d30353-6dea-405c-9912-1060aeb7ce13"/>
+               <code code="42227-9" codeSystem="2.16.840.1.113883.6.1" displayName="DRUG ABUSE AND DEPENDENCE SECTION"/>
+               <title>9 DRUG ABUSE AND DEPENDENCE</title>
+               <text>
+                  <paragraph>Animal studies have shown that ondansetron is not discriminated as a benzodiazepine nor does it substitute for benzodiazepines in direct addiction studies.</paragraph>
+               </text>
+               <effectiveTime value="20260601"/>
+            </section>
+         </component>
+         <component>
+            <section ID="Section_10">
+               <id root="07e2a5ba-2f45-4a84-b573-2caf890c9d6c"/>
+               <code code="34088-5" codeSystem="2.16.840.1.113883.6.1" displayName="OVERDOSAGE SECTION"/>
+               <title>10 OVERDOSAGE</title>
+               <text>
+                  <paragraph>There is no specific antidote for ondansetron overdose. Patients should be managed with appropriate supportive therapy.<br/>
+                     <br/> In addition to the adverse reactions listed above, the following adverse reactions have been described in the setting of ondansetron overdose: “Sudden blindness” (amaurosis) of 2 to 3 minutes’ duration plus severe constipation occurred in one patient that was administered 72 mg of ondansetron intravenously as a single dose. Hypotension (and faintness) occurred in a patient that took 48 mg of ondansetron tablets. Following infusion of 32 mg over only a 4-minute period, a vasovagal episode with transient second-degree heart block was observed. In all instances, the adverse reactions resolved completely.<br/>
+                     <br/> Pediatric cases consistent with serotonin syndrome have been reported after inadvertent oral overdoses of ondansetron (exceeding estimated ingestion of 5 mg per kg) in young children. Reported symptoms included somnolence, agitation, tachycardia, tachypnea, hypertension, flushing, mydriasis, diaphoresis, myoclonic movements, horizontal nystagmus, hyperreflexia, and seizure. Patients required supportive care, including intubation in some cases, with complete recovery without sequelae within 1 to 2 days.</paragraph>
+               </text>
+               <effectiveTime value="20260601"/>
+            </section>
+         </component>
+         <component>
+            <section ID="Section_11">
+               <id root="a9caeb3c-5dd0-4b86-a932-2d371a29fbfc"/>
+               <code code="34089-3" codeSystem="2.16.840.1.113883.6.1" displayName="DESCRIPTION SECTION"/>
+               <title>11 DESCRIPTION</title>
+               <text>
+                  <paragraph>The active ingredient in ondansetron tablets, USP is ondansetron hydrochloride as the dihydrate, the racemic form of ondansetron and a selective blocking agent of the serotonin 5-HT<sub>3</sub> receptor type. Chemically it is (±) 1, 2, 3, 9-tetrahydro-9-methyl-3-[(2-methyl-1H-imidazol-1-yl)methyl]-4H-carbazol-4-one, monohydrochloride, dihydrate. It has the following structural formula:<br/>
+                     <renderMultiMedia ID="id1192" referencedObject="ID_58ec514a-1cdd-4a04-b48e-57c4d21390be"/>
+                     <br/> The molecular formula is C<sub>18</sub>H<sub>19</sub>N<sub>3</sub>O•HCl•2H<sub>2</sub>O, representing a molecular weight of 365.9 g/mol.<br/>
+                     <br/> Ondansetron hydrochloride USP (dihydrate) is a white to off-white powder that is soluble in water and normal saline. <br/>
+                     <br/> Ondansetron tablets, USP for oral administration contain ondansetron hydrochloride USP (dihydrate) equivalent to 4 mg or 8 mg of ondansetron. Each film-coated tablet also contains the inactive ingredients anhydrous lactose, microcrystalline cellulose, pregelatinized starch (maize), magnesium stearate, triacetin, titanium dioxide and hypromellose. In addition 8 mg tablet also contains iron oxide yellow.</paragraph>
+                  <paragraph>Meets USP dissolution test 6. </paragraph>
+               </text>
+               <effectiveTime value="20260601"/>
+               <component>
+                  <observationMedia ID="ID_58ec514a-1cdd-4a04-b48e-57c4d21390be">
+                     <text>Chemical Structure</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="ondansetron-str.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="Section_12">
+               <id root="abce1ecb-3a71-486e-9916-9384bc8448ac"/>
+               <code code="34090-1" codeSystem="2.16.840.1.113883.6.1" displayName="CLINICAL PHARMACOLOGY SECTION"/>
+               <title>12 CLINICAL PHARMACOLOGY</title>
+               <effectiveTime value="20260601"/>
+               <component>
+                  <section ID="Section_12.1">
+                     <id root="0f97ddd1-a4a1-4930-a912-d37e1cdceca2"/>
+                     <code code="43679-0" codeSystem="2.16.840.1.113883.6.1" displayName="MECHANISM OF ACTION SECTION"/>
+                     <title>12.1 Mechanism of Action</title>
+                     <text>
+                        <paragraph>Ondansetron is a selective 5-HT<sub>3</sub> receptor antagonist. While its mechanism of action has not been fully characterized, ondansetron is not a dopamine-receptor antagonist. Serotonin receptors of the 5-HT<sub>3</sub> type are present both peripherally on vagal nerve terminals and centrally in the chemoreceptor trigger zone of the area postrema. It is not certain whether ondansetron’s antiemetic action is mediated centrally, peripherally, or in both sites. However, cytotoxic chemotherapy appears to be associated with release of serotonin from the enterochromaffin cells of the small intestine. In humans, urinary 5-hydroxyindoleacetic acid (5-HIAA) excretion increases after cisplatin administration in parallel with the onset of emesis. The released serotonin may stimulate the vagal afferents through the 5-HT<sub>3</sub> receptors and initiate the vomiting reflex.</paragraph>
+                     </text>
+                     <effectiveTime value="20260601"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="Section_12.2">
+                     <id root="f568c62c-fb03-46cd-b63e-3b4f5019f62d"/>
+                     <code code="43681-6" codeSystem="2.16.840.1.113883.6.1" displayName="PHARMACODYNAMICS SECTION"/>
+                     <title>12.2 Pharmacodynamics</title>
+                     <text>
+                        <paragraph>In healthy subjects, single intravenous doses of 0.15 mg/kg of ondansetron had no effect on esophageal motility, gastric motility, lower esophageal sphincter pressure, or small intestinal transit time. Multiday administration of ondansetron has been shown to slow colonic transit in healthy subjects. Ondansetron has no effect on plasma-prolactin concentrations.<br/>
+                           <br/>
+                           <content styleCode="underline"> Cardiac Electrophysiology</content>
+                           <br/>
+                           <br/> QTc interval prolongation was studied in a double-blind, single-intravenous dose, placebo- and positive-controlled, crossover trial in 58 healthy subjects. The maximum mean (95% upper confidence bound) difference in QTcF from placebo after baseline correction was 19.5 (21.8) milliseconds and 5.6 (7.4) milliseconds after 15‑-minute intravenous infusions of 32 mg and 8 mg of ondansetron injection, respectively. A significant exposure-response relationship was identified between ondansetron concentration and ΔΔQTcF. Using the established exposure-response relationship, 24 mg infused intravenously over 15 minutes had a mean predicted (95% upper prediction interval) ΔΔQTcF of 14.0 (16.3) milliseconds. In contrast, 16 mg infused intravenously over 15 minutes using the same model had a mean predicted (95% upper prediction interval) ΔΔQTcF of 9.1 (11.2) milliseconds. In this study, the 8 mg dose infused over 15 minutes did not prolong the QT interval to any clinically relevant extent.</paragraph>
+                     </text>
+                     <effectiveTime value="20260601"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="Section_12.3">
+                     <id root="567c5a53-3c03-402e-935c-53a3d3d8a00d"/>
+                     <code code="43682-4" codeSystem="2.16.840.1.113883.6.1" displayName="PHARMACOKINETICS SECTION"/>
+                     <title>12.3 Pharmacokinetics</title>
+                     <text>
+                        <paragraph>
+                           <content styleCode="underline">Absorption</content>
+                           <br/>
+                           <br/> Ondansetron is absorbed from the gastrointestinal tract and undergoes some first-pass metabolism. Mean bioavailability in healthy subjects, following administration of a single 8 mg tablet, is approximately 56%.<br/>
+                           <br/> Ondansetron systemic exposure does not increase proportionately to dose. The area under curve (AUC) from a 16 mg tablet was 24% greater than predicted from an 8 mg tablet dose. This may reflect some reduction of first-pass metabolism at higher oral doses.<br/>
+                           <br/>
+                           <content styleCode="italics">Food Effects</content>: Bioavailability is also slightly enhanced by the presence of food.<br/>
+                           <br/>
+                           <content styleCode="underline"> Distribution</content>
+                           <br/>
+                           <br/> Plasma protein binding of ondansetron as measured <content styleCode="italics">in vitro</content> was 70% to 76% over the concentration range of 10 to 500 ng/mL. Circulating drug also distributes into erythrocytes.<br/>
+                           <br/>
+                           <content styleCode="underline"> Elimination</content>
+                           <br/>
+                           <br/>
+                           <content styleCode="italics"> Metabolism and Excretion:</content> Ondansetron is extensively metabolized in humans, with approximately 5% of a radiolabeled dose recovered as the parent compound from the urine. The metabolites are observed in the urine. The primary metabolic pathway is hydroxylation on the indole ring followed by subsequent glucuronide or sulfate conjugation.<br/>
+                           <br/>
+                           <content styleCode="italics"> In vitro</content> metabolism studies have shown that ondansetron is a substrate for human hepatic cytochrome P-450 enzymes, including CYP1A2, CYP2D6, and CYP3A4. In terms of overall ondansetron turnover, CYP3A4 played the predominant role. Because of the multiplicity of metabolic enzymes capable of metabolizing ondansetron, it is likely that inhibition or loss of one enzyme (e.g., CYP2D6 genetic deficiency) will be compensated by others and may result in little change in overall rates of ondansetron elimination.<br/>
+                           <br/> Although some nonconjugated metabolites have pharmacologic activity, these are not found in plasma at concentrations likely to significantly contribute to the biological activity of ondansetron.<br/>
+                           <br/>
+                           <content styleCode="underline"> Specific Populations</content>
+                           <br/>
+                           <br/>
+                           <content styleCode="italics"> Age:</content>  <content styleCode="italics">Geriatric Population:</content> A reduction in clearance and increase in elimination half-life are seen in patients older than 75 years compared to younger subjects <content styleCode="italics">[see <linkHtml href="#Section_8.5">Use in Specific Populations (8.5)</linkHtml>]</content>.<br/>
+                           <br/>
+                           <content styleCode="italics">Sex:</content> Gender differences were shown in the disposition of ondansetron given as a single dose. The extent and rate of absorption are greater in women than men. Slower clearance in women, a smaller apparent volume of distribution (adjusted for weight), and higher absolute bioavailability resulted in higher plasma ondansetron concentrations. These higher plasma concentrations may in part be explained by differences in body weight between men and women. It is not known whether these sex-related differences were clinically important. More detailed pharmacokinetic information is contained in Tables 5 and 6.</paragraph>
+                        <table ID="_RefID0E3QAG" cellpadding="0pt" cellspacing="0pt" width="100%">
+                           <caption>Table 5: Pharmacokinetics in Male and Female Healthy Subjects After a Single Dose of a Ondansetron 8 mg Tablet  </caption>
+                           <col width="12%"/>
+                           <col width="9%"/>
+                           <col width="4%"/>
+                           <col width="16%"/>
+                           <col width="16%"/>
+                           <col width="14%"/>
+                           <col width="12%"/>
+                           <col width="16%"/>
+                           <tbody>
+                              <tr>
+                                 <td align="center" styleCode="Rrule Botrule Lrule Toprule " valign="middle">
+                                    <paragraph>
+                                       <content styleCode="bold">Age-group (years)</content>
+                                       <br/>
+                                       <content styleCode="bold">Sex</content>
+                                       <br/>
+                                       <content styleCode="bold">(M/F)</content>
+                                       <br/>
+                                    </paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule Toprule " valign="middle">
+                                    <paragraph>
+                                       <content styleCode="bold">Mean Weight</content>
+                                       <br/>
+                                       <content styleCode="bold">(kg)</content>
+                                       <br/>
+                                    </paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule Toprule " valign="middle">
+                                    <paragraph>
+                                       <content styleCode="bold">N</content>
+                                       <br/>
+                                    </paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule Toprule " valign="middle">
+                                    <paragraph>
+                                       <content styleCode="bold">Peak Plasma</content>
+                                       <br/>
+                                       <content styleCode="bold">Concentration</content>
+                                       <br/>
+                                       <content styleCode="bold">(ng/mL)</content>
+                                       <br/>
+                                    </paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule Toprule " valign="middle">
+                                    <paragraph>
+                                       <content styleCode="bold">Time of</content>
+                                       <br/>
+                                       <content styleCode="bold">Peak Plasma</content>
+                                       <br/>
+                                       <content styleCode="bold">Concentration</content>
+                                       <br/>
+                                       <content styleCode="bold">(h)</content>
+                                       <br/>
+                                    </paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule Toprule " valign="middle">
+                                    <paragraph>
+                                       <content styleCode="bold">Mean Elimination</content>
+                                       <br/>
+                                       <content styleCode="bold">Half-life</content>
+                                       <br/>
+                                       <content styleCode="bold">(h)</content>
+                                       <br/>
+                                    </paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule Toprule " valign="middle">
+                                    <paragraph>
+                                       <content styleCode="bold">Systemic</content>
+                                       <br/>
+                                       <content styleCode="bold">Plasma</content>
+                                       <br/>
+                                       <content styleCode="bold">Clearance</content>
+                                       <br/>
+                                       <content styleCode="bold">L/h/kg</content>
+                                       <br/>
+                                    </paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule Toprule " valign="middle">
+                                    <paragraph>
+                                       <content styleCode="bold">Absolute</content>
+                                       <br/>
+                                       <content styleCode="bold">Bioavailability</content>
+                                       <br/>
+                                    </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td styleCode="Rrule Lrule Botrule " valign="top">
+                                    <paragraph>18 to 40  M<br/>                F<br/>
+                                    </paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule " valign="middle">
+                                    <paragraph>69.0<br/>62.7<br/>
+                                    </paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule " valign="middle">
+                                    <paragraph>6<br/>5<br/>
+                                    </paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule " valign="middle">
+                                    <paragraph>26.2<br/>42.7<br/>
+                                    </paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule " valign="middle">
+                                    <paragraph>2.0<br/>1.7<br/>
+                                    </paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule " valign="middle">
+                                    <paragraph>3.1<br/>3.5<br/>
+                                    </paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule " valign="middle">
+                                    <paragraph>0.403<br/>0.354<br/>
+                                    </paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule " valign="middle">
+                                    <paragraph>0.483<br/>0.663<br/>
+                                    </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td styleCode="Rrule Lrule Botrule " valign="top">
+                                    <paragraph>61 to 74  M<br/>                F<br/>
+                                    </paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule " valign="middle">
+                                    <paragraph>77.5<br/>60.2<br/>
+                                    </paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule " valign="middle">
+                                    <paragraph>6<br/>6<br/>
+                                    </paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule " valign="middle">
+                                    <paragraph>24.1<br/>52.4<br/>
+                                    </paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule " valign="middle">
+                                    <paragraph>2.1<br/>1.9<br/>
+                                    </paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule " valign="middle">
+                                    <paragraph>4.1<br/>4.9<br/>
+                                    </paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule " valign="middle">
+                                    <paragraph>0.384<br/>0.255<br/>
+                                    </paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule " valign="middle">
+                                    <paragraph>0.585<br/>0.643<br/>
+                                    </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td styleCode="Rrule Botrule Lrule " valign="top">
+                                    <paragraph>≥ 75   M<br/>           F<br/>
+                                    </paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule " valign="middle">
+                                    <paragraph>78.0<br/>67.6<br/>
+                                    </paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule " valign="middle">
+                                    <paragraph>5<br/>6<br/>
+                                    </paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule " valign="middle">
+                                    <paragraph>37.0<br/>46.1<br/>
+                                    </paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule " valign="middle">
+                                    <paragraph>2.2<br/>2.1<br/>
+                                    </paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule " valign="middle">
+                                    <paragraph>4.5<br/>6.2<br/>
+                                    </paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule " valign="middle">
+                                    <paragraph>0.277<br/>0.249<br/>
+                                    </paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule " valign="middle">
+                                    <paragraph>0.619<br/>0.747<br/>
+                                    </paragraph>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table ID="_RefID0EG2AG" cellpadding="0pt" cellspacing="0pt" width="100%">
+                           <caption>Table 6: Pharmacokinetics in Male and Female Healthy Subjects After a Single Dose of a Ondansetron 24 mg Tablet  </caption>
+                           <col width="14%"/>
+                           <col width="15%"/>
+                           <col width="4%"/>
+                           <col width="22%"/>
+                           <col width="21%"/>
+                           <col width="22%"/>
+                           <tbody>
+                              <tr>
+                                 <td align="center" styleCode="Rrule Botrule Lrule Toprule " valign="middle">
+                                    <paragraph>
+                                       <content styleCode="bold">Age-group (years)</content>
+                                       <br/>
+                                       <content styleCode="bold">Sex (M/F)</content>
+                                       <br/>
+                                    </paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule Toprule " valign="middle">
+                                    <paragraph>
+                                       <content styleCode="bold">Mean Weight</content>
+                                       <br/>
+                                       <content styleCode="bold">(kg)</content>
+                                       <br/>
+                                    </paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule Toprule " valign="middle">
+                                    <paragraph>
+                                       <content styleCode="bold">N</content>
+                                       <br/>
+                                    </paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule Toprule " valign="middle">
+                                    <paragraph>
+                                       <content styleCode="bold">Peak Plasma</content>
+                                       <br/>
+                                       <content styleCode="bold">Concentration</content>
+                                       <br/>
+                                       <content styleCode="bold">(ng/mL)</content>
+                                       <br/>
+                                    </paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule Toprule " valign="middle">
+                                    <paragraph>
+                                       <content styleCode="bold">Time of Peak Plasma</content>
+                                       <br/>
+                                       <content styleCode="bold">Concentration</content>
+                                       <br/>
+                                       <content styleCode="bold">(h)</content>
+                                       <br/>
+                                    </paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule Toprule " valign="middle">
+                                    <paragraph>
+                                       <content styleCode="bold">Mean Elimination</content>
+                                       <br/>
+                                       <content styleCode="bold">Half-life</content>
+                                       <br/>
+                                       <content styleCode="bold">(h)</content>
+                                       <br/>
+                                    </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td styleCode="Rrule Botrule Lrule " valign="top">
+                                    <paragraph>18 to 43 M<br/>               F<br/>
+                                    </paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule " valign="top">
+                                    <paragraph>84.1<br/>71.8<br/>
+                                    </paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule " valign="top">
+                                    <paragraph>8<br/>8<br/>
+                                    </paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule " valign="top">
+                                    <paragraph>125.8<br/>194.4<br/>
+                                    </paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule " valign="top">
+                                    <paragraph>1.9<br/>1.6<br/>
+                                    </paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule " valign="top">
+                                    <paragraph>4.7<br/>5.8<br/>
+                                    </paragraph>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <paragraph>
+                           <content styleCode="italics">Renal Impairment:</content> Renal impairment is not expected to significantly influence the total clearance of ondansetron as renal clearance represents only 5% of the overall clearance. However, the mean plasma clearance of ondansetron was reduced by about 50% in patients with severe renal impairment (creatinine clearance less than 30 mL/min). The reduction in clearance was variable and not consistent with an increase in half-life <content styleCode="italics">[see <linkHtml href="#Section_8.7">Use in Specific Populations (8.7)</linkHtml>]</content>.<br/>
+                           <br/>
+                           <content styleCode="italics">Hepatic Impairment:</content> In patients with mild-to-moderate hepatic impairment, clearance is reduced 2-fold and mean half-life is increased to 11.6 hours compared with 5.7 hours in healthy subjects. In patients with severe hepatic impairment (Child-Pugh score of 10 or greater), clearance is reduced 2-fold to 3-fold and apparent volume of distribution is increased with a resultant increase in half-life to 20 hours <content styleCode="italics">[see <linkHtml href="#Section_2.2">Dosage and Administration (2.2)</linkHtml>, <linkHtml href="#Section_8.6">Use in Specific Populations (8.6)</linkHtml>]</content>.<br/>
+                           <br/>
+                           <content styleCode="underline"> Drug Interaction Studies</content>
+                           <br/>
+                           <br/>
+                           <content styleCode="italics"> CYP 3A4 Inducers:</content> Ondansetron elimination may be affected by cytochrome P-450 inducers. In a pharmacokinetic trial of 16 epileptic patients maintained chronically on CYP3A4 inducers, carbamazepine, or phenytoin, a reduction in AUC, C<sub>max</sub>, and t<sub>½</sub> of ondansetron was observed. This resulted in a significant increase in the clearance of ondansetron. However, this increase is not thought to be clinically relevant <content styleCode="italics">[see <linkHtml href="#Section_7.2">Drug Interactions (7.2)</linkHtml>]</content>.<br/>
+                           <br/>
+                           <content styleCode="italics"> Chemotherapeutic Agents:</content> Carmustine, etoposide, and cisplatin do not affect the pharmacokinetics of ondansetron <content styleCode="italics">[see <linkHtml href="#Section_7.4">Drug Interactions (7.4)</linkHtml>]</content>.<br/>
+                           <br/>
+                           <content styleCode="italics"> Antacids:</content> Concomitant administration of antacids does not alter the absorption of ondansetron.</paragraph>
+                     </text>
+                     <effectiveTime value="20260601"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="Section_13">
+               <id root="d2b5d950-ab1e-40db-b09b-66f2773e8157"/>
+               <code code="43680-8" codeSystem="2.16.840.1.113883.6.1" displayName="NONCLINICAL TOXICOLOGY SECTION"/>
+               <title>13 NONCLINICAL TOXICOLOGY</title>
+               <effectiveTime value="20260601"/>
+               <component>
+                  <section ID="Section_13.1">
+                     <id root="a2f4caab-5584-44c6-8a02-b19d6234b07f"/>
+                     <code code="34083-6" codeSystem="2.16.840.1.113883.6.1" displayName="CARCINOGENESIS &amp; MUTAGENESIS &amp; IMPAIRMENT OF FERTILITY SECTION"/>
+                     <title>13.1 Carcinogenesis, Mutagenesis, Impairment of Fertility</title>
+                     <text>
+                        <paragraph>Carcinogenic effects were not seen in 2-year studies in rats and mice with oral ondansetron doses up to 10 mg/kg per day and 30 mg/kg per day, respectively (approximately 4 and 6 times the maximum recommended human oral dose of 24 mg per day, based on BSA).<br/>
+                           <br/> Ondansetron was not mutagenic in standard tests for mutagenicity.<br/>
+                           <br/> Oral administration of ondansetron up to 15 mg/kg per day (approximately 6 times the maximum recommended human oral dose of 24 mg per day, based on BSA) did not affect fertility or general reproductive performance of male and female rats.</paragraph>
+                     </text>
+                     <effectiveTime value="20260601"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="Section_14">
+               <id root="64907a88-49cf-4954-a862-ae4b667f9020"/>
+               <code code="34092-7" codeSystem="2.16.840.1.113883.6.1" displayName="CLINICAL STUDIES SECTION"/>
+               <title>14 CLINICAL STUDIES</title>
+               <effectiveTime value="20260601"/>
+               <component>
+                  <section ID="Section_14.1">
+                     <id root="1819905d-a6e3-4558-897d-1b66b6a0a13e"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>14.1 Prevention of Chemotherapy-Induced Nausea and Vomiting</title>
+                     <text>
+                        <paragraph>
+                           <content styleCode="underline">Highly Emetogenic Chemotherapy</content>
+                           <br/>
+                           <br/> In 2 randomized, double-blind, monotherapy trials, a single 24 mg oral dose of ondansetron was superior to a relevant historical placebo control in the prevention of nausea and vomiting associated with highly emetogenic cancer chemotherapy, including cisplatin greater than or equal to 50 mg/m<sup>2</sup>. Steroid administration was excluded from these clinical trials. More than 90% of patients receiving a cisplatin dose greater than or equal to 50 mg/m<sup>2</sup> in the historical-placebo comparator, experienced vomiting in the absence of antiemetic therapy.<br/>
+                           <br/> The first trial compared oral doses of ondansetron 24 mg as a single dose, 8 mg every 8 hours for 2 doses, and 32 mg as a single dose in 357 adult cancer patients receiving chemotherapy regimens containing cisplatin greater than or equal to 50 mg/m<sup>2</sup>. The first or single dose was administered 30 minutes prior to chemotherapy. A total of 66% of patients in the ondansetron 24 mg once-a-day group, 55% in the ondansetron 8 mg twice-a-day group, and 55% in the ondansetron 32 mg once-a-day group, completed the 24-hour trial period with 0 emetic episodes and no rescue antiemetic medications, the primary endpoint of efficacy. Each of the 3 treatment groups was shown to be statistically significantly superior to a historical placebo control.<br/>
+                           <br/> In the same trial, 56% of patients receiving a single 24 mg oral dose of ondansetron experienced no nausea during the 24-hour trial period, compared with 36% of patients in the oral ondansetron 8 mg twice-a-day group (<content styleCode="italics">P</content> = 0.001) and 50% in the oral ondansetron 32 mg once-a-day group. Dosage regimens of ondansetron 8 mg twice daily and 32 mg once daily are not recommended for the prevention of nausea and vomiting associated with highly emetogenic chemotherapy <content styleCode="italics">[see <linkHtml href="#Section_2.1">Dosage and Administration (2.1)</linkHtml>]</content>.<br/>
+                           <br/> In a second trial, efficacy of a single 24 mg oral dose of ondansetron for the prevention of nausea and vomiting associated with highly emetogenic cancer chemotherapy, including cisplatin greater than or equal to 50 mg/m<sup>2</sup>, was confirmed.<br/>
+                           <br/>
+                           <content styleCode="underline"> Moderately Emetogenic Chemotherapy</content>
+                           <br/>
+                           <br/> A randomized, placebo-controlled, double-blind trial was conducted in the U.S. in 67 patients receiving a cyclophosphamide-based chemotherapy regimen containing doxorubicin. The first 8 mg dose of ondansetron was administered 30 minutes before the start of chemotherapy, with a subsequent dose 8 hours after the first dose, followed by 8 mg of ondansetron twice a day for 2 days after the completion of chemotherapy. Ondansetron was significantly more effective than placebo in preventing vomiting. Treatment response was based on the total number of emetic episodes over the 3-day trial period. The results of this trial are summarized in Table 7.</paragraph>
+                        <table ID="_RefID0EJFBG" cellpadding="0pt" cellspacing="0pt" width="100%">
+                           <caption>Table 7: Emetic Episodes - Treatment Response in Patients Receiving Moderately Emetogenic Chemotherapy (Cyclophosphamide-based Regimen Containing Doxorubicin)  </caption>
+                           <col width="44%"/>
+                           <col width="23%"/>
+                           <col width="19%"/>
+                           <col width="15%"/>
+                           <tfoot>
+                              <tr>
+                                 <td align="left" colspan="4" valign="top">1. Median undefined since at least 50% of the patients were withdrawn or had more than 2 emetic episodes.<br/>2. Median undefined since at least 50% of patients did not have any emetic episodes.<br/>
+                                 </td>
+                              </tr>
+                           </tfoot>
+                           <tbody>
+                              <tr>
+                                 <td styleCode="Rrule Botrule Lrule Toprule " valign="top">
+                                    <paragraph> <br/>
+                                    </paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule Toprule " valign="middle">
+                                    <paragraph>
+                                       <content styleCode="bold">Ondansetron</content>
+                                       <br/>
+                                       <content styleCode="bold">(n = 33)</content>
+                                       <br/>
+                                    </paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule Toprule " valign="middle">
+                                    <paragraph>
+                                       <content styleCode="bold">Placebo</content>
+                                       <br/>
+                                       <content styleCode="bold">(n = 34)</content>
+                                       <br/>
+                                    </paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule Toprule " valign="middle">
+                                    <paragraph>
+                                       <content styleCode="bold">
+                                          <content styleCode="italics">P</content>-value</content>
+                                       <br/>
+                                    </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td styleCode="Rrule Lrule Botrule " valign="top">
+                                    <paragraph> Treatment response<br/> 0 Emetic episodes<br/> 1 to 2 Emetic episodes<br/> More than 2 emetic episodes/withdrawn<br/>
+                                    </paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule " valign="middle">
+                                    <paragraph> <br/>20 (61%)<br/>6 (18%)<br/>7 (21%)<br/>
+                                    </paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule " valign="middle">
+                                    <paragraph> <br/>2 (6%)<br/>8 (24%)<br/>24 (71%)<br/>
+                                    </paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule " valign="middle">
+                                    <paragraph> <br/> <br/> &lt; 0.001<br/>&lt; 0.001<br/>
+                                    </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td styleCode="Rrule Lrule Botrule " valign="top">
+                                    <paragraph> Median number of emetic episodes<br/>
+                                    </paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule " valign="middle">
+                                    <paragraph>0.0<br/>
+                                    </paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule " valign="middle">
+                                    <paragraph>Undefined<sup>1</sup>
+                                       <br/>
+                                    </paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule " valign="middle">
+                                    <paragraph> <br/>
+                                    </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td styleCode="Rrule Botrule Lrule " valign="top">
+                                    <paragraph> Median time to first emetic episode (hours)<br/>
+                                    </paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule " valign="middle">
+                                    <paragraph>Undefined<sup>2</sup>
+                                       <br/>
+                                    </paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule " valign="middle">
+                                    <paragraph>6.5<br/>
+                                    </paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule " valign="middle">
+                                    <paragraph> <br/>
+                                    </paragraph>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <paragraph>In a double-blind, U.S. trial in 336 patients receiving a cyclophosphamide-based chemotherapy regimen containing either methotrexate or doxorubicin, ondansetron 8 mg administered twice a day, was as effective as ondansetron 8 mg administered 3 times a day in preventing nausea and vomiting. Ondansetron 8 mg three times daily is not a recommended regimen for the treatment of moderately emetogenic chemotherapy <content styleCode="italics">[see <linkHtml href="#Section_2.1">Dosage and Administration (2.1)</linkHtml>]</content>.<br/>
+                           <br/> Treatment response was based on the total number of emetic episodes over the 3-day trial period. See Table 8 for the details of the dosage regimens studied and results of this trial.</paragraph>
+                        <table ID="_RefID0E1KBG" cellpadding="0pt" cellspacing="0pt" width="100%">
+                           <caption>Table 8: Emetic Episodes - Treatment Response After Ondansetron Tablets Administered Twice a Day and Three Times a Day  </caption>
+                           <col width="33%"/>
+                           <col width="33%"/>
+                           <col width="33%"/>
+                           <tfoot>
+                              <tr>
+                                 <td align="left" colspan="3" valign="top">1. The first 8 mg dose was administered 30 minutes before the start of emetogenic chemotherapy, with a subsequent  8 mg dose 8 hours after the first dose, followed by 8 mg administered twice a day for 2 days after the completion of chemotherapy.<br/>2. The first 8 mg dose was administered 30 minutes before the start of emetogenic chemotherapy, with subsequent 8 mg doses at 4 hours and 8 hours after the first dose, followed by 8 mg administered 3 times a day for 2 days after the completion of chemotherapy.<br/>3. Median undefined since at least 50% of patients did not have any emetic episodes.<br/>4. Visual analog scale assessment: 0 = no nausea, 100 = nausea as bad as it can be.<br/>
+                                 </td>
+                              </tr>
+                           </tfoot>
+                           <tbody>
+                              <tr>
+                                 <td rowspan="2" styleCode="Rrule Botrule Lrule Toprule " valign="middle">
+                                    <paragraph> <br/>
+                                    </paragraph>
+                                 </td>
+                                 <td align="center" colspan="2" styleCode="Rrule Botrule Toprule " valign="middle">
+                                    <paragraph>
+                                       <content styleCode="bold">Ondansetron Tablets</content>
+                                       <br/>
+                                    </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td align="center" styleCode="Rrule Lrule Botrule " valign="middle">
+                                    <paragraph>
+                                       <content styleCode="bold">8 mg Twice Daily<sup>1</sup>
+                                       </content>
+                                       <br/>
+                                       <content styleCode="bold">(n = 165)</content>
+                                       <br/>
+                                    </paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule " valign="middle">
+                                    <paragraph>
+                                       <content styleCode="bold">8 mg Three Times a Day<sup>2</sup>
+                                       </content>
+                                       <br/>
+                                       <content styleCode="bold">(n = 171)</content>
+                                       <br/>
+                                    </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td styleCode="Rrule Lrule Botrule " valign="middle">
+                                    <paragraph> Treatment response<br/> 0 Emetic episodes<br/> 1 to 2 Emetic episodes<br/> More than 2 emetic episodes/withdrawn<br/>
+                                    </paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule " valign="middle">
+                                    <paragraph> <br/>101 (61%)<br/>16 (10%)<br/>48 (29%)<br/>
+                                    </paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule " valign="middle">
+                                    <paragraph> <br/>99 (58%)<br/>17 (10%)<br/>55 (32%)<br/>
+                                    </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td styleCode="Rrule Lrule Botrule " valign="middle">
+                                    <paragraph> Median number of emetic episodes<br/>
+                                    </paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule " valign="middle">
+                                    <paragraph>0.0<br/>
+                                    </paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule " valign="middle">
+                                    <paragraph>0.0<br/>
+                                    </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td styleCode="Rrule Lrule Botrule " valign="middle">
+                                    <paragraph> Median time to first emetic episode (h)<br/>
+                                    </paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule " valign="middle">
+                                    <paragraph>Undefined<sup>3</sup>
+                                       <br/>
+                                    </paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule " valign="middle">
+                                    <paragraph>Undefined<sup>3</sup>
+                                       <br/>
+                                    </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td styleCode="Rrule Botrule Lrule " valign="middle">
+                                    <paragraph> Median nausea scores (0 to 100)<sup>4</sup>
+                                       <br/>
+                                    </paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule " valign="middle">
+                                    <paragraph>6<br/>
+                                    </paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule " valign="middle">
+                                    <paragraph>6<br/>
+                                    </paragraph>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <paragraph>
+                           <content styleCode="underline">Re-treatment</content>
+                           <br/>
+                           <br/> In single-arm trials, 148 patients receiving cyclophosphamide-based chemotherapy were re-treated with ondansetron 8 mg three times daily during subsequent chemotherapy for a total of 396 re-treatment courses. No emetic episodes occurred in 314 (79%) of the re-treatment courses, and only 1 to 2 emetic episodes occurred in 43 (11%) of the re-treatment courses.<br/>
+                           <br/>
+                           <content styleCode="underline"> Pediatric Trials</content>
+                           <br/>
+                           <br/> Three open-label, single-arm, non-U.S. trials have been performed with 182 pediatric patients aged 4 to 18 years with cancer who were given a variety of cisplatin or noncisplatin regimens. The initial dose of ondansetron injection ranged from 0.04 to 0.87 mg per kg (total dose of 2.16 mg to 12 mg) followed by the administration of oral doses of ondansetron ranging from 4 to 24 mg daily for 3 days. In these trials, 58% of the 170 evaluable patients had a complete response (no emetic episodes) on Day 1. In 2 trials, the response rates to ondansetron 4 mg three times a day in patients younger than 12 years was similar to ondansetron 8 mg three times daily in patients 12 to 18 years. Prevention of emesis in these pediatric patients was essentially the same as for adults.</paragraph>
+                     </text>
+                     <effectiveTime value="20260601"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="Section_14.2">
+                     <id root="c9b05061-5ece-4f6d-94cb-0cfe644cfd9f"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>14.2 Radiation-Induced Nausea and Vomiting</title>
+                     <text>
+                        <paragraph>
+                           <content styleCode="underline">Total Body Irradiation</content>
+                           <br/>
+                           <br/> In a randomized, placebo-controlled, double-blind trial in 20 patients, 8 mg of ondansetron administered 1.5 hours before each fraction of radiotherapy for 4 days was significantly more effective than placebo in preventing vomiting induced by total body irradiation. Total body irradiation consisted of 11 fractions (120 cGy per fraction) over 4 days for a total of 1,320 cGy. Patients received 3 fractions for 3 days, then 2 fractions on Day 4.<br/>
+                           <br/>
+                           <content styleCode="underline"> Single High-Dose Fraction Radiotherapy</content>
+                           <br/>
+                           <br/> In an active-controlled, double-blind trial in 105 patients receiving single high-dose radiotherapy (800 to 1,000 cGy) over an anterior or posterior field size of greater than or equal to 80 cm<sup>2</sup> to the abdomen, ondansetron was significantly more effective than metoclopramide with respect to complete control of emesis (0 emetic episodes). Patients received the first dose of ondansetron (8 mg) or metoclopramide (10 mg) 1 to 2 hours before radiotherapy. If radiotherapy was given in the morning, 8 mg of ondansetron or 10 mg of metoclopramide was administered in the late afternoon and repeated again before bedtime. If radiotherapy was given in the afternoon, patients took 8 mg of ondansetron or 10 mg of metoclopramide only once before bedtime. Patients continued the doses of oral medication three times daily for 3 days.<br/>
+                           <br/>
+                           <content styleCode="underline"> Daily Fractionated Radiotherapy</content>
+                           <br/>
+                           <br/> In an active-controlled, double-blind trial in 135 patients receiving a 1- to 4- week course of fractionated radiotherapy (180 cGy doses) over a field size of greater than or equal to 100 cm<sup>2</sup> to the abdomen, ondansetron was significantly more effective than prochlorperazine with respect to complete control of emesis (0 emetic episodes). Patients received the first dose of ondansetron (8 mg) or prochlorperazine (10 mg) 1 to 2 hours before the first daily radiotherapy fraction, with subsequent 8 mg doses approximately every 8 hours on each day of radiotherapy.</paragraph>
+                     </text>
+                     <effectiveTime value="20260601"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="Section_14.3">
+                     <id root="4ab63934-1e20-4c9b-a5f8-1a528431d964"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>14.3 Postoperative Nausea and/or Vomiting</title>
+                     <text>
+                        <paragraph>In 2 placebo-controlled, double-blind trials (one conducted in the U.S. and the other outside the U.S.) in 865 females undergoing inpatient surgical procedures, ondansetron 16 mg as a single dose or placebo was administered one hour before the induction of general balanced anesthesia (barbiturate, opioid, nitrous oxide, neuromuscular blockade, and supplemental isoflurane or enflurane), ondansetron tablets was significantly more effective than placebo in preventing postoperative nausea and vomiting.<br/>
+                           <br/> No trials have been performed in males.</paragraph>
+                     </text>
+                     <effectiveTime value="20260601"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="Section_17">
+               <id root="31ffbab9-9f8f-45b5-ac0c-5c06af348e29"/>
+               <code code="34069-5" codeSystem="2.16.840.1.113883.6.1" displayName="HOW SUPPLIED SECTION"/>
+               <title>16 HOW SUPPLIED/STORAGE AND HANDLING</title>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">Ondansetron Tablets USP, 4 mg </content>are white to off-white, oval shaped, film-coated tablets debossed with ‘F’ on one side and ‘91’ on the other side. </paragraph>
+                  <list listType="ordered">
+                     <item>
+                        <caption> </caption>Bottles of 10            NDC 82804-257-10  </item>
+                     <item>
+                        <caption> </caption>Bottles of 10            NDC 82804-257-30<br/>              <br/>
+                        <br/>
+                     </item>
+                  </list>
+                  <paragraph>
+                     <br/>
+                     <br/>
+                     <content styleCode="bold"> Store at </content>20° to 25°C (68° to 77°F); excursions permitted to 15° to 30°C (59° to 86°F) [see USP Controlled Room Temperature]. Protect from light.</paragraph>
+               </text>
+               <effectiveTime value="20260601"/>
+            </section>
+         </component>
+         <component>
+            <section ID="Section_16">
+               <id root="aedfb577-366a-45db-bfde-bdb5973c789d"/>
+               <code code="34076-0" codeSystem="2.16.840.1.113883.6.1" displayName="INFORMATION FOR PATIENTS SECTION"/>
+               <title>17 PATIENT COUNSELING INFORMATION</title>
+               <text>
+                  <paragraph>
+                     <content styleCode="underline">Hypersensitivity Reactions</content>
+                     <br/>
+                     <br/> Inform patients that ondansetron tablets may cause hypersensitivity reactions, some as severe as anaphylaxis and bronchospasm. Instruct patients to immediately report any signs and symptoms of hypersensitivity reactions, including fever, chills, rash, or breathing problems to their healthcare provider <content styleCode="italics">[see <linkHtml href="#Section_5.1">Warnings and Precautions (5.1)</linkHtml>]</content>.<br/>
+                     <br/>
+                     <content styleCode="underline"> QT Prolongation</content>
+                     <br/>
+                     <br/> Inform patients that ondansetron tablets may cause serious cardiac arrhythmias, such as QT prolongation. Instruct patients to tell their healthcare provider right away if they perceive a change in their heart rate, if they feel lightheaded, or if they have a syncopal episode <content styleCode="italics">[see <linkHtml href="#Section_5.2">Warnings and Precautions (5.2)</linkHtml>]</content>.<br/>
+                     <br/>
+                     <content styleCode="underline"> Drug Interactions</content>
+                  </paragraph>
+                  <paragraph>1. Instruct the patient to report the use of all medications, especially apomorphine, to their healthcare provider. Concomitant use of apomorphine and ondansetron may cause a significant drop in blood pressure and loss of consciousness.</paragraph>
+                  <paragraph>2. Advise patients of the possibility of serotonin syndrome with concomitant use of ondansetron and another serotonergic agent, such as medications to treat depression and migraines. Advise patients to seek immediate medical attention if the following symptoms occur: changes in mental status, autonomic instability, neuromuscular symptoms with or without gastrointestinal symptoms <content styleCode="italics">[see <linkHtml href="#Section_5.3">Warnings and Precautions (5.3)</linkHtml>].</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="underline">Myocardial Ischemia</content>
+                     <br/>
+                     <br/> Inform patients that ondansetron tablets may cause myocardial ischemia. Advise patients to seek immediate medical help if any symptoms suggestive of a myocardial ischemia occur, such as sudden chest pain or chest tightness <content styleCode="italics">[see <linkHtml href="#Section_5.5">Warnings and Precautions (5.4)</linkHtml>]</content>.<br/>
+                     <br/>
+                     <content styleCode="underline"> Masking of Progressive Ileus and Gastric Distension</content>
+                     <br/>
+                     <br/> Inform patients following abdominal surgery or those with chemotherapy-induced nausea and vomiting that ondansetron tablets may mask signs and symptoms of bowel obstruction. Instruct patients to immediately report any signs or symptoms consistent with a potential bowel obstruction to their healthcare provider <content styleCode="italics">[see <linkHtml href="#Section_5.4">Warnings and Precautions (5.5)</linkHtml>]</content>.<br/>
+                     <br/>
+                     <content styleCode="bold"> Distributed by:</content>
+                     <br/>Rising Pharma Holdings, Inc.<br/> East Brunswick, NJ 08816</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Repackaged and Relabeled by:</content>
+                     <br/>Proficient Rx LP<br/> Thousand Oaks, CA 91320</paragraph>
+                  <paragraph>
+                     <br/>
+                     <content styleCode="bold"> Made in India</content>
+                     <br/>
+                     <br/> Code: TS/DRUGS/19/1993<br/>
+                     <br/> Revised: 09/2025</paragraph>
+               </text>
+               <effectiveTime value="20260601"/>
+            </section>
+         </component>
+         <component>
+            <section ID="Section_18">
+               <id root="35223e87-06e7-4294-934c-a889fbaa3857"/>
+               <code code="51945-4" codeSystem="2.16.840.1.113883.6.1" displayName="PACKAGE LABEL.PRINCIPAL DISPLAY PANEL"/>
+               <title>PACKAGE LABEL-PRINCIPAL DISPLAY PANEL - 4 mg (10 Tablet Bottle)</title>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">NDC 82804-257-10</content>
+                     <br/>
+                     <content styleCode="bold">Ondansetron </content>
+                     <br/>
+                     <content styleCode="bold"> Tablets<content styleCode="italics">,</content>USP </content>
+                     <br/>
+                     <content styleCode="bold">4 mg</content>
+                     <br/>
+                     <content styleCode="bold">10 Tablets        Rx only</content>
+                  </paragraph>
+                  <renderMultiMedia ID="id1716084506" referencedObject="ID_5363dc75-280a-46eb-a5f9-30f18f77985a"/>
+               </text>
+               <effectiveTime value="20260601"/>
+               <component>
+                  <observationMedia ID="ID_5363dc75-280a-46eb-a5f9-30f18f77985a">
+                     <text>82804-257-10</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="image-01.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+      </structuredBody>
+   </component>
+</document>

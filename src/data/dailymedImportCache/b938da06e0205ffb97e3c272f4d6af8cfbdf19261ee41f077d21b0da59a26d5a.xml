@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="https://www.accessdata.fda.gov/spl/stylesheet/spl.xsl" type="text/xsl"?>
+<document xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 https://www.accessdata.fda.gov/spl/schema/spl.xsd">
+   <id root="36acfd2a-4d54-46f2-bd9d-4b30eaa2cabe"/>
+   <code code="34390-5" codeSystem="2.16.840.1.113883.6.1" displayName="HUMAN OTC DRUG LABEL"/>
+   <title>Rite Aid Corporation Acid Relief Drug Facts</title>
+   <effectiveTime value="20260603"/>
+   <setId root="8c6d5419-088b-4b3e-80b8-2a0d06926ff1"/>
+   <versionNumber value="3"/>
+   <author>
+      <time/>
+      <assignedEntity>
+         <representedOrganization>
+            <id extension="014578892" root="1.3.6.1.4.1.519.1"/>
+            <name>Rite Aid Corporation</name>
+         </representedOrganization>
+      </assignedEntity>
+   </author>
+   <component>
+      <structuredBody>
+         <component>
+            <section>
+               <id root="d2562589-aa59-40a2-8629-343cb5bbc0e8"/>
+               <code code="48780-1" codeSystem="2.16.840.1.113883.6.1" displayName="SPL product data elements section"/>
+               <effectiveTime value="20260603"/>
+               <subject>
+                  <manufacturedProduct>
+                     <manufacturedProduct>
+                        <code code="11822-6123" codeSystem="2.16.840.1.113883.6.69"/>
+                        <name>acid relief</name>
+                        <formCode code="C42931" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TABLET, FILM COATED"/>
+                        <asEntityWithGeneric>
+                           <genericMedicine>
+                              <name>famotidine</name>
+                           </genericMedicine>
+                        </asEntityWithGeneric>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator unit="mg" value="20"/>
+                              <denominator unit="1" value="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="5QZO15J2Z8" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>FAMOTIDINE</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="5QZO15J2Z8" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>FAMOTIDINE</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="R12CBM0EIZ" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>CARNAUBA WAX</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="ETJ7Z6XBU4" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>SILICON DIOXIDE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="M28OL1HH48" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>CROSCARMELLOSE SODIUM</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="EWQ57Q8I5X" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>LACTOSE MONOHYDRATE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="70097M6I30" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>MAGNESIUM STEARATE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="OP1R32D61U" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>MICROCRYSTALLINE CELLULOSE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="3WJQ0SDW1A" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>POLYETHYLENE GLYCOL, UNSPECIFIED</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="532B59J990" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>POLYVINYL ALCOHOL, UNSPECIFIED</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="7SEV7J4R1U" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>TALC</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="15FIX9V2JP" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>TITANIUM DIOXIDE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <asContent>
+                           <quantity>
+                              <numerator unit="1" value="50"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code/>
+                              <formCode code="C43169" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOTTLE"/>
+                              <asContent>
+                                 <quantity>
+                                    <numerator unit="1" value="1"/>
+                                    <denominator value="1"/>
+                                 </quantity>
+                                 <containerPackagedProduct>
+                                    <code code="11822-6123-0" codeSystem="2.16.840.1.113883.6.69"/>
+                                    <formCode code="C43182" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="CARTON"/>
+                                 </containerPackagedProduct>
+                                 <subjectOf>
+                                    <marketingAct>
+                                       <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                                       <statusCode code="completed"/>
+                                       <effectiveTime>
+                                          <low value="20230719"/>
+                                          <high value="20261130"/>
+                                       </effectiveTime>
+                                    </marketingAct>
+                                 </subjectOf>
+                              </asContent>
+                           </containerPackagedProduct>
+                           <subjectOf>
+                              <characteristic classCode="OBS">
+                                 <code code="SPLCMBPRDTP" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                                 <value code="C112160" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="Type 0: Not a Combination Product" xsi:type="CE"/>
+                              </characteristic>
+                           </subjectOf>
+                        </asContent>
+                     </manufacturedProduct>
+                     <subjectOf>
+                        <approval>
+                           <id extension="ANDA077351" root="2.16.840.1.113883.3.150"/>
+                           <code code="C73584" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ANDA"/>
+                           <author>
+                              <territorialAuthority>
+                                 <territory>
+                                    <code code="USA" codeSystem="2.16.840.1.113883.5.28"/>
+                                 </territory>
+                              </territorialAuthority>
+                           </author>
+                        </approval>
+                     </subjectOf>
+                     <subjectOf>
+                        <marketingAct>
+                           <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <statusCode code="completed"/>
+                           <effectiveTime>
+                              <low value="20230719"/>
+                              <high value="20261130"/>
+                           </effectiveTime>
+                        </marketingAct>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLCOLOR" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value code="C48325" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="WHITE" xsi:type="CE"/>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLSIZE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value unit="mm" value="8" xsi:type="PQ"/>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLSHAPE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value code="C48348" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ROUND" xsi:type="CE"/>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLSCORE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value value="1" xsi:type="INT"/>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLIMPRINT" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value xsi:type="ST">L194</value>
+                        </characteristic>
+                     </subjectOf>
+                     <consumedIn>
+                        <substanceAdministration>
+                           <routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ORAL"/>
+                        </substanceAdministration>
+                     </consumedIn>
+                  </manufacturedProduct>
+               </subject>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_782054f8-a56d-41eb-98fa-c714cd3dde61">
+               <id root="782054f8-a56d-41eb-98fa-c714cd3dde61"/>
+               <code code="55106-9" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - ACTIVE INGREDIENT SECTION"/>
+               <title>Active ingredient (in each tablet) </title>
+               <text>
+                  <paragraph>Famotidine 20 mg</paragraph>
+               </text>
+               <effectiveTime value="20221214"/>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_e63c1c39-b3da-4089-9337-4687ccc533ef">
+               <id root="e63c1c39-b3da-4089-9337-4687ccc533ef"/>
+               <code code="55105-1" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - PURPOSE SECTION"/>
+               <title>Purpose </title>
+               <text>
+                  <paragraph>Acid reducer</paragraph>
+               </text>
+               <effectiveTime value="20221214"/>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_c206245f-5fdf-4b0d-8e88-ab29fdd9f70c">
+               <id root="c206245f-5fdf-4b0d-8e88-ab29fdd9f70c"/>
+               <code code="34067-9" codeSystem="2.16.840.1.113883.6.1" displayName="INDICATIONS &amp; USAGE SECTION"/>
+               <title>Uses </title>
+               <text>
+                  <list listType="unordered">
+                     <item>
+                        <caption>•</caption>relieves heartburn associated with acid indigestion and sour stomach</item>
+                     <item>
+                        <caption>•</caption>prevents heartburn associated with acid indigestion and sour stomach brought on by eating or drinking certain food and beverages</item>
+                  </list>
+               </text>
+               <effectiveTime value="20221214"/>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_fcf6b01f-5921-458e-9cfc-ac2d29e2e338">
+               <id root="fcf6b01f-5921-458e-9cfc-ac2d29e2e338"/>
+               <code code="34071-1" codeSystem="2.16.840.1.113883.6.1" displayName="WARNINGS SECTION"/>
+               <title>Warnings </title>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">Allergy alert: </content>Do not use if you are allergic to famotidine or other acid reducers</paragraph>
+               </text>
+               <effectiveTime value="20221214"/>
+               <component>
+                  <section ID="ID_4120ce54-2be4-4312-a3c2-06bc11d04da9">
+                     <id root="4120ce54-2be4-4312-a3c2-06bc11d04da9"/>
+                     <code code="50570-1" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - DO NOT USE SECTION"/>
+                     <title>Do not use </title>
+                     <text>
+                        <list listType="unordered">
+                           <item>
+                              <caption>•</caption>if you have trouble or pain swallowing food, vomiting with blood, or bloody or black stools. These may be signs of a serious condition. See your doctor.</item>
+                           <item>
+                              <caption>•</caption>with other acid reducers</item>
+                        </list>
+                     </text>
+                     <effectiveTime value="20221214"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="ID_76fcf6f7-1e21-4bf0-82cc-1c0b596544e8">
+                     <id root="76fcf6f7-1e21-4bf0-82cc-1c0b596544e8"/>
+                     <code code="50569-3" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - ASK DOCTOR SECTION"/>
+                     <title>Ask a doctor before use if you have </title>
+                     <text>
+                        <list listType="unordered">
+                           <item>
+                              <caption>•</caption>had heartburn over 3 months. This may be a sign of a more serious condition.</item>
+                           <item>
+                              <caption>•</caption>heartburn with <content styleCode="bold">lightheadedness, sweating, or dizziness</content>
+                           </item>
+                           <item>
+                              <caption>•</caption>chest pain or shoulder pain with shortness of breath; sweating; pain spreading to arms, neck or shoulders; or lightheadedness</item>
+                           <item>
+                              <caption>•</caption>frequent <content styleCode="bold">chest pain</content>
+                           </item>
+                           <item>
+                              <caption>•</caption>frequent wheezing, particularly with heartburn</item>
+                           <item>
+                              <caption>•</caption>unexplained weight loss</item>
+                           <item>
+                              <caption>•</caption>nausea or vomiting</item>
+                           <item>
+                              <caption>•</caption>stomach pain</item>
+                           <item>
+                              <caption>•</caption>kidney disease</item>
+                        </list>
+                     </text>
+                     <effectiveTime value="20221214"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="ID_ff26e0eb-731b-45e6-906b-91a9179052e7">
+                     <id root="ff26e0eb-731b-45e6-906b-91a9179052e7"/>
+                     <code code="50568-5" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - ASK DOCTOR/PHARMACIST SECTION"/>
+                     <title>Ask a doctor or pharmacist before use if you are </title>
+                     <text>
+                        <paragraph>taking a prescription drug. Acid reducers may interact with certain prescription drugs.</paragraph>
+                     </text>
+                     <effectiveTime value="20221214"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="ID_862e74f2-668d-4ed8-9ba6-1c9c09077cc5">
+                     <id root="862e74f2-668d-4ed8-9ba6-1c9c09077cc5"/>
+                     <code code="50566-9" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - STOP USE SECTION"/>
+                     <title>Stop use and ask a doctor if </title>
+                     <text>
+                        <list listType="unordered">
+                           <item>
+                              <caption>•</caption>your heartburn continues or worsens</item>
+                           <item>
+                              <caption>•</caption>you need to take this product for more than 14 days</item>
+                        </list>
+                     </text>
+                     <effectiveTime value="20221214"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="ID_c7685543-d5e4-43df-8608-3a09fe22295b">
+                     <id root="c7685543-d5e4-43df-8608-3a09fe22295b"/>
+                     <code code="53414-9" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - PREGNANCY OR BREAST FEEDING SECTION"/>
+                     <title>If pregnant or breast-feeding, </title>
+                     <text>
+                        <paragraph>ask a health professional before use.</paragraph>
+                     </text>
+                     <effectiveTime value="20221214"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="ID_7f099ac1-5197-49ed-9f6d-678ffbc5c054">
+                     <id root="7f099ac1-5197-49ed-9f6d-678ffbc5c054"/>
+                     <code code="50565-1" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - KEEP OUT OF REACH OF CHILDREN SECTION"/>
+                     <title>Keep out of reach of children. </title>
+                     <text>
+                        <paragraph>In case of overdose, get medical help or contact a Poison Control Center right away. (1-800-222-1222)</paragraph>
+                     </text>
+                     <effectiveTime value="20221214"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_6a0085ac-b11f-4c8a-b6c9-5c9551cface1">
+               <id root="6a0085ac-b11f-4c8a-b6c9-5c9551cface1"/>
+               <code code="34068-7" codeSystem="2.16.840.1.113883.6.1" displayName="DOSAGE &amp; ADMINISTRATION SECTION"/>
+               <title>Directions </title>
+               <text>
+                  <list listType="unordered">
+                     <item>
+                        <caption>•</caption>adults and children 12 years and over:</item>
+                     <item>
+                        <caption>•</caption>to <content styleCode="bold">relieve </content>symptoms, swallow 1 tablet with a glass of water. Do not chew.</item>
+                     <item>
+                        <caption>•</caption>to <content styleCode="bold">prevent </content>symptoms, swallow 1 tablet with a glass of water at any time from <content styleCode="bold">10 to 60 minutes before </content>eating food or drinking beverages that cause heartburn</item>
+                     <item>
+                        <caption>•</caption>do not use more than 2 tablets in 24 hours</item>
+                     <item>
+                        <caption>•</caption>children under 12 years: ask a doctor</item>
+                  </list>
+               </text>
+               <effectiveTime value="20221214"/>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_b32844f3-99f0-45e4-8f46-0d2732ecfdb6">
+               <id root="aae588b0-1c0f-4404-b852-c4e5c176b147"/>
+               <code code="60561-8" codeSystem="2.16.840.1.113883.6.1" displayName="OTHER SAFETY INFORMATION"/>
+               <title>Other information </title>
+               <text>
+                  <list listType="unordered">
+                     <item>
+                        <caption>•</caption>read the directions and warnings before use</item>
+                     <item>
+                        <caption>•</caption>keep the carton. It contains important information.</item>
+                     <item>
+                        <caption>•</caption>store at 20°-25°C (68°-77°F)</item>
+                     <item>
+                        <caption>•</caption>protect from moisture</item>
+                  </list>
+               </text>
+               <effectiveTime value="20260603"/>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_38a6643b-de49-4465-b9b1-d5feb8d779d2">
+               <id root="38a6643b-de49-4465-b9b1-d5feb8d779d2"/>
+               <code code="51727-6" codeSystem="2.16.840.1.113883.6.1" displayName="INACTIVE INGREDIENT SECTION"/>
+               <title>Inactive ingredients </title>
+               <text>
+                  <paragraph>carnauba wax, colloidal silicon dioxide, croscarmellose sodium, lactose monohydrate, magnesium stearate, microcrystalline cellulose, polyethylene glycol, polyvinyl alcohol, talc, titanium dioxide</paragraph>
+               </text>
+               <effectiveTime value="20221214"/>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_4def4e40-a2ff-4862-adff-098b5c69055d">
+               <id root="debbf100-b923-4cd0-b0a4-0e266504cf32"/>
+               <code code="53413-1" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - QUESTIONS SECTION"/>
+               <title>Questions or comments? </title>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">1-800-719-9260</content>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20260603"/>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_17a21e5f-e737-4b91-b8a1-7a5714abb153">
+               <id root="58fd0427-6737-44d2-b1a0-35da388f918c"/>
+               <code code="51945-4" codeSystem="2.16.840.1.113883.6.1" displayName="PACKAGE LABEL.PRINCIPAL DISPLAY PANEL"/>
+               <title>Package/Label Principal Display Panel </title>
+               <text>
+                  <paragraph>FREE FROM | GLUTEN FREE</paragraph>
+                  <paragraph>SOY FREE</paragraph>
+                  <paragraph>Compare to the active ingredient of Maximum Strength Zantac 360°<sup>™</sup>
+                  </paragraph>
+                  <paragraph>MAXIMUM STRENGTH</paragraph>
+                  <paragraph>ACID RELIEF</paragraph>
+                  <paragraph>Famotidine Tablets, 20 mg</paragraph>
+                  <paragraph>Acid Reducer</paragraph>
+                  <paragraph>Just one tablet prevents &amp; relieves heartburn due to acid indigestion</paragraph>
+                  <paragraph>ACTUAL SIZE</paragraph>
+                  <paragraph>50 TABLETS</paragraph>
+                  <renderMultiMedia ID="id-1499809552" referencedObject="ADE356C5-DDFA-42B9-9531-56892581831A"/>
+                  <renderMultiMedia ID="id-2020689842" referencedObject="B5A00D23-44C1-4699-A12C-811CA19AC964"/>
+               </text>
+               <effectiveTime value="20260603"/>
+               <component>
+                  <observationMedia ID="ADE356C5-DDFA-42B9-9531-56892581831A">
+                     <text>acid relief-image 1</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="image-01.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+               <component>
+                  <observationMedia ID="B5A00D23-44C1-4699-A12C-811CA19AC964">
+                     <text>acid relief-image 2</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="image-02.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+      </structuredBody>
+   </component>
+</document>

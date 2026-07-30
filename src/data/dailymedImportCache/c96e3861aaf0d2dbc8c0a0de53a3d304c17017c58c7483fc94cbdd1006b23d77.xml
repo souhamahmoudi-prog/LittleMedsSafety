@@ -1,0 +1,1601 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="https://www.accessdata.fda.gov/spl/stylesheet/spl.xsl" type="text/xsl"?>
+<document xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 https://www.accessdata.fda.gov/spl/schema/spl.xsd">
+   <id root="1815f54a-5637-45bc-a582-3e62350935ba"/>
+   <code code="34391-3" codeSystem="2.16.840.1.113883.6.1" displayName="HUMAN PRESCRIPTION DRUG LABEL"/>
+   <title>
+      <content styleCode="bold">Dexamethasone Sodium Phosphate Injection, USP</content>
+   </title>
+   <effectiveTime value="20260608"/>
+   <setId root="2b626a48-c7aa-4443-9164-a08ff069ccd1"/>
+   <versionNumber value="7"/>
+   <author>
+      <time/>
+      <assignedEntity>
+         <representedOrganization>
+            <id extension="608775388" root="1.3.6.1.4.1.519.1"/>
+            <name>Fresenius Kabi USA, LLC</name>
+            <assignedEntity>
+               <assignedOrganization>
+                  <assignedEntity>
+                     <assignedOrganization>
+                        <id extension="023648251" root="1.3.6.1.4.1.519.1"/>
+                        <name>Fresenius Kabi USA, LLC</name>
+                     </assignedOrganization>
+                     <performance>
+                        <actDefinition>
+                           <code code="C43360" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="MANUFACTURE"/>
+                           <product>
+                              <manufacturedProduct classCode="MANU">
+                                 <manufacturedMaterialKind>
+                                    <code code="63323-165" codeSystem="2.16.840.1.113883.6.69"/>
+                                 </manufacturedMaterialKind>
+                              </manufacturedProduct>
+                           </product>
+                        </actDefinition>
+                     </performance>
+                     <performance>
+                        <actDefinition>
+                           <code code="C25391" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ANALYSIS"/>
+                           <product>
+                              <manufacturedProduct classCode="MANU">
+                                 <manufacturedMaterialKind>
+                                    <code code="63323-165" codeSystem="2.16.840.1.113883.6.69"/>
+                                 </manufacturedMaterialKind>
+                              </manufacturedProduct>
+                           </product>
+                        </actDefinition>
+                     </performance>
+                  </assignedEntity>
+               </assignedOrganization>
+            </assignedEntity>
+         </representedOrganization>
+      </assignedEntity>
+   </author>
+   <component>
+      <structuredBody>
+         <component>
+            <section>
+               <id root="961ba490-3033-4e72-a8e5-f114da748767"/>
+               <code code="48780-1" codeSystem="2.16.840.1.113883.6.1" displayName="SPL product data elements section"/>
+               <effectiveTime value="20240815"/>
+               <subject>
+                  <manufacturedProduct>
+                     <manufacturedProduct>
+                        <code code="63323-165" codeSystem="2.16.840.1.113883.6.69"/>
+                        <name>Dexamethasone Sodium Phosphate</name>
+                        <formCode code="C42945" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="INJECTION, SOLUTION"/>
+                        <asEntityWithGeneric>
+                           <genericMedicine>
+                              <name>DEXAMETHASONE SODIUM PHOSPHATE</name>
+                           </genericMedicine>
+                        </asEntityWithGeneric>
+                        <ingredient classCode="ACTIR">
+                           <quantity>
+                              <numerator unit="mg" value="4"/>
+                              <denominator unit="mL" value="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="AI9376Y64P" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>DEXAMETHASONE SODIUM PHOSPHATE</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="7S5I7G3JQL" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>DEXAMETHASONE</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                              <asEquivalentSubstance>
+                                 <definingSubstance>
+                                    <code code="2BP70L44PR" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>DEXAMETHASONE PHOSPHATE</name>
+                                 </definingSubstance>
+                              </asEquivalentSubstance>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <quantity>
+                              <numerator unit="mg" value="11"/>
+                              <denominator unit="mL" value="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="1Q73Q2JULR" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>SODIUM CITRATE, UNSPECIFIED FORM</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <quantity>
+                              <numerator unit="mg" value="1"/>
+                              <denominator unit="mL" value="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="VTK01UQK3G" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>SODIUM SULFITE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <quantity>
+                              <numerator unit="mg" value="10"/>
+                              <denominator unit="mL" value="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="LKG8494WBH" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>BENZYL ALCOHOL</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="55X04QC32I" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>SODIUM HYDROXIDE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="2968PHW8QP" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>CITRIC ACID MONOHYDRATE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="059QF0KO0R" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>WATER</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <asContent>
+                           <quantity>
+                              <numerator unit="mL" value="1"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code code="63323-165-11" codeSystem="2.16.840.1.113883.6.69"/>
+                              <formCode code="C43226" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="VIAL"/>
+                              <asContent>
+                                 <quantity>
+                                    <numerator unit="1" value="25"/>
+                                    <denominator value="1"/>
+                                 </quantity>
+                                 <containerPackagedProduct>
+                                    <code code="63323-165-51" codeSystem="2.16.840.1.113883.6.69"/>
+                                    <formCode code="C53438" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TRAY"/>
+                                 </containerPackagedProduct>
+                                 <subjectOf>
+                                    <marketingAct>
+                                       <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                                       <statusCode code="active"/>
+                                       <effectiveTime>
+                                          <low value="20250217"/>
+                                       </effectiveTime>
+                                    </marketingAct>
+                                 </subjectOf>
+                              </asContent>
+                           </containerPackagedProduct>
+                           <subjectOf>
+                              <characteristic classCode="OBS">
+                                 <code code="SPLCMBPRDTP" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                                 <value code="C112160" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="Type 0: Not a Combination Product" xsi:type="CE"/>
+                              </characteristic>
+                           </subjectOf>
+                        </asContent>
+                        <asContent>
+                           <quantity>
+                              <numerator unit="mL" value="5"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code code="63323-165-13" codeSystem="2.16.840.1.113883.6.69"/>
+                              <formCode code="C43210" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="VIAL, MULTI-DOSE"/>
+                              <asContent>
+                                 <quantity>
+                                    <numerator unit="1" value="25"/>
+                                    <denominator value="1"/>
+                                 </quantity>
+                                 <containerPackagedProduct>
+                                    <code code="63323-165-53" codeSystem="2.16.840.1.113883.6.69"/>
+                                    <formCode code="C53438" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TRAY"/>
+                                 </containerPackagedProduct>
+                                 <subjectOf>
+                                    <marketingAct>
+                                       <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                                       <statusCode code="active"/>
+                                       <effectiveTime>
+                                          <low value="20250217"/>
+                                       </effectiveTime>
+                                    </marketingAct>
+                                 </subjectOf>
+                              </asContent>
+                           </containerPackagedProduct>
+                           <subjectOf>
+                              <characteristic classCode="OBS">
+                                 <code code="SPLCMBPRDTP" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                                 <value code="C112160" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="Type 0: Not a Combination Product" xsi:type="CE"/>
+                              </characteristic>
+                           </subjectOf>
+                        </asContent>
+                        <asContent>
+                           <quantity>
+                              <numerator unit="mL" value="1"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code code="63323-165-02" codeSystem="2.16.840.1.113883.6.69"/>
+                              <formCode code="C43226" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="VIAL"/>
+                              <asContent>
+                                 <quantity>
+                                    <numerator unit="1" value="25"/>
+                                    <denominator value="1"/>
+                                 </quantity>
+                                 <containerPackagedProduct>
+                                    <code code="63323-165-01" codeSystem="2.16.840.1.113883.6.69"/>
+                                    <formCode code="C53438" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TRAY"/>
+                                 </containerPackagedProduct>
+                                 <subjectOf>
+                                    <marketingAct>
+                                       <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                                       <statusCode code="active"/>
+                                       <effectiveTime>
+                                          <low value="20000907"/>
+                                       </effectiveTime>
+                                    </marketingAct>
+                                 </subjectOf>
+                              </asContent>
+                           </containerPackagedProduct>
+                           <subjectOf>
+                              <characteristic classCode="OBS">
+                                 <code code="SPLCMBPRDTP" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                                 <value code="C112160" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="Type 0: Not a Combination Product" xsi:type="CE"/>
+                              </characteristic>
+                           </subjectOf>
+                        </asContent>
+                        <asContent>
+                           <quantity>
+                              <numerator unit="mL" value="5"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code code="63323-165-03" codeSystem="2.16.840.1.113883.6.69"/>
+                              <formCode code="C43210" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="VIAL, MULTI-DOSE"/>
+                              <asContent>
+                                 <quantity>
+                                    <numerator unit="1" value="25"/>
+                                    <denominator value="1"/>
+                                 </quantity>
+                                 <containerPackagedProduct>
+                                    <code code="63323-165-05" codeSystem="2.16.840.1.113883.6.69"/>
+                                    <formCode code="C53438" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TRAY"/>
+                                 </containerPackagedProduct>
+                                 <subjectOf>
+                                    <marketingAct>
+                                       <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                                       <statusCode code="active"/>
+                                       <effectiveTime>
+                                          <low value="20000907"/>
+                                       </effectiveTime>
+                                    </marketingAct>
+                                 </subjectOf>
+                              </asContent>
+                           </containerPackagedProduct>
+                           <subjectOf>
+                              <characteristic classCode="OBS">
+                                 <code code="SPLCMBPRDTP" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                                 <value code="C112160" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="Type 0: Not a Combination Product" xsi:type="CE"/>
+                              </characteristic>
+                           </subjectOf>
+                        </asContent>
+                        <asContent>
+                           <quantity>
+                              <numerator unit="mL" value="30"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code/>
+                              <formCode code="C43210" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="VIAL, MULTI-DOSE"/>
+                              <asContent>
+                                 <quantity>
+                                    <numerator unit="1" value="1"/>
+                                    <denominator value="1"/>
+                                 </quantity>
+                                 <containerPackagedProduct>
+                                    <code code="63323-165-30" codeSystem="2.16.840.1.113883.6.69"/>
+                                    <formCode code="C43178" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOX"/>
+                                 </containerPackagedProduct>
+                                 <subjectOf>
+                                    <marketingAct>
+                                       <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                                       <statusCode code="active"/>
+                                       <effectiveTime>
+                                          <low value="20000907"/>
+                                       </effectiveTime>
+                                    </marketingAct>
+                                 </subjectOf>
+                              </asContent>
+                           </containerPackagedProduct>
+                           <subjectOf>
+                              <characteristic classCode="OBS">
+                                 <code code="SPLCMBPRDTP" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                                 <value code="C112160" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="Type 0: Not a Combination Product" xsi:type="CE"/>
+                              </characteristic>
+                           </subjectOf>
+                        </asContent>
+                     </manufacturedProduct>
+                     <subjectOf>
+                        <approval>
+                           <id extension="ANDA084916" root="2.16.840.1.113883.3.150"/>
+                           <code code="C73584" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ANDA"/>
+                           <author>
+                              <territorialAuthority>
+                                 <territory>
+                                    <code code="USA" codeSystem="2.16.840.1.113883.5.28"/>
+                                 </territory>
+                              </territorialAuthority>
+                           </author>
+                        </approval>
+                     </subjectOf>
+                     <subjectOf>
+                        <marketingAct>
+                           <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <statusCode code="active"/>
+                           <effectiveTime>
+                              <low value="20000907"/>
+                           </effectiveTime>
+                        </marketingAct>
+                     </subjectOf>
+                     <consumedIn>
+                        <substanceAdministration>
+                           <routeCode code="C28161" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="INTRAMUSCULAR"/>
+                        </substanceAdministration>
+                     </consumedIn>
+                     <consumedIn>
+                        <substanceAdministration>
+                           <routeCode code="C38276" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="INTRAVENOUS"/>
+                        </substanceAdministration>
+                     </consumedIn>
+                  </manufacturedProduct>
+               </subject>
+            </section>
+         </component>
+         <component>
+            <section ID="Unclassified_Section_7">
+               <id root="4fe14365-ec73-4587-a261-2660d976b0f8"/>
+               <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+               <text>
+                  <paragraph>Rx only</paragraph>
+               </text>
+               <effectiveTime value="20240815"/>
+            </section>
+         </component>
+         <component>
+            <section ID="ab883b25-ebc8-4aea-959e-63f4ff95b415">
+               <id root="d37db8aa-9ed6-4004-a917-50385efa063e"/>
+               <code code="34089-3" codeSystem="2.16.840.1.113883.6.1" displayName="DESCRIPTION SECTION"/>
+               <title>DESCRIPTION:</title>
+               <text>
+                  <paragraph>Dexamethasone sodium phosphate is a water-soluble inorganic ester of dexamethasone. It occurs as a white or slightly yellow crystalline powder, is odorless or has a slight odor of alcohol, is exceedingly hygroscopic and is freely soluble in water. </paragraph>
+                  <paragraph>Dexamethasone sodium phosphate is an adrenocortical steroid anti-inflammatory drug. </paragraph>
+                  <paragraph>Chemically, dexamethasone sodium phosphate is 9-Fluoro-11ß,17,21-trihydroxy-16α-methylpregna-1, 4-diene-3,20-dione 21-(dihydrogen phosphate) disodium salt and has the following structural formula:</paragraph>
+                  <renderMultiMedia ID="id291" referencedObject="MM1"/>
+                  <paragraph>Dexamethasone Sodium Phosphate Injection, USP is a sterile solution of dexamethasone sodium phosphate in water for injection for intravenous (IV), intramuscular (IM), intra-articular, soft-tissue or intralesional use.</paragraph>
+                  <paragraph>Each mL contains dexamethasone sodium phosphate equivalent to dexamethasone phosphate 4 mg or dexamethasone 3.33 mg; benzyl alcohol 10 mg added as preservative; sodium citrate dihydrate 11 mg; sodium sulfite 1 mg as an antioxidant; Water for Injection q.s. Citric acid and/or sodium hydroxide may have been added for pH adjustment (7.0 to 8.5). Air in the container is displaced by nitrogen.</paragraph>
+               </text>
+               <effectiveTime value="20260608"/>
+               <component>
+                  <observationMedia ID="MM1">
+                     <text>dexam-struc-01.jpg</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="dexam-struc-01.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="ed67778f-3d59-444b-833a-371ca8a60153">
+               <id root="cacbde41-a110-45a3-be5a-aacd57f1c0c0"/>
+               <code code="34090-1" codeSystem="2.16.840.1.113883.6.1" displayName="CLINICAL PHARMACOLOGY SECTION"/>
+               <title>CLINICAL PHARMACOLOGY:</title>
+               <text>
+                  <paragraph>Dexamethasone sodium phosphate has a rapid onset but short duration of action when compared with less soluble preparations. Because of this, it is suitable for the treatment of acute disorders responsive to adrenocortical steroid therapy.</paragraph>
+                  <paragraph>Naturally occurring glucocorticoids (hydrocortisone and cortisone), which also have salt-retaining properties, are used as replacement therapy in adrenocortical deficiency states. Their synthetic analogs, including dexamethasone, are primarily used for their potent anti-inflammatory effects in disorders of many organ systems.</paragraph>
+                  <paragraph>Glucocorticoids cause profound and varied metabolic effects. In addition, they modify the body’s immune responses to diverse stimuli.</paragraph>
+                  <paragraph>At equipotent anti-inflammatory doses, dexamethasone almost completely lacks the sodium-retaining property of hydrocortisone and closely related derivatives of hydrocortisone.</paragraph>
+               </text>
+               <effectiveTime value="20240815"/>
+            </section>
+         </component>
+         <component>
+            <section ID="b25d4147-44e5-4315-ae97-74b21326f431">
+               <id root="91b562cd-d54a-462b-ae6b-d211f70ab141"/>
+               <code code="34067-9" codeSystem="2.16.840.1.113883.6.1" displayName="INDICATIONS &amp; USAGE SECTION"/>
+               <title>INDICATIONS AND USAGE:</title>
+               <text>
+                  <paragraph>
+                     <content styleCode="italics">Intravenous or Intramuscular Injection</content>
+                  </paragraph>
+                  <paragraph>When oral therapy is not feasible and the strength, dosage form, and route of administration of the drug reasonably lend the preparation to the treatment of the condition, those products labeled for intravenous or intramuscular use are indicated as follows:</paragraph>
+                  <paragraph>• Endocrine Disorders</paragraph>
+                  <paragraph>   Primary or secondary adrenocortical insufficiency (hydrocortisone or cortisone is the drug of choice; synthetic analogs may be used in conjunction with mineralocorticoids where applicable; in infancy, mineralocorticoid    supplementation is of particular importance)</paragraph>
+                  <paragraph>   Acute adrenocortical insufficiency (hydrocortisone or cortisone is the drug of choice; mineralocorticoid supplementation may be necessary, particularly when synthetic analogs are used)</paragraph>
+                  <paragraph>   Preoperatively, and in the event of serious trauma or illness, in patients with known adrenal insufficiency or when adrenocortical reserve is doubtful</paragraph>
+                  <paragraph>   Shock unresponsive to conventional therapy if adrenocortical insufficiency exists or is suspected</paragraph>
+                  <paragraph>   Congenital adrenal hyperplasia</paragraph>
+                  <paragraph>   Nonsuppurative thyroiditis</paragraph>
+                  <paragraph>   Hypercalcemia associated with cancer</paragraph>
+                  <paragraph>• Rheumatic Disorders</paragraph>
+                  <paragraph>   As adjunctive therapy for short-term administration (to tide the patient over an acute episode or exacerbation) in:</paragraph>
+                  <paragraph>   Post-traumatic osteoarthritis</paragraph>
+                  <paragraph>   Synovitis of osteoarthritis</paragraph>
+                  <paragraph>   Rheumatoid arthritis, including juvenile rheumatoid arthritis (selected cases may require low-dose maintenance therapy)</paragraph>
+                  <paragraph>   Acute and subacute bursitis </paragraph>
+                  <paragraph>   Epicondylitis</paragraph>
+                  <paragraph>   Acute nonspecific tenosynovitis</paragraph>
+                  <paragraph>   Acute gouty arthritis</paragraph>
+                  <paragraph>   Psoriatic arthritis</paragraph>
+                  <paragraph>   Ankylosing spondylitis</paragraph>
+                  <paragraph>• Collagen Diseases</paragraph>
+                  <paragraph>   During an exacerbation or as maintenance therapy in selected cases of:</paragraph>
+                  <paragraph>   Systemic lupus erythematosus</paragraph>
+                  <paragraph>   Acute rheumatic carditis</paragraph>
+                  <paragraph>• Dermatologic Diseases</paragraph>
+                  <paragraph>   Pemphigus</paragraph>
+                  <paragraph>   Severe erythema multiforme (Stevens-Johnson syndrome)</paragraph>
+                  <paragraph>   Exfoliative dermatitis</paragraph>
+                  <paragraph>   Bullous dermatitis herpetiformis</paragraph>
+                  <paragraph>   Severe seborrheic dermatitis</paragraph>
+                  <paragraph>   Severe psoriasis</paragraph>
+                  <paragraph>   Mycosis fungoides</paragraph>
+                  <paragraph>• Allergic States</paragraph>
+                  <paragraph>   Control of severe or incapacitating allergic conditions intractable to adequate trials of conventional treatment in:</paragraph>
+                  <paragraph>   Bronchial asthma</paragraph>
+                  <paragraph>   Contact dermatitis</paragraph>
+                  <paragraph>   Atopic dermatitis</paragraph>
+                  <paragraph>   Serum sickness</paragraph>
+                  <paragraph>   Seasonal or perennial allergic rhinitis</paragraph>
+                  <paragraph>   Drug hypersensitivity reactions</paragraph>
+                  <paragraph>   Urticarial transfusion reactions</paragraph>
+                  <paragraph>   Acute noninfectious laryngeal edema (epinephrine is the drug of first choice)</paragraph>
+                  <paragraph>• Ophthalmic Diseases</paragraph>
+                  <paragraph>   Severe acute and chronic allergic and inflammatory processes involving the eye, such as:</paragraph>
+                  <paragraph>   Herpes zoster ophthalmicus</paragraph>
+                  <paragraph>   Iritis, iridocyclitis</paragraph>
+                  <paragraph>   Chorioretinitis</paragraph>
+                  <paragraph>   Diffuse posterior uveitis and choroiditis</paragraph>
+                  <paragraph>   Optic neuritis</paragraph>
+                  <paragraph>   Sympathetic ophthalmia</paragraph>
+                  <paragraph>   Anterior segment inflammation</paragraph>
+                  <paragraph>   Allergic conjunctivitis</paragraph>
+                  <paragraph>   Keratitis</paragraph>
+                  <paragraph>   Allergic corneal marginal ulcers</paragraph>
+                  <paragraph>• Gastrointestinal Diseases</paragraph>
+                  <paragraph>   To tide the patient over a critical period of the disease in:</paragraph>
+                  <paragraph>   Ulcerative colitis (Systemic therapy)</paragraph>
+                  <paragraph>   Regional enteritis (Systemic therapy)</paragraph>
+                  <paragraph>• Respiratory Diseases</paragraph>
+                  <paragraph>   Symptomatic sarcoidosis</paragraph>
+                  <paragraph>   Berylliosis</paragraph>
+                  <paragraph>   Fulminating or disseminated pulmonary tuberculosis when used concurrently with appropriate antituberculous chemotherapy Loeffler’s syndrome not manageable by other means</paragraph>
+                  <paragraph>   Aspiration pneumonitis</paragraph>
+                  <paragraph>• Hematologic Disorders</paragraph>
+                  <paragraph>   Acquired (autoimmune) hemolytic anemia <br/>   Idiopathic thrombocytopenic purpura in adults (IV only; IM administration is contraindicated)</paragraph>
+                  <paragraph>   Secondary thrombocytopenia in adults</paragraph>
+                  <paragraph>   Erythroblastopenia (RBC anemia)</paragraph>
+                  <paragraph>   Congenital (erythroid) hypoplastic anemia</paragraph>
+                  <paragraph>• Neoplastic Diseases</paragraph>
+                  <paragraph>   For palliative management of:</paragraph>
+                  <paragraph>   Leukemias and lymphomas in adults</paragraph>
+                  <paragraph>   Acute leukemia of childhood</paragraph>
+                  <paragraph>• Edematous States</paragraph>
+                  <paragraph>   To induce diuresis or remission of proteinuria in the nephrotic syndrome, without uremia, of the idiopathic type, or that due to lupus erythematosus</paragraph>
+                  <paragraph>• Miscellaneous</paragraph>
+                  <paragraph>   Tuberculous meningitis with subarachnoid block or impending block when used concurrently with appropriate antituberculous chemotherapy</paragraph>
+                  <paragraph>   Trichinosis with neurologic or myocardial involvement</paragraph>
+                  <paragraph>• Diagnostic testing of adrenocortical hyperfunction</paragraph>
+                  <paragraph>• Cerebral Edema associated with primary or metastatic brain tumor, craniotomy, or head injury.</paragraph>
+                  <paragraph>   Use in cerebral edema is not a substitute for careful neurosurgical evaluation and definitive management such as neurosurgery or other specific therapy.</paragraph>
+               </text>
+               <effectiveTime value="20260608"/>
+               <component>
+                  <section ID="b32b99e5-a8eb-4dcb-a1f5-e8e064444d99">
+                     <id root="010ffd80-e292-486b-a226-da9b36fe2b95"/>
+                     <code code="34067-9" codeSystem="2.16.840.1.113883.6.1" displayName="INDICATIONS &amp; USAGE SECTION"/>
+                     <title>
+                        <content styleCode="italics">By Intra-articular or Soft Tissue Injection</content>
+                     </title>
+                     <text>
+                        <paragraph>   As adjunctive therapy for short-term administration (to tide the patient over an acute episode or exacerbation) in:</paragraph>
+                        <paragraph>   Synovitis of osteoarthritis</paragraph>
+                        <paragraph>   Rheumatoid arthritis</paragraph>
+                        <paragraph>   Acute and subacute bursitis</paragraph>
+                        <paragraph>   Acute gouty arthritis</paragraph>
+                        <paragraph>   Epicondylitis</paragraph>
+                        <paragraph>   Acute nonspecific tenosynovitis</paragraph>
+                        <paragraph>   Post-traumatic osteoarthritis</paragraph>
+                     </text>
+                     <effectiveTime value="20240815"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="c9de0bf4-75aa-4cad-a6d9-850a567c5e7e">
+                     <id root="3b1bd69b-ca53-40f6-b072-f8d82a364901"/>
+                     <code code="34067-9" codeSystem="2.16.840.1.113883.6.1" displayName="INDICATIONS &amp; USAGE SECTION"/>
+                     <title>
+                        <content styleCode="italics">By Intralesional Injection</content>
+                     </title>
+                     <text>
+                        <paragraph>   Keloids</paragraph>
+                        <paragraph>   Localized hypertrophic, infiltrated, inflammatory lesions of: lichen planus, psoriatic plaques, granuloma annulare and lichen simplex chronicus (neurodermatitis)</paragraph>
+                        <paragraph>   Discoid lupus erythematosus</paragraph>
+                        <paragraph>   Necrobiosis lipoidica diabeticorum</paragraph>
+                        <paragraph>   Alopecia areata</paragraph>
+                        <paragraph>   May also be useful in cystic tumors of an aponeurosis or tendon (ganglia)</paragraph>
+                     </text>
+                     <effectiveTime value="20240815"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="cec5de8a-df15-4148-b442-2832e1ddf610">
+               <id root="6d0020f5-3f80-44a8-91b5-78152008cbc3"/>
+               <code code="34070-3" codeSystem="2.16.840.1.113883.6.1" displayName="CONTRAINDICATIONS SECTION"/>
+               <title>CONTRAINDICATIONS:</title>
+               <text>
+                  <paragraph>Systemic fungal infections (see <content styleCode="bold">
+                        <linkHtml href="#e1fe72ea-c1c2-4505-a680-6a0dbf0004e0">WARNINGS</linkHtml>
+                     </content> regarding amphotericin B). Hypersensitivity to any component of this product, including sulfites (see <content styleCode="bold">
+                        <linkHtml href="#e1fe72ea-c1c2-4505-a680-6a0dbf0004e0">WARNINGS</linkHtml>
+                     </content>).</paragraph>
+               </text>
+               <effectiveTime value="20240815"/>
+            </section>
+         </component>
+         <component>
+            <section ID="e1fe72ea-c1c2-4505-a680-6a0dbf0004e0">
+               <id root="5ade7c5d-e8f7-421f-aab2-088c94658465"/>
+               <code code="34071-1" codeSystem="2.16.840.1.113883.6.1" displayName="WARNINGS SECTION"/>
+               <title>WARNINGS:</title>
+               <text>
+                  <paragraph>Because rare instances of anaphylactoid reactions have occurred in patients receiving parenteral corticosteroid therapy, appropriate precautionary measures should be taken prior to administration, especially when the patient has a history of allergy to any drug. Anaphylactoid and hypersensitivity reactions have been reported for dexamethasone sodium phosphate (see <content styleCode="bold">
+                        <linkHtml href="#b89c1923-3c00-4b70-8697-70dcb2ba36d7">ADVERSE REACTIONS</linkHtml>
+                     </content>).</paragraph>
+                  <paragraph>In patients on corticosteroid therapy subjected to any unusual stress, increased dosage of rapidly acting corticosteroids before, during, and after the stressful situation is indicated.</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">
+                        <content styleCode="italics">Immunosuppression and Increased Risk of Infection</content>
+                     </content>
+                  </paragraph>
+                  <paragraph>Corticosteroids, including dexamethasone sodium phosphate injection, suppress the immune system and increase the risk of infection with any pathogen, including viral, bacterial, fungal, protozoan, or helminthic pathogens. Corticosteroids can:</paragraph>
+                  <list listType="unordered">
+                     <item>
+                        <caption>•</caption>Reduce resistance to new infections</item>
+                     <item>
+                        <caption>•</caption>Exacerbate existing infections</item>
+                     <item>
+                        <caption>•</caption>Increase the risk of disseminated infections</item>
+                     <item>
+                        <caption>•</caption>Increase the risk of reactivation or exacerbation of latent infections</item>
+                     <item>
+                        <caption>•</caption>Mask some signs of infection</item>
+                  </list>
+                  <paragraph>Corticosteroid-associated infections can be mild but can be severe and at times fatal. The rate of infectious complications increases with increasing corticosteroid dosages.</paragraph>
+                  <paragraph>Monitor for the development of infection and consider dexamethasone sodium phosphate injection withdrawal or dosage reduction as needed.</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">
+                        <content styleCode="italics">Tuberculosis</content>
+                     </content>
+                  </paragraph>
+                  <paragraph>If dexamethasone sodium phosphate injection is used to treat a condition in patients with latent tuberculosis or tuberculin reactivity, tuberculosis may occur. Closely monitor such patients for reactivation. During prolonged therapy, patients with latent tuberculosis or tuberculin reactivity should receive chemoprophylaxis.</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">
+                        <content styleCode="italics">Varicella Zoster and Measles Viral Infections</content>
+                     </content>
+                  </paragraph>
+                  <paragraph>Varicella and measles can have a serious or even fatal course in non-immune patients taking corticosteroids, including dexamethasone sodium phosphate injection. In corticosteroid-treated patients who have not had these diseases or are nonimmune, particular care should be taken to avoid exposure to varicella and measles:</paragraph>
+                  <list listType="unordered">
+                     <item>
+                        <caption>•</caption>If a dexamethasone sodium phosphate injection-treated patient is exposed to varicella, prophylaxis with varicella zoster immune globulin may be indicated. If varicella develops, treatment with antiviral agents may be considered.</item>
+                     <item>
+                        <caption>•</caption>If a dexamethasone sodium phosphate injection-treated patient is exposed to measles, prophylaxis with immunoglobulin may be indicated.</item>
+                  </list>
+                  <paragraph>
+                     <content styleCode="bold">
+                        <content styleCode="italics">Hepatitis B Virus Reactivation</content>
+                     </content>
+                  </paragraph>
+                  <paragraph>Hepatitis B virus reactivation can occur in patients who are hepatitis B carriers treated with immunosuppressive dosages of corticosteroids, including dexamethasone sodium phosphate injection. Reactivation can also occur infrequently in corticosteroid-treated patients who appear to have resolved hepatitis B infection.</paragraph>
+                  <paragraph>Screen patients for hepatitis B infection before initiating immunosuppressive (e.g., prolonged) treatment with dexamethasone sodium phosphate injection. For patients who show evidence of hepatitis B infection, recommend consultation with physicians with expertise in managing hepatitis B regarding monitoring and consideration for hepatitis B antiviral therapy.</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">
+                        <content styleCode="italics">Fungal Infections</content>
+                     </content>
+                  </paragraph>
+                  <paragraph>Corticosteroids, including dexamethasone sodium phosphate injection, may exacerbate systemic fungal infections; therefore, avoid dexamethasone sodium phosphate injection use in the presence of such infections unless dexamethasone sodium phosphate injection is needed to control drug reactions. For patients on chronic dexamethasone sodium phosphate injection therapy who develop systemic fungal infections, dexamethasone sodium phosphate injection withdrawal or dosage reduction is recommended.</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">
+                        <content styleCode="italics">Amebiasis</content>
+                     </content>
+                  </paragraph>
+                  <paragraph>Corticosteroids, including dexamethasone sodium phosphate injection, may activate latent amebiasis. Therefore, it is recommended that latent amebiasis or active amebiasis be ruled out before initiating dexamethasone sodium phosphate injection in patients who have spent time in the tropics or patients with unexplained diarrhea.</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">
+                        <content styleCode="italics">Strongyloides Infestation</content>
+                     </content>
+                  </paragraph>
+                  <paragraph>Corticosteroids, including dexamethasone sodium phosphate injection, should be used with great care in patients with known or suspected Strongyloides (threadworm) infestation. In such patients, corticosteroid-induced immunosuppression may lead to Strongyloides hyperinfection and dissemination with widespread larval migration, often accompanied by severe enterocolitis and potentially fatal gram-negative septicemia.</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">
+                        <content styleCode="italics">Cerebral Malaria</content>
+                     </content>
+                  </paragraph>
+                  <paragraph>Avoid corticosteroids, including dexamethasone sodium phosphate injection, in patients with cerebral malaria.</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">
+                        <content styleCode="italics">Kaposi’s Sarcoma</content>
+                     </content>
+                  </paragraph>
+                  <paragraph>Kaposi’s sarcoma has been reported to occur in patients receiving corticosteroid therapy, most often for chronic conditions. Discontinuation of corticosteroids may result in clinical improvement of Kaposi’s sarcoma.</paragraph>
+                  <paragraph>Dexamethasone sodium phosphate injection contains sodium bisulfite, a sulfite that may cause allergic- type reactions including anaphylactic symptoms and life-threatening or less severe asthmatic episodes in certain susceptible people. The overall prevalence of sulfite sensitivity in the general population is unknown and probably low. Sulfite sensitivity is seen more frequently in asthmatic than in non- asthmatic people.</paragraph>
+                  <paragraph>Corticosteroids may exacerbate systemic fungal infections and therefore, should not be used in the presence of such infections unless they are needed to control drug reactions due to amphotericin B. Moreover, there have been cases reported in which concomitant use of amphotericin B and hydrocortisone was followed by cardiac enlargement and congestive failure.</paragraph>
+                  <paragraph>Drug-induced secondary adrenocortical insufficiency may result from too rapid withdrawal of corticosteroids and may be minimized by gradual reduction of dosage. This type of relative insufficiency may persist for months after discontinuation of therapy; therefore, in any situation of stress occurring during that period, hormone therapy should be reinstituted. If the patient is receiving steroids already, dosage may have to be increased. Since mineralocorticoid secretion may be impaired, salt and/or a mineralocorticoid should be administered concurrently.</paragraph>
+                  <paragraph>Moreover, corticosteroids may affect the nitroblue-tetrazolium test for bacterial infection and produce false negative results.</paragraph>
+                  <paragraph>In cerebral malaria, a double-blind trial has shown that the use of corticosteroids is associated with prolongation of coma and a higher incidence of pneumonia and gastrointestinal bleeding.</paragraph>
+                  <paragraph>Prolonged use of corticosteroids may produce posterior subcapsular cataracts, glaucoma with possible damage to the optic nerves, and may enhance the establishment of secondary ocular infections due to fungi or viruses.</paragraph>
+                  <paragraph>Average and large doses of cortisone or hydrocortisone can cause elevation of blood pressure, salt and water retention, and increased excretion of potassium. These effects are less likely to occur with the synthetic derivatives except when used in large doses. Dietary salt restriction and potassium supplementation may be necessary. All corticosteroids increase calcium excretion.</paragraph>
+                  <paragraph>Administration of live virus vaccines, including smallpox, is contraindicated in individuals receiving immunosuppressive doses of corticosteroids. If inactivated viral or bacterial vaccines are administered to individuals receiving immunosuppressive doses of corticosteroids, the expected serum antibody response may not be obtained. However, immunization procedures may be undertaken in patients who are receiving corticosteroids as replacement therapy, e.g., for Addison’s disease.</paragraph>
+                  <paragraph>Literature reports suggest an apparent association between use of corticosteroids and left ventricular free wall rupture after a recent myocardial infarction; therefore, therapy with corticosteroids should be used with great caution in these patients.</paragraph>
+               </text>
+               <effectiveTime value="20260608"/>
+               <component>
+                  <section ID="db80192b-2ad3-4d52-accc-ff79d6352688">
+                     <id root="2f865400-7ddc-4892-8f99-fd624a6bdbaf"/>
+                     <code code="34071-1" codeSystem="2.16.840.1.113883.6.1" displayName="WARNINGS SECTION"/>
+                     <title>
+                        <content styleCode="italics">Serious Neurologic Adverse Reactions with Epidural Administration</content>
+                     </title>
+                     <text>
+                        <paragraph>Serious neurologic events, some resulting in death, have been reported with epidural injection of corticosteroids. Specific events reported include, but are not limited to, spinal cord infarction, paraplegia, quadriplegia, cortical blindness, and stroke. These serious neurologic events have been reported with and without use of fluoroscopy. The safety and effectiveness of epidural administration of corticosteroids has not been established, and corticosteroids are not approved for this use.</paragraph>
+                     </text>
+                     <effectiveTime value="20240815"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="ffaa8be7-4e7a-4f68-b0ea-ff5a5ea94800">
+                     <id root="4dc8486a-6a19-4c06-bf80-0d01695567ae"/>
+                     <code code="34071-1" codeSystem="2.16.840.1.113883.6.1" displayName="WARNINGS SECTION"/>
+                     <title>
+                        <content styleCode="italics">Pregnancy</content>
+                     </title>
+                     <text>
+                        <paragraph>
+                           <content styleCode="bold">Teratogenic Effects: Pregnancy Category C–</content>
+                        </paragraph>
+                        <paragraph>Since adequate human reproduction studies have not been done with corticosteroids, use of these drugs in pregnancy or in women of childbearing potential requires that the anticipated benefits be weighed against the possible hazards to the mother and embryo or fetus. Infants born of mothers who have received substantial doses of corticosteroids during pregnancy should be carefully observed for signs of hypoadrenalism.</paragraph>
+                        <paragraph>Corticosteroids appear in breast milk and could suppress growth, interfere with endogenous corticosteroid production, or cause other unwanted effects. Mothers taking pharmacologic doses of corticosteroids should be advised not to nurse.</paragraph>
+                     </text>
+                     <effectiveTime value="20240815"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="ec13918c-6588-4719-95e0-07da5e52f41d">
+               <id root="bbf58b45-4742-4631-80bc-4b9337ad975a"/>
+               <code code="42232-9" codeSystem="2.16.840.1.113883.6.1" displayName="PRECAUTIONS SECTION"/>
+               <title>PRECAUTIONS:</title>
+               <text>
+                  <paragraph>This product, like many other steroid formulations, is sensitive to heat. Therefore, it should not be autoclaved when it is desirable to sterilize the exterior of the vial.</paragraph>
+                  <paragraph>Following prolonged therapy, withdrawal of corticosteroids may result in symptoms of the corticosteroid withdrawal syndrome including fever, myalgia, arthralgia, and malaise. This may occur in patients even without evidence of adrenal insufficiency.</paragraph>
+                  <paragraph>There is an enhanced effect of corticosteroids in patients with hypothyroidism and in those with cirrhosis.</paragraph>
+                  <paragraph>Corticosteroids should be used cautiously in patients with ocular herpes simplex for fear of corneal perforation.</paragraph>
+                  <paragraph>The lowest possible dose of corticosteroid should be used to control the condition under treatment, and when reduction in dosage is possible, the reduction must be gradual.</paragraph>
+                  <paragraph>Psychic derangements may appear when corticosteroids are used, ranging from euphoria, insomnia, mood swings, personality changes, and severe depression to frank psychotic manifestations. Also, existing emotional instability or psychotic tendencies may be aggravated by corticosteroids.</paragraph>
+                  <paragraph>Aspirin should be used cautiously in conjunction with corticosteroids in hypoprothrombinemia.</paragraph>
+                  <paragraph>Steroids should be used with caution in nonspecific ulcerative colitis, if there is a probability of impending perforation, abscess, or other pyogenic infection, also in diverticulitis, fresh intestinal anastomoses, active or latent peptic ulcer, renal insufficiency, hypertension, osteoporosis, and myasthenia gravis. Signs of peritoneal irritation following gastrointestinal perforation in patients receiving large doses of corticosteroids may be minimal or absent. Fat embolism has been reported as a possible complication of hypercortisonism.</paragraph>
+                  <paragraph>When large doses are given, some authorities advise that antacids be administered between meals to help to prevent peptic ulcer.</paragraph>
+                  <paragraph>Growth and development of infants and children on prolonged corticosteroid therapy should be carefully followed.</paragraph>
+                  <paragraph>Steroids may increase or decrease motility and number of spermatozoa in some patients.</paragraph>
+                  <paragraph>Phenytoin, phenobarbital, ephedrine, and rifampin may enhance the metabolic clearance of corticosteroids resulting in decreased blood levels and lessened physiologic activity, thus requiring adjustment in corticosteroid dosage. These interactions may interfere with dexamethasone suppression tests which should be interpreted with caution during administration of these drugs.</paragraph>
+                  <paragraph>False negative results in the dexamethasone suppression test (DST) in patients being treated with indomethacin have been reported. Thus, results of the DST should be interpreted with caution in these patients.</paragraph>
+                  <paragraph>The prothrombin time should be checked frequently in patients who are receiving corticosteroids and coumarin anticoagulants at the same time because of reports that corticosteroids have altered the response to these anticoagulants. Studies have shown that the usual effect produced by adding corticosteroids is inhibition of response to coumarins, although there have been some conflicting reports of potentiation not substantiated by studies.</paragraph>
+                  <paragraph>When corticosteroids are administered concomitantly with potassium-depleting diuretics, patients should be observed closely for development of hypokalemia.</paragraph>
+                  <paragraph>Intra-articular injection of a corticosteroid may produce systemic as well as local effects.</paragraph>
+                  <paragraph>Appropriate examination of any joint fluid present is necessary to exclude a septic process.</paragraph>
+                  <paragraph>A marked increase in pain accompanied by local swelling, further restriction of joint motion, fever, and malaise is suggestive of septic arthritis. If this complication occurs and the diagnosis of sepsis is confirmed, appropriate antimicrobial therapy should be instituted.</paragraph>
+                  <paragraph>Injection of a steroid into an infected site is to be avoided.</paragraph>
+                  <paragraph>Corticosteroids should not be injected into unstable joints.</paragraph>
+                  <paragraph>Patients should be impressed strongly with the importance of not overusing joints in which symptomatic benefit has been obtained as long as the inflammatory process remains active.</paragraph>
+                  <paragraph>Frequent intra-articular injection may result in damage to joint tissues. </paragraph>
+                  <paragraph> The slower rate of absorption by intramuscular administration should be recognized.</paragraph>
+               </text>
+               <effectiveTime value="20240815"/>
+               <component>
+                  <section ID="f3fea347-ebff-4549-94e2-94ffc10332b4">
+                     <id root="26ac1ad6-7c8f-4760-b98c-9c3e74d70e91"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>
+                        <content styleCode="italics">Information for Patients</content>
+                     </title>
+                     <text>
+                        <paragraph>Persons who are on immunosuppressant doses of corticosteroids should be warned to avoid exposure to chickenpox or measles. Patients should also be advised that if they are exposed, medical advice should be sought without delay.</paragraph>
+                     </text>
+                     <effectiveTime value="20240815"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="b89c1923-3c00-4b70-8697-70dcb2ba36d7">
+               <id root="71dc5c76-b54c-4a44-afdb-9c0e9ab87c6e"/>
+               <code code="34084-4" codeSystem="2.16.840.1.113883.6.1" displayName="ADVERSE REACTIONS SECTION"/>
+               <title>ADVERSE REACTIONS:</title>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">To report SUSPECTED ADVERSE REACTIONS, contact Fresenius Kabi USA, LLC at 1-800-551-7176 or FDA at 1-800-FDA-1088 or www.fda.gov/medwatch.</content>
+                  </paragraph>
+                  <paragraph>Fluid and electrolyte disturbances:</paragraph>
+                  <paragraph>   Sodium retention</paragraph>
+                  <paragraph>   Fluid retention</paragraph>
+                  <paragraph>   Congestive heart failure in susceptible patients</paragraph>
+                  <paragraph>   Potassium loss</paragraph>
+                  <paragraph>   Hypokalemic alkalosis</paragraph>
+                  <paragraph>   Hypertension</paragraph>
+                  <paragraph>Musculoskeletal:</paragraph>
+                  <paragraph>   Muscle weakness</paragraph>
+                  <paragraph>   Steroid myopathy</paragraph>
+                  <paragraph>   Loss of muscle mass</paragraph>
+                  <paragraph>   Osteoporosis</paragraph>
+                  <paragraph>   Pathologic fracture of long bones</paragraph>
+                  <paragraph>   Vertebral compression fractures</paragraph>
+                  <paragraph>   Aseptic necrosis of femoral and humeral heads</paragraph>
+                  <paragraph>   Tendon rupture</paragraph>
+                  <paragraph>Gastrointestinal:</paragraph>
+                  <paragraph>   Peptic ulcer with possible subsequent perforation and hemorrhage</paragraph>
+                  <paragraph>   Perforation of the small and large bowel, particularly in patients with inflammatory bowel disease</paragraph>
+                  <paragraph>   Pancreatitis</paragraph>
+                  <paragraph>   Abdominal distention</paragraph>
+                  <paragraph>   Ulcerative esophagitis</paragraph>
+                  <paragraph>Dermatologic:</paragraph>
+                  <paragraph>   Impaired wound healing</paragraph>
+                  <paragraph>   Thin fragile skin</paragraph>
+                  <paragraph>   Petechiae and ecchymoses</paragraph>
+                  <paragraph>   Erythema</paragraph>
+                  <paragraph>   Increased sweating</paragraph>
+                  <paragraph>   May suppress reactions to skin tests</paragraph>
+                  <paragraph>   Burning or tingling, especially in the perineal area (after IV injection)</paragraph>
+                  <paragraph>   Other cutaneous reactions, such as allergic dermatitis, urticaria, angioneurotic edema</paragraph>
+                  <paragraph>Neurologic:</paragraph>
+                  <paragraph>   Convulsions</paragraph>
+                  <paragraph>   Increased intracranial pressure with papilledema (pseudotumor cerebri) usually after treatment</paragraph>
+                  <paragraph>   Vertigo</paragraph>
+                  <paragraph>   Headache</paragraph>
+                  <paragraph>   Psychic disturbances</paragraph>
+                  <paragraph>Endocrine:</paragraph>
+                  <paragraph>   Menstrual irregularities</paragraph>
+                  <paragraph>   Development of cushingoid state</paragraph>
+                  <paragraph>   Suppression of growth in children</paragraph>
+                  <paragraph>   Secondary adrenocortical and pituitary unresponsiveness, particularly in times of stress, as in trauma, surgery, or illness</paragraph>
+                  <paragraph>   Decreased carbohydrate tolerance</paragraph>
+                  <paragraph>   Manifestations of latent diabetes mellitus</paragraph>
+                  <paragraph>   Increased requirements for insulin or oral hypoglycemic agents in diabetics</paragraph>
+                  <paragraph>   Hirsutism</paragraph>
+                  <paragraph>Ophthalmic:</paragraph>
+                  <paragraph>   Posterior subcapsular cataracts</paragraph>
+                  <paragraph>   Increased intraocular pressure</paragraph>
+                  <paragraph>   Glaucoma</paragraph>
+                  <paragraph>   Exophthalmos</paragraph>
+                  <paragraph>Metabolic:</paragraph>
+                  <paragraph>   Negative nitrogen balance due to protein catabolism</paragraph>
+                  <paragraph>Cardiovascular:</paragraph>
+                  <paragraph>   Myocardial rupture following recent myocardial infarction (see <content styleCode="bold">
+                        <linkHtml href="#e1fe72ea-c1c2-4505-a680-6a0dbf0004e0">WARNINGS</linkHtml>
+                     </content>)</paragraph>
+                  <paragraph>Other:</paragraph>
+                  <paragraph>   Anaphylactoid or hypersensitivity reactions</paragraph>
+                  <paragraph>   Thromboembolism</paragraph>
+                  <paragraph>   Weight gain</paragraph>
+                  <paragraph>   Increased appetite</paragraph>
+                  <paragraph>   Nausea</paragraph>
+                  <paragraph>   Malaise</paragraph>
+                  <paragraph>   Hiccups</paragraph>
+                  <paragraph>   The following <content styleCode="italics">additional</content> adverse reactions are related to parenteral corticosteroid therapy:</paragraph>
+                  <paragraph>   Rare instances of blindness associated with intralesional therapy around the face and head</paragraph>
+                  <paragraph>   Hyperpigmentation or hypopigmentation</paragraph>
+                  <paragraph>   Subcutaneous and cutaneous atrophy</paragraph>
+                  <paragraph>   Sterile abscess</paragraph>
+                  <paragraph>   Post-injection flare (following intra-articular use)</paragraph>
+                  <paragraph>   Charcot-like arthropathy</paragraph>
+               </text>
+               <effectiveTime value="20260608"/>
+            </section>
+         </component>
+         <component>
+            <section ID="ed527ab9-450e-4789-a362-eb9a67956f7a">
+               <id root="dd8c4fb6-b216-42aa-849c-e6a561f3a1f1"/>
+               <code code="34088-5" codeSystem="2.16.840.1.113883.6.1" displayName="OVERDOSAGE SECTION"/>
+               <title>OVERDOSAGE:</title>
+               <text>
+                  <paragraph>Reports of acute toxicity and/or death following overdosage of glucocorticoids are rare. In the event of overdosage, no specific antidote is available; treatment is supportive and symptomatic.</paragraph>
+                  <paragraph>The oral LD<sub>50</sub> of dexamethasone in female mice was 6.5 g/kg. The intravenous LD<sub>50</sub> of dexamethasone sodium phosphate in female mice was 794 mg/kg.</paragraph>
+               </text>
+               <effectiveTime value="20240815"/>
+            </section>
+         </component>
+         <component>
+            <section ID="e2f75263-a174-4639-a56a-f52936b63cbe">
+               <id root="69965c8d-f424-4107-928c-04b6fd706164"/>
+               <code code="34068-7" codeSystem="2.16.840.1.113883.6.1" displayName="DOSAGE &amp; ADMINISTRATION SECTION"/>
+               <title>DOSAGE AND ADMINISTRATION:</title>
+               <text>
+                  <paragraph>Dexamethasone sodium phosphate injection, 4 mg per mL– <content styleCode="italics">For intravenous, intramuscular, intra-articular, intralesional, and soft tissue injection.</content>
+                  </paragraph>
+                  <paragraph>Dexamethasone sodium phosphate injection can be given directly from the vial, or it can be added to Sodium Chloride Injection or Dextrose Injection and administered by intravenous drip.</paragraph>
+                  <paragraph>Solutions used for intravenous administration or further dilution of this product should be preservative free when used in the neonate, especially the premature infant.</paragraph>
+                  <paragraph>When it is mixed with an infusion solution, sterile precautions should be observed. Since infusion solutions generally do not contain preservatives, mixtures should be used within 24 hours.</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">DOSAGE REQUIREMENTS ARE VARIABLE AND MUST BE INDIVIDUALIZED ON THE BASIS OF THE DISEASE AND THE RESPONSE OF THE PATIENT.</content>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20260608"/>
+               <component>
+                  <section ID="d81385dd-0ec0-4386-a128-93e0f7e8357d">
+                     <id root="d9f98a80-dc49-4c3d-a042-b4fab9a7e6c8"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>Intravenous and Intramuscular Injection:</title>
+                     <text>
+                        <paragraph>The initial dosage of dexamethasone sodium phosphate injection varies from 0.5 to 9 mg a day depending on the disease being treated. In less severe diseases doses lower than 0.5 mg may suffice, while in severe diseases doses higher than 9 mg may be required.</paragraph>
+                        <paragraph>The initial dosage should be maintained or adjusted until the patient’s response is satisfactory. If a satisfactory clinical response does not occur after a reasonable period of time, discontinue dexamethasone sodium phosphate injection and transfer the patient to other therapy.</paragraph>
+                        <paragraph>After a favorable initial response, the proper maintenance dosage should be determined by decreasing the initial dosage in small amounts to the lowest dosage that maintains an adequate clinical response.</paragraph>
+                        <paragraph>Patients should be observed closely for signs that might require dosage adjustment, including changes in clinical status resulting from remissions or exacerbations of the disease, individual drug responsiveness, and the effect of stress (e.g., surgery, infection, trauma). During stress it may be necessary to increase dosage temporarily.</paragraph>
+                        <paragraph>If the drug is to be stopped after more than a few days of treatment, it usually should be withdrawn gradually.</paragraph>
+                        <paragraph>When the intravenous route of administration is used, dosage usually should be the same as the oral dosage. In certain overwhelming, acute, life-threatening situations, however, administration in dosages exceeding the usual dosages may be justified and may be in multiples of the oral dosages. The slower rate of absorption by intramuscular administration should be recognized.</paragraph>
+                     </text>
+                     <effectiveTime value="20240815"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="f4f2e3ad-3bb1-40d6-a34a-234ec948fbd2">
+                     <id root="6cbefe25-a9a6-4bbf-8d6f-e103c4e44d83"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>Shock</title>
+                     <text>
+                        <paragraph>There is a tendency in current medical practice to use high (pharmacologic) doses of corticosteroids for the treatment of unresponsive shock. The following dosages of dexamethasone sodium phosphate injection have been suggested by various authors: </paragraph>
+                        <table cellpadding="0pt" cellspacing="0pt" width="100%">
+                           <col width="21%"/>
+                           <col width="77%"/>
+                           <tbody>
+                              <tr>
+                                 <td styleCode="Rrule Botrule Lrule Toprule " valign="top">
+                                    <paragraph>
+                                       <content styleCode="bold">
+                                          <content styleCode="italics">Author</content>
+                                       </content>
+                                       <br/>
+                                    </paragraph>
+                                 </td>
+                                 <td styleCode="Rrule Botrule Toprule " valign="top">
+                                    <paragraph>
+                                       <content styleCode="bold"> <content styleCode="italics">Dosage</content>
+                                       </content>
+                                       <br/>
+                                    </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td styleCode="Rrule Lrule Botrule " valign="top">
+                                    <paragraph>Cavanagh<sup>1</sup>
+                                       <br/>
+                                    </paragraph>
+                                 </td>
+                                 <td styleCode="Rrule Botrule " valign="top">
+                                    <paragraph>3 mg/kg of body weight per 24 hours by constant intravenous infusion after an initial intravenous injection of 20 mg<br/>
+                                    </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td styleCode="Rrule Lrule Botrule " valign="top">
+                                    <paragraph>Dietzman<sup>2</sup>
+                                       <br/>
+                                    </paragraph>
+                                 </td>
+                                 <td styleCode="Rrule Botrule " valign="top">
+                                    <paragraph>2 to 6 mg/kg of body weight as a single intravenous injection<br/>
+                                    </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td styleCode="Rrule Lrule Botrule " valign="top">
+                                    <paragraph>Frank<sup>3</sup>
+                                       <br/>
+                                    </paragraph>
+                                 </td>
+                                 <td styleCode="Rrule Botrule " valign="top">
+                                    <paragraph>40 mg initially followed by repeat<br/>intravenous injection every 4 to 6 hours while shock persists<br/>
+                                    </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td styleCode="Rrule Lrule Botrule " valign="top">
+                                    <paragraph>Oaks<sup>4</sup>
+                                       <br/>
+                                    </paragraph>
+                                 </td>
+                                 <td styleCode="Rrule Botrule " valign="top">
+                                    <paragraph>40 mg initially followed by repeat<br/>intravenous injection every 2 to 6 hours while shock persists<br/>
+                                    </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td styleCode="Rrule Botrule Lrule " valign="top">
+                                    <paragraph>Schumer<sup>5</sup>
+                                       <br/>
+                                    </paragraph>
+                                 </td>
+                                 <td styleCode="Rrule Botrule " valign="top">
+                                    <paragraph>1 mg/kg of body weight as a single intravenous injection<br/>
+                                    </paragraph>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <paragraph>Administration of high dose corticosteroid therapy should be continued only until the patient’s condition has stabilized and usually not longer than 48 to 72 hours.</paragraph>
+                        <paragraph>Although adverse reactions associated with high dose, short term corticosteroid therapy are uncommon, peptic ulceration may occur.</paragraph>
+                     </text>
+                     <effectiveTime value="20240815"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="bb9de1d5-7c28-4f54-8838-ff9dbf8b69a5">
+                     <id root="96041e94-2d9c-4191-af41-7e2dc15d01f5"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>
+                        <content styleCode="italics">Cerebral Edema</content>
+                     </title>
+                     <text>
+                        <paragraph>Dexamethasone sodium phosphate injection is generally administered initially in a dosage of 10 mg intravenously followed by four mg every six hours intramuscularly until the symptoms of cerebral edema subside. Response is usually noted within 12 to 24 hours and dosage may be reduced after two to four days and gradually discontinued over a period of five to seven days. For palliative management of patients with recurrent or inoperable brain tumors, maintenance therapy with two mg two or three times a day may be effective.</paragraph>
+                     </text>
+                     <effectiveTime value="20240815"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="b45b085a-40da-4ac1-9289-c8a41425df1e">
+                     <id root="8a03c881-3f4f-4815-8b4a-b2f3c86f8626"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>
+                        <content styleCode="italics">Acute Allergic Disorders</content>
+                     </title>
+                     <text>
+                        <paragraph>In acute, self-limited allergic disorders or acute exacerbations of chronic allergic disorders, the following dosage schedule combining parenteral and oral therapy is suggested:</paragraph>
+                        <paragraph>Dexamethasone sodium phosphate injection, 4 mg per mL: <content styleCode="italics">first day</content>, 1 or 2 mL (4 or 8 mg), intramuscularly.</paragraph>
+                        <paragraph>Dexamethasone tablets, 0.75 mg: second and third days, 4 tablets in two divided doses each day; fourth day, 2 tablets in two divided doses; fifth and sixth days, 1 tablet each day; seventh day, no treatment; eighth day, follow-up visit.</paragraph>
+                        <paragraph>This schedule is designed to ensure adequate therapy during acute episodes, while minimizing the risk of overdosage in chronic cases.</paragraph>
+                     </text>
+                     <effectiveTime value="20240815"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="a6ee0e8a-36e0-4db3-9ba8-b83b47fa30a9">
+                     <id root="fea2a574-74e2-409c-b86c-46c422dae114"/>
+                     <code code="34068-7" codeSystem="2.16.840.1.113883.6.1" displayName="DOSAGE &amp; ADMINISTRATION SECTION"/>
+                     <title>Intra-articular, Intralesional and Soft Tissue Injection</title>
+                     <text>
+                        <paragraph>Intra-articular, intralesional, and soft tissue injections are generally employed when the affected joints or areas are limited to one or two sites. Dosage and frequency of injection varies depending on the condition and the site of injection. The usual dose is from 0.2 to 6 mg. The frequency usually ranges from once every three to five days to once every two to three weeks. Frequent intra-articular injection may result in damage to joint tissues.</paragraph>
+                        <paragraph>Some of the usual single doses are: </paragraph>
+                        <table cellpadding="0pt" cellspacing="0pt" width="100%">
+                           <col width="49%"/>
+                           <col width="49%"/>
+                           <tbody>
+                              <tr>
+                                 <td align="center" styleCode="Rrule Botrule Lrule Toprule " valign="middle">
+                                    <paragraph>
+                                       <content styleCode="bold">Site of Injection</content>
+                                    </paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule Toprule " valign="middle">
+                                    <paragraph>
+                                       <content styleCode="bold">Amount of<br/>Dexamethasone</content>
+                                       <br/>
+                                       <content styleCode="bold">Phosphate (mg)</content>
+                                    </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td styleCode="Rrule Lrule Botrule " valign="top">
+                                    <paragraph>Large Joints<br/>(e.g., Knee)</paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule " valign="middle">
+                                    <paragraph> 2 to 4 </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td styleCode="Rrule Lrule Botrule " valign="top">
+                                    <paragraph>Small Joints<br/>(e.g., Interphalangeal,<br/>Temporomandibular)</paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule " valign="middle">
+                                    <paragraph> 0.8 to 1 </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td styleCode="Rrule Lrule Botrule " valign="top">
+                                    <paragraph>Bursae</paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule " valign="middle">
+                                    <paragraph> 2 to 3 </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td styleCode="Rrule Lrule Botrule " valign="top">
+                                    <paragraph>Tendon Sheaths</paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule " valign="middle">
+                                    <paragraph> 0.4 to 1 </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td styleCode="Rrule Lrule Botrule " valign="top">
+                                    <paragraph>Soft Tissue Infiltration</paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule " valign="middle">
+                                    <paragraph> 2 to 6 </paragraph>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td styleCode="Rrule Botrule Lrule " valign="top">
+                                    <paragraph>Ganglia</paragraph>
+                                 </td>
+                                 <td align="center" styleCode="Rrule Botrule " valign="middle">
+                                    <paragraph> 1 to 2 </paragraph>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <paragraph>Dexamethasone sodium phosphate injection is particularly recommended for use in conjunction with one of the less soluble, longer-acting steroids for intra-articular and soft tissue injection.</paragraph>
+                        <paragraph>Parenteral drug products should be inspected visually for particulate matter and discoloration prior to administration, whenever the solution and container permit.</paragraph>
+                     </text>
+                     <effectiveTime value="20260608"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_ef80e77a-a32f-4e35-ae35-35f6c3a509c5">
+               <id root="99e929aa-d70b-4bb4-95fe-9c52718ce0bb"/>
+               <code code="34069-5" codeSystem="2.16.840.1.113883.6.1" displayName="HOW SUPPLIED SECTION"/>
+               <title>HOW SUPPLIED: </title>
+               <text>
+                  <paragraph>Dexamethasone Sodium Phosphate Injection, USP phosphate, is supplied as follows:</paragraph>
+                  <table styleCode="Noautorules" width="100%">
+                     <col width="24%"/>
+                     <col width="24%"/>
+                     <col width="25%"/>
+                     <col width="25%"/>
+                     <tbody>
+                        <tr>
+                           <td styleCode="Rrule Botrule Lrule Toprule " valign="top">
+                              <paragraph>
+                                 <content styleCode="bold">Product Code</content>
+                              </paragraph>
+                           </td>
+                           <td styleCode="Rrule Botrule Lrule Toprule " valign="top">
+                              <paragraph>
+                                 <content styleCode="bold">Unit of Sale</content>
+                              </paragraph>
+                           </td>
+                           <td styleCode="Rrule Botrule Lrule Toprule " valign="top">
+                              <paragraph>
+                                 <content styleCode="bold">Strength </content>
+                              </paragraph>
+                           </td>
+                           <td styleCode="Rrule Botrule Lrule Toprule " valign="top">
+                              <paragraph>
+                                 <content styleCode="bold">Each</content>
+                              </paragraph>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td styleCode="Rrule Lrule Botrule " valign="top">
+                              <paragraph>RF16501</paragraph>
+                           </td>
+                           <td styleCode="Rrule Lrule Toprule Botrule " valign="top">
+                              <paragraph>NDC 63323-165-51</paragraph>
+                              <paragraph>Unit of 25</paragraph>
+                           </td>
+                           <td styleCode="Rrule Lrule Toprule Botrule " valign="top">
+                              <paragraph>4 mg per mL</paragraph>
+                           </td>
+                           <td styleCode="Rrule Lrule Toprule Botrule " valign="top">
+                              <paragraph>NDC 63323-165-11</paragraph>
+                              <paragraph>1 mL fill, in a 2 mL Flip-Top Single Dose Vial </paragraph>
+                              <paragraph>This product is RFID-enabled.</paragraph>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td styleCode="Rrule Lrule Botrule " valign="top">
+                              <paragraph>16501</paragraph>
+                           </td>
+                           <td styleCode="Rrule Lrule Toprule Botrule " valign="top">
+                              <paragraph>NDC 63323-165-01</paragraph>
+                              <paragraph>Unit of 25</paragraph>
+                           </td>
+                           <td styleCode="Rrule Lrule Toprule Botrule " valign="top">
+                              <paragraph>4 mg per mL</paragraph>
+                           </td>
+                           <td styleCode="Rrule Lrule Toprule Botrule " valign="top">
+                              <paragraph>NDC 63323-165-02</paragraph>
+                              <paragraph>1 mL fill, in a 2 mL Flip-Top Single Dose Vial</paragraph>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td styleCode="Rrule Lrule Botrule " valign="top">
+                              <paragraph>RF16505</paragraph>
+                           </td>
+                           <td styleCode="Rrule Lrule Toprule Botrule " valign="top">
+                              <paragraph>NDC 63323-165-53</paragraph>
+                              <paragraph>Unit of 25</paragraph>
+                           </td>
+                           <td styleCode="Rrule Lrule Toprule Botrule " valign="top">
+                              <paragraph>20 mg per 5 mL</paragraph>
+                              <paragraph>(4 mg per mL)</paragraph>
+                           </td>
+                           <td styleCode="Rrule Lrule Toprule Botrule " valign="top">
+                              <paragraph>NDC 63323-165-13</paragraph>
+                              <paragraph>5 mL fill, in a 5 mL </paragraph>
+                              <paragraph>Flip-Top Multiple Dose Vial </paragraph>
+                              <paragraph>This product is RFID-enabled.</paragraph>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td styleCode="Rrule Lrule Botrule " valign="top">
+                              <paragraph>16505</paragraph>
+                           </td>
+                           <td styleCode="Rrule Lrule Toprule Botrule " valign="top">
+                              <paragraph>NDC 63323-165-05</paragraph>
+                              <paragraph>Unit of 25</paragraph>
+                           </td>
+                           <td styleCode="Rrule Lrule Toprule Botrule " valign="top">
+                              <paragraph>20 mg per 5 mL</paragraph>
+                              <paragraph>(4 mg per mL)</paragraph>
+                           </td>
+                           <td styleCode="Rrule Lrule Toprule Botrule " valign="top">
+                              <paragraph>NDC 63323-165-03</paragraph>
+                              <paragraph>5 mL fill, in a 5 mL Flip-Top Multiple Dose Vial </paragraph>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td styleCode="Rrule Botrule Lrule Toprule " valign="top">
+                              <paragraph>16530</paragraph>
+                           </td>
+                           <td styleCode="Rrule Botrule Lrule Toprule " valign="top">
+                              <paragraph>NDC 63323-165-30</paragraph>
+                              <paragraph>Packaged</paragraph>
+                              <paragraph>Individually</paragraph>
+                           </td>
+                           <td styleCode="Rrule Botrule Lrule Toprule " valign="top">
+                              <paragraph>120 mg per 30 mL</paragraph>
+                              <paragraph>(4 mg per mL)</paragraph>
+                           </td>
+                           <td styleCode="Rrule Botrule Lrule Toprule " valign="top">
+                              <paragraph>NDC 63323-165-30</paragraph>
+                              <paragraph>30 mL fill, in a 30 mL </paragraph>
+                              <paragraph>Flip-Top Multiple Dose Vial </paragraph>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <paragraph>
+                     <content styleCode="bold">STORE AT: 20</content>°C to<content styleCode="bold"> 25</content>°C (<content styleCode="bold">68</content>°F to <content styleCode="bold">77</content>°F) [see USP Controlled Room Temperature]. Protect from freezing. Sensitive to heat. Do not autoclave.<br/>Protect from light. Store container in carton until contents have been used.<br/>Do not use if precipitate is present.</paragraph>
+                  <paragraph>The container closure is not made with natural rubber latex.</paragraph>
+               </text>
+               <effectiveTime value="20260608"/>
+            </section>
+         </component>
+         <component>
+            <section ID="b49db6b2-fd94-4f4f-954e-064b362dd03d">
+               <id root="f3e3d176-8554-4d1f-97f8-1e41c4e243c6"/>
+               <code code="34093-5" codeSystem="2.16.840.1.113883.6.1" displayName="REFERENCES SECTION"/>
+               <title>REFERENCES:</title>
+               <text>
+                  <list listType="ordered">
+                     <item>
+                        <caption>1.</caption>Cavanagh, D.; Singh, K.B.: Endotoxin shock in pregnancy and abortion, in: “Corticosteroids in the Treatment of Shock”, Schumer, W.; Nyhus, L.M., Editors, Urbana, University of Illinois Press, 1970, pp. 86-96.</item>
+                     <item>
+                        <caption>2.</caption>Dietzman, R.H.; Ersek, R.A.; Bloch, J.M.; Lillehei, R.C.: High-output, low-resistance gram-negative septic shock in man, Angiology <content styleCode="italics">20</content>: 691-700, Dec. 1969.</item>
+                     <item>
+                        <caption>3.</caption>Frank, E.: Clinical observations in shock and management (In: Shields, T.F., ed.: Symposium on current concepts and management of shock), J. Maine Med. Ass. <content styleCode="italics">59</content>: 195-200, Oct. 1968.</item>
+                     <item>
+                        <caption>4.</caption>Oaks, W. W.; Cohen, H.E.: Endotoxin shock in the geriatric patient, Geriat. <content styleCode="italics">22</content>: 120-130, Mar. 1967.</item>
+                     <item>
+                        <caption>5.</caption>Schumer, W.; Nyhus, L.M.: Corticosteroid effect on biochemical parameters of human oligemic shock, Arch. Surg. <content styleCode="italics">100</content>: 405-408, Apr. 1970.</item>
+                  </list>
+               </text>
+               <effectiveTime value="20240815"/>
+            </section>
+         </component>
+         <component>
+            <section ID="bc49f588-728a-49c4-9b65-806221b4f251">
+               <id root="36edbab8-1850-4fee-a032-6040677bbac7"/>
+               <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+               <text>
+                  <paragraph>
+                     <renderMultiMedia ID="id917" referencedObject="MM2"/> </paragraph>
+                  <paragraph>www.fresenius-kabi.com/us<br/>
+                     <br/>45799K</paragraph>
+                  <paragraph>Revised: February 2026</paragraph>
+               </text>
+               <effectiveTime value="20260608"/>
+               <component>
+                  <observationMedia ID="MM2">
+                     <text>dexam-img-01.jpg</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="dexam-img-01.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_30775c23-25ee-41a7-96b2-643d3abeb6ad">
+               <id root="7c5c660b-e6a2-4010-b564-ae1cf80585ab"/>
+               <code code="51945-4" codeSystem="2.16.840.1.113883.6.1" displayName="PACKAGE LABEL.PRINCIPAL DISPLAY PANEL"/>
+               <title>PACKAGE LABEL - PRINCIPAL DISPLAY – Dexamethasone Sodium Phosphate 1 mL Vial Label  </title>
+               <text>
+                  <paragraph>NDC 63323-165-11            RF16501</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Dexamethasone </content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Sodium Phosphate </content>
+                  </paragraph>
+                  <paragraph>Injection, USP</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">4 mg per mL</content>
+                  </paragraph>
+                  <paragraph>For IM or IV use. See insert</paragraph>
+                  <paragraph>for other routes. Sterile.</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">1 mL</content>
+                  </paragraph>
+                  <paragraph>Single Dose Vial            Rx only</paragraph>
+                  <renderMultiMedia ID="id-495953632" referencedObject="ID_541a9173-3421-4820-90c3-ded5857d33a4"/>
+               </text>
+               <effectiveTime value="20240815"/>
+               <component>
+                  <observationMedia ID="ID_541a9173-3421-4820-90c3-ded5857d33a4">
+                     <text>dexam-label-01.jpg</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="dexam-label-01.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_8c18eee5-a08f-4f8c-a540-9919b5114e1a">
+               <id root="fd42b2ee-3e7a-4565-b8ae-4b50928fdb30"/>
+               <code code="51945-4" codeSystem="2.16.840.1.113883.6.1" displayName="PACKAGE LABEL.PRINCIPAL DISPLAY PANEL"/>
+               <title>PACKAGE LABEL - PRINCIPAL DISPLAY - Dexamethasone Sodium Phosphate 1 mL Tray Label  </title>
+               <text>
+                  <paragraph>NDC 63323-165-51            RF16501</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Dexamethasone </content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Sodium Phosphate </content>
+                  </paragraph>
+                  <paragraph>Injection, USP</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">4 mg per mL*</content>
+                  </paragraph>
+                  <paragraph>For intramuscular or intravenous use. </paragraph>
+                  <paragraph>See insert for other routes. </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">25 x 1 mL</content>
+                  </paragraph>
+                  <paragraph>Single Dose Vials            Rx only</paragraph>
+                  <renderMultiMedia ID="id-1202863985" referencedObject="ID_338afeb4-05c8-462c-bade-9e8fd355d6f0"/>
+               </text>
+               <effectiveTime value="20260608"/>
+               <component>
+                  <observationMedia ID="ID_338afeb4-05c8-462c-bade-9e8fd355d6f0">
+                     <text>dexam-label-02.jpg</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="dexam-label-02.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_1648564c-d5bf-4e3e-8efb-829f02024e84">
+               <id root="ee555a0e-6e9e-4259-b6d4-807211f358da"/>
+               <code code="51945-4" codeSystem="2.16.840.1.113883.6.1" displayName="PACKAGE LABEL.PRINCIPAL DISPLAY PANEL"/>
+               <title>PACKAGE LABEL - PRINCIPAL DISPLAY – Dexamethasone Sodium Phosphate 1 mL Vial Label  </title>
+               <text>
+                  <paragraph>NDC 63323-165-02            16501</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Dexamethasone </content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Sodium Phosphate </content>
+                  </paragraph>
+                  <paragraph>Injection, USP</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">4 mg per mL</content>
+                  </paragraph>
+                  <paragraph>For IM or IV use. </paragraph>
+                  <paragraph>See insert for other routes. Sterile.</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">1 mL</content>
+                  </paragraph>
+                  <paragraph>Single Dose Vial            Rx only</paragraph>
+                  <renderMultiMedia ID="id1112560883" referencedObject="ID_0862bcec-2c08-4c30-89a5-d95ae5fa000a"/>
+               </text>
+               <effectiveTime value="20240815"/>
+               <component>
+                  <observationMedia ID="ID_0862bcec-2c08-4c30-89a5-d95ae5fa000a">
+                     <text>dexam-label-03.jpg</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="dexam-label-03.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_297d0f97-f57a-4644-8ecb-52ccc7b11d5d">
+               <id root="fd234aa6-e5b8-43bb-9322-ff48b1096fc9"/>
+               <code code="51945-4" codeSystem="2.16.840.1.113883.6.1" displayName="PACKAGE LABEL.PRINCIPAL DISPLAY PANEL"/>
+               <title>PACKAGE LABEL - PRINCIPAL DISPLAY – Dexamethasone Sodium Phosphate 1 mL Tray Label </title>
+               <text>
+                  <paragraph>NDC 63323-165-01            16501</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Dexamethasone </content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Sodium Phosphate </content>
+                  </paragraph>
+                  <paragraph>Injection, USP</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">4 mg per mL*</content>
+                  </paragraph>
+                  <paragraph>For intramuscular or intravenous use. </paragraph>
+                  <paragraph>See insert for other routes. </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">25 x 1 mL</content>
+                  </paragraph>
+                  <paragraph>Single Dose Vials            Rx only</paragraph>
+                  <renderMultiMedia ID="id1189794148" referencedObject="ID_3d5b6ab7-1fd4-461c-ac1a-4591f7e003fb"/>
+               </text>
+               <effectiveTime value="20260608"/>
+               <component>
+                  <observationMedia ID="ID_3d5b6ab7-1fd4-461c-ac1a-4591f7e003fb">
+                     <text>dexam-label-04.jpg</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="dexam-label-04.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_0f9bdf6c-04f5-4da4-b308-4a7f1a55e218">
+               <id root="d24159b8-2fd7-43c2-8720-ac165aa2e54c"/>
+               <code code="51945-4" codeSystem="2.16.840.1.113883.6.1" displayName="PACKAGE LABEL.PRINCIPAL DISPLAY PANEL"/>
+               <title>PACKAGE LABEL - PRINCIPAL DISPLAY – Dexamethasone Sodium Phosphate 5 mL Vial Label  </title>
+               <text>
+                  <paragraph>NDC 63323-165-13            RF16505</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Dexamethasone </content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Sodium Phosphate </content>
+                  </paragraph>
+                  <paragraph>Injection, USP</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">20 mg per 5 mL</content>
+                  </paragraph>
+                  <paragraph>(4 mg per mL)</paragraph>
+                  <paragraph>For IM or IV use. </paragraph>
+                  <paragraph>See insert for other routes. </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">5 mL</content>
+                  </paragraph>
+                  <paragraph>Multiple Dose Vial            Rx only</paragraph>
+                  <renderMultiMedia ID="id252167113" referencedObject="ID_61a38991-3853-4c56-b83d-d5d1454982ac"/>
+               </text>
+               <effectiveTime value="20260608"/>
+               <component>
+                  <observationMedia ID="ID_61a38991-3853-4c56-b83d-d5d1454982ac">
+                     <text>dexam-label-05.jpg</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="dexam-label-05.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_6808de60-69b0-4d7c-91f5-a23289fe3bdc">
+               <id root="6c472eb2-66b1-449b-ae1f-6440c1a46f6d"/>
+               <code code="51945-4" codeSystem="2.16.840.1.113883.6.1" displayName="PACKAGE LABEL.PRINCIPAL DISPLAY PANEL"/>
+               <title>PACKAGE LABEL - PRINCIPAL DISPLAY – Dexamethasone Sodium Phosphate 5 mL Tray Label  </title>
+               <text>
+                  <paragraph>NDC 63323-165-53            RF16505</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Dexamethasone </content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Sodium Phosphate </content>
+                  </paragraph>
+                  <paragraph>Injection, USP. </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">20 mg per 5 mL </content>
+                  </paragraph>
+                  <paragraph>(4 mg per mL*)</paragraph>
+                  <paragraph>For intramuscular or intravenous use. </paragraph>
+                  <paragraph>See insert for other routes. </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">25 x 5 mL</content>
+                  </paragraph>
+                  <paragraph>Multiple Dose Vials            Rx only</paragraph>
+                  <renderMultiMedia ID="id-1655062692" referencedObject="F16D3CC7-1721-498E-B526-639068226E8C"/>
+               </text>
+               <effectiveTime value="20260608"/>
+               <component>
+                  <observationMedia ID="F16D3CC7-1721-498E-B526-639068226E8C">
+                     <text>dexam-label-06.jpg</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="dexam-label-06.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_6fcb5b98-6f1a-4bf2-bd4a-a636a4294e03">
+               <id root="040b0cef-10f6-44b5-b70b-b7b424154c03"/>
+               <code code="51945-4" codeSystem="2.16.840.1.113883.6.1" displayName="PACKAGE LABEL.PRINCIPAL DISPLAY PANEL"/>
+               <title>PACKAGE LABEL - PRINCIPAL DISPLAY – Dexamethasone Sodium Phosphate 5 mL Vial Label </title>
+               <text>
+                  <paragraph>NDC 63323-165-03            16505</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Dexamethasone </content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Sodium Phosphate </content>
+                  </paragraph>
+                  <paragraph>Injection, USP</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">20 mg per 5 mL</content>
+                  </paragraph>
+                  <paragraph>(4 mg per mL)</paragraph>
+                  <paragraph>For IM or IV use. </paragraph>
+                  <paragraph>See insert for other routes. </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">5 mL</content>
+                  </paragraph>
+                  <paragraph>Multiple Dose Vial            Rx only</paragraph>
+                  <renderMultiMedia ID="id1739048890" referencedObject="ID_86ea9175-0a45-4416-836a-7411b1069b95"/>
+               </text>
+               <effectiveTime value="20260608"/>
+               <component>
+                  <observationMedia ID="ID_86ea9175-0a45-4416-836a-7411b1069b95">
+                     <text>dexam-label-07.jpg</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="dexam-label-07.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_9e20e570-6144-4c93-8a3f-0f94a72730e4">
+               <id root="da7d361c-e7bd-4dcc-be7c-760741f1170f"/>
+               <code code="51945-4" codeSystem="2.16.840.1.113883.6.1" displayName="PACKAGE LABEL.PRINCIPAL DISPLAY PANEL"/>
+               <title>PACKAGE LABEL - PRINCIPAL DISPLAY – Dexamethasone Sodium Phosphate 5 mL Tray Label  </title>
+               <text>
+                  <paragraph>NDC 63323-165-05            16505</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Dexamethasone </content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Sodium Phosphate </content>
+                  </paragraph>
+                  <paragraph>Injection, USP</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">20 mg per 5 mL </content>
+                  </paragraph>
+                  <paragraph>(4 mg per mL*)</paragraph>
+                  <paragraph>For intramuscular or intravenous use. </paragraph>
+                  <paragraph>See insert for other routes. </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">25 x 5 mL</content>
+                  </paragraph>
+                  <paragraph>Multiple Dose Vials            Rx only</paragraph>
+                  <renderMultiMedia ID="id-1560933692" referencedObject="DDC6329B-76BD-4D3D-B8F2-83EDAC228316"/>
+               </text>
+               <effectiveTime value="20260608"/>
+               <component>
+                  <observationMedia ID="DDC6329B-76BD-4D3D-B8F2-83EDAC228316">
+                     <text>dexam-label-08.jpg</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="dexam-label-08.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_e7b02ece-d86e-43a2-a7e9-4eae1da19af4">
+               <id root="abfdbb11-4603-4353-b117-d578465b6754"/>
+               <code code="51945-4" codeSystem="2.16.840.1.113883.6.1" displayName="PACKAGE LABEL.PRINCIPAL DISPLAY PANEL"/>
+               <title>PACKAGE LABEL - PRINCIPAL DISPLAY – Dexamethasone Sodium Phosphate 30 mL Vial Label </title>
+               <text>
+                  <paragraph>NDC 63323-165-30            16530</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Dexamethasone </content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Sodium Phosphate </content>
+                  </paragraph>
+                  <paragraph>Injection, USP</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">120 mg per 30 mL</content>
+                  </paragraph>
+                  <paragraph>(4 mg per mL*)</paragraph>
+                  <paragraph>For intramuscular or </paragraph>
+                  <paragraph>intravenous use. </paragraph>
+                  <paragraph>See insert for other routes. </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">30 mL</content>
+                  </paragraph>
+                  <paragraph>Multiple Dose Vial            Rx only</paragraph>
+                  <renderMultiMedia ID="id1070382525" referencedObject="C57718B8-F849-4121-8BE6-BA36E01BBC23"/>
+               </text>
+               <effectiveTime value="20260608"/>
+               <component>
+                  <observationMedia ID="C57718B8-F849-4121-8BE6-BA36E01BBC23">
+                     <text>dexam-label-09.jpg</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="dexam-label-09.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="ID_365ad52f-0b59-4838-a4e6-a21f0dc31388">
+               <id root="7ebec995-6efc-4892-b0c5-f2f17f4c019b"/>
+               <code code="51945-4" codeSystem="2.16.840.1.113883.6.1" displayName="PACKAGE LABEL.PRINCIPAL DISPLAY PANEL"/>
+               <title>PACKAGE LABEL - PRINCIPAL DISPLAY – Dexamethasone Sodium Phosphate 30 mL Individual Carton Label </title>
+               <text>
+                  <paragraph>NDC 63323-165-30</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Dexamethasone </content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Sodium Phosphate </content>
+                  </paragraph>
+                  <paragraph>Injection, USP</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">120 mg per 30 mL </content>
+                  </paragraph>
+                  <paragraph>(4 mg per mL*)</paragraph>
+                  <paragraph>For intramuscular or intravenous use. </paragraph>
+                  <paragraph>See insert for other routes. </paragraph>
+                  <paragraph>Rx only</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">30 mL</content>
+                  </paragraph>
+                  <paragraph>Multiple Dose Vial</paragraph>
+                  <renderMultiMedia ID="id-875317559" referencedObject="BE2DB88D-9CD0-47EC-86AA-6A32D8354E8A"/>
+               </text>
+               <effectiveTime value="20260608"/>
+               <component>
+                  <observationMedia ID="BE2DB88D-9CD0-47EC-86AA-6A32D8354E8A">
+                     <text>dexam-label-10.jpg</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="dexam-label-10.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+      </structuredBody>
+   </component>
+</document>

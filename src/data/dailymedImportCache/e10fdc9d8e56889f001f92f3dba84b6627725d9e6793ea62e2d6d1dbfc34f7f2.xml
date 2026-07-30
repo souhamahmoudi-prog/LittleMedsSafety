@@ -1,0 +1,946 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="https://www.accessdata.fda.gov/spl/stylesheet/spl.xsl"?>
+<document xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 https://www.accessdata.fda.gov/spl/schema/spl.xsd">
+   <id root="0068bad9-4a85-4bdc-9768-f6669225504f"/>
+   <code code="34391-3" displayName="HUMAN PRESCRIPTION DRUG LABEL" codeSystem="2.16.840.1.113883.6.1"/>
+   <title>
+      <content styleCode="bold">PrednisoLONE Sodium Phosphate Oral </content>
+      <content styleCode="bold">Solution</content>    <br/>
+      <content styleCode="bold">℞ only</content>
+   </title>
+   <effectiveTime value="20260625"/>
+   <setId root="d1f937e7-fed5-4079-bd52-5d930b34ae9f"/>
+   <versionNumber value="2"/>
+   <author>
+      <time/>
+      <assignedEntity>
+         <representedOrganization>
+            <id extension="044940096" root="1.3.6.1.4.1.519.1"/>
+            <name>PAI Holdings, LLC dba PAI Pharma</name>
+            <assignedEntity>
+               <assignedOrganization/>
+            </assignedEntity>
+         </representedOrganization>
+      </assignedEntity>
+   </author>
+   <component>
+      <structuredBody>
+         <component>
+            <section>
+               <id root="7d0afcf5-01dc-4c1f-9a1f-3ee8d3cb0488"/>
+               <code code="48780-1" displayName="SPL listing data elements section" codeSystem="2.16.840.1.113883.6.1"/>
+               <effectiveTime value="20260625"/>
+               <subject>
+                  <manufacturedProduct>
+                     <manufacturedProduct>
+                        <code code="0121-1100" codeSystem="2.16.840.1.113883.6.69"/>
+                        <name>PrednisoLONE Sodium Phosphate</name>
+                        <formCode code="C42986" displayName="SOLUTION" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                        <asEntityWithGeneric>
+                           <genericMedicine>
+                              <name>PrednisoLONE Sodium Phosphate</name>
+                           </genericMedicine>
+                        </asEntityWithGeneric>
+                        <ingredient classCode="ACTIM">
+                           <quantity>
+                              <numerator unit="mg" value="5"/>
+                              <denominator unit="mL" value="5"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="IV021NXA9J" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>PREDNISOLONE SODIUM PHOSPHATE</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="9PHQ9Y1OLM" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>PREDNISOLONE</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="70WT22SF4B" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>SODIUM PHOSPHATE, DIBASIC, HEPTAHYDRATE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="7FLD91C86K" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>EDETATE DISODIUM</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="A2I8C7HI9T" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>METHYLPARABEN</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="059QF0KO0R" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>WATER</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="506T60A25R" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>SORBITOL</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="3980JIH2SW" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>SODIUM PHOSPHATE, MONOBASIC</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <asContent>
+                           <quantity>
+                              <numerator unit="mL" value="5"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code code="0121-1100-04" codeSystem="2.16.840.1.113883.6.69"/>
+                              <formCode code="C43169" displayName="BOTTLE" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           </containerPackagedProduct>
+                           <subjectOf>
+                              <characteristic>
+                                 <code code="SPLCMBPRDTP" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                                 <value code="C112160" displayName="Type 0: Not a Combination Product" codeSystem="2.16.840.1.113883.3.26.1.1" xsi:type="CV"/>
+                              </characteristic>
+                           </subjectOf>
+                           <subjectOf>
+                              <marketingAct>
+                                 <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                                 <statusCode code="active"/>
+                                 <effectiveTime>
+                                    <low value="20260626"/>
+                                 </effectiveTime>
+                              </marketingAct>
+                           </subjectOf>
+                        </asContent>
+                     </manufacturedProduct>
+                     <subjectOf>
+                        <approval>
+                           <id extension="NDA019157" root="2.16.840.1.113883.3.150"/>
+                           <code code="C73594" displayName="NDA" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <author>
+                              <territorialAuthority>
+                                 <territory>
+                                    <code code="USA" codeSystem="2.16.840.1.113883.5.28"/>
+                                 </territory>
+                              </territorialAuthority>
+                           </author>
+                        </approval>
+                     </subjectOf>
+                     <subjectOf>
+                        <marketingAct>
+                           <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <statusCode code="active"/>
+                           <effectiveTime>
+                              <low value="20260626"/>
+                           </effectiveTime>
+                        </marketingAct>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLFLAVOR" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value code="C73413" displayName="RASPBERRY" codeSystem="2.16.840.1.113883.3.26.1.1" xsi:type="CV"/>
+                        </characteristic>
+                     </subjectOf>
+                     <consumedIn>
+                        <substanceAdministration>
+                           <routeCode code="C38288" displayName="ORAL" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                        </substanceAdministration>
+                     </consumedIn>
+                  </manufacturedProduct>
+               </subject>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_d056acd6-adfc-459c-8cfb-292f0e53349e">
+               <id root="d4801b3f-2a83-4651-96cb-57b5b43c076f"/>
+               <code code="34089-3" codeSystem="2.16.840.1.113883.6.1" displayName="DESCRIPTION SECTION"/>
+               <title>DESCRIPTION</title>
+               <text>
+                  <paragraph>Prednisolone Sodium Phosphate Oral Solution is a dye free, colorless to light strawcolored,<br/>
+raspberry flavored solution. Each 5 mL (teaspoonful) of Prednisolone Sodium<br/>
+Phosphate Oral Solution contains 6.7 mg prednisolone sodium phosphate (5 mg prednisolone<br/>
+base) in a palatable, aqueous vehicle. Prednisolone Sodium Phosphate Oral Solution also<br/>
+contains dibasic sodium phosphate, edetate disodium, methylparaben, purified water,<br/>
+sodium biphosphate, sorbitol, natural and artificial raspberry flavor.</paragraph>
+                  <paragraph>Prednisolone sodium phosphate occurs as white or slightly yellow, friable granules or powder.<br/>
+It is freely soluble in water; soluble in methanol; slightly soluble in alcohol and in chloroform;<br/>
+and very slightly soluble in acetone and in dioxane. The chemical name of prednisolone sodium<br/>
+phosphate is: pregna-1,4-diene-3,20-dione,11,17-dihydroxy-21-(phosphonooxy)-,disodium<br/>
+salt,(11β)-. The empirical formula is C<sub>21</sub>H<sub>27</sub>Na<sub>2</sub>O<sub>8</sub>P; the molecular weight is 484.39.</paragraph>
+                  <paragraph>The chemical structure is: </paragraph>
+                  <renderMultiMedia referencedObject="MM1"/>
+                  <paragraph>Pharmacological Category: Glucocorticoid</paragraph>
+               </text>
+               <effectiveTime value="20260625"/>
+               <component>
+                  <observationMedia ID="MM1">
+                     <text>Prednisolone Sodium Phosphate Chemical Structure</text>
+                     <value xsi:type="ED" mediaType="image/jpeg">
+                        <reference value="prednisolone-sodium-phosphate-1.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_27c06864-e092-4ee4-97d9-8592217e89bd">
+               <id root="43e05c83-e4a0-467c-b774-47be2c91a286"/>
+               <code code="34090-1" codeSystem="2.16.840.1.113883.6.1" displayName="CLINICAL PHARMACOLOGY SECTION"/>
+               <title>CLINICAL PHARMACOLOGY</title>
+               <text>
+                  <paragraph>Naturally occurring glucocorticoids (hydrocortisone), which also have salt-retaining<br/>
+properties, are used as replacement therapy in adrenocortical deficiency states. Their<br/>
+synthetic analogs are primarily used for their potent anti-inflammatory effects in disorders<br/>
+of many organ systems.</paragraph>
+                  <paragraph>Prednisolone is a synthetic adrenocortical steroid drug with predominantly glucocorticoid<br/>
+properties. Some of these properties reproduce the physiological actions of endogenous<br/>
+glucocorticosteroids, but others do not necessarily reflect any of the adrenal hormones’<br/>
+normal functions; they are seen only after administration of large therapeutic doses of the<br/>
+drug. The pharmacological effects of prednisolone which are due to its glucocorticoid<br/>
+properties include: promotion of gluconeogenesis; increased deposition of glycogen in the<br/>
+liver; inhibition of the utilization of glucose; anti-insulin activity; increased catabolism of<br/>
+protein; increased lipolysis; stimulation of fat synthesis and storage; increased glomerular<br/>
+filtration rate and resulting increase in urinary excretion of urate (creatinine excretion remains<br/>
+unchanged); and increased calcium excretion.</paragraph>
+                  <paragraph>Depressed production of eosinophils and lymphocytes occurs, but erythropoiesis and<br/>
+production of polymorphonuclear leukocytes are stimulated. Inflammatory processes<br/>
+(edema, fibrin deposition, capillary dilatation, migration of leukocytes and phagocytosis)<br/>
+and the later stages of wound healing (capillary proliferation, deposition of collagen,<br/>
+cicatrization) are inhibited.</paragraph>
+                  <paragraph>Prednisolone can stimulate secretion of various components of gastric juice. Suppression<br/>
+of the production of corticotropin may lead to suppression of endogenous corticosteroids.<br/>
+Prednisolone has slight mineralocorticoid activity, whereby entry of sodium into cells and<br/>
+loss of intracellular potassium is stimulated. This is particularly evident in the kidney, where<br/>
+rapid ion exchange leads to sodium retention and hypertension.</paragraph>
+                  <paragraph>Prednisolone is rapidly and well absorbed from the gastrointestinal tract following oral<br/>
+administration. Prednisolone Sodium Phosphate Oral Solution produces a 14% higher peak<br/>
+plasma level of prednisolone which occurs 20% faster than that seen with tablets.<br/>
+Prednisolone is 70-90% protein-bound in the plasma and it is eliminated from the plasma<br/>
+with a half-life of 2 to 4 hours. It is metabolized mainly in the liver and excreted in the urine<br/>
+as sulfate and glucuronide conjugates.</paragraph>
+                  <paragraph>The systemic availability, metabolism and elimination of prednisolone after administration of<br/>
+single weight-based doses (0.8 mg/kg) of intravenous (IV) prednisolone and oral prednisone<br/>
+were reported in a small study of 19 young (23 to 34 years) and 12 elderly (65 to 89 years)<br/>
+subjects. Results showed that the systemic availability of total and unbound prednisolone, as<br/>
+well as interconversion between prednisolone and prednisone were independent of age. The<br/>
+mean unbound fraction of prednisolone was higher, and the steady-state volume of distribution<br/>
+(Vss) of unbound prednisolone was reduced in elderly patients. Plasma prednisolone<br/>
+concentrations were higher in elderly subjects, and the higher AUCs of total and unbound<br/>
+prednisolone were most likely reflective of an impaired metabolic clearance, evidenced by<br/>
+reduced fractional urinary clearance of 6b-hydroxyprednisolone. Despite these findings of higher<br/>
+total and unbound prednisolone concentrations, elderly subjects had higher AUCs of cortisol,<br/>
+suggesting that the elderly population is less sensitive to suppression of endogenous cortisol<br/>
+or their capacity for hepatic inactivation of cortisol is diminished.</paragraph>
+               </text>
+               <effectiveTime value="20260625"/>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_bcf70058-5773-4c86-bc68-f7e4db3cd5f0">
+               <id root="a8efef12-f838-4b6f-8163-232cbdd1fa22"/>
+               <code code="34067-9" codeSystem="2.16.840.1.113883.6.1" displayName="INDICATIONS &amp; USAGE SECTION"/>
+               <title>INDICATIONS AND USAGE</title>
+               <text>
+                  <paragraph>Prednisolone Sodium Phosphate Oral Solution is indicated in the following conditions:</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">1. Allergic States</content>
+                     <br/>
+Control of severe or incapacitating allergic conditions intractable to adequate trials of<br/>
+conventional treatment in adult and pediatric populations with: seasonal or perennial<br/>
+allergic rhinitis; asthma; contact dermatitis; atopic dermatitis; serum sickness; drug<br/>
+hypersensitivity reactions.<br/>
+                     <content styleCode="bold">2. Dermatologic Diseases</content>
+                     <br/>
+Pemphigus; bullous dermatitis herpetiformis; severe erythema multiforme (Stevens-Johnson<br/>
+syndrome); exfoliative erythroderma; mycosis fungoides.<br/>
+                     <content styleCode="bold">3. Edematous States</content>
+                     <br/>
+To induce diuresis or remission of proteinuria in nephrotic syndrome in adults with lupus<br/>
+erythematosus and in adults and pediatric populations, with idiopathic nephrotic syndrome,<br/>
+without uremia.<br/>
+                     <content styleCode="bold">4. Endocrine Disorders</content>
+                     <br/>
+Primary or secondary adrenocortical insufficiency (hydrocortisone or cortisone is the first<br/>
+choice; synthetic analogs may be used in conjunction with mineralocorticoids where<br/>
+applicable; in infancy mineralocorticoid supplementation is of particular importance); congenital<br/>
+adrenal hyperplasia; hypercalcemia associated with cancer; nonsuppurative thyroiditis.<br/>
+                     <content styleCode="bold">5. Gastrointestinal Diseases</content>
+                     <br/>
+To tide the patient over a critical period of the disease in: ulcerative colitis; regional enteritis.<br/>
+                     <content styleCode="bold">6. Hematologic Disorders</content>
+                     <br/>
+Idiopathic thrombocytopenic purpura in adults; selected cases of secondary thrombocytopenia;<br/>
+acquired (autoimmune) hemolytic anemia; pure red cell aplasia; Diamond-Blackfan anemia.<br/>
+                     <content styleCode="bold">7. Neoplastic Diseases</content>
+                     <br/>
+For the treatment of acute leukemia and aggressive lymphomas in adults and children.<br/>
+                     <content styleCode="bold">8. Nervous System</content>
+                     <br/>
+Acute exacerbations of multiple sclerosis.<br/>
+                     <content styleCode="bold">9. Ophthalmic Diseases</content>
+                     <br/>
+Uveitis and ocular inflammatory conditions unresponsive to topical corticosteroids; temporal<br/>
+arteritis; sympathetic ophthalmia.<br/>
+                     <content styleCode="bold">10. Respiratory Diseases</content>
+                     <br/>
+Symptomatic sarcoidosis; idiopathic eosinophilic pneumonias; fulminating or disseminated<br/>
+pulmonary tuberculosis when used concurrently with appropriate antituberculous<br/>
+chemotherapy; asthma (as distinct from allergic asthma listed above under “Allergic States”),<br/>
+hypersensitivity pneumonitis, idiopathic pulmonary fibrosis, acute exacerbations of chronic<br/>
+obstructive pulmonary disease (COPD), and Pneumocystis carinii pneumonia (PCP)<br/>
+associated with hypoxemia occurring in an HIV (+) individual who is also under treatment<br/>
+with appropriate anti- PCP antibiotics. Studies support the efficacy of systemic corticosteroids<br/>
+for the treatment of these conditions: allergic bronchopulmonary aspergillosis, idiopathic<br/>
+bronchiolitis obliterans with organizing pneumonia.<br/>
+                     <content styleCode="bold">11. Rheumatic Disorders<br/>
+                     </content>As adjunctive therapy for short term administration (to tide the patient over an acute episode<br/>
+or exacerbation) in: psoriatic arthritis; rheumatoid arthritis, including juvenile rheumatoid<br/>
+arthritis (selected cases may require low dose maintenance therapy); ankylosing spondylitis;<br/>
+acute and subacute bursitis; acute nonspecific tenosynovitis; acute gouty arthritis;<br/>
+epicondylitis. For the treatment of systemic lupus erythematosus, dermatomyositis<br/>
+(polymyositis), polymyalgia rheumatica, Sjogren’s syndrome, relapsing polychondritis, and<br/>
+certain cases of vasculitis.<br/>
+                     <content styleCode="bold">12. Miscellaneous</content>
+                     <br/>
+Tuberculous meningitis with subarachnoid block or impending block, tuberculosis with<br/>
+enlarged mediastinal lymph nodes causing respiratory difficulty, and tuberculosis with pleural<br/>
+or pericardial effusion (appropriate antituberculous chemotherapy must be used concurrently<br/>
+when treating any tuberculosis complications); Trichinosis with neurologic or myocardial<br/>
+involvement; acute or chronic solid organ rejection (with or without other agents).</paragraph>
+               </text>
+               <effectiveTime value="20260625"/>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_1d30a956-5e6a-4fe0-9778-0d94fe372c26">
+               <id root="565b3c18-6ab2-411c-9f71-0de5aaf7136b"/>
+               <code code="34070-3" codeSystem="2.16.840.1.113883.6.1" displayName="CONTRAINDICATIONS SECTION"/>
+               <title>CONTRAINDICATIONS</title>
+               <text>
+                  <paragraph>Systemic fungal infections. Hypersensitivity to the drug or any of its components.</paragraph>
+               </text>
+               <effectiveTime value="20260625"/>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_90b9e1a5-9964-4ef6-b317-c74627d39d8d">
+               <id root="a8b78a6b-69bb-4b4f-8beb-9571ceb514a8"/>
+               <code code="34071-1" codeSystem="2.16.840.1.113883.6.1" displayName="WARNINGS SECTION"/>
+               <title>WARNINGS</title>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">General</content>
+                     <br/>
+In patients on corticosteroid therapy subjected to unusual stress, increased dosage of rapidly<br/>
+acting corticosteroids before, during and after the stressful situation is indicated.</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Cardio-renal</content>
+                     <br/>
+Average and large doses of hydrocortisone or cortisone can cause elevation of blood<br/>
+pressure, salt and water retention, and increased excretion of potassium. These effects are<br/>
+less likely to occur with the synthetic derivatives except when used in large doses. Dietary<br/>
+salt restriction and potassium supplementation may be necessary. All corticosteroids<br/>
+increase calcium excretion.</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Endocrine</content>
+                     <br/>
+Corticosteroids can produce reversible hypothalamic-pituitary adrenal (HPA) axis suppression<br/>
+with the potential for glucocorticosteroid insufficiency after withdrawal of treatment.<br/>
+Metabolic clearance of corticosteroids is decreased in hypothyroid patients and increased<br/>
+in hyperthyroid patients. Changes in thyroid status of the patient may necessitate adjustment<br/>
+in dosage.</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Immunosuppression and Increased Risk of Infection</content>
+                     <br/>
+Corticosteroids, including Prednisolone Sodium Phosphate Oral Solution, suppress the<br/>
+immune system and increase the risk of infection with any pathogen, including viral,<br/>
+bacterial, fungal, protozoan, or helminthic pathogens. Corticosteroids can:<br/>
+• Reduce resistance to new infections<br/>
+• Exacerbate existing infections<br/>
+• Increase the risk of disseminated infections<br/>
+• Increase the risk of reactivation or exacerbation of latent infections<br/>
+• Mask some signs of infection<br/>
+Corticosteroid-associated infections can be mild but can be severe and at times fatal. The<br/>
+rate of infectious complications increases with increasing corticosteroid dosages.<br/>
+Monitor for the development of infection and consider Prednisolone Sodium Phosphate Oral<br/>
+Solution withdrawal or dosage reduction as needed.</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">
+                        <content styleCode="italics">Tuberculosis</content>
+                     </content>
+                     <br/>
+If Prednisolone Sodium Phosphate Oral Solution is used to treat a condition in patients with<br/>
+latent tuberculosis or tuberculin reactivity, reactivation of the disease may occur. Closely<br/>
+monitor such patients for reactivation. During prolonged Prednisolone Sodium Phosphate<br/>
+Oral Solution therapy, patients with latent tuberculosis or tuberculin reactivity should receive<br/>
+chemoprophylaxis.</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">
+                        <content styleCode="italics">Varicella Zoster and Measles Viral Infections</content>
+                     </content>
+                     <br/>
+Varicella and measles can have a serious or even fatal course in non-immune patients taking<br/>
+corticosteroids, including Prednisolone Sodium Phosphate Oral Solution. In corticosteroid-<br/>
+treated patients who have not had these diseases or are non-immune, particular care should<br/>
+be taken to avoid exposure to varicella and measles:<br/>
+• If a Prednisolone Sodium Phosphate Oral Solution-treated patient is exposed to<br/>varicella, prophylaxis with varicella zoster immune globulin (VZIG) may be indicated.<br/>If varicella develops, treatment with antiviral agents may be considered.<br/>
+•If a Prednisolone Sodium Phosphate Oral Solution-treated patient is exposed to<br/>measles, prophylaxis with immunoglobulin (IG) may be indicated.</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">
+                        <content styleCode="italics">Hepatitis B Virus Reactivation</content>
+                     </content>
+                     <br/>
+Hepatitis B virus reactivation can occur in patients who are hepatitis B carriers treated with<br/>
+immunosuppressive dosages of corticosteroids, including Prednisolone Sodium Phosphate<br/>
+Oral Solution. Reactivation can also occur infrequently in corticosteroid-treated patients who<br/>
+appear to have resolved hepatitis B infection.<br/>
+Screen patients for hepatitis B infection before initiating immunosuppressive (e.g.,<br/>
+prolonged) treatment with Prednisolone Sodium Phosphate Oral Solution. For patients who<br/>
+show evidence of hepatitis B infection, recommend consultation with physicians with<br/>
+expertise in managing hepatitis B regarding monitoring and consideration for hepatitis B<br/>
+antiviral therapy.</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">
+                        <content styleCode="italics">Fungal Infections</content>
+                     </content>
+                     <br/>
+Corticosteroids, including Prednisolone Sodium Phosphate Oral Solution, may exacerbate<br/>
+systemic fungal infections; therefore, avoid Prednisolone Sodium Phosphate Oral Solution<br/>
+use in the presence of such infections unless Prednisolone Sodium Phosphate Oral Solution<br/>
+is needed to control drug reactions. For patients on chronic Prednisolone Sodium Phosphate<br/>
+Oral Solution therapy who develop systemic fungal infections, Prednisolone Sodium<br/>
+Phosphate Oral Solution withdrawal or dosage reduction is recommended.</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">
+                        <content styleCode="italics">Amebiasis</content>
+                     </content>
+                     <br/>
+Corticosteroids, including Prednisolone Sodium Phosphate Oral Solution, may activate latent<br/>
+amebiasis. Therefore, it is recommended that latent amebiasis or active amebiasis be ruled<br/>
+out before initiating Prednisolone Sodium Phosphate Oral Solution in patients who have<br/>
+spent time in the tropics or patients with unexplained diarrhea.</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">
+                        <content styleCode="italics">Strongyloides Infestation</content>
+                     </content>
+                     <br/>
+Corticosteroids, including Prednisolone Sodium Phosphate Oral Solution, should be used<br/>
+with great care in patients with known or suspected Strongyloides (threadworm) infestation.<br/>
+In such patients, corticosteroid-induced immunosuppression may lead to Strongyloides<br/>
+hyperinfection and dissemination with widespread larval migration, often accompanied by<br/>
+severe enterocolitis and potentially fatal gram-negative septicemia.</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">
+                        <content styleCode="italics">Cerebral Malaria</content>
+                     </content>
+                     <br/>
+Avoid corticosteroids, including Prednisolone Sodium Phosphate Oral Solution, in patients<br/>
+with cerebral malaria.</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Ophthalmic<br/>
+                     </content>Use of corticosteroids may produce posterior subcapsular cataracts, glaucoma with possible<br/>
+damage to the optic nerves, and may enhance the establishment of secondary ocular<br/>
+infections due to bacteria, fungi or viruses. The use of oral corticosteroids is not<br/>
+recommended in the treatment of optic neuritis and may lead to an increase in the risk of<br/>
+new episodes. Corticosteroids should not be used in active ocular herpes simplex.</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Kaposi’s Sarcoma<br/>
+                     </content>Kaposi’s sarcoma has been reported to occur in patients receiving corticosteroid therapy,<br/>
+most often for chronic conditions. Discontinuation of corticosteroids may result in clinical<br/>
+improvement of Kaposi’s sarcoma.</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Vaccination</content>
+                     <br/>
+                     <content styleCode="bold">Administration of live or live, attenuated vaccines is contraindicated in patients receiving<br/>
+immunosuppressive doses of corticosteroids. Killed or inactivated vaccines may be<br/>
+administered, however, the response to such vaccines cannot be predicted.</content> Immunization<br/>
+procedures may be undertaken in patients who are receiving corticosteroids as replacement<br/>
+therapy, e.g., for Addison’s disease.</paragraph>
+               </text>
+               <effectiveTime value="20260625"/>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_25503b85-2786-4d15-b5b4-733deb975c5e">
+               <id root="74d35732-096e-46cc-a089-fd934037541d"/>
+               <code code="42232-9" codeSystem="2.16.840.1.113883.6.1" displayName="PRECAUTIONS SECTION"/>
+               <title>PRECAUTIONS</title>
+               <text/>
+               <effectiveTime value="20260625"/>
+               <component>
+                  <section ID="LINK_19977e28-4437-4e2e-8272-0762c8db4ef4">
+                     <id root="e57b1b9a-2114-4ee6-8762-c186268b18d7"/>
+                     <code code="34072-9" codeSystem="2.16.840.1.113883.6.1" displayName="GENERAL PRECAUTIONS SECTION"/>
+                     <title>General</title>
+                     <text>
+                        <paragraph>The lowest possible dose of corticosteroid should be used to control the condition under<br/>
+treatment, and when reduction in dosage is possible, the reduction should be gradual.<br/>
+Since complications of treatment with glucocorticoids are dependent on the size of the<br/>
+dose and the duration of treatment, a risk/benefit decision must be made in each individual<br/>
+case as to dose and duration of treatment and as to whether daily or intermittent therapy<br/>
+should be used.<br/>
+There is an enhanced effect of corticosteroids in patients with hypothyroidism and in those<br/>
+with cirrhosis.</paragraph>
+                        <paragraph>
+                           <content styleCode="bold">Cardio-renal</content>
+                           <br/>
+As sodium retention with resultant edema and potassium loss may occur in patients<br/>
+receiving corticosteroids, these agents should be used with caution in patients with<br/>
+hypertension, congestive heart failure, or renal insufficiency.</paragraph>
+                        <paragraph>
+                           <content styleCode="bold">Endocrine</content>
+                           <br/>
+Drug-induced secondary adrenocortical insufficiency may be minimized by gradual reduction<br/>
+of dosage. This type of relative insufficiency may persist for months after discontinuation<br/>
+of therapy; therefore, in any situation of stress occurring during that period, hormone therapy<br/>
+should be reinstituted. Since mineralocorticoid secretion may be impaired, salt and/or a<br/>
+mineralocorticoid should be administered concurrently.</paragraph>
+                        <paragraph>
+                           <content styleCode="bold">Gastrointestinal</content>
+                           <br/>
+Steroids should be used with caution in nonspecific ulcerative colitis, if there is a probability<br/>
+of impending perforation, abscess or other pyogenic infection; diverticulitis; fresh intestinal<br/>
+anastomoses; active or latent peptic ulcer.<br/>
+Signs of peritoneal irritation following gastrointestinal perforation in patients receiving<br/>
+corticosteroids may be minimal or absent.</paragraph>
+                        <paragraph>
+                           <content styleCode="bold">Musculoskeletal</content>
+                           <br/>
+Corticosteroids decrease bone formation and increase bone resorption both through their<br/>
+effect on calcium regulation (i.e., decreasing absorption and increasing excretion) and<br/>
+inhibition of osteoblast function. This, together with a decrease in the protein matrix of the<br/>
+bone secondary to an increase in protein catabolism, and reduced sex hormone production,<br/>
+may lead to inhibition of bone growth in children and adolescents and the development of<br/>
+osteoporosis at any age. Special consideration should be given to patients at increased risk<br/>
+of osteoporosis (i.e., postmenopausal women) before initiating corticosteroid therapy.</paragraph>
+                        <paragraph>
+                           <content styleCode="bold">Neuro-psychiatric</content>
+                           <br/>
+Although controlled clinical trials have shown corticosteroids to be effective in speeding<br/>
+the resolution of acute exacerbations of multiple sclerosis, they do not show that they<br/>
+affect the ultimate outcome or natural history of the disease. The studies do show that<br/>
+relatively high doses of corticosteroids are necessary to demonstrate a significant effect.<br/>
+(See <content styleCode="bold">
+                              <linkHtml href="#LINK_a4827273-8bcd-490a-ab63-9c38e21a80c7">DOSAGE AND ADMINISTRATION</linkHtml>
+                           </content>)<br/>
+An acute myopathy has been observed with the use of high doses of corticosteroids, most<br/>
+often occurring in patients with disorders of neuromuscular transmission (e.g., myasthenia<br/>
+gravis), or in patients receiving concomitant therapy with neuromuscular blocking drugs<br/>
+(e.g., pancuronium). This acute myopathy is generalized, may involve ocular and respiratory<br/>
+muscles, and may result in quadriparesis. Elevation of creatinine kinase may occur. Clinical<br/>
+improvement or recovery after stopping corticosteroids may require weeks to years.<br/>
+Psychic derangements may appear when corticosteroids are used, ranging from euphoria,<br/>
+insomnia, mood swings, personality changes, and severe depression, to frank psychotic<br/>
+manifestations. Also, existing emotional instability or psychotic tendencies may be<br/>
+aggravated by corticosteroids.</paragraph>
+                        <paragraph>
+                           <content styleCode="bold">Ophthalmic</content>
+                           <br/>
+Intraocular pressure may become elevated in some individuals. If steroid therapy is<br/>
+continued for more than 6 weeks, intraocular pressure should be monitored.</paragraph>
+                        <paragraph>
+                           <content styleCode="bold">Information for Patients</content>
+                           <br/>
+Patients should be warned not to discontinue the use of Prednisolone Sodium Phosphate<br/>
+Oral Solution abruptly or without medical supervision, to advise any medical attendants that<br/>
+they are taking Prednisolone Sodium Phosphate Oral Solution and to seek medical advice<br/>
+at once should they develop fever or other signs of infection.<br/>
+Persons who are on immunosuppressant doses of corticosteroids should be warned to<br/>
+avoid exposure to chicken pox or measles. Patients should also be advised that if they are<br/>
+exposed, medical advice should be sought without delay.</paragraph>
+                     </text>
+                     <effectiveTime value="20260625"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_a3dbbb6f-d62c-42f0-878f-dd0daddc09df">
+                     <id root="85a4180d-ed29-4bd8-b092-319f71136a5d"/>
+                     <code code="34073-7" codeSystem="2.16.840.1.113883.6.1" displayName="DRUG INTERACTIONS SECTION"/>
+                     <title>Drug Interactions</title>
+                     <text>
+                        <paragraph>Drugs such as barbiturates, phenytoin, ephedrine, and rifampin, which induce hepatic<br/>
+microsomal drug metabolizing enzyme activity may enhance metabolism of prednisolone<br/>
+and require that the dosage of Prednisolone Sodium Phosphate Oral Solution be increased.<br/>
+Increased activity of both cyclosporin and corticosteroids may occur when the two are used<br/>
+concurrently. Convulsions have been reported with this concurrent use.<br/>
+Estrogens may decrease the hepatic metabolism of certain corticosteroids thereby increasing<br/>
+their effect.<br/>
+Ketoconazole has been reported to decrease the metabolism of certain corticosteroids by<br/>
+up to 60% leading to an increased risk of corticosteroid side effects.<br/>
+Coadministration of corticosteroids and warfarin usually results in inhibition of response to<br/>
+warfarin, although there have been some conflicting reports. Therefore, coagulation indices<br/>
+should be monitored frequently to maintain the desired anticoagulant effect.<br/>
+Concomitant use of aspirin (or other non-steroidal anti-inflammatory agents) and<br/>
+corticosteroids increases the risk of gastrointestinal side effects. Aspirin should be used<br/>
+cautiously in conjunction with corticosteroids in hypoprothrombinemia. The clearance of<br/>
+salicylates may be increased with concurrent use of corticosteroids.<br/>
+When corticosteroids are administered concomitantly with potassium-depleting agents<br/>
+(i.e., diuretics, amphotericin-B), patients should be observed closely for development of<br/>
+hypokalemia. Patients on digitalis glycosides may be at increased risk of arrhythmias due<br/>
+to hypokalemia.<br/>
+Concomitant use of anticholinesterase agents and corticosteroids may produce severe<br/>
+weakness in patients with myasthenia gravis. If possible, anticholinesterase agents should<br/>
+be withdrawn at least 24 hours before initiating corticosteroid therapy.<br/>
+Due to inhibition of antibody response, patients on prolonged corticosteroid therapy may<br/>
+exhibit a diminished response to toxoids and live or inactivated vaccines. Corticosteroids<br/>
+may also potentiate the replication of some organisms contained in live attenuated vaccines.<br/>
+If possible, routine administration of vaccines or toxoids should be deferred until<br/>
+corticosteroid therapy is discontinued.<br/>
+Because corticosteroids may increase blood glucose concentrations, dosage adjustments<br/>
+of antidiabetic agents may be required.<br/>
+Corticosteroids may suppress reactions to skin tests.</paragraph>
+                     </text>
+                     <effectiveTime value="20260625"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_64e28a02-de11-402e-9051-b3d5b4d40971">
+                     <id root="17ec1ac5-9a9e-413b-9032-201ea39e04f1"/>
+                     <code code="42228-7" codeSystem="2.16.840.1.113883.6.1" displayName="PREGNANCY SECTION"/>
+                     <title>Pregnancy</title>
+                     <text>
+                        <paragraph>
+                           <content styleCode="bold">
+                              <content styleCode="italics">Teratogenic Effects</content>
+                              <br/>
+                           </content>Pregnancy Category C<br/>
+Prednisolone has been shown to be teratogenic in many species when given in doses<br/>
+equivalent to the human dose. Animal studies in which prednisolone has been given to<br/>
+pregnant mice, rats, and rabbits have yielded an increased incidence of cleft palate in the<br/>
+offspring. There are no adequate and well controlled studies in pregnant women. Prednisolone<br/>
+Sodium Phosphate Oral Solution should be used during pregnancy only if the potential benefit<br/>
+justifies the potential risk to the fetus. Infants born to mothers who have received<br/>
+corticosteroids during pregnancy should be carefully observed for signs of hypoadrenalism.</paragraph>
+                     </text>
+                     <effectiveTime value="20260625"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_66de7abc-752a-4ecc-87e9-0fed74709a82">
+                     <id root="302e570b-141e-48a7-8b7f-ce9c5a0398bd"/>
+                     <code code="34080-2" codeSystem="2.16.840.1.113883.6.1" displayName="NURSING MOTHERS SECTION"/>
+                     <title>Nursing Mothers</title>
+                     <text>
+                        <paragraph>Systemically administered corticosteroids appear in human milk and could suppress growth,<br/>
+interfere with endogenous corticosteroid production, or cause other untoward effects.<br/>
+Caution should be exercised when Prednisolone Sodium Phosphate Oral Solution is<br/>
+administered to a nursing woman.</paragraph>
+                     </text>
+                     <effectiveTime value="20260625"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_dfb71045-a35a-453f-9e16-802cbad04ea6">
+                     <id root="36214e51-4c96-4d6c-ab13-1d304eada0fd"/>
+                     <code code="34081-0" codeSystem="2.16.840.1.113883.6.1" displayName="PEDIATRIC USE SECTION"/>
+                     <title>Pediatric Use</title>
+                     <text>
+                        <paragraph>The efficacy and safety of prednisolone in the pediatric population are based on the well-<br/>
+established course of effect of corticosteroids which is similar in pediatric and adult<br/>
+populations. Published studies provide evidence of efficacy and safety in pediatric patients<br/>
+for the treatment of nephrotic syndrome (&gt;2 years of age), and aggressive lymphomas and<br/>
+leukemias (&gt;1 month of age). However, some of these conclusions and other indications<br/>
+for pediatric use of corticosteroid, e.g., severe asthma and wheezing, are based on adequate<br/>
+and well-controlled trials conducted in adults, on the premises that the course of the diseases<br/>
+and their pathophysiology are considered to be substantially similar in both populations.<br/>
+The adverse effects of prednisolone in pediatric patients are similar to those in adults (see<br/>
+                           <linkHtml href="#LINK_d4085c63-319a-4799-bb8c-a72939b60135">ADVERSE REACTIONS</linkHtml>). Like adults, pediatric patients should be carefully observed with<br/>
+frequent measurements of blood pressure, weight, height, intraocular pressure, and clinical<br/>
+evaluation for the presence of infection, psychosocial disturbances, thromboembolism,<br/>
+peptic ulcers, cataracts, and osteoporosis.<br/>
+Children who are treated with corticosteroids by any route, including systemically<br/>
+administered corticosteroids, may experience a decrease in their growth velocity. This<br/>
+negative impact of corticosteroids on growth has been observed at low systemic doses and<br/>
+in the absence of laboratory evidence of HPA axis suppression (i.e., cosyntropin stimulation<br/>
+and basal cortisol plasma levels). Growth velocity may therefore be a more sensitive indicator<br/>
+of systemic corticosteroid exposure in children than some commonly used tests of HPA<br/>
+axis function. The linear growth of children treated with corticosteroids by any route should<br/>
+be monitored, and the potential growth effects of prolonged treatment should be weighed<br/>
+against clinical benefits obtained and the availability of other treatment alternatives. In order<br/>
+to minimize the potential growth effects of corticosteroids, children should be titrated to the<br/>
+lowest effective dose.</paragraph>
+                     </text>
+                     <effectiveTime value="20260625"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_a4c82d25-c8f9-402c-b7ab-829f29cf4755">
+                     <id root="795ff518-1f7a-405f-923b-bfc0eb3bce11"/>
+                     <code code="34082-8" codeSystem="2.16.840.1.113883.6.1" displayName="GERIATRIC USE SECTION"/>
+                     <title>Geriatric Use</title>
+                     <text>
+                        <paragraph>Clinical studies of Prednisolone Sodium Phosphate Oral Solution did not include sufficient<br/>
+numbers of subjects aged 65 and over to determine whether they respond differently from<br/>
+younger subjects. Other reported clinical experience with prednisolone sodium phosphate<br/>
+has not identified differences in responses between the elderly and younger patients.<br/>
+However, the incidence of corticosteroid-induced side effects may be increased in geriatric<br/>
+patients and appear to be dose-related. Osteoporosis is the most frequently encountered<br/>
+complication, which occurs at a higher incidence rate in corticosteroid-treated geriatric<br/>
+patients as compared to younger populations and in age-matched controls. Losses of bone<br/>
+mineral density appear to be greatest early on in the course of treatment and may recover<br/>
+over time after steroid withdrawal or use of lower doses (i.e., ≤ 5 mg/day). Prednisolone<br/>
+doses of 7.5 mg/day or higher have been associated with an increased relative risk of both<br/>
+vertebral and nonvertebral fractures, even in the presence of higher bone density compared<br/>
+to patients with involutional osteoporosis.<br/>
+Routine screening of geriatric patients, including regular assessments of bone mineral<br/>
+density and institution of fracture prevention strategies, along with regular review of<br/>
+prednisolone indication should be undertaken to minimize complications and keep the<br/>
+prednisolone dose at the lowest acceptable level. Co-administration of bisphosphonates has<br/>
+been shown to retard the rate of bone loss in corticosteroid-treated males and<br/>
+postmenopausal females, and these agents are recommended in the prevention and<br/>
+treatment of corticosteroid-induced osteoporosis.<br/>
+It has been reported that equivalent weight-based doses yield higher total and unbound<br/>
+prednisolone plasma concentrations and reduced renal and non-renal clearance in elderly<br/>
+patients compared to younger populations. However, it is not clear whether dosing reductions<br/>
+would be necessary in elderly patients, since these pharmacokinetic alterations may be offset<br/>
+by age-related differences in responsiveness of target organs and/or less pronounced<br/>
+suppression of adrenal release of cortisol. Dose selection for an elderly patient should be<br/>
+cautious, usually starting at the low end of the dosing range, reflecting the greater frequency of<br/>
+decreased hepatic, renal, or cardiac function, and of concomitant disease or other drug therapy.<br/>
+This drug is known to be substantially excreted by the kidney, and the risk of toxic reactions<br/>
+to this drug may be greater in patients with impaired renal function. Because elderly patients<br/>
+are more likely to have decreased renal function, care should be taken in dose selection,<br/>
+and it may be useful to monitor renal function (see <linkHtml href="#LINK_27c06864-e092-4ee4-97d9-8592217e89bd">CLINICAL PHARMACOLOGY</linkHtml>).</paragraph>
+                     </text>
+                     <effectiveTime value="20260625"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_d4085c63-319a-4799-bb8c-a72939b60135">
+               <id root="e2382caf-deea-4083-b78a-ce2293a3fb1c"/>
+               <code code="34084-4" codeSystem="2.16.840.1.113883.6.1" displayName="ADVERSE REACTIONS SECTION"/>
+               <title>ADVERSE REACTIONS</title>
+               <text>
+                  <paragraph>(listed alphabetically under each subsection):</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Cardiovascular:</content> Hypertrophic cardiomyopathy in premature infants.</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Dermatologic: </content>Facial erythema; increased sweating; impaired wound healing; may suppress<br/>
+reactions to skin tests; petechiae and ecchymoses; thin fragile skin; urticaria; edema.</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Endocrine:</content> Decreased carbohydrate tolerance; development of cushingoid state; hirsutism;<br/>
+increased requirements for insulin or oral hypoglycemic agents in diabetic patients;<br/>
+manifestations of latent diabetes mellitus; menstrual irregularities; secondary adrenocortical<br/>
+and pituitary unresponsiveness, particularly in times of stress, as in trauma, surgery or<br/>
+illness; suppression of growth in children.</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Fluid and Electrolyte Disturbances</content>: Congestive heart failure in susceptible patients; fluid<br/>
+retention; hypertension; hypokalemic alkalosis; potassium loss; sodium retention.</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Gastrointestinal: </content>Abdominal distention; elevation in serum liver enzyme levels (usually<br/>
+reversible upon discontinuation); pancreatitis; peptic ulcer with possible perforation and<br/>
+hemorrhage; ulcerative esophagitis.</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Metabolic:</content> Negative nitrogen balance due to protein catabolism.</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Musculoskeletal:</content> Aseptic necrosis of femoral and humeral heads; loss of muscle mass;<br/>
+muscle weakness; osteoporosis; pathologic fracture of long bones; steroid myopathy; tendon<br/>
+rupture; vertebral compression fractures.</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Neurological:</content> Convulsions; headache; increased intracranial pressure with papilledema<br/>
+(pseudotumor cerebri) usually following discontinuation of treatment; psychic disorders; vertigo.</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Ophthalmic:</content> Exophthalmos; glaucoma; increased intraocular pressure; posterior<br/>
+subcapsular cataracts.</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Other:</content> Increased appetite; malaise; nausea; weight gain.</paragraph>
+                  <paragraph>To report SUSPECTED ADVERSE REACTIONS, contact PAI Pharma at 1-800-845-8210 or FDA at<br/>
+1-800-FDA-1088 or www.fda.gov/medwatch.</paragraph>
+               </text>
+               <effectiveTime value="20260625"/>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_e9d501a2-0f55-46b5-8105-332e3a78084d">
+               <id root="7e296b5b-0df5-43d8-b35d-df71492919ed"/>
+               <code code="34088-5" codeSystem="2.16.840.1.113883.6.1" displayName="OVERDOSAGE SECTION"/>
+               <title>OVERDOSAGE</title>
+               <text>
+                  <paragraph>The effects of accidental ingestion of large quantities of prednisolone over a very short period<br/>
+of time have not been reported, but prolonged use of the drug can produce mental<br/>
+symptoms, moon face, abnormal fat deposits, fluid retention, excessive appetite, weight<br/>
+gain, hypertrichosis, acne, striae, ecchymosis, increased sweating, pigmentation, dry scaly<br/>
+skin, thinning scalp hair, increased blood pressure, tachycardia, thrombophlebitis, decreased<br/>
+resistance to infection, negative nitrogen balance with delayed bone and wound healing,<br/>
+headache, weakness, menstrual disorders, accentuated menopausal symptoms, neuropathy,<br/>
+fractures, osteoporosis, peptic ulcer, decreased glucose tolerance, hypokalemia, and adrenal<br/>
+insufficiency. Hepatomegaly and abdominal distention have been observed in children.</paragraph>
+                  <paragraph>Treatment of acute overdosage is by immediate gastric lavage or emesis followed by<br/>
+supportive and symptomatic therapy. For chronic overdosage in the face of severe disease<br/>
+requiring continuous steroid therapy the dosage of prednisolone may be reduced only<br/>
+temporarily, or alternate day treatment may be introduced.</paragraph>
+               </text>
+               <effectiveTime value="20260625"/>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_a4827273-8bcd-490a-ab63-9c38e21a80c7">
+               <id root="ff769179-958e-4f84-bdf4-cd71ece40bf5"/>
+               <code code="34068-7" codeSystem="2.16.840.1.113883.6.1" displayName="DOSAGE &amp; ADMINISTRATION SECTION"/>
+               <title>DOSAGE AND ADMINISTRATION</title>
+               <text>
+                  <paragraph>The initial dosage of Prednisolone Sodium Phosphate Oral Solution may vary from 5 mL to<br/>
+60 mL (5 to 60 mg prednisolone base) per day depending on the specific disease entity<br/>
+being treated. In situations of less severity, lower doses will generally suffice while in selected<br/>
+patients higher initial doses may be required. The initial dosage should be maintained or<br/>
+adjusted until a satisfactory response is noted. If after a reasonable period of time, there is<br/>
+a lack of satisfactory clinical response, Prednisolone Sodium Phosphate Oral Solution should<br/>
+be discontinued and the patient placed on other appropriate therapy. <content styleCode="bold">IT SHOULD BE<br/>
+EMPHASIZED THAT DOSAGE REQUIREMENTS ARE VARIABLE AND MUST BE<br/>
+INDIVIDUALIZED ON THE BASIS OF THE DISEASE UNDER TREATMENT AND THE<br/>
+RESPONSE OF THE PATIENT. </content>After a favorable response is noted, the proper maintenance<br/>
+dosage should be determined by decreasing the initial drug dosage in small decrements at<br/>
+appropriate time intervals until the lowest dosage which will maintain an adequate clinical<br/>
+response is reached. It should be kept in mind that constant monitoring is needed in regard<br/>
+to drug dosage. Included in the situations which may make dosage adjustments necessary<br/>
+are changes in clinical status secondary to remissions or exacerbations in the disease<br/>
+process, the patient’s individual drug responsiveness, and the effect of patient exposure to<br/>
+stressful situations not directly related to the disease entity under treatment; in this latter<br/>
+situation it may be necessary to increase the dosage of Prednisolone Sodium Phosphate<br/>
+Oral Solution for a period of time consistent with the patient’s condition. If after long term<br/>
+therapy the drug is to be stopped, it is recommended that it be withdrawn gradually rather<br/>
+than abruptly.</paragraph>
+                  <paragraph>In the treatment of acute exacerbations of multiple sclerosis, daily doses of 200 mg of<br/>
+prednisolone for a week followed by 80 mg every other day or 4 to 8 mg dexamethasone<br/>
+every other day for one month have been shown to be effective.</paragraph>
+                  <paragraph>In pediatric patients, the initial dose of Prednisolone Sodium Phosphate Oral Solution<br/>
+may vary depending on the specific disease entity being treated. The range of initial doses<br/>
+is 0.14 to 2 mg/kg/day in three or four divided doses (4 to 60 mg/m<sup>2</sup>bsa/day).</paragraph>
+                  <paragraph>The standard regimen used to treat nephrotic syndrome in pediatric patients is 60 mg/m2/day<br/>
+given in three divided doses for 4 weeks, followed by 4 weeks of single dose alternate-day<br/>
+therapy at 40 mg/m<sup>2</sup>/day.</paragraph>
+                  <paragraph>The National Heart, Lung, and Blood Institute (NHLBI) recommended dosing for systemic<br/>
+prednisone, prednisolone or methylprednisolone in children whose asthma is uncontrolled<br/>
+by inhaled corticosteroids and long-acting bronchodilators is 1-2 mg/kg/day in single or<br/>
+divided doses. It is further recommended that short course, or “burst” therapy, be continued<br/>
+until a child achieves a peak expiratory flow rate of 80% of his or her personal best or<br/>
+symptoms resolve. This usually requires 3 to 10 days of treatment, although it can take<br/>
+longer. There is no evidence that tapering the dose after improvement will prevent a relapse.</paragraph>
+                  <paragraph>
+                     <content styleCode="italics">For the purpose of comparison, the following is the equivalent milligram dosage of the<br/>
+various glucocorticoids:<br/>
+                     </content>
+                  </paragraph>
+                  <table width="450.2px">
+                     <col/>
+                     <col/>
+                     <col/>
+                     <col/>
+                     <tbody>
+                        <tr>
+                           <td styleCode=" Botrule Toprule Lrule Rrule"> <content styleCode="italics">Cortisone, 25</content>
+                           </td>
+                           <td styleCode=" Botrule Toprule Lrule Rrule">
+                              <content styleCode="italics"> Triamcinolone, 4</content>
+                           </td>
+                           <td styleCode=" Botrule Toprule Lrule Rrule">
+                              <content styleCode="italics"> Hydrocortisone, 20</content>
+                           </td>
+                           <td styleCode=" Botrule Toprule Lrule Rrule">
+                              <content styleCode="italics">Paramethasone, 2 </content>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td styleCode=" Botrule Toprule Lrule Rrule">
+                              <content styleCode="italics"> Prednisolone, 5</content>
+                           </td>
+                           <td styleCode=" Botrule Toprule Lrule Rrule">
+                              <content styleCode="italics"> Betamethasone, 0.75</content>
+                           </td>
+                           <td styleCode=" Botrule Toprule Lrule Rrule">
+                              <content styleCode="italics"> Prednisolone, 5</content>
+                           </td>
+                           <td styleCode=" Botrule Toprule Lrule Rrule">
+                              <content styleCode="italics">Dexamethasone, 0.75</content>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td styleCode=" Botrule Toprule Lrule Rrule">
+                              <content styleCode="italics"> Methylprednisolone, 4</content>
+                           </td>
+                           <td styleCode=" Botrule Toprule Lrule Rrule">
+                              <content styleCode="italics"> </content>
+                           </td>
+                           <td styleCode=" Botrule Toprule Lrule Rrule">
+                              <content styleCode="italics"> </content>
+                           </td>
+                           <td styleCode=" Botrule Toprule Lrule Rrule">
+                              <content styleCode="italics"> </content>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <content styleCode="italics">These dose relationships apply only to oral or intravenous administration of these compounds.<br/>
+When these substances or their derivatives are injected intramuscularly or into joint spaces,<br/>
+their relative properties may be greatly altered.</content>
+                  <br/>
+               </text>
+               <effectiveTime value="20260625"/>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_782e520b-35b9-4723-aa89-aa2c0fb4e63d">
+               <id root="d91e06df-f498-4ee5-b6b8-df8bff98fd68"/>
+               <code code="34069-5" codeSystem="2.16.840.1.113883.6.1" displayName="HOW SUPPLIED SECTION"/>
+               <title>HOW SUPPLIED</title>
+               <text>
+                  <paragraph>Prednisolone Sodium Phosphate Oral Solution is a colorless to light straw-colored, raspberry<br/>
+flavored solution containing 6.7 mg prednisolone sodium phosphate (5 mg prednisolone<br/>
+base) per 5 mL (teaspoonful).</paragraph>
+                  <paragraph>NDC 0121-1100-04<br/>
+120 mL bottle</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Storage and Handling<br/>
+Store at 4°-25°C (39°-77°F). May be refrigerated. Keep tightly closed and out of the<br/>
+reach of children.</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Distributed by:<br/>
+                     </content>PAI Pharma<br/>
+Greenville, SC 29605<br/>
+www.paipharma.com</paragraph>
+                  <paragraph>Code 1231C00<br/>
+Rev. 03/2026</paragraph>
+               </text>
+               <effectiveTime value="20260625"/>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_d91c35c8-e140-4058-a608-985117e8585f">
+               <id root="3b67d5e9-6588-41a2-90f0-0e064ece2af6"/>
+               <code code="51945-4" codeSystem="2.16.840.1.113883.6.1" displayName="PACKAGE LABEL.PRINCIPAL DISPLAY PANEL"/>
+               <title>PRINCIPAL DISPLAY PANEL</title>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">NDC</content> 0121-<content styleCode="bold">1100</content>-04<br/>
+                     <content styleCode="bold">PrednisoLONE Sodium Phosphate Oral Solution,<br/>
+5 mg/5 mL</content>
+                     <br/>
+NONALCOHOLIC, DYE FREE, SUGAR FREE<br/>
+Rx only<br/>
+120 mL<br/>
+                     <content styleCode="bold">PAI Pharma</content>
+                  </paragraph>
+                  <renderMultiMedia referencedObject="MM2"/>
+               </text>
+               <effectiveTime value="20260625"/>
+               <component>
+                  <observationMedia ID="MM2">
+                     <text>120mL-bottle</text>
+                     <value xsi:type="ED" mediaType="image/jpeg">
+                        <reference value="prednisolone-sodium-phosphate-2.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+      </structuredBody>
+   </component>
+</document>

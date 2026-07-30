@@ -1,0 +1,559 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="https://www.accessdata.fda.gov/spl/stylesheet/spl.xsl" type="text/xsl"?>
+<document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 https://www.accessdata.fda.gov/spl/schema/spl.xsd">
+   <id root="55f8f71f-4c2c-6161-e063-6394a90a6a8e"/>
+   <code code="34390-5" codeSystem="2.16.840.1.113883.6.1" displayName="HUMAN OTC DRUG LABEL"/>
+   <title>Sleep Aid</title>
+   <effectiveTime value="20260706"/>
+   <setId root="a39e2bd6-3d0a-642b-e053-2995a90a42a0"/>
+   <versionNumber value="4"/>
+   <author>
+      <time/>
+      <assignedEntity>
+         <representedOrganization>
+            <id root="1.3.6.1.4.1.519.1" extension="606221443"/>
+            <name>Hi-Tech Nutraceuticals, LLC</name>
+            <assignedEntity>
+               <assignedOrganization>
+                  <assignedEntity>
+                     <assignedOrganization>
+                        <id root="1.3.6.1.4.1.519.1" extension="080787135"/>
+                        <name>Hi-Tech Nutraceuticals, LLC</name>
+                     </assignedOrganization>
+                     <performance>
+                        <actDefinition>
+                           <code code="C84731" displayName="pack" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <product>
+                              <manufacturedProduct classCode="MANU">
+                                 <manufacturedMaterialKind>
+                                    <code code="69732-005" codeSystem="2.16.840.1.113883.6.69"/>
+                                 </manufacturedMaterialKind>
+                              </manufacturedProduct>
+                           </product>
+                        </actDefinition>
+                     </performance>
+                  </assignedEntity>
+                  <assignedEntity>
+                     <assignedOrganization>
+                        <id root="1.3.6.1.4.1.519.1" extension="606221443"/>
+                        <name>Hi-Tech Nutraceuticals, LLC</name>
+                     </assignedOrganization>
+                     <performance>
+                        <actDefinition>
+                           <code code="C43360" displayName="manufacture" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <product>
+                              <manufacturedProduct classCode="MANU">
+                                 <manufacturedMaterialKind>
+                                    <code code="69732-005" codeSystem="2.16.840.1.113883.6.69"/>
+                                 </manufacturedMaterialKind>
+                              </manufacturedProduct>
+                           </product>
+                        </actDefinition>
+                     </performance>
+                  </assignedEntity>
+               </assignedOrganization>
+            </assignedEntity>
+         </representedOrganization>
+      </assignedEntity>
+   </author>
+   <component>
+      <structuredBody>
+         <component>
+            <section>
+               <id root="55f991de-a60c-f646-e063-6294a90a41dc"/>
+               <code code="48780-1" codeSystem="2.16.840.1.113883.6.1" displayName="SPL product data elements section"/>
+               <effectiveTime value="20260706"/>
+               <subject>
+                  <manufacturedProduct>
+                     <manufacturedProduct>
+                        <code code="69732-005" codeSystem="2.16.840.1.113883.6.69"/>
+                        <name>Nighttime Sleep Aid</name>
+                        <formCode code="C42998" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TABLET"/>
+                        <asEntityWithGeneric>
+                           <genericMedicine>
+                              <name>acetaminophen, diphenhydramine</name>
+                           </genericMedicine>
+                        </asEntityWithGeneric>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="H8AV0SQX4D" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>SODIUM STARCH GLYCOLATE TYPE A</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="3NXW29V3WO" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>HYPROMELLOSE, UNSPECIFIED</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="70097M6I30" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>MAGNESIUM STEARATE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator unit="mg" value="25"/>
+                              <denominator unit="1" value="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="TC2D6JAD40" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>DIPHENHYDRAMINE HYDROCHLORIDE</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="8GTS82S83M" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>DIPHENHYDRAMINE</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator unit="mg" value="500"/>
+                              <denominator unit="1" value="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="362O9ITL9D" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>ACETAMINOPHEN</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="362O9ITL9D" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>ACETAMINOPHEN</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <asContent>
+                           <quantity>
+                              <numerator value="30" unit="1"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code code="69732-005-01" codeSystem="2.16.840.1.113883.6.69"/>
+                              <formCode code="C43173" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOTTLE, PLASTIC"/>
+                           </containerPackagedProduct>
+                           <subjectOf>
+                              <characteristic>
+                                 <code code="SPLCMBPRDTP" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                                 <value code="C112160" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="Type 0: Not a Combination Product" xsi:type="CV"/>
+                              </characteristic>
+                           </subjectOf>
+                           <subjectOf>
+                              <marketingAct>
+                                 <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                                 <statusCode code="active"/>
+                                 <effectiveTime>
+                                    <low value="20200430"/>
+                                 </effectiveTime>
+                              </marketingAct>
+                           </subjectOf>
+                        </asContent>
+                     </manufacturedProduct>
+                     <subjectOf>
+                        <approval>
+                           <id extension="M013" root="2.16.840.1.113883.3.9421"/>
+                           <code code="C200263" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="OTC Monograph Drug"/>
+                           <author>
+                              <territorialAuthority>
+                                 <territory>
+                                    <code code="USA" codeSystem="2.16.840.1.113883.5.28"/>
+                                 </territory>
+                              </territorialAuthority>
+                           </author>
+                        </approval>
+                     </subjectOf>
+                     <subjectOf>
+                        <marketingAct>
+                           <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <statusCode code="active"/>
+                           <effectiveTime>
+                              <low value="20200430"/>
+                           </effectiveTime>
+                        </marketingAct>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLSIZE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value unit="mm" value="19" xsi:type="PQ"/>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLSHAPE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value code="C48336" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="CAPSULE" xsi:type="CE">
+                              <originalText/>
+                           </value>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLIMPRINT" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value xsi:type="ST">HTP525</value>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLCOLOR" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value code="C48325" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="white" xsi:type="CE">
+                              <originalText/>
+                           </value>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLSCORE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value nullFlavor="OTH" xsi:type="INT"/>
+                        </characteristic>
+                     </subjectOf>
+                     <consumedIn>
+                        <substanceAdministration>
+                           <routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ORAL"/>
+                        </substanceAdministration>
+                     </consumedIn>
+                  </manufacturedProduct>
+               </subject>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_a4c865ec-4bac-46e3-e053-2995a90acf54">
+               <id root="a4c865ec-4bab-46e3-e053-2995a90acf54"/>
+               <code code="55106-9" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - ACTIVE INGREDIENT SECTION"/>
+               <text>
+                  <paragraph>
+                     <renderMultiMedia referencedObject="img_a4c865c0-b8d4-77f0-e053-2a95a90a0f9f"/>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20200430"/>
+               <component>
+                  <observationMedia ID="img_a4c865c0-b8d4-77f0-e053-2a95a90a0f9f">
+                     <text>actives</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="Actives and Purpose.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_a4c86984-106d-87d3-e053-2a95a90a0196">
+               <id root="a4c86984-106c-87d3-e053-2a95a90a0196"/>
+               <code code="50569-3" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - ASK DOCTOR SECTION"/>
+               <text>
+                  <paragraph>
+                     <renderMultiMedia referencedObject="img_a4c865c0-b8d5-77f0-e053-2a95a90a0f9f"/>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20200430"/>
+               <component>
+                  <observationMedia ID="img_a4c865c0-b8d5-77f0-e053-2a95a90a0f9f">
+                     <text>ask a doc</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="Ask a doc.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_a4c865c0-b8d7-77f0-e053-2a95a90a0f9f">
+               <id root="a4c865c0-b8d6-77f0-e053-2a95a90a0f9f"/>
+               <code code="50568-5" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - ASK DOCTOR/PHARMACIST SECTION"/>
+               <text>
+                  <paragraph>
+                     <renderMultiMedia referencedObject="img_a4c86984-106e-87d3-e053-2a95a90a0196"/>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20200430"/>
+               <component>
+                  <observationMedia ID="img_a4c86984-106e-87d3-e053-2a95a90a0196">
+                     <text>ask a doc or pharm</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="ask a doc or pharm.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_a4c86dc0-b022-483d-e053-2a95a90a8e82">
+               <id root="a4c86dc0-b021-483d-e053-2a95a90a8e82"/>
+               <code code="50570-1" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - DO NOT USE SECTION"/>
+               <text>
+                  <paragraph>
+                     <renderMultiMedia referencedObject="img_a4c86d9d-d374-676e-e053-2995a90a0b7f"/>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20200430"/>
+               <component>
+                  <observationMedia ID="img_a4c86d9d-d374-676e-e053-2995a90a0b7f">
+                     <text>do not use</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="do not use.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_a4c86d9d-d376-676e-e053-2995a90a0b7f">
+               <id root="a4c86d9d-d375-676e-e053-2995a90a0b7f"/>
+               <code code="50565-1" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - KEEP OUT OF REACH OF CHILDREN SECTION"/>
+               <text>
+                  <paragraph>
+                     <renderMultiMedia referencedObject="img_a4c86fe8-5d97-56d2-e053-2a95a90a7494"/>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20200430"/>
+               <component>
+                  <observationMedia ID="img_a4c86fe8-5d97-56d2-e053-2a95a90a7494">
+                     <text>keep out of reach</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="children.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_a4c86984-1070-87d3-e053-2a95a90a0196">
+               <id root="a4c86984-106f-87d3-e053-2a95a90a0196"/>
+               <code code="53414-9" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - PREGNANCY OR BREAST FEEDING SECTION"/>
+               <text>
+                  <paragraph>
+                     <renderMultiMedia referencedObject="img_a4c86d9d-d377-676e-e053-2995a90a0b7f"/>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20200430"/>
+               <component>
+                  <observationMedia ID="img_a4c86d9d-d377-676e-e053-2995a90a0b7f">
+                     <text>pregnancy</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="pregnant.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_a4c86dc0-b025-483d-e053-2a95a90a8e82">
+               <id root="a4c86dc0-b024-483d-e053-2a95a90a8e82"/>
+               <code code="55105-1" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - PURPOSE SECTION"/>
+               <text>
+                  <paragraph>
+                     <renderMultiMedia referencedObject="img_a4c86dc0-b023-483d-e053-2a95a90a8e82"/>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20200430"/>
+               <component>
+                  <observationMedia ID="img_a4c86dc0-b023-483d-e053-2a95a90a8e82">
+                     <text>Purpose</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="Actives and Purpose.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_a4c86dc0-b027-483d-e053-2a95a90a8e82">
+               <id root="a4c86dc0-b026-483d-e053-2a95a90a8e82"/>
+               <code code="53413-1" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - QUESTIONS SECTION"/>
+               <text>
+                  <paragraph>
+                     <renderMultiMedia referencedObject="img_a4c86984-1071-87d3-e053-2a95a90a0196"/>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20200430"/>
+               <component>
+                  <observationMedia ID="img_a4c86984-1071-87d3-e053-2a95a90a0196">
+                     <text>Questions</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="questions.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_a4c86dc0-b02a-483d-e053-2a95a90a8e82">
+               <id root="a4c86dc0-b029-483d-e053-2a95a90a8e82"/>
+               <code code="50566-9" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - STOP USE SECTION"/>
+               <text>
+                  <paragraph>
+                     <renderMultiMedia referencedObject="img_a4c86dc0-b028-483d-e053-2a95a90a8e82"/>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20200430"/>
+               <component>
+                  <observationMedia ID="img_a4c86dc0-b028-483d-e053-2a95a90a8e82">
+                     <text>stop use</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="stop use and ask doc.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_a4c86dc0-b02c-483d-e053-2a95a90a8e82">
+               <id root="a4c86dc0-b02b-483d-e053-2a95a90a8e82"/>
+               <code code="50567-7" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - WHEN USING SECTION"/>
+               <text>
+                  <paragraph>
+                     <renderMultiMedia referencedObject="img_a4c86fe8-5d98-56d2-e053-2a95a90a7494"/>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20200430"/>
+               <component>
+                  <observationMedia ID="img_a4c86fe8-5d98-56d2-e053-2a95a90a7494">
+                     <text>when using</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="when using product.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_a4c86d9d-d37a-676e-e053-2995a90a0b7f">
+               <id root="a4c86d9d-d379-676e-e053-2995a90a0b7f"/>
+               <code code="34088-5" codeSystem="2.16.840.1.113883.6.1" displayName="OVERDOSAGE SECTION"/>
+               <text>
+                  <paragraph>
+                     <renderMultiMedia referencedObject="img_a4c86dc0-b02f-483d-e053-2a95a90a8e82"/>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20200530"/>
+               <component>
+                  <observationMedia ID="img_a4c86dc0-b02f-483d-e053-2a95a90a8e82">
+                     <text>Overdose</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="overdose.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_a4c880b8-f267-cdf6-e053-2995a90a77fe">
+               <id root="a4c880b8-f266-cdf6-e053-2995a90a77fe"/>
+               <code code="34071-1" codeSystem="2.16.840.1.113883.6.1" displayName="WARNINGS SECTION"/>
+               <text>
+                  <paragraph>
+                     <renderMultiMedia referencedObject="img_a4c8808d-91b3-77ee-e053-2a95a90a54cf"/>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20200430"/>
+               <component>
+                  <observationMedia ID="img_a4c8808d-91b3-77ee-e053-2a95a90a54cf">
+                     <text>warnings</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="Warnings.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_a4c86fe8-5d9a-56d2-e053-2a95a90a7494">
+               <id root="a4c86fe8-5d99-56d2-e053-2a95a90a7494"/>
+               <code code="51727-6" codeSystem="2.16.840.1.113883.6.1" displayName="INACTIVE INGREDIENT SECTION"/>
+               <text>
+                  <paragraph>
+                     <renderMultiMedia referencedObject="img_a4c8808d-91b4-77ee-e053-2a95a90a54cf"/>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20200531"/>
+               <component>
+                  <observationMedia ID="img_a4c8808d-91b4-77ee-e053-2a95a90a54cf">
+                     <text>inactives</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="inactives.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_a4c883f2-bca4-7981-e053-2a95a90ac83e">
+               <id root="a4c883f2-bca3-7981-e053-2a95a90ac83e"/>
+               <code code="34067-9" codeSystem="2.16.840.1.113883.6.1" displayName="INDICATIONS &amp; USAGE SECTION"/>
+               <text>
+                  <paragraph>
+                     <renderMultiMedia referencedObject="img_a4c86fe8-5d9c-56d2-e053-2a95a90a7494"/>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20200430"/>
+               <component>
+                  <observationMedia ID="img_a4c86fe8-5d9c-56d2-e053-2a95a90a7494">
+                     <text>uses</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="Uses.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_a4c86fe8-5d9f-56d2-e053-2a95a90a7494">
+               <id root="a4c86fe8-5d9e-56d2-e053-2a95a90a7494"/>
+               <code code="44425-7" codeSystem="2.16.840.1.113883.6.1" displayName="STORAGE AND HANDLING SECTION"/>
+               <text>
+                  <paragraph>
+                     <renderMultiMedia referencedObject="img_a4c88491-b984-7985-e053-2a95a90af459"/>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20200430"/>
+               <component>
+                  <observationMedia ID="img_a4c88491-b984-7985-e053-2a95a90af459">
+                     <text>storage</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="storage.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_a4c88491-b988-7985-e053-2a95a90af459">
+               <id root="a4c88491-b987-7985-e053-2a95a90af459"/>
+               <code code="34068-7" codeSystem="2.16.840.1.113883.6.1" displayName="DOSAGE &amp; ADMINISTRATION SECTION"/>
+               <text>
+                  <paragraph>
+                     <renderMultiMedia referencedObject="img_a4c86fe8-5da2-56d2-e053-2a95a90a7494"/>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20200430"/>
+               <component>
+                  <observationMedia ID="img_a4c86fe8-5da2-56d2-e053-2a95a90a7494">
+                     <text>directions</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="Directions.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_a4c86dc0-b02e-483d-e053-2a95a90a8e82">
+               <id root="a4c86dc0-b02d-483d-e053-2a95a90a8e82"/>
+               <code code="51945-4" codeSystem="2.16.840.1.113883.6.1" displayName="PACKAGE LABEL.PRINCIPAL DISPLAY PANEL"/>
+               <text>
+                  <paragraph>
+                     <renderMultiMedia referencedObject="img_a4c86d9d-d378-676e-e053-2995a90a0b7f"/>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20200430"/>
+               <component>
+                  <observationMedia ID="img_a4c86d9d-d378-676e-e053-2995a90a0b7f">
+                     <text>pdp</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="PDP.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+      </structuredBody>
+   </component>
+</document>

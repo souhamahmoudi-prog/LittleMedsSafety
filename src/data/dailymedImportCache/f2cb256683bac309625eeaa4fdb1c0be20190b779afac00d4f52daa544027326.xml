@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="https://www.accessdata.fda.gov/spl/stylesheet/spl.xsl" type="text/xsl"?>
+<document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 https://www.accessdata.fda.gov/spl/schema/spl.xsd">
+   <id root="5158eb26-d61e-b74d-e063-6294a90a936c"/>
+   <code code="34390-5" codeSystem="2.16.840.1.113883.6.1" displayName="HUMAN OTC DRUG LABEL"/>
+   <title>Kids' Allergy Liquid</title>
+   <effectiveTime value="20260508"/>
+   <setId root="a7bc5f7c-eaeb-25d0-e053-2a95a90a9ec4"/>
+   <versionNumber value="7"/>
+   <author>
+      <time/>
+      <assignedEntity>
+         <representedOrganization>
+            <id root="1.3.6.1.4.1.519.1" extension="079751024"/>
+            <name>Genexa Inc.</name>
+            <assignedEntity>
+               <assignedOrganization/>
+            </assignedEntity>
+         </representedOrganization>
+      </assignedEntity>
+   </author>
+   <component>
+      <structuredBody>
+         <component>
+            <section>
+               <id root="51d20415-b05c-180d-e063-6394a90a942f"/>
+               <code code="48780-1" codeSystem="2.16.840.1.113883.6.1" displayName="SPL product data elements section"/>
+               <effectiveTime value="20260508"/>
+               <subject>
+                  <manufacturedProduct>
+                     <manufacturedProduct>
+                        <code code="69676-0039" codeSystem="2.16.840.1.113883.6.69"/>
+                        <name>Kids Allergy</name>
+                        <formCode code="C42953" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="LIQUID"/>
+                        <asEntityWithGeneric>
+                           <genericMedicine>
+                              <name>Diphenhydramine HCl</name>
+                           </genericMedicine>
+                        </asEntityWithGeneric>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="GVG8G0207O" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>AGAVE TEQUILANA JUICE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="059QF0KO0R" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>WATER</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator unit="mg" value="12.5"/>
+                              <denominator unit="mL" value="5"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="TC2D6JAD40" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>DIPHENHYDRAMINE HYDROCHLORIDE</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="8GTS82S83M" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>DIPHENHYDRAMINE</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <asContent>
+                           <quantity>
+                              <numerator value="118" unit="mL"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code/>
+                              <formCode code="C43173" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="BOTTLE, PLASTIC"/>
+                              <asContent>
+                                 <quantity>
+                                    <numerator value="1" unit="1"/>
+                                    <denominator value="1"/>
+                                 </quantity>
+                                 <containerPackagedProduct>
+                                    <code code="69676-0039-9" codeSystem="2.16.840.1.113883.6.69"/>
+                                    <formCode code="C43182" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="CARTON"/>
+                                 </containerPackagedProduct>
+                                 <subjectOf>
+                                    <marketingAct>
+                                       <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                                       <statusCode code="active"/>
+                                       <effectiveTime>
+                                          <low value="20250806"/>
+                                       </effectiveTime>
+                                    </marketingAct>
+                                 </subjectOf>
+                              </asContent>
+                           </containerPackagedProduct>
+                           <subjectOf>
+                              <characteristic>
+                                 <code code="SPLCMBPRDTP" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                                 <value code="C112160" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="Type 0: Not a Combination Product" xsi:type="CV"/>
+                              </characteristic>
+                           </subjectOf>
+                        </asContent>
+                     </manufacturedProduct>
+                     <subjectOf>
+                        <approval>
+                           <id extension="M012" root="2.16.840.1.113883.3.9421"/>
+                           <code code="C200263" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="OTC Monograph Drug"/>
+                           <author>
+                              <territorialAuthority>
+                                 <territory>
+                                    <code code="USA" codeSystem="2.16.840.1.113883.5.28"/>
+                                 </territory>
+                              </territorialAuthority>
+                           </author>
+                        </approval>
+                     </subjectOf>
+                     <subjectOf>
+                        <marketingAct>
+                           <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <statusCode code="active"/>
+                           <effectiveTime>
+                              <low value="20250806"/>
+                           </effectiveTime>
+                        </marketingAct>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLCOLOR" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value code="C48332" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="brown" xsi:type="CE">
+                              <originalText>Golden</originalText>
+                           </value>
+                        </characteristic>
+                     </subjectOf>
+                     <consumedIn>
+                        <substanceAdministration>
+                           <routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ORAL"/>
+                        </substanceAdministration>
+                     </consumedIn>
+                  </manufacturedProduct>
+               </subject>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_a7bc55e5-a318-06c7-e053-2995a90ac13f">
+               <id root="a7bc55e5-a317-06c7-e053-2995a90ac13f"/>
+               <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">
+                        <content styleCode="italics">Drug Facts</content>
+                     </content>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20200701"/>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_a7bc34f0-760b-085d-e053-2995a90ad022">
+               <id root="a7bc34f0-760a-085d-e053-2995a90ad022"/>
+               <code code="55106-9" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - ACTIVE INGREDIENT SECTION"/>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">
+                        <content styleCode="italics">Active ingredient (in each 5 mL)</content>
+                     </content>
+                  </paragraph>
+                  <paragraph>Diphenhydramine HCl 12.5 mg</paragraph>
+               </text>
+               <effectiveTime value="20200701"/>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_a7bc34f0-760d-085d-e053-2995a90ad022">
+               <id root="a7bc8cc0-ffd5-372e-e053-2a95a90a3197"/>
+               <code code="55105-1" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - PURPOSE SECTION"/>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">
+                        <content styleCode="italics">Purpose</content>
+                     </content>
+                  </paragraph>
+                  <paragraph>Antihistamine</paragraph>
+               </text>
+               <effectiveTime value="20200701"/>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_a7bc8717-52b3-38ef-e053-2a95a90a2efe">
+               <id root="a7bc8717-52b2-38ef-e053-2a95a90a2efe"/>
+               <code code="34067-9" codeSystem="2.16.840.1.113883.6.1" displayName="INDICATIONS &amp; USAGE SECTION"/>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">
+                        <content styleCode="italics">Uses</content>
+                     </content>
+                  </paragraph>
+                  <paragraph>temporarily relieves these symptoms due to hay fever or other upper respiratory allergies:</paragraph>
+                  <list listType="unordered" styleCode="Square">
+                     <item>runny nose</item>
+                     <item>sneezing</item>
+                     <item>itchy, watery eyes</item>
+                     <item>itching of the nose or throat</item>
+                  </list>
+               </text>
+               <effectiveTime value="20200701"/>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_a7bc89bf-be74-3732-e053-2a95a90ae17f">
+               <id root="a7bc89bf-be73-3732-e053-2a95a90ae17f"/>
+               <code code="34071-1" codeSystem="2.16.840.1.113883.6.1" displayName="WARNINGS SECTION"/>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">
+                        <content styleCode="italics">Warnings</content>
+                     </content>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20200701"/>
+               <component>
+                  <section ID="id_link_a7bc89bf-be76-3732-e053-2a95a90ae17f">
+                     <id root="a7d713f2-ab08-b1c6-e053-2995a90a3c8d"/>
+                     <code code="50570-1" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - DO NOT USE SECTION"/>
+                     <text>
+                        <paragraph>
+                           <content styleCode="bold">Do not use</content>
+                        </paragraph>
+                        <list listType="unordered" styleCode="Square">
+                           <item>to make a child sleepy</item>
+                           <item>with any other product containing diphenhydramine, even one used on skin</item>
+                        </list>
+                     </text>
+                     <effectiveTime value="20200701"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="id_link_a7bc8717-52b8-38ef-e053-2a95a90a2efe">
+                     <id root="a7d713f2-ab09-b1c6-e053-2995a90a3c8d"/>
+                     <code code="50569-3" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - ASK DOCTOR SECTION"/>
+                     <text>
+                        <paragraph>
+                           <content styleCode="bold">Ask a doctor before use if you have</content>
+                        </paragraph>
+                        <list listType="unordered" styleCode="Square">
+                           <item>glaucoma</item>
+                           <item>a breathing problem such as emphysema or chronic bronchitis</item>
+                           <item>trouble urinating due to enlargement of the prostate gland</item>
+                        </list>
+                     </text>
+                     <effectiveTime value="20200701"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="id_link_a7d7d4ac-acc5-7eb4-e053-2995a90a4738">
+                     <id root="a7d713f2-ab0a-b1c6-e053-2995a90a3c8d"/>
+                     <code code="50569-3" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - ASK DOCTOR SECTION"/>
+                     <text>
+                        <paragraph>
+                           <content styleCode="bold">Ask a doctor or pharmacist before use if you are</content> taking sedatives or tranquilizers
+ </paragraph>
+                     </text>
+                     <effectiveTime value="20200701"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="id_link_a7bca26d-cc8d-2bbb-e053-2995a90ac9cc">
+                     <id root="a7d7d4ac-acc6-7eb4-e053-2995a90a4738"/>
+                     <code code="50567-7" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - WHEN USING SECTION"/>
+                     <text>
+                        <paragraph>
+                           <content styleCode="bold">When using this product</content>
+                        </paragraph>
+                        <list listType="unordered" styleCode="Square">
+                           <item>marked drowsiness may occur</item>
+                           <item>avoid alcoholic drinks</item>
+                           <item>alcohol, sedatives and tranquilizers may increase drowsiness</item>
+                           <item>be careful when driving a motor vehicle or operating machinery</item>
+                           <item>excitability may occur, especially in children</item>
+                        </list>
+                     </text>
+                     <effectiveTime value="20200701"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="id_link_a7bca8a3-b8d1-b6bc-e053-2a95a90a51d0">
+                     <id root="a7bca8a3-b8d0-b6bc-e053-2a95a90a51d0"/>
+                     <code code="53414-9" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - PREGNANCY OR BREAST FEEDING SECTION"/>
+                     <text>
+                        <paragraph>
+                           <content styleCode="bold">If pregnant or breastfeeding, </content>ask a health professional before use.
+ </paragraph>
+                     </text>
+                     <effectiveTime value="20200701"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="id_link_a7bca043-8fe9-2647-e053-2a95a90af0f3">
+                     <id root="a7bca043-8fe8-2647-e053-2a95a90af0f3"/>
+                     <code code="50565-1" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - KEEP OUT OF REACH OF CHILDREN SECTION"/>
+                     <text>
+                        <paragraph>
+                           <content styleCode="bold">Keep out of reach of children. </content>In case of overdose, get medical help or contact a Poison Control Center right away. (1-800-222-1222)
+ </paragraph>
+                     </text>
+                     <effectiveTime value="20200701"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_a7d7cbaa-98de-7a22-e053-2995a90a40e8">
+               <id root="44728a34-0f42-c926-e063-6394a90a866b"/>
+               <code code="34068-7" codeSystem="2.16.840.1.113883.6.1" displayName="DOSAGE &amp; ADMINISTRATION SECTION"/>
+               <text>
+                  <paragraph>
+                     <content styleCode="italics">
+                        <content styleCode="bold">Directions</content>
+                     </content>
+                  </paragraph>
+                  <list listType="unordered">
+                     <item>take every 4 to 6 hours, or as directed by a doctor</item>
+                     <item>do not take more than 6 doses in 24 hours</item>
+                     <item>marked drowsiness may occur</item>
+                     <item>use only with enclosed dose cup. Do not use with any other dosing device.</item>
+                     <item>
+                        <content styleCode="bold">SHAKE WELL BEFORE EACH USE</content>
+                     </item>
+                  </list>
+                  <table border="0" width="100%">
+                     <tbody>
+                        <tr>
+                           <td>adults and children 12 years of age and over</td>
+                           <td>10 - 20 mL</td>
+                        </tr>
+                        <tr>
+                           <td>children 6 to under 12 years</td>
+                           <td>5 - 10 mL</td>
+                        </tr>
+                        <tr>
+                           <td>children 2 to under 6 years</td>
+                           <td>do not use unless directed by a doctor</td>
+                        </tr>
+                        <tr>
+                           <td>children under 2 years</td>
+                           <td>
+                              <content styleCode="bold">do not use</content>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <paragraph/>
+               </text>
+               <effectiveTime value="20251125"/>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_a7bcc42d-fb48-69c4-e053-2995a90adf73">
+               <id root="a7bcc42d-fb47-69c4-e053-2995a90adf73"/>
+               <code code="44425-7" codeSystem="2.16.840.1.113883.6.1" displayName="STORAGE AND HANDLING SECTION"/>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">
+                        <content styleCode="italics">Other information</content>
+                     </content>
+                  </paragraph>
+                  <paragraph>store between 20-25°C (68-77°F)</paragraph>
+               </text>
+               <effectiveTime value="20200701"/>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_a7bcc88b-c70f-75ff-e053-2995a90a35f2">
+               <id root="51d1bce8-041c-e705-e063-6294a90a141c"/>
+               <code code="51727-6" codeSystem="2.16.840.1.113883.6.1" displayName="INACTIVE INGREDIENT SECTION"/>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">
+                        <content styleCode="italics">Inactive ingredients </content>
+                     </content>
+                  </paragraph>
+                  <paragraph>agave syrup (organic), flavor (natural), purified water</paragraph>
+               </text>
+               <effectiveTime value="20260514"/>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_a7bc9f90-a420-a0cc-e053-2995a90a869c">
+               <id root="2c4d1b31-2300-72e2-e063-6394a90a1c71"/>
+               <code code="53413-1" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - QUESTIONS SECTION"/>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">
+                        <content styleCode="italics">Questions? </content>
+                     </content>
+                  </paragraph>
+                  <paragraph>1-855-436-3921 </paragraph>
+               </text>
+               <effectiveTime value="20250122"/>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_a7bda143-75c7-8c4d-e053-2995a90a847d">
+               <id root="51d14037-3f05-46f4-e063-6394a90ac916"/>
+               <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">SHAKE WELL BEFORE EACH USE</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">DO NOT use if perforated band around the bottle or seal under the cap is disturbed or missing.</content>
+                  </paragraph>
+                  <paragraph/>
+                  <paragraph>Distributed by: Genexa Inc., Atlanta, GA 30324</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">genexa.com</content>
+                  </paragraph>
+                  <paragraph>NDC 69676-0039-9</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Made in the USA with globally sourced ingredients</content>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20260514"/>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_2c4d0d77-1fd7-082c-e063-6294a90a98a5">
+               <id root="44728f13-3fc3-5a9f-e063-6294a90af458"/>
+               <code code="43683-2" codeSystem="2.16.840.1.113883.6.1" displayName="RECENT MAJOR CHANGES SECTION"/>
+               <text>
+                  <paragraph>
+                     <content styleCode="italics">
+                        <content styleCode="bold">Directions</content>
+                     </content>
+                  </paragraph>
+                  <list listType="unordered">
+                     <item>take every 4 to 6 hours, or as directed by a doctor</item>
+                     <item>do not take more than 6 doses in 24 hours</item>
+                     <item>marked drowsiness may occur</item>
+                     <item>use only with enclosed dose cup. Do not use with any other dosing device.</item>
+                     <item>
+                        <content styleCode="bold">SHAKE WELL BEFORE EACH USE</content>
+                     </item>
+                  </list>
+                  <paragraph/>
+                  <table border="0" width="100%">
+                     <tbody>
+                        <tr>
+                           <td>adults and children 12 years of age and over</td>
+                           <td>10 - 20 mL</td>
+                        </tr>
+                        <tr>
+                           <td>children 6 to under 12 years</td>
+                           <td>5 - 10 mL</td>
+                        </tr>
+                        <tr>
+                           <td>children 2 to under 6 years</td>
+                           <td>do not use unless directed by a doctor</td>
+                        </tr>
+                        <tr>
+                           <td>children under 2 years</td>
+                           <td>
+                              <content styleCode="bold">do not use</content>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <paragraph/>
+                  <paragraph>
+                     <br/>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20251125"/>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_a7bce58c-c707-6da4-e053-2995a90a2748">
+               <id root="51d1db85-c735-eec7-e063-6294a90ad82b"/>
+               <code code="51945-4" codeSystem="2.16.840.1.113883.6.1" displayName="PACKAGE LABEL.PRINCIPAL DISPLAY PANEL"/>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">Genexa
+   <sup>®</sup>
+                     </content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">CLEAN MEDICINE</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Ages 6+</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Kids' Allergy</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Diphenhydramine HCl </content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Oral Solution</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">12.5 mg per 5 mL | Antihistamine</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Sneezing</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Itchy, Watery Eyes</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Itchy Throat or Nose</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Runny Nose</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">0% Artificial Additives, Dyes, Artificial Sweeteners, Common Allergens</content>
+                  </paragraph>
+                  <paragraph/>
+                  <paragraph/>
+                  <paragraph>
+                     <content styleCode="bold">Made with Real Agave </content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">4 FL OZ (118 mL)</content>
+                  </paragraph>
+                  <paragraph>
+                     <renderMultiMedia referencedObject="img_51d1e3c4-9992-4e20-e063-6394a90a1912"/>
+                  </paragraph>
+                  <paragraph/>
+                  <paragraph/>
+                  <paragraph/>
+               </text>
+               <effectiveTime value="20260514"/>
+               <component>
+                  <observationMedia ID="img_51d1e3c4-9992-4e20-e063-6394a90a1912">
+                     <text>100A carton_R-20260318</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="100A carton_R-20260318.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+      </structuredBody>
+   </component>
+</document>

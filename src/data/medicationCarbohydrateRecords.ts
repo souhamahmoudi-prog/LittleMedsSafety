@@ -58,6 +58,7 @@ export type MedicationCarbohydrateRecord = {
   productNdc: string;
   packageNdc: string;
   packageDescription: string;
+  carbohydrateDisplayValue: string;
   carbohydrateIngredients: MedicationCarbohydrateIngredient[];
   nonNutritiveSweeteners?: MedicationNonNutritiveSweetener[];
   publishedAmount: number | null;
@@ -72,6 +73,7 @@ export type MedicationCarbohydrateRecord = {
   sourceDate: string;
   inactiveIngredientText: string;
   sourceExcerpt: string;
+  additionalReferences: string;
   reviewedBy: string;
   reviewedDate: string;
   approvalStatus: RecordApprovalStatus;
@@ -106,27 +108,19 @@ export function validateRecordForApproval(record: MedicationCarbohydrateRecord) 
     ['source URL', record.sourceUrl],
     ['source date', record.sourceDate],
     ['source excerpt', record.sourceExcerpt],
+    ['carbohydrate amount', record.carbohydrateDisplayValue],
     ['reviewed by', record.reviewedBy],
     ['review date', record.reviewedDate],
   ].forEach(([label, value]) => {
     if (!String(value || '').trim()) errors.push(`${label} is required.`);
   });
 
-  if (record.extractionStatus === 'quantitative-value-found') {
-    const quantifiedIngredients = record.carbohydrateIngredients.filter(
-      (ingredient) => ingredient.quantityStatus === 'quantity-published',
-    );
-    if (
-      quantifiedIngredients.length === 0
-      ||
-      record.publishedAmount === null
-      || record.normalizedAmountMg === null
-      || !record.publishedUnit
-      || !record.publishedBasis
-      || !record.normalizedBasis
-    ) {
-      errors.push('A quantitative carbohydrate value requires amount, unit, basis, normalized value, and at least one quantified ingredient.');
-    }
+  const displayValue = String(record.carbohydrateDisplayValue || '').trim();
+  if (/^not\s+published$/i.test(displayValue) && displayValue !== 'Not published') {
+    errors.push('Unavailable carbohydrate amount must be exactly Not published.');
+  }
+  if (/^(amount not available|exact amount unavailable|quantity unknown|amount unavailable|amount not published)$/i.test(displayValue)) {
+    errors.push('Use Not published instead of alternate unavailable-amount wording.');
   }
 
   return errors;

@@ -4,7 +4,7 @@
 
 The Pediatric Medication Carbohydrate Reference uses an offline review pipeline:
 
-DailyMed label data -> local Node import script -> carbohydrate extraction -> pharmacist review -> approved local JSON records -> public static lookup tool.
+DailyMed label data + local workbook reference -> local Node import scripts -> carbohydrate extraction -> pharmacist review -> approved local JSON records -> public static lookup tool.
 
 The public website searches approved local records only. It must not call DailyMed from a visitor's browser, estimate carbohydrate content, or publish unreviewed extraction records.
 
@@ -14,8 +14,9 @@ Permitted sources for this foundation:
 
 - DailyMed Version 2 REST services for current SPL product labels, label set IDs, NDCs, package descriptions, source dates, inactive ingredient text, and relevant label text.
 - RxNorm REST API for normalized medication names and active NDC context.
+- `src/data/carbohydrate-reference.xlsx` as a local reviewer-support workbook for exact-product comparison, manufacturer coverage planning, and additional reference notes.
 
-Do not use Lexidrug or other licensed clinical-data sources in this pipeline. Do not use the FDA Inactive Ingredient Database potency as the selected product's carbohydrate amount.
+Do not use Lexidrug or other licensed clinical-data sources as the public proof source in this pipeline. If the local workbook mentions licensed references, keep them in reviewer-facing additional reference notes only. Do not use the FDA Inactive Ingredient Database potency as the selected product's carbohydrate amount.
 
 ## Seed List
 
@@ -27,10 +28,13 @@ This list is for validation and scaling. It is not an authoritative ranking of t
 
 1. Edit `src/data/pediatricMedicationSeedList.ts`.
 2. Run `npm run import:dailymed` to retrieve current matching DailyMed labels with RxNorm context.
-3. Run `npm run extract:carbohydrates` to create candidate records.
-4. Review pending records at `/internal/carbohydrate-record-review`.
-5. Export reviewed JSON and commit approved records to `src/data/approvedMedicationCarbohydrateRecords.json`.
-6. Run `npm run validate:carbohydrates` before publication.
+3. Update `src/data/carbohydrate-reference.xlsx` when local workbook references change.
+4. Run `npm run extract:carbohydrates` to import the workbook reference and create candidate records.
+5. Review pending records at `/internal/carbohydrate-record-review`.
+6. Export reviewed JSON and commit approved records to `src/data/approvedMedicationCarbohydrateRecords.json`.
+7. Run `npm run validate:carbohydrates` before publication.
+
+The extraction step refreshes `src/data/carbohydrateReferenceWorkbookRecords.json` from the workbook before building pending records. Workbook rows are attached to pending records only when an exact DailyMed set ID, product NDC, or package NDC matches. Workbook content supports review but does not automatically approve a record.
 
 ## Review Stores
 

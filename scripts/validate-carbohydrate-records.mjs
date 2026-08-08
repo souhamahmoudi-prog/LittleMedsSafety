@@ -48,6 +48,20 @@ function requireField(errors, record, field) {
   if (!String(record[field] ?? '').trim()) errors.push(`${record.id || 'record'}: ${field} is required.`);
 }
 
+function validateCarbohydrateDisplayValue(errors, record) {
+  const value = String(record.carbohydrateDisplayValue ?? '').trim();
+  if (!value) {
+    errors.push(`${record.id}: carbohydrateDisplayValue is required. Use Not published when no quantitative amount is provided.`);
+    return;
+  }
+  if (/^not\s+published$/i.test(value) && value !== 'Not published') {
+    errors.push(`${record.id}: unavailable carbohydrate amount must be exactly Not published.`);
+  }
+  if (/^(amount not available|exact amount unavailable|quantity unknown|amount unavailable|amount not published)$/i.test(value)) {
+    errors.push(`${record.id}: use Not published instead of alternate unavailable-amount wording.`);
+  }
+}
+
 function validateRecord(record, expectedApprovalStatus) {
   const errors = [];
   [
@@ -61,8 +75,13 @@ function validateRecord(record, expectedApprovalStatus) {
     'sourceSetId',
     'sourceUrl',
     'sourceDate',
+    'carbohydrateDisplayValue',
     'approvalStatus',
   ].forEach((field) => requireField(errors, record, field));
+  validateCarbohydrateDisplayValue(errors, record);
+  if (record.additionalReferences !== undefined && typeof record.additionalReferences !== 'string') {
+    errors.push(`${record.id}: additionalReferences must be a string when provided.`);
+  }
 
   if (!extractionStatuses.has(record.extractionStatus)) {
     errors.push(`${record.id}: invalid extractionStatus ${record.extractionStatus}.`);
@@ -98,13 +117,7 @@ function validateRecord(record, expectedApprovalStatus) {
       if (!ingredientQuantityStatuses.has(ingredient.quantityStatus)) {
         errors.push(`${prefix}.quantityStatus is invalid.`);
       }
-      if (ingredient.quantityStatus === 'quantity-published') {
-        ['amountUnit', 'amountBasis', 'normalizedBasis', 'sourceExcerpt'].forEach((field) => {
-          if (!String(ingredient[field] ?? '').trim()) errors.push(`${prefix}.${field} is required for a published quantity.`);
-        });
-        if (!Number.isFinite(ingredient.amount)) errors.push(`${prefix}.amount must be numeric for a published quantity.`);
-        if (!Number.isFinite(ingredient.normalizedAmountMg)) errors.push(`${prefix}.normalizedAmountMg must be numeric for a published quantity.`);
-      } else if (ingredient.amount !== null || ingredient.normalizedAmountMg !== null) {
+      if (ingredient.quantityStatus === 'quantity-unknown' && (ingredient.amount !== null || ingredient.normalizedAmountMg !== null)) {
         errors.push(`${prefix}: unknown quantity ingredients must not store numeric amounts.`);
       }
     });
@@ -127,10 +140,9 @@ function validateRecord(record, expectedApprovalStatus) {
     const quantifiedIngredients = Array.isArray(record.carbohydrateIngredients)
       ? record.carbohydrateIngredients.filter((ingredient) => ingredient.quantityStatus === 'quantity-published')
       : [];
-    if (!quantifiedIngredients.length) errors.push(`${record.id}: quantitative-value-found requires at least one quantified carbohydrateIngredients entry.`);
-    ['publishedUnit', 'publishedBasis', 'normalizedBasis', 'sourceExcerpt'].forEach((field) => requireField(errors, record, field));
-    if (!Number.isFinite(record.publishedAmount)) errors.push(`${record.id}: publishedAmount must be numeric.`);
-    if (!Number.isFinite(record.normalizedAmountMg)) errors.push(`${record.id}: normalizedAmountMg must be numeric.`);
+    if (!quantifiedIngredients.length && record.carbohydrateDisplayValue === 'Not published') {
+      errors.push(`${record.id}: quantitative-value-found requires a published carbohydrateDisplayValue.`);
+    }
   } else {
     if (record.publishedAmount !== null || record.normalizedAmountMg !== null) {
       errors.push(`${record.id}: unknown quantity statuses must not store numeric carbohydrate amounts.`);

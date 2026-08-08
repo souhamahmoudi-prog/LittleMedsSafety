@@ -1,0 +1,1588 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import {
+  dosageFormFilterGroups,
+  dosageFormFilterOptions,
+} from '../data/medicationCarbohydrateReference';
+
+const {
+  approvedRecords: suppliedApprovedRecords = [],
+  mode = 'public',
+  title = 'Pediatric Medication Carbohydrate Reference | LittleMeds Safety',
+  description = 'Look up documented manufacturer-specific carbohydrate content for medication products used in children receiving ketogenic dietary therapy.',
+} = Astro.props;
+const approvedRecords = suppliedApprovedRecords.filter(
+  (record) => record.approvalStatus === 'approved',
+);
+const approvedRecordCount = approvedRecords.length;
+const isPreview = mode === 'preview';
+const dosageForms = dosageFormFilterOptions;
+const sourceTypes = approvedRecordCount ? ['DailyMed product label'] : [];
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+>
+  <main class="reference-page">
+    <section class="reference-hero">
+      <div class="reference-container">
+        <a class="reference-brand" href="/" aria-label="LittleMeds Safety home">
+          <span class="reference-brand__mark" aria-hidden="true">LMS</span>
+          <span>LittleMeds Safety</span>
+        </a>
+        <p class="reference-eyebrow">Medication Reference</p>
+        <h1>Pediatric Medication Carbohydrate Reference</h1>
+        <p class="reference-lede">
+          Search approved local records for documented, manufacturer-specific carbohydrate content of an exact medication product.
+        </p>
+        <div class="reference-notice">
+          {isPreview ? (
+            <>
+              Local preview only — session-approved records shown here are not published.
+            </>
+          ) : (
+            <>
+              The public reference searches approved local records only. It does not
+              query DailyMed in the browser, calculate dose exposure, assess
+              ketogenic-diet compatibility, classify medications as safe or unsafe,
+              estimate missing values, or apply one manufacturer's value to another
+              product.
+            </>
+          )}
+        </div>
+        {isPreview && (
+          <div class="preview-banner" aria-live="polite">
+            <strong>Local preview only — session-approved records shown here are not published.</strong>
+            <div class="preview-counts">
+              <span>Existing approved records: <b id="existingApprovedPreviewCount">{approvedRecordCount}</b></span>
+              <span>Approved this session: <b id="sessionApprovedPreviewCount">0</b></span>
+              <span>Total preview records: <b id="totalPreviewCount">{approvedRecordCount}</b></span>
+            </div>
+            <p>Session-approved preview records are cleared when this browser session ends. Export the reviewed JSON files to preserve and publish them.</p>
+          </div>
+        )}
+      </div>
+    </section>
+
+    <section class="reference-workspace">
+      <div class="reference-container reference-grid">
+        <section class="lookup-panel" aria-labelledby="searchTitle">
+          <div class="section-title">
+            <p class="reference-eyebrow">Approved Local Records</p>
+            <h2 id="searchTitle">Search product-specific carbohydrate records</h2>
+            <p>Only pharmacist-reviewed records with approved status appear in this public lookup.</p>
+          </div>
+
+          <div class="record-status">
+            <strong id="recordStatusText">{approvedRecordCount} approved product-specific record{approvedRecordCount === 1 ? '' : 's'} currently available.</strong>
+            <span id="recordStatusEmpty" hidden={approvedRecordCount !== 0}>No verified product-specific carbohydrate record is currently available.</span>
+          </div>
+
+          <label class="search-field">
+            Product search
+            <input
+              id="productSearch"
+              type="search"
+              autocomplete="off"
+              placeholder="Search generic, brand, manufacturer, strength, dosage form, product NDC, or package NDC"
+            />
+          </label>
+
+          <div class="filter-grid" aria-label="Product filters">
+            <label>
+              Medication
+              <select id="medicationFilter">
+                <option value="">All medications</option>
+              </select>
+            </label>
+            <label>
+              Dosage form
+              <select id="dosageFormFilter">
+                <option value="">All dosage forms</option>
+                {dosageForms.map((form) => <option value={form}>{form}</option>)}
+              </select>
+            </label>
+            <div class="combobox-field">
+              <span id="manufacturerComboboxLabel">Manufacturer</span>
+              <div class="combobox" data-combobox>
+                <input
+                  id="manufacturerCombobox"
+                  type="text"
+                  role="combobox"
+                  aria-autocomplete="list"
+                  aria-expanded="false"
+                  aria-controls="manufacturerOptions"
+                  aria-labelledby="manufacturerComboboxLabel"
+                  autocomplete="off"
+                  placeholder="All manufacturers"
+                />
+                <button class="combobox-clear" id="manufacturerClear" type="button" aria-label="Clear manufacturer filter">Clear</button>
+                <ul class="combobox-list" id="manufacturerOptions" role="listbox"></ul>
+              </div>
+            </div>
+            <label>
+              Quantitative value available
+              <select id="quantitativeFilter">
+                <option value="">All approved records</option>
+                <option value="yes">Amount available</option>
+                <option value="no">Not published</option>
+              </select>
+            </label>
+            <label>
+              Source type
+              <select id="sourceTypeFilter">
+                <option value="">All source types</option>
+                {sourceTypes.map((sourceType) => <option value={sourceType}>{sourceType}</option>)}
+              </select>
+            </label>
+            <label for="ndcFilter">
+              NDC
+              <input
+                id="ndcFilter"
+                type="search"
+                inputmode="numeric"
+                autocomplete="off"
+                aria-describedby="ndcFilterHelp"
+              />
+              <small id="ndcFilterHelp" class="filter-help">Enter a full or partial product or package NDC. Hyphens are optional.</small>
+            </label>
+            <label>
+              Carbohydrate ingredient
+              <select id="carbohydrateIngredientFilter">
+                <option value="">All carbohydrate ingredients</option>
+              </select>
+            </label>
+            <label>
+              Non-carbohydrate sweetener
+              <select id="sweetenerFilter">
+                <option value="">All sweetener statuses</option>
+                <option value="__none">None identified</option>
+              </select>
+            </label>
+            <label>
+              Sort by
+              <select id="sortFilter">
+                <option value="medication">Medication</option>
+                <option value="manufacturer">Manufacturer</option>
+                <option value="dosage-form">Dosage form</option>
+                <option value="carbohydrate-amount">Carbohydrate amount</option>
+                <option value="verification-date">Verification date</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="result-meta" id="resultMeta" aria-live="polite"></div>
+          <div class="reference-table-wrap" id="tableWrap"></div>
+          <div class="mobile-result-list" id="mobileResultList"></div>
+          <p class="methodology-note">
+            Carbohydrate-related ingredients are categorized using FDA nutrition-labeling concepts for sugars, sugar alcohols, starches, and related carbohydrate materials. Medication labeling may identify an ingredient without publishing its quantitative amount.
+            FDA total-carbohydrate food labeling under 21 CFR 101.9(c)(6) generally uses calculation by difference; an inactive-ingredient list alone does not provide an exact total carbohydrate amount.
+          </p>
+          <div class="detail-actions">
+            <button class="button button-primary" type="button" id="printRecord">Print Filtered Table</button>
+          </div>
+        </section>
+
+        <aside class="detail-panel" aria-labelledby="methodologyTitle">
+          <div class="section-title">
+            <p class="reference-eyebrow">Methodology</p>
+            <h2 id="methodologyTitle">Product-specific review</h2>
+          </div>
+          <p>
+            This reference displays approved records with documented sources only.
+            Each row remains manufacturer-specific and exact-product specific.
+          </p>
+          <div class="reference-disclaimer">
+            Verify the exact manufacturer, strength, formulation, and NDC before use.
+            Do not estimate missing values or apply one manufacturer's value to a
+            different product. This reference does not determine ketogenic-diet
+            compatibility or classify a medication as safe or unsafe.
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+</BaseLayout>
+
+<script define:vars={{ initialApprovedRecords: approvedRecords, dosageFormFilterGroups, isPreview }}>
+  const approvedPreviewStorageKey = 'littlemedsApprovedPreviewRecords';
+  let approvedRecords = initialApprovedRecords.map((record) => ({ ...record }));
+  const state = {
+    selectedManufacturer: '',
+    highlightedManufacturerIndex: -1,
+  };
+
+  const tableWrap = document.querySelector('#tableWrap');
+  const mobileResultList = document.querySelector('#mobileResultList');
+  const resultMeta = document.querySelector('#resultMeta');
+  const printButton = document.querySelector('#printRecord');
+  const searchInput = document.querySelector('#productSearch');
+  const medicationFilter = document.querySelector('#medicationFilter');
+  const dosageFormFilter = document.querySelector('#dosageFormFilter');
+  const manufacturerCombobox = document.querySelector('#manufacturerCombobox');
+  const manufacturerOptionsList = document.querySelector('#manufacturerOptions');
+  const manufacturerClear = document.querySelector('#manufacturerClear');
+  const quantitativeFilter = document.querySelector('#quantitativeFilter');
+  const sourceTypeFilter = document.querySelector('#sourceTypeFilter');
+  const ndcFilter = document.querySelector('#ndcFilter');
+  const carbohydrateIngredientFilter = document.querySelector('#carbohydrateIngredientFilter');
+  const sweetenerFilter = document.querySelector('#sweetenerFilter');
+  const sortFilter = document.querySelector('#sortFilter');
+  const recordStatusText = document.querySelector('#recordStatusText');
+  const recordStatusEmpty = document.querySelector('#recordStatusEmpty');
+  const existingApprovedPreviewCount = document.querySelector('#existingApprovedPreviewCount');
+  const sessionApprovedPreviewCount = document.querySelector('#sessionApprovedPreviewCount');
+  const totalPreviewCount = document.querySelector('#totalPreviewCount');
+
+  function sessionApprovedPreviewRecords() {
+    if (!isPreview) return [];
+    try {
+      let rawRecords = window.sessionStorage.getItem(approvedPreviewStorageKey);
+      if (!rawRecords && window.opener?.sessionStorage) {
+        rawRecords = window.opener.sessionStorage.getItem(approvedPreviewStorageKey);
+        if (rawRecords) window.sessionStorage.setItem(approvedPreviewStorageKey, rawRecords);
+      }
+      const parsed = JSON.parse(rawRecords || '[]');
+      return Array.isArray(parsed) ? parsed.filter((record) => record?.approvalStatus === 'approved') : [];
+    } catch {
+      return [];
+    }
+  }
+
+  function mergeRecordsById(records) {
+    const byId = new Map();
+    for (const record of records) {
+      const id = String(record?.id || '').trim();
+      if (!id || byId.has(id)) continue;
+      byId.set(id, record);
+    }
+    return [...byId.values()];
+  }
+
+  function applyPreviewRecords() {
+    if (!isPreview) return;
+    const sessionRecords = sessionApprovedPreviewRecords();
+    approvedRecords = mergeRecordsById([...initialApprovedRecords, ...sessionRecords]);
+    if (existingApprovedPreviewCount) existingApprovedPreviewCount.textContent = String(initialApprovedRecords.length);
+    if (sessionApprovedPreviewCount) sessionApprovedPreviewCount.textContent = String(sessionRecords.length);
+    if (totalPreviewCount) totalPreviewCount.textContent = String(approvedRecords.length);
+  }
+
+  function updateRecordStatus() {
+    recordStatusText.textContent = `${approvedRecords.length} approved product-specific record${approvedRecords.length === 1 ? '' : 's'} currently available.`;
+    recordStatusEmpty.hidden = approvedRecords.length !== 0;
+  }
+
+  function escapeHtml(value) {
+    return String(value ?? '').replace(/[&<>"']/g, (char) => ({
+      '&': '&amp;',
+      '<': '&lt;',
+      '>': '&gt;',
+      '"': '&quot;',
+      "'": '&#39;',
+    }[char]));
+  }
+
+  function productName(record) {
+    const generic = record.genericName || 'Medication';
+    return record.brandName ? `${generic} (${record.brandName})` : generic;
+  }
+
+  function dosageAndStrength(record) {
+    return [
+      record.normalizedDosageForm || record.dosageForm || 'Dosage form not parsed',
+      record.strength,
+    ].filter(Boolean).join(' - ');
+  }
+
+  function sourceName(record) {
+    return record.sourceName || record.sourceType || 'DailyMed product label';
+  }
+
+  function verificationDate(record) {
+    return record.verifiedDate || record.reviewedDate || '';
+  }
+
+  function reviewerName(record) {
+    return record.reviewedBy || record.verifiedBy || '';
+  }
+
+  function isExcludedCelluloseDerivative(value) {
+    return [
+      'microcrystalline cellulose',
+      'carboxymethylcellulose',
+      'hydroxyethyl cellulose',
+      'methylcellulose',
+    ].includes(normalizedOrganizationKey(value));
+  }
+
+  function carbohydrateContributingIngredients(record) {
+    return ingredientArray(record).filter((ingredient) => !isExcludedCelluloseDerivative(ingredient.normalizedName || ingredient.sourceTerm));
+  }
+
+  function sortedUnique(values) {
+    return [...new Set(values.map((value) => String(value || '').trim()).filter(Boolean))]
+      .sort((a, b) => a.localeCompare(b, undefined, { sensitivity: 'base' }));
+  }
+
+  function setSelectOptions(select, options, firstLabel, firstValue = '') {
+    const currentValue = select.value;
+    select.innerHTML = [
+      `<option value="${escapeHtml(firstValue)}">${escapeHtml(firstLabel)}</option>`,
+      ...options.map((option) => `<option value="${escapeHtml(option)}">${escapeHtml(option)}</option>`),
+    ].join('');
+    if ([...select.options].some((option) => option.value === currentValue)) {
+      select.value = currentValue;
+    }
+  }
+
+  function renderFilterOptions() {
+    setSelectOptions(
+      medicationFilter,
+      sortedUnique(approvedRecords.map((record) => record.genericName)),
+      'All medications',
+    );
+    setSelectOptions(
+      sourceTypeFilter,
+      approvedRecords.length ? ['DailyMed product label'] : [],
+      'All source types',
+    );
+    setSelectOptions(
+      carbohydrateIngredientFilter,
+      sortedUnique(approvedRecords.flatMap((record) => carbohydrateContributingIngredients(record).map((ingredient) => ingredient.normalizedName || ingredient.sourceTerm))),
+      'All carbohydrate ingredients',
+    );
+
+    const currentSweetenerValue = sweetenerFilter.value;
+    const sweetenerOptions = sortedUnique(approvedRecords.flatMap((record) => sweetenerArray(record).map((sweetener) => sweetener.normalizedName || sweetener.sourceTerm)));
+    sweetenerFilter.innerHTML = [
+      '<option value="">All sweetener statuses</option>',
+      '<option value="__none">None identified</option>',
+      ...sweetenerOptions.map((sweetener) => `<option value="${escapeHtml(sweetener)}">${escapeHtml(sweetener)}</option>`),
+    ].join('');
+    if ([...sweetenerFilter.options].some((option) => option.value === currentSweetenerValue)) {
+      sweetenerFilter.value = currentSweetenerValue;
+    }
+  }
+
+  function displayQuantityStatus(status) {
+    const labels = {
+      'quantity-unknown': 'Not published',
+      'quantity-published': 'Amount available',
+      'quantitative-value-found': 'Amount available',
+      'manufacturer-confirmation-required': 'Manufacturer confirmation needed',
+      'manual-review-required': 'Additional review needed',
+      'no-carbohydrate-ingredient-identified': 'No carbohydrate ingredient identified in reviewed source',
+      'carbohydrate-ingredient-found-quantity-unknown': 'Not published',
+      'ambiguous-source-text': 'Additional review needed',
+    };
+    return labels[status] || status || 'Additional review needed';
+  }
+
+  function normalizedOrganizationKey(value) {
+    return String(value || '').replace(/\s+/g, ' ').trim().toLowerCase();
+  }
+
+  function normalizeText(value) {
+    return String(value || '').replace(/\s+/g, ' ').trim().toLowerCase();
+  }
+
+  function dosageFormFilterGroup(record) {
+    const form = normalizeText(record.normalizedDosageForm || record.dosageForm);
+    for (const [group, values] of Object.entries(dosageFormFilterGroups)) {
+      if (values.map(normalizeText).includes(form)) return group;
+    }
+    return 'Other';
+  }
+
+  function matchesDosageFormFilter(record) {
+    return !dosageFormFilter.value || dosageFormFilterGroup(record) === dosageFormFilter.value;
+  }
+
+  function normalizedManufacturerSearch(value) {
+    return String(value || '').replace(/\s+/g, ' ').trim().toLowerCase();
+  }
+
+  function displayedManufacturer(record) {
+    return String(record.packagerName || '').trim()
+      || String(record.labelerName || '').trim()
+      || String(record.manufacturerName || '').trim()
+      || String(record.distributorName || '').trim()
+      || String(record.manufacturer || '').trim()
+      || 'Organization not parsed';
+  }
+
+  function normalizeNdc(value) {
+    return String(value || '').replace(/\D+/g, '');
+  }
+
+  function arrayValues(value) {
+    if (Array.isArray(value)) return value;
+    if (value === undefined || value === null || value === '') return [];
+    return [value];
+  }
+
+  function ndcValues(record) {
+    return [
+      ...arrayValues(record.productNdc),
+      ...arrayValues(record.packageNdc),
+      ...arrayValues(record.ndc),
+      ...arrayValues(record.packageNdcs),
+      ...arrayValues(record.packageNdcList),
+      ...arrayValues(record.packageNdcValues),
+      ...arrayValues(record.ndcs),
+      ...arrayValues(record.packaging).flatMap((item) => [
+        item?.packageNdc,
+        item?.package_ndc,
+        item?.ndc,
+      ]),
+    ].filter(Boolean);
+  }
+
+  function matchesNdcFilter(record) {
+    const query = normalizeNdc(ndcFilter.value);
+    if (!query) return true;
+    return ndcValues(record).some((value) => normalizeNdc(value).includes(query));
+  }
+
+  function displayPackageNdc(record) {
+    const values = [
+      ...arrayValues(record.packageNdc),
+      ...arrayValues(record.packageNdcs),
+      ...arrayValues(record.packageNdcList),
+      ...arrayValues(record.packageNdcValues),
+      ...arrayValues(record.packaging).flatMap((item) => [
+        item?.packageNdc,
+        item?.package_ndc,
+        item?.ndc,
+      ]),
+    ].filter(Boolean);
+    const unique = [...new Set(values.map((value) => String(value).trim()).filter(Boolean))];
+    return unique.length ? unique.join(', ') : '';
+  }
+
+  function packageNdcList(record) {
+    return [
+      ...arrayValues(record.packageNdc),
+      ...arrayValues(record.packageNdcs),
+      ...arrayValues(record.packageNdcList),
+      ...arrayValues(record.packageNdcValues),
+      ...arrayValues(record.packaging).flatMap((item) => [
+        item?.packageNdc,
+        item?.package_ndc,
+        item?.ndc,
+      ]),
+    ].filter(Boolean).map((value) => String(value).trim()).filter(Boolean);
+  }
+
+  function validSourceUrl(record) {
+    try {
+      const url = new URL(record.sourceUrl || '');
+      return ['http:', 'https:'].includes(url.protocol) ? url.href : '';
+    } catch {
+      return '';
+    }
+  }
+
+  function manufacturerOptionEntries() {
+    const entries = new Map();
+    for (const record of approvedRecords) {
+      if (record.approvalStatus !== 'approved') continue;
+      if (medicationFilter.value && record.genericName !== medicationFilter.value) continue;
+      if (!matchesDosageFormFilter(record)) continue;
+      const name = displayedManufacturer(record);
+      const key = normalizedOrganizationKey(name);
+      const existing = entries.get(key);
+      if (existing) existing.count += 1;
+      else entries.set(key, { name, count: 1 });
+    }
+    return [...entries.values()].sort((a, b) => a.name.localeCompare(b.name, undefined, { sensitivity: 'base' }));
+  }
+
+  function renderManufacturerOptions() {
+    const selectedKey = normalizedOrganizationKey(state.selectedManufacturer);
+    const options = manufacturerOptionEntries();
+    const selected = options.find((option) => normalizedOrganizationKey(option.name) === selectedKey);
+    state.selectedManufacturer = selected?.name || '';
+    manufacturerCombobox.value = state.selectedManufacturer;
+    renderManufacturerListbox(false);
+  }
+
+  function manufacturerListOptions() {
+    const query = normalizedManufacturerSearch(manufacturerCombobox.value);
+    const allOption = { name: '', label: 'All manufacturers' };
+    const matches = manufacturerOptionEntries().filter((entry) => (
+      !query || normalizedManufacturerSearch(entry.name).includes(query)
+    ));
+    if (query && !matches.length) return [];
+    return [allOption, ...matches.map((entry) => ({
+      name: entry.name,
+      label: `${entry.name} (${entry.count})`,
+    }))];
+  }
+
+  function renderManufacturerListbox(open = true) {
+    const options = manufacturerListOptions();
+    const hasMatches = options.length > 0;
+    manufacturerCombobox.setAttribute('aria-expanded', open ? 'true' : 'false');
+    manufacturerOptionsList.hidden = !open;
+    if (!open) {
+      manufacturerOptionsList.innerHTML = '';
+      state.highlightedManufacturerIndex = -1;
+      manufacturerCombobox.removeAttribute('aria-activedescendant');
+      return;
+    }
+    if (!hasMatches) {
+      manufacturerOptionsList.innerHTML = '<li class="combobox-empty">No matching manufacturer</li>';
+      state.highlightedManufacturerIndex = -1;
+      manufacturerCombobox.removeAttribute('aria-activedescendant');
+      return;
+    }
+    state.highlightedManufacturerIndex = Math.max(0, Math.min(state.highlightedManufacturerIndex, options.length - 1));
+    manufacturerOptionsList.innerHTML = options.map((option, index) => `
+      <li
+        id="manufacturerOption-${index}"
+        role="option"
+        data-manufacturer-name="${escapeHtml(option.name)}"
+        aria-selected="${index === state.highlightedManufacturerIndex ? 'true' : 'false'}"
+      >
+        ${escapeHtml(option.label)}
+      </li>
+    `).join('');
+    manufacturerCombobox.setAttribute('aria-activedescendant', `manufacturerOption-${state.highlightedManufacturerIndex}`);
+  }
+
+  function selectManufacturer(name) {
+    state.selectedManufacturer = name;
+    manufacturerCombobox.value = name;
+    renderManufacturerListbox(false);
+    renderResults();
+  }
+
+  function hasPublishedQuantity(record) {
+    return record.extractionStatus === 'quantitative-value-found'
+      && ingredientArray(record).some((ingredient) => (
+        ingredient.normalizedAmountMg !== null
+      ));
+  }
+
+  function quantitativeSortValue(record) {
+    const explicit = record.carbohydrateAmount ?? record.publishedAmount ?? record.normalizedAmountMg;
+    if (Number.isFinite(explicit)) return Number(explicit);
+    const quantified = ingredientArray(record).find((ingredient) => Number.isFinite(ingredient.normalizedAmountMg ?? ingredient.amount));
+    return Number.isFinite(quantified?.normalizedAmountMg ?? quantified?.amount)
+      ? Number(quantified.normalizedAmountMg ?? quantified.amount)
+      : Number.POSITIVE_INFINITY;
+  }
+
+  function carbohydrateDisplay(record) {
+    if (record.carbohydrateDisplayValue) return escapeHtml(record.carbohydrateDisplayValue);
+    const amount = record.carbohydrateAmount ?? record.publishedAmount ?? record.normalizedAmountMg;
+    const unit = record.carbohydrateUnit || record.publishedUnit || '';
+    const perUnit = record.carbohydratePerUnit || record.publishedBasis || record.normalizedBasis || '';
+    if (amount !== null && amount !== undefined && Number.isFinite(Number(amount))) {
+      return escapeHtml(`${amount}${unit ? ` ${unit}` : ''}${perUnit ? `/${perUnit}` : ''}`);
+    }
+    const quantified = ingredientArray(record).filter((ingredient) => ingredient.normalizedAmountMg !== null || ingredient.amount !== null);
+    if (quantified.length) {
+      return quantified.map((ingredient) => {
+        const value = ingredient.carbohydrateDisplayValue || [
+          ingredient.amount ?? ingredient.normalizedAmountMg,
+          ingredient.unit || ingredient.amountUnit,
+          ingredient.concentration || ingredient.amountBasis || ingredient.normalizedBasis,
+        ].filter(Boolean).join(' ');
+        return escapeHtml(value);
+      }).join('<br />');
+    }
+    return 'Not published';
+  }
+
+  function ingredientTags(items, emptyText = 'None identified') {
+    const names = [...new Set(items.map((item) => item.normalizedName || item.sourceTerm).filter(Boolean))];
+    if (!names.length) return `<span class="muted-text">${escapeHtml(emptyText)}</span>`;
+    return `<span class="tag-list">${names.map((name) => `<span class="ingredient-tag">${escapeHtml(name)}</span>`).join('')}</span>`;
+  }
+
+  function sourceCell(record, includeUrl = false) {
+    const href = validSourceUrl(record);
+    const source = sourceName(record);
+    const additionalReferences = String(record.additionalReferences || '').trim();
+    const dateParts = [
+      record.sourceDate ? `Source date: ${record.sourceDate}` : '',
+      verificationDate(record) ? `Verified: ${verificationDate(record)}` : '',
+      reviewerName(record) ? `Reviewer: ${reviewerName(record)}` : '',
+    ].filter(Boolean);
+    return `
+      <div class="source-cell">
+        <strong>Primary source:</strong>
+        ${href
+          ? `<a href="${escapeHtml(href)}" target="_blank" rel="noopener noreferrer">${escapeHtml(source)}</a>`
+          : `<span>${escapeHtml(source || 'Source documentation on file')}</span>`}
+        ${includeUrl && href ? `<small>${escapeHtml(href)}</small>` : ''}
+        ${dateParts.length ? `<small>${escapeHtml(dateParts.join(' | '))}</small>` : ''}
+        ${additionalReferences ? `
+          <strong>Additional references:</strong>
+          <span class="additional-references">${escapeHtml(additionalReferences).replace(/\n/g, '<br />')}</span>
+        ` : ''}
+      </div>
+    `;
+  }
+
+  function printFilterSummary() {
+    const values = [
+      ['Search', searchInput.value.trim() || 'All'],
+      ['Medication', medicationFilter.value || 'All'],
+      ['Manufacturer', state.selectedManufacturer || 'All'],
+      ['Dosage form', dosageFormFilter.value || 'All'],
+      ['NDC', ndcFilter.value.trim() || 'All'],
+      ['Quantitative value', quantitativeFilter.value || 'All'],
+      ['Carbohydrate ingredient', carbohydrateIngredientFilter.value || 'All'],
+      ['Non-carbohydrate sweetener', sweetenerFilter.value === '__none' ? 'None identified' : sweetenerFilter.value || 'All'],
+      ['Sort', sortFilter.options[sortFilter.selectedIndex]?.textContent || 'Medication'],
+    ];
+    return values.map(([label, value]) => `${label}: ${value}`).join(' | ');
+  }
+
+  function matchesRecord(record) {
+    if (record.approvalStatus !== 'approved') return false;
+    if (medicationFilter.value && record.genericName !== medicationFilter.value) return false;
+    const query = searchInput.value.trim().toLowerCase();
+    const searchable = [
+      record.genericName,
+      record.brandName,
+      displayedManufacturer(record),
+      record.labelerName,
+      record.packagerName,
+      record.manufacturerName,
+      record.distributorName,
+      record.strength,
+      record.dosageForm,
+      record.originalDosageForm,
+      record.normalizedDosageForm,
+      record.route,
+      record.productNdc,
+      record.packageNdc,
+      record.packageDescription,
+      ...ingredientArray(record).flatMap((ingredient) => [
+        ingredient.normalizedName,
+        ingredient.sourceTerm,
+      ]),
+      ...sweetenerArray(record).flatMap((sweetener) => [
+        sweetener.normalizedName,
+        sweetener.sourceTerm,
+      ]),
+    ].join(' ').toLowerCase();
+
+    if (query && !searchable.includes(query)) return false;
+    if (!matchesDosageFormFilter(record)) return false;
+    if (state.selectedManufacturer && normalizedOrganizationKey(displayedManufacturer(record)) !== normalizedOrganizationKey(state.selectedManufacturer)) return false;
+    if (sourceTypeFilter.value && sourceTypeFilter.value !== 'DailyMed product label') return false;
+    if (quantitativeFilter.value === 'yes' && !hasPublishedQuantity(record)) return false;
+    if (quantitativeFilter.value === 'no' && hasPublishedQuantity(record)) return false;
+    if (carbohydrateIngredientFilter.value && !carbohydrateContributingIngredients(record).some((ingredient) => normalizedOrganizationKey(ingredient.normalizedName || ingredient.sourceTerm) === normalizedOrganizationKey(carbohydrateIngredientFilter.value))) return false;
+    if (sweetenerFilter.value === '__none' && sweetenerArray(record).length) return false;
+    if (sweetenerFilter.value && sweetenerFilter.value !== '__none' && !sweetenerArray(record).some((sweetener) => normalizedOrganizationKey(sweetener.normalizedName || sweetener.sourceTerm) === normalizedOrganizationKey(sweetenerFilter.value))) return false;
+    if (!matchesNdcFilter(record)) return false;
+    if (!validSourceUrl(record) && !sourceName(record)) return false;
+    return true;
+  }
+
+  function filteredRecords() {
+    return approvedRecords.filter(matchesRecord).sort((a, b) => {
+      const sort = sortFilter.value;
+      if (sort === 'manufacturer') return displayedManufacturer(a).localeCompare(displayedManufacturer(b), undefined, { sensitivity: 'base' });
+      if (sort === 'dosage-form') return dosageAndStrength(a).localeCompare(dosageAndStrength(b), undefined, { sensitivity: 'base' });
+      if (sort === 'carbohydrate-amount') return quantitativeSortValue(a) - quantitativeSortValue(b);
+      if (sort === 'verification-date') return String(verificationDate(b)).localeCompare(String(verificationDate(a)));
+      return productName(a).localeCompare(productName(b), undefined, { sensitivity: 'base' });
+    });
+  }
+
+  function renderResults() {
+    const matches = filteredRecords();
+    resultMeta.textContent = `${matches.length} approved product-specific record${matches.length === 1 ? '' : 's'} found.`;
+
+    if (!matches.length) {
+      tableWrap.innerHTML = `
+        <div class="empty-state">
+          <strong>${ndcFilter.value.trim() ? 'No records match the entered NDC and selected filters.' : 'No verified product-specific carbohydrate record is currently available.'}</strong>
+          <span>Verify the exact manufacturer, formulation, and NDC using product labeling, manufacturer medical information, or an approved ketogenic medication reference.</span>
+        </div>
+      `;
+      mobileResultList.innerHTML = '';
+      return;
+    }
+
+    const tableRows = matches.map((record) => {
+      const packageNdcs = packageNdcList(record);
+      const sweeteners = record.nonCarbohydrateSweeteners || sweetenerArray(record);
+      return `
+        <tr>
+          <td class="product-cell"><strong>${escapeHtml(productName(record))}</strong></td>
+          <td>${escapeHtml(displayedManufacturer(record))}</td>
+          <td>${escapeHtml(dosageAndStrength(record))}</td>
+          <td>
+            <span>${escapeHtml(record.productNdc || 'not listed')}</span>
+            ${packageNdcs.length ? `
+              <details>
+                <summary>Package NDCs</summary>
+                <span>${escapeHtml(packageNdcs.join(', '))}</span>
+              </details>
+            ` : ''}
+          </td>
+          <td class="amount-cell">${carbohydrateDisplay(record)}</td>
+          <td>${ingredientTags(carbohydrateContributingIngredients(record), 'None identified')}</td>
+          <td>${ingredientTags(sweeteners, 'None identified')}</td>
+          <td>${sourceCell(record, false)}</td>
+        </tr>
+      `;
+    }).join('');
+
+    tableWrap.innerHTML = `
+      <div class="print-summary">
+        <strong>Pediatric Medication Carbohydrate Reference</strong>
+        <span>Printed: ${escapeHtml(new Date().toLocaleString())}</span>
+        <span>${escapeHtml(printFilterSummary())}</span>
+      </div>
+      <table class="reference-table">
+        <thead>
+          <tr>
+            <th>Medication product</th>
+            <th>Manufacturer</th>
+            <th>Dosage form and strength</th>
+            <th>NDC</th>
+            <th>Carbohydrate amount</th>
+            <th>Carbohydrate-contributing ingredients</th>
+            <th>Non-carbohydrate sweeteners</th>
+            <th>Source</th>
+          </tr>
+        </thead>
+        <tbody>${tableRows}</tbody>
+      </table>
+    `;
+
+    mobileResultList.innerHTML = matches.map((record) => {
+      const packageNdcs = packageNdcList(record);
+      const sweeteners = record.nonCarbohydrateSweeteners || sweetenerArray(record);
+      return `
+        <article class="mobile-result-card">
+          <header>
+            <strong>${escapeHtml(productName(record))}</strong>
+            <span>${escapeHtml(displayedManufacturer(record))}</span>
+          </header>
+          <dl>
+            <div><dt>Dosage form and strength</dt><dd>${escapeHtml(dosageAndStrength(record))}</dd></div>
+            <div><dt>NDC</dt><dd>${escapeHtml(record.productNdc || 'not listed')}${packageNdcs.length ? `<br /><small>Package NDCs: ${escapeHtml(packageNdcs.join(', '))}</small>` : ''}</dd></div>
+            <div><dt>Carbohydrate amount</dt><dd>${carbohydrateDisplay(record)}</dd></div>
+            <div><dt>Carbohydrate-contributing ingredients</dt><dd>${ingredientTags(carbohydrateContributingIngredients(record), 'None identified')}</dd></div>
+            <div><dt>Non-carbohydrate sweeteners</dt><dd>${ingredientTags(sweeteners, 'None identified')}</dd></div>
+            <div><dt>Source</dt><dd>${sourceCell(record, false)}</dd></div>
+          </dl>
+        </article>
+      `;
+    }).join('');
+  }
+
+  function ingredientList(record) {
+    const ingredients = ingredientArray(record);
+    if (!ingredients.length) return '<p class="empty-message">No carbohydrate-related ingredient was identified in the reviewed source.</p>';
+    return `
+      <div class="ingredient-summary">
+        <strong>Carbohydrate-contributing ingredients: ${ingredients.length}</strong>
+        <div class="ingredient-card-list">
+          ${ingredients.map((ingredient) => `
+            <article class="ingredient-card">
+              <h4>${escapeHtml(ingredient.normalizedName || 'Carbohydrate ingredient')}</h4>
+              <p><b>Carbohydrate source:</b> ${escapeHtml(ingredient.sourceTerm || 'Not stated')}</p>
+              <details>
+                <summary>Source excerpt</summary>
+                <p>${escapeHtml(ingredient.sourceExcerpt || 'Source excerpt not available.')}</p>
+              </details>
+            </article>
+          `).join('')}
+        </div>
+      </div>
+    `;
+  }
+
+  function ingredientArray(record) {
+    if (Array.isArray(record.carbohydrateIngredients)) return record.carbohydrateIngredients;
+    if (record.carbohydrateIngredient) {
+      return [{
+        normalizedName: record.carbohydrateIngredient,
+        sourceTerm: record.carbohydrateIngredient,
+        sourceExcerpt: record.sourceExcerpt || '',
+        amount: record.normalizedAmountMg ?? record.publishedAmount ?? null,
+        amountUnit: record.publishedUnit || '',
+        amountBasis: record.publishedBasis || '',
+        normalizedAmountMg: record.normalizedAmountMg ?? null,
+        normalizedBasis: record.normalizedBasis || '',
+        quantityStatus: record.publishedAmount === null ? 'quantity-unknown' : 'quantity-published',
+      }];
+    }
+    return [];
+  }
+
+  function sweetenerArray(record) {
+    return Array.isArray(record.nonNutritiveSweeteners) ? record.nonNutritiveSweeteners : [];
+  }
+
+  function sweetenerList(record) {
+    const sweeteners = sweetenerArray(record);
+    if (!sweeteners.length) return '';
+    return `
+      <div class="ingredient-summary sweetener-summary">
+        <strong>Non-carbohydrate sweeteners: ${sweeteners.length}</strong>
+        <p class="helper-text">Non-carbohydrate sweeteners are displayed separately and are not included in the medication carbohydrate amount.</p>
+        <div class="ingredient-card-list">
+          ${sweeteners.map((sweetener) => `
+            <article class="ingredient-card">
+              <h4>${escapeHtml(sweetener.normalizedName || 'Non-nutritive sweetener')}</h4>
+              <p><b>Source:</b> ${escapeHtml(sweetener.sourceTerm || 'Not stated')}</p>
+              <details>
+                <summary>Source excerpt</summary>
+                <p>${escapeHtml(sweetener.sourceExcerpt || 'Source excerpt not available.')}</p>
+              </details>
+            </article>
+          `).join('')}
+        </div>
+      </div>
+    `;
+  }
+
+  function sourceDetails(record) {
+    return [
+      ['Generic name', record.genericName],
+      ['Brand name', record.brandName || 'Not stated'],
+      ['Manufacturer or labeler', displayedManufacturer(record)],
+      ['Strength', record.strength || 'Not parsed'],
+      ['Dosage form', record.normalizedDosageForm || record.dosageForm || 'Not parsed'],
+      ['Product NDC', record.productNdc],
+      ['Package NDC', displayPackageNdc(record) || 'Not listed'],
+      ['Package description', record.packageDescription || 'Review source label'],
+      ['DailyMed set ID', record.sourceSetId],
+      ['Source date', record.sourceDate],
+      ['Additional references', record.additionalReferences],
+      ['Review date', record.reviewedDate || 'Not verified'],
+      ['Notes', record.notes],
+    ];
+  }
+
+  manufacturerCombobox.addEventListener('input', () => {
+    state.selectedManufacturer = '';
+    state.highlightedManufacturerIndex = 0;
+    renderManufacturerListbox(true);
+    renderResults();
+  });
+
+  manufacturerCombobox.addEventListener('focus', () => {
+    state.highlightedManufacturerIndex = 0;
+    renderManufacturerListbox(true);
+  });
+
+  manufacturerCombobox.addEventListener('keydown', (event) => {
+    const options = manufacturerListOptions();
+    if (!options.length && ['ArrowDown', 'ArrowUp', 'Enter'].includes(event.key)) {
+      event.preventDefault();
+      renderManufacturerListbox(true);
+      return;
+    }
+    if (event.key === 'ArrowDown') {
+      event.preventDefault();
+      state.highlightedManufacturerIndex = Math.min(options.length - 1, state.highlightedManufacturerIndex + 1);
+      renderManufacturerListbox(true);
+    } else if (event.key === 'ArrowUp') {
+      event.preventDefault();
+      state.highlightedManufacturerIndex = Math.max(0, state.highlightedManufacturerIndex - 1);
+      renderManufacturerListbox(true);
+    } else if (event.key === 'Enter') {
+      event.preventDefault();
+      const option = options[state.highlightedManufacturerIndex];
+      if (option) selectManufacturer(option.name);
+    } else if (event.key === 'Escape') {
+      manufacturerCombobox.value = state.selectedManufacturer;
+      renderManufacturerListbox(false);
+    }
+  });
+
+  manufacturerCombobox.addEventListener('blur', () => {
+    window.setTimeout(() => {
+      if (document.activeElement?.closest('[data-combobox]')) return;
+      manufacturerCombobox.value = state.selectedManufacturer;
+      renderManufacturerListbox(false);
+    }, 100);
+  });
+
+  manufacturerOptionsList.addEventListener('mousedown', (event) => {
+    const option = event.target.closest('[role="option"]');
+    if (!option) return;
+    event.preventDefault();
+    selectManufacturer(option.dataset.manufacturerName || '');
+  });
+
+  manufacturerClear.addEventListener('click', () => {
+    selectManufacturer('');
+    manufacturerCombobox.focus();
+  });
+
+  document.addEventListener('click', (event) => {
+    if (!event.target.closest('[data-combobox]')) {
+      manufacturerCombobox.value = state.selectedManufacturer;
+      renderManufacturerListbox(false);
+    }
+  });
+
+  [searchInput, medicationFilter, dosageFormFilter, quantitativeFilter, sourceTypeFilter, ndcFilter, carbohydrateIngredientFilter, sweetenerFilter, sortFilter].forEach((input) => {
+    input.addEventListener('input', renderResults);
+    input.addEventListener('change', () => {
+      if (input === medicationFilter || input === dosageFormFilter) renderManufacturerOptions();
+      renderResults();
+    });
+  });
+
+  printButton.addEventListener('click', () => {
+    window.print();
+  });
+
+  const printOpenedDetails = new Set();
+  window.addEventListener('beforeprint', () => {
+    document.querySelectorAll('.detail-panel details:not([open])').forEach((details) => {
+      printOpenedDetails.add(details);
+      details.setAttribute('open', '');
+    });
+  });
+
+  window.addEventListener('afterprint', () => {
+    printOpenedDetails.forEach((details) => details.removeAttribute('open'));
+    printOpenedDetails.clear();
+  });
+
+  applyPreviewRecords();
+  updateRecordStatus();
+  renderFilterOptions();
+  renderManufacturerOptions();
+  renderResults();
+</script>
+
+<style is:global>
+  .reference-page {
+    background: #f7f9fb;
+    color: #24313a;
+  }
+
+  .reference-container {
+    width: min(100% - 40px, 1180px);
+    margin-inline: auto;
+  }
+
+  .reference-hero {
+    border-bottom: 1px solid #dbe4ea;
+    background: linear-gradient(135deg, #eef5f8 0%, #f7f9fb 76%);
+    padding: 30px 0 42px;
+  }
+
+  .reference-brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 34px;
+    color: #123b5d;
+    font-weight: 800;
+  }
+
+  .reference-brand__mark {
+    display: inline-grid;
+    width: 42px;
+    height: 42px;
+    place-items: center;
+    border-radius: 8px;
+    background: #123b5d;
+    color: #fff;
+    font-size: 0.78rem;
+  }
+
+  .reference-eyebrow {
+    margin: 0 0 10px;
+    color: #2e7d68;
+    font-size: 0.78rem;
+    font-weight: 850;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .reference-hero h1 {
+    max-width: 920px;
+    margin-bottom: 18px;
+    color: #123b5d;
+    font-size: clamp(2.3rem, 5vw, 4rem);
+    line-height: 1.04;
+  }
+
+  .reference-lede {
+    max-width: 820px;
+    color: #40515d;
+    font-size: 1.12rem;
+  }
+
+  .reference-notice,
+  .reference-disclaimer {
+    max-width: 980px;
+    border: 1px solid rgba(46, 125, 104, 0.22);
+    border-left: 5px solid #2e7d68;
+    border-radius: 8px;
+    background: #f5fbf8;
+    padding: 18px 20px;
+    font-weight: 720;
+  }
+
+  .preview-banner {
+    display: grid;
+    gap: 12px;
+    max-width: 980px;
+    border: 2px solid #2b6f9f;
+    border-left-width: 8px;
+    border-radius: 8px;
+    background: #eef5f8;
+    margin-top: 18px;
+    padding: 18px 20px;
+    color: #123b5d;
+  }
+
+  .preview-banner p {
+    margin: 0;
+    color: #40515d;
+    font-weight: 720;
+  }
+
+  .preview-counts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .preview-counts span {
+    border: 1px solid #bfd2dd;
+    border-radius: 8px;
+    background: #fff;
+    padding: 8px 10px;
+    font-weight: 800;
+  }
+
+  .reference-workspace {
+    padding: 34px 0 64px;
+  }
+
+  .reference-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    align-items: start;
+  }
+
+  .lookup-panel,
+  .detail-panel {
+    border: 1px solid #d6e2e9;
+    border-radius: 8px;
+    background: #fff;
+    padding: 28px;
+    box-shadow: 0 14px 34px rgba(18, 59, 93, 0.07);
+  }
+
+  .detail-panel {
+    display: grid;
+    gap: 14px;
+  }
+
+  .section-title h2 {
+    margin-bottom: 10px;
+    color: #123b5d;
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: clamp(1.7rem, 3vw, 2.3rem);
+  }
+
+  .search-field,
+  .filter-grid label,
+  .combobox-field {
+    display: grid;
+    gap: 7px;
+    color: #123b5d;
+    font-weight: 800;
+  }
+
+  .search-field {
+    margin: 20px 0;
+  }
+
+  .filter-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+  }
+
+  input,
+  select {
+    width: 100%;
+    min-height: 46px;
+    border: 1px solid #cbd9e2;
+    border-radius: 8px;
+    background: #fff;
+    color: #24313a;
+    font: inherit;
+    padding: 10px 12px;
+  }
+
+  .filter-help {
+    color: #60717d;
+    font-size: 0.78rem;
+    font-weight: 650;
+    line-height: 1.35;
+  }
+
+  .combobox {
+    position: relative;
+    display: grid;
+    gap: 6px;
+  }
+
+  .combobox input {
+    padding-right: 68px;
+  }
+
+  .combobox-clear {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    min-height: 30px;
+    border: 0;
+    border-radius: 6px;
+    background: #eef5f8;
+    color: #123b5d;
+    cursor: pointer;
+    font-size: 0.78rem;
+    font-weight: 850;
+    padding: 5px 8px;
+  }
+
+  .combobox-list {
+    position: absolute;
+    z-index: 20;
+    top: calc(100% + 4px);
+    right: 0;
+    left: 0;
+    max-height: 240px;
+    overflow: auto;
+    border: 1px solid #cbd9e2;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 14px 34px rgba(18, 59, 93, 0.16);
+    list-style: none;
+    margin: 0;
+    padding: 6px;
+  }
+
+  .combobox-list[hidden] {
+    display: none;
+  }
+
+  .combobox-list li {
+    border-radius: 6px;
+    color: #24313a;
+    cursor: pointer;
+    font-weight: 750;
+    padding: 9px 10px;
+  }
+
+  .combobox-list li[aria-selected="true"] {
+    background: #eef5f8;
+    color: #123b5d;
+  }
+
+  .combobox-empty {
+    color: #60717d;
+    cursor: default;
+  }
+
+  input:focus-visible,
+  select:focus-visible,
+  button:focus-visible,
+  .source-link:focus-visible {
+    outline: 3px solid rgba(46, 125, 104, 0.34);
+    outline-offset: 3px;
+  }
+
+  .record-status {
+    display: grid;
+    gap: 6px;
+    border: 1px solid #d6e2e9;
+    border-left: 5px solid #2b6f9f;
+    border-radius: 8px;
+    background: #f8fbfd;
+    margin: 16px 0 22px;
+    padding: 16px;
+  }
+
+  .result-meta {
+    margin: 20px 0 12px;
+    color: #60717d;
+    font-weight: 800;
+  }
+
+  .reference-table-wrap {
+    overflow-x: auto;
+    border: 1px solid #cbd9e2;
+    border-radius: 8px;
+    background: #fff;
+  }
+
+  .reference-table {
+    width: 100%;
+    min-width: 1180px;
+    border-collapse: collapse;
+    font-size: 0.88rem;
+    line-height: 1.35;
+  }
+
+  .reference-table th,
+  .reference-table td {
+    border-right: 1px solid #d6e2e9;
+    border-bottom: 1px solid #d6e2e9;
+    padding: 10px 12px;
+    text-align: left;
+    vertical-align: top;
+  }
+
+  .reference-table th:last-child,
+  .reference-table td:last-child {
+    border-right: 0;
+  }
+
+  .reference-table thead th {
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    background: #eef5f8;
+    color: #123b5d;
+    font-weight: 900;
+  }
+
+  .reference-table tbody tr:nth-child(even) {
+    background: #f8fbfd;
+  }
+
+  .product-cell,
+  .amount-cell {
+    min-width: 190px;
+  }
+
+  .source-cell {
+    display: grid;
+    gap: 4px;
+    min-width: 180px;
+  }
+
+  .source-cell small,
+  .muted-text,
+  .mobile-result-card small {
+    color: #60717d;
+    font-size: 0.78rem;
+    font-weight: 700;
+  }
+
+  .tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  .ingredient-tag {
+    display: inline-flex;
+    width: fit-content;
+    border: 1px solid #cfe1dc;
+    border-radius: 999px;
+    background: #f5fbf8;
+    color: #1d604f;
+    padding: 2px 7px;
+    font-size: 0.78rem;
+    font-weight: 850;
+  }
+
+  .print-summary {
+    display: none;
+  }
+
+  .methodology-note {
+    border-left: 5px solid #2e7d68;
+    background: #f5fbf8;
+    margin: 18px 0 0;
+    padding: 14px 16px;
+    color: #24313a;
+    font-weight: 720;
+  }
+
+  .mobile-result-list {
+    display: none;
+    gap: 12px;
+  }
+
+  .mobile-result-card {
+    display: grid;
+    gap: 12px;
+    border: 1px solid #d6e2e9;
+    border-radius: 8px;
+    background: #fff;
+    padding: 16px;
+  }
+
+  .mobile-result-card header {
+    display: grid;
+    gap: 4px;
+    color: #123b5d;
+  }
+
+  .mobile-result-card dl {
+    display: grid;
+    gap: 10px;
+    margin: 0;
+  }
+
+  .mobile-result-card div {
+    border-top: 1px solid #e6eef3;
+    padding-top: 9px;
+  }
+
+  .mobile-result-card dt {
+    color: #60717d;
+    font-size: 0.75rem;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+
+  .mobile-result-card dd {
+    margin: 3px 0 0;
+    color: #123b5d;
+    font-weight: 780;
+  }
+
+  .empty-state,
+  .empty-message {
+    border: 1px dashed #bfd2dd;
+    border-radius: 8px;
+    background: #f8fbfd;
+    padding: 18px;
+    color: #60717d;
+    font-weight: 750;
+  }
+
+  .empty-state {
+    display: grid;
+    gap: 8px;
+  }
+
+  .empty-state strong {
+    color: #123b5d;
+  }
+
+  .record-detail {
+    display: grid;
+    gap: 12px;
+    margin: 0;
+  }
+
+  .record-detail div {
+    min-width: 0;
+    overflow-wrap: anywhere;
+    border-bottom: 1px solid #e6eef3;
+    padding-bottom: 10px;
+  }
+
+  .record-detail dt {
+    color: #60717d;
+    font-size: 0.78rem;
+    font-weight: 850;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+
+  .record-detail dd {
+    margin: 3px 0 0;
+    color: #123b5d;
+    font-weight: 820;
+  }
+
+  .ingredient-section {
+    margin-top: 18px;
+  }
+
+  .ingredient-section h3 {
+    color: #123b5d;
+    font-size: 1rem;
+  }
+
+  .ingredient-summary {
+    display: grid;
+    gap: 12px;
+    border: 1px solid #d6e2e9;
+    border-radius: 8px;
+    background: #f8fbfd;
+    padding: 14px;
+  }
+
+  .ingredient-card-list {
+    display: grid;
+    gap: 10px;
+    margin: 0;
+  }
+
+  .ingredient-card {
+    display: grid;
+    gap: 6px;
+    border: 1px solid #d6e2e9;
+    border-radius: 8px;
+    background: #fff;
+    padding: 12px;
+  }
+
+  .ingredient-card h4,
+  .ingredient-card p {
+    margin: 0;
+  }
+
+  .ingredient-card details {
+    margin-top: 4px;
+  }
+
+  .ingredient-card summary {
+    cursor: pointer;
+    color: #123b5d;
+    font-weight: 850;
+  }
+
+  .source-details {
+    margin-top: 18px;
+    border: 1px solid #d6e2e9;
+    border-radius: 8px;
+    background: #fff;
+    padding: 14px;
+  }
+
+  .source-details summary {
+    cursor: pointer;
+    color: #123b5d;
+    font-weight: 850;
+  }
+
+  .source-details[open] summary {
+    margin-bottom: 12px;
+  }
+
+  .source-link {
+    display: inline-flex;
+    width: fit-content;
+    min-height: 42px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background: #eaf6f1;
+    color: #1d604f;
+    margin: 16px 0;
+    padding: 0 14px;
+    font-weight: 850;
+  }
+
+  .detail-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 18px;
+  }
+
+  .button {
+    min-height: 44px;
+    cursor: pointer;
+    border: 0;
+    border-radius: 8px;
+    padding: 0 16px;
+    font: inherit;
+    font-weight: 850;
+  }
+
+  .button-primary {
+    background: #2b6f9f;
+    color: #fff;
+  }
+
+  .button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+
+  @media (max-width: 900px) {
+    .reference-grid,
+    .filter-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .reference-table-wrap {
+      display: none;
+    }
+
+    .mobile-result-list {
+      display: grid;
+    }
+  }
+
+  @media print {
+    .reference-hero,
+    .detail-panel,
+    .detail-actions,
+    .preview-banner,
+    .mobile-result-list,
+    .combobox-list {
+      display: none;
+    }
+
+    .reference-workspace,
+    .reference-container,
+    .lookup-panel {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      box-shadow: none;
+      border: 0;
+    }
+
+    .reference-table-wrap {
+      display: block;
+      overflow: visible;
+      border: 0;
+    }
+
+    .reference-table {
+      width: 100%;
+      min-width: 0;
+      font-size: 8pt;
+    }
+
+    .reference-table thead th {
+      position: static;
+    }
+
+    .print-summary {
+      display: grid;
+      gap: 4px;
+      margin-bottom: 12px;
+      color: #123b5d;
+      font-size: 9pt;
+    }
+
+    .methodology-note {
+      break-inside: avoid;
+      margin-top: 12px;
+      font-size: 9pt;
+    }
+
+    details {
+      display: block;
+    }
+  }
+</style>

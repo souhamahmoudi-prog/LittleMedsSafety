@@ -1,6 +1,9 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import { dosageFormFilterOptions } from '../../data/medicationCarbohydrateReference';
+import {
+  dosageFormFilterGroups,
+  dosageFormFilterOptions,
+} from '../../data/medicationCarbohydrateReference';
 import { pendingMedicationCarbohydrateRecords } from '../../data/medicationCarbohydrateRecords';
 import approvedMedicationCarbohydrateRecords from '../../data/approvedMedicationCarbohydrateRecords.json';
 import rejectedMedicationCarbohydrateRecords from '../../data/rejectedMedicationCarbohydrateRecords.json';
@@ -50,7 +53,7 @@ const extractionStatuses = [
       <section class="summary-grid" aria-label="Review queue summary">
         <div><span>Total pending</span><strong id="totalPending">{pendingRecords.length}</strong></div>
         <div><span>Amount available</span><strong id="quantitativeCount">{statusCounts['quantitative-value-found'] || 0}</strong></div>
-        <div><span>Amount not available</span><strong id="ingredientUnknownCount">{statusCounts['carbohydrate-ingredient-found-quantity-unknown'] || 0}</strong></div>
+        <div><span>Not published</span><strong id="ingredientUnknownCount">{statusCounts['carbohydrate-ingredient-found-quantity-unknown'] || 0}</strong></div>
         <div><span>Additional review needed</span><strong id="manualReviewCount">{statusCounts['manual-review-required'] || 0}</strong></div>
         <div><span>Source needs review</span><strong id="ambiguousCount">{statusCounts['ambiguous-source-text'] || 0}</strong></div>
       </section>
@@ -71,11 +74,17 @@ const extractionStatuses = [
           <p id="publishingStatus">Approved locally — export required for publication.</p>
         </div>
         <div class="publishing-counts" aria-label="Session publishing counts">
+          <div><span>Pending count</span><strong id="progressPendingCount">{pendingRecords.length}</strong></div>
           <div><span>Approved this session</span><strong id="approvedSessionCount">0</strong></div>
           <div><span>Rejected this session</span><strong id="rejectedSessionCount">0</strong></div>
           <div><span>Remaining pending</span><strong id="remainingPendingCount">{pendingRecords.length}</strong></div>
+          <div><span>Remaining in current filter</span><strong id="remainingFilterCount">{pendingRecords.length}</strong></div>
+          <div><span>Next unreviewed record</span><strong id="nextRecordLabel">Select a record</strong></div>
         </div>
-        <button class="button button-primary" type="button" id="exportPublish">Export and publish approved records</button>
+        <div class="publishing-actions">
+          <button class="button button-primary" type="button" id="exportPublish">Export and publish approved records</button>
+          <button class="button button-secondary" type="button" id="previewPublic">Preview as public user</button>
+        </div>
         <div id="publishInstructions" class="publish-instructions" hidden>
           <strong>To publish:</strong>
           <ol>
@@ -85,6 +94,18 @@ const extractionStatuses = [
             <li>Commit and push the changes.</li>
           </ol>
         </div>
+      </section>
+
+      <section class="reviewer-defaults authorized-reviewer" aria-labelledby="reviewerDefaultsTitle">
+        <div>
+          <p class="review-eyebrow">Authorized Reviewer</p>
+          <h2 id="reviewerDefaultsTitle">Approval identity</h2>
+        </div>
+        <p>
+          Approvals are recorded as:<br />
+          <strong>Souha Mahmoudi, Ph.D.</strong><br />
+          Date added automatically
+        </p>
       </section>
 
       <div class="review-layout">
@@ -136,7 +157,7 @@ const extractionStatuses = [
                     {status === 'quantitative-value-found'
                       ? 'Amount available'
                       : status === 'carbohydrate-ingredient-found-quantity-unknown'
-                        ? 'Amount not available'
+                        ? 'Not published'
                         : status === 'manual-review-required'
                           ? 'Additional review needed'
                           : status === 'no-carbohydrate-ingredient-identified'
@@ -167,6 +188,21 @@ const extractionStatuses = [
             </label>
           </div>
 
+          <div class="bulk-panel" aria-label="Batch review controls">
+            <div class="bulk-panel__summary">
+              <strong><span id="selectedCount">0</span> selected</strong>
+              <span>Use batch actions only after verifying each product-specific source.</span>
+            </div>
+            <div class="review-actions">
+              <button class="button button-secondary" type="button" id="selectAllVisible">Select all visible</button>
+              <button class="button button-secondary" type="button" id="clearSelection">Clear selection</button>
+              <button class="button button-primary" type="button" id="bulkApprove">Approve selected</button>
+              <button class="button button-danger" type="button" id="bulkReject">Reject selected</button>
+              <button class="button button-secondary" type="button" id="bulkManufacturerRequired">Mark selected as manufacturer confirmation required</button>
+            </div>
+            <div id="bulkConfirmation" class="bulk-confirmation" hidden></div>
+          </div>
+
           <div id="recordQueue" class="record-queue"></div>
         </section>
 
@@ -181,10 +217,30 @@ const extractionStatuses = [
         </section>
       </div>
     </section>
+
+    <div class="confirmation-backdrop" id="approvalDialogBackdrop" hidden>
+      <section
+        class="confirmation-dialog"
+        id="approvalDialog"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="approvalDialogTitle"
+        aria-describedby="approvalDialogMessage"
+      >
+        <h2 id="approvalDialogTitle">Confirm approval</h2>
+        <p id="approvalDialogMessage"></p>
+        <div class="review-actions">
+          <button class="button button-secondary" type="button" id="approvalDialogCancel">Cancel</button>
+          <button class="button button-primary" type="button" id="approvalDialogConfirm">Approve record</button>
+        </div>
+      </section>
+    </div>
   </main>
 </BaseLayout>
 
-<script define:vars={{ pendingRecords, approvedRecords, rejectedRecords }}>
+<script define:vars={{ pendingRecords, approvedRecords, rejectedRecords, dosageFormFilterGroups }}>
+  const approvedPreviewStorageKey = 'littlemedsApprovedPreviewRecords';
+  const authorizedReviewerName = 'Souha Mahmoudi, Ph.D.';
   const state = {
     selectedId: '',
     pending: pendingRecords.map((record) => ({ ...record })),
@@ -192,6 +248,8 @@ const extractionStatuses = [
     existingRejected: rejectedRecords.map((record) => ({ ...record })),
     approved: [],
     rejected: [],
+    selectedIds: new Set(),
+    pendingConfirmation: null,
     selectedManufacturer: '',
     highlightedManufacturerIndex: -1,
   };
@@ -201,6 +259,7 @@ const extractionStatuses = [
   const message = document.querySelector('#reviewMessage');
   const visibleCount = document.querySelector('#visibleCount');
   const totalPending = document.querySelector('#totalPending');
+  const progressPendingCount = document.querySelector('#progressPendingCount');
   const quantitativeCount = document.querySelector('#quantitativeCount');
   const ingredientUnknownCount = document.querySelector('#ingredientUnknownCount');
   const manualReviewCount = document.querySelector('#manualReviewCount');
@@ -208,8 +267,17 @@ const extractionStatuses = [
   const approvedSessionCount = document.querySelector('#approvedSessionCount');
   const rejectedSessionCount = document.querySelector('#rejectedSessionCount');
   const remainingPendingCount = document.querySelector('#remainingPendingCount');
+  const remainingFilterCount = document.querySelector('#remainingFilterCount');
+  const nextRecordLabel = document.querySelector('#nextRecordLabel');
   const publishingStatus = document.querySelector('#publishingStatus');
   const publishInstructions = document.querySelector('#publishInstructions');
+  const selectedCount = document.querySelector('#selectedCount');
+  const bulkConfirmation = document.querySelector('#bulkConfirmation');
+  const approvalDialogBackdrop = document.querySelector('#approvalDialogBackdrop');
+  const approvalDialog = document.querySelector('#approvalDialog');
+  const approvalDialogMessage = document.querySelector('#approvalDialogMessage');
+  const approvalDialogCancel = document.querySelector('#approvalDialogCancel');
+  const approvalDialogConfirm = document.querySelector('#approvalDialogConfirm');
   const medicationFilter = document.querySelector('#medicationFilter');
   const manufacturerCombobox = document.querySelector('#manufacturerCombobox');
   const manufacturerOptionsList = document.querySelector('#manufacturerOptions');
@@ -234,15 +302,80 @@ const extractionStatuses = [
     message.dataset.tone = tone;
   }
 
+  function normalizeText(value) {
+    return String(value || '').replace(/\s+/g, ' ').trim().toLowerCase();
+  }
+
+  function dosageFormFilterGroup(record) {
+    const form = normalizeText(record.normalizedDosageForm || record.dosageForm);
+    for (const [group, values] of Object.entries(dosageFormFilterGroups)) {
+      if (values.map(normalizeText).includes(form)) return group;
+    }
+    return 'Other';
+  }
+
+  function matchesDosageFormFilter(record) {
+    return !dosageFormFilter.value || dosageFormFilterGroup(record) === dosageFormFilter.value;
+  }
+
+  function conciseProductLabel(record) {
+    return [
+      record.genericName,
+      record.brandName || record.sourceLabelTitle,
+      record.strength,
+    ].filter(Boolean).join(' ');
+  }
+
+  function selectedPendingRecords() {
+    return state.pending.filter((record) => state.selectedIds.has(record.id));
+  }
+
+  function clearBulkConfirmation() {
+    bulkConfirmation.hidden = true;
+    bulkConfirmation.innerHTML = '';
+  }
+
+  function currentLocalDate() {
+    const date = new Date();
+    const year = date.getFullYear();
+    const month = String(date.getMonth() + 1).padStart(2, '0');
+    const day = String(date.getDate()).padStart(2, '0');
+    return `${year}-${month}-${day}`;
+  }
+
+  function applyApprovalIdentity(record) {
+    record.reviewedBy = authorizedReviewerName;
+    record.reviewedDate = currentLocalDate();
+    record.sourceName = sourceDisplayName(record);
+    record.carbohydrateDisplayValue = String(record.carbohydrateDisplayValue || '').trim() || 'Not published';
+    record.additionalReferences = String(record.additionalReferences || '');
+  }
+
+  function sourceDisplayName(record) {
+    return String(record.sourceName || record.sourceType || 'DailyMed product label').trim();
+  }
+
+  function updateSelectionSummary() {
+    selectedCount.textContent = state.selectedIds.size;
+  }
+
+  function syncSelectionToPending() {
+    const pendingIds = new Set(state.pending.map((record) => record.id));
+    state.selectedIds.forEach((id) => {
+      if (!pendingIds.has(id)) state.selectedIds.delete(id);
+    });
+    updateSelectionSummary();
+  }
+
   function displayStatus(status) {
     const labels = {
-      'quantity-unknown': 'Amount not available',
+      'quantity-unknown': 'Not published',
       'quantity-published': 'Amount available',
       'quantitative-value-found': 'Amount available',
       'manufacturer-confirmation-required': 'Manufacturer confirmation needed',
       'manual-review-required': 'Additional review needed',
       'no-carbohydrate-ingredient-identified': 'No carbohydrate ingredient identified in reviewed source',
-      'carbohydrate-ingredient-found-quantity-unknown': 'Amount not available',
+      'carbohydrate-ingredient-found-quantity-unknown': 'Not published',
       'ambiguous-source-text': 'Source needs review',
     };
     return labels[status] || status || 'Additional review needed';
@@ -273,6 +406,63 @@ const extractionStatuses = [
     if (Array.isArray(value)) return value;
     if (value === undefined || value === null || value === '') return [];
     return [value];
+  }
+
+  function activeIngredientCompositionKey(record) {
+    const values = [
+      record.activeIngredientComposition,
+      record.activeIngredients,
+      record.activeIngredientNames,
+      record.activeIngredientName,
+      record.genericName,
+    ].flatMap((value) => Array.isArray(value) ? value : [value]).filter(Boolean);
+    return values.map(normalizeText).sort().join('|');
+  }
+
+  function ingredientListKey(record) {
+    return ingredientArray(record).map((ingredient) => normalizeText(ingredient.normalizedName || ingredient.sourceTerm)).sort().join('|');
+  }
+
+  function quantityStatusKey(record) {
+    return ingredientArray(record).map((ingredient) => normalizeText(ingredient.quantityStatus || (
+      ingredient.normalizedAmountMg === null ? 'quantity-unknown' : 'quantity-published'
+    ))).sort().join('|');
+  }
+
+  function quantitativeDetailKey(record) {
+    return [
+      String(record.carbohydrateDisplayValue || '').trim(),
+      normalizeText(record.sourceExcerpt),
+    ].join('|');
+  }
+
+  function carbohydrateIngredientsDisplay(record) {
+    const names = ingredientArray(record).map((ingredient) => ingredient.normalizedName || ingredient.sourceTerm).filter(Boolean);
+    return names.length ? [...new Set(names)].join(', ') : 'None';
+  }
+
+  function amountDisplay(record) {
+    return carbohydrateDisplayValue(record);
+  }
+
+  function carbohydrateDisplayValue(record) {
+    if (String(record.carbohydrateDisplayValue || '').trim()) return record.carbohydrateDisplayValue;
+    const amount = record.publishedAmount ?? record.normalizedAmountMg;
+    const unit = record.publishedUnit || '';
+    const basis = record.publishedBasis || record.normalizedBasis || '';
+    if (amount !== null && amount !== undefined && Number.isFinite(Number(amount))) {
+      return [amount, unit].filter(Boolean).join(' ') + (basis ? `/${basis}` : '');
+    }
+    return 'Not published';
+  }
+
+  function carbohydrateAmountSummary(record) {
+    return `
+      <div class="amount-summary">
+        <span>Carbohydrate amount</span>
+        <strong>${escapeHtml(carbohydrateDisplayValue(record))}</strong>
+      </div>
+    `;
   }
 
   function ndcValues(record) {
@@ -317,7 +507,7 @@ const extractionStatuses = [
   function recordsForManufacturerOptions() {
     return state.pending.filter((record) => {
       if (medicationFilter.value && record.genericName !== medicationFilter.value) return false;
-      if (dosageFormFilter.value && (record.normalizedDosageForm || record.dosageForm) !== dosageFormFilter.value) return false;
+      if (!matchesDosageFormFilter(record)) return false;
       return true;
     });
   }
@@ -416,7 +606,7 @@ const extractionStatuses = [
     return state.pending.filter((record) => {
       if (medicationFilter.value && record.genericName !== medicationFilter.value) return false;
       if (state.selectedManufacturer && normalizedOrganizationKey(displayedManufacturer(record)) !== normalizedOrganizationKey(state.selectedManufacturer)) return false;
-      if (dosageFormFilter.value && (record.normalizedDosageForm || record.dosageForm) !== dosageFormFilter.value) return false;
+      if (!matchesDosageFormFilter(record)) return false;
       if (statusFilter.value && record.extractionStatus !== statusFilter.value) return false;
       if (quantitativeFilter.value === 'yes' && !hasQuantitativeValue(record)) return false;
       if (quantitativeFilter.value === 'no' && hasQuantitativeValue(record)) return false;
@@ -429,13 +619,25 @@ const extractionStatuses = [
     return state.pending.find((record) => record.id === state.selectedId);
   }
 
+  function nextFilteredRecord(records = filteredPending()) {
+    if (!records.length) return null;
+    const currentIndex = records.findIndex((record) => record.id === state.selectedId);
+    if (currentIndex < 0) return records[0];
+    return records[currentIndex + 1] || null;
+  }
+
   function updateSummary() {
+    const visibleRecords = filteredPending();
+    const nextRecord = nextFilteredRecord(visibleRecords);
     const counts = state.pending.reduce((acc, record) => {
       acc[record.extractionStatus] = (acc[record.extractionStatus] || 0) + 1;
       return acc;
     }, {});
     totalPending.textContent = state.pending.length;
+    progressPendingCount.textContent = state.pending.length;
     remainingPendingCount.textContent = state.pending.length;
+    remainingFilterCount.textContent = visibleRecords.length;
+    nextRecordLabel.textContent = nextRecord ? conciseProductLabel(nextRecord) : 'None';
     approvedSessionCount.textContent = state.approved.length;
     rejectedSessionCount.textContent = state.rejected.length;
     quantitativeCount.textContent = counts['quantitative-value-found'] || 0;
@@ -447,6 +649,7 @@ const extractionStatuses = [
   function renderQueue() {
     const records = filteredPending();
     visibleCount.textContent = records.length;
+    syncSelectionToPending();
     updateSummary();
 
     if (!records.length) {
@@ -455,14 +658,20 @@ const extractionStatuses = [
     }
 
     queue.innerHTML = records.map((record) => `
-      <button class="queue-card ${record.id === state.selectedId ? 'is-selected' : ''}" type="button" data-record-id="${escapeHtml(record.id)}">
-        <strong>${escapeHtml(record.genericName)} ${escapeHtml(record.strength || '')}</strong>
-        <span>${escapeHtml(record.brandName || 'Brand not parsed')} | ${escapeHtml(displayedManufacturer(record))}</span>
-        <span>${escapeHtml(record.normalizedDosageForm || record.dosageForm || 'Dosage form not parsed')}</span>
-        <span>Product NDC: ${escapeHtml(record.productNdc || 'not returned')}</span>
-        ${displayPackageNdc(record) ? `<span>Package NDC: ${escapeHtml(displayPackageNdc(record))}</span>` : ''}
-        <small>${escapeHtml(displayStatus(record.extractionStatus))}</small>
-      </button>
+      <article class="queue-card ${record.id === state.selectedId ? 'is-selected' : ''}" data-record-id="${escapeHtml(record.id)}">
+        <label class="queue-card__select">
+          <input type="checkbox" data-select-record="${escapeHtml(record.id)}" ${state.selectedIds.has(record.id) ? 'checked' : ''} />
+          <span>Select record</span>
+        </label>
+        <button class="queue-card__open" type="button" data-open-record="${escapeHtml(record.id)}">
+          <strong>${escapeHtml(record.genericName)} ${escapeHtml(record.strength || '')}</strong>
+          <span>${escapeHtml(record.brandName || 'Brand not parsed')} | ${escapeHtml(displayedManufacturer(record))}</span>
+          <span>${escapeHtml(record.normalizedDosageForm || record.dosageForm || 'Dosage form not parsed')}</span>
+          <span>Product NDC: ${escapeHtml(record.productNdc || 'not returned')}</span>
+          ${displayPackageNdc(record) ? `<span>Package NDC: ${escapeHtml(displayPackageNdc(record))}</span>` : ''}
+          <small>${escapeHtml(displayStatus(record.extractionStatus))}</small>
+        </button>
+      </article>
     `).join('');
   }
 
@@ -471,18 +680,6 @@ const extractionStatuses = [
       <label>
         ${escapeHtml(label)}
         <input name="${escapeHtml(name)}" type="${escapeHtml(type)}" value="${escapeHtml(value)}" />
-      </label>
-    `;
-  }
-
-  function unitField(name, value) {
-    const units = ['', 'mg', 'g', 'mg/mL', 'g/mL', 'mg/g', 'g/g'];
-    return `
-      <label>
-        Unit
-        <select name="${escapeHtml(name)}">
-          ${units.map((unit) => `<option value="${escapeHtml(unit)}" ${unit === value ? 'selected' : ''}>${escapeHtml(unit || 'Select unit')}</option>`).join('')}
-        </select>
       </label>
     `;
   }
@@ -499,16 +696,11 @@ const extractionStatuses = [
           <strong>Ingredient ${index + 1}</strong>
           <button class="button button-danger button-small" type="button" data-ingredient-action="remove" data-ingredient-index="${index}">Remove</button>
         </div>
-        <p class="helper-text">Review the label wording for this ingredient. Leave amount fields blank unless the source gives a clear numeric amount for this exact product.</p>
+        <p class="helper-text">Review the label wording for this ingredient. Product-level carbohydrate amount is entered separately above.</p>
         <div class="identity-grid">
           ${inputField('Carbohydrate ingredient', `ingredient.${index}.normalizedName`, ingredient.normalizedName || '')}
           ${inputField('Carbohydrate source', `ingredient.${index}.sourceTerm`, ingredient.sourceTerm || '')}
-          ${inputField('Amount in mg', `ingredient.${index}.normalizedAmountMg`, ingredient.normalizedAmountMg ?? '', 'number')}
-          ${unitField(`ingredient.${index}.amountUnit`, ingredient.normalizedAmountMg === null ? '' : ingredient.amountUnit || '')}
         </div>
-        ${ingredient.normalizedAmountMg === null
-          ? '<p class="unknown-amount-message">Exact amount not available in the reviewed source.</p>'
-          : ''}
         <label>
           Source excerpt
           <textarea name="ingredient.${index}.sourceExcerpt" rows="4">${escapeHtml(ingredient.sourceExcerpt || '')}</textarea>
@@ -563,26 +755,17 @@ const extractionStatuses = [
     return Array.isArray(record.nonNutritiveSweeteners) ? record.nonNutritiveSweeteners : [];
   }
 
-  function concentrationLine(ingredient) {
-    if (!['mg/mL', 'g/mL', 'mg/g', 'g/g'].includes(ingredient.amountUnit) || ingredient.normalizedAmountMg === null) return '';
-    return `<p><b>Concentration:</b> ${escapeHtml(`${ingredient.normalizedAmountMg} ${ingredient.amountUnit}`)}</p>`;
-  }
-
   function ingredientSummary(record) {
     const ingredients = ingredientArray(record);
     if (!ingredients.length) return '<p class="empty-message">No carbohydrate-related ingredient was identified in the reviewed source.</p>';
     return `
       <div class="ingredient-summary">
-        <strong>Carbohydrate-related ingredients identified: ${ingredients.length}</strong>
+        <strong>Carbohydrate-contributing ingredients: ${ingredients.length}</strong>
         <div class="ingredient-card-list">
           ${ingredients.map((ingredient) => `
             <article class="ingredient-card">
               <h4>${escapeHtml(ingredient.normalizedName || 'Carbohydrate ingredient')}</h4>
               <p><b>Carbohydrate source:</b> ${escapeHtml(ingredient.sourceTerm || 'Not stated')}</p>
-              ${ingredient.normalizedAmountMg !== null
-                ? `<p><b>Amount in mg:</b> ${escapeHtml(ingredient.normalizedAmountMg ?? ingredient.amount)}</p>`
-                : '<p>Exact amount not available in the reviewed source.</p>'}
-              ${concentrationLine(ingredient)}
               <details>
                 <summary>Source excerpt</summary>
                 <p>${escapeHtml(ingredient.sourceExcerpt || 'Source excerpt not available.')}</p>
@@ -599,8 +782,8 @@ const extractionStatuses = [
     if (!sweeteners.length) return '';
     return `
       <div class="ingredient-summary sweetener-summary">
-        <strong>Non-nutritive sweeteners identified: ${sweeteners.length}</strong>
-        <p class="helper-text">Non-nutritive sweeteners are displayed separately and are not included in the medication carbohydrate amount.</p>
+        <strong>Non-carbohydrate sweeteners: ${sweeteners.length}</strong>
+        <p class="helper-text">Non-carbohydrate sweeteners are displayed separately and are not included in the medication carbohydrate amount.</p>
         <div class="ingredient-card-list">
           ${sweeteners.map((sweetener) => `
             <article class="ingredient-card">
@@ -628,15 +811,20 @@ const extractionStatuses = [
       <form id="reviewForm" class="review-form">
         <section class="detail-section">
           <h3>Record summary</h3>
-          <h4>Carbohydrate-related ingredients identified</h4>
+          ${carbohydrateAmountSummary(record)}
           ${ingredientSummary(record)}
           ${sweetenerSummary(record)}
           <dl class="source-detail source-detail--record">
-            <div><dt>Source</dt><dd>DailyMed product label</dd></div>
+            <div><dt>Primary source</dt><dd>DailyMed product label</dd></div>
             <div><dt>Source link</dt><dd><a href="${escapeHtml(record.sourceUrl)}" target="_blank" rel="noreferrer">View source</a></dd></div>
             <div><dt>Verification date</dt><dd>${escapeHtml(record.reviewedDate || 'Not verified')}</dd></div>
           </dl>
           <a class="button button-secondary" href="${escapeHtml(record.sourceUrl)}" target="_blank" rel="noreferrer">Open official DailyMed label</a>
+          <label>
+            Additional references
+            <textarea name="additionalReferences" rows="5" placeholder="Lexidrug: Carbohydrate Content of Medications, accessed July 2026&#10;Manufacturer medical information, case #12345, July 2026&#10;Institutional ketogenic medication reference, version 4.2">${escapeHtml(record.additionalReferences || '')}</textarea>
+            <span class="helper-text">Enter any additional references used to verify this record. Include enough detail to identify the source.</span>
+          </label>
         </section>
 
         <details class="detail-section">
@@ -651,7 +839,12 @@ const extractionStatuses = [
 
         <section class="detail-section">
           <h3>Carbohydrate ingredient review</h3>
-          <p class="helper-text">Use these fields for the clinical review. Amount fields can stay blank when the label does not provide a numeric amount.</p>
+          <label class="amount-editor">
+            Carbohydrate amount
+            <input name="carbohydrateDisplayValue" type="text" value="${escapeHtml(carbohydrateDisplayValue(record))}" />
+            <span class="helper-text">Enter the exact wording from the approved source, such as &lt;5 g/5 mL, 39 mg/mL, or Not published.</span>
+          </label>
+          <p class="helper-text">Use these fields for the clinical review. Do not calculate or infer carbohydrate totals from inactive ingredient text.</p>
           <div class="ingredient-list">
             ${ingredientRows(record)}
           </div>
@@ -666,14 +859,12 @@ const extractionStatuses = [
                 Review status
                 <select name="extractionStatus">
                   <option value="quantitative-value-found" ${record.extractionStatus === 'quantitative-value-found' ? 'selected' : ''}>Amount available</option>
-                  <option value="carbohydrate-ingredient-found-quantity-unknown" ${record.extractionStatus === 'carbohydrate-ingredient-found-quantity-unknown' ? 'selected' : ''}>Amount not available</option>
+                  <option value="carbohydrate-ingredient-found-quantity-unknown" ${record.extractionStatus === 'carbohydrate-ingredient-found-quantity-unknown' ? 'selected' : ''}>Not published</option>
                   <option value="manual-review-required" ${record.extractionStatus === 'manual-review-required' ? 'selected' : ''}>Additional review needed</option>
                   <option value="ambiguous-source-text" ${record.extractionStatus === 'ambiguous-source-text' ? 'selected' : ''}>Source needs review</option>
                   <option value="no-carbohydrate-ingredient-identified" ${record.extractionStatus === 'no-carbohydrate-ingredient-identified' ? 'selected' : ''}>No carbohydrate ingredient identified in reviewed source</option>
                 </select>
               </label>
-              ${inputField('Reviewer name', 'reviewedBy', record.reviewedBy)}
-              ${inputField('Reviewed date', 'reviewedDate', record.reviewedDate, 'date')}
             </div>
           </details>
           <label>
@@ -682,9 +873,15 @@ const extractionStatuses = [
           </label>
         </section>
 
+        <p class="approval-note">
+          Approvals are recorded as:<br />
+          <strong>Souha Mahmoudi, Ph.D.</strong><br />
+          Date added automatically
+        </p>
         <div class="review-actions">
           <button class="button button-secondary" type="button" data-review-action="save">Save changes</button>
           <button class="button button-primary" type="button" data-review-action="approved">Approve record</button>
+          <button class="button button-primary" type="button" data-review-action="approve-next">Approve and next</button>
           <button class="button button-danger" type="button" data-review-action="rejected">Reject record</button>
           <button class="button button-secondary" type="button" data-review-action="manufacturer-required">Mark manufacturer confirmation required</button>
           <button class="button button-secondary" type="button" data-review-action="skip">Skip to next record</button>
@@ -746,6 +943,7 @@ const extractionStatuses = [
     record.publishedBasis = '';
     record.normalizedAmountMg = quantifiedIngredient?.normalizedAmountMg ?? null;
     record.normalizedBasis = '';
+    record.carbohydrateDisplayValue = String(record.carbohydrateDisplayValue || '').trim() || 'Not published';
     if (record.extractionStatus === 'quantitative-value-found' && !quantifiedIngredient) {
       record.extractionStatus = record.carbohydrateIngredients.length
         ? 'carbohydrate-ingredient-found-quantity-unknown'
@@ -767,15 +965,19 @@ const extractionStatuses = [
       record.distributorName,
       record.manufacturer,
     ].find((value) => String(value || '').trim());
+    const sourceName = sourceDisplayName(record);
+    const sourceReference = [
+      record.sourceUrl,
+      record.sourceSetId,
+      record.sourceExcerpt,
+    ].find((value) => String(value || '').trim());
     [
       ['exact product identity', exactProductIdentity],
-      ['manufacturer or labeler', manufacturerOrLabeler],
+      ['manufacturer, labeler, or packager', manufacturerOrLabeler],
       ['dosage form', record.normalizedDosageForm || record.dosageForm],
       ['NDC or package identifier', ndcValues(record).join(' ') || record.packageDescription || record.sourceSetId],
-      ['official source URL', record.sourceUrl],
-      ['source excerpt', record.sourceExcerpt],
-      ['reviewer name', record.reviewedBy],
-      ['reviewed date', record.reviewedDate],
+      ['source name', sourceName],
+      ['source link or documented source reference', sourceReference],
     ].forEach(([label, value]) => {
       if (!String(value || '').trim()) errors.push(`${label} is required.`);
     });
@@ -783,29 +985,19 @@ const extractionStatuses = [
       errors.push('Exact product identity requires generic name, product label or brand name, and strength.');
     }
 
-    if (!ingredientArray(record).length) {
-      errors.push('At least one reviewed carbohydrate ingredient is required.');
+    const displayValue = String(record.carbohydrateDisplayValue || '').trim();
+    if (!displayValue) {
+      errors.push('Carbohydrate amount is required. Use Not published when no quantitative amount is provided.');
+    }
+    if (/^(not\s+published)$/i.test(displayValue) && displayValue !== 'Not published') {
+      errors.push('When no quantitative amount is provided, carbohydrate amount must be exactly: Not published.');
+    }
+    if (/^(amount not available|exact amount unavailable|quantity unknown|amount unavailable)$/i.test(displayValue)) {
+      errors.push('Use Not published instead of alternate unavailable-amount wording.');
     }
 
-    if (record.extractionStatus === 'quantitative-value-found') {
-      const quantifiedIngredients = ingredientArray(record).filter((ingredient) => ingredient.normalizedAmountMg !== null);
-      if (!quantifiedIngredients.length) {
-        errors.push('Approval with an available amount requires at least one ingredient with a documented amount.');
-      }
-      quantifiedIngredients.forEach((ingredient) => {
-        if (
-          ingredient.normalizedAmountMg === null
-          || !ingredient.amountUnit
-          || !ingredient.normalizedName
-          || !ingredient.sourceTerm
-        ) {
-          errors.push('Each ingredient with an available amount requires amount in mg, unit, carbohydrate ingredient, and carbohydrate source.');
-        }
-        const quantitySourceText = `${ingredient.sourceExcerpt || ''} ${record.sourceExcerpt || ''}`;
-        if (!/\b\d+(?:\.\d+)?\s*(?:mcg|mg|g|microgram|micrograms|milligram|milligrams|gram|grams)\b/i.test(quantitySourceText)) {
-          errors.push('Each quantitative amount must be explicitly present in the reviewed source excerpt.');
-        }
-      });
+    if (!ingredientArray(record).length) {
+      errors.push('At least one reviewed carbohydrate ingredient is required.');
     }
 
     const hasQuantitativeAmount = ingredientArray(record).some((ingredient) => ingredient.normalizedAmountMg !== null)
@@ -853,6 +1045,59 @@ const extractionStatuses = [
     return merged;
   }
 
+  function mergePreviewRecordsById(records) {
+    const ids = new Set();
+    const merged = [];
+    for (const record of records) {
+      const id = String(record?.id || '').trim();
+      if (!id || ids.has(id)) continue;
+      ids.add(id);
+      merged.push(record);
+    }
+    return merged;
+  }
+
+  function sessionApprovedPreviewRecords() {
+    try {
+      const parsed = JSON.parse(window.sessionStorage.getItem(approvedPreviewStorageKey) || '[]');
+      return Array.isArray(parsed) ? parsed : [];
+    } catch {
+      return [];
+    }
+  }
+
+  function saveApprovedPreviewRecords(records) {
+    const approvedRecordsForPreview = records.map((record) => ({
+      ...record,
+      approvalStatus: 'approved',
+      carbohydrateDisplayValue: String(record.carbohydrateDisplayValue || '').trim() || 'Not published',
+      additionalReferences: String(record.additionalReferences || ''),
+    }));
+    const merged = mergePreviewRecordsById([...sessionApprovedPreviewRecords(), ...approvedRecordsForPreview]);
+    window.sessionStorage.setItem(approvedPreviewStorageKey, JSON.stringify(merged));
+  }
+
+  function closeApprovalDialog() {
+    approvalDialogBackdrop.hidden = true;
+    state.pendingConfirmation = null;
+  }
+
+  function showApprovalDialog({ messageText, confirmText, onConfirm }) {
+    state.pendingConfirmation = onConfirm;
+    approvalDialogMessage.textContent = messageText;
+    approvalDialogConfirm.textContent = confirmText;
+    approvalDialogBackdrop.hidden = false;
+    approvalDialogCancel.focus();
+  }
+
+  function approvalDialogFocusableElements() {
+    return [...approvalDialog.querySelectorAll('button')].filter((element) => !element.disabled && element.offsetParent !== null);
+  }
+
+  function showApprovalErrors(prefix, errors) {
+    showMessage(`${prefix}: ${errors.map((error) => `Missing or invalid field: ${error}`).join(' ')}`, 'error');
+  }
+
   function hasRecordDuplicate(records, record) {
     const id = String(record.id || '').trim();
     const key = recordKey(record);
@@ -884,12 +1129,108 @@ const extractionStatuses = [
     renderEditor();
   }
 
-  function moveSelectedRecord(destination) {
+  function moveSelectedRecord(destination, openNext = false) {
     const record = selectedRecord();
     if (!record) return;
     if (!hasSessionDuplicate(destination, record)) state[destination].push(record);
     state.pending = state.pending.filter((item) => item.id !== record.id);
+    state.selectedIds.delete(record.id);
+    if (openNext) {
+      selectNextRecord();
+    } else {
+      state.selectedId = '';
+      renderQueue();
+      renderEditor();
+    }
+  }
+
+  function rejectRecord(record) {
+    record.approvalStatus = 'rejected';
+    if (!hasSessionDuplicate('rejected', record)) state.rejected.push(record);
+    state.pending = state.pending.filter((item) => item.id !== record.id);
+    state.selectedIds.delete(record.id);
+  }
+
+  function markManufacturerRequired(record) {
+    record.extractionStatus = 'manual-review-required';
+    if (!/\bManufacturer confirmation required\./i.test(record.notes || '')) {
+      record.notes = `${record.notes ? `${record.notes} ` : ''}Manufacturer confirmation required.`.trim();
+    }
+  }
+
+  function bulkApprovalErrors(records) {
+    const errors = [];
+    if (!records.length) return ['Select at least one pending record.'];
+
+    const keys = {
+      'generic medication': records.map((record) => normalizeText(record.genericName)),
+      'active ingredient composition': records.map(activeIngredientCompositionKey),
+      'dosage form': records.map((record) => normalizeText(record.normalizedDosageForm || record.dosageForm)),
+      'carbohydrate ingredient list': records.map(ingredientListKey),
+      'quantity status': records.map(quantityStatusKey),
+      'carbohydrate amount': records.map((record) => String(record.carbohydrateDisplayValue || '').trim()),
+    };
+
+    Object.entries(keys).forEach(([label, values]) => {
+      if (new Set(values).size > 1) errors.push(`Selected records do not share the same ${label}.`);
+      if (!values[0]) errors.push(`Selected records are missing ${label}.`);
+    });
+
+    records.forEach((record) => {
+      const recordErrors = approvalErrors(record);
+      if (hasApprovedDuplicate(record)) {
+        recordErrors.push('This record is already approved or duplicates an approved exact product.');
+      }
+      recordErrors.forEach((error) => {
+        errors.push(`${conciseProductLabel(record)}: ${error}`);
+      });
+    });
+
+    const anyQuantitative = records.some((record) => String(record.carbohydrateDisplayValue || '').trim() !== 'Not published');
+    if (anyQuantitative) {
+      const quantitativeKeys = records.map(quantitativeDetailKey);
+      if (quantitativeKeys.some((key) => !key)) {
+        errors.push('Every selected quantitative record must have a separately reviewed amount, unit, concentration when applicable, and source wording.');
+      }
+      if (new Set(quantitativeKeys).size > 1) {
+        errors.push('Selected quantitative records must have identical amount, unit, concentration, and source wording or a separately verified source for every record.');
+      }
+    }
+
+    return errors;
+  }
+
+  function approveRecords(records) {
+    const approvedForPreview = [];
+    for (const record of records) {
+      applyApprovalIdentity(record);
+      record.approvalStatus = 'approved';
+      if (!hasSessionDuplicate('approved', record)) {
+        state.approved.push(record);
+        approvedForPreview.push(record);
+      }
+      state.pending = state.pending.filter((item) => item.id !== record.id);
+      state.selectedIds.delete(record.id);
+    }
+    if (approvedForPreview.length) saveApprovedPreviewRecords(approvedForPreview);
+    publishingStatus.textContent = 'Approved locally. Preview it as a public user or export records for publication.';
+    syncSelectionToPending();
+    clearBulkConfirmation();
+  }
+
+  function approveSelectedRecord() {
+    const record = selectedRecord();
+    if (!record) return;
+    applyApprovalIdentity(record);
+    record.approvalStatus = 'approved';
+    if (!hasSessionDuplicate('approved', record)) state.approved.push(record);
+    state.pending = state.pending.filter((item) => item.id !== record.id);
+    state.selectedIds.delete(record.id);
+    saveApprovedPreviewRecords([record]);
     selectNextRecord();
+    syncSelectionToPending();
+    publishingStatus.textContent = 'Approved locally. Preview it as a public user or export records for publication.';
+    showMessage('Record approved locally. Preview it as a public user or export records for publication.', 'success');
   }
 
   function handleAction(action) {
@@ -911,34 +1252,37 @@ const extractionStatuses = [
     }
 
     if (action === 'manufacturer-required') {
-      record.extractionStatus = 'manual-review-required';
-      record.notes = `${record.notes ? `${record.notes} ` : ''}Manufacturer confirmation required.`.trim();
+      markManufacturerRequired(record);
       showMessage('Record marked as manufacturer confirmation required.', 'info');
       renderQueue();
       renderEditor();
       return;
     }
 
-    if (action === 'approved') {
-      const errors = approvalErrors(record);
-      if (hasApprovedDuplicate(record)) {
-        errors.push('This record is already approved or duplicates an approved exact product.');
-      }
-      if (errors.length) {
-        showMessage(`Approval blocked: ${errors.join(' ')}`, 'error');
-        return;
-      }
-      // When Supabase is added, this approval action can write directly to the approved-records table and publish immediately without JSON export or Git deployment.
-      record.approvalStatus = 'approved';
-      moveSelectedRecord('approved');
-      publishingStatus.textContent = 'Approved locally — export required for publication.';
-      showMessage('Record approved. Export approved records to publish them.', 'success');
+    if (action === 'approved' || action === 'approve-next') {
+      showApprovalDialog({
+        messageText: 'Are you sure you want to approve this record?',
+        confirmText: 'Approve record',
+        onConfirm: () => {
+          const errors = approvalErrors(record);
+          if (hasApprovedDuplicate(record)) {
+            errors.push('This record is already approved or duplicates an approved exact product.');
+          }
+          if (errors.length) {
+            showApprovalErrors('Approval blocked', errors);
+            renderEditor();
+            return;
+          }
+          // When Supabase is added, this approval action can write directly to the approved-records table and publish immediately without JSON export or Git deployment.
+          approveSelectedRecord();
+        },
+      });
       return;
     }
 
     if (action === 'rejected') {
-      record.approvalStatus = 'rejected';
-      moveSelectedRecord('rejected');
+      rejectRecord(record);
+      selectNextRecord();
       publishingStatus.textContent = 'Approved locally — export required for publication.';
       showMessage('Record rejected in this browser session. Export required to keep the change.', 'success');
     }
@@ -970,11 +1314,126 @@ const extractionStatuses = [
   }
 
   queue.addEventListener('click', (event) => {
-    const card = event.target.closest('[data-record-id]');
-    if (!card) return;
-    state.selectedId = card.dataset.recordId;
+    const checkbox = event.target.closest('[data-select-record]');
+    if (checkbox) {
+      const id = checkbox.dataset.selectRecord;
+      if (checkbox.checked) {
+        state.selectedIds.add(id);
+      } else {
+        state.selectedIds.delete(id);
+      }
+      clearBulkConfirmation();
+      updateSelectionSummary();
+      return;
+    }
+
+    const opener = event.target.closest('[data-open-record]');
+    if (!opener) return;
+    state.selectedId = opener.dataset.openRecord;
     renderQueue();
     renderEditor();
+  });
+
+  document.querySelector('#selectAllVisible').addEventListener('click', () => {
+    filteredPending().forEach((record) => state.selectedIds.add(record.id));
+    clearBulkConfirmation();
+    renderQueue();
+  });
+
+  document.querySelector('#clearSelection').addEventListener('click', () => {
+    state.selectedIds.clear();
+    clearBulkConfirmation();
+    renderQueue();
+  });
+
+  document.querySelector('#bulkApprove').addEventListener('click', () => {
+    const records = selectedPendingRecords();
+    if (!records.length) {
+      showMessage('Select at least one pending record to approve.', 'error');
+      return;
+    }
+    clearBulkConfirmation();
+    showApprovalDialog({
+      messageText: `Are you sure you want to approve the selected ${records.length} records?`,
+      confirmText: 'Approve selected records',
+      onConfirm: () => {
+        const approvalRecords = selectedPendingRecords();
+        const errors = bulkApprovalErrors(approvalRecords);
+        if (errors.length) {
+          showApprovalErrors('Bulk approval blocked', errors);
+          renderEditor();
+          return;
+        }
+        // When Supabase is added, this approval action can write directly to the approved-records table and publish immediately without JSON export or Git deployment.
+        approveRecords(approvalRecords);
+        state.selectedId = filteredPending()[0]?.id || '';
+        renderQueue();
+        renderEditor();
+        showMessage('Record approved locally. Preview it as a public user or export records for publication.', 'success');
+      },
+    });
+  });
+
+  document.querySelector('#bulkReject').addEventListener('click', () => {
+    const records = selectedPendingRecords();
+    if (!records.length) {
+      showMessage('Select at least one pending record to reject.', 'error');
+      return;
+    }
+    records.forEach(rejectRecord);
+    clearBulkConfirmation();
+    state.selectedId = filteredPending()[0]?.id || '';
+    renderQueue();
+    renderEditor();
+    showMessage('Selected records rejected in this browser session. Export required to keep the change.', 'success');
+  });
+
+  document.querySelector('#bulkManufacturerRequired').addEventListener('click', () => {
+    const records = selectedPendingRecords();
+    if (!records.length) {
+      showMessage('Select at least one pending record to mark for manufacturer confirmation.', 'error');
+      return;
+    }
+    records.forEach((record) => {
+      markManufacturerRequired(record);
+      state.selectedIds.delete(record.id);
+    });
+    clearBulkConfirmation();
+    renderQueue();
+    renderEditor();
+    showMessage('Selected records marked as manufacturer confirmation required.', 'success');
+  });
+
+  approvalDialogCancel.addEventListener('click', closeApprovalDialog);
+
+  approvalDialogConfirm.addEventListener('click', () => {
+    const onConfirm = state.pendingConfirmation;
+    closeApprovalDialog();
+    if (typeof onConfirm === 'function') onConfirm();
+  });
+
+  approvalDialogBackdrop.addEventListener('click', (event) => {
+    if (event.target === approvalDialogBackdrop) closeApprovalDialog();
+  });
+
+  approvalDialog.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') {
+      event.preventDefault();
+      closeApprovalDialog();
+      return;
+    }
+    if (event.key !== 'Tab') return;
+    const focusableElements = approvalDialogFocusableElements();
+    if (!focusableElements.length) return;
+    const firstElement = focusableElements[0];
+    const lastElement = focusableElements[focusableElements.length - 1];
+    if (event.shiftKey && document.activeElement === firstElement) {
+      event.preventDefault();
+      lastElement.focus();
+    } else if (!event.shiftKey && document.activeElement === lastElement) {
+      event.preventDefault();
+      firstElement.focus();
+    }
   });
 
   editorHost.addEventListener('click', (event) => {
@@ -1010,6 +1469,19 @@ const extractionStatuses = [
     const action = event.target.dataset.reviewAction;
     if (!action) return;
     handleAction(action);
+  });
+
+  document.addEventListener('keydown', (event) => {
+    const target = event.target;
+    if (target?.closest?.('input, textarea, select, [contenteditable="true"]')) return;
+    if (event.altKey || event.ctrlKey || event.metaKey) return;
+    const key = event.key.toLowerCase();
+    if (!['a', 'r', 'm', 's'].includes(key)) return;
+    event.preventDefault();
+    if (key === 'a') handleAction('approve-next');
+    if (key === 'r') handleAction('rejected');
+    if (key === 'm') handleAction('manufacturer-required');
+    if (key === 's') handleAction('skip');
   });
 
   manufacturerCombobox.addEventListener('input', () => {
@@ -1100,6 +1572,18 @@ const extractionStatuses = [
 
   document.querySelector('#exportAll').addEventListener('click', exportReviewedRecords);
   document.querySelector('#exportPublish').addEventListener('click', exportReviewedRecords);
+  document.querySelector('#previewPublic').addEventListener('click', () => {
+    const previewWindow = window.open('/internal/public-carbohydrate-preview', '_blank');
+    if (!previewWindow) return;
+    try {
+      previewWindow.sessionStorage.setItem(
+        approvedPreviewStorageKey,
+        window.sessionStorage.getItem(approvedPreviewStorageKey) || '[]',
+      );
+    } catch {
+      // The preview page also attempts to read from a same-origin opener.
+    }
+  });
   document.querySelector('#exportApproved').addEventListener('click', () => exportJson('approvedMedicationCarbohydrateRecords.json', mergeUniqueRecords([...state.existingApproved, ...state.approved])));
   document.querySelector('#exportRejected').addEventListener('click', () => exportJson('rejectedMedicationCarbohydrateRecords.json', mergeUniqueRecords([...state.existingRejected, ...state.rejected])));
   document.querySelector('#exportRemaining').addEventListener('click', () => exportJson('pendingMedicationCarbohydrateRecords.json', state.pending));
@@ -1169,6 +1653,8 @@ const extractionStatuses = [
   .summary-grid div,
   .publishing-panel,
   .publishing-counts div,
+  .reviewer-defaults,
+  .bulk-panel,
   .queue-panel,
   .editor-panel,
   .review-message {
@@ -1200,6 +1686,23 @@ const extractionStatuses = [
     margin-bottom: 22px;
   }
 
+  .reviewer-defaults {
+    display: grid;
+    grid-template-columns: minmax(220px, 0.7fr) minmax(260px, 1fr);
+    gap: 16px;
+    align-items: center;
+    margin-bottom: 22px;
+  }
+
+  .authorized-reviewer strong {
+    color: #123b5d;
+  }
+
+  .reviewer-defaults h2,
+  .reviewer-defaults p {
+    margin: 0;
+  }
+
   .publishing-panel h2,
   .publishing-panel p {
     margin: 0;
@@ -1212,6 +1715,12 @@ const extractionStatuses = [
 
   .publishing-panel .button {
     align-self: center;
+  }
+
+  .publishing-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
   }
 
   .publishing-counts {
@@ -1298,22 +1807,117 @@ const extractionStatuses = [
     padding-right: 4px;
   }
 
+  .bulk-panel {
+    display: grid;
+    gap: 12px;
+    box-shadow: none;
+    margin: 16px 0;
+    padding: 14px;
+  }
+
+  .bulk-panel__summary {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 14px;
+    color: #60717d;
+    font-size: 0.9rem;
+    font-weight: 700;
+  }
+
+  .bulk-panel__summary strong {
+    color: #123b5d;
+  }
+
+  .bulk-confirmation {
+    display: grid;
+    gap: 12px;
+    border-top: 1px solid #d6e2e9;
+    padding-top: 12px;
+  }
+
+  .bulk-confirmation[hidden] {
+    display: none;
+  }
+
+  .bulk-confirmation h3 {
+    margin: 0;
+    color: #123b5d;
+    font-size: 1rem;
+  }
+
+  .bulk-table-wrap {
+    overflow: auto;
+    border: 1px solid #d6e2e9;
+    border-radius: 8px;
+  }
+
+  .bulk-table {
+    width: 100%;
+    min-width: 920px;
+    border-collapse: collapse;
+    background: #fff;
+    font-size: 0.84rem;
+  }
+
+  .bulk-table th,
+  .bulk-table td {
+    border-bottom: 1px solid #e6eef3;
+    padding: 9px 10px;
+    text-align: left;
+    vertical-align: top;
+  }
+
+  .bulk-table th {
+    background: #f8fbfd;
+    color: #123b5d;
+    font-weight: 850;
+  }
+
   .queue-card {
     display: grid;
-    gap: 5px;
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: 10px;
     width: 100%;
-    cursor: pointer;
     border: 1px solid #d6e2e9;
     border-radius: 8px;
     background: #fff;
     color: #123b5d;
-    padding: 14px;
+    padding: 12px;
     text-align: left;
   }
 
   .queue-card.is-selected {
     border-color: #2b6f9f;
     background: #eef5f8;
+  }
+
+  .queue-card__select {
+    align-content: start;
+    gap: 5px;
+    min-width: 74px;
+    color: #60717d;
+    font-size: 0.72rem;
+    font-weight: 800;
+    text-align: center;
+  }
+
+  .queue-card__select input {
+    width: 20px;
+    min-height: 20px;
+    margin: 2px auto 0;
+  }
+
+  .queue-card__open {
+    display: grid;
+    gap: 5px;
+    width: 100%;
+    cursor: pointer;
+    border: 0;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    padding: 0;
+    text-align: left;
   }
 
   label,
@@ -1479,13 +2083,29 @@ const extractionStatuses = [
     font-weight: 650;
   }
 
-  .unknown-amount-message {
-    margin: 0;
-    border-left: 4px solid #2e7d68;
+  .amount-summary,
+  .amount-editor {
+    border: 1px solid #b8d7cb;
+    border-radius: 8px;
     background: #f5fbf8;
-    color: #40515d;
-    padding: 10px 12px;
-    font-weight: 720;
+    padding: 14px;
+  }
+
+  .amount-summary {
+    display: grid;
+    gap: 6px;
+  }
+
+  .amount-summary span {
+    color: #2e7d68;
+    font-size: 0.82rem;
+    font-weight: 850;
+    text-transform: uppercase;
+  }
+
+  .amount-summary strong {
+    color: #123b5d;
+    font-size: 1.35rem;
   }
 
   .ingredient-summary {
@@ -1559,6 +2179,51 @@ const extractionStatuses = [
     margin-bottom: 18px;
   }
 
+  .approval-note {
+    border: 1px solid #d6e2e9;
+    border-left: 5px solid #2e7d68;
+    border-radius: 8px;
+    background: #f8fbfd;
+    margin: 0;
+    padding: 12px 14px;
+    color: #40515d;
+    font-weight: 720;
+  }
+
+  .approval-note strong {
+    color: #123b5d;
+  }
+
+  .confirmation-backdrop {
+    position: fixed;
+    z-index: 100;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    background: rgba(18, 59, 93, 0.38);
+    padding: 20px;
+  }
+
+  .confirmation-backdrop[hidden] {
+    display: none;
+  }
+
+  .confirmation-dialog {
+    display: grid;
+    gap: 16px;
+    width: min(100%, 460px);
+    border: 1px solid #cbd9e2;
+    border-radius: 8px;
+    background: #fff;
+    padding: 22px;
+    box-shadow: 0 24px 70px rgba(18, 59, 93, 0.25);
+  }
+
+  .confirmation-dialog h2,
+  .confirmation-dialog p {
+    margin: 0;
+  }
+
   .button {
     display: inline-flex;
     min-height: 42px;
@@ -1615,6 +2280,7 @@ const extractionStatuses = [
     .summary-grid,
     .publishing-panel,
     .publishing-counts,
+    .reviewer-defaults,
     .filter-grid,
     .identity-grid {
       grid-template-columns: 1fr;

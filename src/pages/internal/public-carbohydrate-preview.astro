@@ -7,4 +7,9 @@ const approvedRecords = approvedMedicationCarbohydrateRecords.filter(
 );
 ---
 
-<MedicationCarbohydrateReferenceLookup approvedRecords={approvedRecords} />
+<MedicationCarbohydrateReferenceLookup
+  approvedRecords={approvedRecords}
+  mode="preview"
+  title="Local Public Carbohydrate Preview | LittleMeds Safety"
+  description="Local-only preview of approved medication carbohydrate records from the current browser session."
+/>

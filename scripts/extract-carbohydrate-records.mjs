@@ -6,6 +6,7 @@ const inputPath = resolve(repoRoot, 'src/data/dailymedProductImport.json');
 const pendingPath = resolve(repoRoot, 'src/data/pendingMedicationCarbohydrateRecords.json');
 const approvedPath = resolve(repoRoot, 'src/data/approvedMedicationCarbohydrateRecords.json');
 const rejectedPath = resolve(repoRoot, 'src/data/rejectedMedicationCarbohydrateRecords.json');
+const workbookReferencePath = resolve(repoRoot, 'src/data/carbohydrateReferenceWorkbookRecords.json');
 
 const carbohydrateIngredientDefinitions = [
   ['High fructose corn syrup', ['high fructose corn syrup']],
@@ -292,6 +293,12 @@ function recordForProduct({ seed, label, titleFields, productNdc, packageRow, ex
     packageDescription: packageRow.packageDescription || '',
     carbohydrateIngredients,
     nonNutritiveSweeteners,
+    carbohydrateDisplayValue: quantitativeIngredient
+      ? [
+          quantitativeIngredient.amount,
+          quantitativeIngredient.amountUnit,
+        ].filter(Boolean).join(' ') + (quantitativeIngredient.amountBasis ? `/${quantitativeIngredient.amountBasis}` : '')
+      : 'Not published',
     publishedAmount: quantitativeIngredient?.amount ?? null,
     publishedUnit: quantitativeIngredient?.amountUnit || '',
     publishedBasis: quantitativeIngredient?.amountBasis || '',
@@ -304,6 +311,7 @@ function recordForProduct({ seed, label, titleFields, productNdc, packageRow, ex
     sourceDate,
     inactiveIngredientText: label.inactiveIngredientText || '',
     sourceExcerpt,
+    additionalReferences: '',
     reviewedBy: '',
     reviewedDate: '',
     approvalStatus: 'pending',
@@ -327,13 +335,29 @@ function defaultPendingNotes(record) {
     : 'Automated extraction only. No quantity was inferred.';
 }
 
+function carbohydrateDisplayValueFromLegacy(record) {
+  if (String(record.carbohydrateDisplayValue || '').trim()) return record.carbohydrateDisplayValue;
+  const amount = record.publishedAmount ?? record.normalizedAmountMg;
+  const unit = record.publishedUnit || '';
+  const basis = record.publishedBasis || record.normalizedBasis || '';
+  if (amount !== null && amount !== undefined && Number.isFinite(Number(amount))) {
+    return [amount, unit].filter(Boolean).join(' ') + (basis ? `/${basis}` : '');
+  }
+  return 'Not published';
+}
+
 function preservePendingReviewFields(generatedRecord, existingRecord) {
   if (!existingRecord || existingRecord.approvalStatus !== 'pending') return generatedRecord;
   const generatedNotes = defaultPendingNotes(generatedRecord);
   const preserved = { ...generatedRecord };
 
-  for (const field of ['reviewedBy', 'reviewedDate']) {
+  for (const field of ['reviewedBy', 'reviewedDate', 'additionalReferences']) {
     if (String(existingRecord[field] || '').trim()) preserved[field] = existingRecord[field];
+  }
+  if (String(existingRecord.carbohydrateDisplayValue || '').trim()) {
+    preserved.carbohydrateDisplayValue = existingRecord.carbohydrateDisplayValue;
+  } else if (!String(preserved.carbohydrateDisplayValue || '').trim()) {
+    preserved.carbohydrateDisplayValue = carbohydrateDisplayValueFromLegacy(existingRecord);
   }
 
   if (
@@ -366,9 +390,132 @@ function preservePendingReviewFields(generatedRecord, existingRecord) {
   return preserved;
 }
 
+function normalizedLookupValue(value) {
+  return String(value || '')
+    .toLowerCase()
+    .replace(/&/g, ' and ')
+    .replace(/[^a-z0-9]+/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function normalizedNdc(value) {
+  return String(value || '').replace(/\D/g, '');
+}
+
+function splitWorkbookList(value) {
+  return String(value || '')
+    .split(/[;\n,]+/)
+    .map((item) => item.trim())
+    .filter(Boolean);
+}
+
+function dailymedSetIdFromUrl(value) {
+  return String(value || '').match(/[?&]setid=([^&]+)/i)?.[1]?.toLowerCase() || '';
+}
+
+function textFieldsMatch(left, right) {
+  const normalizedLeft = normalizedLookupValue(left);
+  const normalizedRight = normalizedLookupValue(right);
+  if (!normalizedLeft || !normalizedRight) return false;
+  return normalizedLeft === normalizedRight
+    || normalizedLeft.includes(normalizedRight)
+    || normalizedRight.includes(normalizedLeft);
+}
+
+function workbookReferenceScore(record, workbookRecord) {
+  const recordSetId = String(record.sourceSetId || '').toLowerCase();
+  const workbookSetId = dailymedSetIdFromUrl(workbookRecord.primarySourceUrl);
+  const recordProductNdc = normalizedNdc(record.productNdc);
+  const recordPackageNdc = normalizedNdc(record.packageNdc);
+  const workbookProductNdcs = splitWorkbookList(workbookRecord.productNdc).map(normalizedNdc);
+  const workbookPackageNdcs = splitWorkbookList(workbookRecord.packageNdc).map(normalizedNdc);
+
+  let score = 0;
+  if (recordSetId && workbookSetId && recordSetId === workbookSetId) score += 8;
+  if (recordProductNdc && workbookProductNdcs.includes(recordProductNdc)) score += 6;
+  if (recordPackageNdc && workbookPackageNdcs.includes(recordPackageNdc)) score += 6;
+
+  const hasExactIdentifier = score >= 6;
+  if (!hasExactIdentifier) return 0;
+
+  if (textFieldsMatch(record.genericName, workbookRecord.genericMedication)) score += 2;
+  if (textFieldsMatch(record.manufacturer, workbookRecord.manufacturerLabeler)) score += 2;
+  if (textFieldsMatch(record.brandName, workbookRecord.brandName)) score += 1;
+  if (textFieldsMatch(record.strength, workbookRecord.strength)) score += 1;
+  if (textFieldsMatch(record.normalizedDosageForm || record.dosageForm, workbookRecord.dosageForm)) score += 1;
+  return score;
+}
+
+function formatWorkbookReference(workbookRecord) {
+  const identity = [
+    workbookRecord.genericMedication,
+    workbookRecord.brandName,
+    workbookRecord.manufacturerLabeler,
+    workbookRecord.strength,
+    workbookRecord.dosageForm,
+  ].filter(Boolean).join(' | ');
+  const details = [
+    `Workbook row ${workbookRecord.workbookRow}: ${identity}`,
+    workbookRecord.carbohydrateAmount ? `Carbohydrate amount: ${workbookRecord.carbohydrateAmount}` : '',
+    workbookRecord.carbohydrateContributingIngredients ? `Carbohydrate-contributing ingredients: ${workbookRecord.carbohydrateContributingIngredients}` : '',
+    workbookRecord.nonCarbohydrateSweeteners ? `Non-carbohydrate sweeteners: ${workbookRecord.nonCarbohydrateSweeteners}` : '',
+    workbookRecord.primarySourceType || workbookRecord.primarySourceUrl
+      ? `Primary source: ${[workbookRecord.primarySourceType, workbookRecord.primarySourceUrl].filter(Boolean).join(' - ')}`
+      : '',
+    workbookRecord.additionalReferences ? `Additional references: ${workbookRecord.additionalReferences}` : '',
+    workbookRecord.sourceDate ? `Source date: ${workbookRecord.sourceDate}` : '',
+    workbookRecord.reviewStatus ? `Workbook review status: ${workbookRecord.reviewStatus}` : '',
+    workbookRecord.reviewerNotes ? `Workbook notes: ${workbookRecord.reviewerNotes}` : '',
+  ].filter(Boolean);
+  return details.join('\n');
+}
+
+function appendUniqueText(existingValue, addition) {
+  const existing = String(existingValue || '').trim();
+  const next = String(addition || '').trim();
+  if (!next || existing.includes(next)) return existing;
+  return [existing, next].filter(Boolean).join('\n\n');
+}
+
+function removeGeneratedWorkbookReferenceBlocks(value) {
+  return String(value || '')
+    .split(/\n{2,}/)
+    .map((block) => block.trim())
+    .filter((block) => block && !block.startsWith('Workbook row '))
+    .join('\n\n');
+}
+
+function enrichWithWorkbookReference(record, workbookRecords) {
+  let bestMatch = null;
+  let bestScore = 0;
+  for (const workbookRecord of workbookRecords) {
+    const score = workbookReferenceScore(record, workbookRecord);
+    if (score > bestScore) {
+      bestMatch = workbookRecord;
+      bestScore = score;
+    }
+  }
+
+  if (!bestMatch) return record;
+
+  return {
+    ...record,
+    additionalReferences: appendUniqueText(
+      removeGeneratedWorkbookReferenceBlocks(record.additionalReferences),
+      formatWorkbookReference(bestMatch),
+    ),
+    notes: appendUniqueText(
+      record.notes,
+      'Workbook reference available for reviewer comparison. Verify exact product identity and source text before approval.',
+    ),
+  };
+}
+
 async function main() {
   const imported = JSON.parse(await readFile(inputPath, 'utf8'));
   const existingPending = await readJsonIfExists(pendingPath, []);
+  const workbookReferences = await readJsonIfExists(workbookReferencePath, []);
   const existingPendingById = new Map(existingPending.map((record) => [record.id, record]));
   const pending = [];
 
@@ -392,7 +539,10 @@ async function main() {
           productNdc,
           packageRow: matchingPackage,
         });
-        pending.push(preservePendingReviewFields(generatedRecord, existingPendingById.get(generatedRecord.id)));
+        pending.push(enrichWithWorkbookReference(
+          preservePendingReviewFields(generatedRecord, existingPendingById.get(generatedRecord.id)),
+          workbookReferences,
+        ));
       }
     }
   }
@@ -417,6 +567,8 @@ async function main() {
     productLabelsImported: (imported.medications || []).reduce((sum, medication) => sum + (medication.labels || []).length, 0),
     recordsExtracted: pending.length,
     extractionStatusCounts,
+    workbookReferencesLoaded: workbookReferences.length,
+    recordsWithWorkbookReferences: pending.filter((record) => record.additionalReferences.includes('Workbook row ')).length,
     approvedRecordsPublished: approved.filter((record) => record.approvalStatus === 'approved').length,
   }, null, 2));
 }

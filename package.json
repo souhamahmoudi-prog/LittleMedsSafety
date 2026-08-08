@@ -7,6 +7,8 @@
     "build": "astro build",
     "preview": "astro preview",
     "import:dailymed": "node scripts/import-dailymed-labels.mjs",
+    "import:carbohydrate-reference": "node scripts/import-carbohydrate-reference-workbook.mjs",
+    "preextract:carbohydrates": "node scripts/import-carbohydrate-reference-workbook.mjs",
     "extract:carbohydrates": "node scripts/extract-carbohydrate-records.mjs",
     "validate:carbohydrates": "node scripts/validate-carbohydrate-records.mjs"
   },

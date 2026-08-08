@@ -26,13 +26,50 @@ export const carbohydrateBases = [
 export const dosageFormFilterOptions = [
   'Oral solution',
   'Oral suspension',
-  'Syrup',
-  'Chewable tablet',
-  'Orally disintegrating tablet',
+  'Tablets',
+  'Capsules',
   'Powder',
-  'Granules',
   'Other',
 ] as const;
+
+export const dosageFormFilterGroups = {
+  Tablets: [
+    'tablet',
+    'chewable tablet',
+    'orally disintegrating tablet',
+    'dispersible tablet',
+    'effervescent tablet',
+    'delayed-release tablet',
+    'extended-release tablet',
+  ],
+  Capsules: [
+    'capsule',
+    'softgel capsule',
+    'sprinkle capsule',
+    'delayed-release capsule',
+    'extended-release capsule',
+  ],
+  Powder: [
+    'powder',
+    'powder for suspension',
+    'powder for oral solution',
+    'granules',
+    'oral granules',
+    'packet',
+  ],
+  'Oral solution': [
+    'solution',
+    'oral solution',
+    'liquid',
+    'oral liquid',
+    'elixir',
+  ],
+  'Oral suspension': [
+    'suspension',
+    'oral suspension',
+    'suspension, oral',
+  ],
+} as const;
 
 export const recognizedDosageForms = [
   'Suspension',
@@ -68,6 +105,7 @@ export type MedicationCarbohydrateReferenceRecord = {
   dosageForm: string;
   ndc: string;
   packageDescription: string;
+  carbohydrateDisplayValue: string;
   carbohydrateIngredients: {
     normalizedName: string;
     sourceTerm: string;
@@ -93,6 +131,7 @@ export type MedicationCarbohydrateReferenceRecord = {
   sourceReference: string;
   sourceUrl?: string;
   sourceDate: string;
+  additionalReferences: string;
   verifiedDate: string;
   verifiedBy: string;
   verificationStatus: VerificationStatus;
@@ -115,7 +154,7 @@ export type MedicationCarbohydrateEditorRecord = MedicationCarbohydrateReference
 };
 
 export const unknownQuantityMessage =
-  'Carbohydrate ingredient identified, but the exact amount is not available in the reviewed source.';
+  'Not published';
 
 export const medicationCarbohydrateReferenceRecords: MedicationCarbohydrateReferenceRecord[] = [];
 
@@ -148,6 +187,7 @@ export function validateMedicationCarbohydrateEditorRecord(
     ['NDC or package identifier', identity.ndcOrPackageIdentifier],
     ['source citation', record.sourceCitation || record.sourceReference],
     ['source date', record.sourceDate],
+    ['carbohydrate amount', record.carbohydrateDisplayValue],
     ['verification date', record.verifiedDate],
     ['reviewer', record.reviewer || record.verifiedBy],
     ['approval status', record.approvalStatus],
@@ -155,18 +195,12 @@ export function validateMedicationCarbohydrateEditorRecord(
     if (!String(value || '').trim()) errors.push(`${label} is required.`);
   });
 
-  const hasQuantity = record.carbohydrateAmount !== null
-    && Number.isFinite(record.carbohydrateAmount)
-    && record.carbohydrateAmount >= 0
-    && record.carbohydrateUnit
-    && record.carbohydrateBasis
-    && record.quantifiedIngredient;
-
-  const hasExplicitUnknownStatus = record.verificationStatus !== 'Published quantitative value'
-    && record.carbohydrateAmount === null;
-
-  if (!hasQuantity && !hasExplicitUnknownStatus) {
-    errors.push('A published carbohydrate amount or explicit unknown status is required.');
+  const displayValue = String(record.carbohydrateDisplayValue || '').trim();
+  if (/^not\s+published$/i.test(displayValue) && displayValue !== 'Not published') {
+    errors.push('Unavailable carbohydrate amount must be exactly Not published.');
+  }
+  if (/^(amount not available|exact amount unavailable|quantity unknown|amount unavailable|amount not published)$/i.test(displayValue)) {
+    errors.push('Use Not published instead of alternate unavailable-amount wording.');
   }
 
   if (record.approvalStatus === 'approved' && (!record.sourceReference || !record.verifiedDate)) {

@@ -29,6 +29,26 @@ const columnMap = {
   'reviewer notes': 'reviewerNotes',
 };
 
+function splitCellValues(value) {
+  return String(value || '')
+    .split(/[;\n]+/)
+    .map((item) => item.replace(/\s+/g, ' ').trim())
+    .filter(Boolean);
+}
+
+function normalizeNdc(value) {
+  return String(value || '').replace(/\D+/g, '');
+}
+
+function normalizeIdentity(value) {
+  return String(value || '')
+    .toLowerCase()
+    .replace(/['’]/g, '')
+    .replace(/[^a-z0-9]+/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
 async function readWorkbookEntry(entryPath) {
   const { stdout } = await execFileAsync('unzip', ['-p', workbookPath, entryPath], {
     maxBuffer: 32 * 1024 * 1024,
@@ -101,6 +121,17 @@ function mapMedicationDatabaseRows(rows) {
     headers.forEach((key, cellIndex) => {
       if (key) record[key] = row.cells[cellIndex] || '';
     });
+
+    record.packageNdcs = splitCellValues(record.packageNdc);
+    record.normalizedPackageNdcs = record.packageNdcs.map(normalizeNdc).filter(Boolean);
+    record.normalizedProductNdc = normalizeNdc(record.productNdc);
+    record.normalizedIdentity = {
+      genericName: normalizeIdentity(record.genericMedication),
+      brandName: normalizeIdentity(record.brandName),
+      manufacturer: normalizeIdentity(record.manufacturerLabeler),
+      strength: normalizeIdentity(record.strength),
+      dosageForm: normalizeIdentity(record.dosageForm),
+    };
 
     const hasMedication = String(record.genericMedication || '').trim();
     const hasReference = String(record.primarySourceUrl || record.carbohydrateAmount || record.carbohydrateContributingIngredients || '').trim();

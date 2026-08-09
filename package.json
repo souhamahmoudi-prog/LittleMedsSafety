@@ -3,7 +3,9 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
+    "predev": "node scripts/import-carbohydrate-reference-workbook.mjs",
     "dev": "astro dev",
+    "prebuild": "node scripts/import-carbohydrate-reference-workbook.mjs",
     "build": "astro build",
     "preview": "astro preview",
     "import:dailymed": "node scripts/import-dailymed-labels.mjs",

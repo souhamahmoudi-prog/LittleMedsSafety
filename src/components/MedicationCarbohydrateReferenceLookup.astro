@@ -17,7 +17,12 @@ const approvedRecords = suppliedApprovedRecords.filter(
 const approvedRecordCount = approvedRecords.length;
 const isPreview = mode === 'preview';
 const dosageForms = dosageFormFilterOptions;
-const sourceTypes = approvedRecordCount ? ['DailyMed product label'] : [];
+const sourceTypes = [...new Set(approvedRecords.flatMap((record) => [
+  record.fieldSourceProvenance?.carbohydrateDisplayValue?.sourceName,
+  record.sourceName,
+  record.sourceType,
+  'DailyMed product label',
+]).filter(Boolean))].sort();
 ---
 
 <BaseLayout
@@ -300,6 +305,17 @@ const sourceTypes = approvedRecordCount ? ['DailyMed product label'] : [];
     return record.sourceName || record.sourceType || 'DailyMed product label';
   }
 
+  function amountSourceName(record) {
+    return record.fieldSourceProvenance?.carbohydrateDisplayValue?.sourceName || '';
+  }
+
+  function recordSourceTypes(record) {
+    return [...new Set([
+      sourceName(record),
+      amountSourceName(record),
+    ].filter(Boolean))];
+  }
+
   function verificationDate(record) {
     return record.verifiedDate || record.reviewedDate || '';
   }
@@ -345,7 +361,7 @@ const sourceTypes = approvedRecordCount ? ['DailyMed product label'] : [];
     );
     setSelectOptions(
       sourceTypeFilter,
-      approvedRecords.length ? ['DailyMed product label'] : [],
+      sortedUnique(approvedRecords.flatMap(recordSourceTypes)),
       'All source types',
     );
     setSelectOptions(
@@ -562,9 +578,7 @@ const sourceTypes = approvedRecordCount ? ['DailyMed product label'] : [];
 
   function hasPublishedQuantity(record) {
     return record.extractionStatus === 'quantitative-value-found'
-      && ingredientArray(record).some((ingredient) => (
-        ingredient.normalizedAmountMg !== null
-      ));
+      && !['', 'not published', 'unknown'].includes(String(record.carbohydrateDisplayValue || '').trim().toLowerCase());
   }
 
   function quantitativeSortValue(record) {
@@ -607,6 +621,7 @@ const sourceTypes = approvedRecordCount ? ['DailyMed product label'] : [];
   function sourceCell(record, includeUrl = false) {
     const href = validSourceUrl(record);
     const source = sourceName(record);
+    const amountSource = record.fieldSourceProvenance?.carbohydrateDisplayValue;
     const additionalReferences = String(record.additionalReferences || '').trim();
     const dateParts = [
       record.sourceDate ? `Source date: ${record.sourceDate}` : '',
@@ -621,6 +636,10 @@ const sourceTypes = approvedRecordCount ? ['DailyMed product label'] : [];
           : `<span>${escapeHtml(source || 'Source documentation on file')}</span>`}
         ${includeUrl && href ? `<small>${escapeHtml(href)}</small>` : ''}
         ${dateParts.length ? `<small>${escapeHtml(dateParts.join(' | '))}</small>` : ''}
+        ${amountSource ? `
+          <strong>Carbohydrate amount source:</strong>
+          <span>${escapeHtml(amountSource.sourceName || amountSource.sourceReference || 'Supplemental carbohydrate reference')}</span>
+        ` : ''}
         ${additionalReferences ? `
           <strong>Additional references:</strong>
           <span class="additional-references">${escapeHtml(additionalReferences).replace(/\n/g, '<br />')}</span>
@@ -677,7 +696,7 @@ const sourceTypes = approvedRecordCount ? ['DailyMed product label'] : [];
     if (query && !searchable.includes(query)) return false;
     if (!matchesDosageFormFilter(record)) return false;
     if (state.selectedManufacturer && normalizedOrganizationKey(displayedManufacturer(record)) !== normalizedOrganizationKey(state.selectedManufacturer)) return false;
-    if (sourceTypeFilter.value && sourceTypeFilter.value !== 'DailyMed product label') return false;
+    if (sourceTypeFilter.value && !recordSourceTypes(record).includes(sourceTypeFilter.value)) return false;
     if (quantitativeFilter.value === 'yes' && !hasPublishedQuantity(record)) return false;
     if (quantitativeFilter.value === 'no' && hasPublishedQuantity(record)) return false;
     if (carbohydrateIngredientFilter.value && !carbohydrateContributingIngredients(record).some((ingredient) => normalizedOrganizationKey(ingredient.normalizedName || ingredient.sourceTerm) === normalizedOrganizationKey(carbohydrateIngredientFilter.value))) return false;

@@ -1,6 +1,10 @@
 ---
 import MedicationCarbohydrateReferenceLookup from '../../components/MedicationCarbohydrateReferenceLookup.astro';
-import { approvedMedicationCarbohydrateRecords as approvedRecords } from '../../data/medicationCarbohydrateRecords';
+import approvedMedicationCarbohydrateRecords from '../../data/approvedMedicationCarbohydrateRecords.json';
+
+const approvedRecords = approvedMedicationCarbohydrateRecords.filter(
+  (record) => record.approvalStatus === 'approved',
+);
 ---
 
 <MedicationCarbohydrateReferenceLookup

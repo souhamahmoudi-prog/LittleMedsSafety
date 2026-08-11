@@ -1077,6 +1077,38 @@ const extractionStatuses = [
     window.sessionStorage.setItem(approvedPreviewStorageKey, JSON.stringify(merged));
   }
 
+  function reviewedRecordPayload() {
+    return {
+      approvedRecords: mergeUniqueRecords([...state.existingApproved, ...state.approved]),
+      pendingRecords: state.pending,
+      rejectedRecords: mergeUniqueRecords([...state.existingRejected, ...state.rejected]),
+    };
+  }
+
+  function syncPersistedState(payload) {
+    state.existingApproved = payload.approvedRecords.map((record) => ({ ...record }));
+    state.existingRejected = payload.rejectedRecords.map((record) => ({ ...record }));
+    state.approved = [];
+    state.rejected = [];
+  }
+
+  async function persistReviewedRecords() {
+    const payload = reviewedRecordPayload();
+    const response = await fetch('/internal/api/carbohydrate-record-review/persist', {
+      method: 'POST',
+      headers: {
+        'content-type': 'application/json',
+      },
+      body: JSON.stringify(payload),
+    });
+    const result = await response.json().catch(() => ({}));
+    if (!response.ok || !result.ok) {
+      throw new Error(result.error || 'Unable to persist reviewed records.');
+    }
+    syncPersistedState(payload);
+    return result;
+  }
+
   function closeApprovalDialog() {
     approvalDialogBackdrop.hidden = true;
     state.pendingConfirmation = null;
@@ -1200,7 +1232,7 @@ const extractionStatuses = [
     return errors;
   }
 
-  function approveRecords(records) {
+  async function approveRecords(records) {
     const approvedForPreview = [];
     for (const record of records) {
       applyApprovalIdentity(record);
@@ -1213,12 +1245,20 @@ const extractionStatuses = [
       state.selectedIds.delete(record.id);
     }
     if (approvedForPreview.length) saveApprovedPreviewRecords(approvedForPreview);
-    publishingStatus.textContent = 'Approved locally. Preview it as a public user or export records for publication.';
-    syncSelectionToPending();
-    clearBulkConfirmation();
+    try {
+      const result = await persistReviewedRecords();
+      publishingStatus.textContent = `Approved and persisted. Approved dataset now contains ${result.approvedCount} records.`;
+      showMessage('Selected records approved and persisted to src/data.', 'success');
+    } catch (error) {
+      publishingStatus.textContent = 'Approved locally. Persistence failed; export records before leaving this page.';
+      showMessage(error instanceof Error ? error.message : 'Persistence failed. Export records before leaving this page.', 'error');
+    } finally {
+      syncSelectionToPending();
+      clearBulkConfirmation();
+    }
   }
 
-  function approveSelectedRecord() {
+  async function approveSelectedRecord() {
     const record = selectedRecord();
     if (!record) return;
     applyApprovalIdentity(record);
@@ -1229,8 +1269,14 @@ const extractionStatuses = [
     saveApprovedPreviewRecords([record]);
     selectNextRecord();
     syncSelectionToPending();
-    publishingStatus.textContent = 'Approved locally. Preview it as a public user or export records for publication.';
-    showMessage('Record approved locally. Preview it as a public user or export records for publication.', 'success');
+    try {
+      const result = await persistReviewedRecords();
+      publishingStatus.textContent = `Approved and persisted. Approved dataset now contains ${result.approvedCount} records.`;
+      showMessage('Record approved and persisted to src/data.', 'success');
+    } catch (error) {
+      publishingStatus.textContent = 'Approved locally. Persistence failed; export records before leaving this page.';
+      showMessage(error instanceof Error ? error.message : 'Persistence failed. Export records before leaving this page.', 'error');
+    }
   }
 
   function handleAction(action) {
@@ -1369,7 +1415,6 @@ const extractionStatuses = [
         state.selectedId = filteredPending()[0]?.id || '';
         renderQueue();
         renderEditor();
-        showMessage('Record approved locally. Preview it as a public user or export records for publication.', 'success');
       },
     });
   });

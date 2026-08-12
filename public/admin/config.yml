@@ -44,10 +44,12 @@ collections:
       - label: "Publish date"
         name: "publishDate"
         widget: "date"
+        required: false
         format: "YYYY-MM-DD"
       - label: "Last reviewed date"
         name: "lastReviewedDate"
         widget: "date"
+        required: false
         format: "YYYY-MM-DD"
       - label: "Featured image"
         name: "featuredImage"

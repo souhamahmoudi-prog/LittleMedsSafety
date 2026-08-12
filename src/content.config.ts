@@ -1,5 +1,13 @@
 import { defineCollection, z } from 'astro:content';
 
+const optionalNonEmptyString = z
+  .string()
+  .trim()
+  .optional()
+  .transform((value) => value || undefined);
+
+const optionalUrl = optionalNonEmptyString.pipe(z.string().url().optional());
+
 const articles = defineCollection({
   type: 'content',
   schema: z.object({
@@ -14,14 +22,14 @@ const articles = defineCollection({
       'High-Alert Medications',
     ]),
     author: z.string(),
-    publishDate: z.coerce.date(),
-    lastReviewedDate: z.coerce.date(),
-    featuredImage: z.string().optional(),
+    publishDate: z.coerce.date().optional(),
+    lastReviewedDate: z.coerce.date().optional(),
+    featuredImage: optionalNonEmptyString,
     references: z
       .array(
         z.object({
           label: z.string(),
-          url: z.string().url().optional(),
+          url: optionalUrl,
         }),
       )
       .default([]),

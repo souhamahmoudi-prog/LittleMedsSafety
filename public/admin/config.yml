@@ -3,8 +3,10 @@ backend:
   repo: souhamahmoudi-prog/LittleMedsSafety
   branch: main
 
-local_backend: true
-
+backend:
+  name: github
+  repo: souhamahmoudi-prog/LittleMedsSafety
+  branch: main
 media_folder: "public/assets/images/articles"
 public_folder: "/assets/images/articles"
 

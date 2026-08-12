@@ -1,0 +1,79 @@
+backend:
+  name: test-repo
+
+local_backend: true
+
+media_folder: "public/assets/images/articles"
+public_folder: "/assets/images/articles"
+
+collections:
+  - name: "articles"
+    label: "Articles"
+    label_singular: "Article"
+    folder: "src/content/articles"
+    create: true
+    delete: true
+    extension: "md"
+    format: "frontmatter"
+    slug: "{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - label: "Slug"
+        name: "slug"
+        widget: "string"
+        hint: "Use a lowercase URL slug, for example medication-safety-basics."
+      - label: "Short description"
+        name: "description"
+        widget: "text"
+      - label: "Category"
+        name: "category"
+        widget: "select"
+        options:
+          - "Medication Safety Concepts"
+          - "Pediatric Medication Safety"
+          - "Process Improvement"
+          - "Clinical Practice"
+          - "High-Alert Medications"
+      - label: "Author"
+        name: "author"
+        widget: "string"
+      - label: "Publish date"
+        name: "publishDate"
+        widget: "date"
+        format: "YYYY-MM-DD"
+      - label: "Last reviewed date"
+        name: "lastReviewedDate"
+        widget: "date"
+        format: "YYYY-MM-DD"
+      - label: "Featured image"
+        name: "featuredImage"
+        widget: "image"
+        choose_url: true
+      - label: "References"
+        name: "references"
+        widget: "list"
+        required: false
+        fields:
+          - label: "Label"
+            name: "label"
+            widget: "string"
+          - label: "URL"
+            name: "url"
+            widget: "string"
+            required: false
+      - label: "Draft/published status"
+        name: "status"
+        widget: "select"
+        default: "draft"
+        options:
+          - label: "Draft"
+            value: "draft"
+          - label: "Published"
+            value: "published"
+      - label: "Body"
+        name: "body"
+        widget: "markdown"

@@ -11,9 +11,56 @@ const {
   title = 'Pediatric Medication Carbohydrate Reference | LittleMeds Safety',
   description = 'Look up documented manufacturer-specific carbohydrate content for medication products used in children receiving ketogenic dietary therapy.',
 } = Astro.props;
+
+function publicFieldSource(fieldSource) {
+  if (!fieldSource || typeof fieldSource !== 'object') return undefined;
+  const {
+    sourceName,
+    sourceType,
+    sourceUrl,
+    sourceDate,
+    sourceReference,
+  } = fieldSource;
+  return {
+    sourceName: publicSourceLabel(sourceName),
+    sourceType,
+    sourceUrl,
+    sourceDate,
+    sourceReference: publicSourceLabel(sourceReference),
+  };
+}
+
+function publicSourceLabel(value) {
+  return String(value || '')
+    .replace(/\s*\.\s*accessed\s+/i, ' - accessed ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function publicRecord(record) {
+  const {
+    additionalReferences,
+    notes,
+    supplementalCarbohydrateReference,
+    ...safeRecord
+  } = record;
+  const carbohydrateDisplayValueSource = publicFieldSource(
+    record.fieldSourceProvenance?.carbohydrateDisplayValue,
+  );
+  return {
+    ...safeRecord,
+    sourceName: publicSourceLabel(safeRecord.sourceName),
+    fieldSourceProvenance: carbohydrateDisplayValueSource
+      ? {
+        carbohydrateDisplayValue: carbohydrateDisplayValueSource,
+      }
+      : undefined,
+  };
+}
+
 const approvedRecords = suppliedApprovedRecords.filter(
   (record) => record.approvalStatus === 'approved',
-);
+).map(publicRecord);
 const approvedRecordCount = approvedRecords.length;
 const isPreview = mode === 'preview';
 const dosageForms = dosageFormFilterOptions;
@@ -303,6 +350,13 @@ const sourceTypes = [...new Set(approvedRecords.flatMap((record) => [
 
   function sourceName(record) {
     return record.sourceName || record.sourceType || 'DailyMed product label';
+  }
+
+  function publicSourceLabel(value) {
+    return String(value || '')
+      .replace(/\s*\.\s*accessed\s+/i, ' - accessed ')
+      .replace(/\s+/g, ' ')
+      .trim();
   }
 
   function amountSourceName(record) {
@@ -620,13 +674,13 @@ const sourceTypes = [...new Set(approvedRecords.flatMap((record) => [
 
   function sourceCell(record, includeUrl = false) {
     const href = validSourceUrl(record);
-    const source = sourceName(record);
+    const source = publicSourceLabel(sourceName(record));
     const amountSource = record.fieldSourceProvenance?.carbohydrateDisplayValue;
-    const additionalReferences = String(record.additionalReferences || '').trim();
+    const amountSourceLabel = publicSourceLabel(
+      amountSource?.sourceName || amountSource?.sourceReference || '',
+    );
     const dateParts = [
       record.sourceDate ? `Source date: ${record.sourceDate}` : '',
-      verificationDate(record) ? `Verified: ${verificationDate(record)}` : '',
-      reviewerName(record) ? `Reviewer: ${reviewerName(record)}` : '',
     ].filter(Boolean);
     return `
       <div class="source-cell">
@@ -636,13 +690,9 @@ const sourceTypes = [...new Set(approvedRecords.flatMap((record) => [
           : `<span>${escapeHtml(source || 'Source documentation on file')}</span>`}
         ${includeUrl && href ? `<small>${escapeHtml(href)}</small>` : ''}
         ${dateParts.length ? `<small>${escapeHtml(dateParts.join(' | '))}</small>` : ''}
-        ${amountSource ? `
+        ${amountSourceLabel ? `
           <strong>Carbohydrate amount source:</strong>
-          <span>${escapeHtml(amountSource.sourceName || amountSource.sourceReference || 'Supplemental carbohydrate reference')}</span>
-        ` : ''}
-        ${additionalReferences ? `
-          <strong>Additional references:</strong>
-          <span class="additional-references">${escapeHtml(additionalReferences).replace(/\n/g, '<br />')}</span>
+          <span>${escapeHtml(amountSourceLabel)}</span>
         ` : ''}
       </div>
     `;
@@ -880,11 +930,7 @@ const sourceTypes = [...new Set(approvedRecords.flatMap((record) => [
       ['Product NDC', record.productNdc],
       ['Package NDC', displayPackageNdc(record) || 'Not listed'],
       ['Package description', record.packageDescription || 'Review source label'],
-      ['DailyMed set ID', record.sourceSetId],
       ['Source date', record.sourceDate],
-      ['Additional references', record.additionalReferences],
-      ['Review date', record.reviewedDate || 'Not verified'],
-      ['Notes', record.notes],
     ];
   }
 

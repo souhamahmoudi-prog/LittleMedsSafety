@@ -6,7 +6,6 @@ category: "Medication Safety Concepts"
 author: "LittleMeds Safety"
 publishDate: "2026-08-12"
 lastReviewedDate: "2026-08-12"
-featuredImage: "/assets/images/hero-pediatric-medication.png"
 references:
   - label: "LittleMeds Safety CMS setup test"
 status: "draft"

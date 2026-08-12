@@ -1,0 +1,35 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+export async function getStaticPaths() {
+  const articles = await getCollection('articles');
+
+  return articles.map((article) => ({
+    params: { slug: article.data.slug ?? article.id.replace(/\.md$/, '') },
+    props: { article },
+  }));
+}
+
+const { article } = Astro.props;
+const { Content } = await render(article);
+const featuredImage = article.data.featuredImage?.trim();
+---
+
+<BaseLayout title={`${article.data.title} | LittleMeds Safety`} description={article.data.description}>
+  <main class="section">
+    <article class="container">
+      <p class="eyebrow">{article.data.category}</p>
+      <h1>{article.data.title}</h1>
+      <p>{article.data.description}</p>
+
+      {
+        featuredImage && (
+          <img src={featuredImage} alt="" loading="eager" />
+        )
+      }
+
+      <Content />
+    </article>
+  </main>
+</BaseLayout>

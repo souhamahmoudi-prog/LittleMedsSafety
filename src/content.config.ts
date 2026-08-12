@@ -16,7 +16,7 @@ const articles = defineCollection({
     author: z.string(),
     publishDate: z.coerce.date(),
     lastReviewedDate: z.coerce.date(),
-    featuredImage: z.string(),
+    featuredImage: z.string().optional(),
     references: z
       .array(
         z.object({

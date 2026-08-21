@@ -2,7 +2,7 @@
 title: Core Resuscitation Medications
 slug: cardiac arrest
 description: Core Resuscitation Medications
-category: Process Improvement
+category: Emergency Care
 author: Souha Mahmoudi, Ph.D
 status: draft
 ---

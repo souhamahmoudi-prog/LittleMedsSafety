@@ -4,7 +4,7 @@ slug: cardiac arrest
 description: Core Resuscitation Medications
 category: Emergency Care
 author: Souha Mahmoudi, Ph.D
-status: draft
+status: published
 ---
 ## **Core Resuscitation Medications**
 

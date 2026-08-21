@@ -674,6 +674,95 @@ h3 {
   font-weight: 800;
 }
 
+.article-body {
+  max-width: 760px;
+  margin-top: 34px;
+  color: var(--color-text);
+  font-size: 1.0625rem;
+  line-height: 1.75;
+}
+
+.article-body p {
+  margin: 0 0 1.25rem;
+}
+
+.article-body h2,
+.article-body h3,
+.article-body h4 {
+  margin: 2.1rem 0 0.85rem;
+  color: var(--color-navy);
+  line-height: 1.2;
+}
+
+.article-body h2 {
+  font-size: 1.9rem;
+}
+
+.article-body h3 {
+  font-size: 1.5rem;
+}
+
+.article-body h4 {
+  font-size: 1.24rem;
+}
+
+.article-body ul,
+.article-body ol {
+  margin: 0 0 1.35rem 1.45rem;
+  padding-left: 1.1rem;
+}
+
+.article-body ul {
+  list-style: disc;
+}
+
+.article-body ol {
+  list-style: decimal;
+}
+
+.article-body ul ul,
+.article-body ol ul {
+  list-style: circle;
+}
+
+.article-body ol ol,
+.article-body ul ol {
+  list-style: lower-alpha;
+}
+
+.article-body li {
+  margin: 0.35rem 0;
+  padding-left: 0.2rem;
+}
+
+.article-body strong {
+  color: var(--color-navy);
+  font-weight: 800;
+}
+
+.article-body em {
+  font-style: italic;
+}
+
+.article-body a {
+  color: var(--color-blue);
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
+.article-body blockquote {
+  margin: 1.6rem 0;
+  border-left: 4px solid var(--color-green);
+  padding: 0.3rem 0 0.3rem 1.2rem;
+  color: #40515d;
+  font-style: italic;
+}
+
+.article-body blockquote p:last-child {
+  margin-bottom: 0;
+}
+
 .tool-feature {
   padding-block: 58px;
   background: var(--color-white);

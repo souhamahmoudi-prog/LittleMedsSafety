@@ -76,4 +76,17 @@ collections:
             value: "published"
       - label: "Body"
         name: "body"
-        widget: "markdown"
+        widget: "richtext"
+        modes:
+          - rich_text
+          - raw
+        buttons:
+          - bold
+          - italic
+          - heading-two
+          - heading-three
+          - heading-four
+          - bulleted-list
+          - numbered-list
+          - quote
+          - link

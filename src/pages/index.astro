@@ -1,6 +1,21 @@
 ---
+import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import ArticleCard from '../components/ArticleCard.astro';
+
+const publishedArticles = (await getCollection('articles'))
+  .filter((article) => article.data.status === 'published')
+  .sort((a, b) => {
+    const aDate = a.data.publishDate?.getTime() ?? 0;
+    const bDate = b.data.publishDate?.getTime() ?? 0;
+
+    return bDate - aDate;
+  });
+
+const recentArticles = publishedArticles.slice(0, 3);
+
+const getArticleHref = (article: (typeof publishedArticles)[number]) =>
+  `/articles/${article.data.slug ?? article.id.replace(/\.md$/, '')}`;
 ---
 
 <BaseLayout
@@ -181,24 +196,20 @@ import ArticleCard from '../components/ArticleCard.astro';
             <p class="eyebrow">Latest Resources</p>
             <h2>Recent pediatric safety articles</h2>
           </div>
-          <a class="text-link" href="#">View all resources</a>
+          <a class="text-link" href="/articles">View all resources</a>
         </div>
         <div class="article-grid">
-          <ArticleCard
-            label="Dosing"
-            title="Reducing pediatric dose variability"
-            text="Key process checks that support accurate weight-based dosing across care transitions."
-          />
-          <ArticleCard
-            label="Medication Use"
-            title="Standardizing preparation workflows"
-            text="How clinical teams can reduce handoff risk during medication preparation and verification."
-          />
-          <ArticleCard
-            label="Emergency Care"
-            title="Readiness checks for pediatric emergencies"
-            text="A focused look at medication access, labeling, and review practices for urgent pediatric care."
-          />
+          {
+            recentArticles.map((article) => (
+              <ArticleCard
+                label={article.data.category}
+                title={article.data.title}
+                text={article.data.description}
+                href={getArticleHref(article)}
+                image={article.data.featuredImage}
+              />
+            ))
+          }
         </div>
       </div>
     </section>

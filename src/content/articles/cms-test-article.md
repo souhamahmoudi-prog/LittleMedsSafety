@@ -2,7 +2,7 @@
 title: "CMS Test Article"
 slug: "cms-test-article"
 description: "A short test article used to verify the Decap CMS article collection builds in Astro."
-category: "Medication Safety Concepts"
+category: "Medication Use"
 author: "LittleMeds Safety"
 publishDate: "2026-08-12"
 lastReviewedDate: "2026-08-12"

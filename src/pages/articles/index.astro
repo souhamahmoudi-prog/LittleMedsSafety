@@ -1,0 +1,95 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ArticleCard from '../../components/ArticleCard.astro';
+
+const publishedArticles = (await getCollection('articles'))
+  .filter((article) => article.data.status === 'published')
+  .sort((a, b) => {
+    const aDate = a.data.publishDate?.getTime() ?? 0;
+    const bDate = b.data.publishDate?.getTime() ?? 0;
+
+    return bDate - aDate;
+  });
+
+const getArticleHref = (article: (typeof publishedArticles)[number]) =>
+  `/articles/${article.data.slug ?? article.id.replace(/\.md$/, '')}`;
+---
+
+<BaseLayout
+  title="Articles | LittleMeds Safety"
+  description="Published pediatric medication safety articles from LittleMeds Safety."
+>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="/" aria-label="LittleMeds Safety home">
+        <span class="logo-mark" aria-hidden="true">LMS</span>
+        <span>LittleMeds Safety</span>
+      </a>
+      <div class="header-links">
+        <nav class="primary-nav" aria-label="Primary navigation">
+          <a href="/topics">Topics</a>
+          <a href="/#tools">Tools</a>
+          <a href="/articles">Resources</a>
+          <a href="/#about">About</a>
+        </nav>
+        <a class="search-link" href="/articles">Search</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="topic-hero">
+      <div class="container">
+        <p class="eyebrow">Latest Resources</p>
+        <h1>Articles</h1>
+        <p>
+          Published pediatric medication safety articles and practical guidance.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        {
+          publishedArticles.length > 0 ? (
+            <div class="article-grid">
+              {publishedArticles.map((article) => (
+                <ArticleCard
+                  label={article.data.category}
+                  title={article.data.title}
+                  text={article.data.description}
+                  href={getArticleHref(article)}
+                  image={article.data.featuredImage}
+                />
+              ))}
+            </div>
+          ) : (
+            <div class="empty-state">
+              <strong>No published articles yet.</strong>
+              <span>Published CMS articles will appear here after the site rebuilds.</span>
+            </div>
+          )
+        }
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <a class="logo" href="/" aria-label="LittleMeds Safety home">
+          <span class="logo-mark" aria-hidden="true">LMS</span>
+          <span>LittleMeds Safety</span>
+        </a>
+        <p>Pediatric medication safety resources for clinical teams.</p>
+      </div>
+      <nav aria-label="Footer navigation">
+        <a href="/topics">Topics</a>
+        <a href="/#tools">Tools</a>
+        <a href="/articles">Resources</a>
+        <a href="/#about">About</a>
+      </nav>
+    </div>
+  </footer>
+</BaseLayout>

@@ -661,6 +661,14 @@ h3 {
   padding: 28px;
 }
 
+.article-card__image {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  margin-bottom: 18px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
 .article-card a {
   color: var(--color-blue);
   font-weight: 800;

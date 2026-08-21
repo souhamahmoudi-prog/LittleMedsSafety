@@ -2,7 +2,7 @@
 title: Cardiac Arrest Code Cart Tray
 slug: tray
 description: Example of a cart tray used in pediatrics
-category: Pediatric Medication Safety
+category: Emergency Care
 author: Souha Mahmoudi Ph.D
 status: draft
 ---

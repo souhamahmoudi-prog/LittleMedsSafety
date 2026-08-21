@@ -3,14 +3,21 @@ interface Props {
   label: string;
   title: string;
   text: string;
+  href: string;
+  image?: string;
 }
 
-const { label, title, text } = Astro.props;
+const { label, title, text, href, image } = Astro.props;
 ---
 
 <article class="article-card">
+  {
+    image && (
+      <img class="article-card__image" src={image} alt="" loading="lazy" />
+    )
+  }
   <p class="eyebrow">{label}</p>
   <h3>{title}</h3>
   <p>{text}</p>
-  <a href="#" aria-label={`Read more about ${title}`}>Read more</a>
+  <a href={href} aria-label={`Read more about ${title}`}>Read more</a>
 </article>

@@ -198,6 +198,24 @@ const getArticleHref = (article: (typeof publishedArticles)[number]) =>
           </div>
           <a class="text-link" href="/articles">View all resources</a>
         </div>
+        <div class="resources-intro">
+          <p>
+            LittleMeds Safety offers <strong>evidence-based resources and practical,
+            in-house tools</strong> designed to support clinical workflows, strengthen
+            medication safety culture, and increase awareness of medication-related
+            risks in pediatric care.
+          </p>
+          <p>
+            Our resources include clinical tools to help healthcare professionals
+            <strong>assess the carbohydrate content of commonly used pediatric
+            medications</strong> and <strong>audit pediatric code trays for safety and
+            standardization</strong>.
+          </p>
+          <p>
+            Have a topic or tool you would like to see covered? <strong>Contact
+            us&mdash;we welcome your suggestions.</strong>
+          </p>
+        </div>
         <div class="article-grid">
           {
             recentArticles.map((article) => (
@@ -219,19 +237,19 @@ const getArticleHref = (article: (typeof publishedArticles)[number]) =>
         <div class="tool-grid">
           <div class="tool-image">
             <img
-              src="/assets/images/code-cart.png"
-              alt="Pediatric code cart medication safety audit tool preview"
+              src="/pediatric-medication-carbohydrate-reference-desktop.png"
+              alt="Pediatric medication carbohydrate reference tool preview"
             />
           </div>
           <div class="tool-copy">
             <p class="eyebrow">Featured Tool</p>
-            <h2>Pediatric Code Cart Audit Tool</h2>
+            <h2>Pediatric Medication Carbohydrate Reference</h2>
             <p>
-              Support consistent review of pediatric emergency medication readiness,
-              cart organization, labeling, and documentation with a focused audit
-              workflow for clinical teams.
+              Look up documented manufacturer-specific carbohydrate content for
+              commonly used pediatric medication products, supporting safer care
+              for children receiving ketogenic dietary therapy.
             </p>
-            <a class="button button-primary" href="/tools/pediatric-code-tray-audit">Open Audit Tool</a>
+            <a class="button button-primary" href="/tools/pediatric-medication-carbohydrate-reference">Open Reference Tool</a>
           </div>
         </div>
 
@@ -241,14 +259,6 @@ const getArticleHref = (article: (typeof publishedArticles)[number]) =>
             <h2>Structured reviews for pediatric medication safeguards</h2>
           </div>
           <div class="tools-card-grid">
-            <a class="tools-card" href="/tools/pediatric-medication-carbohydrate-reference">
-              <strong>Pediatric Medication Carbohydrate Reference</strong>
-              <span>
-                Look up documented manufacturer-specific carbohydrate content
-                for medication products used in children receiving ketogenic
-                dietary therapy.
-              </span>
-            </a>
             <a class="tools-card" href="/tools/pediatric-medication-reconciliation-transition-audit">
               <strong>Pediatric Medication Reconciliation and Transition Audit</strong>
               <span>
